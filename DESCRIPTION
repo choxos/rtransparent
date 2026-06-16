@@ -1,7 +1,7 @@
 Package: rtransparent
 Type: Package
 Title: Identifies indicators of transparency
-Version: 0.3.1
+Version: 0.3.2
 Authors@R: c(person("Stylianos", "Serghiou", role = c("aut", "cre"),
                      email = "stelios.serghiou@gmail.com"))
 Description: Use this package to identify indicators of transparency within the
@@ -32,9 +32,8 @@ Suggests:
     readxl,
     rmarkdown,
     testthat (>= 3.0.0),
-    tidyr,
     tokenizers
-Config/Needs/benchmark: readxl, tidyr
+Config/Needs/benchmark: readxl
 VignetteBuilder:
     knitr,
     metareadr

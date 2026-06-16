@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="research-article" xml:lang="en" dtd-version="1.4">
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Mol Med Rep</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Mol Med Rep</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">1932</journal-id>
+        <journal-id journal-id-type="pmc-domain">mmr</journal-id>
+        <journal-title-group>
+          <journal-title>Molecular Medicine Reports</journal-title>
+        </journal-title-group>
+        <issn pub-type="ppub">1791-2997</issn>
+        <issn pub-type="epub">1791-3004</issn>
+        <publisher>
+          <publisher-name>Spandidos Publications</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC5367348</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC5367348.1</article-id>
+        <article-id pub-id-type="pmcaid">5367348</article-id>
+        <article-id pub-id-type="pmcaiid">5367348</article-id>
+        <article-id pub-id-type="pmid">28098903</article-id>
+        <article-id pub-id-type="doi">10.3892/mmr.2017.6114</article-id>
+        <article-id pub-id-type="publisher-id">mmr-15-03-1079</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Articles</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Vitexin alleviates lipopolysaccharide-induced islet cell injury by inhibiting HMGB1 release</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Wang</surname>
+              <given-names initials="F">Feifei</given-names>
+            </name>
+            <xref ref-type="aff" rid="af1-mmr-15-03-1079">1</xref>
+            <xref rid="fn1-mmr-15-03-1079" ref-type="author-notes">*</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Yin</surname>
+              <given-names initials="J">Jiajing</given-names>
+            </name>
+            <xref ref-type="aff" rid="af1-mmr-15-03-1079">1</xref>
+            <xref rid="fn1-mmr-15-03-1079" ref-type="author-notes">*</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Ma</surname>
+              <given-names initials="Y">Yujin</given-names>
+            </name>
+            <xref ref-type="aff" rid="af2-mmr-15-03-1079">2</xref>
+            <xref rid="fn1-mmr-15-03-1079" ref-type="author-notes">*</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Jiang</surname>
+              <given-names initials="H">Hongwei</given-names>
+            </name>
+            <xref ref-type="aff" rid="af2-mmr-15-03-1079">2</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Li</surname>
+              <given-names initials="Y">Yanbo</given-names>
+            </name>
+            <xref ref-type="aff" rid="af1-mmr-15-03-1079">1</xref>
+            <xref rid="c1-mmr-15-03-1079" ref-type="corresp"/>
+          </contrib>
+        </contrib-group>
+        <aff id="af1-mmr-15-03-1079"><label>1</label>Department of Endocrinology, The First Affiliated Hospital of Harbin Medical University, Harbin, Heilongjiang 150001, P.R. China</aff>
+        <aff id="af2-mmr-15-03-1079"><label>2</label>Department of Endocrinology, The First Affiliated Hospital of Henan University of Science and Technology, Luoyang, Henan 471003, P.R. China</aff>
+        <author-notes>
+          <corresp id="c1-mmr-15-03-1079"><italic toggle="yes">Correspondence to</italic>: Professor Yanbo Li, Department of Endocrinology, The First Affiliated Hospital of Harbin Medical University, 23 You Zheng Street, Harbin, Heilongjiang 150001, P.R. China, E-mail: <email>liyanbo65@163.com</email></corresp>
+          <fn id="fn1-mmr-15-03-1079">
+            <label>*</label>
+            <p>Contributed equally</p>
+          </fn>
+        </author-notes>
+        <pub-date pub-type="ppub">
+          <month>3</month>
+          <year>2017</year>
+        </pub-date>
+        <pub-date pub-type="epub">
+          <day>12</day>
+          <month>1</month>
+          <year>2017</year>
+        </pub-date>
+        <volume>15</volume>
+        <issue>3</issue>
+        <issue-id pub-id-type="pmc-issue-id">289984</issue-id>
+        <fpage>1079</fpage>
+        <lpage>1086</lpage>
+        <history>
+          <date date-type="received">
+            <day>02</day>
+            <month>12</month>
+            <year>2015</year>
+          </date>
+          <date date-type="accepted">
+            <day>15</day>
+            <month>11</month>
+            <year>2016</year>
+          </date>
+        </history>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>12</day>
+              <month>01</month>
+              <year>2017</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>13</day>
+              <month>04</month>
+              <year>2017</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2023-07-31 20:25:09.937">
+              <day>31</day>
+              <month>07</month>
+              <year>2023</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>Copyright: © Wang et al.</copyright-statement>
+          <copyright-year>2017</copyright-year>
+          <license license-type="open-access">
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncndlicense">https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref>
+            <license-p>This is an open access article distributed under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs License</ext-link>, which permits use and distribution in any medium, provided the original work is properly cited, the use is non-commercial and no modifications or adaptations are made.</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="mmr-15-03-1079.pdf"/>
+        <abstract>
+          <p>Diabetes mellitus (DM) is a chronic metabolic disease, where the predominant pathogenesis is pancreatic β-cells dysfunction or injury. It has been well established that inflammation leads to a gradual exhaustion of pancreatic β-cell function with decreased β-cell mass likely resulting from pancreatic β-cells apoptosis or death. Vitexin, a major bioactive flavonoid compound in plants has numerous pharmacological properties, including antioxidant, anti-inflammatory and antimyeloperoxidase. Whether vitexin can protect pancreatic β-cells against lipopolysaccharide (LPS)-induced pro-inflammatory cytokine production and apoptosis has received little attention. The present study investigated the potential effects of vitexin on LPS-induced pancreatic β-cell injury and apoptosis. It was revealed that apoptosis and damage induced by LPS in islet tissue of rats and INS-1 cells was significantly decreased in response to vitexin treatment. In addition, pretreatment with vitexin decreased the levels of the pro-inflammatory cytokines tumor necrosis factor-α and high mobility group box 1 (HMGB1) in LPS-induced rats. Further experiments demonstrated that vitexin pretreatment suppressed the activation of P38 mitogen-activated protein kinase signaling pathways in LPS-induced INS-1 cells. In conclusion, the results indicated that vitexin prevented LPS-induced islet tissue damage in rats, and INS-1 cells injury and apoptosis by inhibiting HMGB1 release. Therefore, the present study provided clear evidence indicating that vitexin may be a viable therapeutic strategy for the treatment of DM.</p>
+        </abstract>
+        <kwd-group>
+          <kwd>vitexin</kwd>
+          <kwd>INS-1 cells</kwd>
+          <kwd>apoptosis</kwd>
+          <kwd>lipopolysaccharide</kwd>
+          <kwd>islet tissue</kwd>
+          <kwd>HMGB1</kwd>
+        </kwd-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY-NC-ND</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec sec-type="intro">
+        <title>Introduction</title>
+        <p>Diabetes mellitus (DM) is traditionally characterized by dysfunction of pancreatic β-cells and insulin resistance. Inflammation has been shown to be a key contributing factor to DM, and the importance of inflammation in insulin resistance and complications associated with diabetes has been previously reviewed (<xref rid="b1-mmr-15-03-1079" ref-type="bibr">1</xref>,<xref rid="b2-mmr-15-03-1079" ref-type="bibr">2</xref>). Inflammation may contribute to pancreatic β-cell apoptosis and pro-inflammatory cytokines, including interleukin (IL)-β and tumor necrosis factor (TNF)-α, and activate signaling pathways resulting in pancreatic β-cell death and dysfunction (<xref rid="b2-mmr-15-03-1079" ref-type="bibr">2</xref>,<xref rid="b3-mmr-15-03-1079" ref-type="bibr">3</xref>). Lipopolysaccharide (LPS) is a cell membrane endotoxin of Gram-negative bacteria that produces local or systemic inflammatory reactions in the host following bacterial infection. In animal models maintained in germ-free environments, the endotoxin is associated with cardiometabolic abnormalities, including obesity, insulin resistance and diabetes (<xref rid="b4-mmr-15-03-1079" ref-type="bibr">4</xref>). Both prevalent and incident diabetes are associated with endotoxemia, suggesting that endotoxemia is a key player in the pathogenesis of diabetes and that microbes may have a central role, thereby linking metabolic disorders to inflammation (<xref rid="b5-mmr-15-03-1079" ref-type="bibr">5</xref>).</p>
+        <p>High mobility group box 1 (HMGB1) is a nuclear non-histone chromatin-binding protein that maintains nucleosomal structure and stability, and regulates gene transcription (<xref rid="b6-mmr-15-03-1079" ref-type="bibr">6</xref>). In addition, intracellular HMGB1 serves a role in a number of fundamental cellular processes, including transcription, replication, DNA repair and recombination (<xref rid="b7-mmr-15-03-1079" ref-type="bibr">7</xref>). HMGB1 is commonly found in mammalian cells, but can be actively secreted into extracellular spaces in response to external stimuli, including LPS and TNF-α, as well as being passively released from necrotic cells (<xref rid="b8-mmr-15-03-1079" ref-type="bibr">8</xref>). Extracellular secretion of HMGB1 is closely associated with increased mortality in animal models of sepsis and septic patients, and it has been reported that extracellular HMGB1 may interact with TLR and/or the receptor for advanced glycation end products (RAGE), which can lead to the activation of the p38 mitogen-activated protein kinase (MAPK) signaling pathway (<xref rid="b9-mmr-15-03-1079" ref-type="bibr">9</xref>). Inhibition of HMGB1 protects animals from lethal doses of LPS and reduces injurious ventilation-induced lung inflammation (<xref rid="b10-mmr-15-03-1079" ref-type="bibr">10</xref>).</p>
+        <p>Vitexin is a major bioactive flavonoid compound derived from the dried leaf of hawthorn (<italic toggle="yes">Crataegus pinnatifida</italic>), a widely used conventional folk medicine in China (<xref rid="b11-mmr-15-03-1079" ref-type="bibr">11</xref>). Vitexin has been shown to exert a variety of biological and pharmacological activities, including anticancer, antioxidant, anti-inflammatory and antimyeloperoxidase functions. Previous findings have indicated that vitexin has a protective effect against myocardial ischemia/reperfusion injury in the isolated rat heart model, an effect that is associated with the release of inflammatory cytokines and myocardial apoptosis by reducing the gene expression of Bax, while increasing the gene expression of B-cell lymphoma (Bcl)2 (<xref rid="b12-mmr-15-03-1079" ref-type="bibr">12</xref>). Vitexin also inhibits the production of pro-hyperalgesic cytokines and increases the production of anti-hyperalgesics (<xref rid="b13-mmr-15-03-1079" ref-type="bibr">13</xref>). As DM is associated with inflammation, the issue of whether vitexin may alleviate LPS-induced the release of HMGB1 and protect islet cell injury remains to be examined. Therefore, in the present study, LPS treated rats and INS-1 cells were used to investigate the effects of vitexin on HMGB1 release, and to examine possible mechanisms associated with this effect.</p>
+      </sec>
+      <sec sec-type="materials|methods">
+        <title>Materials and methods</title>
+        <sec>
+          <title/>
+          <sec>
+            <title>Reagents</title>
+            <p>Vitexin, with a purity &gt;99.9%, was obtained from Xi'an Haoxuan Biotechnology Co. Ltd., (Xi'an, China). The P38 MAPK inhibitor, SB203580, was purchased from Selleck Chemicals (Houston, TX, USA). RPMI-1640 medium and fetal bovine serum (FBS) were purchased from Gibco; Thermo Fisher Scientific, Inc. (Waltham, MA, USA). LPS was purchased from Sigma-Aldrich; Merck Millipore Darmstadt, (Germany). Rabbit polyclonal antibodies against HMGB1 (Rabbit IgG, cat. no. 6893, 1:1,000), Bcl2 (Rabbit IgG, cat. no. 2876, 1:1,000), cleaved caspase-3 (Rabbit IgG, cat. no. 9664, 1:1,000), P38 (Rabbit IgG, cat. no. 14451, 1:1000), phosphorylated (p-)P38 (Rabbit IgG, cat. no. 4092, 1:1,000) and β-actin (Rabbit IgG, cat. no. 4970, 1:1,000) were purchased from Cell Signaling Technology, Inc. (Danvers, MA, USA). The streptavidin-peroxidase (SP) and 3,3′-diaminobenzidine kits were purchased from Beijing Zhongshan Golden Bridge Biotechnology; OriGene Technologies, Inc. (Rockville, MD, USA). The primers (P38, F:GCC TCA CCG CCT CAG TAT , R:GCA GTC TTC TCA TTC CCT TG; β-actin, F:TTT TGT GCC TTG ATA GTT CG, R:GGA GTC CTT CTG ACC CAT AC-3) for P38 (Mapk14) and β-actin were synthetized by Sangon Biotech Co., Ltd. (Shanghai, China). HMGB1 and the TNF-α enzyme-linked immunosorbent assay (ELISA) kits were purchased from R&amp;D Systems (Minneapolis, MN, USA).</p>
+          </sec>
+          <sec>
+            <title>Animals and treatments</title>
+            <p>The present study was approved by the animal care and use committee of Harbin Medical University (Harbin, China). All research was performed in accordance with the internationally accepted principles for laboratory animal use and care. Sprague-Dawley rats (n=36, 6-weeks-old; weight, 200–220 g; SPF grade) were obtained from the Animal Center of Harbin Medical University. All animal protocols were approved by the experimental animal care and use committee of Harbin Medical University, were housed under specific pathogen-free conditions. Animals received humane care according to established standards with free access to water and food, and they were maintained in an air-conditioned room at 25°C with a 12-h light/dark cycle. The animals received intraperitoneal injection of LPS solution (2 mg/kg) on the first, third and fifth day of experiment. The control rats were fed with standard diet and tap water. The rats were randomly divided into five groups (6 rats/group): i) control group with rats fed with standard diet for 7 days; ii) LPS group with rats receiving intraperitoneal injection of LPS solution (2 mg/kg) on the first, third and fifth day of experiment, and fed with standard diet and tap water for 7 days; iii) vitexin (5 mg/kg) group with rats that received intraperitoneal injection of LPS solution (2 mg/kg) on the first, third and fifth day of the experiment, and received intraperitoneal injection of vitexin solution (5 mg/kg/day), whilst being fed a standard diet and tap water for 7 days; iv) vitexin (10 mg/kg) group with rats receiving intraperitoneal injection of LPS solution (2 mg/kg) on the first, third and fifth day of the experiment, and intraperitoneal injection of vitexin solution (10 mg/kg/day), whilst being fed with standard diet and tap water for 7 days; v) SB203580 group rats receiving intraperitoneal injection of LPS solution (2 mg/kg) on the first, third and fifth day of the experiment, and intraperitoneal injection of SB203580 solution (1 µM/kg/day), whilst being fed with standard diet and tap water for 7 days.</p>
+          </sec>
+          <sec>
+            <title>ELISA detection</title>
+            <p>An ELISA was performed to determine serum HMGB1 and TNF-α levels, according to the manufacturer's protocol (R&amp;D Systems).</p>
+          </sec>
+          <sec>
+            <title>Histology</title>
+            <p>Samples of the pancreas were fixed in 4% mediosilicic isotonic formaldehyde for 24 h (4°C), and were subsequently dehydrated and embedded in paraffin. Tissue sections (5 µm-thick) were cut from each paraffin embedded tissue sample, stained with hematoxylin and eosin and observed under a light microscope to evaluate the degree of pancreatic islets damage.</p>
+          </sec>
+          <sec>
+            <title>Immunofluorescence and terminal deoxynucleotidyl transferase dUTP nick-end labeling (TUNEL)</title>
+            <p>The expression and localization of HMGB1 in the pancreatic islets were detected by immunofluorescence from the aforementioned 5 µm-thick tissue sections. To identify the types of injury, apoptosis-associated analyses were performed using TUNEL. The TUNEL reaction was performed using the <italic toggle="yes">in situ</italic> TMR red cell death detection kit (Roche Diagnostics GmbH, Mannheim, Germany). Briefly, the slides containing tissue samples were incubated with the enzyme terminal deoxynucleotidyl transferase at 37°C for 1 h and washed 3 times with PBS. The TUNEL mixture was added, and the slides were incubated for 30 min at 37°C. Finally, the positive cells were observed with fluorescent microscopy. For quantification, the mean number of TUNEL-positive cells was calculated under a magnification of ×100 in five different fields.</p>
+          </sec>
+          <sec>
+            <title>Cell culture and treatment</title>
+            <p>The INS-1 cell line was purchased from American Type Culture Collection (Rockville, MD, USA). The cells were cultured in RPMI-1640 medium containing 10% fetal bovine serum (FBS) at 5% CO<sub>2</sub>, 37°C. INS-1 cells were seeded at a density of 2×105 cells/ml in 6-well plates, then divided into five groups according to different processing methods: i) Control group, cells were cultured in RPMI-1640 medium containing 10% FBS at 37°C without treatment; ii) LPS group, cells were cultured in complete RPMI-1640 medium with LPS (5 µg/ml) for 24 h; iii) Vitexin group, cells were cultured in complete RPMI-1640 medium with LPS (5 µg/ml) for 24 h, then cultured in complete RPMI-1640 medium with vitexin (50 µM) for 24 h; iv) P38 MAPK inhibitor (SB203580) group, cells were cultured in complete RPMI-1640 medium with SB203580 0.5 µM) for 24 h, then cultured in complete RPMI-1640 medium with LPS (5 µg/ml) for 24 h. An ELISA was used to determine the HMGB1 levels in cell supernatants.</p>
+          </sec>
+          <sec>
+            <title>Cell viability assay</title>
+            <p>Cell viability was estimated using a colorimetric assay based on conversion of a tetrazolium dye (MTT) into a blue formazan product. Briefly, INS-1 cells were seeded at a density of 1×104 cells/well in 96-well plates. The cells were cultured in complete RPMI-1640 medium with LPS (5 µg/ml) for 24 h, then vitexin was added to the wells at different concentrations (20, 30, 40, 50, 100, 200 and 300 µM) and the cells were cultured for 24 h. The culture medium was subsequently replaced with 20 µl MTT solution. The MTT solution was removed after 4 h of incubation at 37°C and the produced formazan was solubilized in 200 µl DMSO. The absorbance was measured at 490 nm using an automated microplate reader.</p>
+          </sec>
+          <sec>
+            <title>Reverse transcription polymerase chain reaction (RT-PCR)</title>
+            <p>The total RNA was isolated from INS-1 cells using TRIzol reagent (Invitrogen; Thermo Fisher Scientific, Inc., Waltham, MA, USA). Briefly, cDNA was synthesized from 1 µg RNA in the presence of ribonuclease inhibitor (Sigma-Aldrich; Merck Millipore), dNTPs, Oligo (dT) 18 primers, and RevertAid™ M-Mulv reverse transcriptase (Fermentas; Thermo Fisher Scientific, Inc.) in a total volume of 25 µl. PCR was performed using a Takara mRNA Selective PCR kit (Takara Bio, Inc., Otsu, Japan) in a total volume of 25 µl, under the following cycling conditions: PCR amplifications were performed in duplicate at 94°C for 2 min, followed by 35 cycles at 94°C for 5 sec, 56°C for 20 sec and 72°C for 60 sec, and a final extension step at 72°C for 10 min. The primers used were as follows: P38 (Mapk14), sense: 5′-GCCTCACCGCCTCAGTAT−3′ and antisense: 5′-GCAGTCTTCTCATTCCCTTG-3′ (252 bp); internal control β-actin, sense: 5′-TTTTGTGCCTTGATAGTTCG-3′ and antisense 5′-GGAGTCCTTCTGACCCATAC-3 (265 bp). The PCR products were separated by 1.5% agarose gel electrophoresis, followed by ethidium bromide staining. Target bands were analyzed by densitometry, using a GS-800 calibrated densitometer (Bio-Rad Laboratories, Hercules, CA, USA) and Gel-Pro Analyzer 4.0 gel analyzing software (Media Cybernetics, Rockville, MD, USA). The results were calculated as the ratio of the optical density value relative to that of β-actin.</p>
+          </sec>
+          <sec>
+            <title>Western blotting</title>
+            <p>INS-1 cells were collected by scraping and washed with PBS. The cells were lysed in RIPA buffer containing phosphatase inhibitor cocktail I (Sigma-Aldrich; Merck Millipore) and protease inhibitor cocktail mini-tablet (Roche Diagnostics, Indianapolis, IN, USA). The total cellular protein was extracted and separated using 10 or 12% SDS-PAGE. The proteins were transferred onto nitrocellulose membranes (Merck Millipore). Non-specific protein binding was inhibited by incubating the membranes in blocking buffer (5% milk diluted in PBS). Following blocking, the membranes were incubated with specific primary antibodies at 4°C overnight. After washing, the membranes were incubated with horseradish peroxidase-conjugated anti-IgG (Anti-rabbit IgG; cat. no. 14708S; 1:3,000; Cell Signaling Technology, Inc.) at room temperature for 2 h. Signal detection was carried out with an enhanced chemiluminescence system (Merck Millipore). Protein bands were quantified using Gel Pro Analyzer software 4.0 (Media Cybernetics) and the intensity of the bands were normalized against that of β-actin.</p>
+          </sec>
+          <sec>
+            <title>Statistical analysis</title>
+            <p>The data are presented as the mean ± standard deviation. The differences among the groups were analyzed using one-way analysis of variance with SPSS 19.0 statistical software (IBS SPSS, Chicago, IL, USA). P&lt;0.05 was considered to indicate a statistically significant difference.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec sec-type="results">
+        <title>Results</title>
+        <sec>
+          <title/>
+          <sec>
+            <title>Vitexin inhibits LPS-induced release of HMGB1 in islet tissue</title>
+            <p>Under basal conditions, HMGB1 is predominantly located in the nucleus of macrophages, while LPS stimulation can result in the secretion of this intranuclear HMGB1 into extracellular spaces (<xref rid="b14-mmr-15-03-1079" ref-type="bibr">14</xref>). As shown in the <italic toggle="yes">in vivo</italic> rat model, LPS injections induced the release of HMGB1 in the islet tissue. Following pretreatment with vitexin, the expression and distribution of HMGB1 in islet tissue decreased and attenuated LPS-induced the levels of HMGB1. Similar results were observed for TNF-α in the serum (<xref rid="f1-mmr-15-03-1079" ref-type="fig">Fig. 1</xref>). These results provided evidence to suggest that vitexin alleviates LPS-induced HMGB1 release.</p>
+          </sec>
+          <sec>
+            <title>Protective effects of vitexin on LPS-induced islet cell injury and apoptosis</title>
+            <p>The present study also observed that vitexin protected against LPS-induced islet tissue injury (<xref rid="f2-mmr-15-03-1079" ref-type="fig">Fig. 2A</xref>). Apoptosis is regarded as one mechanism contributing to the inflammatory response of β-cells in DM. As shown in <xref rid="f2-mmr-15-03-1079" ref-type="fig">Fig. 2B</xref>, treatment with LPS increased the levels of extracellular HMGB1 and apoptosis in islet tissue. However, a significant decrease was observed in these parameters following pre-treatment with vitexin (5 and 10 mg/kg). These results suggested that vitexin protects against LPS-induced islet cell injury and apoptosis.</p>
+          </sec>
+          <sec>
+            <title>Vitexin enhances INS-1 cell survival</title>
+            <p>An effect of vitexin on LPS-induced INS-1 cell survival was also observed. As determined by MTT assays, the survival ratios of INS-1 cells were reduced in response to 5 mg/kg LPS, while INS-1 cell survival ratios increased significantly in a dose-dependent manner following treatment with vitexin, compared with LPS alone (<xref rid="f3-mmr-15-03-1079" ref-type="fig">Fig. 3A</xref>). These results suggested that vitexin protects INS-1 cells from LPS-induced death.</p>
+          </sec>
+          <sec>
+            <title>Vitexin suppresses LPS-induced release of HMGB1 and caspase-3 activation in INS-1 cells</title>
+            <p>Complementing the results from the present <italic toggle="yes">in vivo</italic> experiments, it was also observed that LPS induced the release of HMGB1 in INS-1 cells, as shown in <xref rid="f3-mmr-15-03-1079" ref-type="fig">Fig. 3B</xref>. When vitexin was added to these LPS-treated preparations, the level of HMGB1 in cell supernatants was reduced. The distribution of HMGB1 in INS-1 cells, as observed by immunocytochemistry, is presented in <xref rid="f3-mmr-15-03-1079" ref-type="fig">Fig. 3C</xref>. The dyeing intensity of HMGB1 in the nucleus faded when INS-1 cells were treated with LPS, however, vitexin attenuated the change. In addition to suppressing LPS-induced release of HMGB1, the protein expression of cleaved caspase-3 in INS-1 cells was also decreased by vitexin, compared with LPS-alone (<xref rid="f3-mmr-15-03-1079" ref-type="fig">Fig. 3D</xref>). The expression of the key antiapoptosis factor, Bcl-2, which contributes to the caspase pathway of apoptosis, was significantly increased, while expression levels of the capase-3 protein was decreased in response to vitexin + LPS, as compared with the LPS alone group.</p>
+          </sec>
+          <sec>
+            <title>Influence of LPS on the P38 MAPK pathway in INS-1 cell</title>
+            <p>The present study observed the release of HMGB1 induced by LPS to further demonstrate the effect of HMGB1 release on P38 MAPK pathway in pancreatic islet cells. As shown in <xref rid="f4-mmr-15-03-1079" ref-type="fig">Fig. 4</xref>, compared with the control group, the mRNA and protein expression levels of P38 (Mapk14) exhibited no increase following LPS treatment; however, the phosphorylation of P38 increased following LPS treatment. Therefore, LPS-induced release of HMGB1 may induce the activation of the P38 signaling pathways in INS-1 cells.</p>
+          </sec>
+          <sec>
+            <title>Vitexin protection of islet cell injury induced by LPS is dependent on inhibiting HMGB1 release</title>
+            <p>To further clarify that vitexin inhibits HMGB1 release or the P38 pathway, the present study used a P38 inhibitor (SB203580). Following stimulation with LPS, the serum level of HMGB1 and the rate of apoptosis of islet tissue increase (P&lt;0.001); however, a significant decrease was observed following treatment with 10 mg/kg vitexin (<xref rid="f5-mmr-15-03-1079" ref-type="fig">Fig. 5A and B</xref>). Treatment with SB203580 also decreased the serum level of HMGB1 induced by LPS (<xref rid="f5-mmr-15-03-1079" ref-type="fig">Fig. 5C</xref>) and the apoptosis of islet tissue in rats (<xref rid="f5-mmr-15-03-1079" ref-type="fig">Fig. 5B</xref>). Notably, the level of serum HMGB1 and the rate of apoptosis were markedly higher compared with the vitexin group (P&lt;0.05). Additionally, the present study also performed <italic toggle="yes">in vitro</italic> experiments to confirm that vitexin inhibits HMGB1 release or the P38 pathway. The level of HMGB1 in the INS-1 cell supernatants increased following stimulation with LPS, but decreased following treatment with vitexin (<xref rid="f5-mmr-15-03-1079" ref-type="fig">Fig. 5D</xref>). SB203580 also decreased the level of HMGB1 in INS-1 cell supernatants induced by LPS, but was markedly higher compared with the vitexin group (P&lt;0.001). In addition, immunocytochemistry demonstrated that vitexin inhibited LPS-induced HMGB1 translocation from the nucleus to the cytoplasmic compartment; however, weak inhibition of LPS-induced HMGB1 translocation from the nucleus to the cytoplasmic compartment was observed (<xref rid="f5-mmr-15-03-1079" ref-type="fig">Fig. 5E</xref>). Following the LPS treatment, INS-1 cells were treated with vitexin or SB203580. This revealed a significant reduction in the protein expression levels of p-P38 and cleaved caspase-3, but the levels of Bcl2 increased (<xref rid="f5-mmr-15-03-1079" ref-type="fig">Fig. 5F</xref>). A more significant effect was observed in the vitexin group compared with the SB203580 group. The present results suggested that vitexin protects cells from LPS-induced islet cell injury and apoptosis.</p>
+          </sec>
+        </sec>
+      </sec>
+      <sec sec-type="discussion">
+        <title>Discussion</title>
+        <p>HMGB1 can be passively released from damaged cells or necrotized tissues (<xref rid="b15-mmr-15-03-1079" ref-type="bibr">15</xref>,<xref rid="b16-mmr-15-03-1079" ref-type="bibr">16</xref>). The present results demonstrated that LPS can induce the release of HMGB1 from islet tissue. These findings are in accord with previous reports indicating that HMGB1 is associated with islet destruction (<xref rid="b17-mmr-15-03-1079" ref-type="bibr">17</xref>). This LPS-induced release of HMGB1 was significantly decreased following the addition of vitexin, suggesting that vitexin protected islet cells from injury and enhanced their survival. LPS can also induce the activation of the P38 MAPK pathway, which represents a crucial synergistic component that contributes to pancreatic islet cells destruction. Based upon the present results with the P38 inhibitor (SB203580), it is clear that the protective effect of vitexin upon LPS-induced islet cell injury and apoptosis resides primarily in its capacity to inhibit HMGB1 release.</p>
+        <p>The inflammatory response has been regarded as one of the mechanisms associated with impaired insulin signal transduction, as the secretion of inflammatory cytokines can contribute to alterations in both insulin signaling and insulin sensitivity. HMGB1 is a vastly abundant and conserved protein that exerts a number of significant intra and extracellular biological activities, and is linked with inflammation (<xref rid="b18-mmr-15-03-1079" ref-type="bibr">18</xref>). It is commonly considered a nuclear molecule, however, when stimulated by LPS, it can be translocated to the cytoplasm. HMGB1 is also actively secreted by inflammatory cells and binds with high affinity to several receptors, including RAGE and the Toll-like receptor (TLR)-2, TLR-4 and TLR-9 (<xref rid="b19-mmr-15-03-1079" ref-type="bibr">19</xref>). The release of HMGB1 into the extracellular environment, where it can function as an endogenous danger signal or ‘alarmin’ to promote inflammation, has been implicated in several diseases, including sepsis, acute lung injury and type 1 diabetes (<xref rid="b20-mmr-15-03-1079" ref-type="bibr">20</xref>). Type 1 and 2 diabetes are associated with inflammatory cytokines, which can serve important roles in islet dysfunction and death in DM. Growing evidence suggests that inflammation, lipids and insulin sensitivity are tightly interconnected (<xref rid="b21-mmr-15-03-1079" ref-type="bibr">21</xref>). Metabolic disorders, which contribute to β-cell dysfunction and insulin resistance in patients with DM, have also been shown to induce an increase in inflammatory cytokines, including C-reactive protein and IL-6 (<xref rid="b22-mmr-15-03-1079" ref-type="bibr">22</xref>). A growing body of evidence supports the hypothesis that inflammatory responses may alter the normal structure of β-cells and induce insulin resistance, as well as decrease insulin secretion (<xref rid="b23-mmr-15-03-1079" ref-type="bibr">23</xref>). Therefore, any processes that can attenuate the inflammatory response will be beneficial for the improvement of β-cell function. Numerous cytokines have been identified to contribute to the occurrence and development of β-cell dysfunction. The c-Jun N-terminal kinases (JNK)/nuclear factor (NF)-κB signaling pathway, which has been shown to be closely associated with the activation of TLR4, contributes to the release of inflammatory mediators, including TNF-a and IL-6 (<xref rid="b24-mmr-15-03-1079" ref-type="bibr">24</xref>). NF-κB can be activated by MAPKs, including JNK, P38 and extracellular-regulated kinase. P38 kinases are members of MAPK and are well documented as being involved a wide range of signaling pathways and biological processes. The prototypic P38 MAPK, P38α MAPK, was originally identified as a tyrosine phosphorylated protein detected in LPS-stimulated macrophages, and is essential for inflammatory cytokine production (<xref rid="b25-mmr-15-03-1079" ref-type="bibr">25</xref>). In the present study, the levels of HMGB1 and TNF-α were increased in response to LPS stimulation, which is consistent with other reports indicating that HMGB1 is involved in the pathogenesis of DM and involvement of HMGB1-mediated activation of inflammatory signaling in Sprague-Dawley rats (<xref rid="b19-mmr-15-03-1079" ref-type="bibr">19</xref>). The present study revealed that vitexin treatment significantly inhibited TNF-α and HMGB1 production in response to LPS-stimulation, as demonstrated both <italic toggle="yes">in vitro</italic> and <italic toggle="yes">in vivo</italic>.</p>
+        <p>Vitexin, a naturally occurring flavone glycoside in plants, has been reported to exert a variety of pharmacological activities, including anti-inflammatory, anticancer, antinociceptive, antispasmodic, antioxidant and antimyeloperoxidase effects, as well as a protectant against ischemia/reperfusion injury and an α-glucosidase inhibitor. Accordingly, a wide range of potential applications exist for vitexin in the treatment of cardiovascular diseases, diabetes and cancer. The present study examined the effects of vitexin upon LPS-induced islet cell injury, and revealed that pretreatment with vitexin attenuated HMGB1 translocation from the nucleus to the cytoplasm in LPS-stimulated islet tissue and INS-1 cells. This effect may serve as a significant factor that decreases LPS-induced islet cell injury. A summary of the protective effects of vitexin is presented in <xref rid="f6-mmr-15-03-1079" ref-type="fig">Fig. 6</xref>.</p>
+        <p>In conclusion, the present study evaluated the therapeutic effects of vitexin in LPS-induced inflammation and examined its potential mechanism. Vitexin alleviates LPS-induced islet injury and apoptosis by reducing the release of HMGB1. The present study shows that vitexin may serve as a promising therapeutic agent for the treatment of DM.</p>
+      </sec>
+    </body>
+    <back>
+      <ack>
+        <title>Acknowledgements</title>
+        <p>The present study was supported by the National Natural Science Foundation of China (grant. no. 81370929 and U1404805), The Research Fund for the Clinical Medicine of Chinese Medical Association (grant. no. 13040670452) and The Science Foundation of the Education Department of Heilongjiang Province (grant. no. 12531316).</p>
+      </ack>
+      <glossary>
+        <def-list>
+          <title>Abbreviations</title>
+          <def-item>
+            <term>DM</term>
+            <def>
+              <p>diabetes mellitus</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>LPS</term>
+            <def>
+              <p>lipopolysaccharide</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>HMGB1</term>
+            <def>
+              <p>high mobility group box 1</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>IR</term>
+            <def>
+              <p>insulin resistance</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>RAGE</term>
+            <def>
+              <p>receptor for advanced glycation end products</p>
+            </def>
+          </def-item>
+          <def-item>
+            <term>MAPKs</term>
+            <def>
+              <p>mitogen-activated protein kinase</p>
+            </def>
+          </def-item>
+        </def-list>
+      </glossary>
+      <ref-list>
+        <title>References</title>
+        <ref id="b1-mmr-15-03-1079">
+          <label>1</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Mahmoud</surname>
+                <given-names>F</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Al-Ozairi</surname>
+                <given-names>E</given-names>
+              </name>
+            </person-group>
+            <article-title>Inflammatory cytokines and the risk of cardiovascular complications in type 2 diabetes</article-title>
+            <source>Dis Markers</source>
+            <volume>35</volume>
+            <fpage>235</fpage>
+            <lpage>241</lpage>
+            <year>2013</year>
+            <pub-id pub-id-type="doi">10.1155/2013/931915</pub-id>
+            <pub-id pub-id-type="pmid">24167372</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3782813</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b2-mmr-15-03-1079">
+          <label>2</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Donath</surname>
+                <given-names>MY</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shoelson</surname>
+                <given-names>SE</given-names>
+              </name>
+            </person-group>
+            <article-title>Type 2 diabetes as an inflammatory disease</article-title>
+            <source>Nat Rev Immunol</source>
+            <volume>11</volume>
+            <fpage>98</fpage>
+            <lpage>107</lpage>
+            <year>2011</year>
+            <pub-id pub-id-type="doi">10.1038/nri2925</pub-id>
+            <pub-id pub-id-type="pmid">21233852</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b3-mmr-15-03-1079">
+          <label>3</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Eizirik</surname>
+                <given-names>DL</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sammeth</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bouckenooghe</surname>
+                <given-names>T</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bottu</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sisino</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Igoillo-Esteve</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ortis</surname>
+                <given-names>F</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Santin</surname>
+                <given-names>I</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Colli</surname>
+                <given-names>ML</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Barthson</surname>
+                <given-names>J</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>The human pancreatic islet transcriptome: Expression of candidate genes for type 1 diabetes and the impact of pro-inflammatory cytokines</article-title>
+            <source>PLoS Genet</source>
+            <volume>8</volume>
+            <fpage>e1002552</fpage>
+            <year>2012</year>
+            <pub-id pub-id-type="doi">10.1371/journal.pgen.1002552</pub-id>
+            <pub-id pub-id-type="pmid">22412385</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3297576</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b4-mmr-15-03-1079">
+          <label>4</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Turnbaugh</surname>
+                <given-names>PJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ley</surname>
+                <given-names>RE</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mahowald</surname>
+                <given-names>MA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Magrini</surname>
+                <given-names>V</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mardis</surname>
+                <given-names>ER</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gordon</surname>
+                <given-names>JI</given-names>
+              </name>
+            </person-group>
+            <article-title>An obesity-associated gut microbiome with increased capacity for energy harvest</article-title>
+            <source>Nature</source>
+            <volume>444</volume>
+            <fpage>1027</fpage>
+            <lpage>1031</lpage>
+            <year>2006</year>
+            <pub-id pub-id-type="doi">10.1038/nature05414</pub-id>
+            <pub-id pub-id-type="pmid">17183312</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b5-mmr-15-03-1079">
+          <label>5</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Pussinen</surname>
+                <given-names>PJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Havulinna</surname>
+                <given-names>AS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lehto</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sundvall</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Salomaa</surname>
+                <given-names>V</given-names>
+              </name>
+            </person-group>
+            <article-title>Endotoxemia is associated with an increased risk of incident diabetes</article-title>
+            <source>Diabetes care</source>
+            <volume>34</volume>
+            <fpage>392</fpage>
+            <lpage>397</lpage>
+            <year>2011</year>
+            <pub-id pub-id-type="doi">10.2337/dc10-1676</pub-id>
+            <pub-id pub-id-type="pmid">21270197</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3024355</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b6-mmr-15-03-1079">
+          <label>6</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Landsman</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bustin</surname>
+                <given-names>M</given-names>
+              </name>
+            </person-group>
+            <article-title>A signature for the HMG-1 box DNA-binding proteins</article-title>
+            <source>Bioessays</source>
+            <volume>15</volume>
+            <fpage>539</fpage>
+            <lpage>546</lpage>
+            <year>1993</year>
+            <pub-id pub-id-type="doi">10.1002/bies.950150807</pub-id>
+            <pub-id pub-id-type="pmid">8135767</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b7-mmr-15-03-1079">
+          <label>7</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lotze</surname>
+                <given-names>MT</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tracey</surname>
+                <given-names>KJ</given-names>
+              </name>
+            </person-group>
+            <article-title>High-mobility group box 1 protein (HMGB1): Nuclear weapon in the immune arsenal</article-title>
+            <source>Nat Rev Immunol</source>
+            <volume>5</volume>
+            <fpage>331</fpage>
+            <lpage>342</lpage>
+            <year>2005</year>
+            <pub-id pub-id-type="doi">10.1038/nri1594</pub-id>
+            <pub-id pub-id-type="pmid">15803152</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b8-mmr-15-03-1079">
+          <label>8</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kim</surname>
+                <given-names>JM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Han</surname>
+                <given-names>HJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hur</surname>
+                <given-names>YH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Quan</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kwak</surname>
+                <given-names>SH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Choi</surname>
+                <given-names>JI</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bae</surname>
+                <given-names>HB</given-names>
+              </name>
+            </person-group>
+            <article-title>Stearoyl lysophosphatidylcholine prevents lipopolysaccharide-induced extracellular release of high mobility group box-1 through AMP-activated protein kinase activation</article-title>
+            <source>Int Immunopharmacol</source>
+            <volume>28</volume>
+            <fpage>540</fpage>
+            <lpage>545</lpage>
+            <year>2015</year>
+            <pub-id pub-id-type="doi">10.1016/j.intimp.2015.07.010</pub-id>
+            <pub-id pub-id-type="pmid">26218280</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b9-mmr-15-03-1079">
+          <label>9</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ghavami</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rashedi</surname>
+                <given-names>I</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dattilo</surname>
+                <given-names>BM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Eshraghi</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chazin</surname>
+                <given-names>WJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hashemi</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wesselborg</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kerkhoff</surname>
+                <given-names>C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Los</surname>
+                <given-names>M</given-names>
+              </name>
+            </person-group>
+            <article-title>S100A8/A9 at low concentration promotes tumor cell growth via RAGE ligation and MAP kinase-dependent pathway</article-title>
+            <source>J Leukoc Biol</source>
+            <volume>83</volume>
+            <fpage>1484</fpage>
+            <lpage>1492</lpage>
+            <year>2008</year>
+            <pub-id pub-id-type="doi">10.1189/jlb.0607397</pub-id>
+            <pub-id pub-id-type="pmid">18339893</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2737328</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b10-mmr-15-03-1079">
+          <label>10</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ogawa</surname>
+                <given-names>EN</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ishizaka</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tasaka</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Koh</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ueno</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Amaya</surname>
+                <given-names>F</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ebina</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yamada</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Funakoshi</surname>
+                <given-names>Y</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Soejima</surname>
+                <given-names>J</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Contribution of high-mobility group box-1 to the development of ventilator-induced lung injury</article-title>
+            <source>Am J Respir Crit Care Med</source>
+            <volume>174</volume>
+            <fpage>400</fpage>
+            <lpage>407</lpage>
+            <year>2006</year>
+            <pub-id pub-id-type="doi">10.1164/rccm.200605-699OC</pub-id>
+            <pub-id pub-id-type="pmid">16728713</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b11-mmr-15-03-1079">
+          <label>11</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>Y</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhen</surname>
+                <given-names>Y</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>X</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jiang</surname>
+                <given-names>Q</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Li</surname>
+                <given-names>X</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>Z</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dong</surname>
+                <given-names>L</given-names>
+              </name>
+            </person-group>
+            <article-title>Vitexin protects brain against ischemia/reperfusion injury via modulating mitogen-activated protein kinase and apoptosis signaling in mice</article-title>
+            <source>Phytomedicine</source>
+            <volume>22</volume>
+            <fpage>379</fpage>
+            <lpage>384</lpage>
+            <year>2015</year>
+            <pub-id pub-id-type="doi">10.1016/j.phymed.2015.01.009</pub-id>
+            <pub-id pub-id-type="pmid">25837275</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b12-mmr-15-03-1079">
+          <label>12</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Dong</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fan</surname>
+                <given-names>Y</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shao</surname>
+                <given-names>X</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>Z</given-names>
+              </name>
+            </person-group>
+            <article-title>Vitexin protects against myocardial ischemia/reperfusion injury in Langendorff-perfused rat hearts by attenuating inflammatory response and apoptosis</article-title>
+            <source>Food Chem Toxicol</source>
+            <volume>49</volume>
+            <fpage>3211</fpage>
+            <lpage>3213</lpage>
+            <year>2011</year>
+            <pub-id pub-id-type="doi">10.1016/j.fct.2011.09.040</pub-id>
+            <pub-id pub-id-type="pmid">22001368</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b13-mmr-15-03-1079">
+          <label>13</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Borghi</surname>
+                <given-names>SM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Carvalho</surname>
+                <given-names>TT</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Staurengo-Ferrari</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hohmann</surname>
+                <given-names>MS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pinge-Filho</surname>
+                <given-names>P</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Casagrande</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Verri</surname>
+                <given-names>WA</given-names>
+                <suffix>Jr</suffix>
+              </name>
+            </person-group>
+            <article-title>Vitexin inhibits inflammatory pain in mice by targeting TRPV1, oxidative stress, and cytokines</article-title>
+            <source>J Nat Prod</source>
+            <volume>76</volume>
+            <fpage>1141</fpage>
+            <lpage>1149</lpage>
+            <year>2013</year>
+            <pub-id pub-id-type="doi">10.1021/np400222v</pub-id>
+            <pub-id pub-id-type="pmid">23742617</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b14-mmr-15-03-1079">
+          <label>14</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Musumeci</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Roviello</surname>
+                <given-names>GN</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Montesarchio</surname>
+                <given-names>D</given-names>
+              </name>
+            </person-group>
+            <article-title>An overview on HMGB1 inhibitors as potential therapeutic gents in HMGB1-related pathologies</article-title>
+            <source>Pharmacol Ther</source>
+            <volume>141</volume>
+            <fpage>347</fpage>
+            <lpage>357</lpage>
+            <year>2014</year>
+            <pub-id pub-id-type="doi">10.1016/j.pharmthera.2013.11.001</pub-id>
+            <pub-id pub-id-type="pmid">24220159</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b15-mmr-15-03-1079">
+          <label>15</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Abdulahad</surname>
+                <given-names>DA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Westra</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Limburg</surname>
+                <given-names>PC</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kallenberg</surname>
+                <given-names>CG</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bijl</surname>
+                <given-names>M</given-names>
+              </name>
+            </person-group>
+            <article-title>HMGB1 in systemic lupus Erythematosus: Its role in cutaneous lesions development</article-title>
+            <source>Autoimmun Rev</source>
+            <volume>9</volume>
+            <fpage>661</fpage>
+            <lpage>665</lpage>
+            <year>2010</year>
+            <pub-id pub-id-type="doi">10.1016/j.autrev.2010.05.015</pub-id>
+            <pub-id pub-id-type="pmid">20546955</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b16-mmr-15-03-1079">
+          <label>16</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lin</surname>
+                <given-names>Q</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fang</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fang</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Li</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhou</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Su</surname>
+                <given-names>SB</given-names>
+              </name>
+            </person-group>
+            <article-title>Production of recombinant human HMGB1 and anti-HMGB1 rabbit serum</article-title>
+            <source>Int Immunopharmacol</source>
+            <volume>11</volume>
+            <fpage>646</fpage>
+            <lpage>651</lpage>
+            <year>2011</year>
+            <pub-id pub-id-type="doi">10.1016/j.intimp.2011.01.005</pub-id>
+            <pub-id pub-id-type="pmid">21255697</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b17-mmr-15-03-1079">
+          <label>17</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Jo</surname>
+                <given-names>EH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hwang</surname>
+                <given-names>YH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>DY</given-names>
+              </name>
+            </person-group>
+            <article-title>Encapsulation of pancreatic islet with HMGB1 fragment for attenuating inflammation</article-title>
+            <source>Biomater Res</source>
+            <volume>19</volume>
+            <fpage>21</fpage>
+            <year>2015</year>
+            <pub-id pub-id-type="doi">10.1186/s40824-015-0042-2</pub-id>
+            <pub-id pub-id-type="pmid">26504589</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4620643</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b18-mmr-15-03-1079">
+          <label>18</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Andersson</surname>
+                <given-names>U</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Palmblad</surname>
+                <given-names>K</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Aveberger</surname>
+                <given-names>AC</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bloom</surname>
+                <given-names>O</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Erlandsson-Harris</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Janson</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kokkola</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yang</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tracey</surname>
+                <given-names>KJ</given-names>
+              </name>
+            </person-group>
+            <article-title>High mobility group 1 protein (HMG-1) stimulates proinflammatory cytokine synthesis in human monocytes</article-title>
+            <source>J Exp Med</source>
+            <volume>192</volume>
+            <fpage>565</fpage>
+            <lpage>570</lpage>
+            <year>2000</year>
+            <pub-id pub-id-type="doi">10.1084/jem.192.4.565</pub-id>
+            <pub-id pub-id-type="pmid">10952726</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2193240</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b19-mmr-15-03-1079">
+          <label>19</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bauernfeind</surname>
+                <given-names>FG</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Horvath</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Stutz</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Alnemri</surname>
+                <given-names>ES</given-names>
+              </name>
+              <name name-style="western">
+                <surname>MacDonald</surname>
+                <given-names>K</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Speert</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fernandes-Alnemri</surname>
+                <given-names>T</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Monks</surname>
+                <given-names>BG</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fitzgerald</surname>
+                <given-names>KA</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Cutting edge: NF-kappaB activating pattern recognition and cytokine receptors license NLRP3 inflammasome activation by regulating NLRP3 expression</article-title>
+            <source>J Immunol</source>
+            <volume>183</volume>
+            <fpage>787</fpage>
+            <lpage>791</lpage>
+            <year>2009</year>
+            <pub-id pub-id-type="doi">10.4049/jimmunol.0901363</pub-id>
+            <pub-id pub-id-type="pmid">19570822</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2824855</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b20-mmr-15-03-1079">
+          <label>20</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Li</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Song</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gao</surname>
+                <given-names>X</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chang</surname>
+                <given-names>W</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Qin</surname>
+                <given-names>X</given-names>
+              </name>
+            </person-group>
+            <article-title>Toll-like receptor 4 on islet β cells senses expression changes in high-mobility group box 1 and contributes to the initiation of type 1 diabetes</article-title>
+            <source>Exp Mol Med</source>
+            <volume>44</volume>
+            <fpage>260</fpage>
+            <lpage>267</lpage>
+            <year>2012</year>
+            <pub-id pub-id-type="doi">10.3858/emm.2012.44.4.021</pub-id>
+            <pub-id pub-id-type="pmid">22217446</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3349908</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b21-mmr-15-03-1079">
+          <label>21</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Shu</surname>
+                <given-names>CJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Benoist</surname>
+                <given-names>C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mathis</surname>
+                <given-names>D</given-names>
+              </name>
+            </person-group>
+            <article-title>The immune system's involvement in obesity-driven Type 2 diabetes</article-title>
+            <source>Semin Immunol</source>
+            <volume>24</volume>
+            <fpage>436</fpage>
+            <lpage>442</lpage>
+            <year>2013</year>
+            <pub-id pub-id-type="doi">10.1016/j.smim.2012.12.001</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3582811</pub-id>
+            <pub-id pub-id-type="pmid">23333525</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b22-mmr-15-03-1079">
+          <label>22</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Akash</surname>
+                <given-names>MS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rehman</surname>
+                <given-names>K</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>S</given-names>
+              </name>
+            </person-group>
+            <article-title>Role of inflammatory mechanisms in pathogenesis of type 2 diabetes mellitus</article-title>
+            <source>J Cell Biochem</source>
+            <volume>114</volume>
+            <fpage>525</fpage>
+            <lpage>531</lpage>
+            <year>2013</year>
+            <pub-id pub-id-type="doi">10.1002/jcb.24402</pub-id>
+            <pub-id pub-id-type="pmid">22991242</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b23-mmr-15-03-1079">
+          <label>23</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Cai</surname>
+                <given-names>K</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Qi</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hou</surname>
+                <given-names>X</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>O</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Deng</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Qian</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liu</surname>
+                <given-names>X</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Le</surname>
+                <given-names>Y</given-names>
+              </name>
+            </person-group>
+            <article-title>MCP-1 upregulates amylin expression in murine pancreatic β cells through ERK/JNK-AP1 and NF-kB related signaling pathways independent of CCR2</article-title>
+            <source>PLoS One</source>
+            <volume>6</volume>
+            <fpage>e19559</fpage>
+            <year>2011</year>
+            <pub-id pub-id-type="doi">10.1371/journal.pone.0019559</pub-id>
+            <pub-id pub-id-type="pmid">21589925</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3092759</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b24-mmr-15-03-1079">
+          <label>24</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Cui</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Qin</surname>
+                <given-names>X</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>Y</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gong</surname>
+                <given-names>Z</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ge</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zang</surname>
+                <given-names>YQ</given-names>
+              </name>
+            </person-group>
+            <article-title>Berberine differentially modulates the activities of ERK, p38 MAPK, and JNK to suppress Th17 and Th1 T cell differentiation in type 1 diabetic mice</article-title>
+            <source>J Biol Chem</source>
+            <volume>284</volume>
+            <fpage>28420</fpage>
+            <lpage>28429</lpage>
+            <year>2009</year>
+            <pub-id pub-id-type="doi">10.1074/jbc.M109.012674</pub-id>
+            <pub-id pub-id-type="pmid">19661066</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2788891</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b25-mmr-15-03-1079">
+          <label>25</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Aggeli</surname>
+                <given-names>IK</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Beis</surname>
+                <given-names>I</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gaitanaki</surname>
+                <given-names>C</given-names>
+              </name>
+            </person-group>
+            <article-title>Oxidative stress and calpain inhibition induce alpha B-crystallin phosphorylation via p38-MAPK and calcium signalling pathways in H9c2 cells</article-title>
+            <source>Cell Signal</source>
+            <volume>20</volume>
+            <fpage>1292</fpage>
+            <lpage>1302</lpage>
+            <year>2008</year>
+            <pub-id pub-id-type="doi">10.1016/j.cellsig.2008.02.019</pub-id>
+            <pub-id pub-id-type="pmid">18420382</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+    <floats-group>
+      <fig id="f1-mmr-15-03-1079" orientation="portrait" position="float">
+        <label>Figure 1.</label>
+        <caption>
+          <p>Vitexin inhibits LPS-induced release of HMGB1 in islet tissue. The effect of vitexin on LPS-induced release of cytokines in inflammatory rats was assessed. (A) Serum levels of HMGB1 and TNF-α were examined using an ELISA following LPS-induction. The data are presented as the mean ± standard deviation (*P&lt;0.05, ***P&lt;0.001 compared with LPS group). (B) The expression and distribution of HMGB1 was assessed in the islet tissue (n=6/group), magnification, ×200. HMGB1, high mobility group box 1; LPS, lipopolysaccharide; TNF, tumor necrosis factor.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="MMR-15-03-1079-g00.jpg"/>
+      </fig>
+      <fig id="f2-mmr-15-03-1079" orientation="portrait" position="float">
+        <label>Figure 2.</label>
+        <caption>
+          <p>Protective effects of vitexin on LPS-induced islet cell injury and apoptosis. Islet tissue staining was performed using hematoxylin and eosin. (A) Photomicrographs showed the islet cell injury in the control, LPS, LPS + vitexin (5 mg/kg) and LPS + vitexin (10 mg/kg) groups, magnification, ×400. (B) The effect of vitexin on LPS-induced islet cell apoptosis and the distribution of HMGB1 was determined. HMGB1 was stained in green and apoptosis was stained in red, magnification, ×200. The rate of apoptosis in islet tissue was quantified. The data are presented as the mean ± standard deviation (*P&lt;0.05, ***P&lt;0.001 compared with the LPS group). HMGB1, high mobility group box 1; LPS, lipopolysaccharide.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="MMR-15-03-1079-g01.jpg"/>
+      </fig>
+      <fig id="f3-mmr-15-03-1079" orientation="portrait" position="float">
+        <label>Figure 3.</label>
+        <caption>
+          <p>Vitexin suppresses LPS-induced release of HMGB1 and caspase-3 activation in INS-1 cells. The effect of vitexin on INS-1 cell survival rate was assessed. The INS-1 cells were treated with vitexin at a concentration of 20, 30, 40, 50, 100, 200 and 300 µM in the presence of 5 mg/l LPS. (A) An MMT assay was performed in INS-1 cells. The data are presented as the mean ± standard deviation (*P&lt;0.05, ***P&lt;0.001 compared with the LPS group). (B) The increase of HMGB1 levels stimulated by LPS was reversed by vitexin pretreatment (50 µmol/l). **P&lt;0.01, ***P&lt;0.001 compared with the LPS group; <sup>##</sup>P&lt;0.01 compared with vitexin. (C) Immunocytochemistry was used to observe the distribution of HMGB1 in INS-1 cells, magnification, ×400. (D) Western blotting was used to observe the influence of vitexin on the protein expression levels of HMGB1, Bcl2 and cleaved caspase-3 in LPS-treated INS-1 cells. HMGB1, high mobility group box 1; LPS, lipopolysaccharide; Bcl2, B-cell lymphoma 2.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="MMR-15-03-1079-g02.jpg"/>
+      </fig>
+      <fig id="f4-mmr-15-03-1079" orientation="portrait" position="float">
+        <label>Figure 4.</label>
+        <caption>
+          <p>Effect of LPS on the P38 MAPK pathway in INS-1 cells. The effects of LPS on the P38 MAPK signaling pathway in INS-1 cell was assessed by reverse transcription-quantitative polymerase chain reaction and western blotting. (A) LPS had little influence on the mRNA expression of P38 (Mapk14). (B) The cells were stimulated with LPS (5 µg/ml) for 24 h. The protein expression levels of HMGB1, P38 and p-P38 were analyzed by western blotting. HMGB1, high mobility group box 1; LPS, lipopolysaccharide; p-, phosphorylated.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="MMR-15-03-1079-g03.jpg"/>
+      </fig>
+      <fig id="f5-mmr-15-03-1079" orientation="portrait" position="float">
+        <label>Figure 5.</label>
+        <caption>
+          <p>Vitexin protection of islet cell injury induced by LPS is dependent on the inhibition of HMGB1 release. (A) The effect of vitexin on LPS-induced islet cell apoptosis and the distribution of HMGB1 was assessed by immunostaining. HMGB1 was stained in green and apoptosis was highlighted in red. (B) The rate of apoptosis in islet tissue was assessed. The data are presented as the mean ± standard deviation (**P&lt;0.01, ***P&lt;0.001 compared with LPS, <sup>##</sup>P&lt;0.01, <sup>###</sup>P&lt;0.001 compared with vitexin). (C) The rats were treated with LPS, vitexin or SB203580, and the levels of serum HMGB1 were measured by ELISA. The data are presented as the mean ± standard deviation (***P&lt;0.001 compared with LPS, <sup>##</sup>P&lt;0.01, <sup>###</sup>P&lt;0.001 compared with vitexin). (D) INS-1 cells were treated with LPS, vitexin or SB203580, and the levels of HMGB1 in the cell supernatants were measured by ELISA, The data are presented as the mean ± standard deviation (***P&lt;0.001 compared with LPS, <sup>#</sup>P&lt;0.05, <sup>##</sup>P&lt;0.01, <sup>###</sup>P&lt;0.001 compared with vitexin). (E) Immunocytochemistry was used to demonstrate HMGB1 translocation from the nucleus to the cytoplasmic compartment magnification, ×400) Dyeing intensity of HMGB1 in the nucleus faded. (F) INS-1 cells were treated with LPS, vitexin or SB203580, and the protein expression levels of the indicated proteins were measured by western blot analysis. β-actin was used as a loading control. HMGB1, high mobility group box 1; LPS, lipopolysaccharide; p-, phosphorylated; Bcl2, B-cell lymphoma 2.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="MMR-15-03-1079-g04.jpg"/>
+      </fig>
+      <fig id="f6-mmr-15-03-1079" orientation="portrait" position="float">
+        <label>Figure 6.</label>
+        <caption>
+          <p>Summary of vitexin effects. A schematic showing the protective effect of vitexin on LPS-induced cell damage and apoptosis, as revealed in the present study. Vitexin alleviates LPS-induced islet injury and apoptosis via reducing the release of HMGB1. HMGB1, high mobility group box 1; LPS, lipopolysaccharide; Bcl2, B-cell lymphoma 2.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="MMR-15-03-1079-g05.jpg"/>
+      </fig>
+    </floats-group>
+  </article>
+</pmc-articleset>

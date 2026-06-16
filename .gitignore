@@ -8,3 +8,6 @@ inst/doc
 
 # Local-only research data (bundled OSF data and paper materials, not distributed)
 paper/
+
+# Benchmark download and prediction cache
+data-raw/benchmark/.cache/

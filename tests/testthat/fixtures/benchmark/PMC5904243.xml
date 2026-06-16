@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="research-article" xml:lang="en" dtd-version="1.4">
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Can J Public Health</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Can J Public Health</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">3761</journal-id>
+        <journal-id journal-id-type="pmc-domain">cjph</journal-id>
+        <journal-title-group>
+          <journal-title>Canadian Journal of Public Health = Revue Canadienne de Santé Publique</journal-title>
+        </journal-title-group>
+        <issn pub-type="ppub">0008-4263</issn>
+        <issn pub-type="epub">1920-7476</issn>
+        <publisher>
+          <publisher-name>Springer</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC5904243</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC5904243.2</article-id>
+        <article-id pub-id-type="pmcaid">5904243</article-id>
+        <article-id pub-id-type="pmcaiid">6964405</article-id>
+        <article-id pub-id-type="pmid">29981069</article-id>
+        <article-id pub-id-type="doi">10.17269/s41997-018-0034-9</article-id>
+        <article-id pub-id-type="publisher-id">34</article-id>
+        <article-version article-version-type="pmc-version">2</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Population Health Intervention Research</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Primary care intervention to address cardiovascular disease medication health literacy among Indigenous peoples: Canadian results of a pre-post-design study</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author" corresp="yes">
+            <name name-style="western">
+              <surname>Smylie</surname>
+              <given-names initials="J">Janet</given-names>
+            </name>
+            <address>
+              <phone>416-864-6060</phone>
+              <email>janet.smylie@utoronto.ca</email>
+            </address>
+            <xref ref-type="aff" rid="Aff1">1</xref>
+            <xref ref-type="aff" rid="Aff2">2</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>O’Brien</surname>
+              <given-names initials="K">Kristen</given-names>
+            </name>
+            <xref ref-type="aff" rid="Aff1">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Xavier</surname>
+              <given-names initials="CG">Chloé G.</given-names>
+            </name>
+            <xref ref-type="aff" rid="Aff1">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Anderson</surname>
+              <given-names initials="M">Marcia</given-names>
+            </name>
+            <xref ref-type="aff" rid="Aff3">3</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>McKnight</surname>
+              <given-names initials="C">Constance</given-names>
+            </name>
+            <xref ref-type="aff" rid="Aff4">4</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Downey</surname>
+              <given-names initials="B">Bernice</given-names>
+            </name>
+            <xref ref-type="aff" rid="Aff5">5</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Kelaher</surname>
+              <given-names initials="M">Margaret</given-names>
+            </name>
+            <xref ref-type="aff" rid="Aff6">6</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <collab>De dwa da dehs nye&gt;s Aboriginal Health Centre</collab>
+          </contrib>
+          <aff id="Aff1"><label>1</label><institution-wrap><institution-id institution-id-type="GRID">grid.415502.7</institution-id><institution>Well Living House, Centre for Urban Health Solutions (CUHS) in the Li Ka Shing Knowledge Institute, </institution><institution>St. Michael’s Hospital, </institution></institution-wrap>30 Bond Street, Toronto, ON Canada </aff>
+          <aff id="Aff2"><label>2</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2157 2938</institution-id><institution-id institution-id-type="GRID">grid.17063.33</institution-id><institution>Dalla Lana School of Public Health, </institution><institution>University of Toronto, </institution></institution-wrap>Toronto, ON Canada </aff>
+          <aff id="Aff3"><label>3</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0004 1936 9609</institution-id><institution-id institution-id-type="GRID">grid.21613.37</institution-id><institution>Ongomiizwin Indigenous Institute of Health and Healing, Rady Faculty of Health Sciences, </institution><institution>University of Manitoba, </institution></institution-wrap>Winnipeg, MB Canada </aff>
+          <aff id="Aff4"><label>4</label>De dwa da dehs nye&gt;s Aboriginal Health Centre, Hamilton, ON Canada </aff>
+          <aff id="Aff5"><label>5</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0004 1936 8227</institution-id><institution-id institution-id-type="GRID">grid.25073.33</institution-id><institution>Faculty of Health Sciences, </institution><institution>McMaster University, </institution></institution-wrap>Hamilton, ON Canada </aff>
+          <aff id="Aff6"><label>6</label><institution-wrap><institution-id institution-id-type="ISNI">0000 0001 2179 088X</institution-id><institution-id institution-id-type="GRID">grid.1008.9</institution-id><institution>Centre for Health Policy, Melbourne School of Population and Global Health, </institution><institution>University of Melbourne, </institution></institution-wrap>Melbourne, Australia </aff>
+        </contrib-group>
+        <pub-date pub-type="epub">
+          <day>9</day>
+          <month>3</month>
+          <year>2018</year>
+        </pub-date>
+        <pub-date pub-type="collection">
+          <month>2</month>
+          <year>2018</year>
+        </pub-date>
+        <volume>109</volume>
+        <issue>1</issue>
+        <issue-id pub-id-type="pmc-issue-id">350066</issue-id>
+        <fpage>117</fpage>
+        <lpage>127</lpage>
+        <history>
+          <date date-type="received">
+            <day>3</day>
+            <month>4</month>
+            <year>2017</year>
+          </date>
+          <date date-type="accepted">
+            <day>18</day>
+            <month>11</month>
+            <year>2017</year>
+          </date>
+        </history>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>09</day>
+              <month>03</month>
+              <year>2018</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>24</day>
+              <month>04</month>
+              <year>2018</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2026-02-16 05:25:13.823">
+              <day>16</day>
+              <month>02</month>
+              <year>2026</year>
+            </date>
+          </event>
+          <event event-type="pmc-version" specific-use="live">
+            <article-id pub-id-type="pmcaiid">5904243</article-id>
+            <article-id pub-id-type="doi">10.17269/s41997-018-0034-9</article-id>
+            <article-version>1</article-version>
+            <pub-date>
+              <day>09</day>
+              <month>03</month>
+              <year>2018</year>
+            </pub-date>
+          </event>
+          <event event-type="pmc-version" specific-use="live">
+            <article-id pub-id-type="pmcaiid">6964405</article-id>
+            <article-id pub-id-type="doi">10.17269/s41997-018-0034-9</article-id>
+            <article-version>2</article-version>
+            <pub-date>
+              <day>09</day>
+              <month>03</month>
+              <year>2018</year>
+            </pub-date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>© The Author(s) 2018</copyright-statement>
+          <license license-type="OpenAccess">
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+            <license-p><bold>Open Access</bold> This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="41997_2018_Article_34.pdf"/>
+        <abstract id="Abs1">
+          <sec>
+            <title>Context</title>
+            <p id="Par1">Cardiovascular diseases (CVD) are a leading cause of illness and death for Indigenous people in Canada and globally. Appropriate medication can significantly improve health outcomes for persons diagnosed with CVD or for those at high risk of CVD. Poor health literacy has been identified as a major barrier that interferes with client understanding and taking of CVD medication. Strengthening health literacy within health services is particularly relevant in Indigenous contexts, where there are systemic barriers to accessing literacy skills.</p>
+          </sec>
+          <sec>
+            <title>Objective</title>
+            <p id="Par2">The aim of this study is to test the effect of a customized, structured health literacy educational program addressing CVD medications.</p>
+          </sec>
+          <sec>
+            <title>Methods</title>
+            <p id="Par3">Pre-post-design involves health providers and Indigenous clients at the De dwa da dehs nye&gt;s Aboriginal Health Centre (DAHC) in Ontario, Canada. Forty-seven Indigenous clients with or at high risk of CVD received three educational sessions delivered by a trained Indigenous nurse over a 4- to 7-week period. A tablet application, pill card and booklet supported the sessions. Primary outcomes were knowledge of CVD medications and health literacy practices, which were assessed before and after the programe.</p>
+          </sec>
+          <sec>
+            <title>Results</title>
+            <p id="Par4">Following the program compared to before, mean medication knowledge scores were 3.3 to 6.1 times higher for the four included CVD medications. Participants were also more likely to refer to the customized pill card and booklet for information and answer questions from others regarding CVD.</p>
+          </sec>
+          <sec>
+            <title>Conclusions</title>
+            <p id="Par5">This customized education program was highly effective in increasing medication knowledge and health literacy practice among Indigenous people with CVD or at risk of CVD attending the program at an urban Indigenous health centre.</p>
+          </sec>
+        </abstract>
+        <trans-abstract xml:lang="fr" id="Abs2">
+          <title>Résumé</title>
+          <sec>
+            <title>Contexte</title>
+            <p id="Par6">Les maladies cardiovasculaires (MCV) sont l’une des principales causes de morbidité et de mortalité chez les Autochtones au Canada et ailleurs dans le monde. Des médicaments appropriés peuvent sensiblement améliorer les résultats sanitaires des personnes ayant un diagnostic de MCV ou de celles qui présentent un risque élevé de MCV. Une maîtrise déficiente de l’information en matière de santé serait un obstacle majeur à la compréhension des usagers et à la prise de médicaments pour traiter les MCV. Le renforcement de la maîtrise de l’information en santé au sein des services de santé est particulièrement pertinent en milieu autochtone, où il existe des barrières systémiques à l’acquisition de capacités de lecture et d’écriture.</p>
+          </sec>
+          <sec>
+            <title>Objectif</title>
+            <p id="Par7">Tester l’effet d’un programme personnalisé et structuré de maîtrise de l’information en santé axé sur les médicaments pour traiter les MCV.</p>
+          </sec>
+          <sec>
+            <title>Méthode</title>
+            <p id="Par8">Notre plan d’étude avant/après a impliqué des dispensateurs de soins de santé et des usagers autochtones du centre de santé autochtone De dwa da dehs nye&gt;s en Ontario, au Canada. Quarante-sept usagers autochtones atteints de MCV ou à risque élevé de contracter des MCV ont assisté sur une période de quatre à sept semaines à trois séances éducatives données par une infirmière autochtone formée. Une application pour tablette, un distributeur de pilules et un livret venaient avec les séances. Les principaux résultats étudiés étaient la connaissance des médicaments pour traiter les MCV et la maîtrise de l’information en santé; ils ont été évalués avant et après le programme.</p>
+          </sec>
+          <sec>
+            <title>Résultats</title>
+            <p id="Par9">Après le programme, les notes moyennes obtenues pour la connaissance des médicaments étaient de 3,3 à 6,1 fois plus élevées pour les quatre médicaments inclus dans l’étude. Les participants étaient aussi plus susceptibles de consulter leur distributeur de pilules personnalisé et leur livret pour y trouver de l’information, et de répondre aux questions d’autres personnes au sujet des MCV.</p>
+          </sec>
+          <sec>
+            <title>Conclusions</title>
+            <p id="Par10">Ce programme éducatif personnalisé mené dans un centre de santé autochtone en milieu urbain a très efficacement accru la connaissance des médicaments et la maîtrise de l’information en santé chez les Autochtones atteints de MCV ou à risque de contracter des MCV qui l’ont suivi.</p>
+          </sec>
+        </trans-abstract>
+        <kwd-group xml:lang="en">
+          <title>Keywords</title>
+          <kwd>Indigenous</kwd>
+          <kwd>Cardiovascular disease</kwd>
+          <kwd>Health literacy</kwd>
+          <kwd>Indians, North American</kwd>
+        </kwd-group>
+        <kwd-group xml:lang="fr">
+          <title>Mots-clés</title>
+          <kwd>Autochtone</kwd>
+          <kwd>maladies cardiovasculaires</kwd>
+          <kwd>compétence informationnelle en santé</kwd>
+          <kwd>Indiens d’Amérique Nord</kwd>
+        </kwd-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>issue-copyright-statement</meta-name>
+            <meta-value>© The Canadian Public Health Association 2018</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec id="Sec1">
+        <title>Introduction</title>
+        <p id="Par12">Deaths and hospitalizations linked to cardiovascular diseases (CVD) such as stroke and heart disease are second only to cancer as a cause of death in Canada (Statistics Canada <xref ref-type="bibr" rid="CR24">2011</xref>). As a result of improvements in the treatment of risk factors such as elevated cholesterol and blood pressure and better medical and surgical treatments, rates have recently been declining for the general Canadian population (Smith and The <xref ref-type="bibr" rid="CR19">2009</xref>; Wijeysundera et al. <xref ref-type="bibr" rid="CR32">2010</xref>; Statistics Canada <xref ref-type="bibr" rid="CR26">n.d.-a</xref>). In contrast, Indigenous people in Canada (First Nations, Métis and Inuit) experience a disproportionate burden of CVD (Reading <xref ref-type="bibr" rid="CR17">2015</xref>; Atzema et al. <xref ref-type="bibr" rid="CR1">2015</xref>) and do not appear to be experiencing the same CVD rate declines. While Indigenous health surveillance systems in Canada are patchy (Smylie and Firestone <xref ref-type="bibr" rid="CR20">2015</xref>), the data we do have are convincing. For example, for First Nations populations, all-cause circulatory disease mortality rates actually increased for First Nations women between the 1980s and the 2000s. For First Nations men during the same time period, mortality rate decreases were much smaller than for Canadian men (Young and Cardiovascular <xref ref-type="bibr" rid="CR34">2012</xref>). As a result, First Nations mortality rates from circulatory disease are now higher than those of non-First Nations comparison groups (Young and Cardiovascular <xref ref-type="bibr" rid="CR34">2012</xref>; Health Canada <xref ref-type="bibr" rid="CR10">2014</xref>; Tjepkema et al. <xref ref-type="bibr" rid="CR28">2012</xref>). Multiple studies have also documented higher population-based prevalence rates of heart disease and linked risk factors, including diabetes, hypertension, obesity, and commercial tobacco use, for Indigenous compared to non-Indigenous populations in Canada in both urban and rural/remote regions (Young and Cardiovascular <xref ref-type="bibr" rid="CR34">2012</xref>; First Nations Information Governance Centre (FNIGC) <xref ref-type="bibr" rid="CR9">2012</xref>; Smylie et al. <xref ref-type="bibr" rid="CR22">2011</xref>; Firestone et al. <xref ref-type="bibr" rid="CR8">2014</xref>; Chow et al. <xref ref-type="bibr" rid="CR5">2005</xref>).</p>
+        <p id="Par13">These striking Indigenous/non-Indigenous CVD inequities are regrettably predictable given the known disparities in the determinants of CVD health, including healthy diet, regular exercise, commercial tobacco smoking cessation, treatment of medical risk factors, and appropriate medical and surgical management post-diagnosis. The unequal burden of poverty and food insecurity experienced by Indigenous peoples in Canada has been well documented. The roots of these roots can be found in historic and current governmental policies that disrupt Indigenous societies, economies, and food supplies, including the illegal appropriation of and resource extraction from Indigenous lands, forced community relocations, residential schools and the Sixties Scoop (Truth and Reconciliation Commission of Canada <xref ref-type="bibr" rid="CR30">2015</xref>). Smoking rates for Indigenous people in Canada are approximately twice the rate of the non-Indigenous population (Statistics Canada <xref ref-type="bibr" rid="CR27">n.d.-b</xref>), and the significant decreases in tobacco use among the general Canadian population have not been shared in Indigenous communities. Indigenous peoples experience inequities in timely access to life-saving acute treatments for CVD globally and domestically (Bresee et al. <xref ref-type="bibr" rid="CR3">2014</xref>; Canadian Institute of Health Information <xref ref-type="bibr" rid="CR4">2013</xref>; Lopez et al. <xref ref-type="bibr" rid="CR14">2014</xref>; Williams <xref ref-type="bibr" rid="CR33">2007</xref>). For example, Bresee and colleagues (Bresee et al. <xref ref-type="bibr" rid="CR3">2014</xref>) found that First Nations persons across urban, rural and remote geographies were less likely to receive coronary angiography within 24 h of a myocardial infarction (OR 0.73) and more likely to die (OR 1.30) compared to the non-First Nations population.</p>
+        <p id="Par14">Reduction of total cholesterol and systolic blood pressure through appropriate use of CVD medications is known to reduce CVD mortality (Wijeysundera et al. <xref ref-type="bibr" rid="CR32">2010</xref>; Baigent et al. <xref ref-type="bibr" rid="CR2">2005</xref>; Wang et al. <xref ref-type="bibr" rid="CR31">2005</xref>). Policy and practice responses to these findings have included significant investments in ensuring clinicians are optimizing pharmaceutical and lifestyle management of these conditions using clinical practice guidelines. The premise appears to be that if health care providers are prescribing the correct medications, outcomes will improve. There is a gap in research specifically examining the degree to which health systems and health care providers are facilitating equitable patient access to the information they need to be able to take their CVD medications correctly.</p>
+        <p id="Par15">The Canadian Expert Panel on Health has defined health literacy as “the ability to access, understand, evaluate and communicate information as a way to promote, maintain and improve health in a variety of settings across the life-course (p.11)” (Rootman and Gordon-El-Bihbety <xref ref-type="bibr" rid="CR18">2008</xref>). Recognized as a critical element for addressing and designing effective health services, health literacy is also considered a social determinant of health and a driver of ethnic health status disparities. For example, the Institute of Medicine (Institute of Medicine (US) Committee on Health et al. <xref ref-type="bibr" rid="CR11">2004</xref>) estimates that health literacy accounts for 25–30% of ethnic differences in health outcomes. For Indigenous peoples in Canada, health literacy opportunities and challenges are interwoven with colonial policies such as the historic outlawing of our languages and emerging approaches in Indigenous education (Smylie et al. <xref ref-type="bibr" rid="CR21">2006</xref>).</p>
+        <p id="Par16">As part of our pre-trial investigations, our research team identified that among a sample of Indigenous patients with CVD from our proposed study site, the majority had International Assessment of Literacy Skills (IALS) scores that were lower than Canadian averages and would make correct use of CVD medications difficult (Downey et al. <xref ref-type="bibr" rid="CR7">2013</xref>). This is unsurprising given the known educational inequities experienced by Indigenous people in Canada (Neeganagwedgin <xref ref-type="bibr" rid="CR16">2011</xref>). We also investigated health care provider (HCP) understandings of health literacy in Canada and internationally (Downey et al. <xref ref-type="bibr" rid="CR7">2013</xref>; Lambert et al. <xref ref-type="bibr" rid="CR12">2014</xref>). We found that baseline HCP conceptualizations of health literacy were primarily focused on patient capacities, with some recognition of deficits in system-level supports, including limited time and the need for training and accessible information (Downey et al. <xref ref-type="bibr" rid="CR7">2013</xref>). Overall, there was a clear opportunity to develop and implement a system-level health service intervention to support HCPs and their Indigenous patients to enhance their health literacy skills and practices and also to reduce the commonly unrecognized demands placed on Indigenous patients (Lambert et al. <xref ref-type="bibr" rid="CR12">2014</xref>).</p>
+        <p id="Par17">This paper reports on the Canadian results of a multi-site international study involving Australia, Canada and New Zealand. The primary objective of this Canadian study was to work in partnership with an Indigenous health service to test the effect of a customized, structured health literacy educational program addressing CVD medications.</p>
+      </sec>
+      <sec id="Sec2">
+        <title>Methods</title>
+        <sec id="Sec3">
+          <title>Setting and participants</title>
+          <p id="Par18">This study was conducted in partnership with the De dwa da dehs nye&gt;s Health Access Centre (DHAC), a comprehensive Indigenous health service which provides primary health care, traditional healing and health promotion programs to Indigenous peoples living in the cities of Hamilton and Brantford, ON, Canada. These two cities are located approximately 40 km apart in southern Ontario on the traditional territories of Haudenosaunee (Iroquoian) and Anishnawbe (Ojibway) peoples. There are two nearby First Nations, Six Nations of the Grand River and Mississaugas of the New Credit. According to the National Household Survey, in 2011, the Indigenous population in the city of Hamilton by ancestry was 15,840, comprising 3.1% of the total population (509,635), and the Indigenous population in the city of Brantford by ancestry was 5440, comprising 5.9% of the total population (91,975) (Statistics Canada <xref ref-type="bibr" rid="CR25">2013</xref>). Our research group has recently demonstrated elsewhere that 2011 NHS estimates of Indigenous peoples in southern Ontario cities underestimate the actual population size by a factor of 2–4, so these figures need to be interpreted accordingly.</p>
+          <p id="Par19">Indigenous clients of the health service were eligible for the study if they could provide informed consent, were aged 20 years or older, had a history of at least one CVD event (angina pectoris, myocardial infarction, transient ischaemic attack or stroke) or had ≥ 15% risk of CVD over the next 5 years, and were prescribed at least two of the following medication classes: statin, aspirin, ACE inhibitors or beta blockers. Potential participants were identified through a customized search of the clinic electronic medical record system for target study medications and referral from primary health care providers. Clients indicating an interest in volunteer study participation to health service staff not directly involved in the trial were contacted by the study nurse. Family members of participants were invited to sit in on study sessions.</p>
+        </sec>
+        <sec id="Sec4">
+          <title>Design</title>
+          <p id="Par20">The intervention design is a single arm pre-post trial with multiple measurement points. Factors precluding the use of a randomized, controlled design have been detailed elsewhere (protocol paper) and include the relatively small eligible study population and a high likelihood of contamination between intervention and control groups who are all clients of the DHAC and may also be otherwise networked through the local Indigenous community.</p>
+          <p id="Par21">In keeping with benchmark ethical requirements and evidence-based practice in Indigenous health research (Smylie et al. <xref ref-type="bibr" rid="CR23">2012</xref>; Leadbeater et al. <xref ref-type="bibr" rid="CR13">2011</xref>), the DHAC was comprehensively involved in the proposal development, research study design and implementation, and results analysis, documentation and dissemination. We applied an Indigenous community participatory action research partnership method that had been successfully demonstrated in a previous community-partnered, community-implemented health needs assessment project (Smylie et al. <xref ref-type="bibr" rid="CR22">2011</xref>; Firestone et al. <xref ref-type="bibr" rid="CR8">2014</xref>). The research team was led by Indigenous people, including the executive director of DHAC who was a project co-investigator and the study nurse who was a DHAC employee. There was a local project research committee comprised of DHAC staff. Indigenous community governance and management of research data and publications was formalized through a signed research, data-sharing and publication agreement. In addition, the study was approved by the St. Michael’s Hospital Research Ethics Board.</p>
+          <p id="Par22">This Canadian study is part of a larger international trial involving three additional Indigenous health services in Australia and New Zealand. Pooled study results are to be presented elsewhere. This larger study is registered with the Australian and New Zealand Clinical Trials Registry (ACTRN12612001309875; date of registration 18/12/2012).</p>
+        </sec>
+        <sec id="Sec5">
+          <title>Intervention</title>
+          <p id="Par23">The intervention is described in detail elsewhere (Crengle et al. <xref ref-type="bibr" rid="CR6">2014</xref>). Briefly, it consisted of three sequential educational sessions with an Indigenous nurse who had received specific training in health literacy, including Indigenous adult literacy strategies that support the uptake of knowledge and health literacy skills. Educational sessions were scheduled to optimize learning, with the second session planned for 7 days after the first session (with a 1-week grace period) and the third session planned for 28 days after the first session (with a 4-week grace period). At the first session, participants received a customized information booklet designed by the medical and health literacy research team members that was used along with an interactive tablet application to support the educational sessions. The booklet (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://www.welllivinghouse.com/IHL">www.welllivinghouse.com/IHL</ext-link>) contains information about CVD, medication use and the four CVD study medication classes, including scientific and brand names, what the medication does, how to take it, interactions, side effects, contraindications, and lipid and blood pressure targets. The interactive tablet application (Fig. <xref rid="Fig1" ref-type="fig">1</xref>) ensured that the nurse covered the CVD medication information in a structured and consistent way and provided interactive opportunities for the participant, including two animations of the pathology that occurs in heart disease and stroke, respectively. The application also produced a participant-specific pill card (Fig. <xref rid="Fig2" ref-type="fig">2</xref>). During educational sessions, two and three participants were encouraged by the teaching nurse to come up with questions about their CVD or CVD medications that they would like to ask their doctor or nurse.<fig id="Fig1" position="float" orientation="portrait"><label>Fig. 1</label><caption><p>Screen shots from interactive tablet application</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="MO1" position="float" orientation="portrait" xlink:href="41997_2018_34_Fig1_HTML.jpg"/></fig><fig id="Fig2" position="float" orientation="portrait"><label>Fig. 2</label><caption><p>Sample custom pill card</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="MO2" position="float" orientation="portrait" xlink:href="41997_2018_34_Fig2_HTML.jpg"/></fig></p>
+        </sec>
+        <sec id="Sec6">
+          <title>Measures</title>
+          <p id="Par24">Participant knowledge of CVD medications and their use, including treatment targets, was collected at baseline (T1) and before and after each of the three educational sessions (see Table <xref rid="Tab1" ref-type="table">1</xref> for summary of study data collection points). The primary study outcome was change in mean participant knowledge of CVD medications between T1 (pre-intervention baseline) and post-educational sessions 1, 2 and 3 for each of the study CVD medication classes (T2, T4 and T6, respectively). Secondary study outcomes focused on changes in health literacy practices by examining: (a) whether or not participants were more likely to read from their pill bottle, pill care, information booklet or own notes after the intervention compared to baseline; (b) changes in the resources used by patients to get information on their CVD post-intervention compared to pre-intervention; (c) whether or not participants had asked questions of their doctor or nurse; and (d) whether or not participants had answered questions for others in their family or community about CVD and CVD medications.<table-wrap id="Tab1" position="float" orientation="portrait"><label>Table 1</label><caption><p>Summary of study data collection points</p></caption><table frame="hsides" rules="groups"><thead><tr><th colspan="1" rowspan="1">Time point</th><th colspan="1" rowspan="1"/><th colspan="1" rowspan="1">Measurement</th></tr></thead><tbody><tr><td colspan="1" rowspan="1">Enrollment</td><td colspan="1" rowspan="1">T0</td><td colspan="1" rowspan="1">Consent, enrollment and baseline demographic and clinical information</td></tr><tr><td rowspan="2" colspan="1">Session 1</td><td colspan="1" rowspan="1">T1</td><td colspan="1" rowspan="1">Pre-session 1 medication knowledge and health literacy practices</td></tr><tr><td colspan="1" rowspan="1">T2</td><td colspan="1" rowspan="1">Post-session 1 medication knowledge and health literacy practices</td></tr><tr><td rowspan="2" colspan="1">Session 2 (7 days after session 1)</td><td colspan="1" rowspan="1">T3</td><td colspan="1" rowspan="1"><p>Pre-session 2 medication knowledge and health literacy practices</p><p>Health literacy practices between sessions 1 and 2</p></td></tr><tr><td colspan="1" rowspan="1">T4</td><td colspan="1" rowspan="1">Post-session 2 medication knowledge and health literacy practices</td></tr><tr><td rowspan="2" colspan="1">Session 3 (28 days after session 2)</td><td colspan="1" rowspan="1">T5</td><td colspan="1" rowspan="1"><p>Pre-session 3 medication knowledge and health literacy practices</p><p>Health literacy practices between sessions 2 and 3</p></td></tr><tr><td colspan="1" rowspan="1">T6</td><td colspan="1" rowspan="1">Post-session 3 medication knowledge and health literacy practices</td></tr></tbody></table></table-wrap></p>
+          <p id="Par25">Baseline demographic, medical history (including CVD history or CVD risk), medication information, blood pressure and lipid measures were collected at the enrollment session or before the start of the first educational session. Instruments consisting of 9 to 13 class-specific questions to assess knowledge of the four classes of CVD medications and their use were custom developed, integrated into the tablet application, and completed immediately before and after each of the educational sessions for a total of six medication knowledge measurement points.</p>
+          <p id="Par26">Participant’s health literacy practices were assessed by the intervention nurse who had been trained to observe and document on the tablet application which supplemental materials were being used (i.e., pill bottle, customized pill card, intervention booklet or own information) during each educational session and whether or not the client was using this information spontaneously or with prompting.</p>
+        </sec>
+        <sec id="Sec7">
+          <title>Analyses</title>
+          <p id="Par27">Data from the tablet applications were securely transmitted to a server and extracted in the form of an Excel spreadsheet. Analyses were conducted using SPSS Statistics (version 22). Descriptive statistics such as means and standard deviations were calculated for continuous measures, while counts and percentages were calculated for discrete measures. Participant characteristics included age, gender, baseline CVD disease information (type of diagnosis, number of diagnoses, time from diagnosis), co-morbidities, baseline CVD medication information, and baseline BP and lipid levels for the Brantford and Hamilton sites, with significance testing for difference across these two sites. Mean drug knowledge scores were then calculated for each of the four CVD drug classes at each measurement point, with significance testing for difference between baseline and post-sessions 1, 2 and 3 applying paired <italic toggle="yes">t</italic> testing. Finally, generalized estimating equation multivariable models with the natural logarithm of medication knowledge score as the dependent (Y) variable were constructed to test whether there was a relative change in medication knowledge score before and after each educational session while controlling for site and baseline diabetes diagnosis.</p>
+          <p id="Par28">With respect to health literacy practices, chi-square tests were used to test the association between health literacy practices prior to T1 (before the first education session) and after T6 (end of the third session). We tested for significant differences with respect to participants reading from different sources (pill bottle, pill card, book or notes) and all of these sources during education sessions with prompting and spontaneously. Furthermore, we tested to see if there was an association between the number of participants who reported asking and answering questions at T4 and T6 (post-sessions 2 and 3).</p>
+        </sec>
+      </sec>
+      <sec id="Sec8">
+        <title>Results</title>
+        <sec id="Sec9">
+          <title>Recruitment</title>
+          <p id="Par29">We were able to generate a list of 204 potential participants using medications listed in DHAC EMR. Health centre staff were able to contact just under half of these clients by telephone or letter and invite them to participate in the study. The large majority of those contacted indicated to health centre staff that they were interested in learning more about the study and were subsequently contacted by the study nurse for review of eligibility and informed consent. Additional participants were referred to the study nurse directly by their primary care providers. Upon final review of eligibility by the study nurse, 49 participants (27 in Brantford and 22 in Hamilton) were eligible and enrolled in the study. Two participants dropped out of the study before completing all three educational sessions, one from each site. A total of 47 Indigenous participants completed the study and were included in subsequent data analyses, 26 in Brantford and 21 in Hamilton.</p>
+        </sec>
+        <sec id="Sec10">
+          <title>Participant characteristics</title>
+          <p id="Par30">Table <xref rid="Tab2" ref-type="table">2</xref> provides baseline characteristics of participants including age, gender and information on CVD diagnosis, CVD medications, co-morbidities, blood pressure and lipid levels. There were no significant differences in patient characteristics between the Hamilton and Brantford sites. Mean participant age was 58.7 [SD 8.6]. Over two thirds of participants (70.2%) had a diagnosis of CVD prior to entering the study, and the remainder met the inclusion criteria of &gt; 15% risk of CVD over 5 years. For those with pre-existing CVD, the average time since diagnosis was 9.3 years [SD 5.7] and the most common diagnoses were angina (42.6%) and MI (31.9%) followed by TIA (17%) and stroke (4.3%). Co-morbid diabetes (76.6%) and COPD (46.8%) were common.<table-wrap id="Tab2" position="float" orientation="portrait"><label>Table 2</label><caption><p>Participant characteristics at baseline (T0) by site</p></caption><table frame="hsides" rules="groups"><thead><tr><th colspan="1" rowspan="1"/><th colspan="1" rowspan="1">Canada</th><th colspan="1" rowspan="1">Brantford</th><th colspan="1" rowspan="1">Hamilton</th><th colspan="1" rowspan="1"><italic toggle="yes">p</italic> value*</th></tr></thead><tbody><tr><td colspan="1" rowspan="1">Number of participants, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">47 (100)</td><td colspan="1" rowspan="1">26 (55.3)</td><td colspan="1" rowspan="1">21 (44.7)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="5" rowspan="1">Age</td></tr><tr><td colspan="1" rowspan="1"> Years, mean (SD)</td><td colspan="1" rowspan="1">58.7 (8.6)</td><td colspan="1" rowspan="1">59.4 (9.7)</td><td colspan="1" rowspan="1">57.9 (7.1)</td><td colspan="1" rowspan="1">0.573</td></tr><tr><td colspan="5" rowspan="1">Gender</td></tr><tr><td colspan="1" rowspan="1"> Male, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">22 (46.8)</td><td colspan="1" rowspan="1">11 (42.3)</td><td colspan="1" rowspan="1">11 (52.4)</td><td colspan="1" rowspan="1">0.491</td></tr><tr><td colspan="5" rowspan="1">CVD diagnoses</td></tr><tr><td colspan="1" rowspan="1"> Angina, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">20 (42.6)</td><td colspan="1" rowspan="1">10 (38.5)</td><td colspan="1" rowspan="1">10 (47.6)</td><td colspan="1" rowspan="1">0.528</td></tr><tr><td colspan="1" rowspan="1"> MI, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">15 (31.9)</td><td colspan="1" rowspan="1">8 (30.8)</td><td colspan="1" rowspan="1">7 (33.3)</td><td colspan="1" rowspan="1">0.851</td></tr><tr><td colspan="1" rowspan="1"> Stroke, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">2 (4.3)</td><td colspan="1" rowspan="1">1 (3.8)</td><td colspan="1" rowspan="1">1 (4.8)</td><td colspan="1" rowspan="1">0.877</td></tr><tr><td colspan="1" rowspan="1"> TIA, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">8 (17.0)</td><td colspan="1" rowspan="1">4 (15.4)</td><td colspan="1" rowspan="1">4 (19.0)</td><td colspan="1" rowspan="1">0.740</td></tr><tr><td colspan="5" rowspan="1">Number of CVD diagnosis</td></tr><tr><td colspan="1" rowspan="1"> Nil, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">14 (29.8)</td><td colspan="1" rowspan="1">8 (30.8)</td><td colspan="1" rowspan="1">6 (28.6)</td><td colspan="1" rowspan="1">0.716</td></tr><tr><td colspan="1" rowspan="1"> One, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">23 (48.9)</td><td colspan="1" rowspan="1">14 (53.8)</td><td colspan="1" rowspan="1">9 (42.9)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="1" rowspan="1"> Two, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">8 (17.0)</td><td colspan="1" rowspan="1">3 (11.5)</td><td colspan="1" rowspan="1">5 (23.8)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="1" rowspan="1"> Three or more, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">2 (4.3)</td><td colspan="1" rowspan="1">1 (3.8)</td><td colspan="1" rowspan="1">1 (4.8)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="5" rowspan="1">Time with CVD</td></tr><tr><td colspan="1" rowspan="1"> Years, mean (SD)</td><td colspan="1" rowspan="1">9.3 (5.7)</td><td colspan="1" rowspan="1">10.4 (6.3)</td><td colspan="1" rowspan="1">7.9 (4.6)</td><td colspan="1" rowspan="1">0.213</td></tr><tr><td colspan="5" rowspan="1">Co-morbidity</td></tr><tr><td colspan="1" rowspan="1"> Diabetes, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">36 (76.6)</td><td colspan="1" rowspan="1">18 (69.2)</td><td colspan="1" rowspan="1">18 (85.7)</td><td colspan="1" rowspan="1">0.185</td></tr><tr><td colspan="1" rowspan="1"> CHF, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">3 (6.4)</td><td colspan="1" rowspan="1">1 (3.8)</td><td colspan="1" rowspan="1">2 (9.5)</td><td colspan="1" rowspan="1">0.429</td></tr><tr><td colspan="1" rowspan="1"> COPD asthma, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">22 (46.8)</td><td colspan="1" rowspan="1">14 (53.8)</td><td colspan="1" rowspan="1">8 (38.1)</td><td colspan="1" rowspan="1">0.282</td></tr><tr><td colspan="1" rowspan="1"> Gout, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">6 (12.8)</td><td colspan="1" rowspan="1">2 (7.7)</td><td colspan="1" rowspan="1">4 (19.0)</td><td colspan="1" rowspan="1">0.181</td></tr><tr><td colspan="1" rowspan="1"> Peptic ulcer, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">7 (14.9)</td><td colspan="1" rowspan="1">4 (15.4)</td><td colspan="1" rowspan="1">3 (14.3)</td><td colspan="1" rowspan="1">0.316</td></tr><tr><td colspan="5" rowspan="1">Number of co-morbidities</td></tr><tr><td colspan="1" rowspan="1"> None, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">7 (14.9)</td><td colspan="1" rowspan="1">5 (19.2)</td><td colspan="1" rowspan="1">2 (9.5)</td><td colspan="1" rowspan="1">0.619</td></tr><tr><td colspan="1" rowspan="1"> One, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">16 (34.0)</td><td colspan="1" rowspan="1">8 (30.8)</td><td colspan="1" rowspan="1">8 (38.1)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="1" rowspan="1"> Two, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">17 (36.2)</td><td colspan="1" rowspan="1">10 (38.5)</td><td colspan="1" rowspan="1">7 (33.3)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="1" rowspan="1"> Three, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">4 (8.5)</td><td colspan="1" rowspan="1">1 (3.8)</td><td colspan="1" rowspan="1">3 (14.3)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="1" rowspan="1"> Four, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">3 (6.4)</td><td colspan="1" rowspan="1">2 (7.7)</td><td colspan="1" rowspan="1">1 (4.8)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="1" rowspan="1"> Five, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">0 (0)</td><td colspan="1" rowspan="1">0 (0)</td><td colspan="1" rowspan="1">0 (0)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="5" rowspan="1">CVD medications at baseline</td></tr><tr><td colspan="1" rowspan="1"> Statin, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">43 (91.5)</td><td colspan="1" rowspan="1">24 (92.3)</td><td colspan="1" rowspan="1">19 (90.5)</td><td colspan="1" rowspan="1">0.823</td></tr><tr><td colspan="1" rowspan="1"> ACE, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">29 (61.7)</td><td colspan="1" rowspan="1">17 (65.4)</td><td colspan="1" rowspan="1">12 (57.1)</td><td colspan="1" rowspan="1">0.563</td></tr><tr><td colspan="1" rowspan="1"> BB, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">21 (44.7)</td><td colspan="1" rowspan="1">12 (46.2)</td><td colspan="1" rowspan="1">9 (42.9)</td><td colspan="1" rowspan="1">0.821</td></tr><tr><td colspan="1" rowspan="1"> Aspirin, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">35 (74.5)</td><td colspan="1" rowspan="1">20 (76.9)</td><td colspan="1" rowspan="1">15 (71.4)</td><td colspan="1" rowspan="1">0.668</td></tr><tr><td colspan="5" rowspan="1">Number of medications</td></tr><tr><td colspan="1" rowspan="1"> Two, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">21 (44.7)</td><td colspan="1" rowspan="1">10 (38.5)</td><td colspan="1" rowspan="1">11 (52.4)</td><td colspan="1" rowspan="1">0.611</td></tr><tr><td colspan="1" rowspan="1"> Three, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">19 (40.4)</td><td colspan="1" rowspan="1">12 (46.2)</td><td colspan="1" rowspan="1">7 (33.3)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="1" rowspan="1"> Four, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">7 (14.9)</td><td colspan="1" rowspan="1">4 (15.4)</td><td colspan="1" rowspan="1">3 (14.3)</td><td colspan="1" rowspan="1"/></tr><tr><td colspan="5" rowspan="1">Allergy/side effect</td></tr><tr><td colspan="1" rowspan="1"> Statin, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">3 (6.4)</td><td colspan="1" rowspan="1">1 (3.8)</td><td colspan="1" rowspan="1">2 (9.5)</td><td colspan="1" rowspan="1">0.429</td></tr><tr><td colspan="1" rowspan="1"> ACE inhibitor, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">1 (2.1)</td><td colspan="1" rowspan="1">0 (0)</td><td colspan="1" rowspan="1">1 (4.8)</td><td colspan="1" rowspan="1">0.261</td></tr><tr><td colspan="1" rowspan="1"> BB, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">0 (0)</td><td colspan="1" rowspan="1">0 (0)</td><td colspan="1" rowspan="1">0 (0)</td><td colspan="1" rowspan="1">NA</td></tr><tr><td colspan="1" rowspan="1"> Aspirin, <italic toggle="yes">n</italic> (%)</td><td colspan="1" rowspan="1">3 (6.4)</td><td colspan="1" rowspan="1">1 (3.8)</td><td colspan="1" rowspan="1">2 (9.5)</td><td colspan="1" rowspan="1">0.429</td></tr><tr><td colspan="5" rowspan="1">BP (mmHg)</td></tr><tr><td colspan="1" rowspan="1"> Systolic, mean (SD)</td><td colspan="1" rowspan="1">130.5 (14.1)</td><td colspan="1" rowspan="1">131.4 (14.2)</td><td colspan="1" rowspan="1">129.5 (14.2)</td><td colspan="1" rowspan="1">0.668</td></tr><tr><td colspan="1" rowspan="1"> Diastolic, mean (SD)</td><td colspan="1" rowspan="1">75.7 (9.2)</td><td colspan="1" rowspan="1">77.0 (8.5)</td><td colspan="1" rowspan="1">74.2 (9.8)</td><td colspan="1" rowspan="1">0.322</td></tr><tr><td colspan="5" rowspan="1">Lipids (mmol/L)</td></tr><tr><td colspan="1" rowspan="1"> LDL, mean (SD)</td><td colspan="1" rowspan="1">2.37 (1.06)</td><td colspan="1" rowspan="1">2.3 (1.15)</td><td colspan="1" rowspan="1">2.40 (0.96)</td><td colspan="1" rowspan="1">0.844</td></tr><tr><td colspan="1" rowspan="1"> HDL, mean (SD)</td><td colspan="1" rowspan="1">1.13 (0.30)</td><td colspan="1" rowspan="1">1.08 (0.30)</td><td colspan="1" rowspan="1">1.19 (0.30)</td><td colspan="1" rowspan="1">0.226</td></tr><tr><td colspan="1" rowspan="1"> Ratio TC: HDL</td><td colspan="1" rowspan="1">3.47 (1.25)</td><td colspan="1" rowspan="1">3.41 (1.32)</td><td colspan="1" rowspan="1">3.54 (1.17)</td><td colspan="1" rowspan="1">0.745</td></tr></tbody></table><table-wrap-foot><p>*Significance testing for difference across sites</p></table-wrap-foot></table-wrap></p>
+          <p id="Par31">With respect to CVD medications, 44.7% of participants were taking two of the four classes of study medications, 40.4% were taking three and only 14.9% were on all four. Mean systolic (130.5 mmHg; SD 14.1) and diastolic (75.7 mmHg; SD 9.2) blood pressure readings were at targets for persons without kidney disease, which would be a systolic blood pressure of 130 mmHg and a diastolic blood pressure of 80 mmHg. As indicated by the standard deviations, there was some variation in both blood pressure readings, reflecting that some individual patients had blood pressure readings above these targets. Mean LDL cholesterol level at baseline was 2.37 [SD 1.06], which is slightly above the target level for persons with CVD, which is 2.0.</p>
+        </sec>
+        <sec id="Sec11">
+          <title>Medication knowledge</title>
+          <p id="Par32">Unadjusted mean medication knowledge scores were significantly higher following completion of the three education sessions compared to baseline across all four medication classes. The largest gains in knowledge scores occurred after the first educational session, with smaller additional gains following educational sessions 2 and 3 (Fig. <xref rid="Fig3" ref-type="fig">3</xref>). Adjusted GEE models (controlling for site and diabetes) showed mean knowledge scores post-intervention (T6) that were 3.3 to 6.1 times higher than baseline scores (T1) for the four included CVD medications (Table <xref rid="Tab3" ref-type="table">3</xref>).<fig id="Fig3" position="float" orientation="portrait"><label>Fig. 3</label><caption><p>Unadjusted mean medication knowledge scores at T1, T2 and T6 for each medication class</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="MO3" position="float" orientation="portrait" xlink:href="41997_2018_34_Fig3_HTML.jpg"/></fig><table-wrap id="Tab3" position="float" orientation="portrait"><label>Table 3</label><caption><p>Multivariable GEE models for CVD medications change in % items correct in knowledge questionnaire</p></caption><table frame="hsides" rules="groups"><thead><tr><th colspan="1" rowspan="1"/><th colspan="1" rowspan="1"><italic toggle="yes">n</italic></th><th colspan="1" rowspan="1">Pre knowledge (T1) score (mean [95%CI])</th><th colspan="1" rowspan="1">Post-knowledge (T6) score (mean [95%CI])</th><th colspan="1" rowspan="1">Exp(<italic toggle="yes">B</italic>) and 95%CI for Exp(<italic toggle="yes">B</italic>)</th><th colspan="1" rowspan="1"><italic toggle="yes">p</italic> value*</th></tr></thead><tbody><tr><td colspan="6" rowspan="1">Statin</td></tr><tr><td colspan="1" rowspan="1"> Session 1</td><td colspan="1" rowspan="1">43</td><td colspan="1" rowspan="1">30.32 (26.28, 34.97)</td><td colspan="1" rowspan="1">98.24 (93.87, 100.00)</td><td colspan="1" rowspan="1">1.176 (1.02, 1.33)</td><td colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td colspan="1" rowspan="1"> Session 2</td><td colspan="1" rowspan="1">43</td><td colspan="1" rowspan="1">98.46 (96.86, 100.00)</td><td colspan="1" rowspan="1">99.46 (98.18, 100.00)</td><td colspan="1" rowspan="1">0.008 (0.00, 0.02)</td><td colspan="1" rowspan="1">0.076</td></tr><tr><td colspan="1" rowspan="1"> Session 3</td><td colspan="1" rowspan="1">43</td><td colspan="1" rowspan="1">99.76 (99.30, 100.00)</td><td colspan="1" rowspan="1">100.00 (99.95, 100.00)</td><td colspan="1" rowspan="1">0.003 (0.00, 0.01)</td><td colspan="1" rowspan="1">0.312</td></tr><tr><td colspan="6" rowspan="1">Aspirin</td></tr><tr><td colspan="1" rowspan="1"> Session 1</td><td colspan="1" rowspan="1">35</td><td colspan="1" rowspan="1">29.94 (26.87, 33.37)</td><td colspan="1" rowspan="1">97.70 (94.24, 101.29)</td><td colspan="1" rowspan="1">1.183 (1.09, 1.28)</td><td colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td colspan="1" rowspan="1"> Session 2</td><td colspan="1" rowspan="1">34</td><td colspan="1" rowspan="1">99.10 (97.90, 100.00)</td><td colspan="1" rowspan="1">99.32 (98.31, 100.35)</td><td colspan="1" rowspan="1">0.002 (0.00, 0.01)</td><td colspan="1" rowspan="1">0.311</td></tr><tr><td colspan="1" rowspan="1"> Session 3</td><td colspan="1" rowspan="1">34</td><td colspan="1" rowspan="1">100.00 (100.00, 100.00)</td><td colspan="1" rowspan="1">100.00 (100.00, 100.00)</td><td colspan="1" rowspan="1">1.000 (1.00, 1.00)</td><td colspan="1" rowspan="1">1.000</td></tr><tr><td colspan="6" rowspan="1">ACE inhibitor</td></tr><tr><td colspan="1" rowspan="1"> Session 1</td><td colspan="1" rowspan="1">29</td><td colspan="1" rowspan="1">20.77 (16.86, 25.58)</td><td colspan="1" rowspan="1">93.41 (82.89, 105.26)</td><td colspan="1" rowspan="1">1.504 (1.35, 1.65)</td><td colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td colspan="1" rowspan="1"> Session 2</td><td colspan="1" rowspan="1">29</td><td colspan="1" rowspan="1">95.46 (90.43, 100.77)</td><td colspan="1" rowspan="1">98.90 (96.08, 101.79)</td><td colspan="1" rowspan="1">0.035 (0.00, 0.07)</td><td colspan="1" rowspan="1">0.053</td></tr><tr><td colspan="1" rowspan="1"> Session 3</td><td colspan="1" rowspan="1">29</td><td colspan="1" rowspan="1">99.35 (98.27, 100.44)</td><td colspan="1" rowspan="1">99.64 (99.03, 100.00)</td><td colspan="1" rowspan="1">0.003 (0.00, 0.01)</td><td colspan="1" rowspan="1">0.309</td></tr><tr><td colspan="6" rowspan="1">Beta blocker</td></tr><tr><td colspan="1" rowspan="1"> Session 1</td><td colspan="1" rowspan="1">21</td><td colspan="1" rowspan="1">16.32 (12.60, 21.13)</td><td colspan="1" rowspan="1">100.00 (90.77, 100.00)</td><td colspan="1" rowspan="1">1.817 (1.59, 2.06)</td><td colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td colspan="1" rowspan="1"> Session 2</td><td colspan="1" rowspan="1">21</td><td colspan="1" rowspan="1">94.94 (91.27, 98.75)</td><td colspan="1" rowspan="1">97.95 (96.05, 99.90)</td><td colspan="1" rowspan="1">0.031 (0.00, 0.06)</td><td colspan="1" rowspan="1">0.051</td></tr><tr><td colspan="1" rowspan="1"> Session 3</td><td colspan="1" rowspan="1">21</td><td colspan="1" rowspan="1">97.20 (95.30, 99.14)</td><td colspan="1" rowspan="1">98.95 (97.57, 100.00)</td><td colspan="1" rowspan="1">0.018 (0.00, 0.03)</td><td colspan="1" rowspan="1">0.027</td></tr></tbody></table><table-wrap-foot><p>All models included site and diabetes comorbidity</p><p>*<italic toggle="yes">p</italic> value is the probability of the null hypothesis that Exp(<italic toggle="yes">B</italic>) = 1</p></table-wrap-foot></table-wrap></p>
+        </sec>
+        <sec id="Sec12">
+          <title>Health literacy practices</title>
+          <p id="Par33">By the end of educational session 3, over 90% of participants were spontaneously (without prompting from the nurse) using the medication booklet and close to half of participants were spontaneously using their customized pill card to access information about their CVD medications (Table <xref rid="Tab4" ref-type="table">4</xref>). There was a non-significant increase in participants who spontaneously access any source of medication information (pill bottle, pill card, medication booklet, own resource) post-intervention (T6) compared to baseline (T1).<table-wrap id="Tab4" position="float" orientation="portrait"><label>Table 4</label><caption><p>Spontaneous participant use of different CVD medication information sources</p></caption><table frame="hsides" rules="groups"><thead><tr><th colspan="1" rowspan="1">Information source</th><th colspan="1" rowspan="1">Pre-session 1 (T1), <italic toggle="yes">n</italic> (%)</th><th colspan="1" rowspan="1">Post-session 3 (T6), <italic toggle="yes">n</italic> (%)</th><th colspan="1" rowspan="1"><italic toggle="yes">p</italic> value*</th></tr></thead><tbody><tr><td colspan="1" rowspan="1">Pill bottle</td><td colspan="1" rowspan="1">9 (19.15)</td><td colspan="1" rowspan="1">5 (10.64)</td><td colspan="1" rowspan="1">0.250</td></tr><tr><td colspan="1" rowspan="1">Pill card</td><td colspan="1" rowspan="1">0</td><td colspan="1" rowspan="1">21 (44.68)</td><td colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td colspan="1" rowspan="1">Medication booklet</td><td colspan="1" rowspan="1">0</td><td colspan="1" rowspan="1">43 (91.49)</td><td colspan="1" rowspan="1">&lt; 0.001</td></tr><tr><td colspan="1" rowspan="1">Own information</td><td colspan="1" rowspan="1">23 (48.94)</td><td colspan="1" rowspan="1">4 (8.51)</td><td colspan="1" rowspan="1">0.276</td></tr><tr><td colspan="1" rowspan="1">Any of the above</td><td colspan="1" rowspan="1">28 (59.57)</td><td colspan="1" rowspan="1">44 (93.62)</td><td colspan="1" rowspan="1">0.800</td></tr></tbody></table><table-wrap-foot><p>*Significance testing for difference between (T1) and (T6)</p></table-wrap-foot></table-wrap></p>
+          <p id="Par34">Participants were also significantly more likely to be answering questions from other people regarding their medications between sessions 2 and 3 (T5) compared to between sessions 1 and 2 (T3) (<italic toggle="yes">p</italic> = 0.018). There was a non-significant trend towards participants being more likely to ask their nurse or doctor questions about their medication at T5 compared to T3 (<italic toggle="yes">p</italic> = 0.0615).</p>
+        </sec>
+      </sec>
+      <sec id="Sec13">
+        <title>Discussion</title>
+        <p id="Par35">We have demonstrated that our customized education program is highly effective in increasing medication knowledge among Indigenous peoples with CVD or at risk of CVD attending the program at an urban Indigenous health centre in Ontario, Canada. Mean medication knowledge scores at baseline were low enough to put participants at risk of medication error. Upon completion of our educational intervention, participants had near-perfect medication knowledge scores. Notably, almost all of the knowledge acquisition occurred after the first educational session, with very small mean knowledge score enhancements following sessions 2 and 3. In addition to these striking impacts on medication knowledge, our intervention was also effective in modifying participant health literacy behaviours. Following program completion, participants had adopted and were using the information resources provided to them as part of the program—91% were spontaneously referring to the program medication booklet and 45% were spontaneously using their customized pill card when seeking information about their medications. They were also more likely to answer other peoples’ questions about CVD medications.</p>
+        <p id="Par36">The striking improvements in participant medication knowledge scores after a single 1 h structured educational session are remarkable, particularly given the context of lower levels of health literacy among our study population demonstrated in our pre-trial investigations (Downey et al. <xref ref-type="bibr" rid="CR7">2013</xref>). Importantly, participants also demonstrated health literacy behaviour changes, actively adapting the customized learning tools provided by the intervention (pill card and medication booklet) and answering other peoples’ questions regarding CVD medications. These positive results highlight the benefits of using an integrated systems level approach to health literacy that takes into account learning environment and processes, HCP–patient relationships, HCP health literacy teaching skills, style and content of information shared, and optimization of learning modalities and tools. At the same time, our findings challenge health literacy approaches that locate the problem as one of individual patient deficits.</p>
+        <p id="Par37">Given the disproportionate burden of CVD morbidity and mortality experienced by Indigenous populations in Canada, our findings have implications for future research, practice and policy. First, it is disheartening to note that even though our inclusion criteria required patients to be taking a minimum of two of the four classes of CVD medications recommended for persons with CVD or at moderate risk of CVD, less than 15% of our study participants were on all four medication classes currently recommended for persons with or at moderate risk of CVD (Mancini et al. <xref ref-type="bibr" rid="CR15">2014</xref>; Tobe et al. <xref ref-type="bibr" rid="CR29">2011</xref>). This suggests the need for further research examining the quality of medical CVD management among Indigenous populations. Second, and on a more encouraging note, our study’s positive results with respect to improvements in medication knowledge and health literacy skills lay the groundwork for a larger, multi-site Canadian study, that includes longer term follow-up, and additional health literacy behaviour and clinical outcome measures. In addition, while the current intervention focused on CVD medications, the approach and program would be readily adaptable for other chronic diseases, including diabetes, that currently challenge Indigenous populations. Results of our international study, to be released shortly, support the generalizability of the findings of this Canadian site study across five diverse international Indigenous health service provider contexts.</p>
+        <p id="Par38">Limitations of our study include its single arm design, small size, and relatively short follow-up period. As detailed elsewhere (Crengle et al. <xref ref-type="bibr" rid="CR6">2014</xref>), our relatively small study population and the risk of cross-participant contamination precluded a randomized design in this initial demonstration study. Final outcome measures were collected 4 to 8 weeks following the first educational session, and due to the high rates of knowledge uptake in this first session, there is some indication of retention of knowledge over time; however, longer term follow-up and the inclusion of clinical follow-up measures would be useful to better understand CVD health outcome impacts. We also note that the expansion of direct and observed health literacy assessment tools that has occurred since we designed this study provides opportunities to build in additional measures of health literacy assessment into future studies (Tobe et al. <xref ref-type="bibr" rid="CR29">2011</xref>). Finally, we note that a considerable number of potential participants could not be reached by phone or mail. Using point of care to recruit potential participants in future studies may be one way of overcoming this barrier.</p>
+        <p id="Par39">Our protocol and processes are exemplary in the way that Indigenous leadership and community involvement were built into the study design. To our knowledge, our study is one of the first clinical trials to integrate benchmark Indigenous research leadership and partnership principles and protocols, including on-going leadership and participation of Indigenous community representatives on the study design and implementation team and an academic–community research, data-sharing and publication agreement that ensures community custodianship of study data and control of research publications.</p>
+      </sec>
+      <sec id="Sec14">
+        <title>Conclusion</title>
+        <p id="Par40">This customized health literacy education program was highly effective in increasing medication knowledge and health literacy practice among Indigenous people with CVD or at risk of CVD attending an urban Indigenous health centre in Canada. Within this context, we demonstrated that strategically addressing health literacy barriers at both the systems and individual health provider levels in a culturally relevant manner resulted in marked and rapid uptake of both CVD medication knowledge and health literacy practice in a population known to have lower levels of education and literacy compared to the general population. This challenges existing public health and health promotion models which commonly locate health literacy as a problem of Indigenous peoples which is pre-determined by existing inequities in levels of education and literacy in non-Indigenous languages and systems compared to the general Canadian population. Our findings are highly relevant to existing Indigenous health services and policy and signal the need for further testing and scale-up across diverse Indigenous contexts and other disease classes, including diabetes medications.</p>
+      </sec>
+    </body>
+    <back>
+      <ack>
+        <title>Acknowledgements</title>
+        <p>This study was supported by an operating grant from the Canadian Institutes of Health Research’s International Collaborative Indigenous Health Research Partnership on Chronic Diseases Program. The authors would like to acknowledge the rest of the international and domestic study team members, including Sue Crengle, Michelle Lambert, Joanne Luke, Conrad Prince, Nancy Cooper, Angela Naveau and Athena Weber. Without you, this work would not have been possible. We would also like to thank Angela Mashford Pringle who assisted in the preparation of this manuscript. Dr. Smylie was supported by a CIHR New Investigator Award and a CIHR Applied Public Health Research Chair during the time of the study and preparation of this manuscript.</p>
+      </ack>
+      <notes notes-type="ethics">
+        <title>Compliance with ethical standards</title>
+        <notes notes-type="COI-statement">
+          <title>Conflict of interest</title>
+          <p id="Par41">None to declare.</p>
+        </notes>
+      </notes>
+      <ref-list id="Bib1">
+        <title>References</title>
+        <ref id="CR1">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Atzema</surname>
+                <given-names>CL</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Cardiovascular disease rates, outcomes, and quality of care in Ontario Métis: a population-based cohort study</article-title>
+            <source>PLoS One</source>
+            <year>2015</year>
+            <volume>10</volume>
+            <fpage>e0121779</fpage>
+            <pub-id pub-id-type="doi">10.1371/journal.pone.0121779</pub-id>
+            <pub-id pub-id-type="pmid">25793978</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4368556</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR2">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Baigent</surname>
+                <given-names>C</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Efficacy and safety of cholesterol-lowering treatment: prospective meta-analysis of data from 90 056 participants in 14 randomised trials of statins</article-title>
+            <source>Lancet</source>
+            <year>2005</year>
+            <volume>366</volume>
+            <fpage>1267</fpage>
+            <lpage>1278</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0140-6736(05)67394-1</pub-id>
+            <pub-id pub-id-type="pmid">16214597</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR3">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bresee</surname>
+                <given-names>LC</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Likelihood of coronary angiography among First Nations patients with acute myocardial infarction</article-title>
+            <source>CMAJ</source>
+            <year>2014</year>
+            <volume>186</volume>
+            <fpage>E372</fpage>
+            <lpage>E380</lpage>
+            <pub-id pub-id-type="doi">10.1503/cmaj.131667</pub-id>
+            <pub-id pub-id-type="pmid">24847149</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4081235</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR4">
+          <mixed-citation publication-type="other">Canadian Institute of Health Information (2013). <italic toggle="yes">Hospital Care for Heart Attacks Among First Nations, Inuit, and Metis</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR5">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Chow</surname>
+                <given-names>C-M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Donovan</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Manuel</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Johansen</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tu</surname>
+                <given-names>JV</given-names>
+              </name>
+            </person-group>
+            <article-title>Chapter 4 : regional variation in self-reported heart disease prevalence in Canada</article-title>
+            <source>The Canadian Journal of Cardiology</source>
+            <year>2005</year>
+            <volume>21</volume>
+            <fpage>23</fpage>
+            <lpage>29</lpage>
+            <pub-id pub-id-type="pmid">16341294</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR6">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Crengle</surname>
+                <given-names>S</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Cardiovascular disease medication health literacy among Indigenous peoples: design and protocol of an intervention trial in Indigenous primary care services</article-title>
+            <source>BMC Public Health</source>
+            <year>2014</year>
+            <volume>14</volume>
+            <fpage>714</fpage>
+            <pub-id pub-id-type="doi">10.1186/1471-2458-14-714</pub-id>
+            <pub-id pub-id-type="pmid">25016481</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4227024</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR7">
+          <mixed-citation publication-type="other">Downey, B., Nepinak, C., Cooper, N., Prince, C. &amp; Smylie, J. (2013). Strengthening health literacy among Indigenous people living with cardiovascular disease, their families and health care providers: Phase 1 report.</mixed-citation>
+        </ref>
+        <ref id="CR8">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Firestone</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Smylie</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Maracle</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Spiller</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>O’Campo</surname>
+                <given-names>P</given-names>
+              </name>
+            </person-group>
+            <article-title>Unmasking health determinants and health outcomes for urban First Nations using respondent-driven sampling</article-title>
+            <source>BMJ Open</source>
+            <year>2014</year>
+            <volume>4</volume>
+            <fpage>e004978</fpage>
+            <pub-id pub-id-type="doi">10.1136/bmjopen-2014-004978</pub-id>
+            <pub-id pub-id-type="pmid">25011988</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4091271</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR9">
+          <mixed-citation publication-type="other">First Nations Information Governance Centre (FNIGC) (2012). <italic toggle="yes">First Nations regional health survey (RHS) phase 2 (2008/10): National report on adults, youth and children living in First Nations communities</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR10">
+          <mixed-citation publication-type="other">Health Canada (2014). <italic toggle="yes">A statistical report on the health of First Nations in British Columbia</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR11">
+          <mixed-citation publication-type="other">Institute of Medicine (US) Committee on Health, Nielson-Bohlman, L., Panzer, A. &amp; Kindig, D (2004). Health literacy: a prescription to end confusion. National Academies Press. 10.17226/10883.<pub-id pub-id-type="pmid">25009856</pub-id></mixed-citation>
+        </ref>
+        <ref id="CR12">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lambert</surname>
+                <given-names>M</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Health literacy: health professionals’ understandings and their perceptions of barriers that Indigenous patients encounter</article-title>
+            <source>BMC Health Services Research</source>
+            <year>2014</year>
+            <volume>14</volume>
+            <fpage>614</fpage>
+            <pub-id pub-id-type="doi">10.1186/s12913-014-0614-1</pub-id>
+            <pub-id pub-id-type="pmid">25471387</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4267746</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR13">
+          <element-citation publication-type="book">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Leadbeater</surname>
+                <given-names>BJR</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Banister</surname>
+                <given-names>EM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Marshall</surname>
+                <given-names>EA</given-names>
+              </name>
+              <collab>Canadian Electronic Library</collab>
+            </person-group>
+            <source>Knowledge translation in context : indigenous, policy, and community settings</source>
+            <year>2011</year>
+            <publisher-loc>Toronto</publisher-loc>
+            <publisher-name>University of Toronto Press</publisher-name>
+          </element-citation>
+        </ref>
+        <ref id="CR14">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lopez</surname>
+                <given-names>D</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Disparities experienced by aboriginal compared to non-aboriginal metropolitan Western Australians in receiving coronary angiography following acute ischaemic heart disease: the impact of age and comorbidities</article-title>
+            <source>International Journal for Equity in Health</source>
+            <year>2014</year>
+            <volume>13</volume>
+            <fpage>93</fpage>
+            <pub-id pub-id-type="doi">10.1186/s12939-014-0093-3</pub-id>
+            <pub-id pub-id-type="pmid">25331586</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4207898</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR15">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Mancini</surname>
+                <given-names>GBJ</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Canadian cardiovascular society guidelines for the diagnosis and management of stable ischemic heart disease</article-title>
+            <source>The Canadian Journal of Cardiology</source>
+            <year>2014</year>
+            <volume>30</volume>
+            <fpage>837</fpage>
+            <lpage>849</lpage>
+            <pub-id pub-id-type="doi">10.1016/j.cjca.2014.05.013</pub-id>
+            <pub-id pub-id-type="pmid">25064578</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR16">
+          <mixed-citation publication-type="other">Neeganagwedgin, E. (2011). A critical review of aboriginal education in Canada: Eurocentric dominance impact and everyday denial. Aborig. Policy Res. Consort. Int.</mixed-citation>
+        </ref>
+        <ref id="CR17">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Reading</surname>
+                <given-names>J</given-names>
+              </name>
+            </person-group>
+            <article-title>Confronting the growing crisis of cardiovascular disease and heart health among aboriginal peoples in Canada</article-title>
+            <source>The Canadian Journal of Cardiology</source>
+            <year>2015</year>
+            <volume>31</volume>
+            <fpage>1077</fpage>
+            <lpage>1080</lpage>
+            <pub-id pub-id-type="doi">10.1016/j.cjca.2015.06.012</pub-id>
+            <pub-id pub-id-type="pmid">26321431</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR18">
+          <mixed-citation publication-type="other">Rootman, I. &amp; Gordon-El-Bihbety, D. (2008). <italic toggle="yes">A vision for a health literate Canada: report of the expert panel on health literacy</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR19">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Smith</surname>
+                <given-names>ER</given-names>
+              </name>
+            </person-group>
+            <article-title>The Canadian heart health strategy and action plan</article-title>
+            <source>The Canadian Journal of Cardiology</source>
+            <year>2009</year>
+            <volume>25</volume>
+            <fpage>451</fpage>
+            <lpage>452</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0828-282X(09)70116-3</pub-id>
+            <pub-id pub-id-type="pmid">19668778</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2732371</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR20">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Smylie</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Firestone</surname>
+                <given-names>M</given-names>
+              </name>
+            </person-group>
+            <article-title>Back to the basics: identifying and addressing underlying challenges in achieving high quality and relevant health statistics for indigenous populations in Canada</article-title>
+            <source>Statistical Journal of the IAOS</source>
+            <year>2015</year>
+            <volume>31</volume>
+            <fpage>67</fpage>
+            <lpage>87</lpage>
+            <pub-id pub-id-type="pmid">26793283</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.3233/SJI-150864</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4716822</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR21">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Smylie</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Williams</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cooper</surname>
+                <given-names>N</given-names>
+              </name>
+            </person-group>
+            <article-title>Culture-based literacy and aboriginal health</article-title>
+            <source>Canadian Journal of Public Health</source>
+            <year>2006</year>
+            <volume>97</volume>
+            <issue>Suppl 2</issue>
+            <fpage>S21</fpage>
+            <lpage>S25</lpage>
+            <pub-id pub-id-type="pmid">16805157</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR22">
+          <mixed-citation publication-type="other">Smylie, J., et al. (2011). <italic toggle="yes">Our health counts: urban aboriginal health database research project</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR23">
+          <element-citation publication-type="book">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Smylie</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lofters</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Firestone</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>O’Campo</surname>
+                <given-names>P</given-names>
+              </name>
+            </person-group>
+            <source>Rethinking Social Epidemiology</source>
+            <year>2012</year>
+            <publisher-loc>Dordrecht</publisher-loc>
+            <publisher-name>Springer Netherlands</publisher-name>
+            <fpage>67</fpage>
+            <lpage>92</lpage>
+          </element-citation>
+        </ref>
+        <ref id="CR24">
+          <mixed-citation publication-type="other">Statistics Canada (2011). The 10 leading causes of death, 2011.</mixed-citation>
+        </ref>
+        <ref id="CR25">
+          <mixed-citation publication-type="other">Statistics Canada (2013). Aboriginal Population Profile. National Household Survey 2011.</mixed-citation>
+        </ref>
+        <ref id="CR26">
+          <mixed-citation publication-type="other">Statistics Canada (2017). <italic toggle="yes">Age-standardized mortality rates by selected causes, by sex (Both sexes)</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR27">
+          <mixed-citation publication-type="other">Statistics Canada (2015). <italic toggle="yes">Select health indicators of First Nations people living off reserve, Métis and Inuit</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR28">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Tjepkema</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wilkins</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Goedhuis</surname>
+                <given-names>N</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pennock</surname>
+                <given-names>J</given-names>
+              </name>
+            </person-group>
+            <article-title>Cardiovascular disease mortality among first nations people in Canada, 1991-2001</article-title>
+            <source>Chronic Diseases and Injuries in Canada</source>
+            <year>2012</year>
+            <volume>32</volume>
+            <fpage>200</fpage>
+            <lpage>207</lpage>
+            <pub-id pub-id-type="pmid">23046802</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR29">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Tobe</surname>
+                <given-names>SW</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Harmonization of guidelines for the prevention and treatment of cardiovascular disease: the C-CHANGE Initiative</article-title>
+            <source>Canadian Medical Association Journal</source>
+            <year>2011</year>
+            <volume>183</volume>
+            <fpage>1135</fpage>
+            <lpage>1150</lpage>
+            <pub-id pub-id-type="doi">10.1503/cmaj.101508</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3193113</pub-id>
+            <pub-id pub-id-type="pmid">21911548</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR30">
+          <mixed-citation publication-type="other">Truth and Reconciliation Commission of Canada (2015). <italic toggle="yes">Honouring the truth, reconciling for the future: summary of the final report of the Truth and Reconciliation Commission of Canada</italic>.</mixed-citation>
+        </ref>
+        <ref id="CR31">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>J-G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Staessen</surname>
+                <given-names>JA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Franklin</surname>
+                <given-names>SS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fagard</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gueyffier</surname>
+                <given-names>F</given-names>
+              </name>
+            </person-group>
+            <article-title>Systolic and diastolic blood pressure lowering as determinants of cardiovascular outcome</article-title>
+            <source>Hypertension</source>
+            <year>2005</year>
+            <volume>45</volume>
+            <fpage>907</fpage>
+            <lpage>913</lpage>
+            <pub-id pub-id-type="doi">10.1161/01.HYP.0000165020.14745.79</pub-id>
+            <pub-id pub-id-type="pmid">15837826</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR32">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Wijeysundera</surname>
+                <given-names>HC</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Association of temporal trends in risk factors and treatment uptake with coronary heart disease mortality, 1994-2005</article-title>
+            <source>JAMA</source>
+            <year>2010</year>
+            <volume>303</volume>
+            <fpage>1841</fpage>
+            <lpage>1847</lpage>
+            <pub-id pub-id-type="doi">10.1001/jama.2010.580</pub-id>
+            <pub-id pub-id-type="pmid">20460623</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR33">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Williams</surname>
+                <given-names>M</given-names>
+              </name>
+            </person-group>
+            <article-title>Percutaneous coronary intervention in New Zealand</article-title>
+            <source>The New Zealand Medical Journal</source>
+            <year>2007</year>
+            <volume>120</volume>
+            <issue>1248</issue>
+            <fpage>1</fpage>
+            <lpage>3</lpage>
+            <pub-id pub-id-type="pmid">17277814</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR34">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Young</surname>
+                <given-names>TK</given-names>
+              </name>
+            </person-group>
+            <article-title>Cardiovascular Health among Canada’s aboriginal populations: a review</article-title>
+            <source>Heart, Lung &amp; Circulation</source>
+            <year>2012</year>
+            <volume>21</volume>
+            <fpage>618</fpage>
+            <lpage>622</lpage>
+            <pub-id pub-id-type="doi">10.1016/j.hlc.2012.05.009</pub-id>
+            <pub-id pub-id-type="pmid">22726402</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </article>
+</pmc-articleset>

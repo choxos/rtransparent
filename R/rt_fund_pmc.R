@@ -1853,7 +1853,7 @@ obliterate_disclosure_1 <- function(article) {
   # Check relevance
   # TODO Consider adding Department
   fund_regex <- "fund|support|financ|receive|grant|none|sponsor|fellowship|Association|Institute|National|Foundation"
-  article %<>% purrr::keep(~ str_detect(.x, regex(fund_regex, ignore_case = T)))
+  article %<>% purrr::keep(~ stringr::str_detect(.x, stringr::regex(fund_regex, ignore_case = T)))
 
   relevance_ls$is_relevant_fund <- !!length(article)
 
@@ -2195,7 +2195,7 @@ rt_fund_pmc <- function(filename, remove_ns = F) {
 
   # Check relevance
   rel_regex <- "fund|support|financ|receive|grant|none|sponsor|fellowship|Association|Institute|National|Foundation"
-  article %<>% purrr::keep(~ str_detect(.x, regex(rel_regex, ignore_case = T)))
+  article %<>% purrr::keep(~ stringr::str_detect(.x, stringr::regex(rel_regex, ignore_case = T)))
 
   out$is_relevant <- !!length(article)
 

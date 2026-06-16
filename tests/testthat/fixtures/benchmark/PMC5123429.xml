@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="research-article" xml:lang="en" dtd-version="1.4">
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Syst Rev</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Syst Rev</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">1798</journal-id>
+        <journal-id journal-id-type="pmc-domain">sysrev</journal-id>
+        <journal-title-group>
+          <journal-title>Systematic Reviews</journal-title>
+        </journal-title-group>
+        <issn pub-type="epub">2046-4053</issn>
+        <publisher>
+          <publisher-name>BMC</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC5123429</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC5123429.1</article-id>
+        <article-id pub-id-type="pmcaid">5123429</article-id>
+        <article-id pub-id-type="pmcaiid">5123429</article-id>
+        <article-id pub-id-type="pmid">27884175</article-id>
+        <article-id pub-id-type="doi">10.1186/s13643-016-0377-3</article-id>
+        <article-id pub-id-type="publisher-id">377</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Research</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Network meta-analyses performed by contracting companies and commissioned by industry</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Schuit</surname>
+              <given-names initials="E">Ewoud</given-names>
+            </name>
+            <address>
+              <email>eschuit@stanford.edu</email>
+            </address>
+            <xref ref-type="aff" rid="Aff1">1</xref>
+            <xref ref-type="aff" rid="Aff2">2</xref>
+          </contrib>
+          <contrib contrib-type="author" corresp="yes">
+            <name name-style="western">
+              <surname>Ioannidis</surname>
+              <given-names initials="JPA">John PA</given-names>
+            </name>
+            <address>
+              <email>jioannid@stanford.edu</email>
+            </address>
+            <xref ref-type="aff" rid="Aff1">1</xref>
+            <xref ref-type="aff" rid="Aff2">2</xref>
+          </contrib>
+          <aff id="Aff1"><label>1</label>Stanford Prevention Research Center, Stanford University, 1265 Welch Road, Stanford, CA 94305 USA </aff>
+          <aff id="Aff2"><label>2</label>Meta-Research Innovation Center at Stanford (METRICS), Stanford University, 1070 Arastradero Road, Stanford, CA 94304 USA </aff>
+        </contrib-group>
+        <pub-date pub-type="epub">
+          <day>25</day>
+          <month>11</month>
+          <year>2016</year>
+        </pub-date>
+        <pub-date pub-type="collection">
+          <year>2016</year>
+        </pub-date>
+        <volume>5</volume>
+        <issue-id pub-id-type="pmc-issue-id">262695</issue-id>
+        <elocation-id>198</elocation-id>
+        <history>
+          <date date-type="received">
+            <day>22</day>
+            <month>8</month>
+            <year>2016</year>
+          </date>
+          <date date-type="accepted">
+            <day>9</day>
+            <month>11</month>
+            <year>2016</year>
+          </date>
+        </history>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>25</day>
+              <month>11</month>
+              <year>2016</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>08</day>
+              <month>12</month>
+              <year>2016</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2016-12-09 00:08:27.620">
+              <day>09</day>
+              <month>12</month>
+              <year>2016</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>© The Author(s). 2016</copyright-statement>
+          <license license-type="OpenAccess">
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+            <license-p><bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</ext-link>) applies to the data made available in this article, unless otherwise stated.</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="13643_2016_Article_377.pdf"/>
+        <abstract id="Abs1">
+          <sec>
+            <title>Background</title>
+            <p>Industry commissions contracting companies to perform network meta-analysis for health technology assessment (HTA) and reimbursement submissions. Our objective was to estimate the number of network meta-analyses performed by consulting companies contracted by industry, to assess whether they were published, and to explore reasons for non-publication.</p>
+          </sec>
+          <sec>
+            <title>Methods</title>
+            <p>We searched MEDLINE for network meta-analyses of randomized trials. Papers were included if they had authors affiliated with any contracting company. All identified contracting companies as well as additional ones from the list of the exhibitors at the International Society for Pharmacoeconomics and Outcomes Research, an annual meeting that representatives from many contracting companies attend and exhibit at, were surveyed regarding conduct and publication of network meta-analyses.</p>
+          </sec>
+          <sec>
+            <title>Results</title>
+            <p>In 162 of 822 (20%) network meta-analysis papers, authors were affiliated to 66 contracting companies. Another 36 contracting companies were identified by the exhibitors list. Three companies had no contact information and six merged with others, therefore 93 companies were contacted. Thirty seven out of ninety three (40%) companies responded, and 19 indicated that they had performed a total of 476 network meta-analyses, but only 102 (21%) papers were published.</p>
+            <p>Thirteen companies that disclosed to have conducted 174 network meta-analyses (45 published) provided reasons for non-publication. Of the 129 still unpublished meta-analyses, for 40 there were plans for future publication, for 37 the sponsor did not allow publication, for 16 the contracting companies did not plan to publish the meta-analysis, for another 23 plans were unclear, and the remaining 13 were used as HTA submission.</p>
+            <p>The protocol of the network meta-analysis was publically available from 11/162 (6.8%) network meta-analyses published by authors affiliated with contracting companies.</p>
+          </sec>
+          <sec>
+            <title>Conclusions</title>
+            <p>There is a prolific sector of professional contracting companies that perform network meta-analyses. Industry commissions many network meta-analyses, but most are not registered before or published after analyses in the scientific literature. Mechanisms to improve publication rates of network meta-analysis commissioned by industry are warranted.</p>
+          </sec>
+          <sec>
+            <title>Electronic supplementary material</title>
+            <p>The online version of this article (doi:10.1186/s13643-016-0377-3) contains supplementary material, which is available to authorized users.</p>
+          </sec>
+        </abstract>
+        <kwd-group xml:lang="en">
+          <title>Keywords</title>
+          <kwd>Industry</kwd>
+          <kwd>Contracting company</kwd>
+          <kwd>Network meta-analysis</kwd>
+          <kwd>Non-publication</kwd>
+          <kwd>Publication bias</kwd>
+          <kwd>Transparency</kwd>
+          <kwd>Protocol registration</kwd>
+        </kwd-group>
+        <funding-group>
+          <award-group>
+            <funding-source>
+              <institution-wrap>
+                <institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100003246</institution-id>
+                <institution>Nederlandse Organisatie voor Wetenschappelijk Onderzoek</institution>
+              </institution-wrap>
+            </funding-source>
+            <award-id>825.14.001</award-id>
+            <principal-award-recipient>
+              <name name-style="western">
+                <surname>Schuit</surname>
+                <given-names>Ewoud</given-names>
+              </name>
+            </principal-award-recipient>
+          </award-group>
+        </funding-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>issue-copyright-statement</meta-name>
+            <meta-value>© The Author(s) 2016</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec id="Sec1" sec-type="introduction">
+        <title>Background</title>
+        <p>For many clinical conditions, multiple treatment options are assessed in randomized trials. Using network meta-analysis, it is possible to assess the comparative effectiveness of multiple interventions using both direct and indirect evidence [<xref ref-type="bibr" rid="CR1">1</xref>–<xref ref-type="bibr" rid="CR3">3</xref>]. Network meta-analyses are particularly useful for clinical guideline development and policy, and to quantify relative treatment effects (and eventually ranking multiple treatments options for efficacy and/or safety) and the uncertainty around these effects in order to inform cost-effectiveness analyses (CEA) and therefore healthcare resource allocation decisions. Development of methods for and the use of network meta-analysis has been strongly driven by regulatory requirements of health technology assessment (HTA) and reimbursement submissions in general and CEA in particular, as HTA requires the comparison of a novel drug against a broad range of marketed comparators to ensure that the therapies with the most favourable benefit/risk profile reach patients and that limited healthcare resources are appropriately invested. Additionally, these requirements initiated the development of an industry of people conducting these studies in private firms, so-called contracting consulting companies. These contracting companies are commissioned by biotech and pharmaceutical industry to conduct network meta-analysis to facilitate HTA and reimbursement submissions to agencies such as the National Institute for Health and Care Excellence (NICE) or Canadian Agency for Drugs and Technologies in Health (CADTH).</p>
+        <p>Network meta-analysis has grown rapidly, especially over the last few years [<xref ref-type="bibr" rid="CR4">4</xref>]. An increasing number of contracting consulting companies undertake meta-analyses and several of them perform also network meta-analyses. The exact extent of this phenomenon has not been systematically studied. It would be interesting to understand who performs these analyses and how they get disseminated or not in the literature. We anticipate that many more meta-analyses, and network meta-analyses in particular, have been conducted than those published. In commissioned analyses, non-publication may occur for several reasons, including but not limited to unfavorable results for the manufacturer, unwillingness to share with the public (and thus also with competitors) private information and/or information that they consider important to give them insights and strategic advantages, low priority for publication for meta-analysis topics that might have already been covered in other published papers, or simply no strong incentives for the manufacturer (i.e., in the form of regulation) or contracting company to publish the results.</p>
+        <p>The goal of this study was to determine the amount of network meta-analyses performed by consulting companies contracted by industry. At a second stage, we aimed also to explore whether the results of these meta-analyses were published and, if not, why they remain unpublished.</p>
+      </sec>
+      <sec id="Sec2" sec-type="materials|methods">
+        <title>Methods</title>
+        <sec id="Sec3">
+          <title>Strategy</title>
+          <p>Network meta-analyses can be performed by contracting companies commissioned by the industry to perform this work. Two searches were performed to identify these contracting companies. Afterwards, these companies were sent surveys with questions related to the number of performed network meta-analyses, number published, and reasons for non-publication.</p>
+        </sec>
+        <sec id="Sec4">
+          <title>Identification of contracting companies: sources and searches</title>
+          <p>First, MEDLINE was searched for network meta-analyses from inception until 6 May 2015. We used the following search strategy: “(network [tiab] AND (meta analys*[tiab])) OR indirect comparison*[tiab] OR indirect treatment comparison*[tiab] OR multiple treatment comparison*[tiab] OR mixed treatment comparison*[tiab]”. No language restrictions were used. Papers were considered potentially eligible if they described a network meta-analysis of randomized clinical trials. We did not exclude papers that apart from randomized clinical trials also included quasi-randomized clinical trials or papers in which they combined data from observational studies and randomized clinical trials. Papers describing non-intervention studies, letters to the editor, editorials, protocols, reviews, and papers describing methodology were excluded. Papers that used a network meta-analysis to assess cost-effectiveness but not clinical effectiveness or safety were also excluded. The potentially eligible papers were scored by one author (ES) based on the affiliations of the authors for being conducted by academia (university or hospital), industry (biotech or pharmaceutical company), contracted consulting company, or a combination.</p>
+          <p>Second, the list of the exhibitors at the 20th Annual International Meeting (May 2015) of the International Society for Pharmacoeconomics and Outcomes Research (ISPOR) was searched for contracting companies [<xref ref-type="bibr" rid="CR5">5</xref>]. The ISPOR is an international multidisciplinary professional membership society, that aims to advance the policy, science, and practice of pharmacoeconomics (health economics) and outcomes research (the scientific discipline that evaluates the effect of health care interventions on patient well-being including clinical, economic, and patient-centered outcomes). As such, many professionals from academia, industry, and consulting companies attend ISPOR meetings, and many (consulting) companies have exhibitions to promote their companies and to recruit personnel and attract new customers. For those companies of the ISPOR list for which it was unclear whether they perform network meta-analysis, inclusion was based on the information on the company’s website (identified through Google by ES).</p>
+          <p>No further selection of contracting companies occurred. The company was considered for further study if a person affiliated to a contracting company co-authored a published network meta-analysis or if their company website indicated that they did perform network meta-analysis.</p>
+        </sec>
+        <sec id="Sec5">
+          <title>Data collection via surveys</title>
+          <p>Identified contracting companies from both searches were contacted by e-mail or through a contact form on the company’s website if an e-mail address was not available. Companies were surveyed and asked: (1) has your company ever undertaken any network meta-analyses, and if so, (2) when did your company first perform a network meta-analysis, (3) how many network meta-analyses have been completed by your company to date, where a network meta-analysis referred to a commissioned network meta-analysis (which may in fact include more than one network meta-analysis, e.g. for different outcomes, or subgroups), (4) how many of these completed network meta-analyses have been published in the literature, (5) if they could list references of network meta-analyses that were published? If we had identified network meta-analyses through our literature search we sent the company the reference (s) of the paper (s) and asked whether they could list any additional papers. Each company was informed that we planned to publish the results and was allowed to have their company’s name be de-identified in the publication, if they wished so. Companies were contacted three times with e-mails sent 2 weeks apart. For companies that were now part of another company, we contacted the mother company to provide information about the former company. When representatives responded that they had no time to provide an exact number of conducted and published network meta-analyses they were allowed to give an estimate. Papers that were quoted as “published” according to the companies but were in fact conference abstracts (<italic toggle="yes">N</italic> = 23 meta-analyses), no network meta-analysis (<italic toggle="yes">N</italic> = 4), cost-effectiveness analysis (<italic toggle="yes">N</italic> = 2), or a methodological paper (<italic toggle="yes">N</italic> = 2) were not considered as published network meta-analyses.</p>
+          <p>After collection of the data on this survey, we sent out an additional survey to those companies that had responded that they do perform network meta-analysis. Here, we asked for specific reasons of network meta-analyses not being published: (1) paper was submitted but has been rejected, no plan to resubmit, (2) paper was submitted, but has been rejected, still trying to publish, (3) paper was submitted and is under peer review (first submission), (4) paper will be submitted in the future, (5) no plan to publish the network meta-analysis, (6) not allowed by the pharma sponsor to publish the network meta-analysis, or (7) other reason (specify). Again, companies were contacted three times with e-mails sent 2 weeks apart and conference abstracts were not considered published papers and were considered not published with reason “unclear”.</p>
+          <p>Papers that we initially did not assign to a contracting company because none of the authors on the paper had the company’s affiliation (<italic toggle="yes">N</italic> = 9), but that which were listed by a company were included in the total number of published papers by that company. Additionally, papers that we did assign to a company based on author affiliations in the publication, but that were not listed by the company itself in its reply (<italic toggle="yes">N</italic> = 29) were also included in the total number of published papers by that company.</p>
+          <p>For network meta-analyses with a contracting company affiliation, we investigated whether a protocol was publically available. The protocol could either be referenced to in the paper or could be identified through PROSPERO [<xref ref-type="bibr" rid="CR6">6</xref>] or the website of the journal of publication, reimbursement agency, or research institute. We also looked at protocol availability of network meta-analyses published 1 year after the launch of PROSPERO (Feb 2011) [<xref ref-type="bibr" rid="CR7">7</xref>] to take into account the lower awareness of the value of registry of systematic reviews and meta-analyses before their launch.</p>
+        </sec>
+        <sec id="Sec6">
+          <title>Data analysis</title>
+          <p>Data analysis was descriptive. Quantitative data are presented with median and interquartile ranges and categorical data with number and percentages.</p>
+        </sec>
+      </sec>
+      <sec id="Sec7" sec-type="results">
+        <title>Results</title>
+        <sec id="Sec8">
+          <title>Identification of contracting companies</title>
+          <p>The search, study selection, and identification of eligible contracting companies are presented in Fig. <xref rid="Fig1" ref-type="fig">1</xref>.<fig id="Fig1" position="float" orientation="portrait"><label>Fig. 1</label><caption><p>Flow diagram of identification of network meta-analyses and of contracting companies</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="MO1" position="float" orientation="portrait" xlink:href="13643_2016_377_Fig1_HTML.jpg"/></fig>
+</p>
+          <p>Through our database search, we identified 2483 papers of which 822 presented a network meta-analysis based on title and abstract screening. Authors were affiliated to a contracting company in 162 (20%). Contracting company affiliations were rarely the sole affiliations of the authors of these network meta-analyses; typically, the papers had also authors affiliated to industry or academia or both. In 35 papers (22%), at least one of the authors with a contracting company affiliation also had an academic affiliation, and in one paper, two authors had both a contracting company and industry affiliation. From this literature search, 66 contracting companies were identified.</p>
+          <p>The list of exhibitors at the 2015 Annual Meeting of ISPOR contained 89 listings, and of those, 50 (36 not already identified by the literature search) were identified as eligible for inclusion in our study.</p>
+          <p>A total of 102 contracting companies were thus identified (see Additional file <xref rid="MOESM1" ref-type="media">1</xref>). For three companies, no contact information was available, including one company that was dissolved. Another six companies were incorporated into other companies, leaving 93 eligible contracting companies for inclusion in the e-mail survey.</p>
+        </sec>
+        <sec id="Sec9">
+          <title>Survey</title>
+          <p>Thirty-seven out of 93 contacted contracting companies (40%) responded to our first survey (Fig. <xref rid="Fig2" ref-type="fig">2</xref>). Twenty-nine responded fully, and 19 indicated they had performed network meta-analysis. The 19 companies that responded to our survey were involved in 89 of the 162 network meta-analysis papers that we had identified upfront. These 19 companies were actually involved in 102 published network meta-analysis papers (the 89 we identified, plus another 13 provided to us by the companies—two papers not indexed in PubMed, two not identified by our search, and nine where the publication did not have a contracting company affiliation, but which nevertheless were claimed by the company). Four of the 102 papers had authors from two contracting companies each.<fig id="Fig2" position="float" orientation="portrait"><label>Fig. 2</label><caption><p>Flow diagram for contracting companies based on the replies to the first survey</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="MO2" position="float" orientation="portrait" xlink:href="13643_2016_377_Fig2_HTML.jpg"/></fig>
+</p>
+        </sec>
+        <sec id="Sec10">
+          <title>First survey</title>
+          <p>The replies of the 19 companies to our first survey are presented in Table <xref rid="Tab1" ref-type="table">1</xref>. The experience of the companies with these analyses differed largely as indicated by the starting date of first network meta-analysis (range: June 2000—Sept 2013) and the number of network meta-analyses that they claimed to have performed (range: 1—100). Together the 19 companies made claims to the performance of a total of 476 network meta-analyses. The number of independent network meta-analyses may be slightly smaller, since some of those may have involved more than one contracting company. Four companies gave an estimate of the number of conducted network meta-analyses rather than an exact number. The average number of conducted network meta-analyses per year per company was 6.6 for the total sample, but varied widely between companies (range 0.16–36).<table-wrap id="Tab1" position="float" orientation="portrait"><label>Table 1</label><caption><p>Results of the 19 contracting companies that indicated that they perform network meta-analysis</p></caption><table frame="hsides" rules="groups"><thead><tr><th colspan="1" rowspan="1"/><th colspan="1" rowspan="1">Company</th><th colspan="1" rowspan="1">Start date of first NMA</th><th colspan="1" rowspan="1">NMAs completed</th><th colspan="1" rowspan="1">NMAs published</th><th colspan="1" rowspan="1">NMA conducted/year</th><th colspan="1" rowspan="1">NMA published/year</th><th colspan="1" rowspan="1">Ratio published/conducted</th></tr></thead><tbody><tr><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">Mapi Group (incl. Health Technology Analysts and Optum)</td><td colspan="1" rowspan="1">Nov-05</td><td colspan="1" rowspan="1">88</td><td colspan="1" rowspan="1">33</td><td colspan="1" rowspan="1">9.5</td><td colspan="1" rowspan="1">3.6</td><td char="." align="char" colspan="1" rowspan="1">0.38</td></tr><tr><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">Abacus International/Decision Research Group</td><td colspan="1" rowspan="1">Jun-07</td><td colspan="1" rowspan="1">54</td><td colspan="1" rowspan="1">10</td><td colspan="1" rowspan="1">7.0</td><td colspan="1" rowspan="1">1.3</td><td char="." align="char" colspan="1" rowspan="1">0.19</td></tr><tr><td colspan="1" rowspan="1">3</td><td colspan="1" rowspan="1">Redwood Outcomes (now part of Precision Health Economics)</td><td colspan="1" rowspan="1">Sept-13</td><td colspan="1" rowspan="1">51</td><td colspan="1" rowspan="1">5</td><td colspan="1" rowspan="1">36</td><td colspan="1" rowspan="1">3.5</td><td char="." align="char" colspan="1" rowspan="1">0.10</td></tr><tr><td colspan="1" rowspan="1">4</td><td colspan="1" rowspan="1">Evidera/UBC<sup>c</sup>
+</td><td colspan="1" rowspan="1">Nov-08</td><td colspan="1" rowspan="1">50</td><td colspan="1" rowspan="1">3</td><td colspan="1" rowspan="1">8.0</td><td colspan="1" rowspan="1">0.48</td><td char="." align="char" colspan="1" rowspan="1">0.06</td></tr><tr><td colspan="1" rowspan="1">5</td><td colspan="1" rowspan="1">Kleijnen Systematic Reviews Ltd<sup>c</sup>
+</td><td colspan="1" rowspan="1">Jan-08</td><td colspan="1" rowspan="1">20</td><td colspan="1" rowspan="1">14</td><td colspan="1" rowspan="1">2.8</td><td colspan="1" rowspan="1">2.0</td><td char="." align="char" colspan="1" rowspan="1">0.70</td></tr><tr><td colspan="1" rowspan="1">6</td><td colspan="1" rowspan="1">Amaris</td><td colspan="1" rowspan="1">Jan-12</td><td colspan="1" rowspan="1">15</td><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">4.9</td><td colspan="1" rowspan="1">0.32</td><td char="." align="char" colspan="1" rowspan="1">0.07</td></tr><tr><td colspan="1" rowspan="1">7</td><td colspan="1" rowspan="1">Symmetron Ltd</td><td colspan="1" rowspan="1">Nov-08</td><td colspan="1" rowspan="1">13</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">2.1</td><td colspan="1" rowspan="1">0.32</td><td char="." align="char" colspan="1" rowspan="1">0.15</td></tr><tr><td colspan="1" rowspan="1">8</td><td colspan="1" rowspan="1">RTI Health Solutions</td><td colspan="1" rowspan="1">Jun-00</td><td colspan="1" rowspan="1">12</td><td colspan="1" rowspan="1">13</td><td colspan="1" rowspan="1">0.82</td><td colspan="1" rowspan="1">0.89</td><td char="." align="char" colspan="1" rowspan="1">1.08</td></tr><tr><td colspan="1" rowspan="1">9</td><td colspan="1" rowspan="1">Medignition Inc.</td><td colspan="1" rowspan="1">Aug-08</td><td colspan="1" rowspan="1">6</td><td colspan="1" rowspan="1">6</td><td colspan="1" rowspan="1">0.92</td><td colspan="1" rowspan="1">0.92</td><td char="." align="char" colspan="1" rowspan="1">1.00</td></tr><tr><td colspan="1" rowspan="1">10</td><td colspan="1" rowspan="1">Augmentium Pharma Consulting</td><td colspan="1" rowspan="1">Jan-05</td><td colspan="1" rowspan="1">5</td><td colspan="1" rowspan="1">4</td><td colspan="1" rowspan="1">0.50</td><td colspan="1" rowspan="1">0.40</td><td char="." align="char" colspan="1" rowspan="1">0.80</td></tr><tr><td colspan="1" rowspan="1">11</td><td colspan="1" rowspan="1">AHEAD</td><td colspan="1" rowspan="1">Jun-10</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">0.43</td><td colspan="1" rowspan="1">0.43</td><td char="." align="char" colspan="1" rowspan="1">1.00</td></tr><tr><td colspan="1" rowspan="1">12</td><td colspan="1" rowspan="1">Xintera Consulting</td><td colspan="1" rowspan="1">Jan-09</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">0.33</td><td colspan="1" rowspan="1">0.33</td><td char="." align="char" colspan="1" rowspan="1">1.00</td></tr><tr><td colspan="1" rowspan="1">13</td><td colspan="1" rowspan="1">CEMKA-EVAL</td><td colspan="1" rowspan="1">May-12</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">0</td><td colspan="1" rowspan="1">0.73</td><td colspan="1" rowspan="1">0.0</td><td char="." align="char" colspan="1" rowspan="1">0.0</td></tr><tr><td colspan="1" rowspan="1">14</td><td colspan="1" rowspan="1">McMDC Ltd</td><td colspan="1" rowspan="1">Sep-09</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">0.37</td><td colspan="1" rowspan="1">0.18</td><td char="." align="char" colspan="1" rowspan="1">0.50</td></tr><tr><td colspan="1" rowspan="1">15</td><td colspan="1" rowspan="1">Pharmacoeconomics and Outcomes Research Iberia</td><td colspan="1" rowspan="1">Jan-10</td><td colspan="1" rowspan="1">2</td><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">0.39</td><td colspan="1" rowspan="1">0.20</td><td char="." align="char" colspan="1" rowspan="1">0.50</td></tr><tr><td colspan="1" rowspan="1">16</td><td colspan="1" rowspan="1">BeSyRe Bekkering Systematic Reviews</td><td colspan="1" rowspan="1">May-10</td><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">0.21</td><td colspan="1" rowspan="1">0.21</td><td char="." align="char" colspan="1" rowspan="1">1.00</td></tr><tr><td colspan="1" rowspan="1">17</td><td colspan="1" rowspan="1">David Hoaglin (consulting statistician)</td><td colspan="1" rowspan="1">Jan-09</td><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">1</td><td colspan="1" rowspan="1">0.16</td><td colspan="1" rowspan="1">0.16</td><td char="." align="char" colspan="1" rowspan="1">1.00</td></tr><tr><td colspan="1" rowspan="1">18</td><td colspan="1" rowspan="1">Company 1<sup>c</sup>
+</td><td colspan="1" rowspan="1">NP</td><td colspan="1" rowspan="1">NP</td><td colspan="1" rowspan="1">NP</td><td colspan="1" rowspan="1">NP</td><td colspan="1" rowspan="1">NP</td><td char="." align="char" colspan="1" rowspan="1">0.04</td></tr><tr><td colspan="1" rowspan="1">19</td><td colspan="1" rowspan="1">Company 2<sup>c</sup>
+</td><td colspan="1" rowspan="1">NP</td><td colspan="1" rowspan="1">NP</td><td colspan="1" rowspan="1">NP<sup>a</sup>
+</td><td colspan="1" rowspan="1">NP</td><td colspan="1" rowspan="1">NP</td><td char="." align="char" colspan="1" rowspan="1">0.08</td></tr><tr><td colspan="1" rowspan="1"/><td colspan="1" rowspan="1">Total</td><td colspan="1" rowspan="1">–</td><td colspan="1" rowspan="1">476<sup>b</sup>
+</td><td colspan="1" rowspan="1">106<sup>b</sup>
+</td><td colspan="1" rowspan="1">6.6</td><td colspan="1" rowspan="1">1.5</td><td char="." align="char" colspan="1" rowspan="1">0.22</td></tr></tbody></table><table-wrap-foot><p>Companies are sorted based on the number of network meta-analyses (NMA) conducted</p><p><italic toggle="yes">NP</italic> not presented due to confidentiality</p><p><sup>a</sup>Since no list of references was available from Company 2, we used the number of papers identified by our literature search</p><p><sup>b</sup>Meta-analyses conducted or published by more than one contracting company are double-counted, but these are uncommon. The sum of 106 for published network meta-analyses corresponds to 102 papers, because four meta-analyses were co-authored by two contracting companies. The exact level of redundancy for conducted meta-analyses is not correct, but is likely to be similarly low</p><p><sup>c</sup>These companies gave an approximation for the number of conducted network meta-analyses. For calculations the approximation was considered as the actual number of network meta-analyses</p></table-wrap-foot></table-wrap>
+</p>
+          <p>Companies provided evidence that they had published between 0 and 33 network meta-analyses each for a sum of 106 (102 independent papers, four papers were co-authored by two companies). The ratio of 106 publication contributions versus 476 claims of network meta-analyses conducted is 0.22 and the proportion of published vs. conducted network meta-analyses varied widely between companies (range 0–1.08), with one company for which we found more published than claimed conducted network meta-analyses (13 vs. 12; ratio published/conducted = 1.08). The overall number of network meta-analyses published per year was 1.5 and was found to vary also widely between companies (range 0–3.6).</p>
+        </sec>
+        <sec id="Sec11">
+          <title>Second survey</title>
+          <p>Sixteen out of 19 companies replied to our second survey. Of these, two companies did not keep specific information about publication status, and one company indicated they had no time to complete the survey. Together with the three companies that did not respond, these six were responsible for 302 (63%) out of the total 476 conducted network meta-analyses.</p>
+          <p>Based on the replies by the 13 companies that did provide reasons for non-publication, 45 out of 174 (26%) conducted network meta-analyses had already been published. Up to another 40 network meta-analyses maximum could perhaps be published in the near future, as the authors indicated they were or would be pursuing plans for publication: two meta-analyses had already been submitted but were not published yet but the company indicated they were still trying to publish, 10 were currently under review, and the company indicated plans for future publication for another 28 meta-analyses. Two meta-analyses had been submitted, but were rejected and the company indicated no future plans to pursue publication. The sponsor was claimed to be responsible for not allowing publication of 37/129 non-published network meta-analyses. For another 14 meta-analyses, there was no plan to publish, but the reason was not stated. A further 13 meta-analyses had been used for health technology assessment (HTA) submissions to reimbursement agencies with unclear plans for further publication in the scientific literature. Finally, for 23 meta-analyses it was unclear whether there was a plan to publish them or not. When we added the 302 network meta-analyses conducted by the six companies that did not respond to our second survey, the reason for non-publication was unclear in (23 + 241)/476 (55%) of all meta-analyses. The proportion of published network meta-analyses in companies that provided reasons for non-publication was not significantly different from those that did not respond (45/174 (26%) vs. 61/302 (20%), <italic toggle="yes">p</italic> = 0.15 by chi-square test).</p>
+        </sec>
+        <sec id="Sec12">
+          <title>Protocol availability</title>
+          <p>Of the 162 network meta-analyses with one or more authors affiliated with a contracting company, 10 (6.2%) referred to a protocol, 33 (20%) mentioned a protocol was drafted but did not provide a reference, and 119 (73%) did not refer to or mention a protocol in their paper. When limited to network meta-analyses published after Feb 2012 (1 year after the launch of PROSPERO), these numbers changed to 10 (9.1%), 23 (21%), and 77 (70%), respectively, out of 110 network meta-analyses. Overall, we managed to identify and access the protocol of 11 (6.8%) network meta-analyses. Three were available through PROSPERO (all <italic toggle="yes">stage of review</italic> “ongoing”), five through the National Institute for Health Research (NIHR) of which one was also registered in PROSPERO, two through the Agency for Healthcare Research and Quality (AHRQ), and one each through the Cochrane Collaboration, and the National Institute for Health and Care Excellence (NICE). One network meta-analysis used a company website of the York Health Economics Consortium (YHEC) to refer to the protocol, but the website was no longer available. All published network meta-analyses with a publically available protocol had at least one co-author with a sole academic affiliation. For one network meta-analysis, the protocol was published after the date of the last search listed in the paper (July 13, 2011 (AHRQ website protocol) vs. Jan 2011 (AHRQ website research review)). Publication of the final paper did occur after the publication date of the protocol (December 5, 2011).</p>
+        </sec>
+      </sec>
+      <sec id="Sec13" sec-type="discussion">
+        <title>Discussion</title>
+        <p>Overall, our evaluation found a total of 102 companies that provide consultancy in evidence synthesis. Nineteen of these contracting companies replied to our first survey disclosing that they had conducted many hundreds of network meta-analyses, but the results were published for only a small minority. Among the contracting companies that replied to our second survey, there was an intent to publish about half of the meta-analyses in the peer-reviewed literature and some others have been used for HTA submissions. Unwillingness of the industry sponsor to allow publication was the most common specified reason for lack of a plan for publication. Registration of meta-analysis protocols was found to be poor.</p>
+        <p>To our knowledge, this is the first effort to investigate the number of network meta-analyses performed by contracting companies commissioned by the industry. There are, however, some limitations to our study. First, the response rate of the addressees was 40%. This is probably acceptable given the involvement of rather sensitive information [<xref ref-type="bibr" rid="CR8">8</xref>]. Probably many non-responders did not actually perform network meta-analysis. Second, since 4 companies out of the 37 that responded were unable to provide information due to confidentiality agreements with industry, it is possible that some other companies did not respond at all for this same reason. Nevertheless, the 19 companies that did perform network meta-analyses were responsible for the majority of all published network meta-analyses affiliated with a contracting company, therefore probably we did capture most of the main stakeholders operating in this field. The 74 published network meta-analyses for which no company replied to our first survey were affiliated to 48 different contracting companies, indicating that the non-responders had published few network meta-analyses each and were either less involved in this type of work and/or had more prominent non-publication rates than the responders. Third, the accuracy of the information provided by survey responders cannot be fully verified. Juxtaposition against verifiable information, e.g., number of published papers, suggested mostly good concordance, but we cannot verify information on unpublished work and the reasons for its lack of publication.</p>
+        <p>So far, evidence for non-publication in evidence-based medicine has focused primarily on randomized trials rather than meta-analyses. Low publication rates have been found for randomized clinical trials in many fields, [<xref ref-type="bibr" rid="CR9">9</xref>–<xref ref-type="bibr" rid="CR13">13</xref>] and specifically in industry-sponsored trials [<xref ref-type="bibr" rid="CR9">9</xref>, <xref ref-type="bibr" rid="CR10">10</xref>, <xref ref-type="bibr" rid="CR12">12</xref>]. Industry-sponsored trials that did get published have been shown to more often find a treatment effect in benefit of the sponsor’s treatment [<xref ref-type="bibr" rid="CR14">14</xref>, <xref ref-type="bibr" rid="CR15">15</xref>]. Additionally, examples exist of intentional withholding of trial reports from publication due to results not in favor of the sponsor’s drug [<xref ref-type="bibr" rid="CR16">16</xref>]. This may also apply to network meta-analyses. Sponsors may know the outcomes where their drugs rank high and ask for a network meta-analysis on these outcomes. Furthermore, contracting companies have no incentive to spend resources on analyzing outcomes other than the ones requested. There is also a high risk of presenting results in a way that favors the sponsor’s drug. Further challenges may arise when publically unavailable data is included in meta-analyses initiated by industry.</p>
+        <p>In our study, veto from the industry was the most common specific stated reason for not having a plan for publication of network meta-analyses. Moreover, a substantial number of meta-analyses were left with unclear reasons for non-publication even among the responders, so the proportion of these evidence syntheses that were not published because of the unwillingness of the industry sponsor may be higher. Especially, considering that the six contracting companies responsible for two-thirds of all conducted network meta-analyses did not provide reasons for non-publication. It is unknown whether the decision for non-publication was made before or after seeing the results and thus whether non-publication reflects the presence of unfavorable results for the manufacturers, unwillingness to share with the public (and thus also with competitors) private information with strategic advantages, or low priority for publishing meta-analyses on topics already covered in other published papers [<xref ref-type="bibr" rid="CR17">17</xref>]. In general, we think it is safe to state that publication of any type of analysis done for industry cannot be separated from the overall commercial strategy and is not usually done with the aim of disseminating generalizable knowledge.</p>
+        <p>Moreover, contracting companies that are commissioned to perform network meta-analyses do not necessarily have strong incentives to publish the results, even without any veto from the industry sponsor. Contractors may not have the “publish or perish” pressure that is typical of academic investigators. Manuscript preparation and publication also require resources that a profit-oriented business may not want to spend. Lack of peer-reviewed publication has been seen also in other areas of biomedical investigation where entrepreneurs are involved for profit and has been termed stealth research [<xref ref-type="bibr" rid="CR18">18</xref>]. In fact, we identified very few published network meta-analyses where contracting companies were the only type of affiliation. The majority of those published had also academic affiliations which would offer a traditional motivation for pursuing publication.</p>
+        <p>Some network meta-analyses that were not published in the peer-reviewed journal literature were part of an HTA submission to regulatory agencies like NICE or the Canadian Agency for Drugs and Technologies in Health (CADTH). Nevertheless, these submissions generally only present selected results, while specific details are sent to the agency separately, thereby making it very difficult to assess the rigor and validity of the network meta-analysis and its results. Similarly, some pharmaceutical companies may publish their results on websites or at conferences, but again, judging the quality and inclusiveness of the analyses is difficult.</p>
+        <p>Non-transparency is further compounded by lack of protocol registration. The percentage of protocol registration was low, especially when you consider that close to 400 network meta-analysis protocols and more than 12,000 systematic review and/or meta-analysis protocols have been registered on PROSPERO. Prospective registration of systematic reviews with written protocols [<xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR7">7</xref>] is increasingly endorsed [<xref ref-type="bibr" rid="CR19">19</xref>]. The Cochrane Comparing Multiple Interventions Methods Group (CMIMG) has developed protocol templates and has made these protocols available on their website [<xref ref-type="bibr" rid="CR20">20</xref>]. Protocol registration will not avoid the need for unanticipated deviations from the protocol, but would make deviations more visible and open to public judgment [<xref ref-type="bibr" rid="CR21">21</xref>, <xref ref-type="bibr" rid="CR22">22</xref>].</p>
+        <p>We did not try to estimate the volume of traditional systematic reviews and pairwise meta-analyses conducted and/or published by contractors, but this is also likely to be impressive. Our survey clearly shows there is a huge market for evidence synthesis, even for the most sophisticated type of synthesis method. A large segment of this work happens outside of peer-reviewed publications, with results only known to contractors and their sponsors.</p>
+        <p>Non-publication of network meta-analysis results seems particularly problematic as network meta-analysis is an evidence synthesis technique that allows informing health policy and guidelines. Regardless of the exact reasons, non-publication results in a largely non-transparent corpus of evidence synthesis work that would otherwise have been of potential value to patients, clinicians and guideline developers, and even the industry itself. Reimbursement agencies may require industry to preregister a protocol, e.g., in PROSPERO, before accepting their HTA submissions. Another way to improve publication rates may come from regulatory bodies that could require certain information about the HTA submission to be made publically available, similar to the transparent reporting for systematic reviews and meta-analyses (PRISMA) extension for network meta-analyses (PRISMA-NMA standards [<xref ref-type="bibr" rid="CR23">23</xref>]).</p>
+      </sec>
+      <sec id="Sec14" sec-type="conclusion">
+        <title>Conclusions</title>
+        <p>There is a prolific sector of professional contracting companies that perform network meta-analyses. Industry commissions many network meta-analyses, but most are not registered before or published after analyses in the scientific literature. Mechanisms to improve publication rates of network meta-analysis commissioned by industry are warranted.</p>
+      </sec>
+    </body>
+    <back>
+      <app-group>
+        <app id="App1">
+          <sec id="Sec15">
+            <title>Additional file</title>
+            <p>
+              <media xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" xlink:href="13643_2016_377_MOESM1_ESM.doc" id="MOESM1" orientation="portrait">
+                <label>Additional file 1:</label>
+                <caption>
+                  <p>List of eligible contracting companies. The additional file lists eligible contracting companies, whether they were identified via MEDLINE or the ISPOR exhibitors list, and whether they responded to our first survey. (DOC 111 kb)</p>
+                </caption>
+              </media>
+            </p>
+          </sec>
+        </app>
+      </app-group>
+      <ack>
+        <title>Acknowledgements</title>
+        <p>The authors would like to thank Kristian Thorlund, PhD and Jeroen Jansen, PhD, co-directors of Redwood Outcomes (now part of Precision Health Economics) for making us aware that network meta-analysis studies are frequently performed outside academia by research companies to prepare for health technology assessment and reimbursement submissions of newly developed interventions, and to help inform drug development decisions. KT and JP did not receive any compensation for their contributions. Written permission was obtained from both authors to include their names in this Acknowledgements section.</p>
+        <sec id="FPar1">
+          <title>Funding</title>
+          <p>This work was supported by the Netherlands Organisation for Scientific Research [grant number 825.14.001] to ES. The funding sources had no role in the study design, data collection, analysis, preparation of the manuscript, or decision to submit the manuscript for publication.</p>
+        </sec>
+        <sec id="FPar2">
+          <title>Availability of data and materials</title>
+          <p>All data that was agreed on with contracting companies that could be shared has been shared in the manuscript.</p>
+        </sec>
+        <sec id="FPar3">
+          <title>Authors’ contributions</title>
+          <p>JPAI initiated the study. ES and JPAI designed the study. ES performed the literature search and identified companies. ES analyzed the data in close collaboration with JPAI. Interpretation of data was performed by both authors. ES wrote the first draft. Both authors edited in consecutive versions of manuscript. Both authors read and approved the final manuscript and agreed to be accountable for all aspects of the work in ensuring that questions related to the accuracy or integrity of any part of the work are appropriately investigated and resolved.</p>
+        </sec>
+        <sec id="FPar4">
+          <title>Competing interests</title>
+          <p>The authors declare that they have no competing interests.</p>
+        </sec>
+        <sec id="FPar5">
+          <title>Consent for publication</title>
+          <p>Not applicable.</p>
+        </sec>
+        <sec id="FPar6">
+          <title>Ethical approval and consent to participate</title>
+          <p>Not applicable.</p>
+        </sec>
+      </ack>
+      <ref-list id="Bib1">
+        <title>References</title>
+        <ref id="CR1">
+          <label>1.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bucher</surname>
+                <given-names>HC</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Guyatt</surname>
+                <given-names>GH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Griffith</surname>
+                <given-names>LE</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Walter</surname>
+                <given-names>SD</given-names>
+              </name>
+            </person-group>
+            <article-title>The results of direct and indirect treatment comparisons in meta-analysis of randomized controlled trials</article-title>
+            <source>J Clin Epidemiol</source>
+            <year>1997</year>
+            <volume>50</volume>
+            <fpage>683</fpage>
+            <lpage>691</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0895-4356(97)00049-8</pub-id>
+            <pub-id pub-id-type="pmid">9250266</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR2">
+          <label>2.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Higgins</surname>
+                <given-names>JP</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Whitehead</surname>
+                <given-names>A</given-names>
+              </name>
+            </person-group>
+            <article-title>Borrowing strength from external trials in a meta-analysis</article-title>
+            <source>Stat Med</source>
+            <year>1996</year>
+            <volume>15</volume>
+            <fpage>2733</fpage>
+            <lpage>2749</lpage>
+            <pub-id pub-id-type="doi">10.1002/(SICI)1097-0258(19961230)15:24&lt;2733::AID-SIM562&gt;3.0.CO;2-0</pub-id>
+            <pub-id pub-id-type="pmid">8981683</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR3">
+          <label>3.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lu</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ades</surname>
+                <given-names>AE</given-names>
+              </name>
+            </person-group>
+            <article-title>Combination of direct and indirect evidence in mixed treatment comparisons</article-title>
+            <source>Stat Med</source>
+            <year>2004</year>
+            <volume>23</volume>
+            <fpage>3105</fpage>
+            <lpage>3124</lpage>
+            <pub-id pub-id-type="doi">10.1002/sim.1875</pub-id>
+            <pub-id pub-id-type="pmid">15449338</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR4">
+          <label>4.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Chambers</surname>
+                <given-names>JD</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Naci</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wouters</surname>
+                <given-names>OJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pyo</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gunjal</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kennedy</surname>
+                <given-names>IR</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>An assessment of the methodological quality of published network meta-analyses: a systematic review</article-title>
+            <source>PLoS ONE</source>
+            <year>2015</year>
+            <volume>10</volume>
+            <pub-id pub-id-type="doi">10.1371/journal.pone.0121715</pub-id>
+            <pub-id pub-id-type="pmid">25923737</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4414531</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR5">
+          <label>5.</label>
+          <mixed-citation publication-type="other">International Society for Pharmacoeconomics and Outcomes Research. ISPOR 20th Annual International Meeting list of exhibitors (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://www.ispor.org/Event/Exhibitors/2015Philadelphia">http://www.ispor.org/Event/Exhibitors/2015Philadelphia</ext-link>). 5-4-2015. 5-4-2015.</mixed-citation>
+        </ref>
+        <ref id="CR6">
+          <label>6.</label>
+          <mixed-citation publication-type="other">Centre for Reviews and Dissemination. PROSPERO (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://www.crd.york.ac.uk/PROSPERO/">http://www.crd.york.ac.uk/PROSPERO/</ext-link>). 6-29-0015. 11-23-2015.</mixed-citation>
+        </ref>
+        <ref id="CR7">
+          <label>7.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Booth</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Clarke</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dooley</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ghersi</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Moher</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Petticrew</surname>
+                <given-names>M</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>The nuts and bolts of PROSPERO: an international prospective register of systematic reviews</article-title>
+            <source>Syst Rev</source>
+            <year>2012</year>
+            <volume>1</volume>
+            <fpage>2</fpage>
+            <pub-id pub-id-type="doi">10.1186/2046-4053-1-2</pub-id>
+            <pub-id pub-id-type="pmid">22587842</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3348673</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR8">
+          <label>8.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Asch</surname>
+                <given-names>DA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jedrziewski</surname>
+                <given-names>MK</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Christakis</surname>
+                <given-names>NA</given-names>
+              </name>
+            </person-group>
+            <article-title>Response rates to mail surveys published in medical journals</article-title>
+            <source>J Clin Epidemiol</source>
+            <year>1997</year>
+            <volume>50</volume>
+            <fpage>1129</fpage>
+            <lpage>1136</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0895-4356(97)00126-1</pub-id>
+            <pub-id pub-id-type="pmid">9368521</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR9">
+          <label>9.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Chapman</surname>
+                <given-names>SJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shelton</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mahmood</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fitzgerald</surname>
+                <given-names>JE</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Harrison</surname>
+                <given-names>EM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bhangu</surname>
+                <given-names>A</given-names>
+              </name>
+            </person-group>
+            <article-title>Discontinuation and non-publication of surgical randomised controlled trials: observational study</article-title>
+            <source>BMJ</source>
+            <year>2014</year>
+            <volume>349</volume>
+            <fpage>g6870</fpage>
+            <pub-id pub-id-type="doi">10.1136/bmj.g6870</pub-id>
+            <pub-id pub-id-type="pmid">25491195</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4260649</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR10">
+          <label>10.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Jones</surname>
+                <given-names>CW</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Handler</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Crowell</surname>
+                <given-names>KE</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Keil</surname>
+                <given-names>LG</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Weaver</surname>
+                <given-names>MA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Platts-Mills</surname>
+                <given-names>TF</given-names>
+              </name>
+            </person-group>
+            <article-title>Non-publication of large randomized clinical trials: cross sectional analysis</article-title>
+            <source>BMJ</source>
+            <year>2013</year>
+            <volume>347</volume>
+            <fpage>f6104</fpage>
+            <pub-id pub-id-type="doi">10.1136/bmj.f6104</pub-id>
+            <pub-id pub-id-type="pmid">24169943</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3812466</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR11">
+          <label>11.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Manzoli</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Flacco</surname>
+                <given-names>ME</given-names>
+              </name>
+              <name name-style="western">
+                <surname>D’Addario</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Capasso</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>De</surname>
+                <given-names>VC</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Marzuillo</surname>
+                <given-names>C</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Non-publication and delayed publication of randomized trials on vaccines: survey</article-title>
+            <source>BMJ</source>
+            <year>2014</year>
+            <volume>348</volume>
+            <fpage>g3058</fpage>
+            <pub-id pub-id-type="doi">10.1136/bmj.g3058</pub-id>
+            <pub-id pub-id-type="pmid">24838102</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR12">
+          <label>12.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ross</surname>
+                <given-names>JS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mulvey</surname>
+                <given-names>GK</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hines</surname>
+                <given-names>EM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nissen</surname>
+                <given-names>SE</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Krumholz</surname>
+                <given-names>HM</given-names>
+              </name>
+            </person-group>
+            <article-title>Trial publication after registration in ClinicalTrials.Gov: a cross-sectional analysis</article-title>
+            <source>PLoS Med</source>
+            <year>2009</year>
+            <volume>6</volume>
+            <fpage>e1000144</fpage>
+            <pub-id pub-id-type="doi">10.1371/journal.pmed.1000144</pub-id>
+            <pub-id pub-id-type="pmid">19901971</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2728480</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR13">
+          <label>13.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ross</surname>
+                <given-names>JS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tse</surname>
+                <given-names>T</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zarin</surname>
+                <given-names>DA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Xu</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhou</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Krumholz</surname>
+                <given-names>HM</given-names>
+              </name>
+            </person-group>
+            <article-title>Publication of NIH funded trials registered in ClinicalTrials.gov: cross sectional analysis</article-title>
+            <source>BMJ</source>
+            <year>2012</year>
+            <volume>344</volume>
+            <fpage>d7292</fpage>
+            <pub-id pub-id-type="doi">10.1136/bmj.d7292</pub-id>
+            <pub-id pub-id-type="pmid">22214755</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3623605</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR14">
+          <label>14.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Djulbegovic</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kumar</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Miladinovic</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Reljic</surname>
+                <given-names>T</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Galeb</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mhaskar</surname>
+                <given-names>A</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Treatment success in cancer: industry compared to publicly sponsored randomized controlled trials</article-title>
+            <source>PLoS ONE</source>
+            <year>2013</year>
+            <volume>8</volume>
+            <pub-id pub-id-type="doi">10.1371/journal.pone.0058711</pub-id>
+            <pub-id pub-id-type="pmid">23555593</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3605423</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR15">
+          <label>15.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lundh</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sismondo</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lexchin</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Busuioc</surname>
+                <given-names>OA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bero</surname>
+                <given-names>L</given-names>
+              </name>
+            </person-group>
+            <article-title>Industry sponsorship and research outcome</article-title>
+            <source>Cochrane Database Syst Rev</source>
+            <year>2012</year>
+            <volume>12</volume>
+            <pub-id pub-id-type="pmid">23235689</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/14651858.MR000033.pub2</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR16">
+          <label>16.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kondro</surname>
+                <given-names>W</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sibbald</surname>
+                <given-names>B</given-names>
+              </name>
+            </person-group>
+            <article-title>Drug company experts advised staff to withhold data about SSRI use in children</article-title>
+            <source>CMAJ</source>
+            <year>2004</year>
+            <volume>170</volume>
+            <fpage>783</fpage>
+            <pub-id pub-id-type="doi">10.1503/cmaj.1040213</pub-id>
+            <pub-id pub-id-type="pmid">14993169</pub-id>
+            <pub-id pub-id-type="pmcid">PMC343848</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR17">
+          <label>17.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Siontis</surname>
+                <given-names>KC</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hernandez-Boussard</surname>
+                <given-names>T</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ioannidis</surname>
+                <given-names>JP</given-names>
+              </name>
+            </person-group>
+            <article-title>Overlapping meta-analyses on the same topic: survey of published studies</article-title>
+            <source>BMJ</source>
+            <year>2013</year>
+            <volume>347</volume>
+            <fpage>f4501</fpage>
+            <pub-id pub-id-type="doi">10.1136/bmj.f4501</pub-id>
+            <pub-id pub-id-type="pmid">23873947</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3716360</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR18">
+          <label>18.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ioannidis</surname>
+                <given-names>JP</given-names>
+              </name>
+            </person-group>
+            <article-title>Stealth research: is biomedical innovation happening outside the peer-reviewed literature?</article-title>
+            <source>JAMA</source>
+            <year>2015</year>
+            <volume>313</volume>
+            <fpage>663</fpage>
+            <lpage>664</lpage>
+            <pub-id pub-id-type="doi">10.1001/jama.2014.17662</pub-id>
+            <pub-id pub-id-type="pmid">25688775</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR19">
+          <label>19.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Palepu</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kendall</surname>
+                <given-names>C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Moher</surname>
+                <given-names>D</given-names>
+              </name>
+            </person-group>
+            <article-title>Open Medicine endorses PROSPERO</article-title>
+            <source>Open Med</source>
+            <year>2011</year>
+            <volume>5</volume>
+            <fpage>e65</fpage>
+            <lpage>e66</lpage>
+            <pub-id pub-id-type="pmid">22046223</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3205808</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR20">
+          <label>20.</label>
+          <mixed-citation publication-type="other">Cochrane Comparing Multiple Interventions Methods Group. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://methods.cochrane.org/cmi/comparing-multiple-interventions-cochrane-reviews">http://methods.cochrane.org/cmi/comparing-multiple-interventions-cochrane-reviews</ext-link>. 2016.</mixed-citation>
+        </ref>
+        <ref id="CR21">
+          <label>21.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ioannidis</surname>
+                <given-names>JP</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Greenland</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hlatky</surname>
+                <given-names>MA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Khoury</surname>
+                <given-names>MJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Macleod</surname>
+                <given-names>MR</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Moher</surname>
+                <given-names>D</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Increasing value and reducing waste in research design, conduct, and analysis</article-title>
+            <source>Lancet</source>
+            <year>2014</year>
+            <volume>383</volume>
+            <fpage>166</fpage>
+            <lpage>175</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0140-6736(13)62227-8</pub-id>
+            <pub-id pub-id-type="pmid">24411645</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4697939</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR22">
+          <label>22.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Stewart</surname>
+                <given-names>L</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Moher</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shekelle</surname>
+                <given-names>P</given-names>
+              </name>
+            </person-group>
+            <article-title>Why prospective registration of systematic reviews makes sense</article-title>
+            <source>Syst Rev</source>
+            <year>2012</year>
+            <volume>1</volume>
+            <fpage>7</fpage>
+            <pub-id pub-id-type="doi">10.1186/2046-4053-1-7</pub-id>
+            <pub-id pub-id-type="pmid">22588008</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3369816</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR23">
+          <label>23.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Hutton</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Salanti</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Caldwell</surname>
+                <given-names>DM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chaimani</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Schmid</surname>
+                <given-names>CH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cameron</surname>
+                <given-names>C</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>The PRISMA extension statement for reporting of systematic reviews incorporating network meta-analyses of health care interventions: checklist and explanations</article-title>
+            <source>Ann Intern Med</source>
+            <year>2015</year>
+            <volume>162</volume>
+            <fpage>777</fpage>
+            <lpage>784</lpage>
+            <pub-id pub-id-type="doi">10.7326/M14-2385</pub-id>
+            <pub-id pub-id-type="pmid">26030634</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </article>
+</pmc-articleset>

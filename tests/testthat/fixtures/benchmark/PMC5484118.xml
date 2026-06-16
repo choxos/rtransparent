@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="research-article" xml:lang="en" dtd-version="1.4">
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Mar Drugs</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Mar Drugs</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">590</journal-id>
+        <journal-id journal-id-type="pmc-domain">mardrugs</journal-id>
+        <journal-id journal-id-type="publisher-id">marinedrugs</journal-id>
+        <journal-title-group>
+          <journal-title>Marine Drugs</journal-title>
+        </journal-title-group>
+        <issn pub-type="epub">1660-3397</issn>
+        <publisher>
+          <publisher-name>Multidisciplinary Digital Publishing Institute  (MDPI)</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC5484118</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC5484118.1</article-id>
+        <article-id pub-id-type="pmcaid">5484118</article-id>
+        <article-id pub-id-type="pmcaiid">5484118</article-id>
+        <article-id pub-id-type="pmid">28594374</article-id>
+        <article-id pub-id-type="doi">10.3390/md15060168</article-id>
+        <article-id pub-id-type="publisher-id">marinedrugs-15-00168</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Article</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Higher Anti-Liver Fibrosis Effect of <italic toggle="yes">Cordyceps militaris</italic>-Fermented Product Cultured with Deep Ocean Water via Inhibiting Proinflammatory Factors and Fibrosis-Related Factors Expressions</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Hung</surname>
+              <given-names initials="YP">Yu-Ping</given-names>
+            </name>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Lee</surname>
+              <given-names initials="CL">Chun-Lin</given-names>
+            </name>
+            <xref rid="c1-marinedrugs-15-00168" ref-type="corresp">*</xref>
+          </contrib>
+        </contrib-group>
+        <contrib-group>
+          <contrib contrib-type="editor">
+            <name name-style="western">
+              <surname>Thomas</surname>
+              <given-names initials="OP">Olivier P.</given-names>
+            </name>
+            <role>Academic Editor</role>
+          </contrib>
+        </contrib-group>
+        <aff id="af1-marinedrugs-15-00168">Department of Life Science, National Taitung University, 369, Section 2, University Rd., Taitung 95092, Taiwan; <email>tomato.1127@hotmail.com</email></aff>
+        <author-notes>
+          <corresp id="c1-marinedrugs-15-00168"><label>*</label>Correspondence: <email>cllee@nttu.edu.tw</email>; Tel./Fax: +886-89-517759</corresp>
+        </author-notes>
+        <pub-date pub-type="epub">
+          <day>08</day>
+          <month>6</month>
+          <year>2017</year>
+        </pub-date>
+        <pub-date pub-type="collection">
+          <month>6</month>
+          <year>2017</year>
+        </pub-date>
+        <volume>15</volume>
+        <issue>6</issue>
+        <issue-id pub-id-type="pmc-issue-id">294400</issue-id>
+        <elocation-id>168</elocation-id>
+        <history>
+          <date date-type="received">
+            <day>02</day>
+            <month>2</month>
+            <year>2017</year>
+          </date>
+          <date date-type="accepted">
+            <day>01</day>
+            <month>6</month>
+            <year>2017</year>
+          </date>
+        </history>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>01</day>
+              <month>06</month>
+              <year>2017</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>29</day>
+              <month>06</month>
+              <year>2017</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2017-06-30 00:08:18.687">
+              <day>30</day>
+              <month>06</month>
+              <year>2017</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>© 2017 by the authors.</copyright-statement>
+          <copyright-year>2017</copyright-year>
+          <license license-type="open-access">
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+            <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="marinedrugs-15-00168.pdf"/>
+        <abstract>
+          <p>Deep ocean water (DOW) has been shown to enhance the functional components of fungi, resulting in increased health benefits. Therefore, using DOW for culturing fungi can enhance the cordycepin and adenosine of <italic toggle="yes">Cordyceps militaris</italic> (CM) and its protective effects on the liver. In this study, the antiliver fibrosis effects and mechanisms of ultrapure water-cultured CM (UCM), DOW-cultured CM (DCM), synthetic water-cultured CM, DOW, cordycepin, and adenosine were compared in the liver fibrosis mice induced by intraperitoneal injections of thioacetamide (TAA). The results indicated that DCM exhibited superior performance in reducing liver collagen accumulation, mitigating liver injuries, inhibiting proinflammatory factors and fibrosis-related factor (TGF-β1, Smad2/3, α-SMA, COL1A1) expression compared with UCM. DOW, cordycepin, and adenosine also performed antiliver fibrosis effect. Therefore, because DCM is rich in DOW and functional components, it can achieve anti-liver fibrosis effects through multiple pathways. These ameliorative effects are considerably superior to those of UCM.</p>
+        </abstract>
+        <kwd-group>
+          <kwd>liver fibrosis</kwd>
+          <kwd>deep ocean water</kwd>
+          <kwd>
+            <italic toggle="yes">Cordyceps militaris</italic>
+          </kwd>
+          <kwd>cordycepin</kwd>
+          <kwd>adenosine</kwd>
+        </kwd-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec id="sec1-marinedrugs-15-00168">
+        <title>1. Introduction</title>
+        <p>The inflammatory response to chronic liver disease is generally highly correlated with liver fibrosis [<xref rid="B1-marinedrugs-15-00168" ref-type="bibr">1</xref>]. Such a response is induced when cytokines are produced by the hepatocytes and Kupffer cells in response to liver damage [<xref rid="B2-marinedrugs-15-00168" ref-type="bibr">2</xref>]. The occurrence of the cytokine-induced inflammatory response prompts the activation of hepatic stellate cells (HSCs) [<xref rid="B3-marinedrugs-15-00168" ref-type="bibr">3</xref>]. The activated HSCs secrete more cytokines, causing continual inflammatory responses, which subject the HSCs to a state of ongoing activation. This further triggers fibrosis and cell proliferation [<xref rid="B1-marinedrugs-15-00168" ref-type="bibr">1</xref>]. Among the cytokines secreted by the activated HSCs, the transforming growth factor-β1 (TGF-β1) plays a crucial role in regulating clinical and experimental liver fibrosis. TGF-β1 can indirectly stimulate the activated HSCs to produce substantial amounts of extracellular matrix (ECM) and inhibit its degradation [<xref rid="B4-marinedrugs-15-00168" ref-type="bibr">4</xref>]. In addition, TGF-β1 can regulate the proliferation of HSCs by transmodulating platelet-derived growth factor (PDGF) receptors [<xref rid="B5-marinedrugs-15-00168" ref-type="bibr">5</xref>]. It also activates HSCs through a TGF-β1/Smad pathway, causing liver fibrosis [<xref rid="B5-marinedrugs-15-00168" ref-type="bibr">5</xref>].</p>
+        <p>Deep ocean water (DOW) is rich in inorganic nutrients and mineral content. Numerous studies have reported that DOW has multiple health benefits, such as improving skin inflammation [<xref rid="B6-marinedrugs-15-00168" ref-type="bibr">6</xref>] and exhibiting hypolipidemic effects, antidiabetic effect [<xref rid="B7-marinedrugs-15-00168" ref-type="bibr">7</xref>], and antiobesity effects. In addition to these health benefits, DOW increases the functional components of monascin and ankaflavin in red mold dioscorea, and the concentration of triterpenoids, polysaccharides, and total flavonoids in <italic toggle="yes">Antrodia camphorata</italic> [<xref rid="B8-marinedrugs-15-00168" ref-type="bibr">8</xref>,<xref rid="B9-marinedrugs-15-00168" ref-type="bibr">9</xref>]. Furthermore, red mold dioscorea fermented with DOW exhibits stronger hypolipidemic and antiobesity effects compared with that fermented in pure water [<xref rid="B8-marinedrugs-15-00168" ref-type="bibr">8</xref>,<xref rid="B10-marinedrugs-15-00168" ref-type="bibr">10</xref>]. Finally, DOW-cultured <italic toggle="yes">A. camphorata</italic> also has stronger hepatoprotective effects compared with that cultivated with pure water [<xref rid="B9-marinedrugs-15-00168" ref-type="bibr">9</xref>].</p>
+        <p><italic toggle="yes">Cordyceps militaris</italic> (CM) is an entomogenous fungus widely used in Asia as a medicinal fungus. Cordycepin is a biologically active substance unique to the genus <italic toggle="yes">Cordyceps</italic>. Previous studies have shown that CM-fermented cordycepin has antioxidative and anti-inflammatory effects [<xref rid="B11-marinedrugs-15-00168" ref-type="bibr">11</xref>,<xref rid="B12-marinedrugs-15-00168" ref-type="bibr">12</xref>]. Cordycepin, a CM metabolite, can inhibit Smad phosphorylation and phosphate levels, thereby interfering with TGF-β1 signaling and inhibiting the activation of HSCs [<xref rid="B13-marinedrugs-15-00168" ref-type="bibr">13</xref>]. The described studies have indicated that using DOW as the culturing water can help increase the active components of CM and its liver protection functions. Therefore, in the current study, we investigated the preventive and ameliorative effects of DOW-cultured CM (DCM) against liver fibrosis and the mechanism underlying such effects. Thioacetamide (TAA) was used to induce liver fibrosis in male BALB/c mice to investigate whether DCM can increase the hepatoprotective effects of CM and to understand its influence on serum liver function. We then conducted histological staining to assess liver cell damage and collagen accumulation. The protein expression of profibrogenic risk factors (TGF-β1 and smooth muscle α-actin (α-SMA) and inflammatory factors (interleukin 6 (IL-6), interleukin1β (IL-1β), tumor necrosis factor alpha (TNF-α), and nuclear factor-κB (NF-κB)) in liver tissue was also investigated to determine the factors and possible mechanisms of DOW’s influence on the antiliver fibrosis effect of CM. In addition, we simultaneously investigated the antiliver fibrosis effect of CM cultured with synthetic water (SW) (SCM), which is prepared using major ions obtained from DOW. Thus, this study primarily addresses whether these major ions influence the antiliver fibrosis effect of CM.</p>
+      </sec>
+      <sec id="sec2-marinedrugs-15-00168">
+        <title>2. Results</title>
+        <sec id="sec2dot1-marinedrugs-15-00168">
+          <title>2.1. Effect of DOW on the Cordycepin and Adenosine Production of CM</title>
+          <p>Previous studies have reported that DOW can promote the generation of functional metabolites in microorganisms [<xref rid="B14-marinedrugs-15-00168" ref-type="bibr">14</xref>]. The results of the present study also show that DCM considerably produced higher contents of cordycepin and adenosine by 2.02 times and 2.31 times than UCM, respectively. To investigate whether the major ions in DOW induce the increase in the content of functional components, SCM was produced using SW as the culture water. <xref ref-type="table" rid="marinedrugs-15-00168-t001">Table 1</xref> shows that SCM exhibits higher increase in the cordycepin and adenosine content by 1.62 times and 1.76 times compared with UCM, respectively. However, it is less effective than DCM is. These results indicate that DCM has the highest cordycepin and adenosine contents.</p>
+        </sec>
+        <sec id="sec2dot2-marinedrugs-15-00168">
+          <title>2.2. Effect of the Individual Metal Waters on the Production of Monascus-Fermented Pigments</title>
+          <p><xref ref-type="table" rid="marinedrugs-15-00168-t002">Table 2</xref> shows that eight weeks after the administration of intraperitoneal TAA injection, the male BALB/c mice demonstrated a significantly lower body weight compared with the mice in the NOR group (<italic toggle="yes">p</italic> &lt; 0.001). The liver weight and the ratio of liver weight to body weight of the injected mice were considerably higher than those of the mice in the NOR group (<italic toggle="yes">p</italic> &lt; 0.001). After the mice in both groups were fed the test substances, their liver weight and the ratio of liver weight to body weight decreased, and body weight increased.</p>
+        </sec>
+        <sec id="sec2dot3-marinedrugs-15-00168">
+          <title>2.3. Effect on Serum AST, ALT, ALP, and TBIL</title>
+          <p>Serum aspartate aminotransferase (AST) and alanine aminotransferase (ALT) are vital indicators typically used to test liver function. Alkaline phosphatase (ALP) and total bilirubin (TBIL) are used to test hepatobiliary function [<xref rid="B15-marinedrugs-15-00168" ref-type="bibr">15</xref>]. In <xref ref-type="table" rid="marinedrugs-15-00168-t003">Table 3</xref>, the AST and ALT activities were considerably higher in the TAA group than they were in the NOR group (<italic toggle="yes">p</italic> &lt; 0.001). This indicates that the livers of the mice in the TAA group were severely injured. After the fermented material was administered, the AST activity declined significantly in both groups. The ALT activities in the SL, DCM-H, AS, and CC groups were significantly lower than that in the TAA group (<italic toggle="yes">p</italic> &lt; 0.05). In addition, ALP and TBIL increased substantially in the TAA group compared with the NOR group (<italic toggle="yes">p</italic> &lt; 0.001). Feeding the mice DCM effectively reduced the ALP and TBIL content (<italic toggle="yes">p</italic> &lt; 0.01).</p>
+        </sec>
+        <sec id="sec2dot4-marinedrugs-15-00168">
+          <title>2.4. Effect on the Liver HE Stain and Collagen Stain</title>
+          <p>We conducted hematoxylin and eosin staining on liver sections to evaluate the damage to liver tissue. In <xref ref-type="fig" rid="marinedrugs-15-00168-f001">Figure 1</xref>, the results of the stained section obtained from the NOR group indicated intact liver lobules. The hepatic plates were radially arranged. After the TAA injection, the structure of the liver lobules in the TAA group changed and the hepatic plate arrangements were disrupted. Substantial amounts of inflammatory microphages were concentrated around the blood vessels, presenting a severe inflammatory response. Some of the hepatocytes were undergoing apoptosis. The liver lobules of the mice in the DCM-L and DCM-H groups sustained considerably moderate damages compared with those of the mice in the TAA group; in these lobules, markedly fewer inflammatory microphages surrounded the blood vessels, and no hepatocytes presented with apoptosis. Furthermore, although the structures of the liver lobules in the SCM, AS, and CC groups were not intact, and the amounts of inflammatory microphages were clearly reduced. The reduction in the amounts of inflammatory microphages in the SL and D was less than that in the DCM-L group. In CM fermented with UPW (UCM), the liver tissue section results indicated that substantial amounts of inflammatory microphages accumulated around the blood vessels, and the hepatocytes were inclined to undergo apoptosis. No clear recovery effects in response to the damage caused by TAA were exhibited.</p>
+          <p><xref ref-type="fig" rid="marinedrugs-15-00168-f002">Figure 2</xref> shows that the liver tissue of the NOR group demonstrated virtually no accumulation of collagen fiber. After the TAA injection, substantial amounts of collagen accumulated around the blood vessels, and fibrous substances were produced in the TAA group. The collagen fiber content in the liver tissue of the DCM-L, DCM-H, and CC groups was clearly lower than that in the TAA group. Although the SL, SCM, D, and AS groups exhibited reductions in the collagen fiber content, these reductions were lower than those observed in the DCM-L group. No substantial difference in the collagen fiber content was observed between the UCM and the TAA groups.</p>
+        </sec>
+        <sec id="sec2dot5-marinedrugs-15-00168">
+          <title>2.5. Effect on the Liver Proinflammatory Factors and PPAR-γ Protein Expression</title>
+          <p>In chronic liver disease, the inflammatory response is often closely associated with liver fibrosis [<xref rid="B16-marinedrugs-15-00168" ref-type="bibr">16</xref>,<xref rid="B17-marinedrugs-15-00168" ref-type="bibr">17</xref>]. Inflammatory cytokines such as TNF-α, IL-6, and IL-1β are the main factors controlling the inflammatory response that causes liver damage and liver fibrosis [<xref rid="B17-marinedrugs-15-00168" ref-type="bibr">17</xref>,<xref rid="B18-marinedrugs-15-00168" ref-type="bibr">18</xref>].</p>
+          <p>TNF-α can prompt the activation of HSCs in rats, causing liver fibrosis [<xref rid="B19-marinedrugs-15-00168" ref-type="bibr">19</xref>]. In <xref ref-type="fig" rid="marinedrugs-15-00168-f003">Figure 3</xref>A,B, the TNF-α levels increased by 354% (<italic toggle="yes">p</italic> &lt; 0.001) in the TAA group versus the NOR group. After the same doses of the CM-fermented product were fed to the mice, the DCM-L, SCM, and UCM groups exhibited dissimilar reductions in the TNF-α levels. The TNF-α level reductions in the DCM-L and SCM groups were 44% (<italic toggle="yes">p</italic> &lt; 0.001) and 23% (<italic toggle="yes">p</italic> &lt; 0.01), respectively. No increase in the TNF-α level was exhibited in the UCM group (<italic toggle="yes">p</italic> &gt; 0.05). DCM is rich in DOW, adenosine, and cordycepin, all of which inhibit the expression of TNF-α. Compared with that in the TAA group, the TNF-α levels in the D, AS, and CC groups were reduced by 16% (<italic toggle="yes">p</italic> &lt; 0.01), 28% (<italic toggle="yes">p</italic> &lt; 0.001), and 35% (<italic toggle="yes">p</italic> &lt; 0.001), respectively.</p>
+          <p>Multiple in vitro tests have shown that the activation of HSCs is associated with increases in NF-κB activity [<xref rid="B20-marinedrugs-15-00168" ref-type="bibr">20</xref>]. <xref ref-type="fig" rid="marinedrugs-15-00168-f003">Figure 3</xref>A,C illustrates the effects of the test substances on the NF-κB protein levels in liver tissue. The NF-κB levels of the TAA group were higher than those of the NOR group (<italic toggle="yes">p</italic> &lt; 0.001). Compared with that in the TAA group, the NF-κB levels in the DCM-L, DCM-H, and SCM groups were reduced by 52% (<italic toggle="yes">p</italic> &lt; 0.001), 51% (<italic toggle="yes">p</italic> &lt; 0.001), and 36% (<italic toggle="yes">p</italic> &lt; 0.001), respectively. In the D, AS, and CC groups, these levels were reduced by 29% (<italic toggle="yes">p</italic> &lt; 0.001), 42% (<italic toggle="yes">p</italic> &lt; 0.001), and 46% (<italic toggle="yes">p</italic> &lt; 0.001), respectively. They dropped by only 17% (<italic toggle="yes">p</italic> &lt; 0.01) in the SL group, whereas no reduction (<italic toggle="yes">p</italic> &gt; 0.05) was exhibited in the UCM group. These results show that DCM reduced NF-κB levels more significantly than UCM did possibly because DCM contains DOW, adenosine, and cordycepin, all of which inhibit NF-κB levels.</p>
+          <p><xref ref-type="fig" rid="marinedrugs-15-00168-f003">Figure 3</xref>A,D shows the observed IL-6 protein levels in liver tissue. The IL-6 protein levels were increased (<italic toggle="yes">p</italic> &lt; 0.001) in the TAA group compared with those in the NOR group. Compared with that in the TAA group, the IL-6 levels in the DCM-L, DCM-H, SCM, D, AS, and CC groups were reduced by 37% (<italic toggle="yes">p</italic> &lt; 0.001), 45% (<italic toggle="yes">p</italic> &lt; 0.001), 33% (<italic toggle="yes">p</italic> &lt; 0.001), 31% (<italic toggle="yes">p</italic> &lt; 0.001), 51% (<italic toggle="yes">p</italic> &lt; 0.001), and 57% (<italic toggle="yes">p</italic> &lt; 0.001), respectively. The levels of this protein dropped by 20% (<italic toggle="yes">p</italic> &lt; 0.01) in the SL group. UCM did not suppress the IL-6 levels induced by TAA (<italic toggle="yes">p</italic> &gt; 0.05).</p>
+          <p>TAA also induced a significant increase in the IL-1β levels (<xref ref-type="fig" rid="marinedrugs-15-00168-f003">Figure 3</xref>A,E). This is because TAA damages the liver cells after entering the body, leading to the activation of the Kupffer cells and generation of inflammatory cytokines. DCM-L and SCM significantly inhibited the IL-1β levels by 77% (<italic toggle="yes">p</italic> &lt; 0.001) and 47% (<italic toggle="yes">p</italic> &lt; 0.001), respectively. DOW, adenosine, and cordycepin also demonstrated clear inhibitory effects. The inhibitory effect of UCM on the IL-1β levels was relatively weak, reducing the IL-1β levels by only 10%.</p>
+          <p>Previous study reported that PPAR-γ exhibits excellent anti-inflammatory capabilities [<xref rid="B21-marinedrugs-15-00168" ref-type="bibr">21</xref>]. In addition, increases in PPAR-γ levels can inhibit the activation of HSCs [<xref rid="B22-marinedrugs-15-00168" ref-type="bibr">22</xref>]. Synthesized PPAR ligands, such as thiazolidinediones, can inhibit the activation of HSCs and reduce the accumulation of collagen proteins [<xref rid="B23-marinedrugs-15-00168" ref-type="bibr">23</xref>]. In <xref ref-type="fig" rid="marinedrugs-15-00168-f003">Figure 3</xref>A,F, compared with those in the NOR group, the PPAR-γ protein levels in the TAA group dropped by 48% (<italic toggle="yes">p</italic> &lt; 0.001). After the administration of the test substances, PPAR-γ protein levels in the UCM, DCM-L, DCM-H, SCM, D, AS, and CC groups rebounded by 71% (<italic toggle="yes">p</italic> &lt; 0.01), 116% (<italic toggle="yes">p</italic> &lt; 0.001), 152% (<italic toggle="yes">p</italic> &lt; 0.001), 84% (<italic toggle="yes">p</italic> &lt; 0.01), 83% (<italic toggle="yes">p</italic> &lt; 0.01), 63% (<italic toggle="yes">p</italic> &lt; 0.05), and 84% (<italic toggle="yes">p</italic> &lt; 0.01), respectively, compared with those in the TAA group. The SL group rebounded by 117%. Among the fermented products, DCM-H exhibited more favorable rebound effects than SCM and D did. This indicates that DOW enables CM to prevent liver fibrosis.</p>
+        </sec>
+        <sec id="sec2dot6-marinedrugs-15-00168">
+          <title>2.6. Effect on the Liver Fibrosis-Related Factors Expression</title>
+          <p>TGF-β1 catalyzes the conversion of HSCs into myofibroblast-like cells, stimulating the generation of ECM and inhibiting its degradation [<xref rid="B4-marinedrugs-15-00168" ref-type="bibr">4</xref>]. The presence of TGF-β1 products or its signaling pathways are considered anti-inflammatory and potential antifibrotic indicators [<xref rid="B4-marinedrugs-15-00168" ref-type="bibr">4</xref>]. <xref ref-type="fig" rid="marinedrugs-15-00168-f004">Figure 4</xref>A,B illustrates the effects of the test substances on the TGF-β1 protein levels in liver tissue. TAA induced the TGF-β1 protein levels to increase by 2.09 times (<italic toggle="yes">p</italic> &lt; 0.001 vs. NOR). Compared with that in the TAA group, the TGF-β1 protein levels in the DCM-H and CC groups were significantly reduced by 19% (<italic toggle="yes">p</italic> &lt; 0.05) and 21% (<italic toggle="yes">p</italic> &lt; 0.05), respectively. However, no reductions were observed in the SL, UCM, DCM-L, SCM, D, and AS groups. Therefore, cordycepin is the active component reducing the TGF-β1 protein levels in DCM.</p>
+          <p>Smad2/3 is a major factor in TGF-β1 signaling pathways. Inhibiting the phosphorylation and its expression in Smad2/3 also indirectly leads to downstream signaling inhibition [<xref rid="B4-marinedrugs-15-00168" ref-type="bibr">4</xref>] preventing the activation of HSCs and reducing liver fibrosis. As depicted in <xref ref-type="fig" rid="marinedrugs-15-00168-f004">Figure 4</xref>A,C, the p-Smad2/3 protein levels increased significantly in the TAA group compared with the NOR group. UCM could not reduce the p-Smad2/3 level induced by TAA. DCM and its main components adenosine (AS group) and cordycepin (CC group) were also only slightly effective at inhibiting the expression of p-Smad 2/3, but they exhibited clear inhibitory effects on the Smad2/3 levels. Compared with that in the TAA group, the Smad2/3 levels in the DCM-L, DCM-H, SCM, AS, and CC groups were reduced by 31% (<italic toggle="yes">p</italic> &lt; 0.001), 55% (<italic toggle="yes">p</italic> &lt; 0.001), 46% (<italic toggle="yes">p</italic> &lt; 0.001), 59% (<italic toggle="yes">p</italic> &lt; 0.001), and 65% (<italic toggle="yes">p</italic> &lt; 0.001), respectively. Although UCM is also a product of CM fermentation, it was ineffective in reducing the Smad2/3 levels (<italic toggle="yes">p</italic> &gt; 0.05). This indicates that adenosine and cordycepin primarily reduce p-Smad2/3 levels by inhibiting Smad2/3 expression rather than directly inhibiting its phosphorylation.</p>
+          <p>α-SMA levels can be considered as indicators of the existence of activated HSCs. <xref ref-type="fig" rid="marinedrugs-15-00168-f004">Figure 4</xref>A,D shows the effects of the test substances on the α-SMA protein levels in liver tissue. Compared with that in the NOR group, the α-SMA protein levels in the TAA group increased by 4.25 times (<italic toggle="yes">p</italic> &lt; 0.001). After the application of the test substances, the α-SMA protein levels in the DCM-L, DCM-H, SCM, D, AS, and CC groups dropped by 41% (<italic toggle="yes">p</italic> &lt; 0.001), 45% (<italic toggle="yes">p</italic> &lt; 0.001), 23% (<italic toggle="yes">p</italic> &lt; 0.001), 22% (<italic toggle="yes">p</italic> &lt; 0.001), 32% (<italic toggle="yes">p</italic> &lt; 0.001), and 38% (<italic toggle="yes">p</italic> &lt; 0.001), respectively, compared with that in the TAA group. The protein levels in the SL group dropped by 14% (<italic toggle="yes">p</italic> &lt; 0.01). No significant reductions were observed in the UCM group (<italic toggle="yes">p</italic> &gt; 0.05). DCM-H existing in the fermentation product exhibited a significantly more effective inhibitory effect compared with SCM (<italic toggle="yes">p</italic> &lt; 0.01) and D (<italic toggle="yes">p</italic> &lt; 0.001). These results show that CM fermented with DOW is effective at inhibiting the activation of HSCs and that DOW facilitates enhancing the liver protection capabilities of CM.</p>
+          <p>Collagen type I, the major component of ECM, forms a characteristic triple-helix structure composed of two COL1A1 chains and one COL1A2 chain [<xref rid="B24-marinedrugs-15-00168" ref-type="bibr">24</xref>]. The synthesis of collagen type I polypeptides is regulated by the TGF-β<sub>1</sub> activation protein pathway and the Smad signaling pathway [<xref rid="B25-marinedrugs-15-00168" ref-type="bibr">25</xref>]. In the results, TAA significantly induced COL1A1 protein levels (<italic toggle="yes">p</italic> &lt; 0.001 vs. NOR) in liver. DCM-L and DCM-H can inhibit the formation of COL1A1 by 47% (<italic toggle="yes">p</italic> &lt; 0.001) and 51% (<italic toggle="yes">p</italic> &lt; 0.001) as compared with TAA group, respectively. UCM was the default to inhibit the formation of COL1A1 toward the development of liver fibrosis (<italic toggle="yes">p</italic> &gt; 0.05). Adenosine (AS group) and cordycepin (CC group) can be the functional compounds due to the significant inhibition by 39% (<italic toggle="yes">p</italic> &lt; 0.001) and 48% (<italic toggle="yes">p</italic> &lt; 0.001) as compared with TAA group, respectively.</p>
+        </sec>
+      </sec>
+      <sec id="sec3-marinedrugs-15-00168">
+        <title>3. Discussion</title>
+        <p>Previous study reported that TAA demonstrates more pronounced stimulating effects on the production of regenerative nodules and fibrosis in the liver compared with CCl<sub>4</sub> [<xref rid="B26-marinedrugs-15-00168" ref-type="bibr">26</xref>]. The pathological changes in liver injuries induced in rats and mice with TAA are similar to those of human liver injuries [<xref rid="B27-marinedrugs-15-00168" ref-type="bibr">27</xref>]. Upon injected into the body, TAA metabolizes, producing TASO<sub>2</sub>. Subsequently, TASO<sub>2</sub> damages the liver cells, stimulating the Kupffer cells and liver cells to secrete proinflammatory cytokines, which cause an inflammatory response. The inflammatory response stimulates the activation of HSCs. Activated HSCs secrete even more cytokines, continuing the inflammatory response. This subjects the HSCs to a state of continual activation, triggering fibrosis and cell proliferation [<xref rid="B1-marinedrugs-15-00168" ref-type="bibr">1</xref>,<xref rid="B2-marinedrugs-15-00168" ref-type="bibr">2</xref>,<xref rid="B3-marinedrugs-15-00168" ref-type="bibr">3</xref>]. Among the cytokines produced by activated HSCs, TGF-β1 plays a pivotal role in regulating liver fibrosis. TGF-β1 can promote the proliferation of activated HSCs and secretion of ECM and inhibit their decomposition [<xref rid="B4-marinedrugs-15-00168" ref-type="bibr">4</xref>,<xref rid="B5-marinedrugs-15-00168" ref-type="bibr">5</xref>]. TGF-β1 also promotes the activation of HSCs and the expression of collagen type I through the TGF-β1 signaling pathway [<xref rid="B25-marinedrugs-15-00168" ref-type="bibr">25</xref>,<xref rid="B28-marinedrugs-15-00168" ref-type="bibr">28</xref>]. Increases in PPAR-γ levels are inversely correlated with the number of activated HSCs [<xref rid="B23-marinedrugs-15-00168" ref-type="bibr">23</xref>].</p>
+        <p>Previous studies have determined that CM has powerful protective effects against alcohol-induced damage [<xref rid="B29-marinedrugs-15-00168" ref-type="bibr">29</xref>]. However, research has yet to prove that the protective effects of CM on the liver can inhibit liver fibrosis. Therefore, increasing the functional components of CM may facilitate the process of improving its liver protection capabilities. In the present study, we used DOW to stimulate the generation of considerable amounts of cordycepin and adenosine in CM. The DOW that accumulates in the cordyceps solid matrix during the fermentation process may, thus, exhibit protective effects on the liver. These compound components may generate synergies that can increase the liver protection capabilities of DCM-fermented products. Our results showed that UCM improved liver function. However, this improvement was considerably lower than that of CM fermented with DOW. The liver function analysis results did not reveal a difference between the two. However, liver histology and liver collagen staining results showed that the ameliorative effects of DCM were considerably stronger than those of UCM. DOW, adenosine, and cordycepin also improved liver function and prevented liver injury. Although these three substances did not reduce the serum AST activity as much as DCM did, they induced substantial reductions compared with those in the TAA group (<italic toggle="yes">p</italic> &lt; 0.001). Therefore, DCM may be more effective in preventing liver fibrosis because of the accumulation of DOW and because it is rich in adenosine and cordycepin, both of which are increased by DOW.</p>
+        <p>Studies have shown that DOW may have numerous health benefits because it is rich in minerals and other nutrient salts [<xref rid="B14-marinedrugs-15-00168" ref-type="bibr">14</xref>]. In our previous studies, Red mold dioscorea fermented with DOW can significantly perform higher hypolipidaemic effect than those of red mold dioscorea fermented with water filtered through reverse osmosis (RO water) [<xref rid="B8-marinedrugs-15-00168" ref-type="bibr">8</xref>]. In addition, Red mold dioscorea fermented with DOW exhibits stronger anti-obesity effect compared with red mold dioscorea fermented with UPW [<xref rid="B10-marinedrugs-15-00168" ref-type="bibr">10</xref>]. DOW has also been used to enhance the capability of <italic toggle="yes">A. camphorata</italic> to prevent liver fibrosis [<xref rid="B9-marinedrugs-15-00168" ref-type="bibr">9</xref>]. In summary, the literature and the results of the present study show that DOW can promote the health benefits of fungi.</p>
+        <p>Liver fibrosis is often accompanied by inflammatory responses. Cytokines secreted by Kupffer cells, such as IL-1, IL-6, and TNF-α, activate neutrophils and induce them to reach the inflammation sites in the liver [<xref rid="B30-marinedrugs-15-00168" ref-type="bibr">30</xref>]. Neutrophils can indirectly promote the synthesis of collagen fiber in HSCs [<xref rid="B3-marinedrugs-15-00168" ref-type="bibr">3</xref>]. TNF-α can induce the activation of HSCs, leading to liver fibrosis in rats [<xref rid="B19-marinedrugs-15-00168" ref-type="bibr">19</xref>]. Numerous in vitro tests have also shown that the activation of HSCs is associated with increased NF-κB activity [<xref rid="B20-marinedrugs-15-00168" ref-type="bibr">20</xref>]. The inflammatory response is a major risk factor for liver fibrosis. In this study, DCM and its functional components (i.e., adenosine and cordycepin) can considerably inhibit IL-6, IL-1β, TNF-α, and NF-κB protein levels. However, UCM group had no clear anti-inflammatory capabilities. This shows that DCM had excellent anti-inflammatory effects and that these effects are mainly attributable to its greater adenosine and cordycepin contents. Adenosine and cordycepin exhibited similar effects to that of DCM in reducing the level of inflammatory cytokines.</p>
+        <p>A previous study indicated that PPAR-γ exhibits excellent anti-inflammatory capabilities [<xref rid="B21-marinedrugs-15-00168" ref-type="bibr">21</xref>]. Increases in PPAR-γ levels can inhibit the activation of HSCs [<xref rid="B22-marinedrugs-15-00168" ref-type="bibr">22</xref>]. Another key indicator for blocking liver fibrosis is the increased expression of PPAR-γ, which inhibits the activation and proliferation of HSCs [<xref rid="B23-marinedrugs-15-00168" ref-type="bibr">23</xref>]. DCM increased the PPAR-γ protein levels and its effect was considerably stronger than that of the UCM. In addition, adenosine, cordycepin, and DOW increased PPAR-γ protein levels. Therefore, DCM is highly capable of increasing PPAR-γ protein levels because of its rich adenosine, cordycepin, and DOW contents.</p>
+        <p>Among fibrosis-related factors, TGF-β1 can promote the conversion of HSCs into myofibroblast-like cells, thereby stimulating the generation of ECM and inhibiting its degradation [<xref rid="B4-marinedrugs-15-00168" ref-type="bibr">4</xref>]. TGF-β1 can also indirectly regulate the proliferation of HSCs [<xref rid="B5-marinedrugs-15-00168" ref-type="bibr">5</xref>]. Therefore, the presence of TGF-β1 or its signaling pathways are considered anti-inflammatory or potential antifibrosis indicators. TGF-β1 activates HSCs primarily through TGF-β1/Smad signaling pathways, causing liver fibrosis [<xref rid="B28-marinedrugs-15-00168" ref-type="bibr">28</xref>]. HSC activation initiates the expression of substantial amounts of α-SMA in smooth muscle. Furthermore, collagen type I, the main component of ECM in liver fibrosis, is also regulated by the TGF-β<sub>1</sub> activation protein pathway and the Smad signaling pathway [<xref rid="B25-marinedrugs-15-00168" ref-type="bibr">25</xref>]. The results of the present study showed that DCM considerably reduced TGF-β1, Smad2/3, α-SMA, and COL1A1 protein levels. However, such reduction was not observed in the UCM group. This indicates that, despite UCM and DCM both being the products of CM fermentation, DCM contains key components lacking in UCM (or has only a limited amount). According to our results, although adenosine does not inhibit TGF-β1 levels, it can inhibit Smad2/3 levels and phosphorylation and reduce α-SMA and COL1A1 protein levels. The other functional component, cordycepin, can reduce TGF-β1, Smad2/3, α-SMA, and COL1A1 protein levels. Previous study reported that cordycepin can interfere with the TGF-β1 signaling pathway by inhibiting Smad protein levels and phosphorylation, thereby preventing the activation of HSCs [<xref rid="B13-marinedrugs-15-00168" ref-type="bibr">13</xref>]. Although DOW cannot reduce TAA-induced TGF-β1, Smad2/3, and p-Smad2/3 protein levels, it can considerably reduce α-SMA and COL1A1 protein levels. We infer that this is caused by the DOW-induced reduction of the proinflammatory factor expressions, thereby inhibiting the activation of HSCs by TNF-α and NF-κB and further terminating the expression of α-SMA and COL1A1 protein. According to these results, adenosine, cordycepin, and DOW can ultimately reduce the expression of α-SMA. Therefore, we infer that these three substances are the critical components enabling DCM to improve liver fibrosis more than UCM does.</p>
+        <p>The aforementioned results show that DOW mitigates TAA-induced liver fibrosis. DOW is also rich in nutrients and trace elements such as magnesium and selenium, which has been reported to be the reason that DOW exhibits numerous health benefits [<xref rid="B14-marinedrugs-15-00168" ref-type="bibr">14</xref>]. A previous study reported that magnesium chenoursodeoxycholic acid can reduce the accumulation of collagen fibers and the inflammatory response triggered by CCl<sub>4</sub> by reducing TNF-α, IL-6, and COX-2 protein levels [<xref rid="B31-marinedrugs-15-00168" ref-type="bibr">31</xref>]. In addition, in models of dimethylnitrosamine-induced liver cirrhosis in rats, N-acetylcysteine-magnesium can substantially reduce the inflammatory response and fibrosis in the liver and has hepatoprotective effects [<xref rid="B32-marinedrugs-15-00168" ref-type="bibr">32</xref>]. DOW also contains selenium, which is a key cofactor of glutathione peroxidase in the antioxidative system. The results of the present study indicated that DOW inhibited α-SMA protein levels (<italic toggle="yes">p</italic> &lt; 0.001), thereby reducing the occurrence of liver fibrosis. According to the mentioned studies, we infer that this effect is caused by the magnesium and selenium in DOW. Microorganisms can absorb these inorganic minerals and convert them into organic minerals, increasing bioavailability and enhancing their effects [<xref rid="B33-marinedrugs-15-00168" ref-type="bibr">33</xref>].</p>
+        <p>In the present study, we used ion synthetic water to culture CM through fermentation. SW and DOW contain equal amounts of major ions (i.e., Mg, Na, Ca, K, and Fe). The purpose was to determine whether these major ions stimulated DOW to enhance the liver fibrosis preventive ability of CM. The results revealed that SCM, among other indicators, also improved liver fibrosis. Specifically, SCM can generate the equal effects as DCM does in inhibiting TGF-β1 and Smad2/3 expression. However, SCM exhibited weaker inhibitory effects on IL-1β, α-SMA, and COL1A1 levels, as well as weaker stimulating effects on the PPAR-γ levels compared with DCM. This indicates that the major ions in SW functioned similarly as those in DOW, preventing liver fibrosis. DOW may, nonetheless, contain numerous other ions or functional components that grant optimal anti-liver fibrosis effects to CM.</p>
+        <p>In summary, the presented results show that because DOW is added to the fermentation process, DCM contains substantially increased amount of adenosine and cordycepin, and DOW is accumulated in the fermented product. DCM has inhibitory effects against the expression of fibrosis markers, fibrosis-related factors, and the amount of collagen generated during the liver fibrosis process; these effects are considerably greater than the ameliorative effects exerted by UCM. This study confirms that DOW can inhibit the expression of the TAA-induced proinflammatory factors and increase PPAR-γ levels. The increased adenosine and cordycepin promoted by DOW also possess substantial anti-inflammatory effects and can inhibit the expression of fibrosis-related factors and promote PPAR-γ levels. Therefore, because DCM is rich in DOW and functional components, it produces higher antiliver fibrosis effect. DCM can achieve the following functions: (1) it markedly reduces the levels of the proinflammatory cytokine IL-6 and TNF-α and inhibits NF-κB protein levels, reducing the generation of inflammatory cytokines; (2) it substantially increases PPAR-γ levels, which resists proinflammatory factors; and (3) it considerably reduces the levels of TGF-β1, a key profibrogenic factor. It also inhibits Smad2/3 protein levels and phosphorylation in the signaling pathway.</p>
+      </sec>
+      <sec id="sec4-marinedrugs-15-00168">
+        <title>4. Experimental Section</title>
+        <sec id="sec4dot1-marinedrugs-15-00168">
+          <title>4.1. Chemicals</title>
+          <p>Potato dextrose agar (PDA) and potato dextrose broth (PDB) were purchased from Difco Co. (Detroit, MI, USA). Ethanol (95%) was purchased from Taiwan Tobacco and Liquor Co. (Taipei, Taiwan). Silymarin and TAA were purchased from Sigma Chemical Co. (St. Louis, MO, USA). Folin-Ciocalteau agent and gallic acid were purchased from Panreac Quimina S.A. (Barcelona, Spain). Phenol, sulfuric acid, and sodium carbonate were purchased from Merck Co. (Darmstadt, Germany). Anti-PPARγ polyclonal antibody (07-466), anti-TNF-α polyclonal antibody (AB2148P), anti-α-SMA monoclonal antibody (04-1094), and anti-collagen type I polyclonal antibody (AB765P) were purchased from Merck KGaA. (Millipore) (Darmstadt, Germany). Anti-IL-6 polyclonal antibody (sc-1265), anti-IL-1β polyclonal antibody (sc-7884), anti-NF-κB p65 monoclonal antibody (sc-8008), and anti-TGF-β1 (v) polyclonal antibody (sc-146) were purchased from Santa Cruz Biotechnology, Inc. (Dallas, TX, USA). Anti-Smad7 polyclonal antibody (ARP32008_P050) was purchased from Aviva Systems Biology Co. (San Diego, CA, USA). Anti-β-actin monoclonal antibody (MA5-15739) was purchased from Thermo Fisher Scientific Inc. (Rockford, IL, USA). Anti-Smad2/3 monoclonal antibody (8685) and anti-p-smad2/3 monoclonal antibody (8828) were purchased from Cell Signaling Technology, Inc. (Danvers, MA, USA).</p>
+        </sec>
+        <sec id="sec4dot2-marinedrugs-15-00168">
+          <title>4.2. The Source of DOW</title>
+          <p>The concentrated DOW provided from the Eastern Taiwan Deep Sea Water Innovation and Research Center (Taitung, Taiwan) was pumped from a depth of 670 m in the Pacific Ocean near the Eastern Taiwan and processed though the electrodeionization and vacuum concentration. According to our previous study, DOW including 20.65 mg/L Mg<sup>2+</sup> was defined as one-fold DOW. In this study, 15-fold DOW (including 309.75 mg/L Mg<sup>2+</sup>) was prepared by the dilution of concentrated DOW (including 43,400 mg/L Mg<sup>2+</sup>) with UPW. The concentrations of the trace elements and minerals in 15-fold DOW included 309.75 mg/L Mg, 163.5 mg/L Na, 66 mg/L K, 2.565 mg/L Ca, 4.275 µg/L Fe, 0.075 mg/L Zn, 0.578 mg/L nitrate, 0.030 mg/L Se, 324.5 mg/L sulfate, 8.4 mg/L H<sub>2</sub>SiO<sub>3</sub>, 1.65 mg/L phosphate, and 0.949 g/L chloride. SW was prepared by mixing the standard solution of 309.75 mg/L Mg, 2.565 mg/L Ca, 163.5 mg/L Na, 66 mg/L K, 4.275 µg/L Fe, and 0.075 mg/L Zn ions with equal concentrations to that in 15-fold DOW.</p>
+        </sec>
+        <sec id="sec4dot3-marinedrugs-15-00168">
+          <title>4.3. Microorganism and Seed Cultures</title>
+          <p><italic toggle="yes">Cordyceps militaris</italic> BCRC 32,219 was purchased from the Bioresource Collection and Research Center (Hsinchu, Taiwan). <italic toggle="yes">C. militaris</italic> was maintained on yeast and mold (YM) agar at 24 °C and transferred to fresh medium for 10 days intervals. Seed cultures were prepared by transferring a loopful of colony from the YM agar slant into a 500-mL Hinton flask containing 100 mL medium (3 g/L yeast extract, 5 g/L malt extract, 10 g/L peptone, 3 g/L dextrose). The cultures were incubated at 28 °C and 100 rpm for five days. After that, inoculum sizes of 5% was transferred to solid cultured substrate.</p>
+        </sec>
+        <sec id="sec4dot4-marinedrugs-15-00168">
+          <title>4.4. Solid Fermentation of C. militaris in DOW, SW, or UPW</title>
+          <p>Thirty grams of oat substrate was soaked in 30 mL 15-fold concentrated DOW, SW, or UPW, and then was autoclaved for 20 min at 121 °C in a 500-mL glass bottle. After being cooled, the substrate was inoculated with a 10% (<italic toggle="yes">v</italic>/<italic toggle="yes">w</italic>) seed culture medium. The inoculated substrate was cultured at 24 °C for 20 days in a dark incubator. After dark culture, <italic toggle="yes">C. militaris</italic> was then cultured at 14 °C under a 12 h light: 12 h dark cycle (light on at 6:00) for 60 days. After fermentation, the crushed and dried product was used for the experiments</p>
+        </sec>
+        <sec id="sec4dot5-marinedrugs-15-00168">
+          <title>4.5. Cordycepin and Adenosine Analysis</title>
+          <p>The powder of <italic toggle="yes">C. militaris</italic>-fermented product (0.1 g) was extracted, respectively, with 1 mL of methanol at 50 °C for 1 h. The extracts (10%, <italic toggle="yes">w</italic>/<italic toggle="yes">v</italic>) were further filtered with a 0.45 μm pore size filter and analyzed by HPLC (Model L-2130, Hitachi Co., Tokyo, Japan) on a C<sub>18</sub> column (25 cm × 4.6 mm i.d., 5 μm, Phenomenex<sup>®</sup> LUNA) using the gradient elution.. HPLC was performed according to the method described previously (Yu et al., 2007) in triplicate. Cordycepin and adenosine were separated by gradient elution using the mobile phase with the composition of water-methanol (95.0/5.0 to 58.4/41.6 in 20 min, <italic toggle="yes">v</italic>/<italic toggle="yes">v</italic>). The flow rate was set at 0.8 mL/min. Cordycepin and adenosine were detected using a photodiode array detector (Model L-2455 DAD, Hitachi Co.) set at 260 nm and full wavelength.</p>
+        </sec>
+        <sec id="sec4dot6-marinedrugs-15-00168">
+          <title>4.6. Animal Experiments</title>
+          <p>Male BALB/c mice at six weeks of age were kept in a temperature controlled room (23 °C) under a 12L:12D cycle (light on at 6:00) and were given free access to food and water. In the experiment, 80 mice were randomly divided to 10 groups. The animal model of liver fibrosis was induced by TAA injection according to the previous study [<xref rid="B34-marinedrugs-15-00168" ref-type="bibr">34</xref>]. For eight weeks, two groups of the mice were intraperitoneally (i.p.) injected with vehicle solution (NOR group) or TAA (100 mg/kg bw) (TAA group) three times per week as well as daily orally administrated with ROW. The other groups were i.p. injected with TAA (100 mg/kg bw) three times per week, as well as orally administrated daily with silymarin (75 mg/kg/day) (SL group), one-fold dosage of UCM (603 mg/kg/day) (UCM-L group), one-fold dosage (603 mg/kg/day) of CM fermented using 15-fold concentrated DOW (DCM-L group), three-fold dosage (1809 mg/kg/day) of CM fermented using 15-fold concentrated DOW (DCM-H group), one-fold dosage (603 mg/kg/day) of CM fermented using synthetic water (SCM-L group), 15-fold concentrated DOW (603 µL/kg/day) (DOW group), adenosine (0.329 mg/kg/day) (AS group) with equal adenosine concentration to DCM-L group, and cordycepin (0.615 mg/kg/day) (CC group) with equal cordycepin concentration to DCM-L group. The dosage of CM is calculated in accordance with Boyd’s Formula of Body Surface Area as recommended by the FDA (Food and Drug Administration) [<xref rid="B35-marinedrugs-15-00168" ref-type="bibr">35</xref>,<xref rid="B36-marinedrugs-15-00168" ref-type="bibr">36</xref>]. Feeding mice with CM at a one-fold dosage (603 mg/kg bw) per day corresponds to daily supplementing with 2.942 g of dried CM powder for an adult. Each sample was orally administrated to the mice by stomach tube in each group.</p>
+          <p>After 10 weeks, the mice were deprived of food for 16 h before being scarified by CO<sub>2</sub> asphyxiation. Blood samples were collected from the posterior vena cava and centrifuged at 700× <italic toggle="yes">g</italic> for 10 min; the serum was stored at −20 °C until analyzed. Liver tissues were removed and weighed. Portions of the biggest leaf of liver tissue were immersed in 10% formaldehyde for histological inspection. Half of other portion was ground in ice-cold phosphate buffer saline (PBS) and then centrifuged (8000× <italic toggle="yes">g</italic>, 15 min). The other tissue (100 mg) was homogenated in 1.0 mL of lysis buffer (1% Triton X-100, 20 mM Tris, pH 7.5, 100 mM NaCl, 40 mM NaF, 0.2% SDS, 0.5% deoxycholate, 1 mM EDTA, 1 mM EGTA, and 1 mM Na<sub>3</sub>VO<sub>4</sub>) and brief sonication (10 s). The homogenate was centrifuged at 100,000× <italic toggle="yes">g</italic> for 30 min and the supernatant was used for immunoblotting assay. The experiment was reviewed and approved by the Animal Care and Research Ethics Committee of the National Taitung University.</p>
+        </sec>
+        <sec id="sec4dot7-marinedrugs-15-00168">
+          <title>4.7. Serum Biochemical and Fibrosis Markers Analyses</title>
+          <p>Aspartate aminotransferase (AST), alanine aminotransferase (ALT) and alkaline phosphatase (ALP) activities, and total bilirubin (TBIL) in serum, were measured using the commercial kits (Randox Laboratories Ltd., Antrim, UK).</p>
+        </sec>
+        <sec id="sec4dot8-marinedrugs-15-00168">
+          <title>4.8. Immunoblotting</title>
+          <p>Protein concentration was determined by bicinchoninic acid (BCA) method. A total of 40 μg of total protein from each sample was applied for Western blot representative of three independent experiments according to the previous studies [<xref rid="B37-marinedrugs-15-00168" ref-type="bibr">37</xref>,<xref rid="B38-marinedrugs-15-00168" ref-type="bibr">38</xref>]. The samples were separated on 10% SDS-PAGE gels and transferred to polyvinylidene fluoride membranes. After blocking in a BSA solution, blots were incubated with anti-PPARγ polyclonal antibody, anti-TNF-α polyclonal antibody, anti-α-SMA monoclonal antibody, anti-COL1A1 polyclonal antibody, anti-IL-6 polyclonal antibody, anti-IL-1β polyclonal antibody, anti-NF-κB p65 monoclonal antibody, anti-TGF-β1 polyclonal antibody, anti-Smad2/3 monoclonal antibody, or anti-p-smad2/3 monoclonal antibody at room temperature for 1 h. Then, bands were incubated with specific horseradish peroxidase (HRP)-conjugated secondary antibodies at room temperature for 1 h and visualized by enhanced chemiluminescence (ECL) substrate with UVP AutoChemi Image system (UVP Inc., Upland, CA, USA). Protein loading was evaluated by anti-β-actin antibody (1:1000).</p>
+        </sec>
+        <sec id="sec4dot9-marinedrugs-15-00168">
+          <title>4.9. Histological Analysis and Collagen Staining</title>
+          <p>Liver tissue sections were cut at a thickness of 7-μm and mounted on silanized slides (Dako Japan, Tokyo, Japan). The sections were stained with hematoxylin eosin (HE) to observe the histological features of the livers. Collagen staining of liver tissue section was stained using the picro-sirius red solution (0.1% sirius red in saturated picric acid). By this procedure collagen is stained red [<xref rid="B39-marinedrugs-15-00168" ref-type="bibr">39</xref>].</p>
+        </sec>
+        <sec id="sec4dot10-marinedrugs-15-00168">
+          <title>4.10. Statistics</title>
+          <p>Data are expressed as means ± standard deviation. Analysis of variance by Duncan’s test and Pearson’s product-moment correlation coefficient test were determined using SPSS version 12.0 software (SPSS Institute, Inc., Chicago, IL, USA). Differences with <italic toggle="yes">p</italic> &lt; 0.05 were considered statistically significant.</p>
+        </sec>
+      </sec>
+      <sec id="sec5-marinedrugs-15-00168">
+        <title>5. Conclusions</title>
+        <p>In summary, the presented results show that because DOW is added to the fermentation process, DCM contains substantially increased amount of adenosine and cordycepin, and DOW is accumulated in the fermented product. DCM has inhibitory effects against the expression of fibrosis markers, fibrosis-related factors, and the amount of collagen generated during the liver fibrosis process; these effects are considerably greater than the ameliorative effects exerted by UCM. This study confirms that DOW can inhibit the expression of the TAA-induced proinflammatory factors and increase PPAR-γ levels. The increased adenosine and cordycepin promoted by DOW also possess substantial anti-inflammatory effects and can inhibit the expression of fibrosis-related factors and promote PPAR-γ levels. Therefore, because DCM is rich in DOW and functional components, it produces higher antiliver fibrosis effect. DCM can achieve the following functions: (1) It markedly reduces the levels of the proinflammatory cytokine IL-6 and TNF-α, and inhibits NF-κB protein levels, reducing the generation of inflammatory cytokines; (2) it subs Shek tantially increases PPAR-γ levels, which resists proinflammatory factors; and (3) it considerably reduces the levels of TGF-β1, a key profibrogenic factor. It also inhibits Smad2/3 protein levels and phosphorylation in the signaling pathway.</p>
+      </sec>
+    </body>
+    <back>
+      <ack>
+        <title>Acknowledgments</title>
+        <p>This study was supported by a grant from Ministry of Science and Technology, R.O.C. (MOST-98-2313-B-143-002-MY3), and Ministry of Economic Affairs, R.O.C. (104-EC-17-A-32-S1-230).</p>
+      </ack>
+      <notes>
+        <title>Author Contributions</title>
+        <p>Yu-Ping Hung: experiments on <italic toggle="yes">Cordyceps militaris</italic> fermentation, functional compound analysis, and animal test; and Chun-Lin Lee: experiment design, funding application, experiment discussion, paper writing, and submission.</p>
+      </notes>
+      <notes notes-type="COI-statement">
+        <title>Conflicts of Interest</title>
+        <p>The authors declare no conflict of interest.</p>
+      </notes>
+      <ref-list>
+        <title>References</title>
+        <ref id="B1-marinedrugs-15-00168">
+          <label>1.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Friedman</surname>
+                <given-names>S.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Hepatic stellate cells: Protean, multifunctional, and enigmatic cells of the liver</article-title>
+            <source>Physiol. Rev.</source>
+            <year>2008</year>
+            <volume>88</volume>
+            <fpage>125</fpage>
+            <lpage>172</lpage>
+            <pub-id pub-id-type="doi">10.1152/physrev.00013.2007</pub-id>
+            <pub-id pub-id-type="pmid">18195085</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2888531</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B2-marinedrugs-15-00168">
+          <label>2.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Naito</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hasegawa</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ebe</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yamamoto</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Differentiation and function of Kupffer cells</article-title>
+            <source>Med. Electron. Microsc.</source>
+            <year>2004</year>
+            <volume>37</volume>
+            <fpage>16</fpage>
+            <lpage>28</lpage>
+            <pub-id pub-id-type="doi">10.1007/s00795-003-0228-x</pub-id>
+            <pub-id pub-id-type="pmid">15057601</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B3-marinedrugs-15-00168">
+          <label>3.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Casini</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ceni</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Salzano</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Biondi</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Parola</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Galli</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Foschi</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Caligiuri</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pinzani</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Surrenti</surname>
+                <given-names>C.</given-names>
+              </name>
+            </person-group>
+            <article-title>Neutrophil-derived superoxide anion induces lipid peroxidation and stimulates collagen synthesis in human hepatic stellate cells: Role of nitric oxide</article-title>
+            <source>Hepatology</source>
+            <year>1997</year>
+            <volume>25</volume>
+            <fpage>361</fpage>
+            <lpage>367</lpage>
+            <pub-id pub-id-type="doi">10.1002/hep.510250218</pub-id>
+            <pub-id pub-id-type="pmid">9021948</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B4-marinedrugs-15-00168">
+          <label>4.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Shek</surname>
+                <given-names>F.W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Benyon</surname>
+                <given-names>R.C.</given-names>
+              </name>
+            </person-group>
+            <article-title>How can transforming growth factor β be targeted usefully to combat liver fibrosis?</article-title>
+            <source>Eur. J. Gastroenterol. Hepatol.</source>
+            <year>2004</year>
+            <volume>16</volume>
+            <fpage>123</fpage>
+            <lpage>126</lpage>
+            <pub-id pub-id-type="doi">10.1097/00042737-200402000-00001</pub-id>
+            <pub-id pub-id-type="pmid">15075983</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B5-marinedrugs-15-00168">
+          <label>5.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Olaso</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Friedman</surname>
+                <given-names>S.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Molecular regulation of hepatic fibrogenesis</article-title>
+            <source>J. Hepatol.</source>
+            <year>1998</year>
+            <volume>29</volume>
+            <fpage>836</fpage>
+            <lpage>847</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0168-8278(98)80269-9</pub-id>
+            <pub-id pub-id-type="pmid">9833926</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B6-marinedrugs-15-00168">
+          <label>6.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Hataguchi</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tai</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nakajima</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kimata</surname>
+                <given-names>H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Drinking deep-sea water restores mineral imbalance in atopic eczema/dermatitis syndrome</article-title>
+            <source>Eur. J. Clin. Nutr.</source>
+            <year>2005</year>
+            <volume>59</volume>
+            <fpage>1093</fpage>
+            <lpage>1096</lpage>
+            <pub-id pub-id-type="doi">10.1038/sj.ejcn.1602218</pub-id>
+            <pub-id pub-id-type="pmid">16015263</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B7-marinedrugs-15-00168">
+          <label>7.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Hwang</surname>
+                <given-names>H.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kim</surname>
+                <given-names>H.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>S.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yun</surname>
+                <given-names>J.W.</given-names>
+              </name>
+            </person-group>
+            <article-title>Anti-obesity and antidiabetic effects of deep sea water on ob/ob mice</article-title>
+            <source>Mar. Biotechnol.</source>
+            <year>2009</year>
+            <volume>11</volume>
+            <fpage>531</fpage>
+            <lpage>539</lpage>
+            <pub-id pub-id-type="doi">10.1007/s10126-008-9171-0</pub-id>
+            <pub-id pub-id-type="pmid">19083059</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B8-marinedrugs-15-00168">
+          <label>8.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>C.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kung</surname>
+                <given-names>Y.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>J.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lung</surname>
+                <given-names>T.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pan</surname>
+                <given-names>T.M.</given-names>
+              </name>
+            </person-group>
+            <article-title>Enhanced hypolipidemic effect and safety of red mold dioscorea cultured in deep ocean water</article-title>
+            <source>J. Agric. Food Chem.</source>
+            <year>2011</year>
+            <volume>59</volume>
+            <fpage>8199</fpage>
+            <lpage>8207</lpage>
+            <pub-id pub-id-type="doi">10.1021/jf201948v</pub-id>
+            <pub-id pub-id-type="pmid">21732592</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B9-marinedrugs-15-00168">
+          <label>9.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>L.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kuo</surname>
+                <given-names>I.U.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tsai</surname>
+                <given-names>T.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>C.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Antrodia camphorata-fermented product cultured in deep ocean water has more liver protection against thioacetamide-induced fibrosis</article-title>
+            <source>Appl. Microbiol. Biotechnol.</source>
+            <year>2013</year>
+            <volume>97</volume>
+            <fpage>9955</fpage>
+            <lpage>9967</lpage>
+            <pub-id pub-id-type="doi">10.1007/s00253-013-5214-1</pub-id>
+            <pub-id pub-id-type="pmid">24061418</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B10-marinedrugs-15-00168">
+          <label>10.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>L.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lung</surname>
+                <given-names>T.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kung</surname>
+                <given-names>Y.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>J.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tsai</surname>
+                <given-names>T.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wei</surname>
+                <given-names>B.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pan</surname>
+                <given-names>T.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>C.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Enhanced anti-obesity activities of red mold dioscorea when fermented using deep ocean water as the culture water</article-title>
+            <source>Mar. Drugs</source>
+            <year>2013</year>
+            <volume>11</volume>
+            <fpage>3902</fpage>
+            <lpage>3925</lpage>
+            <pub-id pub-id-type="doi">10.3390/md11103902</pub-id>
+            <pub-id pub-id-type="pmid">24132179</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3826142</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B11-marinedrugs-15-00168">
+          <label>11.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kim</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Naura</surname>
+                <given-names>A.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Errami</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ju</surname>
+                <given-names>J.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Boulares</surname>
+                <given-names>A.H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Cordycepin Blocks Lung Injury-Associated Inflammation and Promotes BRCA1-Deficient Breast Cancer Cell Killing by Effectively Inhibiting PARP</article-title>
+            <source>Mol. Med.</source>
+            <year>2011</year>
+            <volume>17</volume>
+            <fpage>893</fpage>
+            <lpage>900</lpage>
+            <pub-id pub-id-type="pmid">21607289</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.2119/molmed.2011.00032</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3188885</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B12-marinedrugs-15-00168">
+          <label>12.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kim</surname>
+                <given-names>H.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shrestha</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lim</surname>
+                <given-names>S.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yoon</surname>
+                <given-names>D.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chang</surname>
+                <given-names>W.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shin</surname>
+                <given-names>D.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Han</surname>
+                <given-names>S.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Park</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Park</surname>
+                <given-names>J.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Park</surname>
+                <given-names>H.I.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Cordycepin inhibits lipopolysaccharide-induced inflammation by the suppression of NF-κB through Akt and p38 inhibition in RAW 264.7 macrophage cells</article-title>
+            <source>Eur. J. Pharmacol.</source>
+            <year>2006</year>
+            <volume>545</volume>
+            <fpage>192</fpage>
+            <lpage>199</lpage>
+            <pub-id pub-id-type="doi">10.1016/j.ejphar.2006.06.047</pub-id>
+            <pub-id pub-id-type="pmid">16899239</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B13-marinedrugs-15-00168">
+          <label>13.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gu</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Johno</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nakajima</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kato</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Takahashi</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Katoh</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kitamura</surname>
+                <given-names>M.</given-names>
+              </name>
+            </person-group>
+            <article-title>Blockade of Smad signaling by 3′-deoxyadenosine: A mechanism for its anti-fibrotic potential</article-title>
+            <source>Lab. Investig.</source>
+            <year>2013</year>
+            <volume>93</volume>
+            <fpage>450</fpage>
+            <lpage>461</lpage>
+            <pub-id pub-id-type="doi">10.1038/labinvest.2013.4</pub-id>
+            <pub-id pub-id-type="pmid">23439432</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B14-marinedrugs-15-00168">
+          <label>14.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>C.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>The advantages of deep ocean water for the development of functional fermentation food</article-title>
+            <source>Appl. Microbiol. Biotechnol.</source>
+            <year>2015</year>
+            <volume>99</volume>
+            <fpage>2523</fpage>
+            <lpage>2531</lpage>
+            <pub-id pub-id-type="doi">10.1007/s00253-015-6430-7</pub-id>
+            <pub-id pub-id-type="pmid">25661817</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B15-marinedrugs-15-00168">
+          <label>15.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ramaiah</surname>
+                <given-names>S.K.</given-names>
+              </name>
+            </person-group>
+            <article-title>A toxicologist guide to the diagnostic interpretation of hepatic biochemical parameters</article-title>
+            <source>Food Chem. Toxicol.</source>
+            <year>2007</year>
+            <volume>45</volume>
+            <fpage>1551</fpage>
+            <lpage>1557</lpage>
+            <pub-id pub-id-type="doi">10.1016/j.fct.2007.06.007</pub-id>
+            <pub-id pub-id-type="pmid">17658209</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B16-marinedrugs-15-00168">
+          <label>16.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Friedman</surname>
+                <given-names>S.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Mechanisms of hepatic fibrogenesis</article-title>
+            <source>Gastroenterology</source>
+            <year>2008</year>
+            <volume>134</volume>
+            <fpage>1655</fpage>
+            <lpage>1669</lpage>
+            <pub-id pub-id-type="doi">10.1053/j.gastro.2008.03.003</pub-id>
+            <pub-id pub-id-type="pmid">18471545</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2888539</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B17-marinedrugs-15-00168">
+          <label>17.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Marra</surname>
+                <given-names>F.</given-names>
+              </name>
+            </person-group>
+            <article-title>Chemokines in liver inflammation and fibrosis</article-title>
+            <source>Front. Biosci.</source>
+            <year>2002</year>
+            <volume>7</volume>
+            <fpage>d1899</fpage>
+            <lpage>d1914</lpage>
+            <pub-id pub-id-type="doi">10.2741/A887</pub-id>
+            <pub-id pub-id-type="pmid">12161342</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B18-marinedrugs-15-00168">
+          <label>18.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bonniaud</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Margetts</surname>
+                <given-names>P.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ask</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Flanders</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gauldie</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kolb</surname>
+                <given-names>M.</given-names>
+              </name>
+            </person-group>
+            <article-title>TGF-β and Smad3 signaling link inflammation to chronic fibrogenesis</article-title>
+            <source>J. Immunol.</source>
+            <year>2005</year>
+            <volume>175</volume>
+            <fpage>5390</fpage>
+            <lpage>5395</lpage>
+            <pub-id pub-id-type="doi">10.4049/jimmunol.175.8.5390</pub-id>
+            <pub-id pub-id-type="pmid">16210645</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B19-marinedrugs-15-00168">
+          <label>19.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Hsu</surname>
+                <given-names>Y.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chiu</surname>
+                <given-names>Y.T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cheng</surname>
+                <given-names>C.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>C.F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lin</surname>
+                <given-names>Y.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Huang</surname>
+                <given-names>Y.T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Antifibrotic effects of tetrandrine on hepatic stellate cells and rats with liver fibrosis</article-title>
+            <source>J. Gastroenterol. Hepatol.</source>
+            <year>2007</year>
+            <volume>22</volume>
+            <fpage>99</fpage>
+            <lpage>111</lpage>
+            <pub-id pub-id-type="doi">10.1111/j.1440-1746.2006.04361.x</pub-id>
+            <pub-id pub-id-type="pmid">17201889</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B20-marinedrugs-15-00168">
+          <label>20.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lang</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Schoonhoven</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tuvia</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Brenner</surname>
+                <given-names>D.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rippe</surname>
+                <given-names>R.A.</given-names>
+              </name>
+            </person-group>
+            <article-title>Nuclear factor κB in proliferation, activation, and apoptosis in rat hepatic stellate cells</article-title>
+            <source>J. Hepatol.</source>
+            <year>2000</year>
+            <volume>33</volume>
+            <fpage>49</fpage>
+            <lpage>58</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0168-8278(00)80159-2</pub-id>
+            <pub-id pub-id-type="pmid">10905586</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B21-marinedrugs-15-00168">
+          <label>21.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Castrillo</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tontonoz</surname>
+                <given-names>P.</given-names>
+              </name>
+            </person-group>
+            <article-title>Nuclear receptors in macrophage biology: At the crossroads of lipid metabolism and inflammation</article-title>
+            <source>Annu. Rev. Cell Dev. Biol.</source>
+            <year>2004</year>
+            <volume>20</volume>
+            <fpage>455</fpage>
+            <lpage>480</lpage>
+            <pub-id pub-id-type="doi">10.1146/annurev.cellbio.20.012103.134432</pub-id>
+            <pub-id pub-id-type="pmid">15473848</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B22-marinedrugs-15-00168">
+          <label>22.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Marra</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Efsen</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Romanelli</surname>
+                <given-names>R.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Caligiuri</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pastacaldi</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Batignani</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bonacchi</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Caporale</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Laffi</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pinzani</surname>
+                <given-names>M.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Ligands of peroxisome proliferator-activated receptor γ modulate profibrogenic and proinflammatory actions in hepatic stellate cells</article-title>
+            <source>Gastroenterology</source>
+            <year>2000</year>
+            <volume>119</volume>
+            <fpage>466</fpage>
+            <lpage>478</lpage>
+            <pub-id pub-id-type="doi">10.1053/gast.2000.9365</pub-id>
+            <pub-id pub-id-type="pmid">10930382</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B23-marinedrugs-15-00168">
+          <label>23.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Galli</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Crabb</surname>
+                <given-names>D.W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ceni</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Salzano</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mello</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Svegliati-Baroni</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ridolfi</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Trozzi</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Surrenti</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Casini</surname>
+                <given-names>A.</given-names>
+              </name>
+            </person-group>
+            <article-title>Antidiabetic thiazolidinediones inhibit collagen synthesis and hepatic stellate cell activation in vivo and in vitro</article-title>
+            <source>Gastroenterology</source>
+            <year>2002</year>
+            <volume>122</volume>
+            <fpage>1924</fpage>
+            <lpage>1940</lpage>
+            <pub-id pub-id-type="doi">10.1053/gast.2002.33666</pub-id>
+            <pub-id pub-id-type="pmid">12055599</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B24-marinedrugs-15-00168">
+          <label>24.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Karsenty</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>de Crombrugghe</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <article-title>Conservation of binding sites for regulatory factors in the coordinately expressed α1 (I) and α2 (I) collagen promoters</article-title>
+            <source>Biochem. Biophys. Res. Commun.</source>
+            <year>1991</year>
+            <volume>177</volume>
+            <fpage>538</fpage>
+            <lpage>544</lpage>
+            <pub-id pub-id-type="doi">10.1016/0006-291X(91)92017-E</pub-id>
+            <pub-id pub-id-type="pmid">2043139</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B25-marinedrugs-15-00168">
+          <label>25.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Cutroneo</surname>
+                <given-names>K.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>White</surname>
+                <given-names>S.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Phan</surname>
+                <given-names>S.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ehrlich</surname>
+                <given-names>H.P.</given-names>
+              </name>
+            </person-group>
+            <article-title>Therapies for bleomycin induced lung fibrosis through regulation of TGF-β1 induced collagen gene expression</article-title>
+            <source>J. Cell Physiol.</source>
+            <year>2007</year>
+            <volume>211</volume>
+            <fpage>585</fpage>
+            <lpage>589</lpage>
+            <pub-id pub-id-type="doi">10.1002/jcp.20972</pub-id>
+            <pub-id pub-id-type="pmid">17387717</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B26-marinedrugs-15-00168">
+          <label>26.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Li</surname>
+                <given-names>X.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Benjamin</surname>
+                <given-names>I.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Alexander</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <article-title>Reproducible production of thioacetamide-induced macronodular cirrhosis in the rat with no mortality</article-title>
+            <source>J. Hepatol.</source>
+            <year>2002</year>
+            <volume>36</volume>
+            <fpage>488</fpage>
+            <lpage>493</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0168-8278(02)00011-9</pub-id>
+            <pub-id pub-id-type="pmid">11943419</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B27-marinedrugs-15-00168">
+          <label>27.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Torres</surname>
+                <given-names>M.I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fernandez</surname>
+                <given-names>M.I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gil</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rios</surname>
+                <given-names>A.</given-names>
+              </name>
+            </person-group>
+            <article-title>Dietary nucleotides have cytoprotective properties in rat liver damaged by thioacetamide</article-title>
+            <source>Life Sci.</source>
+            <year>1998</year>
+            <volume>62</volume>
+            <fpage>13</fpage>
+            <lpage>22</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0024-3205(97)01033-3</pub-id>
+            <pub-id pub-id-type="pmid">9444963</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B28-marinedrugs-15-00168">
+          <label>28.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Liang</surname>
+                <given-names>T.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yuan</surname>
+                <given-names>J.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tan</surname>
+                <given-names>Y.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ren</surname>
+                <given-names>W.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Han</surname>
+                <given-names>G.Q.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>L.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Qin</surname>
+                <given-names>C.Y.</given-names>
+              </name>
+            </person-group>
+            <article-title>Effect of ursodeoxycholic acid on TGF β1/Smad signaling pathway in rat hepatic stellate cells</article-title>
+            <source>Chin. Med. J.</source>
+            <year>2009</year>
+            <volume>122</volume>
+            <fpage>1209</fpage>
+            <lpage>1213</lpage>
+            <pub-id pub-id-type="pmid">19493473</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B29-marinedrugs-15-00168">
+          <label>29.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Cha</surname>
+                <given-names>J.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ahn</surname>
+                <given-names>H.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cho</surname>
+                <given-names>Y.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Je</surname>
+                <given-names>J.Y.</given-names>
+              </name>
+            </person-group>
+            <article-title>Protective effect of cordycepin-enriched Cordyceps militaris on alcoholic hepatotoxicity in Sprague-Dawley rats</article-title>
+            <source>Food Chem. Toxicol.</source>
+            <year>2013</year>
+            <volume>60</volume>
+            <fpage>52</fpage>
+            <lpage>57</lpage>
+            <pub-id pub-id-type="doi">10.1016/j.fct.2013.07.033</pub-id>
+            <pub-id pub-id-type="pmid">23876821</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B30-marinedrugs-15-00168">
+          <label>30.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gregory</surname>
+                <given-names>S.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wing</surname>
+                <given-names>E.J.</given-names>
+              </name>
+            </person-group>
+            <article-title>Neutrophil-Kupffer-cell interaction in host defenses to systemic infections</article-title>
+            <source>Immunol. Today</source>
+            <year>1998</year>
+            <volume>19</volume>
+            <fpage>507</fpage>
+            <lpage>510</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0167-5699(98)01319-X</pub-id>
+            <pub-id pub-id-type="pmid">9818544</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B31-marinedrugs-15-00168">
+          <label>31.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kang</surname>
+                <given-names>J.W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yoon</surname>
+                <given-names>S.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sung</surname>
+                <given-names>Y.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>S.M.</given-names>
+              </name>
+            </person-group>
+            <article-title>Magnesium chenoursodeoxycholic acid ameliorates carbon tetrachloride-induced liver fibrosis in rats</article-title>
+            <source>Exp. Biol. Med.</source>
+            <year>2012</year>
+            <volume>237</volume>
+            <fpage>83</fpage>
+            <lpage>92</lpage>
+            <pub-id pub-id-type="doi">10.1258/ebm.2011.011219</pub-id>
+            <pub-id pub-id-type="pmid">22185916</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B32-marinedrugs-15-00168">
+          <label>32.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Zhuang</surname>
+                <given-names>R.X.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>F.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhou</surname>
+                <given-names>H.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shi</surname>
+                <given-names>T.T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liu</surname>
+                <given-names>S.R.</given-names>
+              </name>
+            </person-group>
+            <article-title>The protective effect of N-acetylcysteine magnesium against liver cirrhosis with portal hypertension in rat</article-title>
+            <source>Chin. J. Exp. Clin. Virol.</source>
+            <year>2012</year>
+            <volume>26</volume>
+            <fpage>366</fpage>
+            <lpage>369</lpage>
+            <pub-id pub-id-type="pmid">23547461</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B33-marinedrugs-15-00168">
+          <label>33.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Mogna</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nicola</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pane</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lorenzini</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Strozzi</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mogna</surname>
+                <given-names>G.</given-names>
+              </name>
+            </person-group>
+            <article-title>Selenium and zinc internalized by Lactobacillus buchneri Lb26 (DSM 16341) and Bifidobacterium lactis Bb1 (DSM 17850): Improved bioavailability using a new biological approach</article-title>
+            <source>J. Clin. Gastroenterol.</source>
+            <year>2012</year>
+            <volume>46</volume>
+            <fpage>S41</fpage>
+            <lpage>S45</lpage>
+            <pub-id pub-id-type="doi">10.1097/MCG.0b013e318268861d</pub-id>
+            <pub-id pub-id-type="pmid">22955356</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B34-marinedrugs-15-00168">
+          <label>34.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kwak</surname>
+                <given-names>K.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>J.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shin</surname>
+                <given-names>J.W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>D.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Son</surname>
+                <given-names>C.G.</given-names>
+              </name>
+            </person-group>
+            <article-title>A traditional formula, Chunggan extract, attenuates thioacetamide-induced hepatofibrosis via GSH system in rats</article-title>
+            <source>Hum. Exp. Toxicol.</source>
+            <year>2011</year>
+            <volume>30</volume>
+            <fpage>1322</fpage>
+            <lpage>1332</lpage>
+            <pub-id pub-id-type="doi">10.1177/0960327110389502</pub-id>
+            <pub-id pub-id-type="pmid">21071552</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B35-marinedrugs-15-00168">
+          <label>35.</label>
+          <element-citation publication-type="book">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Boyd</surname>
+                <given-names>E.</given-names>
+              </name>
+            </person-group>
+            <source>The Growth of the Surface Area of Human Body</source>
+            <publisher-name>University of Minnesota Press</publisher-name>
+            <publisher-loc>Minneapolis, MN, USA</publisher-loc>
+            <year>1935</year>
+          </element-citation>
+        </ref>
+        <ref id="B36-marinedrugs-15-00168">
+          <label>36.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>L.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>S.E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>J.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tsai</surname>
+                <given-names>T.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lin</surname>
+                <given-names>C.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pan</surname>
+                <given-names>T.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>C.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>In vitro and in vivo comparisons of the effects of the fruiting body and mycelium of <italic toggle="yes">Antrodia camphorata</italic> against amyloid β-protein-induced neurotoxicity and memory impairment</article-title>
+            <source>Appl. Microbiol. Biotechnol.</source>
+            <year>2012</year>
+            <volume>94</volume>
+            <fpage>1505</fpage>
+            <lpage>1519</lpage>
+            <pub-id pub-id-type="doi">10.1007/s00253-012-3941-3</pub-id>
+            <pub-id pub-id-type="pmid">22350319</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B37-marinedrugs-15-00168">
+          <label>37.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bihaqi</surname>
+                <given-names>S.W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Singh</surname>
+                <given-names>A.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tiwari</surname>
+                <given-names>M.</given-names>
+              </name>
+            </person-group>
+            <article-title>Supplementation of Convolvulus pluricaulis attenuates scopolamine-induced increased tau and Amyloid precursor protein (AβPP) expression in rat brain</article-title>
+            <source>Indian J. Pharmacol.</source>
+            <year>2012</year>
+            <volume>44</volume>
+            <fpage>593</fpage>
+            <lpage>598</lpage>
+            <pub-id pub-id-type="doi">10.4103/0253-7613.100383</pub-id>
+            <pub-id pub-id-type="pmid">23112420</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3480791</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B38-marinedrugs-15-00168">
+          <label>38.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>C.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kuo</surname>
+                <given-names>T.F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>C.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>J.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pan</surname>
+                <given-names>T.M.</given-names>
+              </name>
+            </person-group>
+            <article-title>Red mold rice promotes neuroprotective sAPPalpha secretion instead of Alzheimer’s risk factors and amyloid beta expression in hyperlipidemic Aβ40-infused rats</article-title>
+            <source>J. Agric. Food Chem.</source>
+            <year>2010</year>
+            <volume>58</volume>
+            <fpage>2230</fpage>
+            <lpage>2238</lpage>
+            <pub-id pub-id-type="doi">10.1021/jf904027y</pub-id>
+            <pub-id pub-id-type="pmid">20088507</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="B39-marinedrugs-15-00168">
+          <label>39.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Phadnis</surname>
+                <given-names>S.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Atilade</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bowring</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kyrgiou</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Young</surname>
+                <given-names>M.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Evans</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Paraskevaidis</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Walker</surname>
+                <given-names>P.</given-names>
+              </name>
+            </person-group>
+            <article-title>Regeneration of cervix after excisional treatment for cervical intraepithelial neoplasia: A study of collagen distribution</article-title>
+            <source>BJOG</source>
+            <year>2011</year>
+            <volume>118</volume>
+            <fpage>1585</fpage>
+            <lpage>1591</lpage>
+            <pub-id pub-id-type="doi">10.1111/j.1471-0528.2011.03085.x</pub-id>
+            <pub-id pub-id-type="pmid">21895948</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+    <floats-group>
+      <fig id="marinedrugs-15-00168-f001" orientation="portrait" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>The effects of <italic toggle="yes">C. militaris</italic>-fermented product cultured with various waters on pathological changes in the TAA-induced liver fibrosis mice. (<bold>A</bold>) 400×; (<bold>B</bold>) 100×. NOR: normal group, TAA: TAA-induced mice (TAA 100 mg/kg/ip, three times per week), SL: TAA-induced mice fed silymarin (75 mg/kg/day), UCM: TAA-induced mice fed a one-fold dose of UCM (0.603 g/kg/day), DCM-L: TAA-induced mice fed a one-fold dose of DCM (0.603 g/kg/day), DCM-H: TAA-induced mice fed a three-fold dose of DCM (1.809 g/kg/day), SCM: TAA-induced mice fed a one-fold dose of SCM (0.603 g/kg/day), DOW: TAA-induced mice fed with DOW (0.603 mL/kg/day), AS: TAA-induced mice fed with adenosine (0.329 mg/kg/day), CC: TAA-induced mice fed with cordycepin (0.615 mg/kg/day).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="marinedrugs-15-00168-g001.jpg"/>
+      </fig>
+      <fig id="marinedrugs-15-00168-f002" orientation="portrait" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>The effects of <italic toggle="yes">C. militaris</italic>-fermented product cultured with various waters on collagen accumulation in the TAA-induced liver fibrosis mice. NOR: normal group, TAA: TAA-induced mice (TAA 100 mg/kg/ip, three times per week), SL: TAA-induced mice fed silymarin (75 mg/kg/day), UCM: TAA-induced mice fed a one-fold dose of UCM (0.603 g/kg/day), DCM-L: TAA-induced mice fed a one-fold dose of DCM (0.603 g/kg/day), DCM-H: TAA-induced mice fed a three-fold dose of DCM (1.809 g/kg/day), SCM: TAA-induced mice fed 1-fold dose of SCM (0.603 g/kg/day), DOW: TAA-induced mice fed with DOW (0.603 mL/kg/day), AS: TAA-induced mice fed with adenosine (0.329 mg/kg/day), CC: TAA-induced mice fed with cordycepin (0.615 mg/kg/day).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="marinedrugs-15-00168-g002.jpg"/>
+      </fig>
+      <fig id="marinedrugs-15-00168-f003" orientation="portrait" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>The effect of <italic toggle="yes">C. militaris</italic>-fermented product cultured with various waters on haptatic TNF-α, NF-κB, IL-6, IL-1β, and PPARγ protein expression in the TAA-induced liver fibrosis mice. Target protein expressions were visualized using immunoblotting (<bold>A</bold>) and quantified using gel analysis software (<bold>B</bold>–<bold>E</bold>). NOR: normal group, TAA: TAA-induced mice (TAA 100 mg/kg/i.p., three times per week), SL: TAA-induced mice fed silymarin (75 mg/kg/day), UCM: TAA-induced mice fed a one-fold dose of UCM (0.603 g/kg/day), DCM-L: TAA-induced mice fed a one-fold dose of DCM (0.603 g/kg/day), DCM-H: TAA-induced mice fed a three-fold dose of DCM (1.809 g/kg/day), SCM: TAA-induced mice fed a one-fold dose of SCM (0.603 g/kg/day), DOW: TAA-induced mice fed with DOW (0.603 mL/kg/day), AS: TAA-induced mice fed with adenosine (0.329 mg/kg/day), CC: TAA-induced mice fed with cordycepin (0.615 mg/kg/day). * <italic toggle="yes">p</italic> &lt; 0.05, ** <italic toggle="yes">p</italic> &lt; 0.01, *** <italic toggle="yes">p</italic> &lt; 0.001 vs. TAA group. <sup>#</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>##</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>###</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 vs. UCM group.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="marinedrugs-15-00168-g003.jpg"/>
+      </fig>
+      <fig id="marinedrugs-15-00168-f004" orientation="portrait" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <p>The effect of <italic toggle="yes">C. militaris</italic>-fermented product cultured with various waters on haptatic TGF-β1, p-Smad2/3, Smad2/3, α-SMA, and COL1A1 protein expression in the TAA-induced liver fibrosis mice. Target protein expressions were visualized using immunoblotting (<bold>A</bold>) and quantified using gel analysis software (<bold>B</bold>–<bold>E</bold>). NOR: normal group, TAA: TAA-induced mice (TAA 100 mg/kg/i.p., three times per week), SL: TAA-induced mice fed silymarin (75 mg/kg/day), UCM: TAA-induced mice fed a one-fold dose of UCM (0.603 g/kg/day), DCM-L: TAA-induced mice fed a one-fold dose of DCM (0.603 g/kg/day), DCM-H: TAA-induced mice fed a three-fold dose of DCM (1.809 g/kg/day), SCM: TAA-induced mice fed 1-fold dose of SCM (0.603 g/kg/day), DOW: TAA-induced mice fed with DOW (0.603 mL/kg/day), AS: TAA-induced mice fed with adenosine (0.329 mg/kg/day), CC: TAA-induced mice fed with cordycepin (0.615 mg/kg/day). * <italic toggle="yes">p</italic> &lt; 0.05, ** <italic toggle="yes">p</italic> &lt; 0.01, *** <italic toggle="yes">p</italic> &lt; 0.001 vs. TAA group. <sup>#</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>##</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>###</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 vs. UCM group.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="marinedrugs-15-00168-g004.jpg"/>
+      </fig>
+      <table-wrap id="marinedrugs-15-00168-t001" orientation="portrait" position="float">
+        <object-id pub-id-type="pii">marinedrugs-15-00168-t001_Table 1</object-id>
+        <label>Table 1</label>
+        <caption>
+          <p>Cordycepin and adenosine concentrations of <italic toggle="yes">C. militaris</italic>-fermented oats cultured with various types of water.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Groups</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Cordycepin Concentration (mg/g)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Adenosine Concentration (mg/g)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">UCM</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">505.12 ± 16.91 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">235.18 ± 77.26 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">DCM</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1020.45 ± 76.42</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">544.30 ± 24.45</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">SCM</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">820.60 ± 75.25 *</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">413.08 ± 10.17 *</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>UCM, DCM, and SCM were the fermented oats of <italic toggle="yes">C. militaris</italic> cultured with UPW, DOW, and SW, respectively. The concentration of Mg<sup>2+</sup>, Na<sup>+</sup>, K<sup>+</sup>, Ca<sup>2+</sup>, and Fe<sup>2+</sup> in SW were equal to that in DOW, respectively. Data are presented as mean ± SD (<italic toggle="yes">n</italic> = 3). * <italic toggle="yes">p</italic> &lt; 0.05, *** <italic toggle="yes">p</italic> &lt; 0.001 vs. DCM.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="marinedrugs-15-00168-t002" orientation="portrait" position="float">
+        <object-id pub-id-type="pii">marinedrugs-15-00168-t002_Table 2</object-id>
+        <label>Table 2</label>
+        <caption>
+          <p>The effects of <italic toggle="yes">C. militaris</italic>-fermented products cultured with various waters on the body weight gain, liver weight, and liver weight/body weight ratio of the TAA-induced liver fibrosis mice.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Groups</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Liver Weight Gain (g)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Body Weight (g)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Liver Weight/Body Weight Ratio (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">NOR</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.24 ± 0.06 ***<sup>, ###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">29.36 ± 1.17 ***<sup>, ###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">4.51 ± 0.14 ***<sup>, ###</sup></td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">TAA</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">2.07 ± 0.09 <sup>###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">23.34 ± 1.05 <sup>###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">7.88 ± 0.19 <sup>###</sup></td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">SL</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.95 ± 0.07 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">27.35 ± 1.03 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">7.15 ± 0.24 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">UCM</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.91 ± 0.08 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">27.31 ± 0.46 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">7.20 ± 0.24 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">DCM-L</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.90 ± 0.06 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">27.88 ± 0.59 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">6.98 ± 0.36 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">DCM-H</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.93 ± 0.04 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">27.26 ± 1.15 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">7.09 ± 0.31 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">SCM</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.81 ± 0.04 ***<sup>, ##</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">25.79 ± 0.55 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">7.10 ± 0.18 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">DOW</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.89 ± 0.06 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">26.96 ± 0.82 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">7.17 ± 0.15 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">AS</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">1.69 ± 0.08 ***<sup>, ###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">25.76 ± 0.93 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">7.10 ± 0.22 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">CC</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">1.75 ± 0.05 ***<sup>, ###</sup></td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">25.01 ± 0.87 ***</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">6.95 ± 0.24 ***</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>NOR: normal group, TAA: TAA-induced mice (TAA 100 mg/kg/ip, three times per week), SL: TAA-induced mice fed silymarin (75 mg/kg/day), UCM: TAA-induced mice fed a one-fold dose of UCM (0.603 g/kg/day), DCM-L: TAA-induced mice fed 1-fold dose of DCM (0.603 g/kg/day), DCM-H: TAA-induced mice fed a three-fold dose of DCM (1.809 g/kg/day), SCM: TAA-induced mice fed a one-fold dose of SCM (0.603 g/kg/day), DOW: TAA-induced mice fed with DOW (0.603 mL/kg/day), AS: TAA-induced mice fed with adenosine (0.329 mg/kg/day), CC: TAA-induced mice fed with cordycepin (0.615 mg/kg/day). Data are presented as mean ±SD (<italic toggle="yes">n</italic> = 8). * <italic toggle="yes">p</italic> &lt; 0.05, ** <italic toggle="yes">p</italic> &lt; 0.01, *** <italic toggle="yes">p</italic> &lt; 0.001 vs. TAA group. <sup>#</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>##</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>###</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 vs. UCM group.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="marinedrugs-15-00168-t003" orientation="portrait" position="float">
+        <object-id pub-id-type="pii">marinedrugs-15-00168-t003_Table 3</object-id>
+        <label>Table 3</label>
+        <caption>
+          <p>The effects of <italic toggle="yes">C. militaris</italic>-fermented product cultured with various waters on serum AST, ALT, ALP activities, and TBIL contents in the TAA-induced liver fibrosis mice.</p>
+        </caption>
+        <table frame="hsides" rules="groups">
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">Groups</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">AST (U/L)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">ALT (U/L)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">ALP(U/L)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin" rowspan="1" colspan="1">TBIL (mg/dL)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">NOR</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">80.63 ± 3.89 ***<sup>, ##</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">43.25 ± 2.55 ***<sup>, ###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">97.63 ± 4.93 ***<sup>, ###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.043 ± 0.007 ***<sup>, ###</sup></td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">TAA</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">124.50 ± 11.12 <sup>###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">138.75 ± 10.12</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">202.63 ± 7.48 <sup>###</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.109 ± 0.010 <sup>##</sup></td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">SL</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">94.38 ± 4.84 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">114.75 ± 5.68 *</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">175.00 ± 16.29 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.091 ± 0.010 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">UCM</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">92.25 ± 3.45 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">126.63 ± 12.23</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">170.63 ± 8.90 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.094 ± 0.005 **</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">DCM-L</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">89.25 ± 5.57 ***<sup>, #</sup></td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">128.88 ± 10.79</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">174.63 ± 13.71 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.086 ± 0.009 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">DCM-H</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">90.75 ± 6.92 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">119.63 ± 7.44 *</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">171.63 ± 14.09 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.086 ± 0.009 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">SCM</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">97.63 ± 9.02 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">129.88 ± 14.51</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">176.13 ± 5.30 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.086 ± 0.012 ***</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">D</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">96.25 ± 8.97 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">128.63 ± 13.90</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">177.13 ± 9.43 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.095 ± 0.009 **</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" rowspan="1" colspan="1">AS</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">99.00 ± 4.78 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">125.38 ± 17.73 *</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">161.75 ± 11.52 ***</td>
+              <td align="center" valign="middle" rowspan="1" colspan="1">0.071 ± 0.011 ***<sup>, ###</sup></td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">CC</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">97.13 ± 10.59 ***</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">106.75 ± 10.50 *<sup>, ##</sup></td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">176.38 ± 10.01 ***</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin" rowspan="1" colspan="1">0.080 ± 0.011 ***<sup>, #</sup></td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p>NOR: normal group, TAA: TAA-induced mice (TAA 100 mg/kg/i.p., three times per week), SL: TAA-induced mice fed silymarin (75 mg/kg/day), UCM: TAA-induced mice fed a one-fold dose of UCM (0.603 g/kg/day), DCM-L: TAA-induced mice fed a one-fold dose of DCM (0.603 g/kg/day), DCM-H: TAA-induced mice fed a three-fold dose of DCM (1.809 g/kg/day), SCM: TAA-induced mice fed a one-fold dose of SCM (0.603 g/kg/day), DOW: TAA-induced mice fed with DOW (0.603 mL/kg/day), AS: TAA-induced mice fed with adenosine (0.329 mg/kg/day), CC: TAA-induced mice fed with cordycepin (0.615 mg/kg/day). Data are presented as mean ± SD (<italic toggle="yes">n</italic> = 8). * <italic toggle="yes">p</italic> &lt; 0.05, ** <italic toggle="yes">p</italic> &lt; 0.01, *** <italic toggle="yes">p</italic> &lt; 0.001 vs. TAA group. <sup>#</sup>
+<italic toggle="yes">p</italic> &lt; 0.05, <sup>##</sup>
+<italic toggle="yes">p</italic> &lt; 0.01, <sup>###</sup>
+<italic toggle="yes">p</italic> &lt; 0.001 vs. UCM group.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+    </floats-group>
+  </article>
+</pmc-articleset>

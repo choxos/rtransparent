@@ -1,0 +1,2255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="research-article" xml:lang="en" dtd-version="1.4">
+    <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+      <restricted-by>pmc</restricted-by>
+    </processing-meta>
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">eBioMedicine</journal-id>
+        <journal-id journal-id-type="iso-abbrev">EBioMedicine</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">2749</journal-id>
+        <journal-id journal-id-type="pmc-domain">ebiom</journal-id>
+        <journal-title-group>
+          <journal-title>EBioMedicine</journal-title>
+        </journal-title-group>
+        <issn pub-type="epub">2352-3964</issn>
+        <publisher>
+          <publisher-name>Elsevier</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC4856747</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC4856747.1</article-id>
+        <article-id pub-id-type="pmcaid">4856747</article-id>
+        <article-id pub-id-type="pmcaiid">4856747</article-id>
+        <article-id pub-id-type="pmid">27211555</article-id>
+        <article-id pub-id-type="doi">10.1016/j.ebiom.2016.02.040</article-id>
+        <article-id pub-id-type="pii">S2352-3964(16)30079-2</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Research Paper</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>A Long-term Co-perfused Disseminated Tuberculosis-3D Liver Hollow Fiber Model for Both Drug Efficacy and Hepatotoxicity in Babies</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author" id="au0005">
+            <name name-style="western">
+              <surname>Srivastava</surname>
+              <given-names initials="S">Shashikant</given-names>
+            </name>
+            <xref rid="af0005" ref-type="aff">a</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0010">
+            <name name-style="western">
+              <surname>Pasipanodya</surname>
+              <given-names initials="JG">Jotam G.</given-names>
+            </name>
+            <xref rid="af0005" ref-type="aff">a</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0015">
+            <name name-style="western">
+              <surname>Ramachandran</surname>
+              <given-names initials="G">Geetha</given-names>
+            </name>
+            <xref rid="af0010" ref-type="aff">b</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0020">
+            <name name-style="western">
+              <surname>Deshpande</surname>
+              <given-names initials="D">Devyani</given-names>
+            </name>
+            <xref rid="af0005" ref-type="aff">a</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0025">
+            <name name-style="western">
+              <surname>Shuford</surname>
+              <given-names initials="S">Stephen</given-names>
+            </name>
+            <xref rid="af0015" ref-type="aff">c</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0030">
+            <name name-style="western">
+              <surname>Crosswell</surname>
+              <given-names initials="HE">Howland E.</given-names>
+            </name>
+            <xref rid="af0015" ref-type="aff">c</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0035">
+            <name name-style="western">
+              <surname>Cirrincione</surname>
+              <given-names initials="KN">Kayle N.</given-names>
+            </name>
+            <xref rid="af0005" ref-type="aff">a</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0040">
+            <name name-style="western">
+              <surname>Sherman</surname>
+              <given-names initials="CM">Carleton M.</given-names>
+            </name>
+            <xref rid="af0005" ref-type="aff">a</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0045">
+            <name name-style="western">
+              <surname>Swaminathan</surname>
+              <given-names initials="S">Soumya</given-names>
+            </name>
+            <xref rid="af0010" ref-type="aff">b</xref>
+          </contrib>
+          <contrib contrib-type="author" id="au0050">
+            <name name-style="western">
+              <surname>Gumbo</surname>
+              <given-names initials="T">Tawanda</given-names>
+            </name>
+            <email>tawanda.gumbo@BSWhealth.org</email>
+            <xref rid="af0005" ref-type="aff">a</xref>
+            <xref rid="af0010" ref-type="aff">b</xref>
+            <xref rid="cr0005" ref-type="corresp">⁎</xref>
+          </contrib>
+          <aff id="af0005"><label>a</label>Center for Infectious Diseases Research and Experimental Therapeutics, Baylor Research Institute, Baylor University Medical Center, Dallas, TX, USA</aff>
+          <aff id="af0010"><label>b</label>Tuberculosis Research Center Chennai, India</aff>
+          <aff id="af0015"><label>c</label>KIYATEC Inc., Greenville, SC, USA</aff>
+        </contrib-group>
+        <author-notes>
+          <corresp id="cr0005"><label>⁎</label>Corresponding author at: Center for Infectious Diseases Research and Experimental Therapeutics, Baylor Research Institute, 3434 Live Oak Street, Dallas, TX 75204, USA. <email>tawanda.gumbo@BSWhealth.org</email></corresp>
+        </author-notes>
+        <pub-date pub-type="collection">
+          <month>4</month>
+          <year>2016</year>
+        </pub-date>
+        <pub-date pub-type="epub">
+          <day>27</day>
+          <month>2</month>
+          <year>2016</year>
+        </pub-date>
+        <volume>6</volume>
+        <issue-id pub-id-type="pmc-issue-id">269101</issue-id>
+        <fpage>126</fpage>
+        <lpage>138</lpage>
+        <history>
+          <date date-type="received">
+            <day>12</day>
+            <month>11</month>
+            <year>2015</year>
+          </date>
+          <date date-type="rev-recd">
+            <day>15</day>
+            <month>2</month>
+            <year>2016</year>
+          </date>
+          <date date-type="accepted">
+            <day>25</day>
+            <month>2</month>
+            <year>2016</year>
+          </date>
+        </history>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>27</day>
+              <month>02</month>
+              <year>2016</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>24</day>
+              <month>05</month>
+              <year>2016</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2025-06-11 22:25:24.753">
+              <day>11</day>
+              <month>06</month>
+              <year>2025</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>© 2016 The Authors</copyright-statement>
+          <copyright-year>2016</copyright-year>
+          <license>
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncndlicense">https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref>
+            <license-p>This work is licensed under a <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</ext-link>, which allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator.</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="main.pdf"/>
+        <abstract id="ab0005">
+          <p>Treatment of disseminated tuberculosis in children ≤ 6 years has not been optimized. The pyrazinamide-containing combination regimen used to treat disseminated tuberculosis in babies and toddlers was extrapolated from adult pulmonary tuberculosis. Due to hepatotoxicity worries, there are no dose–response studies in children. We designed a hollow fiber system model of disseminated intracellular tuberculosis with co-perfused three-dimensional organotypic liver modules to simultaneously test for efficacy and toxicity. We utilized pediatric pharmacokinetics of pyrazinamide and acetaminophen to determine dose-dependent pyrazinamide efficacy and hepatotoxicity. Acetaminophen concentrations that cause hepatotoxicity in children led to elevated liver function tests, while 100 mg/kg pyrazinamide did not. Surprisingly, pyrazinamide did not kill intracellular <italic toggle="yes">Mycobacterium tuberculosis</italic> up to fourfold the standard dose as monotherapy or as combination therapy, despite achieving high intracellular concentrations. Host-pathogen RNA-sequencing revealed lack of a pyrazinamide exposure transcript signature in intracellular bacteria or of phagolysosome acidification on pH imaging. Artificial intelligence algorithms confirmed that pyrazinamide was not predictive of good clinical outcomes in children ≤ 6 years who had extrapulmonary tuberculosis. Thus, adding a drug that works inside macrophages could benefit children with disseminated tuberculosis. Our in vitro model can be used to identify such new regimens that could accelerate cure while minimizing toxicity.</p>
+        </abstract>
+        <abstract abstract-type="author-highlights" id="ab0010">
+          <title>Highlights</title>
+          <p>
+            <list list-type="simple" id="l0005">
+              <list-item id="u0005">
+                <label>•</label>
+                <p id="p0005">We designed a pre-clinical of disseminated for simultaneous identification of toxicity and efficacy in children.</p>
+              </list-item>
+              <list-item id="u0010">
+                <label>•</label>
+                <p id="p0010">The system is a co-culture of infected monocytes and 3 dimensional organotypic liver recapitulating children pharmacokinetics.</p>
+              </list-item>
+              <list-item id="u0015">
+                <label>•</label>
+                <p id="p0015">Pyrazinamide, central drug in treatment regimen, had no effect as monotherapy or contribute to the combination therapy.</p>
+              </list-item>
+            </list>
+          </p>
+          <p>Due to fear of toxicity children are often not involved in clinical trials, and as a result the optimal treatment regimens are often lacking. As an example, toddlers and babies develop disseminated tuberculosis but are treated with regimens designed for adults with lung cavity disease. We designed a “glass-mouse” model of disseminated tuberculosis that simultaneously tests for the efficacy and toxicity of the anti-tuberculosis drugs for children with disseminated disease. We found that while not causing dose-dependent liver toxicity, one of the central drugs used to treat this children is likely not efficacious.</p>
+        </abstract>
+        <kwd-group id="ks0005">
+          <title>Keywords</title>
+          <kwd>Disseminated tuberculosis</kwd>
+          <kwd>Pediatric</kwd>
+          <kwd>Hepatotoxicity</kwd>
+          <kwd>3D liver hollow fiber model</kwd>
+        </kwd-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY-NC-ND</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec id="s0005">
+        <label>1</label>
+        <title>Introduction</title>
+        <p id="p0020">Recent estimates are that one million children developed tuberculosis (TB) in 2010 alone (<xref rid="bb0125" ref-type="bibr">Jenkins et al., 2014</xref>). In babies and toddlers, TB manifests as disseminated disease, attributed to poor immune containment (<xref rid="bb0165" ref-type="bibr">Newton et al., 2008</xref>). In disseminated disease, <italic toggle="yes">Mycobacterium tuberculosis</italic> (<italic toggle="yes">Mtb</italic>) is predominantly intracellular as opposed to the predominantly extracellular bacteria in cavitary pneumonia in adults. However, therapeutic regimens used to treat pediatric TB were copied from those for adults with pulmonary TB. For multi-drug resistant TB (MDR-TB) and extensively drug-resistant TB in children, no regimens have been developed as of yet and in some parts of the world such children are left untreated, and have been deemed “invisible” (<xref rid="bb0015" ref-type="bibr">Becerra and Swaminathan, 2014</xref>, <xref rid="bb0060" ref-type="bibr">Dheda et al., 2014</xref>). There has been reluctance to perform dose–response studies and first in human studies in children because of concerns for toxicity such as drug induced liver injury (DILI). Indeed, the incidence of DILI among children treated for TB ranges between 1.7–8%, making this a legitimate concern (<xref rid="bb0055" ref-type="bibr">Devrim et al., 2010</xref>, <xref rid="bb0205" ref-type="bibr">Roy et al., 2006</xref>) Recently, the World Health Organization and STOP-TB have advocated for the design of new and shorter treatment regimens for children, leading to zero TB deaths in children. Thus the problem is pressing. Recently <xref rid="bb0155" ref-type="bibr">Momper et al. (2015)</xref> summarized reasons for failed clinical trials in all pediatric drug development as mainly due to lack of efficacy, poor dosing, or toxicity; they proposed use of pre-clinical models to tackle these failures so that results could be directly translated to the clinic. No pre-clinical model of intracellular TB has been designed as of yet. On the other hand, preclinical toxicity requires multiple animal model species testing. Regardless, rodent models which are commonly used as one of the animals'models have predictive rates of less than 40% for human DILI and resulted in second highest discontinuation rates for several drugs (<xref rid="bb0170" ref-type="bibr">Olson et al., 2000</xref>). In “<italic toggle="yes">Preventing drug-induced liver injury</italic>: <italic toggle="yes">how useful are animal models</italic>?” Ballet argues that no animal models are useful for predicting the most common forms of human DILI at all and that humans themselves are best models for DILI (<xref rid="bb0010" ref-type="bibr">Ballet, 2015</xref>). Indeed, no good pre-clinical model of DILI in which human concentration-time profiles of pharmaceuticals are examined exists as of yet. Here, we designed a model of intracellular TB, fitted a 3-dimensional human organoid liver (3D-liver), and dialed human pediatric-like pharmacokinetics, for performance of pediatric dose–response studies to estimate both safety and DILI at the same time.</p>
+        <p id="p0025">One of the pivotal drugs in the regimen used to treat children with both drug-susceptible and MDR-TB, based on equivalent use in adults, is pyrazinamide (<xref rid="bb0065" ref-type="bibr">Donald et al., 2012</xref>). The doses for use in children are as yet unclear; based on computer aided clinical trial simulations we and others have proposed that the doses be doubled for children with pulmonary disease (<xref rid="bb0085" ref-type="bibr">Gumbo et al., 2009a</xref>, <xref rid="bb0255" ref-type="bibr">Thee et al., 2011</xref>). However, this could lead to more DILI. On the other hand, there has been a debate as to whether pyrazinamide kills intracellular <italic toggle="yes">Mtb</italic> at all even in adults (<xref rid="bb0040" ref-type="bibr">Crowle et al., 1991</xref>, <xref rid="bb0085" ref-type="bibr">Gumbo et al., 2009a</xref>). Contrariwise, it has been argued that pyrazinamide could work as an immunomodulatory agent in the context of interferon-gamma (IFN-γ) secretion in granulomas (<xref rid="bb0005" ref-type="bibr">Ahmad et al., 2011</xref>). If the former assertion is correct, pyrazinamide as used currently in children with disseminated disease would not contribute to efficacy of the regimen. However, if the immunomodulatory effect hypothesis is correct, then pyrazinamide could be a vital component of treatment for disseminated TB. Here, we examined the efficacy and toxicity of pyrazinamide in our novel model for disseminated pediatric disease, and found that the drug does not kill intracellular <italic toggle="yes">Mtb</italic> even when IFN-γ and tumor necrosis factor α (TNF-α) are supplemented. Moreover, novel host-pathogen RNA sequencing (RNA-Seq) revealed no transcriptomic or immunological signature of pyrazinamide exposure.</p>
+      </sec>
+      <sec id="s0010">
+        <label>2</label>
+        <title>Materials and Methods</title>
+        <sec id="s0015">
+          <label>2.1</label>
+          <title>Bacterial Strain and Growth Conditions</title>
+          <p id="p0030">Prior to each experiment stock <italic toggle="yes">Mtb</italic> culture (H37Ra, ATCC# 25177; H37Rv ATCC# 27294) was thawed and grown in Middlebrook 7H9 broth supplemented with 10% oleic acid-dextrose-catalase (OADC) at 37 °C under 5% CO<sub>2</sub> and shaking conditions. For the pH 5.8 studies the log-phase growth bacteria were further cultured for 4 more days in Middlebrook 7H9 broth acidified and buffered to a pH of 5.8, as described in the past (<xref rid="bb0085" ref-type="bibr">Gumbo et al., 2009a</xref>).</p>
+        </sec>
+        <sec id="s0020">
+          <label>2.2</label>
+          <title>Tissue Culture</title>
+          <p id="p0035">Human derived THP-1 cell line (ATCC TIB-202) and murine macrophage cell line (J774A.1, ATCC TIB-67) were grown in RPMI-1640 medium supplemented with 10% fetal bovine serum (FBS) at 37 °C under 5% CO<sub>2</sub>.</p>
+        </sec>
+        <sec id="s0025">
+          <label>2.3</label>
+          <title>Reagents and Supplies</title>
+          <p id="p0040">Hollow fiber system <bold>(</bold>HFS) cartridges were purchased from FiberCell (Frederick, MD). Pyrazinamide, isoniazid, rifampin, and acetaminophen (APAP) were purchased from SIGMA (USA).</p>
+          <p id="p0045">Liver enzymes such as aspartate transaminase (AST), alanine transaminase (ALT), and lactate dehydrogenase (LDH) were measured using Vitros 250 system. Change in the Cyp3A4 was measured using RT-PCR while Bioplex Multiplex System (Bio RAD, USA) was used for measurement of interleukin 8 (IL-8), monocyte chemotactic protein 1 (MCP-1), vascular endothelial growth factor (VEGF), and platelet-derived growth factor (PDGF).</p>
+          <sec id="s0030">
+            <label>2.3.1</label>
+            <title>Three Dimensional Organotypic Liver Hollow Fiber Model of <italic toggle="yes">Mtb</italic></title>
+            <p id="p0050">The HFS-TB model consists of (a) a peripheral or pharmacodynamics compartment for the <italic toggle="yes">Mtb</italic> inoculum and (b) a central drug containing or pharmacokinetic compartment (<xref rid="bb0235" ref-type="bibr">Srivastava and Gumbo, 2011</xref>). In the past, we developed a HFS models of extracellular Mtb and intracellular <italic toggle="yes">Mycobacterium avium</italic> complex (MAC) in which concentration-time profiles of antibiotics encountered in adult patients were recapitulated (<xref rid="bb0045" ref-type="bibr">Deshpande et al., 2010a</xref>, <xref rid="bb0050" ref-type="bibr">Deshpande et al., 2010b</xref>, <xref rid="bb0070" ref-type="bibr">Gumbo et al., 2004</xref>, <xref rid="bb0075" ref-type="bibr">Gumbo et al., 2007a</xref>, <xref rid="bb0080" ref-type="bibr">Gumbo et al., 2007b</xref>, <xref rid="bb0085" ref-type="bibr">Gumbo et al., 2009a</xref>, <xref rid="bb0220" ref-type="bibr">Schmalstieg et al., 2012</xref>, <xref rid="bb0240" ref-type="bibr">Srivastava et al., 2010</xref>, <xref rid="bb0245" ref-type="bibr">Srivastava et al., 2011a</xref>). For pediatric disseminated TB, we infected THP-1 macrophages with <italic toggle="yes">Mtb</italic>. We further improved the intracellular HFS-TB model for assessment of hepatotoxicity by retrofitting 3D liver organoid cultures. The 3D-liver cultures were made of 10<sup>6</sup> HEpG2 embedded in alginate beads (total volume of 400 μL), which were cultured in 3D perfusion in the 3DKUBE™ (KIYATEC, Greenville, SC). The 3D KUBES were fitted in to the flow path of the HFS between the central reservoir, where the drug is delivered, and peripheral compartment. The drug was infused into the central compartment via a syringe pump at a predefined rate to achieve the peak concentrations and systemic clearances encountered in humans treated with the equivalent doses.</p>
+            <p id="p0055">Several preparatory experiments demonstrated that monocytes would only live for a few days if the virulent <italic toggle="yes">Mtb</italic> H37Rv was used to infect the macrophages; however the isogenic strain H37Ra produced a stable infection for over 4 weeks. For infection, prior to each intracellular <italic toggle="yes">Mtb</italic> study, THP-1 monocyte cells were grown in RPMI 1640 medium supplemented with 10% FBS to a density of 1.5 ∗ 10<sup>6</sup> CFU/mL. Next, log phase <italic toggle="yes">Mtb</italic> culture was at a bacterial density of 1.5 ∗ 10<sup>7</sup> CFU/mL was co-incubated with the THP-1 cells for 6 h at 37 °C under 5% CO<sub>2</sub>, giving a multiplicity of infection of 1:10. Infected THP-1 cells were then washed twice with warm RPMI 1640 by centrifugation at 100 ×<italic toggle="yes"> g</italic> for 5 min and examined in a hemocytometer for cell counts and viability after staining with trypan blue. The THP-1 cell counts before and after infection with <italic toggle="yes">Mtb</italic> were also verified with an automated cell counter (Sceptor, EMD Milipore). We then inoculated the peripheral compartment of each HFS with 20 mL of infected THP-1 cells (3.0 ∗ 10<sup>7</sup> cells/HFS) into the peripheral compartment of the HFS.</p>
+          </sec>
+        </sec>
+        <sec id="s0035">
+          <label>2.4</label>
+          <title>Intracellular HFS-TB Studies Using Pediatric Pharmacokinetics of Pyrazinamide for Efficacy and DILI</title>
+          <p id="p0060">The THP-1 cells were infected with <italic toggle="yes">Mtb</italic> as described above and inoculated into the HFS retrofitted with 3D KUBES. The systems were then treated with one of the five pyrazinamide doses (0, 1/4, 1/2, 1, 2, and 4 times standard dose) administered daily for 28 days via computer-controlled syringe pumps, mimicking a 6 h half-life as encountered in babies (<xref rid="bb0065" ref-type="bibr">Donald et al., 2012</xref>). As a positive control for DILI, we utilized daily APAP (t<sub>1/2</sub> = 3 h) with a goal of 4 h post dose levels of &gt; 150 mg/L, known to cause DILI in children based on the Rumack-Matthews monogram (<xref rid="bb0210" ref-type="bibr">Rumack and Matthew, 1975</xref>, <xref rid="bb0215" ref-type="bibr">Rumack et al., 1981</xref>). RPMI 1640 supplemented with 10% FBS was infused using computer controlled peristaltic pump at a predefined rate to maintain the THP-1 monocyte and HepG2 cells in the 3D KUBES and to achieve the half-life of each drug in each HFS. Samples from the peripheral compartment were collected on day 0, 7, 14, 21, and 28, washed twice with normal saline to remove any carry over drug, and cultured on Middlebrook 7H10 agar supplemented with 10% OADC to enumerate the total bacillary burden. To confirm the intended pharmacokinetic profile of the drug achieved in each system, the central and peripheral compartments were sampled seven times over 24 h to measure the drug concentration. Samples from the central compartment and the 3D KUBES were also subjected to measure the level of AST, ALT, LDH, Cyp3A4, IL-8, MCP-1, VEGF, and PDGF to analyze the DILI on days 0, 2, 5, 21 and 26.</p>
+        </sec>
+        <sec id="s0040">
+          <label>2.5</label>
+          <title>Role of Pyrazinamide in the Combination Therapy Against Intracellular <italic toggle="yes">Mtb</italic></title>
+          <p id="p0065">We performed HFS studies to determine the extent of pyrazinamide contribute to the standard three drug (isoniazid, rifampin, and pyrazinamide) regimen in disseminated TB. The HFSs were treated with either dual regimen (isoniazid–rifampin) or triple regimen (isoniazid–rifampin–pyrazinamide) over 28 days, in triplicate. The systems were sampled at predetermined time point for enumeration of the total bacterial burden as described above. In addition the concentration-time profile of the drugs was confirmed by sampling the central and peripheral compartments seven times over 24 h and concentrations of the isoniazid, rifampin, and pyrazinamide were measured using the previously validated method (<xref rid="bb0085" ref-type="bibr">Gumbo et al., 2009a</xref>, <xref rid="bb0245" ref-type="bibr">Srivastava et al., 2011a</xref>, <xref rid="bb0250" ref-type="bibr">Srivastava et al., 2011b</xref>).</p>
+        </sec>
+        <sec id="s0045">
+          <label>2.6</label>
+          <title>Pyrazinamide Activity Against Extracellulat <italic toggle="yes">Mtb</italic> and Effect of Cytokines on Pyrazinamide Efficacy Against Intracellular <italic toggle="yes">Mtb</italic></title>
+          <p id="p0070">We examined the effect of several concentrations of pyrazinamide (1/8 to 8 × of the standard dose) against extracellular <italic toggle="yes">Mtb</italic> in Middlebrook broth that had been acidified to pH 5.8 (<xref rid="bb0090" ref-type="bibr">Gumbo et al., 2009b</xref>) over a period of 14 days. On day 14 the cultures were washed twice to remove any carry over drug, serially diluted and cultured on Middlebrook agar, and incubated at 37 °C with 5% CO<sub>2</sub> for at least 21 days before the colonies were counted.</p>
+          <p id="p0075">It has been argued that pyrazinamide works against intracellular <italic toggle="yes">Mtb</italic> in humans in concert with secreted IFN-γ by granulomas; indeed in the BALB/c mouse model of TB in which <italic toggle="yes">Mtb</italic> is predominantly intracellular pyrazinamide shows dramatic efficacy (<xref rid="bb0005" ref-type="bibr">Ahmad et al., 2011</xref>). To test this hypothesis, we first activated the THP-1 macrophages using phorbol myristate ester (PMA) and then infected the adherent cells with <italic toggle="yes">Mtb</italic> as described above, and performed the dose–response study, with the same dose ranges as used for the extracellular experiments, in the presence of IFN-γ at a concentration of 5 μg/mL and the IFN-γ antagonist dexamethasone at 1 μM concentration. The study was performed twice. Next, we repeated the experiment but this time with TNF-α at a concentration of 5 ng/mL, and a TNF-α antagonist (rabbit anti-human TNF-α) at 10 μg/mL. The experiment was performed twice. Finally, the same study was repeated with pyrazinamide (but no cytokines), but instead of adherent THP-1 cells we infected adherent mouse macrophage cells, the J774A.1 cell line, originally isolated from BALB/c mice.</p>
+        </sec>
+        <sec id="s0050">
+          <label>2.7</label>
+          <title>Host-pathogen RNA-Seq</title>
+          <p id="p0080"><italic toggle="yes">Mtb</italic> cultures grown in Middelbrook broth on day 4 of logarithmic phase growth and from semidormant bacteria on day 4 of incubation in broth at pH 5.8 (<xref rid="bb0085" ref-type="bibr">Gumbo et al., 2009a</xref>), were treated with pyrazinamide concentration of 294 mg/L (&gt; EC<sub>80</sub>) for four days, and RNA extracted. Next, during the combination therapy hollow fiber studies above, samples for enumeration of <italic toggle="yes">Mtb</italic> cultures described above were used to extract RNA on the various sampling days described above.</p>
+          <p id="p0085">Following extraction, the RNA samples were depleted of ribosomal RNA, and subsequently used for sequencing library preparation for whole transcriptome analysis using TruSeq RNA sample preparation v2 kit (Illumina Inc. San Diego, CA). The size selected libraries were quantified by PicoGreen assay (Life Technologies, Carlsbad, CA) and visualized with an Agilent Bioanalyzer using a DNA 1000 kit (Agilent Technologies, Waldbronn, Germany). This was followed by cluster generation step in an Illumina cBOT TM instrument following the manufacturer's protocol using a TruSeqTM SR Cluster Kits v3 (Illumina Inc.; San Diego, CA). Finally 6 indexed libraries were loaded into each flow cell lane and sequencing (75 bp single end) was performed on an Illumina HiSeqH2000 instrument (Illumina, Inc.) according to the manufacturer's protocol. Multiplexed single-read runs were carried out with a total of 57 cycles per run (including 7 cycles for the index sequences). Illumina HCS 2.0.12/RTA 1.17.21.3/SAV 1.8.20 Software was used for real-time image processing and base calling.</p>
+          <p id="p0090">The data was analyzed for the quality control of the reads, and alignment of reads was made to <italic toggle="yes">Mtb</italic> reference genome <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmc:entrez-nucleotide" xlink:href="NC_000962">NC_000962</ext-link>, and HumanRefSeqBuilt37 (GRCh37p13). CLC Genomic workbench (v 8) was used for alignment of sequencing reads. The data was normalized and statistical test was performed to find the significantly differentially expressed genes (DEG) with statistically significant p value (&lt; 0.05) with Bonferroni post-test correction. We defined DEG as ≥ 2.0-fold change with a significant p-value &lt; 0.05. Analyses were performed using CLC Genomics workbench 8.0.</p>
+        </sec>
+        <sec id="s0055">
+          <label>2.8</label>
+          <title>Imaging for Changes in the Intracellular pH</title>
+          <p id="p0095">THP-1 and J774A.1 cells were infected with <italic toggle="yes">Mtb</italic>, as described earlier. At 24, 48, 72 and 168 h post infection, cells were washed and stained for 30 min with pHrodo Green as per the manufacturer's protocol (Life Technologies, USA). The stained cells were fixed with 4% formalin for 15 min and subjected to fluorescent microscopy (Cytation 3 Cell Imaging Multi-mode Reader, BioTek Instruments Inc., USA) to determine the changes in the intracellular pH as relative increase or decrease in the fluorescence intensity. We used the FITC filter sets with excitation and emission at 509/533. Images were taken at 10-times magnification and Gene5 data analysis software was used for image acquisition and analysis (BioTek Instruments Inc., USA). In addition to the qualitative analysis of the images for the changes in the green fluorescence, we also recorded the number of cells, size and mean fluorescence values for each sample to compare the differences between the uninfected and <italic toggle="yes">Mtb</italic> infected cells. The experiment was performed in triplicate on three different occasions. In order to make sure that findings were not simply due to the fact that Mtb H37Ra was avirulent, we repeated the studies with Mtb H3Rv, with the same mammalian cell lines, with up to 72 h post-infection observation.</p>
+        </sec>
+        <sec id="s0060">
+          <label>2.9</label>
+          <title>Statistical Analysis for the Laboratory Experiments</title>
+          <p id="p0100">Two-way analysis of variance (ANOVA) was used to compare bacterial burden at each time point in GraphPad Prism version 6.0 (GraphPad Software, CA). Linear regression was used to compare the kill slopes of different treatment regimens and for dose-response studies we used the inhibitory sigmoid E<sub>max</sub> model.</p>
+        </sec>
+        <sec id="s0065">
+          <label>2.10</label>
+          <title>Recruitment of Children in India and Artificial Intelligence Analyses</title>
+          <p id="p0105">Children were enrolled for pharmacokinetic analysis and clinical outcome ascertainment in two prospective studies in India (<xref rid="bb0195" ref-type="bibr">Ramachandran et al., 2013</xref>, <xref rid="bb0200" ref-type="bibr">Ramachandran et al., 2015</xref>). Recruitment details and ethical considerations for the children were as published before (<xref rid="bb0195" ref-type="bibr">Ramachandran et al., 2013</xref>, <xref rid="bb0200" ref-type="bibr">Ramachandran et al., 2015</xref>). Briefly, parents or guardians gave informed written consent for all children ≤ 6 years-old, while all children aged &gt; 7 years gave assent. The study protocols were approved by the Institutional Ethics Committees of each study site. Children were recruited at multiple hospitals and sites in India, as specified before (<xref rid="bb0195" ref-type="bibr">Ramachandran et al., 2013</xref>, <xref rid="bb0200" ref-type="bibr">Ramachandran et al., 2015</xref>). Tuberculosis case definitions and clinical care were according to India's Revised National TB Control Program (RNTCP), as were definitions of outcome such as treatment completion, failure, and non-adherence. Individual drugs were made available for the entire treatment duration. The treatment doses were as follows: pyrazinamide 30–35 mg/kg, rifampin 10 mg/kg, isoniazid 10 mg/kg, ethambutol 30 mg/kg, and streptomycin 15 mg/kg, three times a week by parent/guardian. Children were admitted for blood draw of samples for pharmacokinetic analyses; treatment was administered under supervision of a study nurse, who watched the children swallow the medicines, after which blood was drawn at 0 (pre-dose), 2, 4, and 8 h. HIV-infected children were treated with antiretroviral therapy as recommended by the National AIDS Control Organization (NACO) guidelines. Drug concentration assays were as described before (<xref rid="bb0195" ref-type="bibr">Ramachandran et al., 2013</xref>, <xref rid="bb0200" ref-type="bibr">Ramachandran et al., 2015</xref>). Patients were followed for at least 6 months.</p>
+          <p id="p0110">We utilize several artificial intelligence (AI) approaches and ensembles to identify predictors of outcome in TB, as described in full elsewhere (<xref rid="bb0100" ref-type="bibr">Gumbo et al., 2014b</xref>, <xref rid="bb0095" ref-type="bibr">Gumbo et al., 2014a</xref>, <xref rid="bb0180" ref-type="bibr">Pasipanodya and Gumbo, 2013</xref>). We defined good clinical outcomes in children as completion of therapy that required no further treatment. We excluded children who were non-adherent from the definition of poor outcomes since we have found elsewhere that non-adherence is a poor surrogate of poor microbial or clinical outcomes (<xref rid="bb0175" ref-type="bibr">Pasipanodya and Gumbo, 2011</xref>, <xref rid="bb0180" ref-type="bibr">Pasipanodya and Gumbo, 2013</xref>, <xref rid="bb0245" ref-type="bibr">Srivastava et al., 2011a</xref>). We specified 16 potential predictors, including all clinical and demographic factors, measures of nutrition, HIV-coinfection, and isoniazid, rifampicin, and pyrazinamide concentrations. The classification and regression tree (CART) algorithms search through all these potential predictors and perform binary recursive partitioning in order to classify patients into two groups of maximum homogeneity at a node, the first being the primary node. The process continues to create daughter nodes and branches, hence trees. A variable importance score was assigned to each subsequent daughter node, which was a percentage of how much the daughter nodes improved when added to the primary node. We employed Gini criterion function for splitting nodes and attaining the minimum cost tree. Finally, the deep trees created were pruned to improve the predictive value of the models by using the receiver operator curve (ROC) score. CART employs a cross validation procedure in which new data sets are created by randomly splitting the main dataset into learning and test databases, and calculating the test ROC based on the best tree chosen. However, CART is notorious for over fitting and a bias for multi-way splits. Bootstrap aggregating (bagging) is an ensemble of algorithms that reduce variance and overfitting, reduce bias, and create stable trees (<xref rid="bb0020" ref-type="bibr">Breiman, 1996</xref>). Random Forest performs this function by averaging out the CART decision training trees (i.e., by trees “voting”), to give a modal output (<xref rid="bb0025" ref-type="bibr">Breiman, 2001</xref>). We validated the Random Forest model by setting aside a third of the data, then used the area under the ROC to compare models after running 300 to 500 classification trees. We utilized Salford Predictive Miner System software (San Diego, CA) for the AI analyses.</p>
+        </sec>
+      </sec>
+      <sec id="s0070">
+        <label>3</label>
+        <title>Result</title>
+        <sec id="s0075">
+          <label>3.1</label>
+          <title>An Intracellular <italic toggle="yes">Mtb</italic> and 3D Organotypic Liver Hollow Fiber Co-culture System</title>
+          <p id="p0115">First, we compared the effect of static concentrations of pyrazinamide and APAP (positive control), at the same 24 h area under the concentration-time curve (AUC) concentrations encountered in patients, on 3D-liver cultures compared to HEpG2 monolayers, in triplicate. CYP3A4 was chosen for study because it is responsible for metabolizing more than 50% of all of all pharmaceutical compounds in humans, including APAP (<xref rid="bb0225" ref-type="bibr">Sevrioukova and Poulos, 2015</xref>). <xref rid="f0005" ref-type="fig">Fig. 1</xref>a shows quantitative PCR results for the Cytochrome P450 3 A4 (CYP3A4). HepG2 cells had a four-fold increase in CYP3A4 expression in 3D co-culture as compared with the monolayer (<xref rid="f0005" ref-type="fig">Fig. 1</xref>a). The intent of the experiment was not to examine the cytochrome P450-mediated metabolism of pyrazinamide, but instead this was a surrogate readout of the 3-D model's overall metabolic capacity as a better approximation of in vivo events, which was higher than in monolayers. These 3DKUBEs were then utilized as modules to examine toxicity in the HFS model. We retrofitted pairs of engineered 3DKUBEs into the media flow path of the central compartment of each HFS, are shown in <xref rid="f0005" ref-type="fig">Fig. 1</xref>b–c. The infected human-derived THP-1 cells and the hepatocytes were viable for up to 4 weeks.<fig id="f0005" position="float" orientation="portrait"><label>Fig. 1</label><caption><p>The intracellular Mtb hollow fiber model of tuberculosis with 3 dimensional organotypic liver modules. (a) 3D KUBES versus a monolayer of HepG2 cells (2-D) were treated with either pyrazinamide 60 μg/mL, or APAP150 μM, or LPS 1 μg/mL; RNA was extracted and subjected to quantitative PCR for CYP3A4. There was higher expression of CYP34A in 3D KUBES compared to 2D cell model (p = 0.0001). Error bars are standard deviation. The experiments were done in triplicate and performed twice to confirm the findings. (b) Schematic diagram of the HFS showing retrofitted 3D KUBEs in the media flow path. (c) An image of 3D KUBEs attached to the flow path of the hollow fiber model system.</p></caption><alt-text id="al0005">Fig. 1</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="gr1.jpg"/></fig></p>
+          <sec id="s0080">
+            <label>3.1.1</label>
+            <title>Pyrazinamide Dose-effect Studies for Efficacy and DILI Using Pediatric Pharmacokinetics</title>
+            <p id="p0120">Next, we examined the effect of five pyrazinamide doses and one APAP dose. Each HFS had four 3DKUBEs in the flow path, which were exposed to pyrazinamide concentration-time profiles shown in <xref rid="f0010" ref-type="fig">Fig.2</xref>a. The figure shows good recapitulation of serum concentration-time profiles of pyrazinamide in children in each HFS replicate. The pyrazinamide elimination rate constant was 0.117 ± 0.011 h<sup>− 1</sup>, which is identical to that encountered in children &lt; 6 years old and translates to a half-life of 5.92 ± 0.58 h. Each HFS was sampled once every 7 days for AST, ALT, and LDH concentrations, with results shown in <xref rid="f0010" ref-type="fig">Fig.2</xref>b. APAP, the DILI positive control based on the Rumack-Matthews nomogram target (<xref rid="bb0210" ref-type="bibr">Rumack and Matthew, 1975</xref>), was associated with at least 3-fold change for LDH (p &lt; 0.05) and increase in both AST and ALT. On the other hand, there was actually a slight decrease in AST (r<sup>2</sup> = 0.21) and ALT (r<sup>2</sup> = 0.32) with increased pyrazinamide dose. This was verified not be due to decreased numbers of liver cells from toxicity. Cytokine analysis on the cell culture supernatant from the 3D-liver modules was performed at different time points; results for selected cytokines such as IL8, MCP-1, VEGF, and PDGF, are shown in <xref rid="f0010" ref-type="fig">Fig. 2</xref>c–f. The figures show that the pattern of IL-8 and VEGP for APAP treated HFS differ from non-treated controls. The results mean that for pyrazinamide doses up to 100 mg/kg human equivalent (4 times standard), there was no evidence of increased DILI or cytokine release consistent with liver damage, while the positive control APAP demonstrated DILI by these criteria.<fig id="f0010" position="float" orientation="portrait"><label>Fig. 2</label><caption><p>Assessment of pyrazinamide DILI and efficacy in the HFS. (a) Concentration time profile of each of the five pyrazinamide doses as achieved in the HFS. Shown are the actual observed concentration-time profiles for each dose, demonstrating faithful recapitulation of pyrazinamide pharmacokinetics in pediatric circulatory system in each HFS replicate. (b)When each HFS was sampled every seven days to measure the changes in LFTs, there was virtually no difference between different pyrazinamide doses and untreated controls in enzyme concentrations. However, the hepatotoxicity by APAP was evident based on the significantly higher AST, ALT, and LDH than untreated controls. (c–f) Levels of IL-8, MCP-1, VEGF, and PDGF measured on different days as indicators of hepatotoxicity. Statistically significant increases in levels of IL-8 and VEGF (p &lt; 0.05) were encountered with APAP, known to cause hepatotoxicity, but not with any pyrazinamide dose. (g) Numbers of the viable THP-1 cells in the HFS were not significantly different between control, pyrazinamide and APAP treatment (p &gt; 0.05). (h) Comparison of the kill curves of pyrazinamide dose up to four times of the standard human equivalent dose shows that all doses failed to control the growth of intracellular <italic toggle="yes">Mtb</italic>.</p></caption><alt-text id="al0010">Fig. 2</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="gr2.jpg"/></fig></p>
+            <p id="p0125">The number of viable macrophages in the peripheral compartments of the HFS replicates at each sampling time point are shown in <xref rid="f0010" ref-type="fig">Fig. 2</xref>g, which demonstrates continued viability up to 4 weeks. The <italic toggle="yes">Mtb</italic> burden is shown in <xref rid="f0010" ref-type="fig">Fig.2</xref>h, which demonstrates that for both the standard and high dose pyrazinamide, the day-to-day <italic toggle="yes">Mtb</italic> burden was no better than sham treatment. Thus, despite high doses, whose concentrations were validated by direct measurement, pyrazinamide daily doses did not kill intracellular <italic toggle="yes">Mtb</italic> in the HFS over 28 days of experiment. The minimum inhibitory concentration (MIC) of pyrazinamide against the <italic toggle="yes">Mtb</italic> isolate, examined at pH 5.8, was 25 mg/L on several occasions, so that failure is not due to intrinsic pyrazinamide resistance of the laboratory strain we used.</p>
+          </sec>
+        </sec>
+        <sec id="s0085">
+          <label>3.2</label>
+          <title>Interferon-γ and TNF-α Do Not Enhance Efficacy or Potency of Pyrazinamide</title>
+          <p id="p0130">In order to determine if IFN-γ or TNF-α improved pyrazinamide effectiveness, we first examined the effect of several concentrations of pyrazinamide against extracellular <italic toggle="yes">Mtb</italic> in Middlebrook broth that had been acidified to pH 5.8, with results shown in <xref rid="f0015" ref-type="fig">Fig.3</xref>a. The figure shows concentration-dependent killing of <italic toggle="yes">Mtb</italic> by pyrazinamide with 14 days incubation; the pyrazinamide markedly killed <italic toggle="yes">Mtb</italic> by about 2-log below day 0 burden (stasis). Based on inhibitory sigmoid E<sub>max</sub> model the mean (± standard error) concentration mediating 50% of maximal kill (potency) was a 51.95 ± 15.79 mg/L and maximal kill (efficacy) was 2.93 ± 0.46 log<sub>10</sub> CFU/mL on day 14.<fig id="f0015" position="float" orientation="portrait"><label>Fig. 3</label><caption><p>Effect of IFN-γ on intracellular activity of pyrazinamide. In each experiment, cultures were treated with pyrazinamide concentrations shown for 14 days. There were 3 replicates, and each study was performed. Weighting was by 1/Y<sup>2</sup>. (a) Pyrazinamide killed extracellular <italic toggle="yes">Mtb</italic> at pH 5.8, as shown by maximal kill below the day 0 bacterial burden (stasis). (b) In THP-1 human-derived cells treated with either pyrazinamide alone, or with IFN-γ or its inhibitor, the <italic toggle="yes">Mtb</italic> grew above stasis. (c) Similar results were encountered with exogenous TNF-α or TNF-α antagonist. (d) Pyrazinamide killed the intracellular <italic toggle="yes">Mtb</italic> in J774A.1 mouse macrophage cell line below stasis.</p></caption><alt-text id="al0015">Fig. 3</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="gr3.jpg"/></fig></p>
+          <p id="p0135">Next, we activated THP-1 macrophages and performed the same dose–response study with and without IFN-γ or the IFN-γ inhibitor, with day 14 results shown in <xref rid="f0015" ref-type="fig">Fig.3</xref>b. There figure shows that there was no net kill of <italic toggle="yes">Mtb</italic>, with maximal effect occurring at bacterial burdens higher than on day 0, which means bacteria treated with pyrazinamide actually grew. Comparison of inhibitory sigmoid E<sub>max</sub> regression fits revealed that the three conditions (pyrazinamide alone versus with IFN-γ versus with IFN-γ inhibitor) shared the EC<sub>50</sub> of 30.24 ± 2.72 mg/L and the slope (Hill factor) of 3.03 ± 0.79, while the E<sub>max</sub> was actually higher without IFN-γ (1.05 ± 0.13 log<sub>10</sub> CFU/mL) compared to with IFN-γ (0.80 ± 0.08 log<sub>10</sub> CFU/mL). Similarly, supplementation with either TNF-α or a TNF-α inhibitor resulted in no decrease in microbial burden below stasis (<xref rid="f0015" ref-type="fig">Fig. 3</xref>c). All three treatment conditions shared the 3 parameters of EC<sub>50</sub>, Hill factor, and E<sub>max</sub>. Thus, pyrazinamide had no antimicrobial effect in activated and infected macrophages on 6 occasions (each experiment was performed twice), and neither did IFN-γ nor TNF-α improve that. On the other hand, since pyrazinamide kills <italic toggle="yes">Mtb</italic> in BALB/c mice, we performed the same 14 day pyrazinamide dose-effect study, substituting murine-derived J774A.1 cells for human derived THP-1 cells. <xref rid="f0015" ref-type="fig">Fig.3</xref>d shows that pyrazinamide killed <italic toggle="yes">Mtb</italic> in the murine-derived macrophage cell-line below stasis. The EC<sub>50</sub> was 8.65 ± 2.02 mg/L, which is several fold-lower that of pyrazinamide against extracellular Mtb at pH 5.8, while E<sub>max</sub> was lower at 1.47 ± 0.14 log<sub>10</sub> CFU/mL, but the Hill factor of 1.18 ± 0.44 was similar to results in <xref rid="f0015" ref-type="fig">Fig.3</xref>a. Thus pyrazinamide is effective in murine macrophages and extracellularly at pH 5.8, but not in activated human-derived cells.</p>
+        </sec>
+        <sec id="s0090">
+          <label>3.3</label>
+          <title>Lack of Pyrazinamide-effect in Combination Therapy</title>
+          <p id="p0140">Pyrazinamide could still kill intracellular <italic toggle="yes">Mtb</italic> when in combination regimens while demonstrating no efficacy as monotherapy due to higher order non-linear interactions between pyrazinamide and rifampin seen in adults (<xref rid="bb0035" ref-type="bibr">Chigutsa et al., 2015</xref>, <xref rid="bb0180" ref-type="bibr">Pasipanodya and Gumbo, 2013</xref>). Therefore, we examined the effect of the three-drug regimen of isoniazid, rifampin, and pyrazinamide (triple-regimen) and compared it to the two-drug regimen of isoniazid and rifampin (dual) in the HFS model. Pyrazinamide was administered at double the standard dose. The concentration-time profiles achieved are shown in <xref rid="f0020" ref-type="fig">Fig. 4</xref>a–c, which demonstrate good pharmacokinetic recapitulation of each drug. The figures also demonstrate the capability to produce different half-lifes of drugs in the same HFS, an aspect vital to studying the effects of combination therapy regimens. Importantly, we also simultaneously measured the intracellular concentration-time profile of each of the three antibiotics in the macrophages in the HFS. <xref rid="f0020" ref-type="fig">Fig. 4</xref>a–c demonstrates that in fact, at steady state, after 4 weeks of daily dosing, the intracellular concentration-time profiles of rifampin, isoniazid and the pyrazinamide were dramatically higher inside macrophages. For rifampin, the elimination rate constant (and hence half-life) was similar between the intracellular and extracellular pharmacokinetics (0.17 versus 0.19 h<sup>− 1</sup>), as was the case with isoniazid (0.19 versus 0.21 h<sup>− 1</sup>) [p = 0.99]. On the other hand, pyrazinamide elimination constant was 0.253 ± 0.112 versus 0.136 ± 0.005 h<sup>− 1</sup>and volume was 8.379 ± 3.310 × 10<sup>− 2</sup> versus 38.8 ± 0.40 × 10<sup>− 2</sup> L for intracellular versus extracellular (central compartments), respectively. <xref rid="f0020" ref-type="fig">Fig.4</xref>c shows the range of pyrazinamide concentrations on the natural logarithm scale, which reveals a difference in the slopes, indicative of differences in half-life of 3.20 versus 5.14 h. This suggests that an active process eliminates or metabolizes pyrazinamide from mammalian cells faster than it is washed out of the HFS; and that intracellular milieu creates a different pharmacokinetic system within the extracellular pharmacokinetic system. <xref rid="f0020" ref-type="fig">Fig.4</xref>d demonstrates the change in bacterial burden with time for the dual versus triple regimens. The <xref rid="f0020" ref-type="fig">Fig.4</xref>d shows that there was no difference in kill-rates between the triple versus dual regimens. Thus, pyrazinamide did not contribute to microbial kill of the intracellular <italic toggle="yes">Mtb</italic> by the combination regimen during the 28-day experiment, despite achieving higher intracellular peak concentrations and 0-24 h AUCs. The failure of therapy is therefore not due to achieving poor drug concentration, but suggests that some intracellular process may be limiting the effectiveness of pyrazinamide.<fig id="f0020" position="float" orientation="portrait"><label>Fig. 4</label><caption><p>Pharmacokinetic profiles and transcriptome of combination therapy. This experiment was performed twice. Concentration-time profile of (a) isoniazid and (b) rifampin. (c) Given the range of pyrazinamide concentrations from 15 to about 5000 mg/L, we used the natural log transformed concentrations for pyrazinamide in a linear regression. The pyrazinamide concentrations demonstrate 2 different slopes, hence half-life, for pyrazinamide. (d) The dual drug regimen (without pyrazinamide) and the triple drug regimen (with pyrazinamide) had the same kill rates and slopes in the HFS model of intracellular <italic toggle="yes">Mtb</italic>. Thus, pyrazinamide does not contribute to the microbial kill in this regimen, nor does it lead to faster microbial kill rates.(e) HFS contents were subjected to RNA-Seq and sequences re-aligned against the <italic toggle="yes">Mtb</italic> genome. The figure shows good overall coverage of the <italic toggle="yes">Mtb</italic> genome in the different HFS cultures. (f) The percentage of the reads that mapped to the human genome in contents from the dual control, dual-, and triple-drug regimen is shown; the mean was ~ 77%.</p></caption><alt-text id="al0020">Fig. 4</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="gr4.jpg"/></fig></p>
+        </sec>
+        <sec id="s0095">
+          <label>3.4</label>
+          <title>Lack of Pyrazinamide Transcriptomic Signature in Intracellular <italic toggle="yes">Mtb</italic></title>
+          <p id="p0145">In order to identify the RNA gene-signature specific to pyrazinamide exposure, we exposed extracellular <italic toggle="yes">Mtb</italic> to pyrazinamide for 4 days, extracted RNA and performed RNA-Seq. There were 106 DEGs based on a non-adjusted p-value: 61genes were up-regulated and 45 down-regulated. The full list of genes and their expression is shown in Supplementary Data Set 1. We compared this to the transcriptome of cultures extracted from HFS treated with either the dual or triple regimen. <xref rid="f0020" ref-type="fig">Fig.4</xref>e shows that we were able to re-align the <italic toggle="yes">Mtb</italic> reads &gt; 90%of the bacterium's genome in HFS contents from infected non-treated, dual, and triple drug regimens. <xref rid="f0020" ref-type="fig">Fig.4</xref>f shows the reads that mapped to percentage of the human genome. We then sought to identify the 106-gene pyrazinamide signature in the triple treatment regimen compared to non-treated HFS contents. No single DEG from the 106-transcript pyrazinamide exposure signature was identified in the triple therapy regimen, even with a non corrected p-value. We also compared the <italic toggle="yes">Mtb</italic> transcriptome of the dual therapy HFS contents to the triple therapy regimen to identify any DEGs between the dual versus triple drug regimens. The transciptomes were virtually identical, with no single DEG to differentiate the two regimens on p-value post-test correction. Thus, we found no transcript evidence of effective pyrazinamide exposure in intracellular <italic toggle="yes">Mtb</italic>.</p>
+          <p id="p0150">As regards to human genes, there were no DEGs identified between dual and triple regimens, with post-test correction. When no post-test correction was performed, which leads to a high false positive discovery rate, there were 103 down-regulated and 118 up-regulated DEGs. Pathway analysis of these DEGs using REACTOME mapped to olfactory transduction (15 genes), metabolic pathways (9 genes) and neuroactive ligands (4 genes). We found no human gene signature indicative of induction of pro-inflammatory pathways, nor a single DEG that mapped to these pathways, in the three-drug regimen. Thus, we found no transcript evidence of induction of pro-inflammatory pathways in human macrophage derived cell line, despite high intracellular pyrazinamide concentrations.</p>
+        </sec>
+        <sec id="s0100">
+          <label>3.5</label>
+          <title><italic toggle="yes">Mtb</italic> Neutralizes the Phagosome Acid pH in Human But Not Mouse Macrophages</title>
+          <p id="p0155">In order to kill <italic toggle="yes">Mtb</italic>, pyrazinamide is first activated by acidic conditions; the relationship between pyrazinamide effect and pH is described by the Henderson-Hasselbach equation, with better <italic toggle="yes">Mtb</italic> kill at low pH (<xref rid="bb0150" ref-type="bibr">McDermott and Tompsett, 1954</xref>, <xref rid="bb0260" ref-type="bibr">Zhang et al., 1999</xref>). We hypothesized that one reason for lack of pyrazinamide microbial kill could be that the pH in infected macrophage phagolysosomes is neutralized by <italic toggle="yes">Mtb</italic> overtime, as proposed by Zhang et al. for cultures in test tubes (<xref rid="bb0265" ref-type="bibr">Zhang et al., 2002</xref>). We exposed <italic toggle="yes">Mtb</italic> to Middlebrook broth at pH 5.8 buffered using acetic acid, as well as to the same broth at neutral pH with no buffer, and extracted RNA for RNA-Seq after 4 days. <xref rid="f0025" ref-type="fig">Fig.5</xref>a demonstrates up-regulation of <italic toggle="yes">Mtb</italic> genes which encode for urease enzymes that neutralize acidic pH. We sought for the expression pattern of the same urease genes in the <italic toggle="yes">Mtb</italic> infected PMA-activated THP-1 cells at the beginning of infection (i.e., at the end of bacterial-macrophage co-incubation), and at subsequent time points in the HFS model of intracellular infection. There was up-regulation of some of these same <italic toggle="yes">Mtb</italic> urease genes at the beginning of infection as was encountered in the extracellular <italic toggle="yes">Mtb</italic> exposed to acidic pH, suggesting that at transcript level, that the <italic toggle="yes">Mtb</italic> pH neutralization machinery was up-regulated (<xref rid="f0025" ref-type="fig">Fig. 5</xref>b). The genes continued being up-regulated up to 7 days, as shown in <xref rid="f0025" ref-type="fig">Fig.5</xref>b. Since this was host-pathogen RNA-seq, we were able to simultaneously examine the human macrophage gene expression. <xref rid="f0025" ref-type="fig">Fig.5</xref>c shows the expression of human genes that encode cellular pH sensing proteins in <italic toggle="yes">Mtb</italic> infected macrophages compared to non-infected macrophages. <xref rid="f0025" ref-type="fig">Fig.5</xref>c shows the differential expression of genes encoding intracellular pH proteins that are known to be down-regulated under acidic conditions: <italic toggle="yes">TRPV1</italic>, <italic toggle="yes">PKD2L1</italic>, <italic toggle="yes">PKD2L2</italic>, <italic toggle="yes">CA2</italic>, <italic toggle="yes">CA3</italic>,and <italic toggle="yes">ATPV1B1</italic>(<xref rid="bb0120" ref-type="bibr">Ishimaru and Matsunami, 2009</xref>, <xref rid="bb0130" ref-type="bibr">Karet, 2002</xref>, <xref rid="bb0160" ref-type="bibr">Nakanishi et al., 2010</xref>, <xref rid="bb0230" ref-type="bibr">Sherry et al., 1994</xref>). These genes were down-regulated at the beginning of infection, consistent with low pH conditions, but the direction changed and there was reversal by day 7 (<xref rid="f0025" ref-type="fig">Fig. 5</xref>c). On the other hand, <italic toggle="yes">COL8A1</italic> is up-regulated under acidic conditions (<xref rid="bb0030" ref-type="bibr">Bumke et al., 2003</xref>), as was the case at the beginning of infection, but by day 7 was no longer significantly up-regulated (<xref rid="f0025" ref-type="fig">Fig. 5</xref>c).<fig id="f0025" position="float" orientation="portrait"><label>Fig. 5</label><caption><p>Intracellular pH of <italic toggle="yes">Mtb</italic>-infected macrophage. (a) <italic toggle="yes">Mtb</italic> urease genes were up-regulated under acidic condition. (b) Intracellular <italic toggle="yes">Mtb</italic> in HFS cultures shows up-regulation of the same <italic toggle="yes">Mtb</italic> urease genes after 6 h co-culture of the <italic toggle="yes">Mtb</italic> and THP-1 macrophages, i.e., at the end of macrophage infection and on day 14, demonstrating ongoing attempt to neutralize phagolysosome environment.(c) Macrophage genes encoding pH sensing proteins were down-regulated at the end of the 6 h infection, consistent with an acidic intracellular pH, which reversed on day 7 in the HFS. Similarly <italic toggle="yes">COL8A1</italic>, whose expression is in the opposite direction, suggests change in the intracellular pH from acidic pH to neutral. (d–e) Neutralization of intracellular pH in <italic toggle="yes">Mtb</italic>-infected THP-1 cells was confirmed using the pHrodo Green staining. Representative images at 72 h post-infection indicate that the intracellular pH of the non-infected THP-1 cells was still acidic whereas that of the <italic toggle="yes">Mtb</italic> infected THP-1 macrophages was alkaline. (f–g) In <italic toggle="yes">Mtb</italic> infected J774A.1 cells there was no change in the intracellular pH at 72 h post-infection, and even on day 7. (h) Fluorescence intensity versus the intracellular pH scale [*, p &lt; 0.05; **, p &lt; 0.01; ***, p &lt; 0.001].</p></caption><alt-text id="al0025">Fig. 5</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="gr5.jpg"/><attrib>Adopted from life Technologies product manual, cat#<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmc:entrez-protein" xlink:href="P35373">P35373</ext-link>.</attrib></fig></p>
+          <p id="p0160">In order to confirm the RNA expression changes at the level of phenotype, we infected THP-1 cells as well as the mouse JA774A.1 cell line with <italic toggle="yes">Mtb</italic> and directly measured intracellular pH changes using the pHrodo Green dye. At 24 h post-infection, there were no differences in the intracellular pH of infected and non-infected THP-1 cells. However, <xref rid="f0025" ref-type="fig">Fig. 5</xref>d–g show that starting 72 h post infection there was neutralization of acidic pH in the human derived macrophage cell-line, but not in the murine derived cell-line (<xref rid="f0025" ref-type="fig">Fig. 5</xref>f–g). The mean green fluorescent intensity in the non-infected THP-1 cells was 24,311 ± 1666 compared to the 9976 ± 587 in the <italic toggle="yes">Mtb</italic> infected THP-1 cells at 72 h (p &lt; 0.01, r<sup>2</sup> = 0.97). Reduction in green fluorescence intensity occurs with increase in pH. On the other hand, the mean fluorescence intensity in the non-infected J774A.1 cells was 24,425 ± 1122 versus 21,070 ± 28.50 in <italic toggle="yes">Mtb</italic>-infected J774A.1 cells (p = 0.10, r<sup>2</sup> = 0.82). Using the virulent <italic toggle="yes">Mtb</italic> H37Rv, with observations up to 72 h revealed similar results (shown in <xref rid="ec0005" ref-type="supplementary-material">Supplementary Fig. 1</xref>). The fluorescence intensity at 72 h was 25,925 ± 3708 in J774A.1 cells alone compared to 21,069 ± 40 with Mtb-infection (p &gt; 0.05), while in THP-1 cells alone it was 21,917 ± 1492 with <italic toggle="yes">Mtb</italic> infection (p &lt; 0.005). Taken together, these data mean that there is neutralization of the acid pH in infected human macrophages with time, and since pyrazinamide is activated by acid pH, this could be one reason for lack of efficacy.</p>
+        </sec>
+        <sec id="s0105">
+          <label>3.6</label>
+          <title>Translation of HFS Results to Children in the Clinic</title>
+          <p id="p0170">We wanted to confirm if results from our HFS model translate to actual children with extrapulmonary TB treated with pyrazinamide-containing regimens, based on prospective study from India (<xref rid="bb0195" ref-type="bibr">Ramachandran et al., 2013</xref>, <xref rid="bb0200" ref-type="bibr">Ramachandran et al., 2015</xref>). The clinical and demographic characteristics of the 81 children with extrapulmonary TB are shown in <xref rid="t0005" ref-type="table">Table 1</xref>. When children of all ages were examined using the AI method of Random Forests, the most important predictors of good clinical outcome (out of the 16 the model clinical, demographic, and drug concentration factors) were as shown in <xref rid="f0030" ref-type="fig">Fig.6</xref>a. The highest r<sup>2</sup> for the covariance of concentrations such as AUC and peak concentration within each drug was 0.49, which was encountered with rifampin peak and AUC. Pyrazinamide, isoniazid, and rifampin peak and AUC concentrations, in that order, were the most highly ranked predictors of outcome (<xref rid="f0030" ref-type="fig">Fig. 6</xref>a). The findings are virtually similar to our findings in adults with pulmonary TB (<xref rid="bb0190" ref-type="bibr">Pasipanodya et al., 2013</xref>), which means the machine learning algorithms performed adequately.<table-wrap position="float" id="t0005" orientation="portrait"><label>Table 1</label><caption><p>Comparison of children's clinical and demographic characteristics by outcomes.</p></caption><alt-text id="al0035">Table 1</alt-text><table frame="hsides" rules="groups"><thead><tr><th colspan="1" rowspan="1"/><th colspan="1" rowspan="1"/><th align="left" colspan="1" rowspan="1">Total N = 81</th><th align="left" colspan="1" rowspan="1">Favorable n = 66</th><th align="left" colspan="1" rowspan="1">Unfavorable n = 15</th><th align="left" colspan="1" rowspan="1">p-Value</th></tr></thead><tbody><tr><td rowspan="2" align="left" colspan="1">Gender</td><td align="left" colspan="1" rowspan="1">Female n (%)</td><td align="char" colspan="1" rowspan="1">39 (48)</td><td align="char" colspan="1" rowspan="1">31 (47)</td><td align="left" colspan="1" rowspan="1">8 (53)</td><td align="char" colspan="1" rowspan="1">0.656</td></tr><tr><td align="left" colspan="1" rowspan="1">Male n (%)</td><td align="char" colspan="1" rowspan="1">42 (52)</td><td align="char" colspan="1" rowspan="1">35 (53)</td><td align="left" colspan="1" rowspan="1">7 (47)</td><td colspan="1" rowspan="1"/></tr><tr><td rowspan="2" align="left" colspan="1">HIV test results</td><td align="left" colspan="1" rowspan="1">Negative n (%)</td><td align="char" colspan="1" rowspan="1">55 (68)</td><td align="char" colspan="1" rowspan="1">45 (68)</td><td align="left" colspan="1" rowspan="1">10 (67)</td><td align="char" colspan="1" rowspan="1">0.910</td></tr><tr><td align="left" colspan="1" rowspan="1">Positive n (%)</td><td align="char" colspan="1" rowspan="1">26 (32)</td><td align="char" colspan="1" rowspan="1">21 (32)</td><td align="left" colspan="1" rowspan="1">5 (33)</td><td colspan="1" rowspan="1"/></tr><tr><td rowspan="2" align="left" colspan="1">Disease site</td><td align="left" colspan="1" rowspan="1">Extra-pulmonary</td><td align="char" colspan="1" rowspan="1">79 (98)</td><td align="char" colspan="1" rowspan="1">64 (97)</td><td align="left" colspan="1" rowspan="1">15 (100)</td><td align="char" colspan="1" rowspan="1">0.792</td></tr><tr><td align="left" colspan="1" rowspan="1">Pulmonary and extra-pulmonary</td><td align="char" colspan="1" rowspan="1">2 (2)</td><td align="char" colspan="1" rowspan="1">2 (3)</td><td align="left" colspan="1" rowspan="1">0</td><td colspan="1" rowspan="1"/></tr><tr><td rowspan="2" align="left" colspan="1">Treatment category</td><td align="left" colspan="1" rowspan="1">New</td><td align="char" colspan="1" rowspan="1">54 (67)</td><td align="char" colspan="1" rowspan="1">44 (67)</td><td align="left" colspan="1" rowspan="1">10 (67)</td><td align="char" colspan="1" rowspan="1">1.00</td></tr><tr><td align="left" colspan="1" rowspan="1">Previously treated</td><td align="char" colspan="1" rowspan="1">27 (33)</td><td align="char" colspan="1" rowspan="1">22 (33)</td><td align="left" colspan="1" rowspan="1">5 (33)</td><td colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1">Age</td><td align="left" colspan="1" rowspan="1">Median (range)</td><td align="char" colspan="1" rowspan="1">8 (1.5, 14)</td><td align="char" colspan="1" rowspan="1">8 (1.5, 14)</td><td align="left" colspan="1" rowspan="1">7 (2, 14)</td><td align="char" colspan="1" rowspan="1">0.946</td></tr></tbody></table></table-wrap><fig id="f0030" position="float" orientation="portrait"><label>Fig. 6</label><caption><p>Pharmacokinetic analysis and clinical outcome as predictors of treatment success. (a) The best predictors of treatment outcome in all 81 children with tuberculosis using the clinical data and machine learning algorithm were the peak and AUC of pyrazinamide, followed by isoniazid, followed by rifampin. Also identified were various measures of nutritional status, based on Z-scores. (b) When only children &lt; 6 years old were analyzed using similar methods, the role of pyrazinamide as a predictor vanished, and only isoniazid concentrations and Z-scores were still significant.</p></caption><alt-text id="al0030">Fig. 6</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="gr6.jpg"/></fig></p>
+          <p id="p0175">However, when the same analyses were confined to children &lt; 6 years old who had extrapulmonary TB (i.e., babies and toddlers), the findings were as shown in <xref rid="f0030" ref-type="fig">Fig.6</xref>b. Only isoniazid peak concentrations were the main drivers of good clinical outcome, followed by weight-for-height Z score (a measure of malnutrition) which was the terminal node. The r<sup>2</sup> on cross-validation was 64% compared to 89% on the learn sample, which is reassuring. Based on frequentist statistical inference, 8/14 (57%) children of these children who had an isoniazid peak concentration less than 4.8 mg/L had good outcomes, compared to 14/14 (100%) with concentrations &gt; 4.8 mg/L, an odds ratio of 37.92 (95% confidence interval: 1.89–761.1; p = 0.002). Specifically, pyrazinamide concentrations were no longer drivers of good clinical outcome in toddlers and infants with extrapulmonary TB, consistent with them playing a minimal to no role in predicting outcome.</p>
+        </sec>
+      </sec>
+      <sec id="s0110">
+        <label>4</label>
+        <title>Discussion</title>
+        <p id="p0180">The HFS for extracellular <italic toggle="yes">Mtb</italic> in lung cavities of adult patients, which has been qualified by the European Medicine Agency and received editorial endorsement from the Food and Drug Administration (FDA), has a forecasting accuracy of within 94% of the quantitative clinical values such as optimal exposures (<xref rid="bb0105" ref-type="bibr">Gumbo et al., 2015a</xref>, <xref rid="bb0110" ref-type="bibr">Gumbo et al., 2015b</xref>, <xref rid="bb0185" ref-type="bibr">Pasipanodya et al., 2015</xref>). Since the <italic toggle="yes">Mtb</italic> in babies and toddlers is intracellular as a result of poor immune containment, our model mimics the same physiological condition of <italic toggle="yes">Mtb</italic> and the relative lack of an immune system in children. This co-perfused model permits repetitive sampling to enumerate intracellular bacteria, macrophage viability, and serial liver function tests, during exposure to dynamic concentration-time profiles of the drugs specific to young children. This allows for a direct pharmacometric-based translation of efficacy and toxicity from the laboratory to children (<xref rid="bb0175" ref-type="bibr">Pasipanodya and Gumbo, 2011</xref>). Since most of the drugs approved by FDA were tested for DILI in adults, and the hepatotoxicity in children is identified essentially as post-licensing surveillance, our model allows pre-clinical dose testing for hepatotoxicity for the anti-TB compounds. Indeed, toxicity can be examined not just for antibiotics, but for any pharmaceutical compound intended for use in children.</p>
+        <p id="p0185">We found a surprising lack of contribution to efficacy from pyrazinamide in the treatment of disseminated TB. Specifically, we demonstrated the lack of pyrazinamide activity inside the human macrophage cell line. The HFS allowed us to delineate two pyrazinamide pharmacokinetic systems, interrelated, systemic versus intracellular, or “wheels within wheels.” Thus, failure was not due to lack of good pyrazinamide penetration into human macrophages, but likely due to a non-acidic pH inside the <italic toggle="yes">Mtb-</italic>infected macrophages several days post-infection. We found no enhancement of the pyrazinamide effect after adding IFN-γ; nor induction of genes mapping to pro-inflammatory immune pathways on pyrazinamide exposure (<xref rid="bb0145" ref-type="bibr">Manca et al., 2013</xref>). Regardless, the reason why babies and toddlers get disseminated TB is lack of immune containment (i.e., they are effectively immunosuppressed), and thus we would expect little to no help for pyrazinamide from the children's immune systems. This means that pyrazinamide has to exert a direct antibiotic effect in order to be effective. When all 81 children in our study were examined, in a population dominated by older children (&gt; 65%) who often have a pulmonary component of TB, pyrazinamide peak and AUC were the most important predictors of outcome, as was the case in adults in the past (<xref rid="bb0035" ref-type="bibr">Chigutsa et al., 2015</xref>, <xref rid="bb0190" ref-type="bibr">Pasipanodya et al., 2013</xref>). Which one of the two, AUC or peak, is more important would require a separate experimental design. In the past we have found that in South African children, there were low correlations between the peak concentration and AUC for rifampicin and isoniazid, similar what we found here; the exception being pyrazinamide correlation between AUC and peak which was moderate (<xref rid="bb0115" ref-type="bibr">Hiruy et al., 2015</xref>). The important finding, however, is that when children &lt; 6 years old were examined, who are most likely to present with disseminated TB, pyrazinamide was no longer a driver, and none of the pyrazinamide concentrations had any variable importance score. This, lack of pyrazinamide effect based on an agnostic AI algorithm, is consistent with HFS findings for disseminated pediatric tuberculosis. These findings demonstrate the importance of considering the differences in pathological lesions and microbial physiology, between adults and babies and young children. A regimen that specifically caters for these differences could have a better possibility at shortening therapy duration in disseminated tuberculosis.</p>
+        <p id="p0190">Finally, we advance some molecular techniques such as host-pathogen RNA-seq, especially given the high GC content of <italic toggle="yes">Mtb</italic>, and the relative amounts of mammalian RNA to bacterial RNA: proverbial needles in a haystack. Host-pathogen RNA-seq has hitherto been discussed mainly as a theoretical possibility. We were able to map RNA back to ~ 95% of the <italic toggle="yes">Mtb</italic> genome. This technique, together with the repetitive sampling provided by the HFS, allows use of this “digital” read count information as a pharmacodynamic measure for intracellular bacterial infections, in the context of dynamic drug concentrations. The changes in drug concentration with time and the simultaneous changes in RNA digital reads can then be utilized to build system equations that would allow us to scale from the level of RNA dynamics to bacterial populations to the whole child using the same type of inhomogeneous differential equations we introduced 12 years ago as well as those recently introduced by others (<xref rid="bb0070" ref-type="bibr">Gumbo et al., 2004</xref>, <xref rid="bb0135" ref-type="bibr">Magombedze and Mulder, 2012</xref>, <xref rid="bb0140" ref-type="bibr">Magombedze and Mulder, 2013</xref>).</p>
+        <p id="p0195">The following are the supplementary data related to this article.<supplementary-material content-type="local-data" id="ec0005" position="float" orientation="portrait"><caption><title>Supplementary Fig. 1</title><p>Intracellular pH changes upon infection with <italic toggle="yes">M. tuberculosis</italic> H37Rv. Studies were done in replicates of three, and experiments were performed twice. A shows uninfected THP-1 human macrophage cell 72 h post-infection and shows that the intracellular pH was still acidic, while B shows <italic toggle="yes">Mtb</italic> H37Rv infected macrophages changing towards basic pH at the same time point. C shows uninfected mouse-derived JA774A.1 macrophages at 72 h of incubation while D shows the same cell line that had been <italic toggle="yes">Mtb</italic> H37Rv infected at the same time point.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mmc1.pdf" position="float" orientation="portrait"><alt-text>Supplementary Fig. 1</alt-text></media></supplementary-material><supplementary-material content-type="local-data" id="ec0010" position="float" orientation="portrait"><caption><p>Supplementary material</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mmc2.xlsx" position="float" orientation="portrait"><alt-text>Image 1</alt-text></media></supplementary-material></p>
+      </sec>
+      <sec id="s0115">
+        <title>Competing Interests</title>
+        <p id="p0205">T.G founded Jacaranda Biomed and serves as a consultant for LuminaCare Solutions. H.E.C and S.Sh are employees of KIYATEC.</p>
+      </sec>
+    </body>
+    <back>
+      <ref-list id="bi0005">
+        <title>References</title>
+        <ref id="bb0005">
+          <element-citation publication-type="journal" id="rf0005">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ahmad</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fraig</surname>
+                <given-names>M.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bisson</surname>
+                <given-names>G.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nuermberger</surname>
+                <given-names>E.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Grosset</surname>
+                <given-names>J.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Karakousis</surname>
+                <given-names>P.C.</given-names>
+              </name>
+            </person-group>
+            <article-title>Dose-dependent activity of pyrazinamide in animal models of intracellular and extracellular tuberculosis infections</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>55</volume>
+            <year>2011</year>
+            <fpage>1527</fpage>
+            <lpage>1532</lpage>
+            <pub-id pub-id-type="pmid">21282447</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.01524-10</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3067197</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0010">
+          <element-citation publication-type="journal" id="rf0010">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ballet</surname>
+                <given-names>F.</given-names>
+              </name>
+            </person-group>
+            <article-title>Preventing drug-induced liver injury: how useful are animal models?</article-title>
+            <source>Dig. Dis.</source>
+            <volume>33</volume>
+            <year>2015</year>
+            <fpage>477</fpage>
+            <lpage>485</lpage>
+            <pub-id pub-id-type="pmid">26159262</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1159/000374093</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0015">
+          <element-citation publication-type="journal" id="rf0015">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Becerra</surname>
+                <given-names>M.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Swaminathan</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <article-title>Commentary: a targets framework: dismantling the invisibility trap for children with drug-resistant tuberculosis</article-title>
+            <source>J. Public Health Policy</source>
+            <volume>35</volume>
+            <year>2014</year>
+            <fpage>425</fpage>
+            <lpage>454</lpage>
+            <pub-id pub-id-type="pmid">25209537</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1057/jphp.2014.35</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0020">
+          <element-citation publication-type="journal" id="rf0020">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Breiman</surname>
+                <given-names>L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Bagging predictors</article-title>
+            <source>Mach. Learn.</source>
+            <volume>24</volume>
+            <year>1996</year>
+            <fpage>123</fpage>
+            <lpage>140</lpage>
+          </element-citation>
+        </ref>
+        <ref id="bb0025">
+          <element-citation publication-type="journal" id="rf0025">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Breiman</surname>
+                <given-names>L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Random forests</article-title>
+            <source>Mach. Learn.</source>
+            <volume>45</volume>
+            <year>2001</year>
+            <fpage>5</fpage>
+            <lpage>32</lpage>
+          </element-citation>
+        </ref>
+        <ref id="bb0030">
+          <element-citation publication-type="journal" id="rf0030">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bumke</surname>
+                <given-names>M.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Neri</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Elia</surname>
+                <given-names>G.</given-names>
+              </name>
+            </person-group>
+            <article-title>Modulation of gene expression by extracellular pH variations in human fibroblasts: a transcriptomic and proteomic study</article-title>
+            <source>Proteomics</source>
+            <volume>3</volume>
+            <year>2003</year>
+            <fpage>675</fpage>
+            <lpage>688</lpage>
+            <pub-id pub-id-type="pmid">12748947</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/pmic.200300395</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0035">
+          <element-citation publication-type="journal" id="rf0035">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Chigutsa</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Visser</surname>
+                <given-names>M.E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van Helden</surname>
+                <given-names>P.D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Smith</surname>
+                <given-names>P.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sirgel</surname>
+                <given-names>F.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>McIlleron</surname>
+                <given-names>H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Impact of nonlinear interactions of pharmacokinetics and MICs on sputum bacillary kill rates as a marker of sterilizing effect in tuberculosis</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>59</volume>
+            <year>2015</year>
+            <fpage>38</fpage>
+            <lpage>45</lpage>
+            <pub-id pub-id-type="pmid">25313213</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.03931-14</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4291375</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0040">
+          <element-citation publication-type="journal" id="rf0040">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Crowle</surname>
+                <given-names>A.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dahl</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ross</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>May</surname>
+                <given-names>M.H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Evidence that vesicles containing living, virulent <italic toggle="yes">Mycobacterium tuberculosis</italic> or <italic toggle="yes">Mycobacterium avium</italic> in cultured human macrophages are not acidic</article-title>
+            <source>Infect. Immun.</source>
+            <volume>59</volume>
+            <year>1991</year>
+            <fpage>1823</fpage>
+            <lpage>1831</lpage>
+            <pub-id pub-id-type="pmid">1902198</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/iai.59.5.1823-1831.1991</pub-id>
+            <pub-id pub-id-type="pmcid">PMC257922</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0045">
+          <element-citation publication-type="journal" id="rf0045">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Deshpande</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Srivastava</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Ethambutol optimal clinical dose and susceptibility breakpoint identification by use of a novel pharmacokinetic–pharmacodynamic model of disseminated intracellular <italic toggle="yes">Mycobacterium avium</italic></article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>54</volume>
+            <year>2010</year>
+            <fpage>1728</fpage>
+            <lpage>1733</lpage>
+            <pub-id pub-id-type="pmid">20231389</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.01355-09</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2863641</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0050">
+          <element-citation publication-type="journal" id="rf0050">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Deshpande</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Srivastava</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hall</surname>
+                <given-names>G.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Moxifloxacin pharmacokinetics/pharmacodynamics and optimal dose and susceptibility breakpoint identification for treatment of disseminated <italic toggle="yes">Mycobacterium avium</italic> infection</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>54</volume>
+            <year>2010</year>
+            <fpage>2534</fpage>
+            <lpage>2539</lpage>
+            <pub-id pub-id-type="pmid">20385862</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.01761-09</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2876403</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0055">
+          <element-citation publication-type="journal" id="rf0055">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Devrim</surname>
+                <given-names>I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Olukman</surname>
+                <given-names>O.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Can</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dizdarer</surname>
+                <given-names>C.</given-names>
+              </name>
+            </person-group>
+            <article-title>Risk factors for isoniazid hepatotoxicity in children with latent TB and TB: difference from adults</article-title>
+            <source>Chest</source>
+            <volume>137</volume>
+            <year>2010</year>
+            <fpage>737</fpage>
+            <lpage>738</lpage>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1378/chest.09-2120</pub-id>
+            <pub-id pub-id-type="pmid">20202962</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0060">
+          <element-citation publication-type="journal" id="rf0060">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Dheda</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gandhi</surname>
+                <given-names>N.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Murray</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Theron</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Udwadia</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Migliori</surname>
+                <given-names>G.B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Warren</surname>
+                <given-names>R.</given-names>
+              </name>
+            </person-group>
+            <article-title>Global control of tuberculosis: from extensively drug-resistant to untreatable tuberculosis</article-title>
+            <source>Lancet Respir. Med.</source>
+            <volume>2</volume>
+            <year>2014</year>
+            <fpage>321</fpage>
+            <lpage>338</lpage>
+            <pub-id pub-id-type="pmid">24717628</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S2213-2600(14)70031-1</pub-id>
+            <pub-id pub-id-type="pmcid">PMC5526327</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0065">
+          <element-citation publication-type="journal" id="rf0065">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Donald</surname>
+                <given-names>P.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Maritz</surname>
+                <given-names>J.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Diacon</surname>
+                <given-names>A.H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Pyrazinamide pharmacokinetics and efficacy in adults and children</article-title>
+            <source>Tuberculosis</source>
+            <volume>
+              <italic toggle="yes">92</italic>
+            </volume>
+            <year>2012</year>
+            <fpage>1</fpage>
+            <lpage>8</lpage>
+            <comment>(Edinb.)</comment>
+            <pub-id pub-id-type="pmid">21795116</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.tube.2011.05.006</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0070">
+          <element-citation publication-type="journal" id="rf0070">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Louie</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Deziel</surname>
+                <given-names>M.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Parsons</surname>
+                <given-names>L.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Salfinger</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Drusano</surname>
+                <given-names>G.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Selection of a moxifloxacin dose that suppresses drug resistance in <italic toggle="yes">Mycobacterium tuberculosis</italic>, by use of an <italic toggle="yes">in vitro</italic> pharmacodynamic infection model and mathematical modeling</article-title>
+            <source>J. Infect. Dis.</source>
+            <volume>190</volume>
+            <year>2004</year>
+            <fpage>1642</fpage>
+            <lpage>1651</lpage>
+            <pub-id pub-id-type="pmid">15478070</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1086/424849</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0075">
+          <element-citation publication-type="journal" id="rf0075">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Louie</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Deziel</surname>
+                <given-names>M.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liu</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Parsons</surname>
+                <given-names>L.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Salfinger</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Drusano</surname>
+                <given-names>G.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Concentration-dependent <italic toggle="yes">Mycobacterium tuberculosis</italic> killing and prevention of resistance by rifampin</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>51</volume>
+            <year>2007</year>
+            <fpage>3781</fpage>
+            <lpage>3788</lpage>
+            <pub-id pub-id-type="pmid">17724157</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.01533-06</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2151424</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0080">
+          <element-citation publication-type="journal" id="rf0080">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Louie</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liu</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Brown</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ambrose</surname>
+                <given-names>P.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bhavnani</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Drusano</surname>
+                <given-names>G.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Isoniazid bactericidal activity and resistance emergence: integrating pharmacodynamics and pharmacogenomics to predict efficacy in different ethnic populations</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>51</volume>
+            <year>2007</year>
+            <fpage>2329</fpage>
+            <lpage>2336</lpage>
+            <pub-id pub-id-type="pmid">17438043</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.00185-07</pub-id>
+            <pub-id pub-id-type="pmcid">PMC1913269</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0085">
+          <element-citation publication-type="journal" id="rf0085">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dona</surname>
+                <given-names>C.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+            </person-group>
+            <article-title>Pharmacokinetics-pharmacodynamics of pyrazinamide in a novel in vitro model of tuberculosis for sterilizing effect: a paradigm for faster assessment of new antituberculosis drugs</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>53</volume>
+            <year>2009</year>
+            <fpage>3197</fpage>
+            <lpage>3204</lpage>
+            <pub-id pub-id-type="pmid">19451303</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.01681-08</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2715614</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0090">
+          <element-citation publication-type="journal" id="rf0090">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Siyambalapitiyage Dona</surname>
+                <given-names>C.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+            </person-group>
+            <article-title>Pharmacokinetics–pharmacodynamics of pyrazinamide in a novel <italic toggle="yes">in vitro</italic> model of tuberculosis for sterilizing effect: a paradigm for faster assessment of new antituberculosis drugs</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>53</volume>
+            <year>2009</year>
+            <fpage>3197</fpage>
+            <lpage>3204</lpage>
+            <pub-id pub-id-type="pmid">19451303</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.01681-08</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2715614</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0095">
+          <element-citation publication-type="journal" id="rf0095">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chigutsa</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Visser</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van Helden</surname>
+                <given-names>P.D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sirgel</surname>
+                <given-names>F.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>McIlleron</surname>
+                <given-names>H.</given-names>
+              </name>
+            </person-group>
+            <article-title>The pyrazinamide susceptibility breakpoint above which combination therapy fails</article-title>
+            <source>J. Antimicrob. Chemother.</source>
+            <volume>69</volume>
+            <year>2014</year>
+            <fpage>2420</fpage>
+            <lpage>2425</lpage>
+            <pub-id pub-id-type="pmid">24821594</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/jac/dku136</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4130380</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0100">
+          <element-citation publication-type="journal" id="rf0100">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wash</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Burger</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>McIlleron</surname>
+                <given-names>H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Redefining multidrug-resistant tuberculosis based on clinical response to combination therapy</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>58</volume>
+            <year>2014</year>
+            <fpage>6111</fpage>
+            <lpage>6115</lpage>
+            <pub-id pub-id-type="pmid">25092691</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.03549-14</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4187940</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0105">
+          <element-citation publication-type="journal" id="rf0105">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nuermberger</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Romero</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hanna</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <article-title>Correlations between the hollow fiber model of tuberculosis and therapeutic events in tuberculosis patients: learn and confirm</article-title>
+            <source>Clin. Infect. Dis.</source>
+            <volume>61</volume>
+            <year>2015</year>
+            <fpage>S18</fpage>
+            <lpage>S24</lpage>
+            <pub-id pub-id-type="pmid">26224768</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/cid/civ426</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0110">
+          <element-citation publication-type="journal" id="rf0110">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Romero</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hanna</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nuermberger</surname>
+                <given-names>E.</given-names>
+              </name>
+            </person-group>
+            <article-title>Forecasting accuracy of the hollow fiber model of tuberculosis for clinical therapeutic outcomes</article-title>
+            <source>Clin. Infect. Dis.</source>
+            <volume>61</volume>
+            <year>2015</year>
+            <fpage>S25</fpage>
+            <lpage>S31</lpage>
+            <pub-id pub-id-type="pmid">26224769</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/cid/civ427</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0115">
+          <element-citation publication-type="journal" id="rf0115">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Hiruy</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rogers</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mbowane</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Adamson</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ngotho</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Karim</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bishai</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jeena</surname>
+                <given-names>P.</given-names>
+              </name>
+            </person-group>
+            <article-title>Subtherapeutic concentrations of first-line anti-TB drugs in South African children treated according to current guidelines: the PHATISA study</article-title>
+            <source>J. Antimicrob. Chemother.</source>
+            <volume>70</volume>
+            <year>2015</year>
+            <fpage>1115</fpage>
+            <lpage>1123</lpage>
+            <pub-id pub-id-type="pmid">25505005</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/jac/dku478</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4356201</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0120">
+          <element-citation publication-type="journal" id="rf0120">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ishimaru</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Matsunami</surname>
+                <given-names>H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Transient receptor potential (TRP) channels and taste sensation</article-title>
+            <source>J. Dent. Res.</source>
+            <volume>88</volume>
+            <year>2009</year>
+            <fpage>212</fpage>
+            <lpage>218</lpage>
+            <pub-id pub-id-type="pmid">19329452</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1177/0022034508330212</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2876190</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0125">
+          <element-citation publication-type="journal" id="rf0125">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Jenkins</surname>
+                <given-names>H.E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tolman</surname>
+                <given-names>A.W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yuen</surname>
+                <given-names>C.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Parr</surname>
+                <given-names>J.B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Keshavjee</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Perez-Velez</surname>
+                <given-names>C.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pagano</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Becerra</surname>
+                <given-names>M.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cohen</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Incidence of multidrug-resistant tuberculosis disease in children: systematic review and global estimates</article-title>
+            <source>Lancet</source>
+            <volume>383</volume>
+            <year>2014</year>
+            <fpage>1572</fpage>
+            <lpage>1579</lpage>
+            <pub-id pub-id-type="pmid">24671080</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S0140-6736(14)60195-1</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4094366</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0130">
+          <element-citation publication-type="journal" id="rf0130">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Karet</surname>
+                <given-names>F.E.</given-names>
+              </name>
+            </person-group>
+            <article-title>Inherited distal renal tubular acidosis</article-title>
+            <source>J. Am. Soc. Nephrol.</source>
+            <volume>13</volume>
+            <year>2002</year>
+            <fpage>2178</fpage>
+            <lpage>2184</lpage>
+            <pub-id pub-id-type="pmid">12138152</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/01.asn.0000023433.08833.88</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0135">
+          <element-citation publication-type="journal" id="rf0135">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Magombedze</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mulder</surname>
+                <given-names>N.</given-names>
+              </name>
+            </person-group>
+            <article-title>A mathematical representation of the development of <italic toggle="yes">Mycobacterium tuberculosis</italic> active, latent and dormant stages</article-title>
+            <source>J. Theor. Biol.</source>
+            <volume>292</volume>
+            <year>2012</year>
+            <fpage>44</fpage>
+            <lpage>59</lpage>
+            <pub-id pub-id-type="pmid">21968442</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jtbi.2011.09.025</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0140">
+          <element-citation publication-type="journal" id="rf0140">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Magombedze</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mulder</surname>
+                <given-names>N.</given-names>
+              </name>
+            </person-group>
+            <article-title>Understanding TB latency using computational and dynamic modelling procedures</article-title>
+            <source>Infect. Genet. Evol.</source>
+            <volume>13</volume>
+            <year>2013</year>
+            <fpage>267</fpage>
+            <lpage>283</lpage>
+            <pub-id pub-id-type="pmid">23146828</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.meegid.2012.09.017</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0145">
+          <element-citation publication-type="journal" id="rf0145">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Manca</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Koo</surname>
+                <given-names>M.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Peixoto</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fallows</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kaplan</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Subbian</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <article-title>Host targeted activity of pyrazinamide in <italic toggle="yes">Mycobacterium tuberculosis</italic> infection</article-title>
+            <source>PLoS ONE</source>
+            <volume>8</volume>
+            <year>2013</year>
+            <object-id pub-id-type="publisher-id">e74082</object-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0074082</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3755974</pub-id>
+            <pub-id pub-id-type="pmid">24015316</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0150">
+          <element-citation publication-type="journal" id="rf0150">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>McDermott</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tompsett</surname>
+                <given-names>R.</given-names>
+              </name>
+            </person-group>
+            <article-title>Activation of pyrazinamide and nicotinamide in acidic environments in vitro</article-title>
+            <source>Am. Rev. Tuberc.</source>
+            <volume>70</volume>
+            <year>1954</year>
+            <fpage>748</fpage>
+            <lpage>754</lpage>
+            <pub-id pub-id-type="pmid">13197751</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1164/art.1954.70.4.748</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0155">
+          <element-citation publication-type="journal" id="rf0155">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Momper</surname>
+                <given-names>J.D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mulugeta</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Burckart</surname>
+                <given-names>G.J.</given-names>
+              </name>
+            </person-group>
+            <article-title>Failed pediatric drug development trials</article-title>
+            <source>Clin. Pharmacol. Ther.</source>
+            <volume>98</volume>
+            <year>2015</year>
+            <fpage>245</fpage>
+            <lpage>251</lpage>
+            <pub-id pub-id-type="pmid">25963725</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/cpt.142</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0160">
+          <element-citation publication-type="journal" id="rf0160">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Nakanishi</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hata</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nagayama</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sakurai</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nishisho</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wakabayashi</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hiraga</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ebisu</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yoneda</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Acid activation of Trpv1 leads to an up-regulation of calcitonin gene-related peptide expression in dorsal root ganglion neurons via the CaMK-CREB cascade: a potential mechanism of inflammatory pain</article-title>
+            <source>Mol. Biol. Cell</source>
+            <volume>21</volume>
+            <year>2010</year>
+            <fpage>2568</fpage>
+            <lpage>2577</lpage>
+            <pub-id pub-id-type="pmid">20534813</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1091/mbc.E10-01-0049</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2912344</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0165">
+          <element-citation publication-type="journal" id="rf0165">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Newton</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Brent</surname>
+                <given-names>A.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Anderson</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Whittaker</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kampmann</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <article-title>Paediatric tuberculosis</article-title>
+            <source>Lancet Infect. Dis.</source>
+            <volume>8</volume>
+            <year>2008</year>
+            <fpage>498</fpage>
+            <lpage>510</lpage>
+            <pub-id pub-id-type="pmid">18652996</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/S1473-3099(08)70182-8</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2804291</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0170">
+          <element-citation publication-type="journal" id="rf0170">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Olson</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Betton</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Robinson</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Thomas</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Monro</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kolaja</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lilly</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sanders</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sipes</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bracken</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dorato</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Van</surname>
+                <given-names>D.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Smith</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Berger</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Heller</surname>
+                <given-names>A.</given-names>
+              </name>
+            </person-group>
+            <article-title>Concordance of the toxicity of pharmaceuticals in humans and in animals</article-title>
+            <source>Regul. Toxicol. Pharmacol.</source>
+            <volume>32</volume>
+            <year>2000</year>
+            <fpage>56</fpage>
+            <lpage>67</lpage>
+            <pub-id pub-id-type="pmid">11029269</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1006/rtph.2000.1399</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0175">
+          <element-citation publication-type="journal" id="rf0175">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>An oracle: antituberculosis pharmacokinetics–pharmacodynamics, clinical correlation, and clinical trial simulations to predict the future</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>55</volume>
+            <year>2011</year>
+            <fpage>24</fpage>
+            <lpage>34</lpage>
+            <pub-id pub-id-type="pmid">20937778</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.00749-10</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3019641</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0180">
+          <element-citation publication-type="journal" id="rf0180">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>A meta-analysis of self-administered vs directly observed therapy effect on microbiologic failure, relapse, and acquired drug resistance in tuberculosis patients</article-title>
+            <source>Clin. Infect. Dis.</source>
+            <volume>57</volume>
+            <year>2013</year>
+            <fpage>21</fpage>
+            <lpage>31</lpage>
+            <pub-id pub-id-type="pmid">23487389</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/cid/cit167</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3669525</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0190">
+          <element-citation publication-type="journal" id="rf0190">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>McIlleron</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Burger</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wash</surname>
+                <given-names>P.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Smith</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Serum drug concentrations predictive of pulmonary tuberculosis outcomes</article-title>
+            <source>J. Infect. Dis.</source>
+            <volume>208</volume>
+            <year>2013</year>
+            <fpage>1464</fpage>
+            <lpage>1473</lpage>
+            <pub-id pub-id-type="pmid">23901086</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/infdis/jit352</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3789573</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0185">
+          <element-citation publication-type="journal" id="rf0185">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nuermberger</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Romero</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hanna</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Systematic analysis of hollow fiber model of tuberculosis experiments</article-title>
+            <source>Clin. Infect. Dis.</source>
+            <volume>61</volume>
+            <year>2015</year>
+            <fpage>S10</fpage>
+            <lpage>S17</lpage>
+            <pub-id pub-id-type="pmid">26224767</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/cid/civ425</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0195">
+          <element-citation publication-type="journal" id="rf0195">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ramachandran</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hemanth Kumar</surname>
+                <given-names>A.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bhavani</surname>
+                <given-names>P.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Poorana</surname>
+                <given-names>G.N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sekar</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Vijayasekaran</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Banu Rekha</surname>
+                <given-names>V.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ramesh</surname>
+                <given-names>K.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ravichandran</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mathevan</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Swaminathan</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <article-title>Age, nutritional status and INH acetylator status affect pharmacokinetics of anti-tuberculosis drugs in children</article-title>
+            <source>Int. J. Tuberc. Lung Dis.</source>
+            <volume>17</volume>
+            <year>2013</year>
+            <fpage>800</fpage>
+            <lpage>806</lpage>
+            <pub-id pub-id-type="pmid">23676165</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.5588/ijtld.12.0628</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0200">
+          <element-citation publication-type="journal" id="rf0200">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ramachandran</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kumar</surname>
+                <given-names>A.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bhavani</surname>
+                <given-names>P.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kannan</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kumar</surname>
+                <given-names>S.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gangadevi</surname>
+                <given-names>N.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Banurekha</surname>
+                <given-names>V.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sekar</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ravichandran</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mathevan</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sanjeeva</surname>
+                <given-names>G.N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dayal</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Swaminathan</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <article-title>Pharmacokinetics of first-line antituberculosis drugs in HIV-infected children with tuberculosis treated with intermittent regimens in India</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>59</volume>
+            <year>2015</year>
+            <fpage>1162</fpage>
+            <lpage>1167</lpage>
+            <pub-id pub-id-type="pmid">25487804</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.04338-14</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4335847</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0205">
+          <element-citation publication-type="journal" id="rf0205">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Roy</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ghosh</surname>
+                <given-names>S.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sutradhar</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sikdar</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mazumder</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Barman</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <article-title>Predisposition of antituberculosis drug induced hepatotoxicity by cytochrome P450 2E1 genotype and haplotype in pediatric patients</article-title>
+            <source>J. Gastroenterol. Hepatol.</source>
+            <volume>21</volume>
+            <year>2006</year>
+            <fpage>784</fpage>
+            <lpage>786</lpage>
+            <pub-id pub-id-type="pmid">16677176</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1440-1746.2006.04197.x</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0210">
+          <element-citation publication-type="journal" id="rf0210">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Rumack</surname>
+                <given-names>B.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Matthew</surname>
+                <given-names>H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Acetaminophen poisoning and toxicity</article-title>
+            <source>Pediatrics</source>
+            <volume>55</volume>
+            <year>1975</year>
+            <fpage>871</fpage>
+            <lpage>876</lpage>
+            <pub-id pub-id-type="pmid">1134886</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0215">
+          <element-citation publication-type="journal" id="rf0215">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Rumack</surname>
+                <given-names>B.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Peterson</surname>
+                <given-names>R.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Koch</surname>
+                <given-names>G.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Amara</surname>
+                <given-names>I.A.</given-names>
+              </name>
+            </person-group>
+            <article-title>Acetaminophen overdose. 662 cases with evaluation of oral acetylcysteine treatment</article-title>
+            <source>Arch. Intern. Med.</source>
+            <volume>141</volume>
+            <year>1981</year>
+            <fpage>380</fpage>
+            <lpage>385</lpage>
+            <pub-id pub-id-type="pmid">7469629</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1001/archinte.141.3.380</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0220">
+          <element-citation publication-type="journal" id="rf0220">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Schmalstieg</surname>
+                <given-names>A.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Srivastava</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Belkaya</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Deshpande</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van Oers</surname>
+                <given-names>N.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>The antibiotic-resistance arrow of time: efflux pump induction is a general first step in the evolution of mycobacterial drug-resistance</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>56</volume>
+            <year>2012</year>
+            <fpage>4806</fpage>
+            <lpage>4815</lpage>
+            <pub-id pub-id-type="pmid">22751536</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.05546-11</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3421847</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0225">
+          <element-citation publication-type="journal" id="rf0225">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Sevrioukova</surname>
+                <given-names>I.F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Poulos</surname>
+                <given-names>T.L.</given-names>
+              </name>
+            </person-group>
+            <article-title>Current approaches for investigating and predicting cytochrome P450 3A4–ligand interactions</article-title>
+            <source>Adv. Exp. Med. Biol.</source>
+            <volume>851</volume>
+            <year>2015</year>
+            <fpage>83</fpage>
+            <lpage>105</lpage>
+            <pub-id pub-id-type="pmid">26002732</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/978-3-319-16009-2_3</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4532289</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0230">
+          <element-citation publication-type="journal" id="rf0230">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Sherry</surname>
+                <given-names>A.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cuppoletti</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Malinowska</surname>
+                <given-names>D.H.</given-names>
+              </name>
+            </person-group>
+            <article-title>Differential acidic pH sensitivity of delta F508 CFTR Cl-channel activity in lipid bilayers</article-title>
+            <source>Am. J. Physiol.</source>
+            <volume>266</volume>
+            <year>1994</year>
+            <fpage>C870</fpage>
+            <lpage>C875</lpage>
+            <pub-id pub-id-type="pmid">7513123</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1152/ajpcell.1994.266.3.C870</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0235">
+          <element-citation publication-type="journal" id="rf0235">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Srivastava</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title><italic toggle="yes">In vitro</italic> and <italic toggle="yes">in vivo</italic> modeling of tuberculosis drugs and its impact on optimization of doses and regimens</article-title>
+            <source>Curr. Pharm. Des.</source>
+            <volume>17</volume>
+            <year>2011</year>
+            <fpage>2881</fpage>
+            <lpage>2888</lpage>
+            <pub-id pub-id-type="pmid">21834761</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.2174/138161211797470192</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0240">
+          <element-citation publication-type="journal" id="rf0240">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Srivastava</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Musuka</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sherman</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Efflux-pump-derived multiple drug resistance to ethambutol monotherapy in <italic toggle="yes">Mycobacterium tuberculosis</italic> and the pharmacokinetics and pharmacodynamics of ethambutol</article-title>
+            <source>J. Infect. Dis.</source>
+            <volume>201</volume>
+            <year>2010</year>
+            <fpage>1225</fpage>
+            <lpage>1231</lpage>
+            <pub-id pub-id-type="pmid">20210628</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1086/651377</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2838947</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0245">
+          <element-citation publication-type="journal" id="rf0245">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Srivastava</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pasipanodya</surname>
+                <given-names>J.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Multidrug-resistant tuberculosis not due to noncompliance but to between-patient pharmacokinetic variability</article-title>
+            <source>J Infect. Dis.</source>
+            <volume>204</volume>
+            <year>2011</year>
+            <fpage>1951</fpage>
+            <lpage>1959</lpage>
+            <pub-id pub-id-type="pmid">22021624</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/infdis/jir658</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3209814</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0250">
+          <element-citation publication-type="journal" id="rf0250">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Srivastava</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sherman</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meek</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Leff</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gumbo</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <article-title>Pharmacokinetic mismatch does not lead to emergence of isoniazid- or rifampin-resistant <italic toggle="yes">Mycobacterium tuberculosis</italic> but to better antimicrobial effect: a new paradigm for antituberculosis drug scheduling</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>55</volume>
+            <year>2011</year>
+            <fpage>5085</fpage>
+            <lpage>5089</lpage>
+            <pub-id pub-id-type="pmid">21896907</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.00269-11</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3195047</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0255">
+          <element-citation publication-type="journal" id="rf0255">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Thee</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Seddon</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Donald</surname>
+                <given-names>P.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Seifart</surname>
+                <given-names>H.I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Werely</surname>
+                <given-names>C.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hesseling</surname>
+                <given-names>A.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rosenkranz</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Roll</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Magdorf</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Schaaf</surname>
+                <given-names>H.S.</given-names>
+              </name>
+            </person-group>
+            <article-title>Pharmacokinetics of isoniazid, rifampin, and pyrazinamide in children younger than two years of age with tuberculosis: evidence for implementation of revised World Health Organization recommendations</article-title>
+            <source>Antimicrob. Agents Chemother.</source>
+            <volume>55</volume>
+            <year>2011</year>
+            <fpage>5560</fpage>
+            <lpage>5567</lpage>
+            <pub-id pub-id-type="pmid">21968358</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/AAC.05429-11</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3232790</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0260">
+          <element-citation publication-type="journal" id="rf0260">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Scorpio</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nikaido</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sun</surname>
+                <given-names>Z.</given-names>
+              </name>
+            </person-group>
+            <article-title>Role of acid pH and deficient efflux of pyrazinoic acid in unique susceptibility of <italic toggle="yes">Mycobacterium tuberculosis</italic> to pyrazinamide</article-title>
+            <source>J. Bacteriol.</source>
+            <volume>181</volume>
+            <year>1999</year>
+            <fpage>2044</fpage>
+            <lpage>2049</lpage>
+            <pub-id pub-id-type="pmid">10094680</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/jb.181.7.2044-2049.1999</pub-id>
+            <pub-id pub-id-type="pmcid">PMC93615</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="bb0265">
+          <element-citation publication-type="journal" id="rf0265">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Permar</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sun</surname>
+                <given-names>Z.</given-names>
+              </name>
+            </person-group>
+            <article-title>Conditions that may affect the results of susceptibility testing of <italic toggle="yes">Mycobacterium tuberculosis</italic> to pyrazinamide</article-title>
+            <source>J. Med. Microbiol.</source>
+            <volume>51</volume>
+            <year>2002</year>
+            <fpage>42</fpage>
+            <lpage>49</lpage>
+            <pub-id pub-id-type="pmid">11800471</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1099/0022-1317-51-1-42</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+      <ack id="ac0005">
+        <title>Acknowledgments</title>
+        <p id="p0210">Funding: This work was supported by the <funding-source id="gts0005"><institution-wrap><institution-id institution-id-type="doi">10.13039/100000002</institution-id><institution>National Institutes of Health (NIH)</institution></institution-wrap></funding-source> via DP2 OD001886 and R01AI079497. Author contributions: S.S and T.G. designed the study; S.S., D.D., C.M.S., and K.N.C. performed the experiments; S.S. and T.G. performed RNA extraction, sequencing, and bioinformatic analysis; H.E.C and S.Sh. prepared the 3D KUBES; S.Sw. and G.R. performed the clinical studies; and T.G., J.G.P., S.Sw., and G.R. compiled the data and interpretation. All authors wrote the paper.</p>
+      </ack>
+    </back>
+  </article>
+</pmc-articleset>

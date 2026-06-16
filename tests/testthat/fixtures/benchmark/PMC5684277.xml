@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="brief-report" xml:lang="en" dtd-version="1.4">
+    <processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats">
+      <restricted-by>pmc</restricted-by>
+    </processing-meta>
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Clin Drug Investig</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Clin Drug Investig</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">365</journal-id>
+        <journal-id journal-id-type="pmc-domain">springeropen</journal-id>
+        <journal-title-group>
+          <journal-title>Clinical Drug Investigation</journal-title>
+        </journal-title-group>
+        <issn pub-type="ppub">1173-2563</issn>
+        <issn pub-type="epub">1179-1918</issn>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-is-collection-domain</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-collection-title</meta-name>
+            <meta-value>Springer</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC5684277</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC5684277.1</article-id>
+        <article-id pub-id-type="pmcaid">5684277</article-id>
+        <article-id pub-id-type="pmcaiid">5684277</article-id>
+        <article-id pub-id-type="pmid">28965280</article-id>
+        <article-id pub-id-type="doi">10.1007/s40261-017-0577-1</article-id>
+        <article-id pub-id-type="publisher-id">577</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Short Communication</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Acetazolamide as Add-on Diuretic Therapy in Exacerbations of Chronic Heart Failure: a Pilot Study</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author" corresp="yes">
+            <contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-2880-4890</contrib-id>
+            <name name-style="western">
+              <surname>Imiela</surname>
+              <given-names initials="T">Tomasz</given-names>
+            </name>
+            <address>
+              <email>tomasz.imiela1@gmail.com</email>
+            </address>
+            <xref ref-type="aff" rid="Aff1"/>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Budaj</surname>
+              <given-names initials="A">Andrzej</given-names>
+            </name>
+            <xref ref-type="aff" rid="Aff1"/>
+          </contrib>
+          <aff id="Aff1"><institution-wrap><institution-id institution-id-type="GRID">grid.13339.3b</institution-id><institution-id institution-id-type="ISNI">0000000113287408</institution-id><institution>Cardiology Department, </institution><institution>Postgraduate Medical School, </institution></institution-wrap>Grenadierow 51/59, 04-073 Warsaw, Poland </aff>
+        </contrib-group>
+        <pub-date pub-type="epub">
+          <day>30</day>
+          <month>9</month>
+          <year>2017</year>
+        </pub-date>
+        <pub-date pub-type="ppub">
+          <year>2017</year>
+        </pub-date>
+        <volume>37</volume>
+        <issue>12</issue>
+        <issue-id pub-id-type="pmc-issue-id">301503</issue-id>
+        <fpage>1175</fpage>
+        <lpage>1181</lpage>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>30</day>
+              <month>09</month>
+              <year>2017</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>27</day>
+              <month>11</month>
+              <year>2017</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2022-04-26 23:16:38.430">
+              <day>26</day>
+              <month>04</month>
+              <year>2022</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>© The Author(s) 2017</copyright-statement>
+          <license>
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbynclicense">https://creativecommons.org/licenses/by-nc/4.0/</ali:license_ref>
+            <license-p><bold>Open Access</bold>This article is distributed under the terms of the Creative Commons Attribution-NonCommercial 4.0 International License (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</ext-link>), which permits any noncommercial use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="40261_2017_Article_577.pdf"/>
+        <abstract id="Abs1">
+          <sec>
+            <title>Background</title>
+            <p>Congestion is the main cause of morbidity in patients with heart failure. Treatment of fluid overload is often challenging in everyday clinical practice.</p>
+          </sec>
+          <sec>
+            <title>Objective</title>
+            <p>The aim of this study was to determine the diuretic effect of acetazolamide in patients with exacerbations of chronic heart failure, in addition to their stable diuretic therapy.</p>
+          </sec>
+          <sec>
+            <title>Methods</title>
+            <p>This was a single-center, unblinded study. Patients hospitalized with chronic heart failure exacerbations, with left ventricular ejection fraction (EF) &lt; 50% and signs of volume overload, with a stable dose of diuretics anticipated by the attending physician over the next 4 days, were considered eligible for the study. On day 1, patients were randomized to receive acetazolamide orally, once daily (dose-adjusted to body weight) or no treatment (control group) as add-on diuretic therapy, on days 2 and 3. Diuresis, natriuresis, fluid balance, and symptoms were assessed daily, up to day 4.</p>
+          </sec>
+          <sec>
+            <title>Results</title>
+            <p>Twenty patients (mean ± standard deviation age 72 ± 11.6 years; 85% men; mean EF 33.8 ± 11.4%; mean N-terminal pro-B-type natriuretic peptide 8064 ± 5593 pg/mL; mean intravenous furosemide dose 105 ± 55 mg) were enrolled. Diuresis, natriuresis, fluid balance, and symptoms were stable on days 1–4 in the control group. An increase in diuresis and natriuresis, and a greater change in fluid balance after administration of acetazolamide, were observed in patients randomized to acetazolamide. On day 4, there was a significant difference in fluid balance between the acetazolamide and control groups (−666 ± 1194 mL vs. +332 ± 705 mL; <italic toggle="yes">p</italic> <italic toggle="yes">=</italic> 0.035), and dyspnea was lower in patients receiving acetazolamide (visual scale, <italic toggle="yes">p</italic> <italic toggle="yes">&lt;</italic> 0.001; 5-point Likert scale, 1.444 vs. 2.222; <italic toggle="yes">p</italic> <italic toggle="yes">=</italic> 0.04)</p>
+          </sec>
+          <sec>
+            <title>Conclusions</title>
+            <p>In this pilot study, the addition of acetazolamide to the background diuretic regimen in patients with chronic heart failure exacerbations produced an additional diuretic effect and alleviation of dyspnea.</p>
+          </sec>
+        </abstract>
+        <funding-group>
+          <award-group>
+            <funding-source>
+              <institution>Centre of Postgraduate Medical Education grant</institution>
+            </funding-source>
+            <award-id>501-1-10-14-16</award-id>
+            <principal-award-recipient>
+              <name name-style="western">
+                <surname>Budaj</surname>
+                <given-names>Andrzej</given-names>
+              </name>
+            </principal-award-recipient>
+          </award-group>
+        </funding-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY-NC</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>issue-copyright-statement</meta-name>
+            <meta-value>© Springer International Publishing AG, part of Springer Nature 2017</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec id="FPar1">
+        <title>
+          <bold>Key Points</bold>
+        </title>
+        <p>
+          <table-wrap id="Taba" position="float" orientation="portrait">
+            <table frame="hsides" rules="groups">
+              <tbody>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Acetazolamide, in addition to other diuretics, may improve diuresis in heart failure exacerbations</td>
+                </tr>
+                <tr>
+                  <td align="left" colspan="1" rowspan="1">Acetazolamide may decrease dyspnea in heart failure exacerbations</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </p>
+      </sec>
+      <sec id="Sec1">
+        <title>Introduction</title>
+        <p>Heart failure is a common disease associated with a high risk of hospitalization and premature death. The prevalence of heart failure is approximately 1–2% of the population in developed countries, with the risk of developing the disease rising with age [<xref ref-type="bibr" rid="CR1">1</xref>].</p>
+        <p>Fluid retention is the cause of numerous symptoms in chronic heart failure [<xref ref-type="bibr" rid="CR2">2</xref>]. The basic method for reducing fluid retention in heart failure is the administration of diuretics, but there is no evidence that this approach decreases the fatality rate. Nevertheless, guidelines from the European Society of Cardiology (ESC) recommend administration of diuretics, both in the acute and chronic phases, to obtain proper fluid balance in patients with overhydration symptoms [<xref ref-type="bibr" rid="CR3">3</xref>].</p>
+        <p>Historically, one of the first classes of diuretics used to achieve decongestion in heart failure were the carbonic anhydrase inhibitors. The currently available drug from that class, acetazolamide, acts through blockade of carbonic anhydrase in various organs. In the kidney, carbonic anhydrase is expressed mainly in proximal tubules. With its blockade, acetazolamide increases natrium and bicarbonate excretion, urine alkalosis, and blood acidosis [<xref ref-type="bibr" rid="CR4">4</xref>]. Anhydrase inhibitors were used in the treatment of volume overload in heart failure, in combination with mercurial diuretics, in the 1950s and 1960s [<xref ref-type="bibr" rid="CR5">5</xref>]. With the discovery of potent loop diuretics, the use of anhydrase inhibitors has been largely abandoned (at least in the treatment of heart failure with volume overload).</p>
+        <p>Diuretic resistance is a growing clinical problem in heart failure, and patients resistant to loop diuretics have a poor prognosis [<xref ref-type="bibr" rid="CR6">6</xref>]. Anhydrase inhibitors, which are currently used occasionally in such patients, have not been tested in the era of evidence-based medicine; however, limited animal and human data suggest a potential benefit of acetazolamide, especially in combination with loop diuretics, in the treatment of fluid overload in heart failure [<xref ref-type="bibr" rid="CR7">7</xref>]. Consequently, we conducted a pilot study to determine the putative clinical value of adding acetazolamide on top of the current diuretic therapy in patients with heart failure and signs of volume overload.</p>
+      </sec>
+      <sec id="Sec2">
+        <title>Patients and Methods</title>
+        <sec id="Sec3">
+          <title>Study Design</title>
+          <p>This prospective, randomized, unblinded, single-center study was carried out in the Cardiology Department of the Centre of Postgraduate Medical Education, Warsaw, Poland, between June 2015 and February 2016. All patients provided written informed consent and the study was approved by the institutional Ethics Committee.</p>
+        </sec>
+        <sec id="Sec4">
+          <title>Population</title>
+          <p>Consecutive patients admitted to the cardiology ward with exacerbations of acute or chronic heart failure were screened. Eligible patients met the following criteria: x-ray-confirmed pulmonary congestion and/or the presence of signs of excess fluid (leg edema, ascites) requiring hospitalization (only patients with persistent signs of fluid overload during the initial evaluation were included); left ventricular ejection fraction (EF) &lt; 50%; stable diuretic therapy, defined as a stable dose of diuretics anticipated by the attending physician over the next 4 days; age ≥ 18 years; and the possibility of precise estimation of daily diuresis, determined by the investigator (i.e. patients with a Foley catheter inserted in the urinary bladder, or non-catheterized patients for whom reliable fluid balance control had been observed for the previous days).</p>
+          <p>Exclusion criteria were current acute coronary syndrome, acute pulmonary embolism, acute myocarditis, aortic dissection, stage 5 chronic kidney disease (estimated glomerular filtration rate &lt; 15 mL/min) or current hypotension (mean arterial pressure &lt; 60 mmHg).</p>
+        </sec>
+        <sec id="Sec5">
+          <title>Treatment Protocol</title>
+          <p>The study design is illustrated in Fig. <xref rid="Fig1" ref-type="fig">1</xref>. Patients were observed over 4 consecutive days. On day 1, patients were randomized to receive acetazolamide orally, once daily, with dose-adjustment for body weight (&lt; 75 kg, 250 mg; 75 − 100 kg, 375 mg; &gt; 100 kg, 500 mg), or no additional treatment (control group). To measure the fluid output on diuretics used before the initiation of acetazolamide and compare it with the consecutive days with the addition of a study drug, acetazolamide was only administered on days 2 and 3. Randomization was performed using a computer-generated 16-bit exact randomization procedure performed prior to commencement of the study. Treating physicians were discouraged from changing the dose of background diuretics unless considered necessary per the patient’s clinical condition. Detailed data on the dose of diuretics and other medications were collected throughout the study.<fig id="Fig1" position="float" orientation="portrait"><label>Fig. 1</label><caption><p>Study protocol. Acetazolamide was administered in 10 of the 20 study patients</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="MO1" position="float" orientation="portrait" xlink:href="40261_2017_577_Fig1_HTML.jpg"/></fig>
+</p>
+        </sec>
+        <sec id="Sec6">
+          <title>Laboratory Measurements</title>
+          <p>Daily natrium and chloride urine excretion were measured on all 4 study days. On days 1 and 4, serum natrium, potassium, chloride, creatinine, and glucose levels, as well as osmolality, urine osmolality, and pH were measured. Other laboratory findings, such as full blood count and N-terminal pro-B-type natriuretic peptide (NT-proBNP) plasma concentrations were collected in most patients prior to randomization.</p>
+        </sec>
+        <sec id="Sec7">
+          <title>Outcome Measurements</title>
+          <p>Clinical assessment included daily measurement of patient body mass, arterial pressure, and heart rate. Dyspnea was measured using a 10° visual analog scale and the 5° Likert-type scale.</p>
+          <p>Fluid balance was estimated on the basis of daily urine collection, carried out over 24 h, from 6:00am to 6:00am the following day. The balance of intake fluids was monitored using a questionnaire completed by patients on an ongoing basis. Additionally, the amount of intake fluids was controlled on an ongoing basis by the auxiliary staff in the ward.</p>
+          <p>Study endpoints included diuresis and fluid balance on each consecutive day, mean diuresis and fluid balance on days 2 and 3 and days 2, 3 and 4, difference in diuresis, and fluid balance on day 1 versus all other days.</p>
+        </sec>
+        <sec id="Sec8">
+          <title>Statistical Analysis</title>
+          <p>The results are presented as mean ± 1 standard deviation (SD) or median with interquartile range and 95% confidence interval. Variables were compared using Student’s <italic toggle="yes">t</italic>-test or the Mann–Whitney <italic toggle="yes">U</italic> test as the groups were too small to adequately assess the eventual normality. Statistical significance was set at a probability level of &lt; 0.05.</p>
+          <p>The statistical packet Statistica version 10 (data analysis software system; StatSoft, Inc.) was employed for the purpose of calculations (2011).</p>
+        </sec>
+      </sec>
+      <sec id="Sec9">
+        <title>Results</title>
+        <sec id="Sec10">
+          <title>Study Population</title>
+          <p>Twenty patients were included in the study, 10 of whom were randomized to acetazolamide and 10 to the control. The mean age of patients was 72 ± 12 years, 85% were men, and mean left ventricle EF was 33.8 ± 11.4%. Ninety-five percent of patients received furosemide (80% intravenously), 30% received oral torasemide (some patients received both furosemide and torasemide), 50% received spironolactone (30% intravenously), 10% received oral eplerenone, and 10% received oral hydrochlorothiazide. Mean intravenous furosemide dose was 101 mg/day in the acetazolamide group and 108 mg/day in the no-treatment group. With adjustment for a diuretic potency (oral furosemide twofold lower potency and oral torasemide twofold higher potency than intravenous furosemide), the mean initial dose of loop diuretics converted to intravenous furosemide was 90 mg/day in the acetazolamide group and 122 mg/day in the control group [<xref ref-type="bibr" rid="CR8">8</xref>]. The difference was not statistically significant. The mean dose of loop diuretics in the following days was similar in both groups (no statistically significant differences).</p>
+          <p>The full demographics and clinical characteristics of both study groups are presented in Table <xref rid="Tab1" ref-type="table">1</xref>. The mean adjusted dose of in vitro loop diuretics are presented in Table <xref rid="Tab2" ref-type="table">2</xref>.<table-wrap id="Tab1" position="float" orientation="portrait"><label>Table 1</label><caption><p>Baseline demographics and clinical characteristics in the control and acetazolamide-treated groups</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1">Variable</th><th align="left" colspan="1" rowspan="1">Acetazolamide [<italic toggle="yes">n</italic> = 10]</th><th align="left" colspan="1" rowspan="1">Control [<italic toggle="yes">n</italic> = 10]</th><th align="left" colspan="1" rowspan="1"><italic toggle="yes">p</italic> value</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Age, years [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">73.0 (8.6)</td><td align="left" colspan="1" rowspan="1">71.2 (14.4)</td><td char="." align="char" colspan="1" rowspan="1">0.74</td></tr><tr><td align="left" colspan="1" rowspan="1">Men</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td align="left" colspan="1" rowspan="1">9 (90)</td><td char="." align="char" colspan="1" rowspan="1">0.56</td></tr><tr><td align="left" colspan="1" rowspan="1">Charlson comorbidity index (sum) [median]</td><td align="left" colspan="1" rowspan="1">3</td><td align="left" colspan="1" rowspan="1">3</td><td char="." align="char" colspan="1" rowspan="1">0.34</td></tr><tr><td align="left" colspan="1" rowspan="1">Ejection fraction, % [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">37.5 (13.0)</td><td align="left" colspan="1" rowspan="1">30.2 (8.7)</td><td char="." align="char" colspan="1" rowspan="1">0.16</td></tr><tr><td align="left" colspan="1" rowspan="1">Heart failure etiology</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td char="." align="char" colspan="1" rowspan="1">0.41</td></tr><tr><td align="left" colspan="1" rowspan="1"> Ischemic</td><td align="left" colspan="1" rowspan="1">6 (60)</td><td align="left" colspan="1" rowspan="1">7 (70)</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> Other</td><td align="left" colspan="1" rowspan="1">4 (40)</td><td align="left" colspan="1" rowspan="1">3 (30)</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1">Baseline NYHA class</td><td align="left" colspan="1" rowspan="1"/><td align="left" colspan="1" rowspan="1"/><td char="." align="char" colspan="1" rowspan="1">0.14</td></tr><tr><td align="left" colspan="1" rowspan="1"> II</td><td align="left" colspan="1" rowspan="1">4 (40)</td><td align="left" colspan="1" rowspan="1">1 (10)</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1"> III</td><td align="left" colspan="1" rowspan="1">6 (60)</td><td align="left" colspan="1" rowspan="1">9 (90)</td><td align="left" colspan="1" rowspan="1"/></tr><tr><td align="left" colspan="1" rowspan="1">Coronary artery disease</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td align="left" colspan="1" rowspan="1">7 (70)</td><td char="." align="char" colspan="1" rowspan="1">0.63</td></tr><tr><td align="left" colspan="1" rowspan="1">Arterial hypertension</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td char="." align="char" colspan="1" rowspan="1">1.0</td></tr><tr><td align="left" colspan="1" rowspan="1">Atrial fibrillation</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td align="left" colspan="1" rowspan="1">6 (60)</td><td char="." align="char" colspan="1" rowspan="1">0.36</td></tr><tr><td align="left" colspan="1" rowspan="1">Chronic lung disease</td><td align="left" colspan="1" rowspan="1">2 (20)</td><td align="left" colspan="1" rowspan="1">2 (20)</td><td char="." align="char" colspan="1" rowspan="1">1.0</td></tr><tr><td align="left" colspan="1" rowspan="1">Chronic kidney disease</td><td align="left" colspan="1" rowspan="1">6 (60)</td><td align="left" colspan="1" rowspan="1">6 (60)</td><td char="." align="char" colspan="1" rowspan="1">1.0</td></tr><tr><td align="left" colspan="1" rowspan="1">Depression</td><td align="left" colspan="1" rowspan="1">1 (10)</td><td align="left" colspan="1" rowspan="1">2 (20)</td><td char="." align="char" colspan="1" rowspan="1">0.56</td></tr><tr><td align="left" colspan="1" rowspan="1">Diabetes mellitus</td><td align="left" colspan="1" rowspan="1">7 (70)</td><td align="left" colspan="1" rowspan="1">5 (50)</td><td char="." align="char" colspan="1" rowspan="1">0.39</td></tr><tr><td align="left" colspan="4" rowspan="1">Pharmacotherapy during study</td></tr><tr><td align="left" colspan="1" rowspan="1"> ACE inhibitor/ARB</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td char="." align="char" colspan="1" rowspan="1">1.0</td></tr><tr><td align="left" colspan="1" rowspan="1"> Aspirin</td><td align="left" colspan="1" rowspan="1">5 (50)</td><td align="left" colspan="1" rowspan="1">6 (60)</td><td char="." align="char" colspan="1" rowspan="1">0.67</td></tr><tr><td align="left" colspan="1" rowspan="1"> Statin</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td align="left" colspan="1" rowspan="1">5 (50)</td><td char="." align="char" colspan="1" rowspan="1">0.18</td></tr><tr><td align="left" colspan="1" rowspan="1"> β-blocker</td><td align="left" colspan="1" rowspan="1">9 (90)</td><td align="left" colspan="1" rowspan="1">10 (100)</td><td char="." align="char" colspan="1" rowspan="1">0.33</td></tr><tr><td align="left" colspan="1" rowspan="1"> Antibiotics</td><td align="left" colspan="1" rowspan="1">5 (50)</td><td align="left" colspan="1" rowspan="1">7 (70)</td><td char="." align="char" colspan="1" rowspan="1">0.39</td></tr><tr><td align="left" colspan="1" rowspan="1"> Amiodarone</td><td align="left" colspan="1" rowspan="1">7 (70)</td><td align="left" colspan="1" rowspan="1">5 (50)</td><td char="." align="char" colspan="1" rowspan="1">0.39</td></tr><tr><td align="left" colspan="1" rowspan="1"> OAC/LMWH</td><td align="left" colspan="1" rowspan="1">7 (70)</td><td align="left" colspan="1" rowspan="1">8 (80)</td><td char="." align="char" colspan="1" rowspan="1">0.063</td></tr><tr><td align="left" colspan="1" rowspan="1"> Proton pump inhibitor</td><td align="left" colspan="1" rowspan="1">7 (70)</td><td align="left" colspan="1" rowspan="1">9 (90)</td><td char="." align="char" colspan="1" rowspan="1">0.29</td></tr><tr><td align="left" colspan="1" rowspan="1">White blood cells, K/μL [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">8.95 (3.18)</td><td align="left" colspan="1" rowspan="1">7.70 (1.60)</td><td char="." align="char" colspan="1" rowspan="1">0.28</td></tr><tr><td align="left" colspan="1" rowspan="1">Hemoglobin, g/dL [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">12.19 (2.64)</td><td align="left" colspan="1" rowspan="1">12.39 (1.78)</td><td char="." align="char" colspan="1" rowspan="1">0.85</td></tr><tr><td align="left" colspan="1" rowspan="1">Troponin T, ng/L [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">43.73 (46.39) [<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 9]</td><td align="left" colspan="1" rowspan="1">65.63 (34.40) [<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 7]</td><td char="." align="char" colspan="1" rowspan="1">0.31</td></tr><tr><td align="left" colspan="1" rowspan="1">CRP, mg/dL [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">35.77 (63.52) [<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 9]</td><td align="left" colspan="1" rowspan="1">67.51 (107.39) [<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 9]</td><td char="." align="char" colspan="1" rowspan="1">0.46</td></tr><tr><td align="left" colspan="1" rowspan="1">Natrium, mEq/L [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">138.60 (3.37)</td><td align="left" colspan="1" rowspan="1">137.40 (4.79)</td><td char="." align="char" colspan="1" rowspan="1">0.53</td></tr><tr><td align="left" colspan="1" rowspan="1">Potassium, mEq/L [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">4.48 (0.53)</td><td align="left" colspan="1" rowspan="1">4.97 (0.86)</td><td char="." align="char" colspan="1" rowspan="1">0.14</td></tr><tr><td align="left" colspan="1" rowspan="1">Creatinine, μmol/L [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">137.05 (42.44)</td><td align="left" colspan="1" rowspan="1">141.47 (76.93)</td><td char="." align="char" colspan="1" rowspan="1">0.88</td></tr><tr><td align="left" colspan="1" rowspan="1">NT-proBNP, pg/mL [mean (± SD)]</td><td align="left" colspan="1" rowspan="1">7241.29 (5417.86) [<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 7]</td><td align="left" colspan="1" rowspan="1">8704.44 (5966.80) [<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 9]</td><td char="." align="char" colspan="1" rowspan="1">0.62</td></tr></tbody></table><table-wrap-foot><p>Data are expressed as <italic toggle="yes">n</italic> (%) unless otherwise specified</p><p><italic toggle="yes">ACE</italic> angiotensin-converting enzyme, <italic toggle="yes">ARB</italic> angiotensin receptor blockers, <italic toggle="yes">CRP</italic> C-reactive protein, <italic toggle="yes">LMWH</italic> low molecular weight heparin, <italic toggle="yes">NT-proBNP</italic> N-terminal pro-B-type natriuretic peptide, <italic toggle="yes">NYHA</italic> New York Heart Association, <italic toggle="yes">OAC</italic> oral anticoagulants, <italic toggle="yes">SD</italic> standard deviation</p></table-wrap-foot></table-wrap>
+<table-wrap id="Tab2" position="float" orientation="portrait"><label>Table 2</label><caption><p>Mean ± SD  dose of loop diuretics (doses converted to intravenous furosemide dose)</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1">Day of the study</th><th align="left" colspan="1" rowspan="1">Acetazolamide (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1">Control (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1"><italic toggle="yes">p</italic> value<sup>a</sup>
+</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Day 1</td><td char="±" align="char" colspan="1" rowspan="1">90 ± 51</td><td char="±" align="char" colspan="1" rowspan="1">122 ± 59</td><td char="." align="char" colspan="1" rowspan="1">0.42</td></tr><tr><td align="left" colspan="1" rowspan="1">Day 2</td><td char="±" align="char" colspan="1" rowspan="1">118 ± 78</td><td char="±" align="char" colspan="1" rowspan="1">130 ± 65</td><td char="." align="char" colspan="1" rowspan="1">0.28</td></tr><tr><td align="left" colspan="1" rowspan="1">Day 3</td><td char="±" align="char" colspan="1" rowspan="1">103 ± 64</td><td char="±" align="char" colspan="1" rowspan="1">142 ± 80</td><td char="." align="char" colspan="1" rowspan="1">0.95</td></tr><tr><td align="left" colspan="1" rowspan="1">Day 4</td><td char="±" align="char" colspan="1" rowspan="1">110 ± 73</td><td char="±" align="char" colspan="1" rowspan="1">152 ± 97</td><td char="." align="char" colspan="1" rowspan="1">0.16</td></tr></tbody></table><table-wrap-foot><p>Adjustment for a diuretic potency: oral furosemide has a twofold lower potency and oral torasemide a twofold higher potency than intravenous furosemide [<xref ref-type="bibr" rid="CR8">8</xref>]</p><p><italic toggle="yes">SD</italic> standard deviation</p><p><sup>a</sup><italic toggle="yes">p</italic> <italic toggle="yes">&lt;</italic> 0.05 for Student’s <italic toggle="yes">t</italic> test considered statistically significant</p></table-wrap-foot></table-wrap>
+</p>
+        </sec>
+        <sec id="Sec11">
+          <title>Diuresis</title>
+          <p>Data on mean diuresis and natriuresis on each consecutive day are presented in Table <xref rid="Tab3" ref-type="table">3</xref>. There was no statistically significant difference between values for diuresis and natriuresis in the acetazolamide and control groups according to Student’s <italic toggle="yes">t</italic> test and the Mann–Whitney <italic toggle="yes">U</italic> test. However, there was a significant increase in mean urine pH on day 4 versus day 1 in the acetazolamide group versus the control group (+ 1.07 vs. − 0.3; <italic toggle="yes">p</italic> <italic toggle="yes">=</italic> 0.02). Urine alkalization confirmed the lasting effect of acetazolamide treatment on day 4.<table-wrap id="Tab3" position="float" orientation="portrait"><label>Table 3</label><caption><p>Comparison of diuresis and natriuresis between the control and acetazolamide-treated groups</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1">Variable</th><th align="left" colspan="1" rowspan="1">Acetazolamide (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1">Control (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1"><italic toggle="yes">p</italic> value<sup>a</sup>
+</th></tr></thead><tbody><tr><td align="left" colspan="4" rowspan="1">Diuresis, mL [mean (± SD)]</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 1</td><td char="(" align="char" colspan="1" rowspan="1">2351.0 (806.8)</td><td char="(" align="char" colspan="1" rowspan="1">2614.00 (621.3)</td><td char="." align="char" colspan="1" rowspan="1">0.42</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 2</td><td char="(" align="char" colspan="1" rowspan="1">2272.0 (707.1)</td><td char="(" align="char" colspan="1" rowspan="1">2802.00 (1311.8)</td><td char="." align="char" colspan="1" rowspan="1">0.28</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 3</td><td char="(" align="char" colspan="1" rowspan="1">2641.0 (568.1)</td><td char="(" align="char" colspan="1" rowspan="1">2617.00 (1172.3)</td><td char="." align="char" colspan="1" rowspan="1">0.95</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 4</td><td char="(" align="char" colspan="1" rowspan="1">2898.0 (1160.9)</td><td char="(" align="char" colspan="1" rowspan="1">2252.00 (800.5)</td><td char="." align="char" colspan="1" rowspan="1">0.16</td></tr><tr><td align="left" colspan="1" rowspan="1">Mean diuresis, days 3 and 4</td><td char="(" align="char" colspan="1" rowspan="1">2769.5 (800.6)</td><td char="(" align="char" colspan="1" rowspan="1">2434.50 (951.3)</td><td char="." align="char" colspan="1" rowspan="1">0.41</td></tr><tr><td align="left" colspan="1" rowspan="1">Mean diuresis, days 2, 3 and 4</td><td char="(" align="char" colspan="1" rowspan="1">2603.6 (629.1)</td><td char="(" align="char" colspan="1" rowspan="1">2557.00 (1065.4)</td><td char="." align="char" colspan="1" rowspan="1">0.91</td></tr><tr><td align="left" colspan="4" rowspan="1">Natriuresis, mmol/L [mean (± SD)]</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 1</td><td char="(" align="char" colspan="1" rowspan="1">207.9 (91.6)</td><td char="(" align="char" colspan="1" rowspan="1">260.88 (149.6)</td><td char="." align="char" colspan="1" rowspan="1">0.40</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 2</td><td char="(" align="char" colspan="1" rowspan="1">212.9 (104.2)</td><td char="(" align="char" colspan="1" rowspan="1">247.11 (138.7)</td><td char="." align="char" colspan="1" rowspan="1">0.55</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 3</td><td char="(" align="char" colspan="1" rowspan="1">253.1 (72.6)</td><td char="(" align="char" colspan="1" rowspan="1">240.70 (131.5)</td><td char="." align="char" colspan="1" rowspan="1">0.81</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 4</td><td char="(" align="char" colspan="1" rowspan="1">258 (129.9)</td><td char="(" align="char" colspan="1" rowspan="1">213.3 (112.3)</td><td char="." align="char" colspan="1" rowspan="1">0.43</td></tr></tbody></table><table-wrap-foot><p><italic toggle="yes">SD</italic> standard deviation</p><p><sup>a</sup><italic toggle="yes">p</italic> <italic toggle="yes">&lt;</italic> 0.05 for Student’s <italic toggle="yes">t</italic> test considered statistically significant</p></table-wrap-foot></table-wrap>
+</p>
+        </sec>
+        <sec id="Sec12">
+          <title>Fluid Balance</title>
+          <p>A comparison of fluid balance between the groups is presented in Table <xref rid="Tab4" ref-type="table">4</xref>. There was a trend towards a negative fluid balance in the acetazolamide group on days 3 and 4, whereas no such trend was observed in the control group. The difference on day 4 fluid balance and mean days 3 and 4 fluid balance between the acetazolamide and control groups was statistically significant, assuming a normal variable distribution (Student’s <italic toggle="yes">t</italic> test), whereas the Mann–Whitney <italic toggle="yes">U</italic> test yielded no statistical significance.<table-wrap id="Tab4" position="float" orientation="portrait"><label>Table 4</label><caption><p>Comparison of fluid balance between the control and acetazolamide-treated groups</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1">Fluid balance, mL [mean (± SD)]</th><th align="left" colspan="1" rowspan="1">Acetazolamide (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1">Control (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1"><italic toggle="yes">p</italic> value<sup>a</sup>
+</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1">Day 1</td><td char="(" align="char" colspan="1" rowspan="1">−172.0 (968.7)</td><td char="(" align="char" colspan="1" rowspan="1">−165.0 (858.9)</td><td char="." align="char" colspan="1" rowspan="1">0.99</td></tr><tr><td align="left" colspan="1" rowspan="1">Day 2</td><td char="(" align="char" colspan="1" rowspan="1">168.0 (1052.1)</td><td char="(" align="char" colspan="1" rowspan="1">−198.0 (812.9)</td><td char="." align="char" colspan="1" rowspan="1">0.40</td></tr><tr><td align="left" colspan="1" rowspan="1">Day 3</td><td char="(" align="char" colspan="1" rowspan="1">−416.0 (486.5)</td><td char="(" align="char" colspan="1" rowspan="1">152.0 (735.2)</td><td char="." align="char" colspan="1" rowspan="1">0.057</td></tr><tr><td align="left" colspan="1" rowspan="1">Day 4</td><td char="(" align="char" colspan="1" rowspan="1">−666.0 (1194.4)</td><td char="(" align="char" colspan="1" rowspan="1">332.0 (704.7)</td><td char="." align="char" colspan="1" rowspan="1">0.035</td></tr><tr><td align="left" colspan="1" rowspan="1">Fluid balance, days 3 and 4</td><td char="(" align="char" colspan="1" rowspan="1">−541.0 (774.3)</td><td char="(" align="char" colspan="1" rowspan="1">242.0 (655.9)</td><td char="." align="char" colspan="1" rowspan="1">0.025</td></tr><tr><td align="left" colspan="1" rowspan="1">Fluid balance, days 2, 3 and 4</td><td char="(" align="char" colspan="1" rowspan="1">−304.7 (596.0)</td><td char="(" align="char" colspan="1" rowspan="1">95.3 (681.6)</td><td char="." align="char" colspan="1" rowspan="1">0.18</td></tr></tbody></table><table-wrap-foot><p><italic toggle="yes">SD</italic> standard deviation</p><p><sup>a</sup><italic toggle="yes">p</italic> <italic toggle="yes">&lt;</italic> 0.05 for Student’s <italic toggle="yes">t</italic> test considered statistically significant</p></table-wrap-foot></table-wrap>
+</p>
+        </sec>
+        <sec id="Sec13">
+          <title>Dyspnea Measurement</title>
+          <p>According to both scales, dyspnea was less pronounced in the acetazolamide group (Table <xref rid="Tab5" ref-type="table">5</xref>). The difference escalated over each subsequent day, reaching statistical significance (Student’s <italic toggle="yes">t</italic> test) on days 2, 3 and 4, but the findings were not significant when the Mann–Whitney <italic toggle="yes">U</italic> test was used.<table-wrap id="Tab5" position="float" orientation="portrait"><label>Table 5</label><caption><p>Comparison of dyspnea scores between the control and acetazolamide-treated groups</p></caption><table frame="hsides" rules="groups"><thead><tr><th align="left" colspan="1" rowspan="1">Variable</th><th align="left" colspan="1" rowspan="1">Acetazolamide (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1">Control (<italic toggle="yes">n</italic> <italic toggle="yes">=</italic> 10)</th><th align="left" colspan="1" rowspan="1"><italic toggle="yes">p</italic> value<sup>a</sup>
+</th></tr></thead><tbody><tr><td align="left" colspan="4" rowspan="1">Visual dyspnea scale<sup>b</sup> [mean (± SD)]</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 1</td><td char="(" align="char" colspan="1" rowspan="1">26 (27)</td><td char="(" align="char" colspan="1" rowspan="1">42 (13)</td><td char="." align="char" colspan="1" rowspan="1">0.12</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 2</td><td char="(" align="char" colspan="1" rowspan="1">18 (18)</td><td char="(" align="char" colspan="1" rowspan="1">41 (16)</td><td char="." align="char" colspan="1" rowspan="1">0.014</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 3</td><td char="(" align="char" colspan="1" rowspan="1">16 (21)</td><td char="(" align="char" colspan="1" rowspan="1">38 (19)</td><td char="." align="char" colspan="1" rowspan="1">0.038</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 4</td><td char="(" align="char" colspan="1" rowspan="1">9 (9)</td><td char="(" align="char" colspan="1" rowspan="1">35 (16)</td><td char="." align="char" colspan="1" rowspan="1">0.0006</td></tr><tr><td align="left" colspan="4" rowspan="1">Likert [mean (± SD)]</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 1</td><td char="(" align="char" colspan="1" rowspan="1">2.278 (1.1)</td><td char="(" align="char" colspan="1" rowspan="1">3 (0.8)</td><td char="." align="char" colspan="1" rowspan="1">0.13</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 2</td><td char="(" align="char" colspan="1" rowspan="1">1.722 (0.7)</td><td char="(" align="char" colspan="1" rowspan="1">2.833 (0.8)</td><td char="." align="char" colspan="1" rowspan="1">0.0076</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 3</td><td char="(" align="char" colspan="1" rowspan="1">1.667 (0.97)</td><td char="(" align="char" colspan="1" rowspan="1">2.778 (1.4)</td><td char="." align="char" colspan="1" rowspan="1">0.07</td></tr><tr><td align="left" colspan="1" rowspan="1"> Day 4</td><td char="(" align="char" colspan="1" rowspan="1">1.444 (0.64)</td><td char="(" align="char" colspan="1" rowspan="1">2.222 (0.83)</td><td char="." align="char" colspan="1" rowspan="1">0.041</td></tr></tbody></table><table-wrap-foot><p><italic toggle="yes">SD</italic> standard deviation</p><p><sup>a</sup><italic toggle="yes">p</italic> <italic toggle="yes">&lt;</italic> 0.05 for Student’s <italic toggle="yes">t</italic> test considered statistically significant</p><p><sup>b</sup>Presented in mm (0–100 mm)</p></table-wrap-foot></table-wrap>
+</p>
+        </sec>
+      </sec>
+      <sec id="Sec14">
+        <title>Discussion</title>
+        <p>The results of our pilot study confirm the potential effectiveness of acetazolamide in the current era of diuretic therapy in heart failure. To our knowledge, only two other human studies have been published over the past 30 years with the use of acetazolamide as a diuretic agent in heart failure [<xref ref-type="bibr" rid="CR7">7</xref>, <xref ref-type="bibr" rid="CR9">9</xref>]. In a small prospective study in nine patients with congestive heart failure, Knauf and Mutschler showed that adding 250 mg of acetazolamide to 40 mg of furosemide produced a similar increase in the rate of diuresis as that achieved by doubling the dose of furosemide [<xref ref-type="bibr" rid="CR9">9</xref>]. Furthermore, Verbrugge et al. conducted a single-center, prospective cohort study in 54 patients with decompensated heart failure, in which a strict scheme of loop diuretic dose (intravenous bumetanide) was required per protocol. Physicians were encouraged to use combination diuretic therapy: a thiazide diuretic was recommended in patients with kidney dysfunction (estimated glomerular filtration rate &lt; 40 mL/min); the addition of acetazolamide was recommended when the serum urea to creatinine ratio was &gt; 50; and spironolactone was recommended in patients without hyperkalemia. Overall, 69% of patients received different types of combination diuretic therapy. The addition of acetazolamide was one of the few statistically significant factors that increased natriuresis (the other being higher diastolic blood pressure and lower plasma aldosterone) [<xref ref-type="bibr" rid="CR7">7</xref>].</p>
+        <p>Several mechanisms may explain the potential effectiveness of acetazolamide in combination diuretic therapy. Sodium reabsorption in proximal tubules may be increased in patients receiving chronic loop diuretic therapy or with decompensated heart failure, which in turn weakens the effectiveness of loop diuretics. This type of diuretic resistance may not be effectively treated by combination therapy with distally acting diuretics such as thiazides or mineralocorticoid receptor antagonists; however, the use of acetazolamide, a proximal tubule-acting diuretic, may be effective [<xref ref-type="bibr" rid="CR9">9</xref>]. Anhydrase inhibitors may also enhance the diuretic effect of thiazides. As shown in animal models, lower urine pH may upregulate the distal tubule sodium chloride co-transporter, despite the administration of thiazide [<xref ref-type="bibr" rid="CR9">9</xref>]. Thus, in theory and in some animal models, alkalization of the urine may augment the usefulness of thiazide diuretics [<xref ref-type="bibr" rid="CR10">10</xref>].</p>
+        <p>There are several limitations of our study. At the time the study was designed, in 2015, we were using the 2012 ESC heart failure guidelines [<xref ref-type="bibr" rid="CR11">11</xref>]. These guidelines defined normal EF as &gt; 50%, whereas patients with EF in the range of 35–50% were defined as in the ‘grey zone’. We decided to include patients with clearly reduced EF (&lt; 35%) as well as those with ‘grey zone’ EF (35–50%). According to current guidelines, we included patients with reduced (&lt; 40%) and mid-range EF (40–49%) [<xref ref-type="bibr" rid="CR3">3</xref>]. The mean EF in our group was 33.8 ± 11.3%.</p>
+        <p>The small size of our study, as well as the lack of blinding, imply the need for exercising caution in interpreting our results. Many potential confounding factors influence diuresis, such as variability in ambient and body temperature and humidity, which may be difficult to avoid even in a clinical trial. The wide SDs in our results indicate a high probability of chance findings as an explanation of our results. However, the limited clinical experience mentioned above encourages generation of a hypothesis that acetazolamide may augment the diuretic response to other diuretic agents.</p>
+      </sec>
+      <sec id="Sec15">
+        <title>Conclusions</title>
+        <p>The results of this pilot study suggest that adding acetazolamide to other stable diuretic drugs in patients hospitalized with heart failure exacerbation may produce an additional diuretic effect and alleviation of dyspnea. These findings need to be confirmed in a larger randomized controlled study.
+</p>
+      </sec>
+    </body>
+    <back>
+      <ack>
+        <title>Acknowledgements</title>
+        <p>Editorial support was provided by Sophie Rushton-Smith, PhD (MedLink Healthcare Communications Limited) and was funded by the authors.</p>
+      </ack>
+      <notes notes-type="ethics">
+        <title>Compliance with ethical standards</title>
+        <notes id="FPar2" notes-type="funding">
+          <title>Funding</title>
+          <p>This study was conducted thanks to a Centre of Postgraduate Medical Education Grant (Number 501-1-10-14-16). The study drug was provided free of charge by the Polish manufacturer (Polpharma).</p>
+        </notes>
+        <notes id="FPar3" notes-type="COI-statement">
+          <title>Conflict of interest</title>
+          <p>Tomasz Imiela and Andrzej Budaj have no conflicts of interest to declare.</p>
+        </notes>
+        <notes id="FPar4">
+          <title>Ethics approval</title>
+          <p>This study was approved by the Postgraduate Medical School Ethics Committee (Approval No. 17/PB/2015) and all procedures in the study were in accordance with the 1964 Declaration of Helsinki.</p>
+        </notes>
+        <notes id="FPar5">
+          <title>Informed consent</title>
+          <p>Written informed consent was obtained from all patients.</p>
+        </notes>
+      </notes>
+      <ref-list id="Bib1">
+        <title>References</title>
+        <ref id="CR1">
+          <label>1.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Mosterd</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hoes</surname>
+                <given-names>AW</given-names>
+              </name>
+            </person-group>
+            <article-title>Clinical epidemiology of heart failure</article-title>
+            <source>Heart.</source>
+            <year>2007</year>
+            <volume>93</volume>
+            <issue>9</issue>
+            <fpage>1137</fpage>
+            <lpage>1146</lpage>
+            <pub-id pub-id-type="doi">10.1136/hrt.2003.025270</pub-id>
+            <pub-id pub-id-type="pmid">17699180</pub-id>
+            <pub-id pub-id-type="pmcid">PMC1955040</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR2">
+          <label>2.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kelder</surname>
+                <given-names>JC</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cramer</surname>
+                <given-names>MJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van Wijngaarden</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van Tooren</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mosterd</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Moons</surname>
+                <given-names>KG</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>The diagnostic value of physical examination and additional testing in primary care patients with suspected heart failure</article-title>
+            <source>Circulation.</source>
+            <year>2011</year>
+            <volume>124</volume>
+            <issue>25</issue>
+            <fpage>2865</fpage>
+            <lpage>2873</lpage>
+            <pub-id pub-id-type="doi">10.1161/CIRCULATIONAHA.111.019216</pub-id>
+            <pub-id pub-id-type="pmid">22104551</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR3">
+          <label>3.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ponikowski</surname>
+                <given-names>P</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Voors</surname>
+                <given-names>AA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Anker</surname>
+                <given-names>SD</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bueno</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cleland</surname>
+                <given-names>JG</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Coats</surname>
+                <given-names>AJ</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>2016 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure: The Task Force for the diagnosis and treatment of acute and chronic heart failure of the European Society of Cardiology (ESC)Developed with the special contribution of the Heart Failure Association (HFA) of the ESC</article-title>
+            <source>Eur Heart J.</source>
+            <year>2016</year>
+            <volume>37</volume>
+            <issue>27</issue>
+            <fpage>2129</fpage>
+            <lpage>2200</lpage>
+            <pub-id pub-id-type="doi">10.1093/eurheartj/ehw128</pub-id>
+            <pub-id pub-id-type="pmid">27206819</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR4">
+          <label>4.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kassamali</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sica</surname>
+                <given-names>DA</given-names>
+              </name>
+            </person-group>
+            <article-title>Acetazolamide: a forgotten diuretic agent</article-title>
+            <source>Cardiol Rev.</source>
+            <year>2011</year>
+            <volume>19</volume>
+            <issue>6</issue>
+            <fpage>276</fpage>
+            <lpage>278</lpage>
+            <pub-id pub-id-type="doi">10.1097/CRD.0b013e31822b4939</pub-id>
+            <pub-id pub-id-type="pmid">21983315</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR5">
+          <label>5.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Hanley</surname>
+                <given-names>T</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Platts</surname>
+                <given-names>MM</given-names>
+              </name>
+            </person-group>
+            <article-title>Acetazolamide (diamox) in the treatment of congestive heart-failure</article-title>
+            <source>Lancet.</source>
+            <year>1956</year>
+            <volume>270</volume>
+            <issue>6919</issue>
+            <fpage>357</fpage>
+            <lpage>359</lpage>
+            <pub-id pub-id-type="doi">10.1016/S0140-6736(56)90105-2</pub-id>
+            <pub-id pub-id-type="pmid">13307929</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR6">
+          <label>6.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Neuberg</surname>
+                <given-names>GW</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Miller</surname>
+                <given-names>AB</given-names>
+              </name>
+              <name name-style="western">
+                <surname>O’Connor</surname>
+                <given-names>CM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Belkin</surname>
+                <given-names>RN</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Carson</surname>
+                <given-names>PE</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cropp</surname>
+                <given-names>AB</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Diuretic resistance predicts mortality in patients with advanced heart failure</article-title>
+            <source>Am Heart J.</source>
+            <year>2002</year>
+            <volume>144</volume>
+            <issue>1</issue>
+            <fpage>31</fpage>
+            <lpage>38</lpage>
+            <pub-id pub-id-type="doi">10.1067/mhj.2002.123144</pub-id>
+            <pub-id pub-id-type="pmid">12094185</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR7">
+          <label>7.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Verbrugge</surname>
+                <given-names>FH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dupont</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bertrand</surname>
+                <given-names>PB</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nijst</surname>
+                <given-names>P</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Penders</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dens</surname>
+                <given-names>J</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Determinants and impact of the natriuretic response to diuretic therapy in heart failure with reduced ejection fraction and volume overload</article-title>
+            <source>Acta Cardiol.</source>
+            <year>2015</year>
+            <volume>70</volume>
+            <issue>3</issue>
+            <fpage>265</fpage>
+            <lpage>273</lpage>
+            <pub-id pub-id-type="doi">10.1080/AC.70.3.3080630</pub-id>
+            <pub-id pub-id-type="pmid">26226699</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR8">
+          <label>8.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Felker</surname>
+                <given-names>GM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mentz</surname>
+                <given-names>RJ</given-names>
+              </name>
+            </person-group>
+            <article-title>Diuretics and ultrafiltration in acute decompensated heart failure</article-title>
+            <source>J Am Coll Cardiol.</source>
+            <year>2012</year>
+            <volume>59</volume>
+            <issue>24</issue>
+            <fpage>2145</fpage>
+            <lpage>2153</lpage>
+            <pub-id pub-id-type="doi">10.1016/j.jacc.2011.10.910</pub-id>
+            <pub-id pub-id-type="pmid">22676934</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR9">
+          <label>9.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Knauf</surname>
+                <given-names>H</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mutschler</surname>
+                <given-names>E</given-names>
+              </name>
+            </person-group>
+            <article-title>Sequential nephron blockade breaks resistance to diuretics in edematous states</article-title>
+            <source>J Cardiovasc Pharmacol.</source>
+            <year>1997</year>
+            <volume>29</volume>
+            <issue>3</issue>
+            <fpage>367</fpage>
+            <lpage>372</lpage>
+            <pub-id pub-id-type="doi">10.1097/00005344-199703000-00010</pub-id>
+            <pub-id pub-id-type="pmid">9125675</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR10">
+          <label>10.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Zahedi</surname>
+                <given-names>K</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Barone</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Xu</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Soleimani</surname>
+                <given-names>M</given-names>
+              </name>
+            </person-group>
+            <article-title>Potentiation of the effect of thiazide derivatives by carbonic anhydrase inhibitors: molecular mechanisms and potential clinical implications</article-title>
+            <source>PLoS One.</source>
+            <year>2013</year>
+            <volume>8</volume>
+            <issue>11</issue>
+            <fpage>e79327</fpage>
+            <pub-id pub-id-type="doi">10.1371/journal.pone.0079327</pub-id>
+            <pub-id pub-id-type="pmid">24260196</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3832474</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="CR11">
+          <label>11.</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>McMurray</surname>
+                <given-names>JJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Adamopoulos</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Anker</surname>
+                <given-names>SD</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Auricchio</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bohm</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dickstein</surname>
+                <given-names>K</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure 2012: the task force for the diagnosis and treatment of acute and chronic heart failure 2012 of the European Society of Cardiology. Developed in collaboration with the Heart Failure Association (HFA) of the ESC</article-title>
+            <source>Eur Heart J.</source>
+            <year>2012</year>
+            <volume>33</volume>
+            <issue>14</issue>
+            <fpage>1787</fpage>
+            <lpage>1847</lpage>
+            <pub-id pub-id-type="doi">10.1093/eurheartj/ehs104</pub-id>
+            <pub-id pub-id-type="pmid">22611136</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </article>
+</pmc-articleset>

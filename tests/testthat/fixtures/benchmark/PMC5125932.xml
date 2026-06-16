@@ -1,0 +1,3092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="review-article" xml:lang="en" dtd-version="1.4">
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Mol Cells</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Mol. Cells</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">2084</journal-id>
+        <journal-id journal-id-type="pmc-domain">molcells</journal-id>
+        <journal-id journal-id-type="publisher-id">ksmcb</journal-id>
+        <journal-title-group>
+          <journal-title>Molecules and Cells</journal-title>
+        </journal-title-group>
+        <issn pub-type="ppub">1016-8478</issn>
+        <issn pub-type="epub">0219-1032</issn>
+        <publisher>
+          <publisher-name>Korean Society for Molecular and Cellular Biology</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC5125932</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC5125932.1</article-id>
+        <article-id pub-id-type="pmcaid">5125932</article-id>
+        <article-id pub-id-type="pmcaiid">5125932</article-id>
+        <article-id pub-id-type="pmid">27871174</article-id>
+        <article-id pub-id-type="doi">10.14348/molcells.2016.0232</article-id>
+        <article-id pub-id-type="publisher-id">molce-39-11-777</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Minireview</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Viral Inhibition of PRR-Mediated Innate Immune Response: Learning from KSHV Evasion Strategies</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Lee</surname>
+              <given-names initials="HR">Hye-Ra</given-names>
+            </name>
+            <xref ref-type="aff" rid="af1-molce-39-11-777">1</xref>
+            <xref rid="c1-molce-39-11-777" ref-type="corresp">*</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Choi</surname>
+              <given-names initials="UY">Un Yung</given-names>
+            </name>
+            <xref ref-type="aff" rid="af2-molce-39-11-777">2</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Hwang</surname>
+              <given-names initials="SW">Sung-Woo</given-names>
+            </name>
+            <xref ref-type="aff" rid="af1-molce-39-11-777">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Kim</surname>
+              <given-names initials="S">Stephanie</given-names>
+            </name>
+            <xref ref-type="aff" rid="af2-molce-39-11-777">2</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Jung</surname>
+              <given-names initials="JU">Jae U.</given-names>
+            </name>
+            <xref ref-type="aff" rid="af2-molce-39-11-777">2</xref>
+          </contrib>
+        </contrib-group>
+        <aff id="af1-molce-39-11-777"><label>1</label>Department of Biotechnology and Bioinformatics, College of Science and Technology, Korea University, Sejong 30019, 
+<country>Korea</country></aff>
+        <aff id="af2-molce-39-11-777"><label>2</label>Department of Molecular Microbiology and Immunology, Keck School of Medicine, University of Southern California, Harlyne J. Norris Cancer Research Tower, 1450 Biggy Street, Los Angeles, California 90033, 
+<country>USA</country></aff>
+        <author-notes>
+          <corresp id="c1-molce-39-11-777"><label>*</label>Correspondence: <email>leehr@korea.ac.kr</email></corresp>
+        </author-notes>
+        <pub-date pub-type="ppub">
+          <day>30</day>
+          <month>11</month>
+          <year>2016</year>
+        </pub-date>
+        <pub-date pub-type="epub">
+          <day>18</day>
+          <month>11</month>
+          <year>2016</year>
+        </pub-date>
+        <volume>39</volume>
+        <issue>11</issue>
+        <issue-id pub-id-type="pmc-issue-id">279790</issue-id>
+        <fpage>777</fpage>
+        <lpage>782</lpage>
+        <history>
+          <date date-type="received">
+            <day>21</day>
+            <month>9</month>
+            <year>2016</year>
+          </date>
+          <date date-type="rev-recd">
+            <day>04</day>
+            <month>11</month>
+            <year>2016</year>
+          </date>
+          <date date-type="accepted">
+            <day>07</day>
+            <month>11</month>
+            <year>2016</year>
+          </date>
+        </history>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>18</day>
+              <month>11</month>
+              <year>2016</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>15</day>
+              <month>12</month>
+              <year>2016</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2025-06-19 19:25:36.267">
+              <day>19</day>
+              <month>06</month>
+              <year>2025</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>© The Korean Society for Molecular and Cellular Biology. All rights reserved.</copyright-statement>
+          <copyright-year>2016</copyright-year>
+          <license>
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncsalicense">https://creativecommons.org/licenses/by-nc-sa/3.0/</ali:license_ref>
+            <license-p>This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License. To view a copy of this license, visit <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</ext-link>.</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="molce-39-11-777.pdf"/>
+        <abstract>
+          <p>The innate immune system has evolved to detect and destroy invading pathogens before they can establish systemic infection. To successfully eradicate pathogens, including viruses, host innate immunity is activated through diverse pattern recognition receptors (PRRs) which detect conserved viral signatures and trigger the production of type I interferon (IFN) and pro-inflammatory cytokines to mediate viral clearance. Viral persistence requires that viruses co-opt cellular pathways and activities for their benefit. In particular, due to the potent antiviral activities of IFN and cytokines, viruses have developed various strategies to meticulously modulate intracellular innate immune sensing mechanisms to facilitate efficient viral replication and persistence. In this review, we highlight recent advances in the study of viral immune evasion strategies with a specific focus on how Kaposi’s sarcoma-associated herpesvirus (KSHV) effectively targets host PRR signaling pathways.</p>
+        </abstract>
+        <kwd-group>
+          <kwd>cytokines</kwd>
+          <kwd>KSHV</kwd>
+          <kwd>immune evasion strategy</kwd>
+          <kwd>innate immune response</kwd>
+          <kwd>PRRs</kwd>
+          <kwd>type I IFN</kwd>
+        </kwd-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY-NC-SA</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec sec-type="intro">
+        <title>INTRODUCTION</title>
+        <p>Kaposi’s sarcoma-associated herpesvirus (KSHV) is a large double stranded DNA virus that has been identified as a causative agent of Kaposi’s sarcoma (KS), primary effusion lymphoma (PEL), and multicentric Castleman’s disease (MCD) (<xref rid="b25-molce-39-11-777" ref-type="bibr">Ganem, 2010</xref>; <xref rid="b48-molce-39-11-777" ref-type="bibr">Nador et al., 1996</xref>; <xref rid="b59-molce-39-11-777" ref-type="bibr">Soulier et al., 1995</xref>). Just like other herpesviruses, KSHV displays biphasic life cycles known as latency and lytic replication. In latency, very few genes are expressed without producing progeny virions (<xref rid="b12-molce-39-11-777" ref-type="bibr">Chang et al., 1996</xref>; <xref rid="b20-molce-39-11-777" ref-type="bibr">Dittmer et al., 1998</xref>; <xref rid="b35-molce-39-11-777" ref-type="bibr">Kedes et al., 1997</xref>; <xref rid="b76-molce-39-11-777" ref-type="bibr">Zhong et al., 1996</xref>). Under specific conditions, KSHV can undergo lytic replication, resulting in the expression of almost all of the viral genome and the production of new viral particles by the replication of viral genomic DNA. Remarkably, accumulated data indicates that regulation of host immune response is critical for maintaining these viral life cycles (<xref rid="b39-molce-39-11-777" ref-type="bibr">Lee et al., 2012</xref>). Thus, a large portion of the KSHV genome is devoted to immunomodulatory proteins that subvert the host immune system to ensure viral persistence (<xref rid="b40-molce-39-11-777" ref-type="bibr">Lee et al., 2015</xref>).</p>
+        <p>Upon viral infection, the innate immune response is immediately engaged by pattern recognition receptors (PRRs) sensing of conserved molecular features of pathogens, called pathogen-associated molecular patterns (PAMPs) (<xref rid="b8-molce-39-11-777" ref-type="bibr">Brennan and Bowie, 2010</xref>; <xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>; <xref rid="b29-molce-39-11-777" ref-type="bibr">Hoffmann and Akira, 2013</xref>; <xref rid="b38-molce-39-11-777" ref-type="bibr">Lee and Kim, 2007</xref>). Currently, five types of PRRs are known: Toll-like receptors (TLRs), retinoic acid-inducible gene-I (RIG-I)-like receptors (RLRs), nucleotide-binding oligomerization domain (NOD)-like receptors (NLRs), absent in melanoma 2 (AIM2)-like receptors (ALRs), and cytosolic DNA-sensing receptors (<xref rid="b8-molce-39-11-777" ref-type="bibr">Brennan and Bowie, 2010</xref>; <xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>; <xref rid="b11-molce-39-11-777" ref-type="bibr">Cai et al., 2014</xref>; <xref rid="b29-molce-39-11-777" ref-type="bibr">Hoffmann and Akira, 2013</xref>). These PRRs induce intracellular signaling cascades that upregulate expression of pro-inflammatory cytokines and type I IFNs, which ultimately amplifies innate immune signaling and coordinates adaptive immune response to clear pathogens (<xref rid="b51-molce-39-11-777" ref-type="bibr">Paludan et al., 2011</xref>; <xref rid="b63-molce-39-11-777" ref-type="bibr">Takeuchi and Akira, 2010</xref>). Hence, viruses directly modulate PRR activity to dramatically alter the efficacy of innate immune responses for their benefit.</p>
+        <p>Here, we present recent advances of how KSHV circumvents the surveillance network of PRR signaling pathways to avoid inducing the potent IFN and pro-inflammatory cytokines.</p>
+      </sec>
+      <sec>
+        <title>TLR SIGNALING PATHWAY</title>
+        <p>Among PRRs, TLRs were the first to be identified and are the best characterized. Structurally, TLRs consist of extracellular leucine-rich repeats (LRRs) domain for ligand recognition and a cytoplasmic Toll/interleukin-1 (IL-1) receptor homology (TIR) domain for the recruitment of adaptor molecules (<xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>). To date, 13 TLRs have been identified. TLR ligand recognition is mediated by their localization to different subcellular compartments. One group of TLRs (TLRs 1, 2, 4, 5, 6, and 11) is found in the plasma membrane and sense lipids, lipoproteins, and proteins. The other groups of TLRs (TLRs 3, 7, 8, and 9) are localized at the endosomal membranes and primarily recognize nucleic acids (<xref rid="b45-molce-39-11-777" ref-type="bibr">McCartney and Colonna, 2009</xref>; <xref rid="b49-molce-39-11-777" ref-type="bibr">O’Neill et al., 2013</xref>).</p>
+        <p>Ligand binding first promotes the dimerization of TLRs, which serves as a platform to recruit two TIR domain-containing adaptor proteins, MyD88 and TRIF. Consequently, transcription of inflammatory cytokines and type I IFNs are initiated through the activation of NF-κB and IRFs by either MyD88-dependent or TRIF-dependent pathways (<xref rid="b4-molce-39-11-777" ref-type="bibr">Akira et al., 2006</xref>; <xref rid="b17-molce-39-11-777" ref-type="bibr">De Nardo, 2015</xref>; <xref rid="b40-molce-39-11-777" ref-type="bibr">Lee et al., 2015</xref>). The association of all TLRs, except TLR3, with MyD88 sequentially stimulates the recruitment IRAK, activates TRAF6 and TAK1, and ultimately activates NF-κB and AP-1 activity through the respective IKK complex and MAP kinases. In contrast to the MyD88 dependent TLR signaling, TRIF is recruited by TLR3 and TLR4 to activate NF-κB by two independent ways: the N-terminal domain of TRIF directly interacts with TRAF6, leading to the activation of NF-κB, whereas the C-terminal domain of TRIF interacts with RIP, causing activation of TAK1 (<xref rid="b7-molce-39-11-777" ref-type="bibr">Beutler, 2009</xref>; <xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>; <xref rid="b17-molce-39-11-777" ref-type="bibr">De Nardo, 2015</xref>; <xref rid="b36-molce-39-11-777" ref-type="bibr">Kerur et al., 2011</xref>).</p>
+        <p>TLRs promote inflammatory cytokines and type I IFN signaling in response to viral infection by detecting multiple viral PAMPs. TLR3 senses either the genomic component of double-stranded RNA (dsRNA) viruses or an intermediate of the replication of single-stranded RNA (ssRNA) viruses (<xref rid="b31-molce-39-11-777" ref-type="bibr">Iwasaki and Medzhitov, 2004</xref>). TLR7 and TLR8 recognize genomes of ssRNA viruses and TLR9 recognizes genomes of double-stranded DNA (dsDNA) viruses (<xref rid="b6-molce-39-11-777" ref-type="bibr">Bauer et al., 2001</xref>; <xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>; <xref rid="b31-molce-39-11-777" ref-type="bibr">Iwasaki and Medzhitov, 2004</xref>). Hence, it is not surprising that KSHV has learned to manipulate these TLRs-mediated host immune control mechanisms to facilitate its life cycle.</p>
+        <sec>
+          <title>TLR3</title>
+          <p>KSHV stimulates TLR3 gene expression that ultimately induces several cytokines and chemokines, including IFN-β, CCL-2, and CXCL10, during <italic toggle="yes">de novo</italic> infection (<xref rid="b40-molce-39-11-777" ref-type="bibr">Lee et al., 2015</xref>; <xref rid="b67-molce-39-11-777" ref-type="bibr">West and Damania, 2008</xref>). However, at later time points of infection, TLR3 expression is reduced, due to inhibition of the TLR3-mediated induction of IFN-responsive promoters by KSHV encoded vIRF (viral interferon regulatory factor)-1, -2, and -3 (<xref rid="b32-molce-39-11-777" ref-type="bibr">Jacobs et al., 2013</xref>; <xref rid="b67-molce-39-11-777" ref-type="bibr">West and Damania, 2008</xref>). Interestingly, among vIRFs, only vIRF1 decreases phosphorylation and nuclear translocation of IRF3 upon TLR3 activation, suggesting that vIRF1 and other vIRFs block TLR3-mediated IFN-β production in different manners (<xref rid="b32-molce-39-11-777" ref-type="bibr">Jacobs et al., 2013</xref>). Recently, <xref rid="b33-molce-39-11-777" ref-type="bibr">Jacobs et al. (2015)</xref> demonstrated that vIRF1 interacts with cellular ISG15 E3 ligase HERC5 and decreases global IS-Glyation in the context of TLR3 activation. Together, these findings suggest that each vIRF may uniquely inhibit the TLR3-mediated antiviral responses.</p>
+        </sec>
+        <sec>
+          <title>Other TLRs</title>
+          <p>Infection of THP-1 monocytes with KSHV leads to the inhibition of both TLR2 and TLR4 signaling by several different viral ORFs including ORF21, ORF31, and RTA. Particularly, the KSHV replication and transcription activator (RTA) that functions as a major transcription factor and E3 ligase, strongly downregulates TLR2 and TLR4 signaling by causing their degradation (<xref rid="b10-molce-39-11-777" ref-type="bibr">Bussey et al., 2014</xref>). However, the underlying molecular mechanism of RTA-induced TLR degradation is unclear due to the nuclear localization of RTA and cell surface localization of these TLRs. One possible mechanism is that RTA may employ unknown nuclear host factors that mediated TLR degradation via indirect manners. During infection of lymphatic endothelial cells, KSHV expression of viral G-protein coupled receptor (vGPCR) and vIRF1 activates the extracellular signal-regulated kinase (ERK) that in turn suppresses TLRs expression (<xref rid="b37-molce-39-11-777" ref-type="bibr">Lagos et al., 2008</xref>). Remarkably, HIV-1 infected patients harboring TLR4 SNP have higher rates of KSHV-associated MCD compare to other subjects (<xref rid="b37-molce-39-11-777" ref-type="bibr">Lagos et al., 2008</xref>). Agonist specific activation of TLR7 and TLR8 reactivates KSHV from latency (<xref rid="b27-molce-39-11-777" ref-type="bibr">Gregory et al., 2009</xref>). Later, <xref rid="b68-molce-39-11-777" ref-type="bibr">West et al. (2011)</xref> reported that induction of IFN-α in KSHV infected human dendritic cells occurs through the stimulation of TLR9-mediated signaling. Taken together, these findings are evidence that KSHV employs various strategies to escape TLR-mediated detection throughout its lifecycle that ultimately allows KSHV to establish viral latency in diverse cell types.</p>
+        </sec>
+        <sec>
+          <title>Adaptor molecules: TRIF and MyD88</title>
+          <p>Given that TRIF is essential for TLR3 signaling, the RTA-mediated degradation of TRIF blocks the TLR3 signaling pathway, and consequently blocks IFN production (<xref rid="b3-molce-39-11-777" ref-type="bibr">Ahmad et al., 2011</xref>; <xref rid="b46-molce-39-11-777" ref-type="bibr">Meyer et al., 2013</xref>). Meanwhile, TRIF enhances KSHV RTA protein expression as a potential regulatory loop (<xref rid="b46-molce-39-11-777" ref-type="bibr">Meyer et al., 2013</xref>). In the other words, the activation of TRIF leads to enhanced RTA protein expression. Subsequently, RTA degrades TRIF and ultimately inhibits the activation of TLR-mediated innate immunity (<xref rid="b46-molce-39-11-777" ref-type="bibr">Meyer et al., 2013</xref>), suggesting that RTA utilizes TRIF to escape the host signaling for their own benefits during their life cycles.</p>
+          <p>MyD88 is another key adaptor that initiates signal transduction pathways for all human TLRs except TLR3 to produce pro-inflammatory cytokines and type I IFNs (<xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>; <xref rid="b17-molce-39-11-777" ref-type="bibr">De Nardo, 2015</xref>; <xref rid="b40-molce-39-11-777" ref-type="bibr">Lee et al., 2015</xref>). Consistent with the destabilizing role of RTA on TRIF, Zhao et al. recently found that RTA directly interacts with MyD88, leading to the proteasomal degradation of MyD88 and suppression of TLR4-mediated NF-κB activity as well as IFN production (<xref rid="b75-molce-39-11-777" ref-type="bibr">Zhao et al., 2015</xref>). Moreover, MyD88 is downregulated during early stages of <italic toggle="yes">de novo</italic> infection and lytic reactivation. Overall, KSHV RTA is a crucial virulent factor that utilizes multiple strategies to inhibit effective TLR-mediated signaling.</p>
+        </sec>
+        <sec>
+          <title>IRAK1</title>
+          <p>Interleukin-1 receptor-associated kinase (IRAK) is a family of four serine/threonine kinases that associated with the IL-receptor: IRAK-1, IRAK-2, IRAK-M, and IRAK-4. IRAK-1 is composed of an N-terminal death domain that interacts with MyD88 and a central kinase domain (<xref rid="b62-molce-39-11-777" ref-type="bibr">Takeda and Akira, 2004</xref>). Among them the 18 mature miRNAs identified in the KSHV genome (<xref rid="b56-molce-39-11-777" ref-type="bibr">Samols et al., 2007</xref>; <xref rid="b66-molce-39-11-777" ref-type="bibr">Walz et al., 2010</xref>), KSHV miR-K9 and miR-K5 regulate the TLR/IL-1R signaling cascade by suppressing expression of the regulatory factors IRAK-1 and MyD88 (<xref rid="b1-molce-39-11-777" ref-type="bibr">Abend et al., 2012</xref>). Interestingly, <xref rid="b71-molce-39-11-777" ref-type="bibr">Yang et al. (2014)</xref> reported that constitutive phosphorylation of IRAK-1 in primary effusion lymphoma (PEL) is required for cell survival. This indicates that IRAK-1-mediated TLR signaling is a driving force in PEL growth and thus, IRAK-1 may be a potential therapeutic target for KSHV-associated pathogenesis.</p>
+        </sec>
+      </sec>
+      <sec>
+        <title>THE NLR SIGNALING PATHWAY</title>
+        <p>The NLR family consists of a central nucleotide-binding domain and C-terminal leucine-rich repeats (LRRs). The N-terminal portions of most NLRs harbor protein-protein interaction domains such as the caspase recruitment domain (CARD), pyrin domain (PYD), or baculovirus inhibitor repeats (BIRs) (<xref rid="b47-molce-39-11-777" ref-type="bibr">Monie, 2013</xref>; <xref rid="b63-molce-39-11-777" ref-type="bibr">Takeuchi and Akira, 2010</xref>). LRRs are though to play a role in PAMP sensing to allow the N-terminal PYD to bind to the adaptor protein, ASC, via a PYD-PYD interaction. ASC, which also contains a CARD domain, then binds to and activates caspase-1 through a CARD-CARD interaction (<xref rid="b23-molce-39-11-777" ref-type="bibr">Franchi et al., 2009</xref>; <xref rid="b63-molce-39-11-777" ref-type="bibr">Takeuchi and Akira, 2010</xref>). Collectively these large multimeric complexes are termed inflammasome. Inflammasome activated caspase-1 is a key effector molecule that cleaves proinflammatory cytokines IL-1β and IL-18, and induces an inflammatory form of cell death called pyroptosis (<xref rid="b57-molce-39-11-777" ref-type="bibr">Schroder and Tschopp, 2010</xref>). In contrast to inflammasome formation, NLR members NOD1 and NOD2 induce the activation of IRF3, IRF7, NF-κB, and MAPK signaling pathways through RIP2/RICK binding (<xref rid="b16-molce-39-11-777" ref-type="bibr">Coutermarsh-Ott et al., 2016</xref>; <xref rid="b43-molce-39-11-777" ref-type="bibr">Lupfer and Kanneganti, 2013</xref>). Hence, NLR proteins regulate both the IFN and inflammatory pathways.</p>
+        <p>Remarkably, KSHV ORF63, a viral homolog of cellular NLRP1, contains a LRR and a nucleotide-binding domain (NBD) that are required for oligomerization, but lacks the CARD and PYD effector domains of its cellular counterpart. Thus, ORF63 can directly interact with NLRP1 to block NLRP1-dependent caspase-1 activation, leading to the inhibition of IL-1β and IL-18 processing (<xref rid="b28-molce-39-11-777" ref-type="bibr">Gregory et al., 2011</xref>). Additionally, ORF63 inhibits the NLRP3 inflammasome despite lacking significant similarity to NLRP3 (<xref rid="b28-molce-39-11-777" ref-type="bibr">Gregory et al., 2011</xref>). Overall, KSHV utilizes ORF63 to broadly suppress NLR-mediated signaling during its life cycle.</p>
+      </sec>
+      <sec>
+        <title>THE RLR SIGNALING PATHWAY</title>
+        <p>RLRs are cytoplasmic RNA helicases that function as viral RNA sensors. Currently, there are three known members of this family: Retinoic acid-inducible gene-I (RIG-I), laboratory of genetics and physiology 2 (LGP2), and melanoma differentiation gene 5 (MDA5) (<xref rid="b45-molce-39-11-777" ref-type="bibr">McCartney and Colonna, 2009</xref>). Both RIG-I and MDA5 have central DExH/D box helicase domains for RNA binding and N-terminal CARDs for coupling downstream signaling adaptors (<xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>; <xref rid="b24-molce-39-11-777" ref-type="bibr">Gack et al., 2007</xref>; <xref rid="b52-molce-39-11-777" ref-type="bibr">Pichlmair et al., 2006</xref>; <xref rid="b72-molce-39-11-777" ref-type="bibr">Yoneyama et al., 2004</xref>; <xref rid="b73-molce-39-11-777" ref-type="bibr">2005</xref>). RIG-I preferentially recognizes short 5′-triphosphates sequence motifs in ssRNA and short dsRNA, while MDA5 recognizes long dsRNA for sensing (<xref rid="b34-molce-39-11-777" ref-type="bibr">Kato et al., 2008</xref>; <xref rid="b45-molce-39-11-777" ref-type="bibr">McCartney and Colonna, 2009</xref>; <xref rid="b54-molce-39-11-777" ref-type="bibr">Saito and Gale, 2008</xref>; <xref rid="b54-molce-39-11-777" ref-type="bibr">Saito et al., 2008</xref>). After sensing cytosolic viral RNA, RIG-I and MDA5, activate the mitochondrial antiviral signaling protein (MAVS) adaptor molecule. This initiates a signaling cascade to induce proinflammatory cytokines and type I IFN production (<xref rid="b22-molce-39-11-777" ref-type="bibr">Fitzgerald et al., 2003</xref>). A growing body of evidence indicates that RIG-I is also involved in the recognition of DNA viruses, further highlighting the importance of RIG-I as a viral sensor (<xref rid="b13-molce-39-11-777" ref-type="bibr">Cheng et al., 2007</xref>; <xref rid="b14-molce-39-11-777" ref-type="bibr">Chiu et al., 2009</xref>).</p>
+        <p>To counteract RIG-I signaling, KSHV ORF64, a viral deubiquitinase (DUB), decreases the ubiquitination of RIG-I to reduce RIG-I activation, and subsequently downregulates RIG-I-mediated IFN signaling (<xref rid="b30-molce-39-11-777" ref-type="bibr">Inn et al., 2011</xref>). Furthermore, depletion of either MAVS or RIG-I increases global transcription of the viral genome upon <italic toggle="yes">de novo</italic> infection of KSHV, suggesting that RIG-I-mediated activation of MAVS inhibits KSHV transcription following primary infection (<xref rid="b69-molce-39-11-777" ref-type="bibr">West et al., 2014</xref>). Thus, the immediate suppression of RIG-I mediated activation of type I IFNs during <italic toggle="yes">de novo</italic> KSHV infection and reactivation might allow them to efficiently evade host antiviral immune responses in order to establish their life cycle.</p>
+      </sec>
+      <sec>
+        <title>THE CYTOSOLIC DNA SENSING RECEPTOR SIGNALING PATHWAY</title>
+        <p>Intracellular detection of pathogenic DNA is also critical for initiating host immune responses and eliminating microbial infection. So far, more than ten DNA cytosolic receptors have been identified: DAI, AIM2, RNA polymerase-III, IFI16, STING, LRRFIP1, Ku70, DHX9, DHX36, and cGAS (<xref rid="b9-molce-39-11-777" ref-type="bibr">Brubaker et al., 2015</xref>; <xref rid="b60-molce-39-11-777" ref-type="bibr">Sun et al., 2013</xref>; <xref rid="b61-molce-39-11-777" ref-type="bibr">Takaoka et al., 2007</xref>). Currently, three DNA receptors, AIM2, IFI16, and cGAS, have been implicated as major sensors of intracellular DNA, especially during viral infection. Herein, we highlight how KSHV modulates IFI16 and cGAS to activate IFN responses during its life cycle.</p>
+        <sec>
+          <title>IFI16</title>
+          <p>DNA binding proteins, IFI16 and AIM2 belong to the AIM2-like receptor (ALR) family involved in detecting intracellular DNA. ALR family proteins comprise of a PYRIN domain and a DNA-binding HIN-200 domain (<xref rid="b50-molce-39-11-777" ref-type="bibr">Orzalli and Knipe, 2014</xref>). AIM2 was first identified as a receptor for cytosolic DNA, which forms an inflammasome together with the adaptor ASC to activate caspase-1 (<xref rid="b18-molce-39-11-777" ref-type="bibr">de Zoete et al., 2014</xref>; <xref rid="b21-molce-39-11-777" ref-type="bibr">Fernandes-Alnemri et al., 2009</xref>). Intriguingly, unlike AIM2 that is strictly localized to the cytoplasm, IFI16, an AIM2 related protein, can translocate between the cytoplasm and nucleus. However, at steadystate, IFI16 primarily localizes to the nucleus where IFI16 can bind to and activate IRF3 (<xref rid="b41-molce-39-11-777" ref-type="bibr">Li et al., 2012</xref>; <xref rid="b50-molce-39-11-777" ref-type="bibr">Orzalli and Knipe, 2014</xref>; <xref rid="b65-molce-39-11-777" ref-type="bibr">Veeranki and Choubey, 2012</xref>). IFI16 coordinates a diverse range of immune pathways such as the activation of STING-dependent IFN production as well as inflammasome formation (<xref rid="b15-molce-39-11-777" ref-type="bibr">Christensen and Paludan, 2016</xref>; <xref rid="b19-molce-39-11-777" ref-type="bibr">Diner et al., 2015</xref>; <xref rid="b64-molce-39-11-777" ref-type="bibr">Unterholzner et al., 2010</xref>).</p>
+          <p>During KSHV infection in endothelial cells and B cells, KSHV DNA triggers IFI16 inflammasome assembly and activation of caspase-1 and IL-1β (<xref rid="b36-molce-39-11-777" ref-type="bibr">Kerur et al., 2011</xref>; <xref rid="b58-molce-39-11-777" ref-type="bibr">Singh et al., 2013</xref>). Furthermore, IFI16 has been shown to be involved in the induction of IFN-β production during KSHV <italic toggle="yes">de novo</italic> infection by targeting the IFI16-STING-IRF3 axis (<xref rid="b5-molce-39-11-777" ref-type="bibr">Ansari et al., 2015</xref>). Very recently, <xref rid="b53-molce-39-11-777" ref-type="bibr">Roy et al. (2016)</xref> demonstrated that IFI16 binds to the lytic gene promoter and acts as a transcriptional repressor to maintain viral latency. Overall, these observations indicate that the efficient maintenance of latency by IFI16 and the activation of the IFI16 inflammasome by latent KSHV could drive KSHV-associated inflammatory cytokine syndromes, like MCD.</p>
+        </sec>
+        <sec>
+          <title>cGAS</title>
+          <p>cGAMP synthase (cGAS), the most recently identified cytosolic DNA sensor, generates cGAMP (cyclic guanosine monophosphate-adenosine monophosphate) from ATP and GTP upon recognition of pathogen-derived DNA (<xref rid="b42-molce-39-11-777" ref-type="bibr">Liu et al., 2016</xref>). The second messenger cGAMP stimulates STING-mediated TBK-1 activation, leading to activation of IRF3. IRF3 then induces the transcriptional activation of IFNs and other cytokines, consequently facilitating host immune responses (<xref rid="b2-molce-39-11-777" ref-type="bibr">Ablasser et al., 2013</xref>; <xref rid="b26-molce-39-11-777" ref-type="bibr">Gao et al., 2013</xref>; <xref rid="b60-molce-39-11-777" ref-type="bibr">Sun et al., 2013</xref>). Since cGAS has been shown to play a key role in the type I interferon response against DNA viruses, <xref rid="b70-molce-39-11-777" ref-type="bibr">Wu et al. (2015)</xref> recently revealed that KSHV ORF52 binds to DNA and cGAS, leading to the direct inhibition of cGAS enzymatic activity. An additional study showed that KSHV vIRF1 disrupts the TBK1-STING interaction and inhibits the cGAS-STING signaling axis, resulting in the inhibition of IFN-β production. Furthermore, depletion of vIRF1 in the context of KSHV induced high levels of IFN-β induction (<xref rid="b44-molce-39-11-777" ref-type="bibr">Ma et al., 2015</xref>). Moreover, the short form of KSHV LANA, resulting from internal translation initiation, has also been shown to antagonize cGAS-STING mediated signaling by directly binding to cGAS (<xref rid="b74-molce-39-11-777" ref-type="bibr">Zhang et al., 2016</xref>). Collectively, these clearly reinforce the key immunomodulatory role of cGAS, while providing evidence for KSHV immune evasion tactics for establishing latent and productive viral infection.</p>
+        </sec>
+      </sec>
+      <sec sec-type="conclusions">
+        <title>CONCLUSION</title>
+        <p>PRR signaling, resulting from the interaction between PRRs and PAMPs, serves as gateways for the activation of selective genes required for generating innate immune responses. As reviewed here, KSHV has evolved elegant mechanisms to evade detection and destruction by the host innate immune system, especially PRR signaling, to effectively establish their lifecycle (<xref rid="f1-molce-39-11-777" ref-type="fig">Fig. 1</xref>).</p>
+        <p>While these mounting studies have provided essential information regarding PRRs-mediated immune evasion by KSHV, it has yet to be determined how either KSHV-associated products or virion components stimulate PRRs.</p>
+        <p>By adding to our growing knowledge of viral immunomodulatory proteins, we gain important insights into not only the diverse aspects of virus-host interactions, but also into the inner workings of host immunity. It is clear that PRR-mediated immune responses are key to coordinating many physiological and pathological processes. Further insights and developments into how viruses thwart PRR signaling will likely yield new approaches to the treatment of infectious and inflammatory diseases including KSHV-associated disorders.</p>
+      </sec>
+    </body>
+    <back>
+      <ack>
+        <title>ACKNOWLEDGMENTS</title>
+        <p>Due to space limitations, we sincerely apologize for not being able to cite all papers related this topic. We thank Jung’s lab members for helpful discussion. This work was supported by a Korea University Grant.</p>
+      </ack>
+      <ref-list>
+        <title>REFERENCES</title>
+        <ref id="b1-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Abend</surname>
+                <given-names>J.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ramalingam</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kieffer-Kwon</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Uldrick</surname>
+                <given-names>T.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yarchoan</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ziegelbauer</surname>
+                <given-names>J. M.</given-names>
+              </name>
+            </person-group>
+            <year>2012</year>
+            <article-title>Kaposi’s sarcoma-associated herpesvirus microRNAs target IRAK1 and MYD88, two components of the toll-like receptor/interleukin-1R signaling cascade, to reduce inflammatory-cytokine expression</article-title>
+            <source>J Virol</source>
+            <volume>86</volume>
+            <fpage>11663</fpage>
+            <lpage>11674</lpage>
+            <pub-id pub-id-type="pmid">22896623</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.01147-12</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3486292</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b2-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ablasser</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Goldeck</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cavlar</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Deimling</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Witte</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rohl</surname>
+                <given-names>I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hopfner</surname>
+                <given-names>K.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ludwig</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hornung</surname>
+                <given-names>V.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>cGAS produces a 2′-5′-linked cyclic dinucleotide second messenger that activates STING</article-title>
+            <source>Nature</source>
+            <volume>498</volume>
+            <fpage>380</fpage>
+            <lpage>384</lpage>
+            <pub-id pub-id-type="pmid">23722158</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature12306</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4143541</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b3-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ahmad</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gubbels</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ehlers</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meyer</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Waterbury</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lin</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>L.</given-names>
+              </name>
+            </person-group>
+            <year>2011</year>
+            <article-title>Kaposi sarcoma-associated herpesvirus degrades cellular Toll-interleukin-1 receptor domain-containing adaptor-inducing beta-interferon (TRIF)</article-title>
+            <source>J Biol Chem</source>
+            <volume>286</volume>
+            <fpage>7865</fpage>
+            <lpage>7872</lpage>
+            <pub-id pub-id-type="pmid">21212282</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/jbc.M110.191452</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3048673</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b4-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Uematsu</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Takeuchi</surname>
+                <given-names>O.</given-names>
+              </name>
+            </person-group>
+            <year>2006</year>
+            <article-title>Pathogen recognition and innate immunity</article-title>
+            <source>Cell</source>
+            <volume>124</volume>
+            <fpage>783</fpage>
+            <lpage>801</lpage>
+            <pub-id pub-id-type="pmid">16497588</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2006.02.015</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b5-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ansari</surname>
+                <given-names>M.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dutta</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Veettil</surname>
+                <given-names>M.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dutta</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Iqbal</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kumar</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Roy</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chikoti</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Singh</surname>
+                <given-names>V.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chandran</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>Herpesvirus genome recognition induced acetylation of nuclear IFI16 is essential for its cytoplasmic translocation, inflammasome and IFN-beta responses</article-title>
+            <source>PLoS Pathog</source>
+            <volume>11</volume>
+            <fpage>e1005019</fpage>
+            <pub-id pub-id-type="pmid">26134128</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.ppat.1005019</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4489722</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b6-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bauer</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kirschning</surname>
+                <given-names>C.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hacker</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Redecke</surname>
+                <given-names>V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hausmann</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wagner</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lipford</surname>
+                <given-names>G.B.</given-names>
+              </name>
+            </person-group>
+            <year>2001</year>
+            <article-title>Human TLR9 confers responsiveness to bacterial DNA via species-specific CpG motif recognition</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>98</volume>
+            <fpage>9237</fpage>
+            <lpage>9242</lpage>
+            <pub-id pub-id-type="pmid">11470918</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.161293498</pub-id>
+            <pub-id pub-id-type="pmcid">PMC55404</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b7-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Beutler</surname>
+                <given-names>B.A.</given-names>
+              </name>
+            </person-group>
+            <year>2009</year>
+            <article-title>TLRs and innate immunity</article-title>
+            <source>Blood</source>
+            <volume>113</volume>
+            <fpage>1399</fpage>
+            <lpage>1407</lpage>
+            <pub-id pub-id-type="pmid">18757776</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1182/blood-2008-07-019307</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2644070</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b8-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Brennan</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bowie</surname>
+                <given-names>A.G.</given-names>
+              </name>
+            </person-group>
+            <year>2010</year>
+            <article-title>Activation of host pattern recognition receptors by viruses</article-title>
+            <source>Curr Opin Microbiol</source>
+            <volume>13</volume>
+            <fpage>503</fpage>
+            <lpage>507</lpage>
+            <pub-id pub-id-type="pmid">20538506</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.mib.2010.05.007</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b9-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Brubaker</surname>
+                <given-names>S.W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bonham</surname>
+                <given-names>K.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zanoni</surname>
+                <given-names>I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kagan</surname>
+                <given-names>J.C.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>Innate immune pattern recognition: a cell biological perspective</article-title>
+            <source>Annu Rev Immunol</source>
+            <volume>33</volume>
+            <fpage>257</fpage>
+            <lpage>290</lpage>
+            <pub-id pub-id-type="pmid">25581309</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1146/annurev-immunol-032414-112240</pub-id>
+            <pub-id pub-id-type="pmcid">PMC5146691</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b10-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Bussey</surname>
+                <given-names>K.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Reimer</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Todt</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Denker</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gallo</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Konrad</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ottinger</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Adler</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sturzl</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Brune</surname>
+                <given-names>W.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <year>2014</year>
+            <article-title>The gammaherpesviruses Kaposi’s sarcoma-associated herpesvirus and murine gammaherpesvirus 68 modulate the Toll-like receptor-induced proinflammatory cytokine response</article-title>
+            <source>J Virol</source>
+            <volume>88</volume>
+            <fpage>9245</fpage>
+            <lpage>9259</lpage>
+            <pub-id pub-id-type="pmid">24899179</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.00841-14</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4136288</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b11-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Cai</surname>
+                <given-names>X.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chiu</surname>
+                <given-names>Y.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>Z.J.</given-names>
+              </name>
+            </person-group>
+            <year>2014</year>
+            <article-title>The cGAS-cGAMP-STING pathway of cytosolic DNA sensing and signaling</article-title>
+            <source>Mol Cell</source>
+            <volume>54</volume>
+            <fpage>289</fpage>
+            <lpage>296</lpage>
+            <pub-id pub-id-type="pmid">24766893</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.molcel.2014.03.040</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b12-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Chang</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Moore</surname>
+                <given-names>P.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Talbot</surname>
+                <given-names>S.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Boshoff</surname>
+                <given-names>C.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zarkowska</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Godden</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Paterson</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Weiss</surname>
+                <given-names>R.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mittnacht</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <year>1996</year>
+            <article-title>Cyclin encoded by KS herpesvirus</article-title>
+            <source>Nature</source>
+            <volume>382</volume>
+            <fpage>410</fpage>
+            <pub-id pub-id-type="pmid">8684480</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/382410a0</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b13-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Cheng</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhong</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chung</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chisari</surname>
+                <given-names>F.V.</given-names>
+              </name>
+            </person-group>
+            <year>2007</year>
+            <article-title>Double-stranded DNA and double-stranded RNA induce a common antiviral signaling pathway in human cells</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>104</volume>
+            <fpage>9035</fpage>
+            <lpage>9040</lpage>
+            <pub-id pub-id-type="pmid">17517627</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.0703285104</pub-id>
+            <pub-id pub-id-type="pmcid">PMC1885623</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b14-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Chiu</surname>
+                <given-names>Y.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Macmillan</surname>
+                <given-names>J.B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>Z.J.</given-names>
+              </name>
+            </person-group>
+            <year>2009</year>
+            <article-title>RNA polymerase III detects cytosolic DNA and induces type I interferons through the RIG-I pathway</article-title>
+            <source>Cell</source>
+            <volume>138</volume>
+            <fpage>576</fpage>
+            <lpage>591</lpage>
+            <pub-id pub-id-type="pmid">19631370</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2009.06.015</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2747301</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b15-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Christensen</surname>
+                <given-names>M.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Paludan</surname>
+                <given-names>S.R.</given-names>
+              </name>
+            </person-group>
+            <year>2016</year>
+            <article-title>Viral evasion of DNA-stimulated innate immune responses</article-title>
+            <source>Cell Mol Immunol</source>
+            <fpage>1</fpage>
+            <lpage>10</lpage>
+            <pub-id pub-id-type="pmid">26972769</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/cmi.2016.06</pub-id>
+            <pub-id pub-id-type="pmcid">PMC5214947</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b16-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Coutermarsh-Ott</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Eden</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Allen</surname>
+                <given-names>I. C.</given-names>
+              </name>
+            </person-group>
+            <year>2016</year>
+            <article-title>Beyond the inflammasome: regulatory NOD-like receptor modulation of the host immune response following virus exposure</article-title>
+            <source>J Gen Virol</source>
+            <volume>97</volume>
+            <fpage>825</fpage>
+            <lpage>838</lpage>
+            <pub-id pub-id-type="pmid">26763980</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1099/jgv.0.000401</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4854363</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b17-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>De Nardo</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>Toll-like receptors: Activation, signalling and transcriptional modulation</article-title>
+            <source>Cytokine</source>
+            <volume>74</volume>
+            <fpage>181</fpage>
+            <lpage>189</lpage>
+            <pub-id pub-id-type="pmid">25846205</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cyto.2015.02.025</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b18-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>de Zoete</surname>
+                <given-names>M.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Palm</surname>
+                <given-names>N. W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhu</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Flavell</surname>
+                <given-names>R. A.</given-names>
+              </name>
+            </person-group>
+            <year>2014</year>
+            <article-title>Inflammasomes</article-title>
+            <source>Cold Spring Harb Perspect Biol</source>
+            <volume>6</volume>
+            <fpage>a016287</fpage>
+            <pub-id pub-id-type="pmid">25324215</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1101/cshperspect.a016287</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4292152</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b19-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Diner</surname>
+                <given-names>B.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lum</surname>
+                <given-names>K. K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cristea</surname>
+                <given-names>I. M.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>The emerging role of nuclear viral DNA sensors</article-title>
+            <source>J Biol Chem</source>
+            <volume>290</volume>
+            <fpage>26412</fpage>
+            <lpage>26421</lpage>
+            <pub-id pub-id-type="pmid">26354430</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/jbc.R115.652289</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4646299</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b20-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Dittmer</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lagunoff</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Renne</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Staskus</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Haase</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ganem</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <year>1998</year>
+            <article-title>A cluster of latently expressed genes in Kaposi’s sarcoma-associated herpesvirus</article-title>
+            <source>J Virol</source>
+            <volume>72</volume>
+            <fpage>8309</fpage>
+            <lpage>8315</lpage>
+            <pub-id pub-id-type="pmid">9733875</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/jvi.72.10.8309-8315.1998</pub-id>
+            <pub-id pub-id-type="pmcid">PMC110196</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b21-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Fernandes-Alnemri</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yu</surname>
+                <given-names>J. W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Datta</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Alnemri</surname>
+                <given-names>E.S.</given-names>
+              </name>
+            </person-group>
+            <year>2009</year>
+            <article-title>AIM2 activates the inflammasome and cell death in response to cytoplasmic DNA</article-title>
+            <source>Nature</source>
+            <volume>458</volume>
+            <fpage>509</fpage>
+            <lpage>513</lpage>
+            <pub-id pub-id-type="pmid">19158676</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature07710</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2862225</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b22-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Fitzgerald</surname>
+                <given-names>K.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>McWhirter</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Faia</surname>
+                <given-names>K.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rowe</surname>
+                <given-names>D.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Latz</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Golenbock</surname>
+                <given-names>D.T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Coyle</surname>
+                <given-names>A.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liao</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Maniatis</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <year>2003</year>
+            <article-title>IKKepsilon and TBK1 are essential components of the IRF3 signaling pathway</article-title>
+            <source>Nat Immunol</source>
+            <volume>4</volume>
+            <fpage>491</fpage>
+            <lpage>496</lpage>
+            <pub-id pub-id-type="pmid">12692549</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ni921</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b23-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Franchi</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Warner</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Viani</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Nunez</surname>
+                <given-names>G.</given-names>
+              </name>
+            </person-group>
+            <year>2009</year>
+            <article-title>Function of Nod-like receptors in microbial recognition and host defense</article-title>
+            <source>Immunol Rev</source>
+            <volume>227</volume>
+            <fpage>106</fpage>
+            <lpage>128</lpage>
+            <pub-id pub-id-type="pmid">19120480</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1600-065X.2008.00734.x</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2679989</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b24-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gack</surname>
+                <given-names>M.U.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shin</surname>
+                <given-names>Y.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Joo</surname>
+                <given-names>C.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Urano</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liang</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sun</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Takeuchi</surname>
+                <given-names>O.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Inoue</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jung</surname>
+                <given-names>J.U.</given-names>
+              </name>
+            </person-group>
+            <year>2007</year>
+            <article-title>TRIM25 RING-finger E3 ubiquitin ligase is essential for RIG-I-mediated antiviral activity</article-title>
+            <source>Nature</source>
+            <volume>446</volume>
+            <fpage>916</fpage>
+            <lpage>920</lpage>
+            <pub-id pub-id-type="pmid">17392790</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature05732</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b25-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ganem</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <year>2010</year>
+            <article-title>KSHV and the pathogenesis of Kaposi sarcoma: listening to human biology and medicine</article-title>
+            <source>J Clin Invest</source>
+            <volume>120</volume>
+            <fpage>939</fpage>
+            <lpage>949</lpage>
+            <pub-id pub-id-type="pmid">20364091</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1172/JCI40567</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2847423</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b26-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gao</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>Y.T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Du</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Aroh</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yan</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sun</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>Z.J.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>Cyclic GMP-AMP synthase is an innate immune sensor of HIV and other retroviruses</article-title>
+            <source>Science</source>
+            <volume>341</volume>
+            <fpage>903</fpage>
+            <lpage>906</lpage>
+            <pub-id pub-id-type="pmid">23929945</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1240933</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3860819</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b27-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gregory</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dillon</surname>
+                <given-names>P.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hilscher</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dittmer</surname>
+                <given-names>D.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2009</year>
+            <article-title>Toll-like receptor signaling controls reactivation of KSHV from latency</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>106</volume>
+            <fpage>11725</fpage>
+            <lpage>11730</lpage>
+            <pub-id pub-id-type="pmid">19564611</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.0905316106</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2710638</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b28-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Gregory</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Davis</surname>
+                <given-names>B.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Taxman</surname>
+                <given-names>D.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Matsuzawa</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Reed</surname>
+                <given-names>J.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ting</surname>
+                <given-names>J.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2011</year>
+            <article-title>Discovery of a viral NLR homolog that inhibits the inflammasome</article-title>
+            <source>Science</source>
+            <volume>331</volume>
+            <fpage>330</fpage>
+            <lpage>334</lpage>
+            <pub-id pub-id-type="pmid">21252346</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1199478</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3072027</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b29-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Hoffmann</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>Innate immunity</article-title>
+            <source>Curr Opin Immunol</source>
+            <volume>25</volume>
+            <fpage>1</fpage>
+            <lpage>3</lpage>
+            <pub-id pub-id-type="pmid">23452839</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.coi.2013.01.008</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b30-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Inn</surname>
+                <given-names>K.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>S.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rathbun</surname>
+                <given-names>J.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wong</surname>
+                <given-names>L.Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Toth</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Machida</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ou</surname>
+                <given-names>J.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jung</surname>
+                <given-names>J.U.</given-names>
+              </name>
+            </person-group>
+            <year>2011</year>
+            <article-title>Inhibition of RIG-I-mediated signaling by Kaposi’s sarcoma-associated herpesvirus-encoded deubiquitinase ORF64</article-title>
+            <source>J Virol</source>
+            <volume>85</volume>
+            <fpage>10899</fpage>
+            <lpage>10904</lpage>
+            <pub-id pub-id-type="pmid">21835791</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.00690-11</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3187500</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b31-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Iwasaki</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Medzhitov</surname>
+                <given-names>R.</given-names>
+              </name>
+            </person-group>
+            <year>2004</year>
+            <article-title>Toll-like receptor control of the adaptive immune responses</article-title>
+            <source>Nat Immunol</source>
+            <volume>5</volume>
+            <fpage>987</fpage>
+            <lpage>995</lpage>
+            <pub-id pub-id-type="pmid">15454922</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ni1112</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b32-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Jacobs</surname>
+                <given-names>S.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gregory</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wollish</surname>
+                <given-names>A.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bennett</surname>
+                <given-names>C.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Blackbourn</surname>
+                <given-names>D.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Heise</surname>
+                <given-names>M.T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>The viral interferon regulatory factors of kaposi’s sarcoma-associated herpesvirus differ in their inhibition of interferon activation mediated by toll-like receptor 3</article-title>
+            <source>J Virol</source>
+            <volume>87</volume>
+            <fpage>798</fpage>
+            <lpage>806</lpage>
+            <pub-id pub-id-type="pmid">23115281</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.01851-12</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3554052</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b33-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Jacobs</surname>
+                <given-names>S.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Stopford</surname>
+                <given-names>C.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bennett</surname>
+                <given-names>C.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Giffin</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>Kaposi’s sarcoma-associated herpesvirus viral interferon regulatory factor 1 Interacts with a member of the interferon-stimulated gene 15 pathway</article-title>
+            <source>J Virol</source>
+            <volume>89</volume>
+            <fpage>11572</fpage>
+            <lpage>11583</lpage>
+            <pub-id pub-id-type="pmid">26355087</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.01482-15</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4645652</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b34-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kato</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Takeuchi</surname>
+                <given-names>O.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mikamo-Satoh</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hirai</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kawai</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Matsushita</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hiiragi</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dermody</surname>
+                <given-names>T.S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fujita</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <year>2008</year>
+            <article-title>Length-dependent recognition of double-stranded ribonucleic acids by retinoic acid-inducible gene-I and melanoma differentiation-associated gene 5</article-title>
+            <source>J Exp Med</source>
+            <volume>205</volume>
+            <fpage>1601</fpage>
+            <lpage>1610</lpage>
+            <pub-id pub-id-type="pmid">18591409</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1084/jem.20080091</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2442638</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b35-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kedes</surname>
+                <given-names>D.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lagunoff</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Renne</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ganem</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <year>1997</year>
+            <article-title>Identification of the gene encoding the major latency-associated nuclear antigen of the Kaposi’s sarcoma-associated herpesvirus</article-title>
+            <source>J Clin Invest</source>
+            <volume>100</volume>
+            <fpage>2606</fpage>
+            <lpage>2610</lpage>
+            <pub-id pub-id-type="pmid">9366576</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1172/JCI119804</pub-id>
+            <pub-id pub-id-type="pmcid">PMC508462</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b36-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kerur</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Veettil</surname>
+                <given-names>M.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sharma-Walia</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bottero</surname>
+                <given-names>V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sadagopan</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Otageri</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chandran</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2011</year>
+            <article-title>IFI16 acts as a nuclear pathogen sensor to induce the inflammasome in response to Kaposi Sarcoma-associated herpesvirus infection</article-title>
+            <source>Cell Host Microbe</source>
+            <volume>9</volume>
+            <fpage>363</fpage>
+            <lpage>375</lpage>
+            <pub-id pub-id-type="pmid">21575908</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.chom.2011.04.008</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3113467</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b37-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lagos</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Vart</surname>
+                <given-names>R.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gratrix</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Westrop</surname>
+                <given-names>S.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Emuss</surname>
+                <given-names>V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wong</surname>
+                <given-names>P.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Robey</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Imami</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bower</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gotch</surname>
+                <given-names>F.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <year>2008</year>
+            <article-title>Toll-like receptor 4 mediates innate immunity to Kaposi sarcoma herpesvirus</article-title>
+            <source>Cell Host Microbe</source>
+            <volume>4</volume>
+            <fpage>470</fpage>
+            <lpage>483</lpage>
+            <pub-id pub-id-type="pmid">18996347</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.chom.2008.09.012</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2698447</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b38-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>M. S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kim</surname>
+                <given-names>Y.J.</given-names>
+              </name>
+            </person-group>
+            <year>2007</year>
+            <article-title>Pattern-recognition receptor signaling initiated from extracellular, membrane, and cytoplasmic space</article-title>
+            <source>Mol Cells</source>
+            <volume>23</volume>
+            <fpage>1</fpage>
+            <lpage>10</lpage>
+            <pub-id pub-id-type="pmid">17464205</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b39-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>H.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Brulois</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wong</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jung</surname>
+                <given-names>J.U.</given-names>
+              </name>
+            </person-group>
+            <year>2012</year>
+            <article-title>Modulation of immune system by Kaposi’s sarcoma-associated herpesvirus: lessons from viral evasion strategies</article-title>
+            <source>Front Microbiol</source>
+            <volume>3</volume>
+            <fpage>44</fpage>
+            <pub-id pub-id-type="pmid">22403573</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.3389/fmicb.2012.00044</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3293256</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b40-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lee</surname>
+                <given-names>H.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Amatya</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jung</surname>
+                <given-names>J.U.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>Multi-step regulation of innate immune signaling by Kaposi’s sarcoma-associated herpesvirus</article-title>
+            <source>Virus Res</source>
+            <volume>209</volume>
+            <fpage>39</fpage>
+            <lpage>44</lpage>
+            <pub-id pub-id-type="pmid">25796211</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.virusres.2015.03.004</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4575611</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b41-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Li</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Diner</surname>
+                <given-names>B.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cristea</surname>
+                <given-names>I.M.</given-names>
+              </name>
+            </person-group>
+            <year>2012</year>
+            <article-title>Acetylation modulates cellular distribution and DNA sensing ability of interferon-inducible protein IFI16</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>109</volume>
+            <fpage>10558</fpage>
+            <lpage>10563</lpage>
+            <pub-id pub-id-type="pmid">22691496</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1203447109</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3387042</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b42-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Liu</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Grinberg</surname>
+                <given-names>I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Rappe</surname>
+                <given-names>A.M.</given-names>
+              </name>
+            </person-group>
+            <year>2016</year>
+            <article-title>Intrinsic ferroelectric switching from first principles</article-title>
+            <source>Nature</source>
+            <volume>534</volume>
+            <fpage>360</fpage>
+            <lpage>363</lpage>
+            <pub-id pub-id-type="pmid">27306186</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature18286</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b43-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Lupfer</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kanneganti</surname>
+                <given-names>T.D.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>The expanding role of NLRs in antiviral immunity</article-title>
+            <source>Immunol Rev</source>
+            <volume>255</volume>
+            <fpage>13</fpage>
+            <lpage>24</lpage>
+            <pub-id pub-id-type="pmid">23947344</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/imr.12089</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3759815</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b44-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Ma</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jacobs</surname>
+                <given-names>S.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Stopford</surname>
+                <given-names>C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Davis</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Barber</surname>
+                <given-names>G.N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Glaunsinger</surname>
+                <given-names>B.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dittmer</surname>
+                <given-names>D.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>Modulation of the cGAS-STING DNA sensing pathway by gammaherpesviruses</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>112</volume>
+            <fpage>E4306</fpage>
+            <lpage>4315</lpage>
+            <pub-id pub-id-type="pmid">26199418</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1503831112</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4534226</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b45-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>McCartney</surname>
+                <given-names>S.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Colonna</surname>
+                <given-names>M.</given-names>
+              </name>
+            </person-group>
+            <year>2009</year>
+            <article-title>Viral sensors: diversity in pathogen recognition</article-title>
+            <source>Immunol Rev</source>
+            <volume>227</volume>
+            <fpage>87</fpage>
+            <lpage>94</lpage>
+            <pub-id pub-id-type="pmid">19120478</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1600-065X.2008.00726.x</pub-id>
+            <pub-id pub-id-type="pmcid">PMC7165970</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b46-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Meyer</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ehlers</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Steadman</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Waterbury</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cao</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>L.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>TLR-TRIF pathway enhances the expression of KSHV replication and transcription activator</article-title>
+            <source>J Biol Chem</source>
+            <volume>288</volume>
+            <fpage>20435</fpage>
+            <lpage>20442</lpage>
+            <pub-id pub-id-type="pmid">23723066</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/jbc.M113.487421</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3711309</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b47-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Monie</surname>
+                <given-names>T.P.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>NLR activation takes a direct route</article-title>
+            <source>Trends Biochem Sci</source>
+            <volume>38</volume>
+            <fpage>131</fpage>
+            <lpage>139</lpage>
+            <pub-id pub-id-type="pmid">23394939</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.tibs.2013.01.001</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b48-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Nador</surname>
+                <given-names>R.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cesarman</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chadburn</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dawson</surname>
+                <given-names>D.B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ansari</surname>
+                <given-names>M.Q.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sald</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Knowles</surname>
+                <given-names>D.M.</given-names>
+              </name>
+            </person-group>
+            <year>1996</year>
+            <article-title>Primary effusion lymphoma: a distinct clinicopathologic entity associated with the Kaposi’s sarcoma-associated herpes virus</article-title>
+            <source>Blood</source>
+            <volume>88</volume>
+            <fpage>645</fpage>
+            <lpage>656</lpage>
+            <pub-id pub-id-type="pmid">8695812</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b49-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>O’Neill</surname>
+                <given-names>L.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Golenbock</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bowie</surname>
+                <given-names>A.G.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>The history of Toll-like receptors - redefining innate immunity</article-title>
+            <source>Nat Rev Immunol</source>
+            <volume>13</volume>
+            <fpage>453</fpage>
+            <lpage>460</lpage>
+            <pub-id pub-id-type="pmid">23681101</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nri3446</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b50-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Orzalli</surname>
+                <given-names>M.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Knipe</surname>
+                <given-names>D.M.</given-names>
+              </name>
+            </person-group>
+            <year>2014</year>
+            <article-title>Cellular sensing of viral DNA and viral evasion mechanisms</article-title>
+            <source>Annu Rev Microbiol</source>
+            <volume>68</volume>
+            <fpage>477</fpage>
+            <lpage>492</lpage>
+            <pub-id pub-id-type="pmid">25002095</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1146/annurev-micro-091313-103409</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4348004</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b51-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Paludan</surname>
+                <given-names>S.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bowie</surname>
+                <given-names>A.G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Horan</surname>
+                <given-names>K.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fitzgerald</surname>
+                <given-names>K.A.</given-names>
+              </name>
+            </person-group>
+            <year>2011</year>
+            <article-title>Recognition of herpesviruses by the innate immune system</article-title>
+            <source>Nat Rev Immunol</source>
+            <volume>11</volume>
+            <fpage>143</fpage>
+            <lpage>154</lpage>
+            <pub-id pub-id-type="pmid">21267015</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nri2937</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3686362</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b52-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Pichlmair</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Schulz</surname>
+                <given-names>O.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tan</surname>
+                <given-names>C.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Naslund</surname>
+                <given-names>T.I.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liljestrom</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Weber</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Reis e Sousa</surname>
+                <given-names>C.</given-names>
+              </name>
+            </person-group>
+            <year>2006</year>
+            <article-title>RIG-I-mediated antiviral responses to single-stranded RNA bearing 5′-phosphates</article-title>
+            <source>Science</source>
+            <volume>314</volume>
+            <fpage>997</fpage>
+            <lpage>1001</lpage>
+            <pub-id pub-id-type="pmid">17038589</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1132998</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b53-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Roy</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dutta</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Iqbal</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pisano</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gjyshi</surname>
+                <given-names>O.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ansari</surname>
+                <given-names>M.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kumar</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chandran</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2016</year>
+            <article-title>Nuclear innate immune DNA sensor IFI16 is degraded during lytic reactivation of Kaposi’s sarcoma-associated herpesvirus (KSHV): role of IFI16 in maintenance of KSHV latency</article-title>
+            <source>J Virol</source>
+            <volume>90</volume>
+            <fpage>8822</fpage>
+            <lpage>8841</lpage>
+            <pub-id pub-id-type="pmid">27466416</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.01003-16</pub-id>
+            <pub-id pub-id-type="pmcid">PMC5021400</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b54-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Saito</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gale</surname>
+                <given-names>M.</given-names>
+                <suffix>Jr.</suffix>
+              </name>
+            </person-group>
+            <year>2008</year>
+            <article-title>Differential recognition of double-stranded RNA by RIG-I-like receptors in antiviral immunity</article-title>
+            <source>J Exp Med</source>
+            <volume>205</volume>
+            <fpage>1523</fpage>
+            <lpage>1527</lpage>
+            <pub-id pub-id-type="pmid">18591413</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1084/jem.20081210</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2442628</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b55-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Saito</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Owen</surname>
+                <given-names>D.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jiang</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Marcotrigiano</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gale</surname>
+                <given-names>M.</given-names>
+                <suffix>Jr</suffix>
+              </name>
+            </person-group>
+            <year>2008</year>
+            <article-title>Innate immunity induced by composition-dependent RIG-I recognition of hepatitis C virus RNA</article-title>
+            <source>Nature</source>
+            <volume>454</volume>
+            <fpage>523</fpage>
+            <lpage>527</lpage>
+            <pub-id pub-id-type="pmid">18548002</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature07106</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2856441</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b56-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Samols</surname>
+                <given-names>M.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Skalsky</surname>
+                <given-names>R.L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Maldonado</surname>
+                <given-names>A.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Riva</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lopez</surname>
+                <given-names>M.C.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Baker</surname>
+                <given-names>H.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Renne</surname>
+                <given-names>R.</given-names>
+              </name>
+            </person-group>
+            <year>2007</year>
+            <article-title>Identification of cellular genes targeted by KSHV-encoded microRNAs</article-title>
+            <source>PLoS Pathog</source>
+            <volume>3</volume>
+            <fpage>e65</fpage>
+            <pub-id pub-id-type="pmid">17500590</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.ppat.0030065</pub-id>
+            <pub-id pub-id-type="pmcid">PMC1876501</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b57-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Schroder</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tschopp</surname>
+                <given-names>J.</given-names>
+              </name>
+            </person-group>
+            <year>2010</year>
+            <article-title>The inflammasomes</article-title>
+            <source>Cell</source>
+            <volume>140</volume>
+            <fpage>821</fpage>
+            <lpage>832</lpage>
+            <pub-id pub-id-type="pmid">20303873</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2010.01.040</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b58-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Singh</surname>
+                <given-names>V.V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kerur</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bottero</surname>
+                <given-names>V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dutta</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chakraborty</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ansari</surname>
+                <given-names>M.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Paudel</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chikoti</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chandran</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>Kaposi’s sarcoma-associated herpesvirus latency in endothelial and B cells activates gamma interferon-inducible protein 16-mediated inflammasomes</article-title>
+            <source>J Virol</source>
+            <volume>87</volume>
+            <fpage>4417</fpage>
+            <lpage>4431</lpage>
+            <pub-id pub-id-type="pmid">23388709</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.03282-12</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3624349</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b59-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Soulier</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Grollet</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Oksenhendler</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cacoub</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cazals-Hatem</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Babinet</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>d’Agay</surname>
+                <given-names>M.F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Clauvel</surname>
+                <given-names>J.P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Raphael</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Degos</surname>
+                <given-names>L.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <year>1995</year>
+            <article-title>Kaposi’s sarcoma-associated herpesvirus-like DNA sequences in multicentric Castleman’s disease</article-title>
+            <source>Blood</source>
+            <volume>86</volume>
+            <fpage>1276</fpage>
+            <lpage>1280</lpage>
+            <pub-id pub-id-type="pmid">7632932</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b60-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Sun</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Du</surname>
+                <given-names>F.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>X.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>Z.J.</given-names>
+              </name>
+            </person-group>
+            <year>2013</year>
+            <article-title>Cyclic GMP-AMP synthase is a cytosolic DNA sensor that activates the type I interferon pathway</article-title>
+            <source>Science</source>
+            <volume>339</volume>
+            <fpage>786</fpage>
+            <lpage>791</lpage>
+            <pub-id pub-id-type="pmid">23258413</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/science.1232458</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3863629</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b61-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Takaoka</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Choi</surname>
+                <given-names>M.K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yanai</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Negishi</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ban</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lu</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Miyagishi</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kodama</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Honda</surname>
+                <given-names>K.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <year>2007</year>
+            <article-title>DAI (DLM-1/ZBP1) is a cytosolic DNA sensor and an activator of innate immune response</article-title>
+            <source>Nature</source>
+            <volume>448</volume>
+            <fpage>501</fpage>
+            <lpage>505</lpage>
+            <pub-id pub-id-type="pmid">17618271</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nature06013</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b62-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Takeda</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <year>2004</year>
+            <article-title>TLR signaling pathways</article-title>
+            <source>Semin Immunol</source>
+            <volume>16</volume>
+            <fpage>3</fpage>
+            <lpage>9</lpage>
+            <pub-id pub-id-type="pmid">14751757</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.smim.2003.10.003</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b63-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Takeuchi</surname>
+                <given-names>O.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+            </person-group>
+            <year>2010</year>
+            <article-title>Pattern recognition receptors and inflammation</article-title>
+            <source>Cell</source>
+            <volume>140</volume>
+            <fpage>805</fpage>
+            <lpage>820</lpage>
+            <pub-id pub-id-type="pmid">20303872</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2010.01.022</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b64-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Unterholzner</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Keating</surname>
+                <given-names>S.E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Baran</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Horan</surname>
+                <given-names>K.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jensen</surname>
+                <given-names>S.B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sharma</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sirois</surname>
+                <given-names>C.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jin</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Latz</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Xiao</surname>
+                <given-names>T.S.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <year>2010</year>
+            <article-title>IFI16 is an innate immune sensor for intracellular DNA</article-title>
+            <source>Nat Immunol</source>
+            <volume>11</volume>
+            <fpage>997</fpage>
+            <lpage>1004</lpage>
+            <pub-id pub-id-type="pmid">20890285</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ni.1932</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3142795</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b65-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Veeranki</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Choubey</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <year>2012</year>
+            <article-title>Interferon-inducible p200- family protein IFI16, an innate immune sensor for cytosolic and nuclear double-stranded DNA: regulation of subcellular localization</article-title>
+            <source>Mol Immunol</source>
+            <volume>49</volume>
+            <fpage>567</fpage>
+            <lpage>571</lpage>
+            <pub-id pub-id-type="pmid">22137500</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.molimm.2011.11.004</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3249514</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b66-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Walz</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Christalla</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tessmer</surname>
+                <given-names>U.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Grundhoff</surname>
+                <given-names>A.</given-names>
+              </name>
+            </person-group>
+            <year>2010</year>
+            <article-title>A global analysis of evolutionary conservation among known and predicted gammaherpesvirus microRNAs</article-title>
+            <source>J Virol</source>
+            <volume>84</volume>
+            <fpage>716</fpage>
+            <lpage>728</lpage>
+            <pub-id pub-id-type="pmid">19889779</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.01302-09</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2798347</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b67-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2008</year>
+            <article-title>Upregulation of the TLR3 pathway by Kaposi’s sarcoma-associated herpesvirus during primary infection</article-title>
+            <source>J Virol</source>
+            <volume>82</volume>
+            <fpage>5440</fpage>
+            <lpage>5449</lpage>
+            <pub-id pub-id-type="pmid">18367536</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.02590-07</pub-id>
+            <pub-id pub-id-type="pmcid">PMC2395190</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b68-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gregory</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sivaraman</surname>
+                <given-names>V.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Su</surname>
+                <given-names>L.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2011</year>
+            <article-title>Activation of plasmacytoid dendritic cells by Kaposi’s sarcoma-associated herpesvirus</article-title>
+            <source>J Virol</source>
+            <volume>85</volume>
+            <fpage>895</fpage>
+            <lpage>904</lpage>
+            <pub-id pub-id-type="pmid">20980519</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.01007-10</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3020034</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b69-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>West</surname>
+                <given-names>J.A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wicks</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gregory</surname>
+                <given-names>S.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chugh</surname>
+                <given-names>P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jacobs</surname>
+                <given-names>S.R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>Z.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Host</surname>
+                <given-names>K.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dittmer</surname>
+                <given-names>D. P.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Damania</surname>
+                <given-names>B.</given-names>
+              </name>
+            </person-group>
+            <year>2014</year>
+            <article-title>An important role for mitochondrial antiviral signaling protein in the Kaposi’s sarcoma-associated herpesvirus life cycle</article-title>
+            <source>J Virol</source>
+            <volume>88</volume>
+            <fpage>5778</fpage>
+            <lpage>5787</lpage>
+            <pub-id pub-id-type="pmid">24623417</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.03226-13</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4019080</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b70-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Wu</surname>
+                <given-names>J.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Li</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shao</surname>
+                <given-names>Y.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Avey</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fu</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gillen</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hand</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ma</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liu</surname>
+                <given-names>X.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Miley</surname>
+                <given-names>W.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <year>2015</year>
+            <article-title>Inhibition of cGAS DNA sensing by a herpesvirus virion protein</article-title>
+            <source>Cell Host Microbe</source>
+            <volume>18</volume>
+            <fpage>333</fpage>
+            <lpage>344</lpage>
+            <pub-id pub-id-type="pmid">26320998</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.chom.2015.07.015</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4567405</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b71-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Yang</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chen</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Xiong</surname>
+                <given-names>J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sherrod</surname>
+                <given-names>C.J.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Henry</surname>
+                <given-names>D.H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dittmer</surname>
+                <given-names>D.P.</given-names>
+              </name>
+            </person-group>
+            <year>2014</year>
+            <article-title>Interleukin 1 receptor-associated kinase 1 (IRAK1) mutation is a common, essential driver for Kaposi sarcoma herpesvirus lymphoma</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>111</volume>
+            <fpage>E4762</fpage>
+            <lpage>4768</lpage>
+            <pub-id pub-id-type="pmid">25341731</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1405423111</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4226132</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b72-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Yoneyama</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kikuchi</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Natsukawa</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Shinobu</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Imaizumi</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Miyagishi</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Taira</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fujita</surname>
+                <given-names>T.</given-names>
+              </name>
+            </person-group>
+            <year>2004</year>
+            <article-title>The RNA helicase RIG-I has an essential function in double-stranded RNA-induced innate antiviral responses</article-title>
+            <source>Nat Immunol</source>
+            <volume>5</volume>
+            <fpage>730</fpage>
+            <lpage>737</lpage>
+            <pub-id pub-id-type="pmid">15208624</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ni1087</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b73-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Yoneyama</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kikuchi</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Matsumoto</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Imaizumi</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Miyagishi</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Taira</surname>
+                <given-names>K.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Foy</surname>
+                <given-names>E.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Loo</surname>
+                <given-names>Y.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gale</surname>
+                <given-names>M.</given-names>
+                <suffix>Jr.</suffix>
+              </name>
+              <name name-style="western">
+                <surname>Akira</surname>
+                <given-names>S.</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <year>2005</year>
+            <article-title>Shared and unique functions of the DExD/H-box helicases RIG-I, MDA5, and LGP2 in antiviral innate immunity</article-title>
+            <source>J Immunol</source>
+            <volume>175</volume>
+            <fpage>2851</fpage>
+            <lpage>2858</lpage>
+            <pub-id pub-id-type="pmid">16116171</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.4049/jimmunol.175.5.2851</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b74-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Zhang</surname>
+                <given-names>G.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chan</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Samarina</surname>
+                <given-names>N.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Abere</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Weidner-Glunde</surname>
+                <given-names>M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Buch</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pich</surname>
+                <given-names>A.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Brinkmann</surname>
+                <given-names>M.M.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Schulz</surname>
+                <given-names>T.F.</given-names>
+              </name>
+            </person-group>
+            <year>2016</year>
+            <article-title>Cytoplasmic isoforms of Kaposi sarcoma herpesvirus LANA recruit and antagonize the innate immune DNA sensor cGAS</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>113</volume>
+            <fpage>E1034</fpage>
+            <lpage>1043</lpage>
+            <pub-id pub-id-type="pmid">26811480</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1516812113</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4776510</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b75-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Zhao</surname>
+                <given-names>Q.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Liang</surname>
+                <given-names>D.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sun</surname>
+                <given-names>R.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jia</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Xia</surname>
+                <given-names>T.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Xiao</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lan</surname>
+                <given-names>K.</given-names>
+              </name>
+            </person-group>
+            <year>2015</year>
+            <article-title>Kaposi’s Sarcoma-associated herpesvirus-encoded replication and transcription activator impairs innate immunity via ubiquitin-mediated degradation of myeloid differentiation factor 88</article-title>
+            <source>J Virol</source>
+            <volume>89</volume>
+            <fpage>415</fpage>
+            <lpage>427</lpage>
+            <pub-id pub-id-type="pmid">25320320</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1128/JVI.02591-14</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4301122</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="b76-molce-39-11-777">
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Zhong</surname>
+                <given-names>W.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wang</surname>
+                <given-names>H.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Herndier</surname>
+                <given-names>B.</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Ganem</surname>
+                <given-names>D.</given-names>
+              </name>
+            </person-group>
+            <year>1996</year>
+            <article-title>Restricted expression of Kaposi sarcoma-associated herpesvirus (human herpesvirus 8) genes in Kaposi sarcoma</article-title>
+            <source>Proc Natl Acad Sci USA</source>
+            <volume>93</volume>
+            <fpage>6641</fpage>
+            <lpage>6646</lpage>
+            <pub-id pub-id-type="pmid">8692871</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.93.13.6641</pub-id>
+            <pub-id pub-id-type="pmcid">PMC39079</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+    <floats-group>
+      <fig id="f1-molce-39-11-777" orientation="portrait" position="float">
+        <label>Fig. 1</label>
+        <caption>
+          <p>KSHV evasion of different recognition receptors signaling. Recognition of KSHV viral components by host pattern recognition receptors (PRR) triggers signaling pathways that induce production of type I IFN and pro-inflammatory cytokines. Following KSHV infection of cells, TLRs utilize MyD88 and TRIF as adaptor molecules to recruit downstream molecules, which eventually culminates in the production of type I IFN and/or pro-inflammatory cytokines. Moreover, KSHV dsDNA accumulates in the cytoplasm and is recognized by cGAS and IFI16. In response to DNA stimulation, STING, an ER protein, relocates to the cytoplasmic punctate structures and subsequently recruits TBK1 and IKKɛ. Alternatively, dsDNA is transcribed into dsRNA polymerase III in a cell-type specific manner and is recognized by RIG-I. RLRs signal through the adaptor protein MAVS located on the mitochondria triggers production of type I IFN together with NF-κB. Inflammasome induction by KSHV infection, either results in the activation of IL-1β and IL-18 or inhibition of its production due to blockage of the NLRP1/3. Red squares indicate KSHV proteins.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="molce-39-11-777f1.jpg"/>
+      </fig>
+    </floats-group>
+  </article>
+</pmc-articleset>

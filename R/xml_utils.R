@@ -1122,13 +1122,34 @@
 
   top_node_name <- article_xml %>% xml2::xml_name()
 
-  if (top_node_name != "article") {
-
-    article_xml %>%
-      xml2::xml_find_all("//metadata") %>%
-      xml2::as_list() %>%
-      xml2::as_xml_document()
+  # Already rooted at the article (e.g. a bare JATS document).
+  if (top_node_name == "article") {
+    return(article_xml)
   }
+
+  # OAI-PMH GetRecord (the PMC OAI service used by metareadr): the article is
+  # nested under //metadata.
+  metadata <- article_xml %>% xml2::xml_find_all("//metadata")
+  if (!!length(metadata)) {
+    return(
+      metadata %>%
+        xml2::as_list() %>%
+        xml2::as_xml_document()
+    )
+  }
+
+  # Other wrappers (e.g. NCBI E-utilities EFetch returns <pmc-articleset>):
+  # take the contained <article> node as the root. A write/read round-trip
+  # promotes the node to a document root robustly (handling entities, etc.).
+  article <- article_xml %>% xml2::xml_find_first("//article")
+  if (!inherits(article, "xml_missing")) {
+    tmp <- tempfile(fileext = ".xml")
+    on.exit(unlink(tmp), add = TRUE)
+    xml2::write_xml(article, tmp)
+    return(xml2::read_xml(tmp))
+  }
+
+  article_xml
 }
 
 

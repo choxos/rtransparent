@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="article-commentary" xml:lang="en" dtd-version="1.4">
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">mBio</journal-id>
+        <journal-id journal-id-type="iso-abbrev">MBio</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">1266</journal-id>
+        <journal-id journal-id-type="pmc-domain">mbio</journal-id>
+        <journal-id journal-id-type="publisher-id">mBio</journal-id>
+        <journal-title-group>
+          <journal-title>mBio</journal-title>
+        </journal-title-group>
+        <issn pub-type="epub">2150-7511</issn>
+        <publisher>
+          <publisher-name>American Society for Microbiology (ASM)</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC6247086</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC6247086.1</article-id>
+        <article-id pub-id-type="pmcaid">6247086</article-id>
+        <article-id pub-id-type="pmcaiid">6247086</article-id>
+        <article-id pub-id-type="pmid">30459187</article-id>
+        <article-id pub-id-type="doi">10.1128/mBio.02249-18</article-id>
+        <article-id pub-id-type="publisher-id">mBio02249-18</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Commentary</subject>
+          </subj-group>
+          <subj-group subj-group-type="overline">
+            <subject>Host-Microbe Biology</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Tenacious Researchers Identify a Weakness in All Ebolaviruses</article-title>
+          <alt-title alt-title-type="running-head">Commentary</alt-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author" corresp="yes">
+            <name name-style="western">
+              <surname>DuBois</surname>
+              <given-names initials="RM">Rebecca M.</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff1">
+              <sup>a</sup>
+            </xref>
+          </contrib>
+          <aff id="aff1">
+            <label>a</label>
+            <addr-line>Department of Biomolecular Engineering, University of California Santa Cruz, Santa Cruz, California, USA</addr-line>
+          </aff>
+        </contrib-group>
+        <author-notes>
+          <corresp id="cor1">Address correspondence to <email>rmdubois@ucsc.edu</email>.</corresp>
+        </author-notes>
+        <pub-date pub-type="epub">
+          <day>20</day>
+          <month>11</month>
+          <year>2018</year>
+        </pub-date>
+        <pub-date pub-type="collection">
+          <season>Nov-Dec</season>
+          <year>2018</year>
+        </pub-date>
+        <volume>9</volume>
+        <issue>6</issue>
+        <issue-id pub-id-type="pmc-issue-id">323635</issue-id>
+        <elocation-id>e02249-18</elocation-id>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>20</day>
+              <month>11</month>
+              <year>2018</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>30</day>
+              <month>11</month>
+              <year>2018</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2024-04-07 04:25:29.720">
+              <day>07</day>
+              <month>04</month>
+              <year>2024</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>Copyright © 2018 DuBois.</copyright-statement>
+          <copyright-year>2018</copyright-year>
+          <copyright-holder>DuBois</copyright-holder>
+          <license xmlns:xlink="http://www.w3.org/1999/xlink" license-type="open-access" xlink:href="https://creativecommons.org/licenses/by/4.0/">
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref>
+            <license-p>This is an open-access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</ext-link>.</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="mBio.02249-18.pdf"/>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="mbo006184179001.pdf"/>
+        <related-article xmlns:xlink="http://www.w3.org/1999/xlink" related-article-type="companion" xml:lang="en" xlink:title="research-article" vol="9" journal-id="mBio" journal-id-type="nlm-ta" ext-link-type="pmc" xlink:href="PMC6134094">
+          <article-title>Structural Basis of Pan-Ebolavirus Neutralization by a Human Antibody against a Conserved, yet Cryptic Epitope</article-title>
+          <volume>9</volume>
+          <issue>5</issue>
+          <date>
+            <day>11</day>
+            <month>9</month>
+            <year>2018</year>
+          </date>
+          <elocation-id>e01674-18</elocation-id>
+          <source>mBio</source>
+          <pub-id pub-id-type="doi">10.1128/mBio.01674-18</pub-id>
+          <pub-id pub-id-type="pmcid">PMC6134094</pub-id>
+          <pub-id pub-id-type="pmid">30206174</pub-id>
+        </related-article>
+        <abstract abstract-type="precis">
+          <p>The <italic toggle="yes">Ebolavirus</italic> genus has at least five members, four of which are known to cause deadly disease in humans. An ideal therapy or a vaccine would protect against all ebolaviruses, but identifying a common weakness in all of them has remained elusive.</p>
+        </abstract>
+        <abstract>
+          <title>ABSTRACT</title>
+          <p>The <italic toggle="yes">Ebolavirus</italic> genus has at least five members, four of which are known to cause deadly disease in humans. An ideal therapy or a vaccine would protect against all ebolaviruses, but identifying a common weakness in all of them has remained elusive. West et al. [B. R. West, C. L. Moyer, L. B. King, M. L. Fusco, et al., mBio 9(5):e01674-18, 2018, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://doi.org/10.1128/mBio.01674-18">https://doi.org/10.1128/mBio.01674-18</ext-link>] make the exciting discovery of an “Achilles’ heel,” a cryptic and conserved pocket, on the surface antigen glycoprotein (GP) that is nearly identical in all known ebolaviruses. Key to this discovery was their study of antibody ADI-15878, the only isolated human antibody that can block infectivity of all known ebolaviruses. Following tenacious efforts in X-ray crystallography, West et al. report the high-resolution crystal structures of the Ebola virus GP and the Bundibugyo virus GP, each bound to antibody ADI-15878. These structures reveal a highly conserved but partially obscured site on the virus GP, providing a foundation for design of vaccine antigens or antiviral therapies.</p>
+        </abstract>
+        <kwd-group>
+          <title>KEYWORDS</title>
+          <kwd>ebola virus</kwd>
+          <kwd>neutralizing antibodies</kwd>
+          <kwd>protein structure-function</kwd>
+        </kwd-group>
+        <counts>
+          <fig-count count="1"/>
+          <table-count count="0"/>
+          <equation-count count="0"/>
+          <ref-count count="3"/>
+          <page-count count="2"/>
+          <word-count count="1265"/>
+        </counts>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>cover-date</meta-name>
+            <meta-value>November/December 2018</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+      <notes notes-type="disclaimer">
+        <p><italic toggle="yes">The views expressed in this article do not necessarily reflect the views of the journal or of ASM</italic>.</p>
+      </notes>
+    </front>
+    <body>
+      <sec id="s1">
+        <title>COMMENTARY</title>
+        <p>The 2013-2016 Ebola virus pandemic, which infected 28,000 people and had 41% lethality, was a stark reminder that for any virus with pandemic potential, vaccines and antiviral therapies need to be developed and ready for immediate deployment. Since this pandemic, three other Ebola virus outbreaks have occurred, and there have also been several outbreaks of the related Bundibugyo virus and Sudan virus, all with similar symptoms and lethality. While all of these viruses are genetically related and belong to the <italic toggle="yes">Ebolavirus</italic> genus, their surface antigens, called glycoprotein (GP), differ in amino acid sequence by at least 50%, making it difficult to develop a vaccine or treatment that would protect against all of them.</p>
+        <p>Identifying the common weakness in all ebolaviruses was not obvious, but researchers at The Scripps Research Institute knew that such a weakness existed; they knew this because a human monoclonal antibody called ADI-15878, isolated from a survivor of the 2013-2016 Ebola virus pandemic, had already been shown to “neutralize” or block infectivity of all known members of the <italic toggle="yes">Ebolavirus</italic> genus (<xref rid="B1" ref-type="bibr">1</xref>). Where exactly this antibody binds to the surface antigen GP and how it neutralizes ebolaviruses was what the Scripps researchers set out to discover.</p>
+        <p>The article by West al. (<xref rid="B2" ref-type="bibr">2</xref>) describes the crystal structures of antibody ADI-15878 in complexes with both the Ebola virus GP and the Bundibugyo virus GP. These crystal structures reveal a detailed, atomic view of where ADI-15878 binds to GP. Remarkably, this antibody nudges a flexible region of GP out of the way in order to bind to a greasy (hydrophobic) site underneath it that is highly conserved across the ebolaviruses (<xref ref-type="fig" rid="fig1">Fig. 1</xref>). In comparison, most other antibodies studied thus far have been found to stick to the flexible part itself, which is not conserved among different ebolaviruses. Thus, this discovery is a major breakthrough in the field that reveals for the first time a major weakness on the surfaces of all ebolaviruses.</p>
+        <fig id="fig1" orientation="portrait" position="float">
+          <label>FIG 1</label>
+          <caption>
+            <p>The ADI-15878 antibody binds to a conserved hydrophobic site on the GP glycoproteins that are located on the surface of Ebola virus. This site is normally obscured by a flexible region of GP, represented as the hands of the Ebola virus.</p>
+          </caption>
+          <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="mbo0061841790001.jpg"/>
+        </fig>
+        <p>The implications for this study are that researchers can now develop vaccine antigens and antiviral therapies that target this site. In terms of a vaccine, researchers can now pursue the design of vaccine antigens that better expose this important site of vulnerability on GP and elicit broadly neutralizing antibodies, like ADI-15878, that neutralize all ebolaviruses. Hope is bolstered by their other paper, which describes the structure of a mouse antibody that binds to the same site as ADI-15878 but was elicited by repeated vaccination (<xref rid="B3" ref-type="bibr">3</xref>). People at the sites of new outbreaks, however, will not have been vaccinated. Importantly, the human antibody ADI-15878 itself may work as a postexposure treatment or a preexposure prophylaxis against all ebolaviruses, which could serve as a strong defense for both patients and medical workers during an emerging epidemic.</p>
+        <p>What is not immediately obvious from the West et al. article (<xref rid="B2" ref-type="bibr">2</xref>) is how technically challenging it was to determine these molecular structures. Tucked into a little box in Table S1 of the West et al. article is the number 10. This number represents the number of submillimeter-sized protein crystals that had to be formed, scooped up, frozen, and then blasted with X-rays in order to acquire enough X-ray diffraction data to make this discovery. Anything less than those 10 crystals was not enough to provide the necessary data, and getting to those best 10 crystals meant years of screening through a myriad of GP constructs, hundreds of crystallization conditions, and hundreds of mediocre crystals to find any that would scatter X-rays well. Achieving any crystals at all with the flexible, heavily glycosylated GP glycoprotein in complex with projecting Fab fragments with additional mobility at the elbow regions required years. While some researchers might have given up during this process, thankfully West and coworkers persevered.</p>
+        <p>In summary, the article by West et al. (<xref rid="B2" ref-type="bibr">2</xref>) is a clear example of how basic scientific breakthroughs are providing a foundation for the development of new therapies that will make our world a better and safer place. In addition, this study reminds us of the human element behind these scientific breakthroughs, driven by researchers that have the determination, perseverance, and tenacity to keep going even when the science gets tough.</p>
+      </sec>
+    </body>
+    <back>
+      <fn-group>
+        <fn fn-type="other">
+          <p>For the article discussed, see <related-article xmlns:xlink="http://www.w3.org/1999/xlink" related-article-type="companion" id="d35e199" xml:lang="en" xlink:title="research-article" vol="9" journal-id="mBio" journal-id-type="nlm-ta" ext-link-type="pmc" xlink:href="PMC6134094">https://doi.org/10.1128/mBio.01674-18</related-article>.</p>
+        </fn>
+        <fn fn-type="other">
+          <p><bold>Citation</bold> DuBois RM. 2018. Tenacious researchers identify a weakness in all ebolaviruses. mBio 9:e02249-18. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://doi.org/10.1128/mBio.02249-18">https://doi.org/10.1128/mBio.02249-18</ext-link>.</p>
+        </fn>
+      </fn-group>
+      <ref-list>
+        <title>REFERENCES</title>
+        <ref id="B1">
+          <label>1.</label>
+          <mixed-citation publication-type="journal"><person-group person-group-type="author"><name name-style="western"><surname>Bornholdt</surname><given-names>ZA</given-names></name>, <name name-style="western"><surname>Turner</surname><given-names>HL</given-names></name>, <name name-style="western"><surname>Murin</surname><given-names>CD</given-names></name>, <name name-style="western"><surname>Li</surname><given-names>W</given-names></name>, <name name-style="western"><surname>Sok</surname><given-names>D</given-names></name>, <name name-style="western"><surname>Souders</surname><given-names>CA</given-names></name>, <name name-style="western"><surname>Piper</surname><given-names>AE</given-names></name>, <name name-style="western"><surname>Goff</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Shamblin</surname><given-names>JD</given-names></name>, <name name-style="western"><surname>Wollen</surname><given-names>SE</given-names></name>, <name name-style="western"><surname>Sprague</surname><given-names>TR</given-names></name>, <name name-style="western"><surname>Fusco</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Pommert</surname><given-names>KBJ</given-names></name>, <name name-style="western"><surname>Cavacini</surname><given-names>LA</given-names></name>, <name name-style="western"><surname>Smith</surname><given-names>HL</given-names></name>, <name name-style="western"><surname>Klempner</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Reimann</surname><given-names>KA</given-names></name>, <name name-style="western"><surname>Krauland</surname><given-names>E</given-names></name>, <name name-style="western"><surname>Gerngross</surname><given-names>TU</given-names></name>, <name name-style="western"><surname>Wittrup</surname><given-names>DK</given-names></name>, <name name-style="western"><surname>Saphire</surname><given-names>EO</given-names></name>, <name name-style="western"><surname>Burton</surname><given-names>DR</given-names></name>, <name name-style="western"><surname>Glass</surname><given-names>PJ</given-names></name>, <name name-style="western"><surname>Ward</surname><given-names>AB</given-names></name>, <name name-style="western"><surname>Walker</surname><given-names>LM</given-names></name></person-group><year>2016</year><article-title>Isolation of potent neutralizing antibodies from a survivor of the 2014 Ebola virus outbreak</article-title>. <source>Science</source>
+<volume>351</volume>:<fpage>1078</fpage>–<lpage>1083</lpage>. doi:<pub-id pub-id-type="doi">10.1126/science.aad5788</pub-id>.<pub-id pub-id-type="pmid">26912366</pub-id><pub-id pub-id-type="pmcid">PMC4900763</pub-id></mixed-citation>
+        </ref>
+        <ref id="B2">
+          <label>2.</label>
+          <mixed-citation publication-type="journal"><person-group person-group-type="author"><name name-style="western"><surname>West</surname><given-names>BR</given-names></name>, <name name-style="western"><surname>Moyer</surname><given-names>CL</given-names></name>, <name name-style="western"><surname>King</surname><given-names>LB</given-names></name>, <name name-style="western"><surname>Fusco</surname><given-names>ML</given-names></name>, <name name-style="western"><surname>Milligan</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Hui</surname><given-names>S</given-names></name>, <name name-style="western"><surname>Saphire</surname><given-names>EO</given-names></name></person-group><year>2018</year><article-title>Structural basis of pan-ebolavirus neutralization by a human antibody against a conserved, yet cryptic epitope</article-title>. <source>mBio</source>
+<volume>9</volume>(<issue>5</issue>):<elocation-id>e01674-18</elocation-id>. doi:<pub-id pub-id-type="doi">10.1128/mBio.01674-18</pub-id>.<pub-id pub-id-type="pmid">30206174</pub-id><pub-id pub-id-type="pmcid">PMC6134094</pub-id></mixed-citation>
+        </ref>
+        <ref id="B3">
+          <label>3.</label>
+          <mixed-citation publication-type="journal"><person-group person-group-type="author"><name name-style="western"><surname>Milligan</surname><given-names>JC</given-names></name>, <name name-style="western"><surname>Parekh</surname><given-names>DV</given-names></name>, <name name-style="western"><surname>Fuller</surname><given-names>KM</given-names></name>, <name name-style="western"><surname>Igarashi</surname><given-names>M</given-names></name>, <name name-style="western"><surname>Takada</surname><given-names>A</given-names></name>, <name name-style="western"><surname>Saphire</surname><given-names>EO</given-names></name></person-group><day>10</day><month>9</month><year>2018</year><article-title>Structural characterization of pan-ebolavirus antibody 6D6 targeting the fusion peptide of the surface glycoprotein</article-title>. <source>J Infect Dis</source> doi:<pub-id pub-id-type="doi">10.1093/infdis/jiy532</pub-id>.<pub-id pub-id-type="pmcid">PMC6325343</pub-id><pub-id pub-id-type="pmid">30203042</pub-id></mixed-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </article>
+</pmc-articleset>

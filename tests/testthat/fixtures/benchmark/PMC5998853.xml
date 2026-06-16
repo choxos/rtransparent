@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pmc-articleset PUBLIC "-//NLM//DTD ARTICLE SET 2.0//EN" "https://dtd.nlm.nih.gov/ncbi/pmc/articleset/nlm-articleset-2.0.dtd">
+<pmc-articleset>
+  <article article-type="research-article" xml:lang="en" dtd-version="1.4">
+    <front>
+      <journal-meta>
+        <journal-id journal-id-type="nlm-ta">Anatol J Cardiol</journal-id>
+        <journal-id journal-id-type="iso-abbrev">Anatol J Cardiol</journal-id>
+        <journal-id journal-id-type="pmc-domain-id">3142</journal-id>
+        <journal-id journal-id-type="pmc-domain">anatoljcard</journal-id>
+        <journal-title-group>
+          <journal-title>Anatolian Journal of Cardiology</journal-title>
+        </journal-title-group>
+        <issn pub-type="ppub">2149-2263</issn>
+        <issn pub-type="epub">2149-2271</issn>
+        <publisher>
+          <publisher-name>Turkish Society of Cardiology</publisher-name>
+        </publisher>
+      </journal-meta>
+      <article-meta>
+        <article-id pub-id-type="pmcid">PMC5998853</article-id>
+        <article-id pub-id-type="pmcid-ver">PMC5998853.1</article-id>
+        <article-id pub-id-type="pmcaid">5998853</article-id>
+        <article-id pub-id-type="pmcaiid">5998853</article-id>
+        <article-id pub-id-type="pmid">29615545</article-id>
+        <article-id pub-id-type="doi">10.14744/AnatolJCardiol.2018.37929</article-id>
+        <article-id pub-id-type="publisher-id">AJC-19-273</article-id>
+        <article-version article-version-type="pmc-version">1</article-version>
+        <article-categories>
+          <subj-group subj-group-type="heading">
+            <subject>Original Investigation</subject>
+          </subj-group>
+        </article-categories>
+        <title-group>
+          <article-title>Pulmonary endarterectomy for patients with chronic thromboembolic disease</article-title>
+        </title-group>
+        <contrib-group>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Yıldızeli</surname>
+              <given-names initials="ŞO">Şehnaz Olgun</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff1"/>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Kepez</surname>
+              <given-names initials="A">Alper</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff2">*</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Taş</surname>
+              <given-names initials="S">Serpil</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff4">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Yanartaş</surname>
+              <given-names initials="M">Mehmed</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff4">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Durusoy</surname>
+              <given-names initials="AF">Ali Fuad</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff3">**</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Erkılınç</surname>
+              <given-names initials="A">Atakan</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff5">2</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Mutlu</surname>
+              <given-names initials="B">Bülent</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff2">*</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Kaymaz</surname>
+              <given-names initials="C">Cihangir</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff6">3</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Sunar</surname>
+              <given-names initials="H">Hasan</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff4">1</xref>
+          </contrib>
+          <contrib contrib-type="author">
+            <name name-style="western">
+              <surname>Yıldızeli</surname>
+              <given-names initials="B">Bedrettin</given-names>
+            </name>
+            <xref ref-type="aff" rid="aff3">**</xref>
+            <xref ref-type="corresp" rid="cor1"/>
+          </contrib>
+        </contrib-group>
+        <aff id="aff1">Department of Pulmonology and Intensive Care, Faculty of Medicine, Marmara University; İstanbul-<italic toggle="yes">Turkey</italic></aff>
+        <aff id="aff2"><label>*</label>Cardiology, Faculty of Medicine, Marmara University; İstanbul-<italic toggle="yes">Turkey</italic></aff>
+        <aff id="aff3"><label>**</label>Thoracic Surgery, Faculty of Medicine, Marmara University; İstanbul-<italic toggle="yes">Turkey</italic></aff>
+        <aff id="aff4"><label>1</label>Department of Cardiovascular Surgery, University of Health Sciences, Kartal Koşuyolu Hospital; İstanbul-<italic toggle="yes">Turkey</italic></aff>
+        <aff id="aff5"><label>2</label>Anaesthesia, University of Health Sciences, Kartal Koşuyolu Hospital; İstanbul-<italic toggle="yes">Turkey</italic></aff>
+        <aff id="aff6"><label>3</label>Cardiology, University of Health Sciences, Kartal Koşuyolu Hospital; İstanbul-<italic toggle="yes">Turkey</italic></aff>
+        <author-notes>
+          <corresp id="cor1"><bold>Address for correspondence:</bold> Dr. Bedrettin Yıldızeli, Marmara Üniversitesi Tıp Fakültesi, Fevzi Çakmak Mahallesi, Muhsin Yazıcıoğlu Cad. No:10, Pendik 34899 İstanbul-<italic toggle="yes">Türkiye</italic> Phone: +90 216 625 46 62 E-mail: <email xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="byildizeli@marmara.edu.tr">byildizeli@marmara.edu.tr</email></corresp>
+        </author-notes>
+        <pub-date pub-type="ppub">
+          <month>4</month>
+          <year>2018</year>
+        </pub-date>
+        <pub-date pub-type="epub">
+          <day>29</day>
+          <month>3</month>
+          <year>2018</year>
+        </pub-date>
+        <volume>19</volume>
+        <issue>4</issue>
+        <issue-id pub-id-type="pmc-issue-id">315118</issue-id>
+        <fpage>273</fpage>
+        <lpage>278</lpage>
+        <history>
+          <date date-type="accepted">
+            <day>16</day>
+            <month>3</month>
+            <year>2018</year>
+          </date>
+        </history>
+        <pub-history>
+          <event event-type="pmc-release">
+            <date>
+              <day>01</day>
+              <month>04</month>
+              <year>2018</year>
+            </date>
+          </event>
+          <event event-type="pmc-live">
+            <date>
+              <day>19</day>
+              <month>11</month>
+              <year>2018</year>
+            </date>
+          </event>
+          <event event-type="pmc-last-change">
+            <date iso-8601-date="2018-11-20 00:20:43.803">
+              <day>20</day>
+              <month>11</month>
+              <year>2018</year>
+            </date>
+          </event>
+        </pub-history>
+        <permissions>
+          <copyright-statement>Copyright: © 2018 Turkish Society of Cardiology</copyright-statement>
+          <copyright-year>2018</copyright-year>
+          <license xmlns:xlink="http://www.w3.org/1999/xlink" license-type="open-access" xlink:href="http://creativecommons.org/licenses/by-nc-sa/4.0">
+            <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbyncsalicense">https://creativecommons.org/licenses/by-nc-sa/4.0/</ali:license_ref>
+            <license-p>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License</license-p>
+          </license>
+        </permissions>
+        <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="AJC-19-273.pdf"/>
+        <abstract>
+          <sec id="st1">
+            <title>Objective:</title>
+            <p>Chronic thromboembolic disease (CTED) is characterized by persistent pulmonary thromboembolic occlusions without pulmonary hypertension. Early surgical treatment by performing pulmonary endarterectomy (PEA) may improve symptoms. The goal of the study was to review our experience and early outcome of PEA in patients with CTED.</p>
+          </sec>
+          <sec id="st2">
+            <title>Methods:</title>
+            <p>Data were prospectively collected on all patients who underwent PEA between 2011 and 2015. Patients with CTED and a mean pulmonary artery pressure (mPAP) of &lt;25 mm Hg were identified. All patients were in New York Heart Association (NYHA) functional class II or III. Measured outcomes were in-hospital complications, improvement in cardiac function and exercise capacity, and survival after PEA. Patients were reassessed at 6 months following surgery.</p>
+          </sec>
+          <sec id="st3">
+            <title>Results:</title>
+            <p>A total of 23 patients underwent surgery. There was no in-hospital mortality, but complications occurred in six patients (26%). At 6 months following surgery, 93% of the patients remained alive. Following PEA, the mPAP fell significantly from 21.0±2.7 mm Hg to 18.2±5.5 mm Hg (p&lt;.001). Pulmonary vascular resistance also significantly decreased from 2.2±0.7 wood to 1.5±0.5 wood (p&lt;.001). The 6-min walking distance significantly increased from 322.6±80.4 m to 379.9±68.2 m (p&lt;.001). There was a significant symptomatic improvement in all survivors in NYHA functional classes I or II at 6 months following surgery (p=.001).</p>
+          </sec>
+          <sec id="st4">
+            <title>Conclusion:</title>
+            <p>PEA in selected patients with CTED resulted in significant improvement in symptoms. The selection of patients for undergoing PEA in the absence of pulmonary hypertension must be made based on patients’ expectations and their acceptance of the perioperative risk.</p>
+          </sec>
+        </abstract>
+        <kwd-group>
+          <kwd>chronic thromboembolic disease</kwd>
+          <kwd>pulmonary endarterectomy</kwd>
+          <kwd>mortality</kwd>
+          <kwd>outcome</kwd>
+        </kwd-group>
+        <custom-meta-group>
+          <custom-meta>
+            <meta-name>pmc-status-qastatus</meta-name>
+            <meta-value>0</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-live</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-embargo</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-status-released</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-open-access</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-olf</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-manuscript</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-legally-suppressed</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-pdf</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-has-supplement</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-pdf-only</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-suppress-copyright</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-real-version</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-is-scanned-article</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-preprint</meta-name>
+            <meta-value>no</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-prop-in-epmc</meta-name>
+            <meta-value>yes</meta-value>
+          </custom-meta>
+          <custom-meta>
+            <meta-name>pmc-license-ref</meta-name>
+            <meta-value>CC BY-NC-SA</meta-value>
+          </custom-meta>
+        </custom-meta-group>
+      </article-meta>
+    </front>
+    <body>
+      <sec sec-type="intro" id="sec1-1">
+        <title>Introduction</title>
+        <p>Chronic thromboembolic pulmonary hypertension (CTEPH) is a serious long-term complication of pulmonary thromboembolism (PTE) and results from incomplete resolution of vascular obstruction (<xref rid="ref1" ref-type="bibr">1</xref>,<xref rid="ref2" ref-type="bibr">2</xref>). This may be associated with triggered vascular remodeling, which causes persistent elevation in pulmonary artery pressure (PAP) and pulmonary vascular resistance (PVR), leading to right ventricular failure (<xref rid="ref3" ref-type="bibr">3</xref>-<xref rid="ref5" ref-type="bibr">5</xref>). CTEPH is a progressive disease associated with considerable morbidity and mortality. It has an estimated incidence of 0.5 to 3.8% following acute PTE (<xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref6" ref-type="bibr">6</xref>). Mortality is usually associated with progressive pulmonary hypertension and resulting right ventricular (RV) failure (<xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref5" ref-type="bibr">5</xref>). Pulmonary endarterectomy (PEA) is the most effective therapy in CTEPH, and in centers with the most experienced surgeons, the overall mortality rate due to PEA is less than 5% (<xref rid="ref5" ref-type="bibr">5</xref>, <xref rid="ref7" ref-type="bibr">7</xref>-<xref rid="ref9" ref-type="bibr">9</xref>). PEA removes obstructive thromboembolic material and significantly improves the hemodynamic measures of PVR, PAP, and cardiac output. PEA also causes reverse remodeling of the right ventricle, with the return of RV systolic and diastolic function toward normal levels (<xref rid="ref7" ref-type="bibr">7</xref>,<xref rid="ref8" ref-type="bibr">8</xref>). Long-term survival rates have been reported to reach 90% at 5 years following surgery (<xref rid="ref10" ref-type="bibr">10</xref>). Recently, a growing number of patients have been identified as having persistent dyspnea after PTE in the absence of pulmonary hypertension (mean PAP &lt;25 mm Hg) (<xref rid="ref11" ref-type="bibr">11</xref>). The term chronic thromboembolic disease (CTED) has been used for these patients, and the cause of persistent symptoms have been suggested to be associated with dead space ventilation, pulmonary hypertension with exercise, and/or maladaptation of the right ventricle to decreased RV compliance (<xref rid="ref11" ref-type="bibr">11</xref>-<xref rid="ref16" ref-type="bibr">16</xref>). At present, neither the prognosis nor the risk of progression to more a severe form of pulmonary hypertension in these patients is clear (<xref rid="ref17" ref-type="bibr">17</xref>). The optimal therapeutic option has also not been defined for patients with CTED; however, an increasing number of patients have undergone PEA in expert centers over the last few years for symptomatic improvement. Recently, the Cambridge group reported their results of PEA in patients with symptomatic CTED (<xref rid="ref11" ref-type="bibr">11</xref>). The authors reported significant improvement in symptoms and quality of life after PEA, with 95% survival rate at 1 year following surgery (<xref rid="ref11" ref-type="bibr">11</xref>). No other study has been reported that assesses the outcome of patients with CTED following PEA. Ever since we started our PEA program with acceptable results (<xref rid="ref18" ref-type="bibr">18</xref>), more than 450 operations have been performed, with increased institutional and surgical experience resulting in our center becoming the only expert PEA center in Turkey This study aimed to evaluate the efficacy of PEA in the treatment of patients with CTED and presents a summary of our experience and preliminary results over a 6-month period.</p>
+      </sec>
+      <sec sec-type="methods" id="sec1-2">
+        <title>Methods</title>
+        <p>Between March 2011 and December 2015, 23 patients with the diagnosis of CTED underwent PEA (<xref rid="T1" ref-type="table">Table 1</xref>). The mean age of 12 female and 11 male patients was 46.2±15.2 years and ranged from 21 years to 73 years. Overall, symptom onset ranged from a period of 3 months to 120 months preoperatively, with an average period of 25.8±25.2 months, and all patients were in New York Heart Association (NYHA) functional class II (n=11) or III (n=12).</p>
+        <table-wrap id="T1" position="float" orientation="portrait">
+          <label>Table 1</label>
+          <caption>
+            <p>Preoperative characteristics of the patients</p>
+          </caption>
+          <table frame="hsides" rules="groups" width="100%">
+            <thead>
+              <tr>
+                <th align="left" rowspan="1" colspan="1">Characteristics</th>
+                <th align="center" rowspan="1" colspan="1">Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Age, years (range)</td>
+                <td align="center" rowspan="1" colspan="1">46.2±15.2 (21-73)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Male (n, %)</td>
+                <td align="center" rowspan="1" colspan="1">11 (47.8%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Female (n, %)</td>
+                <td align="center" rowspan="1" colspan="1">12 (52.2%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">BSA [m<sup>2</sup>, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">1.8±0.1 (1.4-2.2)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Pulmonary embolism (n, %)</td>
+                <td align="center" rowspan="1" colspan="1">20 (86.9%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Deep venous thrombosis (n, %)</td>
+                <td align="center" rowspan="1" colspan="1">3 (13.0 %)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">First diagnosis [months, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">25.8±25.2 (3-120)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">NYHA Class II (n, %)</td>
+                <td align="center" rowspan="1" colspan="1">11 (47.8%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">NYHA Class III (n, %)</td>
+                <td align="center" rowspan="1" colspan="1">12 (52.2%)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">6-min walking test [m, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">322.6±80.4 (180-490)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">FEV<sub>1</sub> [Liter predicted, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">2.44±0.65 (1.21-3.49)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">FVC [Liter predicted, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">3.65±0.55 (2.4-4.5)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">FEV<sub>1</sub>/FVC [% predicted, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">85.8±15.3 (58-119)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">mean PAP [mm Hg, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">21.0±2.7 (15-25)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">TAPSE [mm, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">18.9±3.93 (13-30)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Tricuspid regurgitation jet velocity</td>
+                <td align="center" rowspan="1" colspan="1">2.2±0.8 (1.0-3.4)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">[m/s, (range)]</td>
+                <td align="center" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Right atrial volume [mL/m<sup>2</sup>, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">15.3±3.68 (10-26)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Cardiac index [L/min/m<sup>2</sup>, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">2.5±0.8 (1.49-4.5)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Cardiac output [L/min, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">4.6±1.5 (2.9-9.3)</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Preoperative PVR [wood, (range)]</td>
+                <td align="center" rowspan="1" colspan="1">2.2±0.7 (0.5-2.8)</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>BSA - body surface area; FEV1 - forced expiratory volume in 1 s; FVC - forced vital capacity; NYHA - New York Heart Association; PAP - pulmonary artery pressure; PVR - pulmonary vascular resistance; TAPSE - tricuspid annular plane systolic excursion</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>Twenty patients (87.0%) presented with a history of pulmonary embolism, with one-third of patients having more than one episode and three patients (13.0%) having a history of deep venous thrombosis. Twelve patients (52.1%) had at least one comorbidity or risk factor that may be associated with PTE. Seven patients (31.8%) had some coagulation disorders associated with immunological disorders, including three patients with inherited deficiencies of protein C, protein S, or Factor V Leiden mutation; two with both antiphospholipid antibody syndrome and systemic lupus erythematosus; and two with Behçet’s disease. One patient (4.5%) had a diagnosis of sarcoidosis, one (4.5%) had a history of lung cancer, one (4.5%) had sarcoma of the lower extremity, and one (4.5%) had hypothyroidism. One patient (4.5%) had steel bars behind the sternum due to a previous minimally invasive pectus excavatum operation performed 2 years ago (<xref rid="ref19" ref-type="bibr">19</xref>). All patients had symptoms of cardiopulmonary disease despite adequate anticoagulation for at least 3 months.</p>
+        <p>CTED was diagnosed by the presence of mismatched perfusion defects on the radioisotopic ventilation perfusion (V/Q) scan despite adequate anticoagulation for at least 3 months. Evidence of CTED was then confirmed by computed tomography pulmonary angiogram (CTPA) using maximal intensity projections and right heart catheterization (RHC) with measurements of the right atrial, pulmonary artery, and pulmonary wedge pressures. Cardiac output was determined by thermodilution, and PVR was calculated. No patient underwent either pulmonary angiography or the cardiopulmonary exercise test. Chronic thromboembolic pulmonary disease was defined as a mean PAP (mPAP) of less than 25 mm Hg on performing RHC. Our indications for PEA for patients with CTED were as follows: mPAP less than 25 mm Hg, NYHA functional class equal or greater than II, absence of significant comorbidities, and presence of surgically accessible disease.</p>
+        <p>During preoperative evaluation, all patients had completed their assessment with the 6-min walking test, pulmonary function test, duplex scanning of the lower extremities, and arterial blood gas test. Surgical candidates older than 45 years had undergone coronary angiography as part of their assessment. For patients with CTED, options of undergoing surgery for symptomatic benefits or the alternative of conservative treatment with regular follow-ups were discussed. The only surgical contraindication was underlying severe parenchymal lung disease in our center. In contrast to the Cambridge PEA group (<xref rid="ref11" ref-type="bibr">11</xref>), we have not routinely used an inferior vena cava (IVC) filter perioperatively in our program due to the lack of evidence supporting the use of IVC filters in CTED and their potential side effects in the long-term (<xref rid="ref20" ref-type="bibr">20</xref>). All data were prospectively collected and entered into a database, and the study was retrospectively conducted. Informed consent was obtained from the patients.</p>
+        <sec id="sec2-1">
+          <title>Pulmonary endarterectomy</title>
+          <p>Our surgical technique has been previously described (<xref rid="ref18" ref-type="bibr">18</xref>). In brief, surgery was performed under general anesthesia through median sternotomy and using extracorporeal circulation with periods of circulatory arrest under deep hypothermia (18°C-20°C) for the right and left pulmonary arteries. The endarterectomy specimen was circumferentially followed down to the segmental and subsegmental branches in each lobe, until complete endarterectomy of the pulmonary vascular bed was achieved (<xref ref-type="fig" rid="F1">Fig. 1</xref>). Weaning from cardiopulmonary bypass (CPB) was performed with care. Patients were maintained under anesthesia and sedated postoperatively in the intensive care unit (ICU). Extensive ventilatory and circulatory monitoring, including online measurement of PAP with an oxymetric Swan-Ganz catheter (Edwards Lifesciences, Irvine, CA), cardiac output, mixed venous oxygen saturation, and arterial blood gases, were continuously performed. The patients underwent pressure-controlled mechanical ventilation with a positive end-expiratory pressure of 6 cmH<sub>2</sub>O and tidal volume of 8 mL/kg. Inhaled nitric oxide at doses of 15-20 ppm was given for the first 4 h postoperatively and was then gradually withdrawn. Cautious fluid and vasoactive drug administration, and aggressive diuresis were provided as long as necessary for the patients to recover. Most patients were extubated on the first or second postoperative day. Anticoagulation with unfractionated heparin was resumed at a low dose within 4-6 h after the end of surgery and progressively increased to full anticoagulation within 24 h. Oral coumadin was usually started after 48-72 h, with an international normalized ratio (INR) of around 2.5 targeted. Transthoracic echocardiography was performed within days of discharge from the hospital. All patients were followed up at 3 and 6 months. They were classified functionally according to the WHO/NYHA functional class and assessed with the 6-min walk test and echocardiogram at each follow-up visit. Baseline characteristics, perioperative data, and postoperative assessment results were obtained from the patients’ files and database for this study. The date of the last PTE, time from the last PTE to PEA, and length of in-hospital and ICU stay were noted. The incidence of complications was assessed. Operative mortality was defined as death in hospital or within 30 days of surgery. Deterioration in WHO/NYHA functional class was determined by worsening by at least one class compared with the best class achieved after PEA. Repeat RHC was performed when the patients experienced deterioration in WHO/NYHA functional class or remained in functional class III after PEA.</p>
+          <fig id="F1" position="float" orientation="portrait">
+            <label>Figure 1</label>
+            <caption>
+              <p>Samples of pulmonary endarterectomy specimens taken from the patients included in the study</p>
+            </caption>
+            <graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="AJC-19-273-g001.jpg"/>
+          </fig>
+        </sec>
+        <sec id="sec2-2">
+          <title>Statistical analysis</title>
+          <p>Data are summarized as mean±standard deviation for continuous variables and as number (or percentage) for categorical variables. Follow-up was 100% complete. The overall outcome of PEA was retrospectively reviewed. Data distribution was assessed using the one-sample Kolmogorov-Smirnov test. Significance of differences regarding continuous variables measured at baseline and at 6 months after PEA was tested using paired Student’s t-test for parameters displaying normal distribution and with the Wilcoxon signed-rank test for parameters displaying non-normal distribution. The significance of differences between NYHA status before and after PEA was tested with the sign test. All statistical analyses were performed using SPSS version 16 software (SPSS Inc., Chicago, IL, USA), with p-values of less than. 05 considered significant. Approval for this study was granted by the Institutional Review Board of Kartal Koşuyolu Teaching and Education Hospital (no: 2016.5/6-17).</p>
+        </sec>
+      </sec>
+      <sec sec-type="results" id="sec1-3">
+        <title>Results</title>
+        <p>Between March 2011 and December 2015, 322 patients underwent PEA. Of these, 23 (7.1%) fulfilled the criteria of having CTED. The preoperative and intra- and postoperative characteristics of the patients are presented in Tables <xref rid="T1" ref-type="table">1</xref> and <xref rid="T2" ref-type="table">2</xref>, respectively. All patients had evidence of chronic thromboembolic obstruction in the CTPA despite at least 3 months of effective anticoagulation with documented treatment compliance. None of the patients were on pulmonary vasodilator therapy at the time of hemodynamic assessment.</p>
+        <table-wrap id="T2" position="float" orientation="portrait">
+          <label>Table 2</label>
+          <caption>
+            <p>Comparison of baseline and postoperative outcomes at 6 months after pulmonary endarterectomy</p>
+          </caption>
+          <table frame="hsides" rules="groups" width="100%">
+            <thead>
+              <tr>
+                <th align="left" rowspan="1" colspan="1">Characteristics</th>
+                <th align="center" rowspan="1" colspan="1">Baseline (n=23)</th>
+                <th align="center" rowspan="1" colspan="1">6 months after PEA (n=21)</th>
+                <th align="center" rowspan="1" colspan="1">
+                  <italic toggle="yes">P</italic>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>New York Heart Association functional class</bold>
+                </td>
+                <td align="center" rowspan="1" colspan="1"/>
+                <td align="center" rowspan="1" colspan="1"/>
+                <td align="center" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Class I</td>
+                <td align="center" rowspan="1" colspan="1">0</td>
+                <td align="center" rowspan="1" colspan="1">10 (47.6%)</td>
+                <td align="center" rowspan="1" colspan="1">0.001</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Class II</td>
+                <td align="center" rowspan="1" colspan="1">11 (47.8%)</td>
+                <td align="center" rowspan="1" colspan="1">11 (52.4%)</td>
+                <td align="center" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Class III</td>
+                <td align="center" rowspan="1" colspan="1">12 (52.2%)</td>
+                <td align="center" rowspan="1" colspan="1">0</td>
+                <td align="center" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">
+                  <bold>Hemodynamics</bold>
+                </td>
+                <td align="center" rowspan="1" colspan="1"/>
+                <td align="center" rowspan="1" colspan="1"/>
+                <td align="center" rowspan="1" colspan="1"/>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">Tricuspid regurgitation velocity, m/s</td>
+                <td align="center" rowspan="1" colspan="1">2.3±0.7</td>
+                <td align="center" rowspan="1" colspan="1">2.1±0.6</td>
+                <td align="center" rowspan="1" colspan="1">0.002</td>
+              </tr>
+              <tr>
+                <td align="left" rowspan="1" colspan="1">6-min walking distance, m</td>
+                <td align="center" rowspan="1" colspan="1">322.6±80.4</td>
+                <td align="center" rowspan="1" colspan="1">379.9±68.2</td>
+                <td align="center" rowspan="1" colspan="1">&lt;0.001</td>
+              </tr>
+            </tbody>
+          </table>
+          <table-wrap-foot>
+            <fn>
+              <p>Data are presented as n or mean±SD. PEA - pulmonary endarterectomy; the sign test was used for testing the difference between the baseline and postoperative New York Heart Association status, and the paired sample t-test was used for testing the difference between the baseline and postoperative tricuspid regurgitation velocity and 6-min walking distance</p>
+            </fn>
+          </table-wrap-foot>
+        </table-wrap>
+        <p>RHC data showed mildly elevated mean PAP and PVR values that were not high enough to fulfill the criteria for the current definition of pulmonary hypertension. The mean cardiac index was also at the lower end of the normal range.</p>
+        <p>After performing PEA, there was no in-hospital mortality. The mean CPB time, aortic cross clamp time, and circulatory arrest time were 224.3±62.4, 17.1±19.4, and 22.1±9.2 min, respectively. The mean duration of postoperative mechanical ventilation was 1.2±0.4 days. The length of ICU stay was 4.6±5.8 days, and the duration of discharge from hospital was 11.6±7.5 days.</p>
+        <p>Six patients (26.0%) had complications after undergoing PEA. The most common was supraventricular arrhythmias with two patients requiring cardioversion. 8th patient in the cohort had difficulty in weaning and required tracheostomy. This patient required postoperative noninvasive ventilatory support with continuous positive airway pressure, which was mainly as treatment for hypoxia due to reperfusion injury. One patient had to return to the operating theatre (for cardiac tamponade). One patient had reversible acute renal failure requiring hemodialysis. One patient also had transient vocal cord paralysis.</p>
+        <p>Two patients (8.6%) died after they were discharged from hospital. One was a female aged 51 years who died at her local hospital 5 months after PEA due to acute myocardial infarction. The second patient was a male aged 71 years and who was discharged with tracheostomy. He suddenly died at home 63 days after surgery. A post mortem examination was not performed, and his death was listed as an unexplained sudden death.</p>
+        <sec id="sec2-3">
+          <title>Hemodynamic parameters</title>
+          <p>Twenty-one patients (91.4%) had their comprehensive review at 6 months after surgery. Postoperative results are displayed in <xref rid="T2" ref-type="table">Table 2</xref>. Immediately after PEA, the mPAP fell significantly from 21.0±2.7 mm Hg to 18.2±5.5 mm Hg (p&lt;.001). PVR also significantly decreased from 2.2±0.7 wood to 1.5±0.5 wood (p&lt;.001). The 6-min walking distance significantly increased from 322.6±80.4 m at baseline to 379.9±68.2 m at 6 months after surgery (p&lt;.001). Tricuspid regurgitation jet velocity was also observed to significantly decrease, and none of the patients developed pulmonary hypertension.</p>
+          <p>Atherosclerotic changes with organized thrombus, myxoid degeneration, vascular proliferation, recanalization, and fibrosis were observed in the histological analysis of pulmonary artery sections. No plexiform lesion was observed.</p>
+          <p>There was significant symptomatic improvement; 10 patients (47.6%) were in NYHA functional class I and 11 (52.3%) were in NYHA class II at 6 months (p&lt;0.001 for the difference compared with baseline).</p>
+        </sec>
+      </sec>
+      <sec sec-type="discussion" id="sec1-4">
+        <title>Discussion</title>
+        <p>Over the past few years, an increasing number of patients with symptomatic CTED in the absence of pulmonary hypertension have undergone PEA in expert centers to improve their symptoms and quality of life (<xref rid="ref9" ref-type="bibr">9</xref>, <xref rid="ref11" ref-type="bibr">11</xref>, <xref rid="ref16" ref-type="bibr">16</xref>). In the present study, PEA resulted in significant improvement in symptoms and the quality of life in our patients with CTED during the sixth month after surgery. In-hospital mortality was 0%, but complications occurred in 26% of the patients. To date, CTED has been poorly characterized. Recently, de Perrot and Mayer (<xref rid="ref17" ref-type="bibr">17</xref>) have proposed a new term, chronic thromboembolic pulmonary arterial disease, instead of CTED for patients with symptomatic disease without pulmonary hypertension. Symptomatic CTED is an increasingly identified diagnosis after PTE. There is a wide degree of variation in the resolution of thrombi after PTE, and more than 50% of patients have been reported to have persistent perfusion defects 6 months after PTE (<xref rid="ref20" ref-type="bibr">20</xref>). Although most of these patients become symptomatic, only a minority of them (0.5-3.8%) develop pulmonary hypertension (<xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref6" ref-type="bibr">6</xref>). It has been known that &gt;60% of the pulmonary vasculature must be occluded to develop pulmonary hypertension after PTE (<xref rid="ref11" ref-type="bibr">11</xref>, <xref rid="ref21" ref-type="bibr">21</xref>, <xref rid="ref22" ref-type="bibr">22</xref>). Severe pulmonary hypertension out of proportion to the degree of vascular obstruction is commonly seen in patients with CTEPH, which points to the development of small vessel vasculopathy in an unobstructed vascular bed (<xref rid="ref3" ref-type="bibr">3</xref>). The predictors of small vessel vasculopathy have not been clearly defined at present. The incidence of CTED appears to be low in our cohort of patients, representing 7.1% of the patients who had undergone PEA.</p>
+        <p>Held et al. (<xref rid="ref15" ref-type="bibr">15</xref>) analyzed the exercise capacity and limiting factors in 10 patients with CTED and compared RHC and cardiopulmonary exercise test results of patients with CTEPH and control patients. They found that patients with CTED show reduced oxygen uptake and work rate. They concluded that patients with CTED show objective functional impairment and similar limitations to patients with CTEPH. Functional limitation is characterized by gas exchange disturbance and ineffective ventilation. Our patients, as reported here, when compared to CTEPH registry patients (<xref rid="ref23" ref-type="bibr">23</xref>), are younger (46 years vs. 60 years) and more likely to have a previous pulmonary embolism (86% vs. 79%). Our findings are similar to those of Taboada et al. (<xref rid="ref11" ref-type="bibr">11</xref>). In their cohort, the median age of patients was 49 years, and a history of previous pulmonary embolism was observed in 90% of the patients. Although it may be speculated that our patients were diagnosed earlier during the course of the disease, and pulmonary hypertension was not developed at the time of surgery. Nonetheless, this is not supported by the fact that the median time from the last VTE to diagnosis was 25 months, which was similar to that observed in registry patients. On the other hand, in our previous report, the mean age of our patients was 47 years (<xref rid="ref18" ref-type="bibr">18</xref>). Although younger CTED and CTEPH patients are seen Turkey, younger CTED patients were also seen by Taboada et al. (<xref rid="ref11" ref-type="bibr">11</xref>) in England. We agree with the Papworth group that demographic differences are to be explained by younger patients seeking medical attention when they fail to return to their fitness status before having a pulmonary embolism.</p>
+        <p>The surgical indications for PEA have been modified over time as PEA centers get more specialized. Ever since the implementation of PEA in our center, the number of patient referrals substantially increased over the years, and we became more confident performing the procedure. All patients with CTED underwent PEA. It has been shown that CTEPH patients with increased PVR have higher mortality rates than those with PVR of &lt;900 dyn•s•cm<sup>−5</sup> and have a higher postoperative mortality rate if PEA cannot reduce PVR by 50% (<xref rid="ref24" ref-type="bibr">24</xref>). On the other hand, patients who have evidence of significant thromboembolic disease but have a relatively low PVR and normal PAP may be candidates to undergo PEA to increase their exercise tolerance and eliminate dead space ventilation and prevent the development of secondary pulmonary arteriopathy and hypertension (<xref rid="ref11" ref-type="bibr">11</xref>). van Kan et al. (<xref rid="ref16" ref-type="bibr">16</xref>) performed cardiopulmonary exercise testing (CPET) during RHC and noninvasive CPET at 1 year following PEA in 14 patients with CTED to study hemodynamic and ventilatory responses on exercising. They concluded that patients with CTED showed abnormal pulmonary vascular response to exercise and decreased ventilatory efficiency. Responses after undergoing PEA point to the restoration of right ventricle stroke volume response and ventilatory efficiency.</p>
+        <p>It is well known that plexogenic arteriopathy describes severe pulmonary hypertensive arterial remodeling that ultimately forms plexiform lesions (<xref rid="ref25" ref-type="bibr">25</xref>). It encompasses various forms of vascular wall remodeling, ranging from medial wall thickening to intimal occlusive and complex plexiform lesions that are specific to PAH. As only patients with symptomatic CTED in the absence of pulmonary hypertension were reviewed in this current study, no plexiform lesion was observed in the histological analysis of pulmonary artery sections.</p>
+        <p>Our study demonstrated the feasibility of performing PEA for CTED patients with significant improvement in the symptomatic status. We have also shown that surgical treatment can be safely performed in this group of patients with in-hospital mortality of 0% and 6-month survival rate of 93%. None of the patients developed pulmonary hypertension 6 months after surgery based on echocardiographic tricuspid regurgitation velocity (&lt;2.8 m/s for all). However, surgery was not entirely risk free; complications occurred in one-quarter of patients, which underlines the importance of patient selection for performing PEA in such a population. Our complication rate was consistent with that in other series (<xref rid="ref11" ref-type="bibr">11</xref>,<xref rid="ref23" ref-type="bibr">23</xref>) and might be expected given the complexity of the surgical procedure and patients’ comorbidities. Similarly, the Cambridge group (<xref rid="ref11" ref-type="bibr">11</xref>) reported that PEA resulted in significant improvement in symptoms, exercise capacity, and quality of life in patients with CTED.</p>
+        <p>The inherent limitations of retrospective studies are valid for our analysis. As we could not analyze patients with CTED who were conservatively followed, a direct comparison between medical therapy and surgery was not possible. There was clear improvement in the 6-min walking test; however, we did not have any other objective parameter that might have quantified the benefit of surgery in these patients. A questionnaire might have provided a more objective comparison regarding differences in dyspnea/quality of life pre- and postoperatively. RHC was not performed at the sixth month because none of the patients had findings suggestive of pulmonary hypertension during the sixth-month postoperative echocardiography.</p>
+        <p>Our observations have demonstrated the feasibility of performing PEA in symptomatic patients with CTED; however, we were not able to demonstrate the superiority of PEA over medical treatment in this patient population. Although PEA leads to symptomatic improvement, its effect on the progression of small vessel vasculopathy and long-term mortality is not clear.</p>
+        <p>We agree with de Perrot and Mayer (<xref rid="ref17" ref-type="bibr">17</xref>) that the selection of patients for PEA in the absence of pulmonary hypertension should be made after a thorough evaluation is performed and after individual discussion with patients. Indications for surgery must be made based on patients’ expectations and them accepting the perioperative risk. PEA is a complex procedure that can be safely performed only in expert centers (i.e., more than 50 operations per year). This is even more important for the cohort of patients with CTED without pulmonary hypertension as their prognosis without surgical treatment is probably favorable.</p>
+      </sec>
+      <sec sec-type="conclusion" id="sec1-5">
+        <title>Conclusion</title>
+        <p>This study demonstrates that PEA can be performed with limited risk and result in a favorable early outcome for patients with symptomatic CTED. Although PEA leads to symptomatic improvement, it is not free of complications, and its effect on long-term mortality is not clear. Given the perioperative complications and the fact that their prognosis without treatment is probably favorable, surgical treatment of CTED patients should only be performed in expert centers. The results of further prospective studies are needed to elucidate the optimal treatment strategy and optimal candidates for undergoing PEA in symptomatic patients with CTED.</p>
+      </sec>
+    </body>
+    <back>
+      <fn-group>
+        <fn fn-type="COI-statement">
+          <p><bold>Conflict of interest:</bold> None declared.</p>
+        </fn>
+        <fn fn-type="other">
+          <p><bold>Peer-review:</bold> Externally peer-reviewed.</p>
+        </fn>
+        <fn fn-type="other">
+          <p><bold>Authorship contributions:</bold> Concept – Ş.O.Y., A.K., S.T., M.Y., A.F.D., A.E., B.M., C.K., H.S., B.Y.; Design – Ş.O.Y., A.K., S.T., M.Y., A.F.D., A.E., B.M., C.K., H.S., B.Y.; Supervision – Ş.O.Y., A.K., S.T., M.Y., A.F.D., A.E., B.M., C.K., H.S., B.Y.; Data collection &amp;/or processing – Ş.O.Y., A.K., S.T., M.Y., A.F.D., A.E., B.M., C.K., H.S., B.Y.; Analysis &amp;/or interpretation – Ş.O.Y., A.K., S.T., M.Y., A.F.D., A.E., B.M., C.K., H.S., B.Y.; Literature search – Ş.O.Y., A.K., B.Y.; Writing – Ş.O.Y., A.K., B.Y.; Critical review – Ş.O.Y., A.K., S.T., M.Y., A.F.D., A.E., B.M., C.K., H.S., B.Y.</p>
+        </fn>
+      </fn-group>
+      <ref-list>
+        <title>References</title>
+        <ref id="ref1">
+          <label>1</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Fernandes</surname>
+                <given-names>T</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Planquette</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sanchez</surname>
+                <given-names>O</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Morris</surname>
+                <given-names>T</given-names>
+              </name>
+            </person-group>
+            <article-title>From acute to chronic thromboembolic disease</article-title>
+            <source>Ann Am Thorac Soc</source>
+            <year>2016</year>
+            <volume>13</volume>
+            <issue>Suppl 3</issue>
+            <fpage>S207</fpage>
+            <lpage>14</lpage>
+            <pub-id pub-id-type="pmid">27571002</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1513/AnnalsATS.201509-619AS</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref2">
+          <label>2</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Kim</surname>
+                <given-names>NH</given-names>
+              </name>
+            </person-group>
+            <article-title>Group 4 Pulmonary hypertension:chronic Thromboembolic Pulmonary Hypertension:Epidemiology, Pathophysiology, and Treatment</article-title>
+            <source>Cardiol Clin</source>
+            <year>2016</year>
+            <volume>34</volume>
+            <fpage>435</fpage>
+            <lpage>41</lpage>
+            <pub-id pub-id-type="pmid">27443139</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ccl.2016.04.011</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref3">
+          <label>3</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Moser</surname>
+                <given-names>KM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Bloor</surname>
+                <given-names>CM</given-names>
+              </name>
+            </person-group>
+            <article-title>Pulmonary vascular lesions occurring in patients with chronic major vessel thromboembolic pulmonary hypertension</article-title>
+            <source>Chest</source>
+            <year>1993</year>
+            <volume>103</volume>
+            <fpage>685</fpage>
+            <lpage>92</lpage>
+            <pub-id pub-id-type="pmid">8449052</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1378/chest.103.3.685</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref4">
+          <label>4</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Thistlethwaite</surname>
+                <given-names>PA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Madani</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jamieson</surname>
+                <given-names>SW</given-names>
+              </name>
+            </person-group>
+            <article-title>Pulmonary thromboendarterectomy surgery</article-title>
+            <source>Cardiol Clin</source>
+            <year>2004</year>
+            <volume>22</volume>
+            <fpage>467</fpage>
+            <lpage>78</lpage>
+            <pub-id pub-id-type="pmid">15302365</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ccl.2004.04.009</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref5">
+          <label>5</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Piazza</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Goldhaber</surname>
+                <given-names>SZ</given-names>
+              </name>
+            </person-group>
+            <article-title>Chronic thromboembolic pulmonary hypertension</article-title>
+            <source>N Engl J Med</source>
+            <year>2011</year>
+            <volume>364</volume>
+            <fpage>351</fpage>
+            <lpage>60</lpage>
+            <pub-id pub-id-type="pmid">21268727</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMra0910203</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref6">
+          <label>6</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Pengo</surname>
+                <given-names>V</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lensing</surname>
+                <given-names>AW</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Prins</surname>
+                <given-names>MH</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Marchiori</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Davidson</surname>
+                <given-names>BL</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tiozzo</surname>
+                <given-names>F</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <collab>Thromboembolic Pulmonary Hypertension Study Group</collab>
+            <article-title>Incidence of chronic thromboembolic pulmonary hypertension after pulmonary embolism</article-title>
+            <source>N Engl J Med</source>
+            <year>2004</year>
+            <volume>350</volume>
+            <fpage>2257</fpage>
+            <lpage>64</lpage>
+            <pub-id pub-id-type="pmid">15163775</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1056/NEJMoa032274</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref7">
+          <label>7</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Edwards</surname>
+                <given-names>JA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mandras</surname>
+                <given-names>S</given-names>
+              </name>
+            </person-group>
+            <article-title>An update on the management of chronic thromboembolic pulmonary hypertension</article-title>
+            <source>Curr Probl Cardiol</source>
+            <year>2017</year>
+            <volume>42</volume>
+            <fpage>7</fpage>
+            <lpage>38</lpage>
+            <pub-id pub-id-type="pmid">27989311</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cpcardiol.2016.11.001</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref8">
+          <label>8</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Jenkins</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Madani</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fadel</surname>
+                <given-names>E</given-names>
+              </name>
+              <name name-style="western">
+                <surname>D'armini</surname>
+                <given-names>AM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mayer</surname>
+                <given-names>E</given-names>
+              </name>
+            </person-group>
+            <article-title>Pulmonary endarterectomy in the management of chronic thromboembolic pulmonary hypertension</article-title>
+            <source>Eur Respir Rev</source>
+            <year>2017</year>
+            <volume>26</volume>
+            <fpage>1</fpage>
+            <lpage>6</lpage>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1183/16000617.0111-2016</pub-id>
+            <pub-id pub-id-type="pmcid">PMC9489144</pub-id>
+            <pub-id pub-id-type="pmid">28298388</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref9">
+          <label>9</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Madani</surname>
+                <given-names>MM</given-names>
+              </name>
+            </person-group>
+            <article-title>Surgical treatment of chronic thromboembolic pulmonary hypertension:Pulmonary thromboendarterectomy</article-title>
+            <source>Methodist Debakey Cardiovasc J</source>
+            <year>2016</year>
+            <volume>12</volume>
+            <fpage>213</fpage>
+            <lpage>8</lpage>
+            <pub-id pub-id-type="pmid">28289496</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.14797/mdcj-12-4-213</pub-id>
+            <pub-id pub-id-type="pmcid">PMC5344471</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref10">
+          <label>10</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Freed</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Thompson</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Berman</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tsui</surname>
+                <given-names>SS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dunning</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sheares</surname>
+                <given-names>KK</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Survival after pulmonary thromboendarterectomy:effect of residual pulmonary hypertension</article-title>
+            <source>J Thorac Cardiovasc Surg</source>
+            <year>2011</year>
+            <volume>141</volume>
+            <fpage>383</fpage>
+            <lpage>7</lpage>
+            <pub-id pub-id-type="pmid">20471039</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jtcvs.2009.12.056</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref11">
+          <label>11</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Taboada</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pepke-Zaba</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jenkins</surname>
+                <given-names>DP</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Berman</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Treacy</surname>
+                <given-names>CM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cannon</surname>
+                <given-names>JE</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Outcome of pulmonary endarterectomy in symptomatic chronic thromboembolic disease</article-title>
+            <source>Eur Respir J</source>
+            <year>2014</year>
+            <volume>44</volume>
+            <fpage>1635</fpage>
+            <lpage>45</lpage>
+            <pub-id pub-id-type="pmid">25234805</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1183/09031936.00050114</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref12">
+          <label>12</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Klok</surname>
+                <given-names>FA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tijmensen</surname>
+                <given-names>JE</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Haeck</surname>
+                <given-names>ML</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van Kralingen</surname>
+                <given-names>KW</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Huisman</surname>
+                <given-names>MV</given-names>
+              </name>
+            </person-group>
+            <article-title>Persistent dyspnea complaints at long-term follow-up after an episode of acute pulmonary embolism:results of a questionnaire</article-title>
+            <source>Eur J Intern Med</source>
+            <year>2008</year>
+            <volume>19</volume>
+            <fpage>625</fpage>
+            <lpage>9</lpage>
+            <pub-id pub-id-type="pmid">19046730</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.ejim.2008.02.006</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref13">
+          <label>13</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>McCabe</surname>
+                <given-names>C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Preston</surname>
+                <given-names>SD</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gopalan</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Dunning</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Pepke-Zaba</surname>
+                <given-names>J</given-names>
+              </name>
+            </person-group>
+            <article-title>Cardiopulmonary exercise testing suggests a beneficial response to pulmonary endarterectomy in a patient with chronic thromboembolic obstruction and normal preoperative pulmonary hemodynamics</article-title>
+            <source>Pulm Circ</source>
+            <year>2014</year>
+            <volume>4</volume>
+            <fpage>137</fpage>
+            <lpage>41</lpage>
+            <pub-id pub-id-type="pmid">25006429</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1086/674878</pub-id>
+            <pub-id pub-id-type="pmcid">PMC4070752</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref14">
+          <label>14</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>McCabe</surname>
+                <given-names>C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>White</surname>
+                <given-names>PA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hoole</surname>
+                <given-names>SP</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Axell</surname>
+                <given-names>RG</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Priest</surname>
+                <given-names>AN</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Gopalan</surname>
+                <given-names>D</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Right ventricular dysfunction in chronic thromboembolic obstruction of the pulmonary artery:a pressure-volume study using the conductance catheter</article-title>
+            <source>J Appl Physiol (1985)</source>
+            <year>2014</year>
+            <volume>116</volume>
+            <fpage>355</fpage>
+            <lpage>63</lpage>
+            <pub-id pub-id-type="pmid">24356516</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1152/japplphysiol.01123.2013</pub-id>
+            <pub-id pub-id-type="pmcid">PMC3921352</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref15">
+          <label>15</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Held</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kolb</surname>
+                <given-names>P</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Grün</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jany</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hübner</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Grgic</surname>
+                <given-names>A</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Functional characterization of patients with chronic thromboembolic disease</article-title>
+            <source>Respiration</source>
+            <year>2016</year>
+            <volume>91</volume>
+            <fpage>503</fpage>
+            <lpage>9</lpage>
+            <pub-id pub-id-type="pmid">27327769</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1159/000447247</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref16">
+          <label>16</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>van</surname>
+                <given-names>Kan C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van der</surname>
+                <given-names>Plas MN</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Reesink</surname>
+                <given-names>HJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>van</surname>
+                <given-names>Steenwijk RP</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kloek</surname>
+                <given-names>JJ</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Tepaske</surname>
+                <given-names>R</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Hemodynamic and ventilatory responses during exercise in chronic thromboembolic disease</article-title>
+            <source>J Thorac Cardiovasc Surg</source>
+            <year>2016</year>
+            <volume>152</volume>
+            <fpage>763</fpage>
+            <lpage>71</lpage>
+            <pub-id pub-id-type="pmid">27372842</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jtcvs.2016.05.058</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref17">
+          <label>17</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>de</surname>
+                <given-names>Perrot M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mayer</surname>
+                <given-names>E</given-names>
+              </name>
+            </person-group>
+            <article-title>Chronic thromboembolic pulmonary hypertension:do we need a new definition?</article-title>
+            <source>Eur Respir J</source>
+            <year>2014</year>
+            <volume>44</volume>
+            <fpage>1401</fpage>
+            <lpage>3</lpage>
+            <pub-id pub-id-type="pmid">25435525</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1183/09031936.00177514</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref18">
+          <label>18</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Yıldızeli</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Taş</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yanartaş</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kaymaz</surname>
+                <given-names>C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mutlu</surname>
+                <given-names>B</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Karakurt</surname>
+                <given-names>S</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Pulmonary endarterectomy for chronic thrombo-embolic pulmonary hypertension:an institutional experience</article-title>
+            <source>Eur J Cardiothorac Surg</source>
+            <year>2013</year>
+            <volume>44</volume>
+            <fpage>e219</fpage>
+            <lpage>27</lpage>
+            <pub-id pub-id-type="pmid">23729746</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ejcts/ezt293</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref19">
+          <label>19</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Abaci</surname>
+                <given-names>O</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cetinkal</surname>
+                <given-names>G</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kocas</surname>
+                <given-names>C</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Evren</surname>
+                <given-names>E</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yildiz</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Yildizeli</surname>
+                <given-names>B</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Pulmonary embolism:a late complication of pectus excavatum repair</article-title>
+            <source>Congenit Heart Dis</source>
+            <year>2014</year>
+            <volume>9</volume>
+            <fpage>E113</fpage>
+            <lpage>5</lpage>
+            <pub-id pub-id-type="pmid">23721082</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/chd.12094</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref20">
+          <label>20</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Stawicki</surname>
+                <given-names>SP</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sims</surname>
+                <given-names>CA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sharma</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Weger</surname>
+                <given-names>NS</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Truiit</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Cipolla</surname>
+                <given-names>J</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Vena cava filters:a synopsis of complications and related topics</article-title>
+            <source>J Vasc Access</source>
+            <year>2008</year>
+            <volume>9</volume>
+            <fpage>102</fpage>
+            <lpage>10</lpage>
+            <pub-id pub-id-type="pmid">18609524</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref21">
+          <label>21</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Nijkeuter</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Hovens</surname>
+                <given-names>MM</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Davidson</surname>
+                <given-names>BL</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Huisman</surname>
+                <given-names>MV</given-names>
+              </name>
+            </person-group>
+            <article-title>Resolution of thromboemboli in patients with acute pulmonary embolism:a systematic review</article-title>
+            <source>Chest</source>
+            <year>2006</year>
+            <volume>129</volume>
+            <fpage>192</fpage>
+            <lpage>7</lpage>
+            <pub-id pub-id-type="pmid">16424432</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1378/chest.129.1.192</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref22">
+          <label>22</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Azarian</surname>
+                <given-names>R</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Wartski</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Collignon</surname>
+                <given-names>MA</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Parent</surname>
+                <given-names>F</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Herve</surname>
+                <given-names>P</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Sors</surname>
+                <given-names>H</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Lung perfusion scans and hemodynamics in acute and chronic pulmonary embolism</article-title>
+            <source>J Nucl Med</source>
+            <year>1997</year>
+            <volume>38</volume>
+            <fpage>980</fpage>
+            <lpage>3</lpage>
+            <pub-id pub-id-type="pmid">9189155</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref23">
+          <label>23</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Mayer</surname>
+                <given-names>E</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Jenkins</surname>
+                <given-names>D</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Lindner</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>D'Armini</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Kloek</surname>
+                <given-names>J</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Meyns</surname>
+                <given-names>B</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Surgical management and outcome of patients with chronic thromboembolic pulmonary hypertension:results from an international prospective registry</article-title>
+            <source>J Thorac Cardiovasc Surg</source>
+            <year>2011</year>
+            <volume>141</volume>
+            <fpage>702</fpage>
+            <lpage>10</lpage>
+            <pub-id pub-id-type="pmid">21335128</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jtcvs.2010.11.024</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref24">
+          <label>24</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Dartevelle</surname>
+                <given-names>P</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Fadel</surname>
+                <given-names>E</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Mussot</surname>
+                <given-names>S</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Chapelier</surname>
+                <given-names>A</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Herve</surname>
+                <given-names>P</given-names>
+              </name>
+              <name name-style="western">
+                <surname>de</surname>
+                <given-names>Perrot M</given-names>
+              </name>
+              <etal/>
+            </person-group>
+            <article-title>Chronic thromboembolic pulmonary hypertension</article-title>
+            <source>Eur Respir J</source>
+            <year>2004</year>
+            <volume>23</volume>
+            <fpage>637</fpage>
+            <lpage>48</lpage>
+            <pub-id pub-id-type="pmid">15083767</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1183/09031936.04.00079704</pub-id>
+          </element-citation>
+        </ref>
+        <ref id="ref25">
+          <label>25</label>
+          <element-citation publication-type="journal">
+            <person-group person-group-type="author">
+              <name name-style="western">
+                <surname>Oka</surname>
+                <given-names>M</given-names>
+              </name>
+              <name name-style="western">
+                <surname>McMurtry</surname>
+                <given-names>IF</given-names>
+              </name>
+              <name name-style="western">
+                <surname>Oshima</surname>
+                <given-names>K</given-names>
+              </name>
+            </person-group>
+            <article-title>How does pulmonary endarterectomy cure CTEPH:A clue to cure PAH?</article-title>
+            <source>Am J Physiol Lung Cell Mol Physiol</source>
+            <year>2016</year>
+            <volume>311</volume>
+            <fpage>L766</fpage>
+            <lpage>9</lpage>
+            <pub-id pub-id-type="pmid">27591244</pub-id>
+            <pub-id pub-id-type="doi" assigning-authority="pmc">10.1152/ajplung.00288.2016</pub-id>
+          </element-citation>
+        </ref>
+      </ref-list>
+    </back>
+  </article>
+</pmc-articleset>
