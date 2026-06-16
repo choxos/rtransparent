@@ -716,17 +716,20 @@ get_fund_acknow <- function(article) {
 #' @return The index of the paragraph of interest.
 get_fund_acknow_new <- function(article) {
 
-  synonyms <- .create_synonyms()
-  ack_terms <-
-    synonyms %>%
-    magrittr::extract(c("acknowledge", "support_only")) %>%
-    lapply(.bound) %>%
-    unlist()
-  fund_terms <- c(synonyms$foundation, synonyms$award) %>% .bound()
-  c(ack_terms, fund_terms) %>%
-    .encase() %>%
-    grep(article, perl = T, ignore.case = T)
+  # Detect funding acknowledged in prose. Requires explicit funding language: a
+  # funding verb directed at a funder ("supported/funded/financed by ..."), an
+  # institutional "support/funding of/from the ...", a grant or award
+  # identifier, or a named award. A bare mention of an institution, the word
+  # "support", or "acknowledge" is not enough, because those also appear in
+  # competing-interest statements, generic thanks and author affiliations.
+  patterns <- c(
+    "\\b(fund|support|financ|sponsor)(ed|ing)?\\b(\\s+\\w+){0,3}\\s+(by|through)\\b",
+    "\\b(support|funding|grant|grants|funds)\\s+(of|from)\\s+the\\b",
+    "\\bgrant(s|ed)?\\b(\\s+\\w+){0,3}\\s+(no\\.?|number|#|from|award|agreement|id|ref)\\b",
+    "\\b(fellowship|scholarship|studentship|bursary|stipend|endowment)\\b"
+  )
 
+  grep(.encase(patterns), article, perl = T, ignore.case = T)
 }
 
 

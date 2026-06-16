@@ -1,6 +1,6 @@
 # rtransparent accuracy benchmark
 
-Package version 0.3.1. Detectors run on NCBI PMC full-text XML for the
+Package version 0.3.2. Detectors run on NCBI PMC full-text XML for the
 human-labeled held-out test articles of Serghiou et al. (2021), compared to
 the published Fig 2 (XML subset). Bootstrap: 2000 resamples, unweighted
 (see data-raw/benchmark/README.md). Current values are point [95% CI].
@@ -22,10 +22,10 @@ Coverage: 188 / 188 articles fetched and scored (100%).
 | Metric | Current [95% CI] | Paper Fig 2 (xml) |
 |---|---|---|
 | Sensitivity | 100.0 [100.0, 100.0] | 99.7 [99.3, 100.0] |
-| Specificity | 77.6 [69.8, 84.7] | 100.0 [100.0, 100.0] |
-| PPV | 73.5 [66.7, 80.5] | 100.0 [100.0, 100.0] |
+| Specificity | 95.7 [91.8, 99.1] | 100.0 [100.0, 100.0] |
+| PPV | 93.5 [88.5, 98.6] | 100.0 [100.0, 100.0] |
 | NPV | 100.0 [100.0, 100.0] | 98.3 [95.8, 100.0] |
-| Accuracy | 86.2 [81.4, 90.4] | 99.8 [99.4, 100.0] |
+| Accuracy | 97.3 [95.2, 99.5] | 99.8 [99.4, 100.0] |
 
 ## REGISTER
 Coverage: 214 / 214 articles fetched and scored (100%).
