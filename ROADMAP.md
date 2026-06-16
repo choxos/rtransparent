@@ -42,13 +42,21 @@ Living plan for improving the package. Update it as items ship.
   — skipped: cosmetic, conflicts heavily with this line's divergence.
 - "harmonize with new oddpub" — moot once we reimplement data/code (item B).
 
-### B. Reimplement oddpub data/code detection natively (GPL-3)
-Clean-room implementation: repository names (GitHub/Zenodo/OSF/Dryad/figshare),
-accession-ID patterns (GEO/SRA/PDB/ArrayExpress/...), and data/code
-availability-statement language; reuse `.create_synonyms`/`.encase`/`.bound`.
-Wire into `rt_data_code`/`rt_data_code_pmc`, remove the dependency guards, drop
-`oddpub` + `tokenizers` from `Suggests`. Validate against `data_true/false.xlsx`
-(`isData`) and `code_true.xlsx` (`isCode`); extend the benchmark to 5 indicators.
+### B. Reimplement oddpub data/code detection natively (GPL-3)  [done, tuning recall]
+Native detector in `R/data_code.R` (`.detect_data_code`): field-specific
+accession schemes, repository URLs/names, deposit/availability + DAS language,
+supplement and file-format signals, with reuse and non-availability vetoes.
+`rt_data_code` / `rt_data_code_pmc` / `rt_data_code_pmc_list` now use it and no
+longer need `oddpub`/`tokenizers` at runtime. Benchmark
+(`data-raw/benchmark/run_data_code.R`, `inst/benchmark/results_data_code.md`):
+- **code 68% sens / 94% spec** (beats the paper's ~59% sensitivity).
+- **data 64% sens / 95% spec** (precision matches oddpub's ~97%; recall below
+  oddpub's ~84% on a long tail of supplement-only data and rare phrasings).
+
+Remaining: lift data recall past oddpub (extend supplement/file-format and DAS
+phrasings; ~5 of the misses are extraction gaps, ~21 are pattern-tail, ~15 have
+no detectable text signal). Then delete the now-dead oddpub/tokenizers helper
+functions in `rt_data_code_pmc.R` and drop both from `Suggests`.
 
 ### C. Fix the public `rt_fund_pmc`
 The exported `rt_fund_pmc` is broken: it predicts TRUE for essentially all input

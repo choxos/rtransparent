@@ -18,25 +18,16 @@
 #' @export
 rt_data_code <- function(filename) {
 
-  .check_data_code_deps()
-
-  # Read TXT file
   article <- readr::read_file(filename)
+  paragraphs <- unlist(strsplit(article, "\n+"))
 
-  # Tokenize
-  article_tokens <-
-    article %>%
-    .obliterate_fullstop_1() %>%
-    .tokenize() %>%
-    list() %>%
-    rlang::set_names("10.17605/OSF.IO/E58WS")  # otherwise oddpub throws error
+  found <- .detect_data_code(paragraphs)
 
-  # Extract indicators
-  # The article field is not used within this
-  out_df <-
-    oddpub::open_data_search(article_tokens, detected_sentences = T) %>%
-    dplyr::mutate(article = NA)
-
-  # Return
-  return(out_df)
+  tibble::tibble(
+    article = filename,
+    is_open_data = found$is_open_data,
+    open_data_statements = found$data_text,
+    is_open_code = found$is_open_code,
+    open_code_statements = found$code_text
+  )
 }

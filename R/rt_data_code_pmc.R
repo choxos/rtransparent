@@ -375,72 +375,32 @@ rt_data_pmc_specific <- function(filename) {
 #' @export
 rt_data_code_pmc <- function(filename, remove_ns = T, specificity = "low") {
 
-  .check_data_code_deps()
-
   # A lot of the PMC XML files are malformed
   article_xml <- tryCatch(.get_xml(filename, remove_ns), error = function(e) e)
 
   if (inherits(article_xml, "error")) {
 
-    return(tibble::tibble(filename, is_success = F))
+    return(tibble::tibble(filename = filename, is_success = FALSE))
 
   }
-
 
   # Extract IDs
   id_ls <- .get_ids(article_xml)
   id_ls$filename <- filename
-  id_df <- tibble::as_tibble(id_ls)
 
+  # Detect data and code sharing in the relevant article text
+  found <- .detect_data_code(.dc_article_text(article_xml))
 
-  # Extract type
-  type_df <- .get_type(article_xml)
-  is_type <- type_df %>% unlist() %>% any()
-
-
-  if (!is_type) {
-
-    return(dplyr::bind_cols(id_df, type_df, is_success = T))
-
-  }
-
-
-  # Extract text
-  article_xml %>% .remove_elements(extensive = T)
-  article <- .get_elements(article_xml, specificity = specificity)
-
-
-  # Tokenize
-  article_tokens <-
-    article %>%
-    .obliterate_fullstop_1() %>%
-    .tokenize() %>%
-    list() %>%
-    rlang::set_names(id_df$doi)
-
-
-  # Keep relevant
-  relevant_ls <- .check_relevance(unlist(article_tokens))
-  is_relevant_data <- !!length(relevant_ls$data_loc)
-  is_relevant_code <- !!length(relevant_ls$code_loc)
-  relevant_df <- tibble::tibble(is_relevant_data, is_relevant_code)
-
-  if (!is_relevant_data & !is_relevant_code) {
-
-    return(dplyr::bind_cols(id_df, type_df, relevant_df, is_success = T))
-
-  }
-
-  # Reduces median run time from 270 to 250 (7% reduction)
-  # wanted_sentences <- unique(unlist(relevant_ls))
-  # article_tokens %<>% purrr::map(magrittr::extract, wanted_sentences)
-
-
-  # Extract indicators
-  out_df <- oddpub::open_data_search(article_tokens, detected_sentences = T)
-
-
-  dplyr::bind_cols(id_df, type_df, relevant_df, out_df, is_success = T)
+  tibble::as_tibble(c(
+    id_ls,
+    list(
+      is_open_data = found$is_open_data,
+      open_data_statements = found$data_text,
+      is_open_code = found$is_open_code,
+      open_code_statements = found$code_text,
+      is_success = TRUE
+    )
+  ))
 }
 
 
@@ -470,97 +430,11 @@ rt_data_code_pmc <- function(filename, remove_ns = T, specificity = "low") {
 #' results_table <- rt_data_pmc_list(filepaths, remove_ns = T)
 #' }
 #' @export
-rt_data_code_pmc_list <- function(filenames,
-                                  remove_ns = T,
-                                  specificity = "low") {
+rt_data_code_pmc_list <- function(filenames, remove_ns = T, specificity = "low") {
 
-  .check_data_code_deps()
-
-  # Avoid automated checking warning in R package development
-  doi <- NULL
-
-  article_xmls <-
-    filenames %>%
-    purrr::map(~ tryCatch(.get_xml(.x, remove_ns), error = function(e) e))
-
-
-  is_success <- purrr::map_lgl(article_xmls, ~ !inherits(.x, "error"))
-  article_xmls %<>% purrr::keep(is_success)
-
-  if (!length(article_xmls)) {
-
-    return(tibble::tibble(filenames, is_success = F))
-
-  }
-
-
-  # Extract IDs
-  id_dfs <-
-    article_xmls %>%
-    purrr::map_dfr(.get_ids) %>%
-    dplyr::mutate(doi = ifelse(nchar(doi) == 0, "not found", doi)) %>%
-    dplyr::mutate(filename = filenames[is_success])
-
-
-  # Extract type (not at the moment - tricky code for minimal gain in time)
-  # type_df <- purrr::map(article_xmls, .get_type)
-  # is_type <- purrr::map(type_df, ~ any(unlist(.x)))
-  # article_xmls %<>% keep(is_type)
-
-
-  # Extract text
-  purrr::map(article_xmls, .remove_elements)
-  articles <- purrr::map(article_xmls, .get_elements, specificity = specificity)
-
-
-  # Tokenize (fast)
-  articles_tokens <-
-    articles %>%
-    purrr::map(.obliterate_fullstop_1) %>%
-    purrr::map(.tokenize) %>%
-    rlang::set_names(id_dfs$doi)
-
-
-  # Keep relevant
-  rel_ls <- purrr::map(articles_tokens, ~ .check_relevance(unlist(.x)))
-
-  .get_inds <- function(x) {
-
-    inds <- unlist(x)
-    inds <- sort(unique(c(inds, inds + 1, inds - 1)))
-    inds <- inds[inds > 0]
-
-    # Do this b/c there may not be any relevant values, which messes the code
-    if (!length(inds)) inds <- 1
-    return(inds)
-  }
-
-  a <- purrr::map(rel_ls, .get_inds)
-  articles_tokens %<>% purrr::map2(a, ~ magrittr::extract(.x, unlist(.y)))
-  articles_tokens %<>% purrr::map(purrr::discard, is.na) %>% purrr::compact()
-  # articles_tokens %<>% purrr::map2(rel_ls, ~ magrittr::extract(.x, unlist(.y)))
-  # articles_tokens%<>%purrr::map2(rel_ls,~modify_at(.x, -unlist(.y), `<-`, ""))
-  relevant_df <- purrr::map_dfr(articles, .check_relevance, as_tbl = T)
-
-
-  # Extract indicators (slow)
-  # article_tokens <- map(article_tokens, paste, collapse = " ")
-  indicator_df <- oddpub::open_data_search(articles_tokens)
-
-
-  if (any(!is_success)) {
-
-    a <- cbind(id_dfs, relevant_df, indicator_df, is_success = T)
-    b <- tibble::tibble(filename = filenames[!is_success], is_success = F)
-    out_df <- dplyr::bind_rows(a, b)
-
-  } else {
-
-    out_df <- cbind(id_dfs, relevant_df, indicator_df, is_success = T)
-
-  }
-
-  return(tibble::as_tibble(out_df))
+  purrr::map_dfr(filenames, function(f) {
+    rt_data_code_pmc(f, remove_ns = remove_ns, specificity = specificity)
+  })
 }
 
 
