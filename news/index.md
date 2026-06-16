@@ -1,5 +1,47 @@
 # Changelog
 
+## rtransparent 0.5.0
+
+- New corpus-level summary tools, for turning per-article detector
+  output into the kind of figures and tables used in meta-research
+  studies of transparency:
+  - [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+    reports each indicator’s prevalence with a Wilson confidence
+    interval and, by default, a prevalence corrected for the detector’s
+    sensitivity and specificity (the Rogan-Gladen estimator). It can
+    summarize within groups via `by`.
+  - [`rt_score()`](https://choxos.github.io/rtransparent/reference/rt_score.md)
+    adds a per-article count of the openness practices met.
+  - [`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+    draws a prevalence bar chart or a prevalence-over-time line chart
+    (requires `ggplot2`).
+- New datasets: `rt_accuracy` (validated detector sensitivity and
+  specificity, used by
+  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md))
+  and `rt_demo` (a small simulated corpus for the examples).
+- New vignette,
+  [`vignette("transparency-summary")`](https://choxos.github.io/rtransparent/articles/transparency-summary.md),
+  illustrating the output: from one article to a corpus prevalence
+  table, an accuracy-corrected prevalence, a practice-count
+  distribution, subgroup summaries and plots.
+
+## rtransparent 0.4.3
+
+- Removed the unused legacy data and code helper functions that still
+  referenced `oddpub` and `tokenizers`. The native detector (added in
+  0.4.0) is the only data and code path; `oddpub`, `tokenizers` and
+  `metareadr` have been dropped from `Suggests`, so the package and its
+  CRAN-style check no longer reference any GitHub-only packages.
+- Resolved the `R CMD check` note about the undefined `.` global
+  variable.
+- Polished release metadata: the `DESCRIPTION` `Title` is now in title
+  case and the pkgdown URL carries its trailing slash.
+- The pkgdown reference index now groups the exported functions by
+  purpose and collapses internal helpers, so the website presents the
+  public API rather than every internal helper.
+- Regenerated the committed benchmark artifacts under the current
+  package version.
+
 ## rtransparent 0.4.2
 
 - Added a pkgdown documentation website at

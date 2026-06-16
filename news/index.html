@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,12 +35,33 @@
 
     <div align="justify">
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2">rtransparent 0.4.2<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0">rtransparent 0.5.0<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0"></a></h2>
+<ul><li>New corpus-level summary tools, for turning per-article detector output into the kind of figures and tables used in meta-research studies of transparency:
+<ul><li>
+<code><a href="../reference/rt_summary.html">rt_summary()</a></code> reports each indicator’s prevalence with a Wilson confidence interval and, by default, a prevalence corrected for the detector’s sensitivity and specificity (the Rogan-Gladen estimator). It can summarize within groups via <code>by</code>.</li>
+<li>
+<code><a href="../reference/rt_score.html">rt_score()</a></code> adds a per-article count of the openness practices met.</li>
+<li>
+<code><a href="../reference/rt_plot.html">rt_plot()</a></code> draws a prevalence bar chart or a prevalence-over-time line chart (requires <code>ggplot2</code>).</li>
+</ul></li>
+<li>New datasets: <code>rt_accuracy</code> (validated detector sensitivity and specificity, used by <code><a href="../reference/rt_summary.html">rt_summary()</a></code>) and <code>rt_demo</code> (a small simulated corpus for the examples).</li>
+<li>New vignette, <code><a href="../articles/transparency-summary.html">vignette("transparency-summary")</a></code>, illustrating the output: from one article to a corpus prevalence table, an accuracy-corrected prevalence, a practice-count distribution, subgroup summaries and plots.</li>
+</ul></div>
+<div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-1">rtransparent 0.4.3<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-1"></a></h2>
+<ul><li>Removed the unused legacy data and code helper functions that still referenced <code>oddpub</code> and <code>tokenizers</code>. The native detector (added in 0.4.0) is the only data and code path; <code>oddpub</code>, <code>tokenizers</code> and <code>metareadr</code> have been dropped from <code>Suggests</code>, so the package and its CRAN-style check no longer reference any GitHub-only packages.</li>
+<li>Resolved the <code>R CMD check</code> note about the undefined <code>.</code> global variable.</li>
+<li>Polished release metadata: the <code>DESCRIPTION</code> <code>Title</code> is now in title case and the pkgdown URL carries its trailing slash.</li>
+<li>The pkgdown reference index now groups the exported functions by purpose and collapses internal helpers, so the website presents the public API rather than every internal helper.</li>
+<li>Regenerated the committed benchmark artifacts under the current package version.</li>
+</ul></div>
+<div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-2">rtransparent 0.4.2<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-2"></a></h2>
 <ul><li>Added a pkgdown documentation website at <a href="https://choxos.github.io/rtransparent" class="uri">https://choxos.github.io/rtransparent</a>.</li>
 <li>Corrected the <code><a href="../reference/rt_data_code_pmc_list.html">rt_data_code_pmc_list()</a></code> documentation example.</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-1">rtransparent 0.4.1<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-1"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-3">rtransparent 0.4.1<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-3"></a></h2>
 <ul><li>Fixed the exported <code><a href="../reference/rt_fund_pmc.html">rt_fund_pmc()</a></code>. It previously predicted funding <code>TRUE</code> for no-funding articles with empty evidence text; it now delegates to the same detection path as <code><a href="../reference/rt_all_pmc.html">rt_all_pmc()</a></code> so the two agree, and a positive prediction always carries evidence. Added regression tests.</li>
 <li>Exported and documented <code><a href="../reference/rt_meta_pmc.html">rt_meta_pmc()</a></code> (article metadata from a PMC XML file), which the README advertised but which was not exported.</li>
 <li>Generated the missing help pages for the novelty and replication functions. <code>R CMD check</code> now passes with no errors or warnings.</li>
@@ -49,33 +70,33 @@
 <li>Added a package startup message and removed the stale packrat configuration.</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-2">rtransparent 0.4.0<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-2"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-4">rtransparent 0.4.0<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-4"></a></h2>
 <ul><li>Data and code sharing detection is now implemented natively (<code>R/data_code.R</code>) and no longer requires the <code>oddpub</code> package at runtime. On the held-out validation set the native detector scores data 64% sensitivity / 95% specificity and code 68% sensitivity / 94% specificity (the published paper reports about 76% and 59% sensitivity). Code detection already exceeds the paper’s sensitivity and the data precision matches the original oddpub; data sensitivity is being improved toward oddpub’s ~84%.</li>
 <li>
 <code>rt_data_code</code>, <code>rt_data_code_pmc</code> and <code>rt_data_code_pmc_list</code> were rewritten to use the native detector and return <code>is_open_data</code> / <code>is_open_code</code> with the matched statement text. They no longer depend on <code>oddpub</code> or <code>tokenizers</code>.</li>
 <li>Added a data/code benchmark (<code>data-raw/benchmark/run_data_code.R</code>, <code>inst/benchmark/results_data_code.md</code>).</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-3">rtransparent 0.3.4<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-3"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-5">rtransparent 0.3.4<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-5"></a></h2>
 <ul><li>Ported the PROSPERO detection fix from the quest-bih fork: the registration regex now matches PROSPERO identifiers of 5 to 11 digits (<code>CRD</code> numbers exceed 5 digits), in both the TXT and PMC detectors. No change on the benchmark (the held-out set has no PROSPERO-only cases). The fork’s other commits were assessed and deferred: “coi update” is TXT-only (not exercised by the PMC benchmark) and “pipe update” is a cosmetic reformat that conflicts with this line’s changes.</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-4">rtransparent 0.3.3<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-4"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-6">rtransparent 0.3.3<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-6"></a></h2>
 <ul><li>Improved funding specificity from 78% to 96% on the held-out XML test set (accuracy 86% to 97%) by tightening <code><a href="../reference/get_fund_acknow_new.html">get_fund_acknow_new()</a></code>. It previously flagged any acknowledgment that merely named an institution or used the word “support”, so competing-interest statements, generic thanks, data-availability statements and affiliations were misread as funding. It now requires explicit funding language: a funding verb directed at a funder, an institutional “support/funding of the …”, a grant or award identifier, or a named award. Sensitivity is unchanged at 100% on the test set.</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-5">rtransparent 0.3.2<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-5"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-7">rtransparent 0.3.2<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-7"></a></h2>
 <ul><li>Added a reproducible accuracy benchmark (<code>data-raw/benchmark/</code>, <code>inst/benchmark/</code>) that scores the detectors against the human-labeled gold standard of Serghiou et al. (2021) and reports sensitivity, specificity, PPV, NPV and accuracy with bootstrap confidence intervals, alongside the published Fig 2 numbers.</li>
 <li>Fixed <code><a href="../reference/dot-reroot_xml.html">.reroot_xml()</a></code> to handle bare <code>&lt;article&gt;</code> and NCBI EFetch <code>&lt;pmc-articleset&gt;</code> roots. Previously it returned an empty document for anything other than the PMC OAI-PMH format, which silently suppressed all detection.</li>
 <li>Fixed unqualified <code>str_detect()</code>/<code>regex()</code> calls in the funding detector that errored on articles lacking a structured funding statement.</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-6">rtransparent 0.3.1<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-6"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-8">rtransparent 0.3.1<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-8"></a></h2>
 <ul><li>Data and code detection dependencies (<code>oddpub</code>, <code>tokenizers</code>) are now optional (moved to <code>Suggests</code>); the package loads and every other indicator runs without them. The data and code functions raise a clear, actionable error when these packages are absent.</li>
 <li>Added an internal PMC full-text XML fetch helper for the accuracy benchmark, backed by NCBI E-utilities (EFetch) with a PMC OAI-PMH fallback (adapted from <code>metareadr</code>, GPL-3).</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-7">rtransparent 0.3.0<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-7"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-9">rtransparent 0.3.0<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-9"></a></h2>
 <ul><li>
 <code>rt_novelty</code> and <code>rt_novelty_pmc</code> added: detect claims of novelty (“for the first time”) in TXT and PMC XML files.</li>
 <li>
@@ -87,11 +108,11 @@
 <li>A formal testthat test suite has been added (<code>tests/testthat/</code>).</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-8">rtransparent 0.2.5<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-8"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-10">rtransparent 0.2.5<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-10"></a></h2>
 <ul><li>A vignette has been added to help illustrate how to use the package.</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-9">rtransparent 0.2<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-9"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-11">rtransparent 0.2<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-11"></a></h2>
 <ul><li>
 <code>rt_coi</code> now searches for Conflicts of interest statements within text files.</li>
 <li>
@@ -104,7 +125,7 @@
 <code>rt_read_pdf</code> now converts PDF files into TXT using poppler.</li>
 </ul></div>
 <div class="section level2">
-<h2 class="pkg-version" data-toc-text="0.4.2" id="rtransparent-0-4-2-10">rtransparent 0.1<a class="anchor" aria-label="anchor" href="#rtransparent-0-4-2-10"></a></h2>
+<h2 class="pkg-version" data-toc-text="0.5.0" id="rtransparent-0-5-0-12">rtransparent 0.1<a class="anchor" aria-label="anchor" href="#rtransparent-0-5-0-12"></a></h2>
 <ul><li>Initial commit of functions to analyze PMC XML files for indicators.</li>
 </ul></div>
 </div>

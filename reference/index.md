@@ -1,422 +1,78 @@
 # Package index
 
-## All functions
+## Run all detectors
 
-- [`.bound()`](https://choxos.github.io/rtransparent/reference/dot-bound.md)
-  : Place boundaries around words
-- [`.create_register_pmc_title()`](https://choxos.github.io/rtransparent/reference/dot-create_register_pmc_title.md)
-  : Identify registration titles - specific with no negation
-- [`.create_synonyms()`](https://choxos.github.io/rtransparent/reference/dot-create_synonyms.md)
-  : A list of word synonyms
-- [`.encase()`](https://choxos.github.io/rtransparent/reference/dot-encase.md)
-  : Encace words within parentheses and OR statements
-- [`.first_capital()`](https://choxos.github.io/rtransparent/reference/dot-first_capital.md)
-  : Create a regular expression where the first letter is capital
-- [`.get_coi_pmc_fn()`](https://choxos.github.io/rtransparent/reference/dot-get_coi_pmc_fn.md)
-  : Identify elements with COI attributes
-- [`.get_coi_pmc_title()`](https://choxos.github.io/rtransparent/reference/dot-get_coi_pmc_title.md)
-  : Identify COI titles using XML labels
-- [`.get_fund_pmc_group()`](https://choxos.github.io/rtransparent/reference/dot-get_fund_pmc_group.md)
-  : Identify funding group elements in NLM XML files
-- [`.get_fund_pmc_source()`](https://choxos.github.io/rtransparent/reference/dot-get_fund_pmc_source.md)
-  : Identify funding source elements in NLM XML files
-- [`.get_fund_pmc_title()`](https://choxos.github.io/rtransparent/reference/dot-get_fund_pmc_title.md)
-  : Identify funding titles using XML labels
-- [`.get_ids()`](https://choxos.github.io/rtransparent/reference/dot-get_ids.md)
-  : Extract PMIDs and DOIs
-- [`.get_text()`](https://choxos.github.io/rtransparent/reference/dot-get_text.md)
-  : Get the desired text from the xml_document
-- [`.get_xml()`](https://choxos.github.io/rtransparent/reference/dot-get_xml.md)
-  : Read an XML file into an xml_document
-- [`.max_words()`](https://choxos.github.io/rtransparent/reference/dot-max_words.md)
-  : Place boundaries around words
-- [`.negate_coi_1()`](https://choxos.github.io/rtransparent/reference/dot-negate_coi_1.md)
-  : Negate statements that mention conflict but are not COI
-- [`.negate_disclosure_1()`](https://choxos.github.io/rtransparent/reference/dot-negate_disclosure_1.md)
-  : Negate disclosures that are funding statements
-- [`.negate_disclosure_2()`](https://choxos.github.io/rtransparent/reference/dot-negate_disclosure_2.md)
-  : Negate disclosures that are neither COI nor funding statements
-- [`.negate_reg_title_1()`](https://choxos.github.io/rtransparent/reference/dot-negate_reg_title_1.md)
-  : Negate unwanted mentions of title
-- [`.negate_reg_title_2()`](https://choxos.github.io/rtransparent/reference/dot-negate_reg_title_2.md)
-  : Negate titles that mention that there was no registration
-- [`.negate_registry_1()`](https://choxos.github.io/rtransparent/reference/dot-negate_registry_1.md)
-  : Negate unwanted mentions of registry
-- [`.negate_replication_1()`](https://choxos.github.io/rtransparent/reference/dot-negate_replication_1.md)
-  : Remove negated replication mentions
-- [`.obliterate_apostrophe_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_apostrophe_1.md)
-  : Remove apostrophe
-- [`.obliterate_comma_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_comma_1.md)
-  : Remove commas
-- [`.obliterate_contribs()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_contribs.md)
-  : Remove author contribution statements
-- [`.obliterate_fullstop_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_fullstop_1.md)
-  : Returns the list of paragraphs without potentially misleading
-  fullstops.
-- [`.obliterate_hash_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_hash_1.md)
-  : Remove hash
-- [`.obliterate_honoraria_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_honoraria_1.md)
-  : Remove irrelevat mentions of honoraria
-- [`.obliterate_line_break_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_line_break_1.md)
-  : Remove break of line tags.
-- [`.obliterate_punct_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_punct_1.md)
-  : Remove uninformative punctuation
-- [`.obliterate_references_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_references_1.md)
-  : Remove references
-- [`.obliterate_refs_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_refs_1.md)
-  : Remove references
-- [`.obliterate_refs_2()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_refs_2.md)
-  : Remove mentions of previously reported registered studies
-- [`.obliterate_semicolon_1()`](https://choxos.github.io/rtransparent/reference/dot-obliterate_semicolon_1.md)
-  : Remove semicolons when within parentheses
-- [`.reroot_xml()`](https://choxos.github.io/rtransparent/reference/dot-reroot_xml.md)
-  : Reconfigure the PMC XML so that the top node is "article".
-- [`.rt_coi_pmc()`](https://choxos.github.io/rtransparent/reference/dot-rt_coi_pmc.md)
-  : Identify and extract Conflicts of Interest (COI) statements in PMC
-  XML files.
-- [`.rt_fund_pmc()`](https://choxos.github.io/rtransparent/reference/dot-rt_fund_pmc.md)
-  : Identify and extract Funding statements in PMC XML files.
-- [`.rt_novelty_pmc()`](https://choxos.github.io/rtransparent/reference/dot-rt_novelty_pmc.md)
-  : Identify novelty claims in PMC XML files.
-- [`.rt_register_pmc()`](https://choxos.github.io/rtransparent/reference/dot-rt_register_pmc.md)
-  : Identify and extract Registration statements in PMC XML files.
-- [`.rt_replication_pmc()`](https://choxos.github.io/rtransparent/reference/dot-rt_replication_pmc.md)
-  : Identify replication components in PMC XML files.
-- [`.title()`](https://choxos.github.io/rtransparent/reference/dot-title.md)
-  : Create a regex for titles
-- [`.title_strict()`](https://choxos.github.io/rtransparent/reference/dot-title_strict.md)
-  : Create a regex for titles
-- [`.tokenize()`](https://choxos.github.io/rtransparent/reference/dot-tokenize.md)
-  : Tokenize NLM XML files
-- [`.where_acknows_txt()`](https://choxos.github.io/rtransparent/reference/dot-where_acknows_txt.md)
-  : Restrict to text after the body of the article and references
-- [`.where_methods_txt()`](https://choxos.github.io/rtransparent/reference/dot-where_methods_txt.md)
-  : Find the Methods section
-- [`.where_refs_txt()`](https://choxos.github.io/rtransparent/reference/dot-where_refs_txt.md)
-  : Find the index of the references
-- [`.which_advisor_1()`](https://choxos.github.io/rtransparent/reference/dot-which_advisor_1.md)
-  : Identify advisors
-- [`.which_anzctr_1()`](https://choxos.github.io/rtransparent/reference/dot-which_anzctr_1.md)
-  : Identify mentions of registration on ANZCTR
-- [`.which_benefit_1()`](https://choxos.github.io/rtransparent/reference/dot-which_benefit_1.md)
-  : Identify mentions of receiving benefits
-- [`.which_board_1()`](https://choxos.github.io/rtransparent/reference/dot-which_board_1.md)
-  : Identify board membership
-- [`.which_brief()`](https://choxos.github.io/rtransparent/reference/dot-which_brief.md)
-  : Identify mentions of brief explanation
-- [`.which_coi_1()`](https://choxos.github.io/rtransparent/reference/dot-which_coi_1.md)
-  : Identify standard mentions of COI statements
-- [`.which_coi_2()`](https://choxos.github.io/rtransparent/reference/dot-which_coi_2.md)
-  : Identify less explicit mentions of COI statements.
-- [`.which_commercial_1()`](https://choxos.github.io/rtransparent/reference/dot-which_commercial_1.md)
-  : Identify less explicit mentions of commercial interest
-- [`.which_commercial_ack_1()`](https://choxos.github.io/rtransparent/reference/dot-which_commercial_ack_1.md)
-  : Identify mentions of commercial funding
-- [`.which_connections_1()`](https://choxos.github.io/rtransparent/reference/dot-which_connections_1.md)
-  : Identify mentions of financial connections
-- [`.which_connections_2()`](https://choxos.github.io/rtransparent/reference/dot-which_connections_2.md)
-  : Identify declarations of connections
-- [`.which_consultant_1()`](https://choxos.github.io/rtransparent/reference/dot-which_consultant_1.md)
-  : Identify consultants
-- [`.which_consults_1()`](https://choxos.github.io/rtransparent/reference/dot-which_consults_1.md)
-  : Identify mentions of consulting
-- [`.which_ct_1()`](https://choxos.github.io/rtransparent/reference/dot-which_ct_1.md)
-  : Identify mentions of registration on ClinicalTrials.gov
-- [`.which_ct_2()`](https://choxos.github.io/rtransparent/reference/dot-which_ct_2.md)
-  : Identify mentions of registration on ClinicalTrials.gov
-- [`.which_ct_3()`](https://choxos.github.io/rtransparent/reference/dot-which_ct_3.md)
-  : Identify mentions of registration on ClinicalTrials.gov
-- [`.which_disclosure_1()`](https://choxos.github.io/rtransparent/reference/dot-which_disclosure_1.md)
-  : Identify mentions of financial disclosures
-- [`.which_drks_1()`](https://choxos.github.io/rtransparent/reference/dot-which_drks_1.md)
-  : Identify mentions of registration on DRKS
-- [`.which_fees_1()`](https://choxos.github.io/rtransparent/reference/dot-which_fees_1.md)
-  : Identify mentions of paid fees
-- [`.which_founder_1()`](https://choxos.github.io/rtransparent/reference/dot-which_founder_1.md)
-  : Identify founders
-- [`.which_funded_ct_1()`](https://choxos.github.io/rtransparent/reference/dot-which_funded_ct_1.md)
-  : Identify mentions of funding followed by NCT
-- [`.which_grants_1()`](https://choxos.github.io/rtransparent/reference/dot-which_grants_1.md)
-  : Identify receipt of grants
-- [`.which_irct_1()`](https://choxos.github.io/rtransparent/reference/dot-which_irct_1.md)
-  : Identify mentions of registration on IRCT
-- [`.which_isrctn_1()`](https://choxos.github.io/rtransparent/reference/dot-which_isrctn_1.md)
-  : Identify mentions of registration on ISRCTN
-- [`.which_no_coi_1()`](https://choxos.github.io/rtransparent/reference/dot-which_no_coi_1.md)
-  : Identify statements of no COI
-- [`.which_no_funder_role_1()`](https://choxos.github.io/rtransparent/reference/dot-which_no_funder_role_1.md)
-  : Identify statements that the funders were not involved
-- [`.which_not_registered_1()`](https://choxos.github.io/rtransparent/reference/dot-which_not_registered_1.md)
-  : Identify mentions of lack of registration
-- [`.which_novelty_first_time_1()`](https://choxos.github.io/rtransparent/reference/dot-which_novelty_first_time_1.md)
-  : Identify "for the first time" claims
-- [`.which_novelty_first_time_2()`](https://choxos.github.io/rtransparent/reference/dot-which_novelty_first_time_2.md)
-  : Identify "first time that" claims
-- [`.which_novelty_first_to_1()`](https://choxos.github.io/rtransparent/reference/dot-which_novelty_first_to_1.md)
-  : Identify "first to show/report/demonstrate" claims
-- [`.which_novelty_knowledge_1()`](https://choxos.github.io/rtransparent/reference/dot-which_novelty_knowledge_1.md)
-  : Identify "to our knowledge" novelty claims
-- [`.which_novelty_novel_1()`](https://choxos.github.io/rtransparent/reference/dot-which_novelty_novel_1.md)
-  : Identify "novel finding/approach" claims
-- [`.which_novelty_previously_1()`](https://choxos.github.io/rtransparent/reference/dot-which_novelty_previously_1.md)
-  : Identify "previously unknown/unreported" claims
-- [`.which_paid_1()`](https://choxos.github.io/rtransparent/reference/dot-which_paid_1.md)
-  : Identify payments
-- [`.which_prospero_1()`](https://choxos.github.io/rtransparent/reference/dot-which_prospero_1.md)
-  : Identify mentions of registration on PROSPERO
-- [`.which_protocol_1()`](https://choxos.github.io/rtransparent/reference/dot-which_protocol_1.md)
-  : Identify mentions of protocol
-- [`.which_protocol_2()`](https://choxos.github.io/rtransparent/reference/dot-which_protocol_2.md)
-  : Identify mentions of protocol
-- [`.which_reg_title_1()`](https://choxos.github.io/rtransparent/reference/dot-which_reg_title_1.md)
-  : Identify registration titles - sensitive with negation
-- [`.which_reg_title_2()`](https://choxos.github.io/rtransparent/reference/dot-which_reg_title_2.md)
-  : Identify registration titles - specific with no negation
-- [`.which_reg_title_3()`](https://choxos.github.io/rtransparent/reference/dot-which_reg_title_3.md)
-  : Identify registration titles - specific
-- [`.which_reg_title_4()`](https://choxos.github.io/rtransparent/reference/dot-which_reg_title_4.md)
-  : Identify registration titles - specific
-- [`.which_registered_1()`](https://choxos.github.io/rtransparent/reference/dot-which_registered_1.md)
-  : Identify generic mentions of registration
-- [`.which_registered_2()`](https://choxos.github.io/rtransparent/reference/dot-which_registered_2.md)
-  : Identify generic mentions of registration
-- [`.which_registered_3()`](https://choxos.github.io/rtransparent/reference/dot-which_registered_3.md)
-  : Identify generic mentions of registration
-- [`.which_registered_4()`](https://choxos.github.io/rtransparent/reference/dot-which_registered_4.md)
-  : Identify generic mentions of registration
-- [`.which_registered_5()`](https://choxos.github.io/rtransparent/reference/dot-which_registered_5.md)
-  : Identify generic mentions of registration
-- [`.which_registration_1()`](https://choxos.github.io/rtransparent/reference/dot-which_registration_1.md)
-  : Identify generic mentions of registration
-- [`.which_registration_2()`](https://choxos.github.io/rtransparent/reference/dot-which_registration_2.md)
-  : Identify generic mentions of registration
-- [`.which_registration_3()`](https://choxos.github.io/rtransparent/reference/dot-which_registration_3.md)
-  : Identify generic mentions of registration
-- [`.which_registration_4()`](https://choxos.github.io/rtransparent/reference/dot-which_registration_4.md)
-  : Identify generic mentions of registration
-- [`.which_registry_1()`](https://choxos.github.io/rtransparent/reference/dot-which_registry_1.md)
-  : Identify mentions of registry
-- [`.which_replication_confirm_1()`](https://choxos.github.io/rtransparent/reference/dot-which_replication_confirm_1.md)
-  : Identify "confirm findings" replication claims
-- [`.which_replication_independent_1()`](https://choxos.github.io/rtransparent/reference/dot-which_replication_independent_1.md)
-  : Identify "independently replicated/validated" claims
-- [`.which_replication_replicat_1()`](https://choxos.github.io/rtransparent/reference/dot-which_replication_replicat_1.md)
-  : Identify replication claims using "replicate" terms
-- [`.which_replication_reproduced_1()`](https://choxos.github.io/rtransparent/reference/dot-which_replication_reproduced_1.md)
-  : Identify "reproduced the/our findings" claims
-- [`.which_replication_validation_1()`](https://choxos.github.io/rtransparent/reference/dot-which_replication_validation_1.md)
-  : Identify "validation cohort/sample" claims
-- [`.which_rights_1()`](https://choxos.github.io/rtransparent/reference/dot-which_rights_1.md)
-  : Identify mentions of proprietary material
-- [`.which_umin_1()`](https://choxos.github.io/rtransparent/reference/dot-which_umin_1.md)
-  : Identify mentions of registration on UMIN
-- [`find_methods()`](https://choxos.github.io/rtransparent/reference/find_methods.md)
-  : Find the Methods section
-- [`get_acknow_1()`](https://choxos.github.io/rtransparent/reference/get_acknow_1.md)
-  : Identify mentions of "Acknowledgement and"
-- [`get_acknow_2()`](https://choxos.github.io/rtransparent/reference/get_acknow_2.md)
-  : Identify acknowledgements
-- [`get_anzctr_1()`](https://choxos.github.io/rtransparent/reference/get_anzctr_1.md)
-  : Identify mentions of registration on ANZCTR
-- [`get_authors_1()`](https://choxos.github.io/rtransparent/reference/get_authors_1.md)
-  : Identify mentions of "the authors ... financial support
-- [`get_authors_2()`](https://choxos.github.io/rtransparent/reference/get_authors_2.md)
-  : Identify mentions of "the authors have no funding ..."
-- [`get_common_1()`](https://choxos.github.io/rtransparent/reference/get_common_1.md)
-  : Get common phrases
-- [`get_common_2()`](https://choxos.github.io/rtransparent/reference/get_common_2.md)
-  : Get common phrases
-- [`get_common_3()`](https://choxos.github.io/rtransparent/reference/get_common_3.md)
-  : Get common phrases
-- [`get_common_4()`](https://choxos.github.io/rtransparent/reference/get_common_4.md)
-  : Get common phrases
-- [`get_common_5()`](https://choxos.github.io/rtransparent/reference/get_common_5.md)
-  : Get common phrases
-- [`get_ct_1()`](https://choxos.github.io/rtransparent/reference/get_ct_1.md)
-  : Identify mentions of registration on ClinicalTrials.gov
-- [`get_ct_2()`](https://choxos.github.io/rtransparent/reference/get_ct_2.md)
-  : Identify mentions of registration on ClinicalTrials.gov
-- [`get_developed_1()`](https://choxos.github.io/rtransparent/reference/get_developed_1.md)
-  : Identify mentions of developed
-- [`get_disclosure_1()`](https://choxos.github.io/rtransparent/reference/get_disclosure_1.md)
-  : Identify mentions of Disclosure statements
-- [`get_disclosure_2()`](https://choxos.github.io/rtransparent/reference/get_disclosure_2.md)
-  : Identify mentions of Disclosure statements
-- [`get_drks_1()`](https://choxos.github.io/rtransparent/reference/get_drks_1.md)
-  : Identify mentions of registration on DRKS
-- [`get_financial_1()`](https://choxos.github.io/rtransparent/reference/get_financial_1.md)
-  : Identify mentions of Financial support titles
-- [`get_financial_2()`](https://choxos.github.io/rtransparent/reference/get_financial_2.md)
-  : Identify mentions of Financial support titles followed by specific
-  text
-- [`get_financial_3()`](https://choxos.github.io/rtransparent/reference/get_financial_3.md)
-  : Identify mentions of Financial support titles followed by specific
-  text
-- [`get_french_1()`](https://choxos.github.io/rtransparent/reference/get_french_1.md)
-  : Identify mentions of Grant numbers in the Funding/Acknowledgements
-- [`get_fund_1()`](https://choxos.github.io/rtransparent/reference/get_fund_1.md)
-  : Identify mentions of "funding for this study was..."
-- [`get_fund_2()`](https://choxos.github.io/rtransparent/reference/get_fund_2.md)
-  : Identify mentions of Funding titles
-- [`get_fund_3()`](https://choxos.github.io/rtransparent/reference/get_fund_3.md)
-  : Identify mentions of Funding titles
-- [`get_fund_acknow()`](https://choxos.github.io/rtransparent/reference/get_fund_acknow.md)
-  : Identify mentions of funds in acknowledgements
-- [`get_fund_acknow_new()`](https://choxos.github.io/rtransparent/reference/get_fund_acknow_new.md)
-  : Identify mentions of funds in acknowledgements
-- [`get_funded_ct_1()`](https://choxos.github.io/rtransparent/reference/get_funded_ct_1.md)
-  : Identify mentions of funding followed by NCT
-- [`get_grant_1()`](https://choxos.github.io/rtransparent/reference/get_grant_1.md)
-  : Identify mentions of Financial support titles
-- [`get_irct_1()`](https://choxos.github.io/rtransparent/reference/get_irct_1.md)
-  : Identify mentions of registration on IRCT (Iranian Registry of
-  Clinical Trials)
-- [`get_isrctn_1()`](https://choxos.github.io/rtransparent/reference/get_isrctn_1.md)
-  : Identify mentions of registration on ISRCTN
-- [`get_not_registered_1()`](https://choxos.github.io/rtransparent/reference/get_not_registered_1.md)
-  : Identify mentions of lack of registration
-- [`get_project_acknow()`](https://choxos.github.io/rtransparent/reference/get_project_acknow.md)
-  : Identify mentions of project numbers.
-- [`get_prospero_1()`](https://choxos.github.io/rtransparent/reference/get_prospero_1.md)
-  : Identify mentions of registration on PROSPERO
-- [`get_protocol_1()`](https://choxos.github.io/rtransparent/reference/get_protocol_1.md)
-  : Identify mentions of protocol
-- [`get_protocol_2()`](https://choxos.github.io/rtransparent/reference/get_protocol_2.md)
-  : Identify mentions of protocol
-- [`get_received_1()`](https://choxos.github.io/rtransparent/reference/get_received_1.md)
-  : Identify mentions of received
-- [`get_received_2()`](https://choxos.github.io/rtransparent/reference/get_received_2.md)
-  : Identify mentions of received
-- [`get_recipient_1()`](https://choxos.github.io/rtransparent/reference/get_recipient_1.md)
-  : Identify mentions of recepient
-- [`get_reg_title_1()`](https://choxos.github.io/rtransparent/reference/get_reg_title_1.md)
-  : Identify registration titles - sensitive with negation
-- [`get_reg_title_2()`](https://choxos.github.io/rtransparent/reference/get_reg_title_2.md)
-  : Identify registration titles - specific with no negation
-- [`get_reg_title_3()`](https://choxos.github.io/rtransparent/reference/get_reg_title_3.md)
-  : Identify registration titles - specific
-- [`get_reg_title_4()`](https://choxos.github.io/rtransparent/reference/get_reg_title_4.md)
-  : Identify registration titles - specific
-- [`get_registered_1()`](https://choxos.github.io/rtransparent/reference/get_registered_1.md)
-  : Identify generic mentions of registration
-- [`get_registered_2()`](https://choxos.github.io/rtransparent/reference/get_registered_2.md)
-  : Identify generic mentions of registration
-- [`get_registered_3()`](https://choxos.github.io/rtransparent/reference/get_registered_3.md)
-  : Identify generic mentions of registration
-- [`get_registered_4()`](https://choxos.github.io/rtransparent/reference/get_registered_4.md)
-  : Identify generic mentions of registration
-- [`get_registered_5()`](https://choxos.github.io/rtransparent/reference/get_registered_5.md)
-  : Identify generic mentions of registration
-- [`get_registration_1()`](https://choxos.github.io/rtransparent/reference/get_registration_1.md)
-  : Identify generic mentions of registration
-- [`get_registration_2()`](https://choxos.github.io/rtransparent/reference/get_registration_2.md)
-  : Identify generic mentions of registration
-- [`get_registration_3()`](https://choxos.github.io/rtransparent/reference/get_registration_3.md)
-  : Identify generic mentions of registration
-- [`get_registration_4()`](https://choxos.github.io/rtransparent/reference/get_registration_4.md)
-  : Identify generic mentions of registration
-- [`get_registry_1()`](https://choxos.github.io/rtransparent/reference/get_registry_1.md)
-  : Identify mentions of registry
-- [`get_support_1()`](https://choxos.github.io/rtransparent/reference/get_support_1.md)
-  : Identify mentions of support
-- [`get_support_10()`](https://choxos.github.io/rtransparent/reference/get_support_10.md)
-  : Identify mentions of support
-- [`get_support_2()`](https://choxos.github.io/rtransparent/reference/get_support_2.md)
-  : Identify mentions of support
-- [`get_support_3()`](https://choxos.github.io/rtransparent/reference/get_support_3.md)
-  : Identify mentions of support
-- [`get_support_4()`](https://choxos.github.io/rtransparent/reference/get_support_4.md)
-  : Identify mentions of support
-- [`get_support_6()`](https://choxos.github.io/rtransparent/reference/get_support_6.md)
-  : Identify mentions of support
-- [`get_support_7()`](https://choxos.github.io/rtransparent/reference/get_support_7.md)
-  : Identify mentions of support
-- [`get_support_8()`](https://choxos.github.io/rtransparent/reference/get_support_8.md)
-  : Identify mentions of support
-- [`get_support_9()`](https://choxos.github.io/rtransparent/reference/get_support_9.md)
-  : Identify mentions of support
-- [`get_supported_1()`](https://choxos.github.io/rtransparent/reference/get_supported_1.md)
-  : Identify mentions of "Supported by ..."
-- [`get_thank_1()`](https://choxos.github.io/rtransparent/reference/get_thank_1.md)
-  : Identify mentions of "thank ... financial support
-- [`get_thank_2()`](https://choxos.github.io/rtransparent/reference/get_thank_2.md)
-  : Identify mentions of thank you statements
-- [`get_umin_1()`](https://choxos.github.io/rtransparent/reference/get_umin_1.md)
-  : Identify mentions of registration on UMIN (Japan Primary Registries
-  Network)
-- [`negate_absence_1()`](https://choxos.github.io/rtransparent/reference/negate_absence_1.md)
-  : Avoid mentions that no funding information was provided
-- [`negate_conflict_1()`](https://choxos.github.io/rtransparent/reference/negate_conflict_1.md)
-  : Avoid financial that is part of COI statements
-- [`negate_disclosure_1()`](https://choxos.github.io/rtransparent/reference/negate_disclosure_1.md)
-  : Avoid disclosures that are in fact COI statements
-- [`negate_disclosure_2()`](https://choxos.github.io/rtransparent/reference/negate_disclosure_2.md)
-  : Identify "Funding disclosure. Nothing to declare" statements
-- [`negate_reg_title_1()`](https://choxos.github.io/rtransparent/reference/negate_reg_title_1.md)
-  : Negate unwanted mentions of title
-- [`negate_registry_1()`](https://choxos.github.io/rtransparent/reference/negate_registry_1.md)
-  : Negate unwanted mentions of registry
-- [`obliterate_apostrophe_1()`](https://choxos.github.io/rtransparent/reference/obliterate_apostrophe_1.md)
-  : Remove apostrophe
-- [`obliterate_comma_1()`](https://choxos.github.io/rtransparent/reference/obliterate_comma_1.md)
-  : Remove commas
-- [`obliterate_conflict_1()`](https://choxos.github.io/rtransparent/reference/obliterate_conflict_1.md)
-  : Remove mentions of COIs that may cause FPs
-- [`obliterate_conflict_2()`](https://choxos.github.io/rtransparent/reference/obliterate_conflict_2.md)
-  : Remove COI statements with language relevant to funding statements
-- [`obliterate_disclosure_1()`](https://choxos.github.io/rtransparent/reference/obliterate_disclosure_1.md)
-  : Remove disclosures with inappropriate sentences
-- [`obliterate_fullstop_1()`](https://choxos.github.io/rtransparent/reference/obliterate_fullstop_1.md)
-  : Remove fullstops that are unlikely to represent end of sentence
-- [`obliterate_hash_1()`](https://choxos.github.io/rtransparent/reference/obliterate_hash_1.md)
-  : Remove hash
-- [`obliterate_misleading_fund_1()`](https://choxos.github.io/rtransparent/reference/obliterate_misleading_fund_1.md)
-  : Remove mentions of commonly misleading funding statements
-- [`obliterate_references_1()`](https://choxos.github.io/rtransparent/reference/obliterate_references_1.md)
-  : Remove references
-- [`obliterate_refs_1()`](https://choxos.github.io/rtransparent/reference/obliterate_refs_1.md)
-  : Remove references
-- [`obliterate_semicolon_1()`](https://choxos.github.io/rtransparent/reference/obliterate_semicolon_1.md)
-  : Remove semicolons when within parentheses
+Detect every indicator in one pass.
+
 - [`rt_all()`](https://choxos.github.io/rtransparent/reference/rt_all.md)
   : Identify and extract statements of COI, Funding and Registration.
 - [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
   : Identify and extract statements of COI, Funding and Registration.
-- [`rt_coi()`](https://choxos.github.io/rtransparent/reference/rt_coi.md)
-  : Identify and extract Conflicts of Interest (COI) statements in TXT
-  files.
+
+## Individual indicators (PMC XML)
+
+One detector per indicator, for PMC JATS XML files.
+
 - [`rt_coi_pmc()`](https://choxos.github.io/rtransparent/reference/rt_coi_pmc.md)
   : Identify and extract Conflicts of Interest (COI) statements in PMC
   XML files.
-- [`rt_data_code()`](https://choxos.github.io/rtransparent/reference/rt_data_code.md)
-  : Identify and extract Data and Code statements in TXT files.
-- [`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md)
-  : Identify and extract Data and Code sharing from PMC XML files.
-- [`rt_data_code_pmc_list()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc_list.md)
-  : Identify and extract Data and Code sharing from PMC XML files.
-- [`rt_fund()`](https://choxos.github.io/rtransparent/reference/rt_fund.md)
-  : Identify and extract Funding statements in TXT files.
 - [`rt_fund_pmc()`](https://choxos.github.io/rtransparent/reference/rt_fund_pmc.md)
   : Identify and extract Funding statements in PMC XML files.
-- [`rt_meta_pmc()`](https://choxos.github.io/rtransparent/reference/rt_meta_pmc.md)
-  : Extract article metadata from a PMC XML file.
-- [`rt_novelty()`](https://choxos.github.io/rtransparent/reference/rt_novelty.md)
-  : Identify whether a study claims novelty in TXT files.
-- [`rt_novelty_pmc()`](https://choxos.github.io/rtransparent/reference/rt_novelty_pmc.md)
-  : Identify and extract novelty claims in PMC XML files.
-- [`rt_read_pdf()`](https://choxos.github.io/rtransparent/reference/rt_read_pdf.md)
-  : Covert PDF files into TXT files.
-- [`rt_register()`](https://choxos.github.io/rtransparent/reference/rt_register.md)
-  : Identify and extract Registration statements in TXT files.
 - [`rt_register_pmc()`](https://choxos.github.io/rtransparent/reference/rt_register_pmc.md)
   : Identify and extract Conflicts of Interest statements in PMC XML
   files.
+- [`rt_novelty_pmc()`](https://choxos.github.io/rtransparent/reference/rt_novelty_pmc.md)
+  : Identify and extract novelty claims in PMC XML files.
+- [`rt_replication_pmc()`](https://choxos.github.io/rtransparent/reference/rt_replication_pmc.md)
+  : Identify and extract replication components in PMC XML files.
+- [`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md)
+  : Identify and extract Data and Code sharing from PMC XML files.
+- [`rt_data_code_pmc_list()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc_list.md)
+  : Identify and extract Data and Code sharing from a list of PMC XML
+  files.
+
+## Individual indicators (text)
+
+One detector per indicator, for plain-text (PDF-derived) files.
+
+- [`rt_coi()`](https://choxos.github.io/rtransparent/reference/rt_coi.md)
+  : Identify and extract Conflicts of Interest (COI) statements in TXT
+  files.
+- [`rt_fund()`](https://choxos.github.io/rtransparent/reference/rt_fund.md)
+  : Identify and extract Funding statements in TXT files.
+- [`rt_register()`](https://choxos.github.io/rtransparent/reference/rt_register.md)
+  : Identify and extract Registration statements in TXT files.
+- [`rt_novelty()`](https://choxos.github.io/rtransparent/reference/rt_novelty.md)
+  : Identify whether a study claims novelty in TXT files.
 - [`rt_replication()`](https://choxos.github.io/rtransparent/reference/rt_replication.md)
   : Identify whether a study includes a replication component in TXT
   files.
-- [`rt_replication_pmc()`](https://choxos.github.io/rtransparent/reference/rt_replication_pmc.md)
-  : Identify and extract replication components in PMC XML files.
-- [`rtransparent`](https://choxos.github.io/rtransparent/reference/rtransparent-package.md)
-  [`rtransparent-package`](https://choxos.github.io/rtransparent/reference/rtransparent-package.md)
-  : rtransparent: Identify indicators of transparency in the published
-  literature
+- [`rt_data_code()`](https://choxos.github.io/rtransparent/reference/rt_data_code.md)
+  : Identify and extract Data and Code statements in TXT files.
+
+## Metadata and input
+
+Article metadata and PDF-to-text conversion.
+
+- [`rt_meta_pmc()`](https://choxos.github.io/rtransparent/reference/rt_meta_pmc.md)
+  : Extract article metadata from a PMC XML file.
+- [`rt_read_pdf()`](https://choxos.github.io/rtransparent/reference/rt_read_pdf.md)
+  : Covert PDF files into TXT files.
+
+## Summarize and visualize
+
+Corpus-level prevalence, per-article scores and plots.
+
+- [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  : Summarize transparency indicators across a corpus of articles
+- [`rt_score()`](https://choxos.github.io/rtransparent/reference/rt_score.md)
+  : Count the transparency indicators met by each article
+- [`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+  : Plot transparency indicators
+
+## Datasets
+
+- [`rt_accuracy`](https://choxos.github.io/rtransparent/reference/rt_accuracy.md)
+  : Validated detector accuracy
+- [`rt_demo`](https://choxos.github.io/rtransparent/reference/rt_demo.md)
+  : Simulated transparency indicators for a corpus of articles

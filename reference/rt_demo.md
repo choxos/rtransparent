@@ -1,0 +1,63 @@
+# Simulated transparency indicators for a corpus of articles
+
+A small, simulated set of detector output, with one row per article,
+used to illustrate \[rt_summary()\], \[rt_score()\] and \[rt_plot()\].
+The values are **simulated**, not real detector output: prevalences and
+their trends over time are chosen to resemble published findings
+(frequent conflict-of- interest and funding disclosure, less frequent
+protocol registration, low but rising data sharing and rare code
+sharing) so the illustrations are realistic.
+
+## Usage
+
+``` r
+rt_demo
+```
+
+## Format
+
+A tibble with 1200 rows and 10 columns:
+
+- pmid:
+
+  A made-up PubMed identifier (character).
+
+- year:
+
+  Publication year, 2010-2024.
+
+- type:
+
+  Article type (research-article, review-article, systematic-review).
+
+- is_coi_pred:
+
+  Conflict-of-interest statement detected.
+
+- is_fund_pred:
+
+  Funding statement detected.
+
+- is_register_pred:
+
+  Protocol registration detected.
+
+- is_open_data:
+
+  Data sharing detected.
+
+- is_open_code:
+
+  Code sharing detected.
+
+- is_novelty_pred:
+
+  Novelty claim detected.
+
+- is_replication_pred:
+
+  Replication component detected.
+
+## See also
+
+\[rt_summary()\], \[rt_score()\], \[rt_plot()\]

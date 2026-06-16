@@ -4,6 +4,7 @@
 <url><loc>https://choxos.github.io/rtransparent/ROADMAP.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/articles/index.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/articles/rtransparent.html</loc></url>
+<url><loc>https://choxos.github.io/rtransparent/articles/transparency-summary.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/authors.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/index.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/news/index.html</loc></url>
@@ -48,7 +49,6 @@
 <url><loc>https://choxos.github.io/rtransparent/reference/dot-rt_replication_pmc.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/dot-title.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/dot-title_strict.html</loc></url>
-<url><loc>https://choxos.github.io/rtransparent/reference/dot-tokenize.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/dot-where_acknows_txt.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/dot-where_methods_txt.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/dot-where_refs_txt.html</loc></url>
@@ -193,6 +193,7 @@
 <url><loc>https://choxos.github.io/rtransparent/reference/obliterate_references_1.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/obliterate_refs_1.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/obliterate_semicolon_1.html</loc></url>
+<url><loc>https://choxos.github.io/rtransparent/reference/rt_accuracy.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_all.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_all_pmc.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_coi.html</loc></url>
@@ -200,16 +201,20 @@
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_data_code.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_data_code_pmc_list.html</loc></url>
+<url><loc>https://choxos.github.io/rtransparent/reference/rt_demo.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_fund.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_fund_pmc.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_meta_pmc.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_novelty.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_novelty_pmc.html</loc></url>
+<url><loc>https://choxos.github.io/rtransparent/reference/rt_plot.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_read_pdf.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_register.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_register_pmc.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_replication.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rt_replication_pmc.html</loc></url>
+<url><loc>https://choxos.github.io/rtransparent/reference/rt_score.html</loc></url>
+<url><loc>https://choxos.github.io/rtransparent/reference/rt_summary.html</loc></url>
 <url><loc>https://choxos.github.io/rtransparent/reference/rtransparent-package.html</loc></url>
 </urlset>
 

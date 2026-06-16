@@ -2,7 +2,9 @@
 
 Takes a PMC XML file and returns data related to the presence of Data or
 Code, including whether Data or Code have been shared. If Data or Code
-exist, it will extract the relevant text for each.
+exist, it will extract the relevant text for each. Detection is
+performed by the native detector (`.detect_data_code`); the package no
+longer depends on `oddpub` or `tokenizers`.
 
 ## Usage
 
@@ -22,28 +24,28 @@ rt_data_code_pmc(filename, remove_ns = T, specificity = "low")
 
 - specificity:
 
-  How specific should the extraction of text from the XML be? If "low"
-  then this is a as sensitive as possible (it extracts all text). If
-  "moderate", then it extracts all paragraphs. If "high", then it only
-  extracts text from specific locations (footnotes, methods,
-  supplements).
+  Retained for backward compatibility; it no longer changes the result.
+  The native detector extracts a fixed, broad set of article text (body
+  paragraphs and titles, back matter, footnotes and supplements) and
+  applies repository, accession and availability-statement patterns.
 
 ## Value
 
-A dataframe of results. It returns unique IDs of the article, whether
-this article is deemed a research article, whether it is deemed relevant
-to data or code, whether data or code was found, and if so, what the
-text that suggested the presence of data or code was. Takes a median of
-200ms per article.
+A dataframe of results: the unique IDs of the article, whether data or
+code sharing was found (`is_open_data`, `is_open_code`) and, if so, the
+statement text that triggered each detection (`open_data_statements`,
+`open_code_statements`).
 
 ## Examples
 
 ``` r
 if (FALSE) { # \dontrun{
 # Path to PMC XML
-filepath <- "../inst/extdata/00003-PMID26637448-PMC4737611.xml"
+filepath <- system.file(
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+)
 
-# Identify and extract meta-data and indicators of transparency
-results_table <- rt_data_pmc(filepath, remove_ns = T)
+# Identify and extract indicators of data and code sharing
+results_table <- rt_data_code_pmc(filepath, remove_ns = TRUE)
 } # }
 ```

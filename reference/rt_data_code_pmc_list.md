@@ -1,4 +1,4 @@
-# Identify and extract Data and Code sharing from PMC XML files.
+# Identify and extract Data and Code sharing from a list of PMC XML files.
 
 Takes a list of PMC XML files and returns data related to the presence
 of Data or Code, including whether Data or Code have been shared. If
@@ -22,15 +22,12 @@ rt_data_code_pmc_list(filenames, remove_ns = T, specificity = "low")
 
 - specificity:
 
-  How specific should the extraction of text from the XML be? If "low"
-  then this is a as sensitive as possible (it extracts all text). If
-  "moderate", then it extracts all paragraphs. If "high", then it only
-  extracts text from specific locations (footnotes, methods,
-  supplements).
+  Retained for backward compatibility; see
+  [`rt_data_code_pmc`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md).
 
 ## Value
 
-A dataframe of results. Takes a median of 200ms per article.
+A dataframe of results, one row per file.
 
 ## Examples
 

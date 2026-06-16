@@ -9,7 +9,7 @@ Useful links:
 
 - <https://github.com/choxos/rtransparent>
 
-- <https://choxos.github.io/rtransparent>
+- <https://choxos.github.io/rtransparent/>
 
 - Report bugs at <https://github.com/choxos/rtransparent/issues>
 

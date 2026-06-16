@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +33,9 @@
     </div>
 
     <div class="section level2">
-      <h2 id="all-functions">All functions<a class="anchor" aria-label="anchor" href="#all-functions"></a></h2>
+      <h2 id="run-all-detectors">Run all detectors<a class="anchor" aria-label="anchor" href="#run-all-detectors"></a></h2>
 
-
+      <div class="section-desc"><p>Detect every indicator in one pass.</p></div>
 
       <dl></dl></div><div class="section level2">
 
@@ -43,1301 +43,6 @@
 
 
       <dl><dt>
-
-          <code><a href="dot-bound.html">.bound()</a></code>
-
-        </dt>
-        <dd>Place boundaries around words</dd>
-
-        <dt>
-
-          <code><a href="dot-create_register_pmc_title.html">.create_register_pmc_title()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - specific with no negation</dd>
-
-        <dt>
-
-          <code><a href="dot-create_synonyms.html">.create_synonyms()</a></code>
-
-        </dt>
-        <dd>A list of word synonyms</dd>
-
-        <dt>
-
-          <code><a href="dot-encase.html">.encase()</a></code>
-
-        </dt>
-        <dd>Encace words within parentheses and OR statements</dd>
-
-        <dt>
-
-          <code><a href="dot-first_capital.html">.first_capital()</a></code>
-
-        </dt>
-        <dd>Create a regular expression where the first letter is capital</dd>
-
-        <dt>
-
-          <code><a href="dot-get_coi_pmc_fn.html">.get_coi_pmc_fn()</a></code>
-
-        </dt>
-        <dd>Identify elements with COI attributes</dd>
-
-        <dt>
-
-          <code><a href="dot-get_coi_pmc_title.html">.get_coi_pmc_title()</a></code>
-
-        </dt>
-        <dd>Identify COI titles using XML labels</dd>
-
-        <dt>
-
-          <code><a href="dot-get_fund_pmc_group.html">.get_fund_pmc_group()</a></code>
-
-        </dt>
-        <dd>Identify funding group elements in NLM XML files</dd>
-
-        <dt>
-
-          <code><a href="dot-get_fund_pmc_source.html">.get_fund_pmc_source()</a></code>
-
-        </dt>
-        <dd>Identify funding source elements in NLM XML files</dd>
-
-        <dt>
-
-          <code><a href="dot-get_fund_pmc_title.html">.get_fund_pmc_title()</a></code>
-
-        </dt>
-        <dd>Identify funding titles using XML labels</dd>
-
-        <dt>
-
-          <code><a href="dot-get_ids.html">.get_ids()</a></code>
-
-        </dt>
-        <dd>Extract PMIDs and DOIs</dd>
-
-        <dt>
-
-          <code><a href="dot-get_text.html">.get_text()</a></code>
-
-        </dt>
-        <dd>Get the desired text from the xml_document</dd>
-
-        <dt>
-
-          <code><a href="dot-get_xml.html">.get_xml()</a></code>
-
-        </dt>
-        <dd>Read an XML file into an xml_document</dd>
-
-        <dt>
-
-          <code><a href="dot-max_words.html">.max_words()</a></code>
-
-        </dt>
-        <dd>Place boundaries around words</dd>
-
-        <dt>
-
-          <code><a href="dot-negate_coi_1.html">.negate_coi_1()</a></code>
-
-        </dt>
-        <dd>Negate statements that mention conflict but are not COI</dd>
-
-        <dt>
-
-          <code><a href="dot-negate_disclosure_1.html">.negate_disclosure_1()</a></code>
-
-        </dt>
-        <dd>Negate disclosures that are funding statements</dd>
-
-        <dt>
-
-          <code><a href="dot-negate_disclosure_2.html">.negate_disclosure_2()</a></code>
-
-        </dt>
-        <dd>Negate disclosures that are neither COI nor funding statements</dd>
-
-        <dt>
-
-          <code><a href="dot-negate_reg_title_1.html">.negate_reg_title_1()</a></code>
-
-        </dt>
-        <dd>Negate unwanted mentions of title</dd>
-
-        <dt>
-
-          <code><a href="dot-negate_reg_title_2.html">.negate_reg_title_2()</a></code>
-
-        </dt>
-        <dd>Negate titles that mention that there was no registration</dd>
-
-        <dt>
-
-          <code><a href="dot-negate_registry_1.html">.negate_registry_1()</a></code>
-
-        </dt>
-        <dd>Negate unwanted mentions of registry</dd>
-
-        <dt>
-
-          <code><a href="dot-negate_replication_1.html">.negate_replication_1()</a></code>
-
-        </dt>
-        <dd>Remove negated replication mentions</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_apostrophe_1.html">.obliterate_apostrophe_1()</a></code>
-
-        </dt>
-        <dd>Remove apostrophe</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_comma_1.html">.obliterate_comma_1()</a></code>
-
-        </dt>
-        <dd>Remove commas</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_contribs.html">.obliterate_contribs()</a></code>
-
-        </dt>
-        <dd>Remove author contribution statements</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_fullstop_1.html">.obliterate_fullstop_1()</a></code>
-
-        </dt>
-        <dd>Returns the list of paragraphs without potentially misleading fullstops.</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_hash_1.html">.obliterate_hash_1()</a></code>
-
-        </dt>
-        <dd>Remove hash</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_honoraria_1.html">.obliterate_honoraria_1()</a></code>
-
-        </dt>
-        <dd>Remove irrelevat mentions of honoraria</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_line_break_1.html">.obliterate_line_break_1()</a></code>
-
-        </dt>
-        <dd>Remove break of line tags.</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_punct_1.html">.obliterate_punct_1()</a></code>
-
-        </dt>
-        <dd>Remove uninformative punctuation</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_references_1.html">.obliterate_references_1()</a></code>
-
-        </dt>
-        <dd>Remove references</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_refs_1.html">.obliterate_refs_1()</a></code>
-
-        </dt>
-        <dd>Remove references</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_refs_2.html">.obliterate_refs_2()</a></code>
-
-        </dt>
-        <dd>Remove mentions of previously reported registered studies</dd>
-
-        <dt>
-
-          <code><a href="dot-obliterate_semicolon_1.html">.obliterate_semicolon_1()</a></code>
-
-        </dt>
-        <dd>Remove semicolons when within parentheses</dd>
-
-        <dt>
-
-          <code><a href="dot-reroot_xml.html">.reroot_xml()</a></code>
-
-        </dt>
-        <dd>Reconfigure the PMC XML so that the top node is "article".</dd>
-
-        <dt>
-
-          <code><a href="dot-rt_coi_pmc.html">.rt_coi_pmc()</a></code>
-
-        </dt>
-        <dd>Identify and extract Conflicts of Interest (COI) statements in PMC XML files.</dd>
-
-        <dt>
-
-          <code><a href="dot-rt_fund_pmc.html">.rt_fund_pmc()</a></code>
-
-        </dt>
-        <dd>Identify and extract Funding statements in PMC XML files.</dd>
-
-        <dt>
-
-          <code><a href="dot-rt_novelty_pmc.html">.rt_novelty_pmc()</a></code>
-
-        </dt>
-        <dd>Identify novelty claims in PMC XML files.</dd>
-
-        <dt>
-
-          <code><a href="dot-rt_register_pmc.html">.rt_register_pmc()</a></code>
-
-        </dt>
-        <dd>Identify and extract Registration statements in PMC XML files.</dd>
-
-        <dt>
-
-          <code><a href="dot-rt_replication_pmc.html">.rt_replication_pmc()</a></code>
-
-        </dt>
-        <dd>Identify replication components in PMC XML files.</dd>
-
-        <dt>
-
-          <code><a href="dot-title.html">.title()</a></code>
-
-        </dt>
-        <dd>Create a regex for titles</dd>
-
-        <dt>
-
-          <code><a href="dot-title_strict.html">.title_strict()</a></code>
-
-        </dt>
-        <dd>Create a regex for titles</dd>
-
-        <dt>
-
-          <code><a href="dot-tokenize.html">.tokenize()</a></code>
-
-        </dt>
-        <dd>Tokenize NLM XML files</dd>
-
-        <dt>
-
-          <code><a href="dot-where_acknows_txt.html">.where_acknows_txt()</a></code>
-
-        </dt>
-        <dd>Restrict to text after the body of the article and references</dd>
-
-        <dt>
-
-          <code><a href="dot-where_methods_txt.html">.where_methods_txt()</a></code>
-
-        </dt>
-        <dd>Find the Methods section</dd>
-
-        <dt>
-
-          <code><a href="dot-where_refs_txt.html">.where_refs_txt()</a></code>
-
-        </dt>
-        <dd>Find the index of the references</dd>
-
-        <dt>
-
-          <code><a href="dot-which_advisor_1.html">.which_advisor_1()</a></code>
-
-        </dt>
-        <dd>Identify advisors</dd>
-
-        <dt>
-
-          <code><a href="dot-which_anzctr_1.html">.which_anzctr_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ANZCTR</dd>
-
-        <dt>
-
-          <code><a href="dot-which_benefit_1.html">.which_benefit_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of receiving benefits</dd>
-
-        <dt>
-
-          <code><a href="dot-which_board_1.html">.which_board_1()</a></code>
-
-        </dt>
-        <dd>Identify board membership</dd>
-
-        <dt>
-
-          <code><a href="dot-which_brief.html">.which_brief()</a></code>
-
-        </dt>
-        <dd>Identify mentions of brief explanation</dd>
-
-        <dt>
-
-          <code><a href="dot-which_coi_1.html">.which_coi_1()</a></code>
-
-        </dt>
-        <dd>Identify standard mentions of COI statements</dd>
-
-        <dt>
-
-          <code><a href="dot-which_coi_2.html">.which_coi_2()</a></code>
-
-        </dt>
-        <dd>Identify less explicit mentions of COI statements.</dd>
-
-        <dt>
-
-          <code><a href="dot-which_commercial_1.html">.which_commercial_1()</a></code>
-
-        </dt>
-        <dd>Identify less explicit mentions of commercial interest</dd>
-
-        <dt>
-
-          <code><a href="dot-which_commercial_ack_1.html">.which_commercial_ack_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of commercial funding</dd>
-
-        <dt>
-
-          <code><a href="dot-which_connections_1.html">.which_connections_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of financial connections</dd>
-
-        <dt>
-
-          <code><a href="dot-which_connections_2.html">.which_connections_2()</a></code>
-
-        </dt>
-        <dd>Identify declarations of connections</dd>
-
-        <dt>
-
-          <code><a href="dot-which_consultant_1.html">.which_consultant_1()</a></code>
-
-        </dt>
-        <dd>Identify consultants</dd>
-
-        <dt>
-
-          <code><a href="dot-which_consults_1.html">.which_consults_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of consulting</dd>
-
-        <dt>
-
-          <code><a href="dot-which_ct_1.html">.which_ct_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ClinicalTrials.gov</dd>
-
-        <dt>
-
-          <code><a href="dot-which_ct_2.html">.which_ct_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ClinicalTrials.gov</dd>
-
-        <dt>
-
-          <code><a href="dot-which_ct_3.html">.which_ct_3()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ClinicalTrials.gov</dd>
-
-        <dt>
-
-          <code><a href="dot-which_disclosure_1.html">.which_disclosure_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of financial disclosures</dd>
-
-        <dt>
-
-          <code><a href="dot-which_drks_1.html">.which_drks_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on DRKS</dd>
-
-        <dt>
-
-          <code><a href="dot-which_fees_1.html">.which_fees_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of paid fees</dd>
-
-        <dt>
-
-          <code><a href="dot-which_founder_1.html">.which_founder_1()</a></code>
-
-        </dt>
-        <dd>Identify founders</dd>
-
-        <dt>
-
-          <code><a href="dot-which_funded_ct_1.html">.which_funded_ct_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of funding followed by NCT</dd>
-
-        <dt>
-
-          <code><a href="dot-which_grants_1.html">.which_grants_1()</a></code>
-
-        </dt>
-        <dd>Identify receipt of grants</dd>
-
-        <dt>
-
-          <code><a href="dot-which_irct_1.html">.which_irct_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on IRCT</dd>
-
-        <dt>
-
-          <code><a href="dot-which_isrctn_1.html">.which_isrctn_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ISRCTN</dd>
-
-        <dt>
-
-          <code><a href="dot-which_no_coi_1.html">.which_no_coi_1()</a></code>
-
-        </dt>
-        <dd>Identify statements of no COI</dd>
-
-        <dt>
-
-          <code><a href="dot-which_no_funder_role_1.html">.which_no_funder_role_1()</a></code>
-
-        </dt>
-        <dd>Identify statements that the funders were not involved</dd>
-
-        <dt>
-
-          <code><a href="dot-which_not_registered_1.html">.which_not_registered_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of lack of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_novelty_first_time_1.html">.which_novelty_first_time_1()</a></code>
-
-        </dt>
-        <dd>Identify "for the first time" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_novelty_first_time_2.html">.which_novelty_first_time_2()</a></code>
-
-        </dt>
-        <dd>Identify "first time that" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_novelty_first_to_1.html">.which_novelty_first_to_1()</a></code>
-
-        </dt>
-        <dd>Identify "first to show/report/demonstrate" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_novelty_knowledge_1.html">.which_novelty_knowledge_1()</a></code>
-
-        </dt>
-        <dd>Identify "to our knowledge" novelty claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_novelty_novel_1.html">.which_novelty_novel_1()</a></code>
-
-        </dt>
-        <dd>Identify "novel finding/approach" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_novelty_previously_1.html">.which_novelty_previously_1()</a></code>
-
-        </dt>
-        <dd>Identify "previously unknown/unreported" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_paid_1.html">.which_paid_1()</a></code>
-
-        </dt>
-        <dd>Identify payments</dd>
-
-        <dt>
-
-          <code><a href="dot-which_prospero_1.html">.which_prospero_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on PROSPERO</dd>
-
-        <dt>
-
-          <code><a href="dot-which_protocol_1.html">.which_protocol_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of protocol</dd>
-
-        <dt>
-
-          <code><a href="dot-which_protocol_2.html">.which_protocol_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of protocol</dd>
-
-        <dt>
-
-          <code><a href="dot-which_reg_title_1.html">.which_reg_title_1()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - sensitive with negation</dd>
-
-        <dt>
-
-          <code><a href="dot-which_reg_title_2.html">.which_reg_title_2()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - specific with no negation</dd>
-
-        <dt>
-
-          <code><a href="dot-which_reg_title_3.html">.which_reg_title_3()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - specific</dd>
-
-        <dt>
-
-          <code><a href="dot-which_reg_title_4.html">.which_reg_title_4()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - specific</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registered_1.html">.which_registered_1()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registered_2.html">.which_registered_2()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registered_3.html">.which_registered_3()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registered_4.html">.which_registered_4()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registered_5.html">.which_registered_5()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registration_1.html">.which_registration_1()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registration_2.html">.which_registration_2()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registration_3.html">.which_registration_3()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registration_4.html">.which_registration_4()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="dot-which_registry_1.html">.which_registry_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registry</dd>
-
-        <dt>
-
-          <code><a href="dot-which_replication_confirm_1.html">.which_replication_confirm_1()</a></code>
-
-        </dt>
-        <dd>Identify "confirm findings" replication claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_replication_independent_1.html">.which_replication_independent_1()</a></code>
-
-        </dt>
-        <dd>Identify "independently replicated/validated" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_replication_replicat_1.html">.which_replication_replicat_1()</a></code>
-
-        </dt>
-        <dd>Identify replication claims using "replicate" terms</dd>
-
-        <dt>
-
-          <code><a href="dot-which_replication_reproduced_1.html">.which_replication_reproduced_1()</a></code>
-
-        </dt>
-        <dd>Identify "reproduced the/our findings" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_replication_validation_1.html">.which_replication_validation_1()</a></code>
-
-        </dt>
-        <dd>Identify "validation cohort/sample" claims</dd>
-
-        <dt>
-
-          <code><a href="dot-which_rights_1.html">.which_rights_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of proprietary material</dd>
-
-        <dt>
-
-          <code><a href="dot-which_umin_1.html">.which_umin_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on UMIN</dd>
-
-        <dt>
-
-          <code><a href="find_methods.html">find_methods()</a></code>
-
-        </dt>
-        <dd>Find the Methods section</dd>
-
-        <dt>
-
-          <code><a href="get_acknow_1.html">get_acknow_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of "Acknowledgement and"</dd>
-
-        <dt>
-
-          <code><a href="get_acknow_2.html">get_acknow_2()</a></code>
-
-        </dt>
-        <dd>Identify acknowledgements</dd>
-
-        <dt>
-
-          <code><a href="get_anzctr_1.html">get_anzctr_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ANZCTR</dd>
-
-        <dt>
-
-          <code><a href="get_authors_1.html">get_authors_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of "the authors ... financial support</dd>
-
-        <dt>
-
-          <code><a href="get_authors_2.html">get_authors_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of "the authors have no funding ..."</dd>
-
-        <dt>
-
-          <code><a href="get_common_1.html">get_common_1()</a></code>
-
-        </dt>
-        <dd>Get common phrases</dd>
-
-        <dt>
-
-          <code><a href="get_common_2.html">get_common_2()</a></code>
-
-        </dt>
-        <dd>Get common phrases</dd>
-
-        <dt>
-
-          <code><a href="get_common_3.html">get_common_3()</a></code>
-
-        </dt>
-        <dd>Get common phrases</dd>
-
-        <dt>
-
-          <code><a href="get_common_4.html">get_common_4()</a></code>
-
-        </dt>
-        <dd>Get common phrases</dd>
-
-        <dt>
-
-          <code><a href="get_common_5.html">get_common_5()</a></code>
-
-        </dt>
-        <dd>Get common phrases</dd>
-
-        <dt>
-
-          <code><a href="get_ct_1.html">get_ct_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ClinicalTrials.gov</dd>
-
-        <dt>
-
-          <code><a href="get_ct_2.html">get_ct_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ClinicalTrials.gov</dd>
-
-        <dt>
-
-          <code><a href="get_developed_1.html">get_developed_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of developed</dd>
-
-        <dt>
-
-          <code><a href="get_disclosure_1.html">get_disclosure_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Disclosure statements</dd>
-
-        <dt>
-
-          <code><a href="get_disclosure_2.html">get_disclosure_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Disclosure statements</dd>
-
-        <dt>
-
-          <code><a href="get_drks_1.html">get_drks_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on DRKS</dd>
-
-        <dt>
-
-          <code><a href="get_financial_1.html">get_financial_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Financial support titles</dd>
-
-        <dt>
-
-          <code><a href="get_financial_2.html">get_financial_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Financial support titles followed by specific text</dd>
-
-        <dt>
-
-          <code><a href="get_financial_3.html">get_financial_3()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Financial support titles followed by specific text</dd>
-
-        <dt>
-
-          <code><a href="get_french_1.html">get_french_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Grant numbers in the Funding/Acknowledgements</dd>
-
-        <dt>
-
-          <code><a href="get_fund_1.html">get_fund_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of "funding for this study was..."</dd>
-
-        <dt>
-
-          <code><a href="get_fund_2.html">get_fund_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Funding titles</dd>
-
-        <dt>
-
-          <code><a href="get_fund_3.html">get_fund_3()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Funding titles</dd>
-
-        <dt>
-
-          <code><a href="get_fund_acknow.html">get_fund_acknow()</a></code>
-
-        </dt>
-        <dd>Identify mentions of funds in acknowledgements</dd>
-
-        <dt>
-
-          <code><a href="get_fund_acknow_new.html">get_fund_acknow_new()</a></code>
-
-        </dt>
-        <dd>Identify mentions of funds in acknowledgements</dd>
-
-        <dt>
-
-          <code><a href="get_funded_ct_1.html">get_funded_ct_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of funding followed by NCT</dd>
-
-        <dt>
-
-          <code><a href="get_grant_1.html">get_grant_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of Financial support titles</dd>
-
-        <dt>
-
-          <code><a href="get_irct_1.html">get_irct_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on IRCT (Iranian Registry of Clinical Trials)</dd>
-
-        <dt>
-
-          <code><a href="get_isrctn_1.html">get_isrctn_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on ISRCTN</dd>
-
-        <dt>
-
-          <code><a href="get_not_registered_1.html">get_not_registered_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of lack of registration</dd>
-
-        <dt>
-
-          <code><a href="get_project_acknow.html">get_project_acknow()</a></code>
-
-        </dt>
-        <dd>Identify mentions of project numbers.</dd>
-
-        <dt>
-
-          <code><a href="get_prospero_1.html">get_prospero_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on PROSPERO</dd>
-
-        <dt>
-
-          <code><a href="get_protocol_1.html">get_protocol_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of protocol</dd>
-
-        <dt>
-
-          <code><a href="get_protocol_2.html">get_protocol_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of protocol</dd>
-
-        <dt>
-
-          <code><a href="get_received_1.html">get_received_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of received</dd>
-
-        <dt>
-
-          <code><a href="get_received_2.html">get_received_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of received</dd>
-
-        <dt>
-
-          <code><a href="get_recipient_1.html">get_recipient_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of recepient</dd>
-
-        <dt>
-
-          <code><a href="get_reg_title_1.html">get_reg_title_1()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - sensitive with negation</dd>
-
-        <dt>
-
-          <code><a href="get_reg_title_2.html">get_reg_title_2()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - specific with no negation</dd>
-
-        <dt>
-
-          <code><a href="get_reg_title_3.html">get_reg_title_3()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - specific</dd>
-
-        <dt>
-
-          <code><a href="get_reg_title_4.html">get_reg_title_4()</a></code>
-
-        </dt>
-        <dd>Identify registration titles - specific</dd>
-
-        <dt>
-
-          <code><a href="get_registered_1.html">get_registered_1()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registered_2.html">get_registered_2()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registered_3.html">get_registered_3()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registered_4.html">get_registered_4()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registered_5.html">get_registered_5()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registration_1.html">get_registration_1()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registration_2.html">get_registration_2()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registration_3.html">get_registration_3()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registration_4.html">get_registration_4()</a></code>
-
-        </dt>
-        <dd>Identify generic mentions of registration</dd>
-
-        <dt>
-
-          <code><a href="get_registry_1.html">get_registry_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registry</dd>
-
-        <dt>
-
-          <code><a href="get_support_1.html">get_support_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_10.html">get_support_10()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_2.html">get_support_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_3.html">get_support_3()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_4.html">get_support_4()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_6.html">get_support_6()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_7.html">get_support_7()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_8.html">get_support_8()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_support_9.html">get_support_9()</a></code>
-
-        </dt>
-        <dd>Identify mentions of support</dd>
-
-        <dt>
-
-          <code><a href="get_supported_1.html">get_supported_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of "Supported by ..."</dd>
-
-        <dt>
-
-          <code><a href="get_thank_1.html">get_thank_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of "thank ... financial support</dd>
-
-        <dt>
-
-          <code><a href="get_thank_2.html">get_thank_2()</a></code>
-
-        </dt>
-        <dd>Identify mentions of thank you statements</dd>
-
-        <dt>
-
-          <code><a href="get_umin_1.html">get_umin_1()</a></code>
-
-        </dt>
-        <dd>Identify mentions of registration on UMIN (Japan Primary Registries Network)</dd>
-
-        <dt>
-
-          <code><a href="negate_absence_1.html">negate_absence_1()</a></code>
-
-        </dt>
-        <dd>Avoid mentions that no funding information was provided</dd>
-
-        <dt>
-
-          <code><a href="negate_conflict_1.html">negate_conflict_1()</a></code>
-
-        </dt>
-        <dd>Avoid financial that is part of COI statements</dd>
-
-        <dt>
-
-          <code><a href="negate_disclosure_1.html">negate_disclosure_1()</a></code>
-
-        </dt>
-        <dd>Avoid disclosures that are in fact COI statements</dd>
-
-        <dt>
-
-          <code><a href="negate_disclosure_2.html">negate_disclosure_2()</a></code>
-
-        </dt>
-        <dd>Identify "Funding disclosure. Nothing to declare" statements</dd>
-
-        <dt>
-
-          <code><a href="negate_reg_title_1.html">negate_reg_title_1()</a></code>
-
-        </dt>
-        <dd>Negate unwanted mentions of title</dd>
-
-        <dt>
-
-          <code><a href="negate_registry_1.html">negate_registry_1()</a></code>
-
-        </dt>
-        <dd>Negate unwanted mentions of registry</dd>
-
-        <dt>
-
-          <code><a href="obliterate_apostrophe_1.html">obliterate_apostrophe_1()</a></code>
-
-        </dt>
-        <dd>Remove apostrophe</dd>
-
-        <dt>
-
-          <code><a href="obliterate_comma_1.html">obliterate_comma_1()</a></code>
-
-        </dt>
-        <dd>Remove commas</dd>
-
-        <dt>
-
-          <code><a href="obliterate_conflict_1.html">obliterate_conflict_1()</a></code>
-
-        </dt>
-        <dd>Remove mentions of COIs that may cause FPs</dd>
-
-        <dt>
-
-          <code><a href="obliterate_conflict_2.html">obliterate_conflict_2()</a></code>
-
-        </dt>
-        <dd>Remove COI statements with language relevant to funding statements</dd>
-
-        <dt>
-
-          <code><a href="obliterate_disclosure_1.html">obliterate_disclosure_1()</a></code>
-
-        </dt>
-        <dd>Remove disclosures with inappropriate sentences</dd>
-
-        <dt>
-
-          <code><a href="obliterate_fullstop_1.html">obliterate_fullstop_1()</a></code>
-
-        </dt>
-        <dd>Remove fullstops that are unlikely to represent end of sentence</dd>
-
-        <dt>
-
-          <code><a href="obliterate_hash_1.html">obliterate_hash_1()</a></code>
-
-        </dt>
-        <dd>Remove hash</dd>
-
-        <dt>
-
-          <code><a href="obliterate_misleading_fund_1.html">obliterate_misleading_fund_1()</a></code>
-
-        </dt>
-        <dd>Remove mentions of commonly misleading funding statements</dd>
-
-        <dt>
-
-          <code><a href="obliterate_references_1.html">obliterate_references_1()</a></code>
-
-        </dt>
-        <dd>Remove references</dd>
-
-        <dt>
-
-          <code><a href="obliterate_refs_1.html">obliterate_refs_1()</a></code>
-
-        </dt>
-        <dd>Remove references</dd>
-
-        <dt>
-
-          <code><a href="obliterate_semicolon_1.html">obliterate_semicolon_1()</a></code>
-
-        </dt>
-        <dd>Remove semicolons when within parentheses</dd>
-
-        <dt>
 
           <code><a href="rt_all.html">rt_all()</a></code>
 
@@ -1350,15 +55,17 @@
 
         </dt>
         <dd>Identify and extract statements of COI, Funding and Registration.</dd>
+      </dl></div><div class="section level2">
+      <h2 id="individual-indicators-pmc-xml-">Individual indicators (PMC XML)<a class="anchor" aria-label="anchor" href="#individual-indicators-pmc-xml-"></a></h2>
 
-        <dt>
+      <div class="section-desc"><p>One detector per indicator, for PMC JATS XML files.</p></div>
 
-          <code><a href="rt_coi.html">rt_coi()</a></code>
+      <dl></dl></div><div class="section level2">
 
-        </dt>
-        <dd>Identify and extract Conflicts of Interest (COI) statements in TXT files.</dd>
 
-        <dt>
+
+
+      <dl><dt>
 
           <code><a href="rt_coi_pmc.html">rt_coi_pmc()</a></code>
 
@@ -1367,10 +74,31 @@
 
         <dt>
 
-          <code><a href="rt_data_code.html">rt_data_code()</a></code>
+          <code><a href="rt_fund_pmc.html">rt_fund_pmc()</a></code>
 
         </dt>
-        <dd>Identify and extract Data and Code statements in TXT files.</dd>
+        <dd>Identify and extract Funding statements in PMC XML files.</dd>
+
+        <dt>
+
+          <code><a href="rt_register_pmc.html">rt_register_pmc()</a></code>
+
+        </dt>
+        <dd>Identify and extract Conflicts of Interest statements in PMC XML files.</dd>
+
+        <dt>
+
+          <code><a href="rt_novelty_pmc.html">rt_novelty_pmc()</a></code>
+
+        </dt>
+        <dd>Identify and extract novelty claims in PMC XML files.</dd>
+
+        <dt>
+
+          <code><a href="rt_replication_pmc.html">rt_replication_pmc()</a></code>
+
+        </dt>
+        <dd>Identify and extract replication components in PMC XML files.</dd>
 
         <dt>
 
@@ -1384,7 +112,23 @@
           <code><a href="rt_data_code_pmc_list.html">rt_data_code_pmc_list()</a></code>
 
         </dt>
-        <dd>Identify and extract Data and Code sharing from PMC XML files.</dd>
+        <dd>Identify and extract Data and Code sharing from a list of PMC XML files.</dd>
+      </dl></div><div class="section level2">
+      <h2 id="individual-indicators-text-">Individual indicators (text)<a class="anchor" aria-label="anchor" href="#individual-indicators-text-"></a></h2>
+
+      <div class="section-desc"><p>One detector per indicator, for plain-text (PDF-derived) files.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="rt_coi.html">rt_coi()</a></code>
+
+        </dt>
+        <dd>Identify and extract Conflicts of Interest (COI) statements in TXT files.</dd>
 
         <dt>
 
@@ -1395,17 +139,10 @@
 
         <dt>
 
-          <code><a href="rt_fund_pmc.html">rt_fund_pmc()</a></code>
+          <code><a href="rt_register.html">rt_register()</a></code>
 
         </dt>
-        <dd>Identify and extract Funding statements in PMC XML files.</dd>
-
-        <dt>
-
-          <code><a href="rt_meta_pmc.html">rt_meta_pmc()</a></code>
-
-        </dt>
-        <dd>Extract article metadata from a PMC XML file.</dd>
+        <dd>Identify and extract Registration statements in TXT files.</dd>
 
         <dt>
 
@@ -1416,34 +153,6 @@
 
         <dt>
 
-          <code><a href="rt_novelty_pmc.html">rt_novelty_pmc()</a></code>
-
-        </dt>
-        <dd>Identify and extract novelty claims in PMC XML files.</dd>
-
-        <dt>
-
-          <code><a href="rt_read_pdf.html">rt_read_pdf()</a></code>
-
-        </dt>
-        <dd>Covert PDF files into TXT files.</dd>
-
-        <dt>
-
-          <code><a href="rt_register.html">rt_register()</a></code>
-
-        </dt>
-        <dd>Identify and extract Registration statements in TXT files.</dd>
-
-        <dt>
-
-          <code><a href="rt_register_pmc.html">rt_register_pmc()</a></code>
-
-        </dt>
-        <dd>Identify and extract Conflicts of Interest statements in PMC XML files.</dd>
-
-        <dt>
-
           <code><a href="rt_replication.html">rt_replication()</a></code>
 
         </dt>
@@ -1451,19 +160,89 @@
 
         <dt>
 
-          <code><a href="rt_replication_pmc.html">rt_replication_pmc()</a></code>
+          <code><a href="rt_data_code.html">rt_data_code()</a></code>
 
         </dt>
-        <dd>Identify and extract replication components in PMC XML files.</dd>
+        <dd>Identify and extract Data and Code statements in TXT files.</dd>
+      </dl></div><div class="section level2">
+      <h2 id="metadata-and-input">Metadata and input<a class="anchor" aria-label="anchor" href="#metadata-and-input"></a></h2>
+
+      <div class="section-desc"><p>Article metadata and PDF-to-text conversion.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="rt_meta_pmc.html">rt_meta_pmc()</a></code>
+
+        </dt>
+        <dd>Extract article metadata from a PMC XML file.</dd>
 
         <dt>
 
-          <code><a href="rtransparent-package.html">rtransparent</a></code> <code><a href="rtransparent-package.html">rtransparent-package</a></code>
+          <code><a href="rt_read_pdf.html">rt_read_pdf()</a></code>
 
         </dt>
-        <dd>rtransparent: Identify indicators of transparency in the published literature</dd>
+        <dd>Covert PDF files into TXT files.</dd>
+      </dl></div><div class="section level2">
+      <h2 id="summarize-and-visualize">Summarize and visualize<a class="anchor" aria-label="anchor" href="#summarize-and-visualize"></a></h2>
+
+      <div class="section-desc"><p>Corpus-level prevalence, per-article scores and plots.</p></div>
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="rt_summary.html">rt_summary()</a></code>
+
+        </dt>
+        <dd>Summarize transparency indicators across a corpus of articles</dd>
+
+        <dt>
+
+          <code><a href="rt_score.html">rt_score()</a></code>
+
+        </dt>
+        <dd>Count the transparency indicators met by each article</dd>
+
+        <dt>
+
+          <code><a href="rt_plot.html">rt_plot()</a></code>
+
+        </dt>
+        <dd>Plot transparency indicators</dd>
+      </dl></div><div class="section level2">
+      <h2 id="datasets">Datasets<a class="anchor" aria-label="anchor" href="#datasets"></a></h2>
+
+
+
+      <dl></dl></div><div class="section level2">
+
+
+
+
+      <dl><dt>
+
+          <code><a href="rt_accuracy.html">rt_accuracy</a></code>
+
+        </dt>
+        <dd>Validated detector accuracy</dd>
+
+        <dt>
+
+          <code><a href="rt_demo.html">rt_demo</a></code>
+
+        </dt>
+        <dd>Simulated transparency indicators for a corpus of articles</dd>
       </dl></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">

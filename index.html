@@ -5,12 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Identifies indicators of transparency • rtransparent</title>
+<title>Identifies Indicators of Transparency • rtransparent</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Identifies indicators of transparency">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Identifies Indicators of Transparency">
 <meta name="description" content="Use this package to identify indicators of transparency within the published literature. It can identify and extract text related to indicators of transparency from specifically formatted TXT files and from PMC XML files (i.e. XML files downloaded from the PubMed Central).">
 <meta property="og:description" content="Use this package to identify indicators of transparency within the published literature. It can identify and extract text related to indicators of transparency from specifically formatted TXT files and from PMC XML files (i.e. XML files downloaded from the PubMed Central).">
 </head>
@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,6 +109,24 @@
 <span><span class="co"># Article metadata</span></span>
 <span><span class="fu"><a href="reference/rt_meta_pmc.html">rt_meta_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p>Naming convention: functions that operate on TXT files do not end in <code>_pmc</code>; functions that operate on PMC XML end in <code>_pmc</code>. The best way to learn the package is the vignette: <code><a href="articles/rtransparent.html">vignette("rtransparent")</a></code>.</p>
+</div>
+<div class="section level2">
+<h2 id="summarizing-a-corpus">Summarizing a corpus<a class="anchor" aria-label="anchor" href="#summarizing-a-corpus"></a>
+</h2>
+<p>The detectors describe one article at a time. To study a whole corpus, stack the per-article rows and summarize them:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># results: one row per article (e.g. purrr::map_dfr(files, rt_all_pmc))</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">rt_demo</span><span class="op">)</span>            <span class="co"># a small simulated example shipped with the package</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/rt_summary.html">rt_summary</a></span><span class="op">(</span><span class="va">rt_demo</span><span class="op">)</span>      <span class="co"># prevalence of each indicator, with a confidence</span></span>
+<span>                         <span class="co"># interval and a sensitivity/specificity-corrected</span></span>
+<span>                         <span class="co"># (Rogan-Gladen) prevalence</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/rt_score.html">rt_score</a></span><span class="op">(</span><span class="va">rt_demo</span><span class="op">)</span>        <span class="co"># add a per-article count of openness practices met</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/rt_plot.html">rt_plot</a></span><span class="op">(</span><span class="va">rt_demo</span><span class="op">)</span>                              <span class="co"># prevalence bar chart</span></span>
+<span><span class="fu"><a href="reference/rt_plot.html">rt_plot</a></span><span class="op">(</span><span class="va">rt_demo</span>, type <span class="op">=</span> <span class="st">"trend"</span>, year <span class="op">=</span> <span class="st">"year"</span><span class="op">)</span>  <span class="co"># prevalence over time</span></span></code></pre></div>
+<p>The accuracy correction uses the bundled <code>rt_accuracy</code> table (validated detector sensitivity and specificity), which you can override. See <code><a href="articles/transparency-summary.html">vignette("transparency-summary")</a></code> for a full walk-through.</p>
 </div>
 <div class="section level2">
 <h2 id="validation">Validation<a class="anchor" aria-label="anchor" href="#validation"></a>
