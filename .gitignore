@@ -17,3 +17,7 @@ audit/
 
 # Rendered pkgdown site (published to the gh-pages branch)
 docs/
+
+# R CMD build/check artifacts
+*.tar.gz
+*.Rcheck/

@@ -1,4 +1,4 @@
-url: https://choxos.github.io/rtransparent
+url: https://choxos.github.io/rtransparent/
 
 template:
   bootstrap: 5
@@ -7,3 +7,37 @@ navbar:
   structure:
     left:  [intro, reference, news]
     right: [search, github]
+
+reference:
+- title: Run all detectors
+  desc: Detect every indicator in one pass.
+  contents:
+  - rt_all
+  - rt_all_pmc
+- title: Individual indicators (PMC XML)
+  desc: One detector per indicator, for PMC JATS XML files.
+  contents:
+  - rt_coi_pmc
+  - rt_fund_pmc
+  - rt_register_pmc
+  - rt_novelty_pmc
+  - rt_replication_pmc
+  - rt_data_code_pmc
+  - rt_data_code_pmc_list
+- title: Individual indicators (text)
+  desc: One detector per indicator, for plain-text (PDF-derived) files.
+  contents:
+  - rt_coi
+  - rt_fund
+  - rt_register
+  - rt_novelty
+  - rt_replication
+  - rt_data_code
+- title: Metadata and input
+  desc: Article metadata and PDF-to-text conversion.
+  contents:
+  - rt_meta_pmc
+  - rt_read_pdf
+- title: internal
+  contents:
+  - matches(".")

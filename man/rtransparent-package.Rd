@@ -13,7 +13,7 @@ indicators of transparency.
 Useful links:
 \itemize{
   \item \url{https://github.com/choxos/rtransparent}
-  \item \url{https://choxos.github.io/rtransparent}
+  \item \url{https://choxos.github.io/rtransparent/}
   \item Report bugs at \url{https://github.com/choxos/rtransparent/issues}
 }
 
