@@ -7,6 +7,9 @@
 ^\.github$
 ^ROADMAP\.md$
 ^audit$
+^LICENSE$
+^rtransparent\.Rcheck$
+^rtransparent_.*\.tar\.gz$
 ^_pkgdown\.yml$
 ^docs$
 ^\.github$

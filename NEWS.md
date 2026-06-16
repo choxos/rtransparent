@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.5.1
+
+* Corrected the license declaration from `GPL-3 + file LICENSE` to `GPL-3`. The package is plain GPL-3 with no additional terms, so the `+ file LICENSE` form (which signals extra restrictions in the `LICENSE` file) was misleading; the full GPL-3 text is still provided in `LICENSE` for reference.
+
+
 # rtransparent 0.5.0
 
 * New corpus-level summary tools, for turning per-article detector output into the kind of figures and tables used in meta-research studies of transparency:

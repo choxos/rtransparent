@@ -1,7 +1,7 @@
 Package: rtransparent
 Type: Package
 Title: Identifies Indicators of Transparency
-Version: 0.5.0
+Version: 0.5.1
 Authors@R: c(
     person("Stylianos", "Serghiou", role = "aut",
            email = "stelios.serghiou@gmail.com"),
@@ -12,7 +12,7 @@ Description: Use this package to identify indicators of transparency within the
     published literature. It can identify and extract text related to
     indicators of transparency from specifically formatted TXT files and from
     PMC XML files (i.e. XML files downloaded from the PubMed Central).
-License: GPL-3 + file LICENSE
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/choxos/rtransparent, https://choxos.github.io/rtransparent/
