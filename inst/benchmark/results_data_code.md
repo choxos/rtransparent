@@ -1,6 +1,6 @@
 # Native data and code sharing detector benchmark
 
-Package version 0.3.4. Native detector vs the human-labeled validation
+Package version 0.4.1. Native detector vs the human-labeled validation
 articles of Serghiou et al. (2021). The published paper reports data
 sensitivity ~76% and code sensitivity ~59%; the original oddpub algorithm
 scores ~84% / ~97% (sensitivity / specificity) against `isData` on this set.

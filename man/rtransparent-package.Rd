@@ -20,4 +20,9 @@ Useful links:
 \author{
 \strong{Maintainer}: Stylianos Serghiou \email{stelios.serghiou@gmail.com}
 
+Authors:
+\itemize{
+  \item Stylianos Serghiou \email{stelios.serghiou@gmail.com}
+}
+
 }

@@ -1,5 +1,15 @@
 <div align="justify">
 
+# rtransparent 0.4.1
+
+* Fixed the exported `rt_fund_pmc()`. It previously predicted funding `TRUE` for no-funding articles with empty evidence text; it now delegates to the same detection path as `rt_all_pmc()` so the two agree, and a positive prediction always carries evidence. Added regression tests.
+* Exported and documented `rt_meta_pmc()` (article metadata from a PMC XML file), which the README advertised but which was not exported.
+* Generated the missing help pages for the novelty and replication functions. `R CMD check` now passes with no errors or warnings.
+* Rewrote the vignette to be self-contained (it runs on a bundled example XML, with the PDF and download steps shown but not executed) and to describe the package and its methodology; removed stale `oddpub` / `metareadr` instructions.
+* Updated the README and benchmark documentation for native data and code detection, pointed URLs at the maintained fork, and regenerated the committed benchmark results under the current version.
+* Added a package startup message and removed the stale packrat configuration.
+
+
 # rtransparent 0.4.0
 
 * Data and code sharing detection is now implemented natively (`R/data_code.R`) and no longer requires the `oddpub` package at runtime. On the held-out validation set the native detector scores data 64% sensitivity / 95% specificity and code 68% sensitivity / 94% specificity (the published paper reports about 76% and 59% sensitivity). Code detection already exceeds the paper's sensitivity and the data precision matches the original oddpub; data sensitivity is being improved toward oddpub's ~84%.

@@ -1,59 +1,105 @@
 # rtransparent
 
 <div align="justify">
-  
+
 ## Overview
 
-`rtransparent` is an R package that automatically identifies and extracts indicators of transparency (data availability, code availability, statements of conflicts of interest, statements of funding, statements of protocol registration) from TXT and PMC XML versions of published research articles in biomedicine.
+`rtransparent` is an R package that automatically identifies and extracts
+**indicators of transparency** from the full text of published biomedical
+articles, in both TXT (PDF-derived) and PMC XML form. For each indicator it
+returns whether the indicator was found and, when found, the statement that
+triggered the detection.
 
+It detects seven indicators:
+
+- **Conflicts of interest** (`rt_coi`, `rt_coi_pmc`)
+- **Funding** (`rt_fund`, `rt_fund_pmc`)
+- **Protocol registration** (`rt_register`, `rt_register_pmc`)
+- **Novelty** claims (`rt_novelty`, `rt_novelty_pmc`)
+- **Replication** components (`rt_replication`, `rt_replication_pmc`)
+- **Data sharing** and **code sharing** (`rt_data_code`, `rt_data_code_pmc`)
+
+`rt_all` / `rt_all_pmc` run COI, funding, registration, novelty and replication
+together; `rt_meta_pmc` returns article metadata from a PMC XML file.
+
+Detection is rule-based and interpretable (curated regular expressions over the
+relevant article sections), so the output is auditable and reproducible. See the
+vignette (`vignette("rtransparent")`) for the methodology.
 
 ## Authors
 
-Stylianos (Stelios) Serghiou (sstelios@stanford.edu). This package also utilizes functions from the `oddpub` package of Nico Riedel (nico.riedel@bihealth.de).
-
+Original package by Stylianos (Stelios) Serghiou. This enhanced fork is
+maintained by Ahmad Sofi-Mahmudi
+([ORCID 0000-0001-6829-0823](https://orcid.org/0000-0001-6829-0823), GitHub
+[@choxos](https://github.com/choxos)). The original data and code detection
+relied on the `oddpub` package of Nico Riedel; data and code detection is now
+implemented natively and no longer requires `oddpub`.
 
 ## Publication
 
-`rtransparent` was validated and subsequently used to extract indicators of transparency from the entire open access literature from PubMed Central. This work is available as a preprint on bioRxiv at: https://www.biorxiv.org/content/10.1101/2020.10.30.361618v1.
-
+`rtransparent` was validated and used to extract indicators of transparency
+across the open access literature in PubMed Central: Serghiou et al.,
+*Assessment of transparency indicators across the biomedical literature: How
+open is open?* PLOS Biology, 2021,
+[doi:10.1371/journal.pbio.3001107](https://doi.org/10.1371/journal.pbio.3001107).
 
 ## Installation
 
-First, install the `oddpub` package.
-
 ```r
-devtools::install_github("quest-bih/oddpub")
+# install.packages("remotes")
+remotes::install_github("choxos/rtransparent", build_vignettes = TRUE)
 ```
 
-Then, install the `rtransparent` package. Note that you need to use the argument
-`build_vignettes = T` to render the vignette, otherwise this will not be
-accessible.
-
-```r
-devtools::install_github("serghiou/rtransparent", build_vignettes = T)
-```
-
+No GitHub-only or AGPL dependencies are required; data and code detection is
+native. `rt_read_pdf()` (PDF to TXT) additionally needs the poppler
+`pdftotext` utility on your system.
 
 ## Usage
 
-The best way to learn how to use this package is to inspect the vignette. This
-can be done by installing the package as explained above and then using the
-command `vignette("rtransparent")`. This package uses the following naming 
-convention: functions that work with TXT files extracted from PDF files do not 
-end in `_pmc`. Functions that work with XML files from PubMed Central (PMC) end 
-in `_pmc`. To run all functions on PMC use the `rt_all_pmc` function. To get all
-meta-data from PMC articles, use the `rt_meta_pmc` function.
+```r
+library(rtransparent)
 
+# A bundled example PMC XML file
+xml <- system.file("extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent")
 
-## Coming soon
+# COI, funding, registration, novelty and replication in one pass
+rt_all_pmc(xml, remove_ns = TRUE)
 
-1. Harmonization of code - all code will adopt the naming convention used in `rt_coi_pmc.R`.
-2. Commenting - more comments will be added to explain non-trivial aspects of the code.
-3. Vignette - a vignette explaining how to use the code is coming.
+# Data and code sharing
+rt_data_code_pmc(xml, remove_ns = TRUE)
 
+# Article metadata
+rt_meta_pmc(xml, remove_ns = TRUE)
+```
+
+Naming convention: functions that operate on TXT files do not end in `_pmc`;
+functions that operate on PMC XML end in `_pmc`. The best way to learn the
+package is the vignette: `vignette("rtransparent")`.
+
+## Validation
+
+Benchmarked against the human-labeled gold standard of Serghiou et al. (2021) on
+the held-out XML test set (reproducible under `data-raw/benchmark/`, results in
+`inst/benchmark/`):
+
+| Indicator | Accuracy | Sensitivity | Specificity |
+|---|---|---|---|
+| Conflicts of interest | 96.7% | 94.0% | 100% |
+| Funding | 97.3% | 100% | 95.7% |
+| Protocol registration | 98.1% | 99.2% | 96.9% |
+| Data sharing | 78.7% | 64.3% | 95.0% |
+| Code sharing | 85.2% | 67.9% | 94.0% |
+
+The native code detector exceeds the paper's reported sensitivity and the data
+detector's precision matches the original `oddpub`. The native **data
+sensitivity (64%) is currently below `oddpub`'s ~84%** on this set, on a tail of
+supplement-only data and rare phrasings, and is being improved; treat the native
+data detector as high-precision but not yet a complete sensitivity replacement.
 
 ## Getting help
 
-If you encounter a bug, please file an issue with a minimal reproducible example [here](https://github.com/serghiou/rtransparent/issues) and please Label it as a "bug" (option on the right of your window). For help on how to use the package, please file an issue with a clearly actionable question [here](https://github.com/serghiou/rtransparent/issues) and label it as "help wanted." For all other questions and discussion, please email the author.
+Please file bugs or questions as issues at
+<https://github.com/choxos/rtransparent/issues> with a minimal reproducible
+example.
 
 </div>
