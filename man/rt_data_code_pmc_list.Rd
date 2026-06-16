@@ -27,13 +27,13 @@ Takes a list of PMC XML files and returns data related to the presence of
 }
 \examples{
 \dontrun{
-# Path to PMC XML
-filepath <- "../inst/extdata/00003-PMID26637448-PMC4737611.xml"
-
-Convert into list
+# Paths to PMC XML files
+filepath <- system.file(
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+)
 filepaths <- list(filepath)
 
-# Identify and extract meta-data and indicators of transparency
-results_table <- rt_data_pmc_list(filepaths, remove_ns = T)
+# Identify and extract indicators of data and code sharing
+results_table <- rt_data_code_pmc_list(filepaths, remove_ns = TRUE)
 }
 }

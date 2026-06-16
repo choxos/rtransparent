@@ -7,3 +7,7 @@
 ^\.github$
 ^ROADMAP\.md$
 ^audit$
+^_pkgdown\.yml$
+^docs$
+^\.github$
+^pkgdown$

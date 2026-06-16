@@ -24,7 +24,8 @@ together; `rt_meta_pmc` returns article metadata from a PMC XML file.
 
 Detection is rule-based and interpretable (curated regular expressions over the
 relevant article sections), so the output is auditable and reproducible. See the
-vignette (`vignette("rtransparent")`) for the methodology.
+vignette (`vignette("rtransparent")`) for the methodology, and the package
+website at <https://choxos.github.io/rtransparent> for full documentation.
 
 ## Authors
 

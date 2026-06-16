@@ -1,5 +1,11 @@
 <div align="justify">
 
+# rtransparent 0.4.2
+
+* Added a pkgdown documentation website at <https://choxos.github.io/rtransparent>.
+* Corrected the `rt_data_code_pmc_list()` documentation example.
+
+
 # rtransparent 0.4.1
 
 * Fixed the exported `rt_fund_pmc()`. It previously predicted funding `TRUE` for no-funding articles with empty evidence text; it now delegates to the same detection path as `rt_all_pmc()` so the two agree, and a positive prediction always carries evidence. Added regression tests.
