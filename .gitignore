@@ -14,3 +14,6 @@ data-raw/benchmark/.cache/
 
 # Local review notes (not distributed)
 audit/
+
+# Rendered pkgdown site (published to the gh-pages branch)
+docs/

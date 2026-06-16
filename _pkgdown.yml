@@ -1,0 +1,9 @@
+url: https://choxos.github.io/rtransparent
+
+template:
+  bootstrap: 5
+
+navbar:
+  structure:
+    left:  [intro, reference, news]
+    right: [search, github]

@@ -1,7 +1,7 @@
 Package: rtransparent
 Type: Package
 Title: Identifies indicators of transparency
-Version: 0.4.1
+Version: 0.4.2
 Authors@R: c(
     person("Stylianos", "Serghiou", role = "aut",
            email = "stelios.serghiou@gmail.com"),
@@ -15,7 +15,7 @@ Description: Use this package to identify indicators of transparency within the
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: https://github.com/choxos/rtransparent
+URL: https://github.com/choxos/rtransparent, https://choxos.github.io/rtransparent
 BugReports: https://github.com/choxos/rtransparent/issues
 Imports:
     dplyr,

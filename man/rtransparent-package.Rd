@@ -12,16 +12,18 @@ indicators of transparency.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{http://github.com/serghiou/rtransparent}
-  \item Report bugs at \url{http://github.com/serghiou/rtransparent/issues}
+  \item \url{https://github.com/choxos/rtransparent}
+  \item \url{https://choxos.github.io/rtransparent}
+  \item Report bugs at \url{https://github.com/choxos/rtransparent/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Stylianos Serghiou \email{stelios.serghiou@gmail.com}
+\strong{Maintainer}: Ahmad Sofi-Mahmudi \email{a.sofimahmudi@gmail.com} (\href{https://orcid.org/0000-0001-6829-0823}{ORCID})
 
 Authors:
 \itemize{
+  \item Ahmad Sofi-Mahmudi \email{a.sofimahmudi@gmail.com} (\href{https://orcid.org/0000-0001-6829-0823}{ORCID})
   \item Stylianos Serghiou \email{stelios.serghiou@gmail.com}
 }
 
