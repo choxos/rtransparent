@@ -32,11 +32,15 @@ Living plan for improving the package. Update it as items ship.
 
 ## Next (priority order)
 
-### A. Port quest-bih fork fixes
-`quest-bih/rtransparent` is ahead 7 commits of `serghiou`. Port the substantive
-ones and measure each on the benchmark: **prospero detection fix**, **coi
-update**, **register pipe update**. (The "harmonize with new oddpub" commit is
-moot once we reimplement data/code.) Record deltas in `NEWS.md`.
+### A. Port quest-bih fork fixes  [done / assessed]
+`quest-bih/rtransparent` is ahead 7 commits of `serghiou`.
+- **prospero detection fix** — ported (PROSPERO id now 5 to 11 digits, TXT + PMC).
+  No benchmark delta (the held-out set has no PROSPERO-only cases).
+- **coi update** (TXT `rt_coi`, 75 lines) — deferred: TXT path, not exercised by
+  the PMC benchmark; revisit if a TXT benchmark is added.
+- **register pipe update** (808 + 686 line reformat of register/xml_utils/utils)
+  — skipped: cosmetic, conflicts heavily with this line's divergence.
+- "harmonize with new oddpub" — moot once we reimplement data/code (item B).
 
 ### B. Reimplement oddpub data/code detection natively (GPL-3)
 Clean-room implementation: repository names (GitHub/Zenodo/OSF/Dryad/figshare),

@@ -41,7 +41,7 @@ get_prospero_1 <- function(article) {
 
   # Just using the NCT was too sensitive
   # e.g. picked up references to protocols, mentions of trials underway, etc.
-  grep("PROSPERO.*[A-Z]{2}\\s*[0-9]{5}", article, perl = T)
+  grep("PROSPERO.*[A-Z]{2}\\s*[0-9]{5,11}", article, perl = T)
 
 }
 
