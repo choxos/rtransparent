@@ -1,5 +1,14 @@
 <div align="justify">
 
+# rtransparent 0.4.3
+
+* Removed the unused legacy data and code helper functions that still referenced `oddpub` and `tokenizers`. The native detector (added in 0.4.0) is the only data and code path; `oddpub`, `tokenizers` and `metareadr` have been dropped from `Suggests`, so the package and its CRAN-style check no longer reference any GitHub-only packages.
+* Resolved the `R CMD check` note about the undefined `.` global variable.
+* Polished release metadata: the `DESCRIPTION` `Title` is now in title case and the pkgdown URL carries its trailing slash.
+* The pkgdown reference index now groups the exported functions by purpose and collapses internal helpers, so the website presents the public API rather than every internal helper.
+* Regenerated the committed benchmark artifacts under the current package version.
+
+
 # rtransparent 0.4.2
 
 * Added a pkgdown documentation website at <https://choxos.github.io/rtransparent>.

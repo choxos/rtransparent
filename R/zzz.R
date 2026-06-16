@@ -1,3 +1,8 @@
+# The detectors use magrittr pipes with the `.` placeholder, which R CMD check
+# otherwise flags as an undefined global variable. Declare it package-wide.
+utils::globalVariables(".")
+
+
 .onAttach <- function(libname, pkgname) {
   version <- utils::packageVersion(pkgname)
   packageStartupMessage(sprintf(paste0(

@@ -2,7 +2,7 @@
 % Please edit documentation in R/rt_data_code_pmc.R
 \name{rt_data_code_pmc_list}
 \alias{rt_data_code_pmc_list}
-\title{Identify and extract Data and Code sharing from PMC XML files.}
+\title{Identify and extract Data and Code sharing from a list of PMC XML files.}
 \usage{
 rt_data_code_pmc_list(filenames, remove_ns = T, specificity = "low")
 }
@@ -11,14 +11,11 @@ rt_data_code_pmc_list(filenames, remove_ns = T, specificity = "low")
 
 \item{remove_ns}{TRUE if an XML namespace exists, else FALSE (default).}
 
-\item{specificity}{How specific should the extraction of text from the XML
-be? If "low" then this is a as sensitive as possible (it extracts all
-text). If "moderate", then it extracts all paragraphs. If "high", then it
-only extracts text from specific locations (footnotes, methods,
-supplements).}
+\item{specificity}{Retained for backward compatibility; see
+\code{\link{rt_data_code_pmc}}.}
 }
 \value{
-A dataframe of results. Takes a median of 200ms per article.
+A dataframe of results, one row per file.
 }
 \description{
 Takes a list of PMC XML files and returns data related to the presence of
