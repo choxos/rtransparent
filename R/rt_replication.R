@@ -193,18 +193,22 @@ rt_replication <- function(filename) {
 #' @noRd
 .which_replication_validation_1 <- function(article) {
 
-  pattern <- paste0(
-    "\\b(validation|replication|confirmatory)\\b.{0,20}",
-    "\\b(cohorts?|samples?|datasets?|sets?|populations?|studies|analyses|groups?|trials?)\\b",
-    "|",
-    "\\b(cohorts?|samples?|datasets?|sets?|populations?|studies|groups?|trials?)\\b.{0,20}",
-    "\\b(validation|replication|confirmatory)\\b",
-    "|",
-    "\\b(internal|external) validation\\b",
-    "|",
-    "\\bvalidated in (the |an? )?(validation|independent) (cohorts?|samples?|datasets?|sets?|populations?)\\b",
-    "|",
-    "\\btraining cohort\\b.{0,120}\\bvalidation cohort\\b"
+  # "replication" and "confirmatory" cohorts/samples are unambiguous. For
+  # "validation", require an external/independent qualifier: a bare "validation
+  # cohort/set" is usually an internal train/validation split (model
+  # development), not an independent confirmation in a new sample.
+  cohort <- "(cohorts?|samples?|datasets?|sets?|populations?|studies|groups?)"
+  extq <- "(external|independent|separate|temporal|geographic(al)?|prospective|second|new|additional|outside|replication)"
+  pattern <- paste(
+    paste0("\\b(replication|confirmatory)\\b.{0,20}\\b", cohort, "\\b"),
+    paste0("\\b", cohort, "\\b.{0,20}\\b(replication|confirmatory)\\b"),
+    "\\bexternal(ly)? (validat(e|ed|ion)|replicat)",
+    "\\bexternal validation\\b",
+    paste0("\\b", extq, "\\b.{0,30}\\bvalidation ", cohort, "\\b"),
+    paste0("\\bvalidation ", cohort, "\\b.{0,30}\\b", extq, "\\b"),
+    paste0("\\bvalidat(e|ed|ion)\\b.{0,40}\\b(in|on|using|with)\\b.{0,20}",
+           "\\b(an? |the )?", extq, " ", cohort, "\\b"),
+    sep = "|"
   )
 
   grep(pattern, article, ignore.case = TRUE, perl = TRUE)

@@ -319,6 +319,10 @@
   journal_supplement_boilerplate <- paste(
     "supplementary (information:)?supplementary data are available at (bioinformatics|nar) online",
     "supplementary data are available at (bioinformatics|nar) online",
+    # Generic publisher boilerplate present in every article of a journal,
+    # not a data-availability statement (for example the Springer line
+    # "The online version contains supplementary material available at <doi>").
+    "online version.{0,40}contains supplementary materials? available at",
     sep = "|"
   )
   calculated_table_summary <- paste(

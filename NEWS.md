@@ -1,5 +1,14 @@
 <div align="justify">
 
+# rtransparent 0.6.1
+
+Precision and recall fixes from an independent manual review of a sample of open-access PMC articles:
+
+* Replication: a bare internal training/validation split (a single dataset divided into a training cohort and a validation cohort) is no longer counted as replication, since it is model development rather than an independent confirmation in a new sample. External or independent validation still counts.
+* Novelty: firstness claims that carry an adverbial are now detected, for example "the first to date to report ..." and "the first ever study to characterize ...".
+* Data: the generic publisher line "The online version contains supplementary material available at <doi>", which appears in every article of some journals, is no longer treated as a data-availability statement on its own.
+
+
 # rtransparent 0.6.0
 
 * Substantially improved detector recall, guided by an external validation set of 1,000 open-access PMC articles:

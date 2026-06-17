@@ -143,7 +143,8 @@ rt_novelty <- function(filename) {
   nouns <- "study|report|trial|analysis|investigation|paper|work|time|demonstration|case|description|survey|scoping review|systematic review|meta-analysis"
   ing <- "(compar|evaluat|examin|investigat|analy[sz]|describ|report|demonstrat|assess|identif|address|understand)"
   pattern <- paste(
-    paste0("\\b(first (", nouns, " )?to ", verbs, "|first to ", verbs, ")"),
+    paste0("\\bfirst (to date |to our knowledge |ever |so far |yet |in the literature )?((",
+           nouns, ") )?to ", verbs),
     paste0("\\b(this is |our report is |our cohort is )?(the )?first (", nouns,
            ")( of its kind)?\\b.{0,90}\\b", ing),
     "\\bthis is the first report that (we know of|to our knowledge)\\b",

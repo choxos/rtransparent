@@ -123,3 +123,17 @@ test_that("novelty functions return integer(0) for empty input", {
   expect_equal(rtransparent:::.which_novelty_novel_1(empty), integer(0))
   expect_equal(rtransparent:::.which_novelty_knowledge_1(empty), integer(0))
 })
+
+
+test_that(".which_novelty_first_to_1 allows an adverbial before 'to <verb>'", {
+  pos <- c(
+    "The present study is the first to date to report the predictive accuracy of imaging.",
+    "This is the first ever study to characterize the mechanism."
+  )
+  neg <- c(
+    "We used a standard cohort design.",
+    "The first patient was enrolled in 2019."
+  )
+  expect_true(length(rtransparent:::.which_novelty_first_to_1(pos)) >= 2)
+  expect_equal(length(rtransparent:::.which_novelty_first_to_1(neg)), 0)
+})

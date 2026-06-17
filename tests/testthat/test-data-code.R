@@ -94,3 +94,13 @@ test_that(".detect_data_code returns the matched statement text", {
   expect_true(r$is_open_data)
   expect_true(grepl("PRJNA414414", r$data_text))
 })
+
+test_that("generic publisher supplement boilerplate is not open data on its own", {
+  # This line appears in every article of some journals and is not a
+  # data-availability statement.
+  r <- det("The online version contains supplementary material available at 10.1007/s00431-026-07109-9.")
+  expect_false(r$is_open_data)
+  # A genuine availability statement is still detected.
+  r2 <- det("Data availability: all sequencing data have been deposited in GEO under accession GSE123456.")
+  expect_true(r2$is_open_data)
+})

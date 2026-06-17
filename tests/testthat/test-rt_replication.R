@@ -133,3 +133,25 @@ test_that("replication functions return integer(0) for empty input", {
   expect_equal(rtransparent:::.which_replication_reproduced_1(empty), integer(0))
   expect_equal(rtransparent:::.which_replication_validation_1(empty), integer(0))
 })
+
+
+test_that(".which_replication_validation_1 ignores internal train/validation splits", {
+  internal <- c(
+    "Patients were divided into a training cohort and a validation cohort.",
+    "In the validation cohort, the model achieved an AUC of 0.83.",
+    "The validation set comprised 30% of the sample."
+  )
+  external <- c(
+    "The model was externally validated in an independent validation cohort.",
+    "Findings were confirmed in an external validation cohort.",
+    "We performed external validation in a separate population."
+  )
+  expect_equal(
+    length(rtransparent:::.which_replication_validation_1(internal)), 0,
+    info = "An internal training/validation split is model development, not replication"
+  )
+  expect_true(
+    length(rtransparent:::.which_replication_validation_1(external)) > 0,
+    info = "External or independent validation is a replication-like component"
+  )
+})
