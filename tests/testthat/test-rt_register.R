@@ -96,6 +96,57 @@ test_that("get_umin_1 detects UMIN registrations", {
 })
 
 
+test_that("new registry helpers detect ChiCTR, INPLASY and OSF protocols", {
+  expect_true(length(get_chictr_1(
+    "This trial was registered at Chinese Clinical Trial Registry (ChiCTR2300070763)."
+  )) > 0)
+  expect_true(length(get_inplasy_1(
+    "This systematic review was registered with INPLASY, registration number INPLASY202560049."
+  )) > 0)
+  expect_true(length(get_osf_protocol_1(
+    "The protocol of this scoping review was registered on the Open Science Framework and is publicly available at https://osf.io/6h3vm."
+  )) > 0)
+})
+
+
+test_that("validation registry helpers detect flexible CT, OSF and blinded PROSPERO text", {
+  expect_true(length(get_ct_4(
+    "The study is registered at clinicaltrials.gov (NCT03297034)."
+  )) > 0)
+  expect_true(length(get_ct_4(
+    "Clinical trial registration www.clinicaltrials.gov identifier is NCT05856578."
+  )) > 0)
+  expect_true(length(get_ct_4(
+    "It was registered at ClinicalTrial.gov with registration number NCT05856578."
+  )) > 0)
+  expect_true(length(get_osf_preregistered_1(
+    "This work was pre-registered at: https://osf.io/gzh2j/."
+  )) > 0)
+  expect_true(length(get_osf_preregistered_1(
+    "This study was pre-registered on the Open Science Framework (OSF)."
+  )) > 0)
+  expect_true(length(get_prospero_redacted_1(
+    "The protocol for this review was registered with PROSPERO (CRD number redacted for anonymity)."
+  )) > 0)
+})
+
+
+test_that("registration false-statement guard rejects IRB and not applicable text", {
+  false_text <- c(
+    "Clinical trial number Not applicable.",
+    "Ethical clearance was granted by the Institutional Review Board (IRB Registration No. HA-01-R-104).",
+    "As this was a narrative review, the protocol was not registered.",
+    "The study was reviewed under RIO University of Southern Denmark registration.",
+    "The research was registered in SisGen for genetic heritage access.",
+    "The Institutional Ethics Committee registration number is ECR/1234/Inst."
+  )
+  expect_true(all(rtransparent:::.is_false_register_statement(false_text)))
+  expect_false(rtransparent:::.is_false_register_statement(
+    "The study was registered at clinicaltrials.gov (NCT03297034)."
+  ))
+})
+
+
 test_that("registry helpers return integer(0) for empty/non-matching input", {
   empty <- character(0)
   non_matching <- c("This study examined lung cancer.", "Results were significant.")
@@ -105,4 +156,9 @@ test_that("registry helpers return integer(0) for empty/non-matching input", {
   expect_equal(get_drks_1(empty), integer(0))
   expect_equal(get_irct_1(non_matching), integer(0))
   expect_equal(get_umin_1(non_matching), integer(0))
+  expect_equal(get_chictr_1(non_matching), integer(0))
+  expect_equal(get_inplasy_1(non_matching), integer(0))
+  expect_equal(get_osf_protocol_1(non_matching), integer(0))
+  expect_equal(get_osf_preregistered_1(non_matching), integer(0))
+  expect_equal(get_prospero_redacted_1(non_matching), integer(0))
 })

@@ -26,6 +26,25 @@ test_that("NA indicator values are excluded from the denominator", {
   expect_equal(round(s$percent, 1), 66.7)
 })
 
+test_that("indicator columns are validated before summarizing or scoring", {
+  expect_equal(
+    rt_summary(data.frame(is_open_data = c(1, 0, NA)), adjust = FALSE)$percent,
+    50
+  )
+  expect_error(
+    rt_summary(data.frame(is_open_data = c(1, 2)), adjust = FALSE),
+    "0/1"
+  )
+  expect_error(
+    rt_summary(data.frame(is_open_data = c("TRUE", "FALSE")), adjust = FALSE),
+    "logical or numeric"
+  )
+  expect_error(
+    rt_score(data.frame(is_open_data = c(1, 2))),
+    "0/1"
+  )
+})
+
 test_that("the Rogan-Gladen correction recovers a known prevalence", {
   # If apparent = 0.6, se = 0.9, sp = 0.8, true = (0.6 + 0.8 - 1)/(0.9 + 0.8 - 1)
   acc <- data.frame(
@@ -81,6 +100,15 @@ test_that("rt_score counts the five openness practices by default", {
   # Including novelty explicitly raises the first article's count to 6.
   scored2 <- rt_score(df, indicators = grep("^is_", names(df), value = TRUE))
   expect_equal(scored2$n_indicators[1], 6L)
+})
+
+test_that("rt_score distinguishes unassessed rows from true zero scores", {
+  df <- data.frame(
+    is_open_data = c(TRUE, NA, FALSE),
+    is_open_code = c(NA, NA, FALSE)
+  )
+  scored <- rt_score(df)
+  expect_equal(scored$n_indicators, c(1L, NA_integer_, 0L))
 })
 
 test_that("rt_plot returns ggplot objects", {

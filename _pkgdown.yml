@@ -9,6 +9,9 @@ navbar:
     right: [search, github]
 
 reference:
+- title: Package
+  contents:
+  - rtransparent-package
 - title: Run all detectors
   desc: Detect every indicator in one pass.
   contents:
@@ -48,6 +51,3 @@ reference:
   contents:
   - rt_accuracy
   - rt_demo
-- title: internal
-  contents:
-  - matches(".")

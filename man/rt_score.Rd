@@ -19,9 +19,10 @@ practices.}
 \item{name}{Name of the count column to add (default `"n_indicators"`).}
 }
 \value{
-`data` as a tibble with the integer count column added. Tabulate it
-  (for example with [table()] or `dplyr::count()`) for the distribution of
-  the number of practices met.
+`data` as a tibble with the integer count column added. Rows with no
+  assessed indicators receive `NA` for the count. Tabulate it (for example
+  with [table()] or `dplyr::count()`) for the distribution of the number of
+  practices met.
 }
 \description{
 Adds a column giving, for each article (row), how many of the transparency

@@ -6,6 +6,7 @@
 
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without misleading fullstops.
+#' @noRd
 .obliterate_fullstop_1 <- function(article) {
 
   j_p_a_i <- "([A-Z])(\\.)\\s*([A-Z])(\\.)\\s*([A-Z])(\\.)"
@@ -32,6 +33,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 .obliterate_semicolon_1 <- function(article) {
 
   article %>% stringr::str_replace_all("(\\(.*); (.*\\))", "\\1 - \\2")
@@ -45,6 +47,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 .obliterate_comma_1 <- function(article) {
 
   article %>% stringr::str_replace_all(", ", " ")
@@ -60,6 +63,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 .obliterate_apostrophe_1 <- function(article) {
 
   article %>%
@@ -75,6 +79,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 .obliterate_hash_1 <- function(article) {
 
   article %>% stringr::str_replace_all("#", "")
@@ -88,6 +93,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without backlashes.
+#' @noRd
 .obliterate_punct_1 <- function(article) {
 
   punct <- '[~@#$%^&*{}_+"<>?/=]'  # not :()[] b/c they are informative
@@ -104,6 +110,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs with no remaining line break tags.
+#' @noRd
 .obliterate_line_break_1 <- function(article) {
 
   article %>% stringr::str_replace_all("\n", " ")
@@ -117,6 +124,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without misleading fullstops.
+#' @noRd
 .obliterate_refs_1 <- function(article) {
 
   # Built like this to avoid destabilizing the algorithm
@@ -134,6 +142,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 .obliterate_contribs <- function(article) {
 
   # Not obliterating "Authors' information" b/c some publications use it to
@@ -202,6 +211,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the start and finish of this section.
+#' @noRd
 .where_refs_txt <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -253,6 +263,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the start and finish of this section.
+#' @noRd
 .where_acknows_txt <- function(article) {
 
   acknow_index <- get_acknow_2(article)
@@ -294,6 +305,7 @@
 #'
 #' @param article The text as a vector of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .where_methods_txt  <- function(article) {
 
   method_index <- integer()
@@ -356,6 +368,7 @@
 #'
 #' @param x A vector of strings.
 #' @return A string of words separate by OR statements within parentheses.
+#' @noRd
 .encase <- function(x) {
 
   paste0("(", paste0(x, collapse = "|"), ")")
@@ -371,6 +384,7 @@
 #' @param location Where to bound each word ("both" (default), "end" or
 #'     "start").
 #' @return A vector of bounded strings.
+#' @noRd
 .bound <- function(x, location = "end") {
 
   if (location == "both") {
@@ -402,6 +416,7 @@
 #' @param n_max Number of maximum words allowed
 #' @param space_first If TRUE space first (default), else space last.
 #' @return A vector of bounded strings.
+#' @noRd
 .max_words <- function(x, n_max = 3, space_first = T) {
 
   if (space_first) {
@@ -425,6 +440,7 @@
 #' @param x A vector of strings.
 #' @param within_text Boolean defines whether a regex typical to a title found      within text should be created or not.
 #' @return A vector of strings with a suffix attached.
+#' @noRd
 .title <- function(x, within_text = F) {
 
   if (within_text) {
@@ -448,6 +464,7 @@
 #' @param x A vector of strings.
 #' @param within_text Boolean defines whether a regex typical to a title found      within text should be created or not.
 #' @return A vector of strings with a suffix attached.
+#' @noRd
 .title_strict <- function(x, within_text = F) {
 
   if (within_text) {
@@ -472,6 +489,7 @@
 #' @param x A vector of strings.
 #' @param location Whether to "start", "end" or "both" with a capital letter.
 #' @return A string pattern.
+#' @noRd
 .first_capital <- function(x, location = "both") {
 
   if (location == "both") {
@@ -502,6 +520,7 @@
 #' Contains the synonyms to words being used throughout the package.
 #'
 #' @return A list of synonyms to words of interest
+#' @noRd
 .create_synonyms <- function() {
 
   # whole list synonyms$ vs synonyms[[]] similar performance 760 vs 755 median

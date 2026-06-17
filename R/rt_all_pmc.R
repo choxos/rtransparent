@@ -1,4 +1,5 @@
 
+#' @noRd
 .get_xml <- function(filename, remove_ns = F) {
 
   if (remove_ns) {
@@ -170,6 +171,7 @@
   section_names <- c(
     "ack",
     "body",
+    "body_all",
     "methods",
     "abstract",
     "footnotes"
@@ -178,6 +180,7 @@
   section_funs <- list(
     .xml_ack,
     .xml_body,
+    function(article_xml) .xml_body(article_xml, get_last_two = FALSE),
     .xml_methods,
     .xml_abstract,
     .xml_footnotes
@@ -191,6 +194,7 @@
 
 
 #' @returns A list of PubMed IDs
+#' @noRd
 .get_ids <- function(article_xml, remove_ns = F) {
 
   xpath <- c(

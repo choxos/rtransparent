@@ -5,6 +5,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_ct_1 <- function(article) {
 
   # Just using the NCT was too sensitive
@@ -23,6 +24,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_ct_2 <- function(article, dict) {
 
   the_study <- "(This|The|It|There) ([a-zA-Z0-9]+\\s){0,2}(randomi(z|s)ed|study|trial|was a|is a|were)"
@@ -42,6 +44,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_ct_3 <- function(article, dict) {
 
   ct_nct <- c(
@@ -63,6 +66,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_prospero_1 <- function(article) {
 
   # Just using the NCT was too sensitive
@@ -82,6 +86,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registered_1 <- function(article, dict) {
 
   words <- c("this", "research_lower_strict", "and", "registered_registration")
@@ -142,6 +147,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registered_2 <- function(article, dict) {
 
   c("(^|\\.\\s*)(Ethical|Approval|(|The )[A-Z][A-Z]+)",
@@ -163,6 +169,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registered_3 <- function(article, dict) {
 
   c("([Tt]rial|[Pp]rotocol) (registered|registration) (with\\b|under\\b|on\\b|at\\b|as\\b)") %>%
@@ -182,6 +189,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registered_4 <- function(article, dict) {
 
   words <- c("this", "registered", "research_lower_strict")
@@ -210,6 +218,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registered_5 <- function(article, dict) {
 
   words <- c("this", "research_strict", "and", "registered_registration")
@@ -266,6 +275,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_not_registered_1 <- function(article, dict) {
 
   words <- c("this", "research_lower_strict")
@@ -288,6 +298,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registration_1 <- function(article, dict) {
 
   words <- c("research_strict", "registration")  # Too generic without these
@@ -315,6 +326,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registration_2 <- function(article, dict) {
 
   words <- c("Research_strict", "registration")
@@ -340,6 +352,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registration_3 <- function(article) {
 
   grep("(^|\\.).{0,35}\\b(|pre|pre-)registration.{0,35}NCT[0-9]{8}",
@@ -357,6 +370,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registration_4 <- function(article, dict) {
 
   words <- c("This", "research_lower_strict", "registration")
@@ -389,6 +403,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_registry_1 <- function(article, dict) {
 
   words <- c("research_lower_strict", "registry")  # Too generic without these
@@ -426,6 +441,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_reg_title_1 <- function(article, dict) {
 
   b <- integer()
@@ -492,6 +508,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_reg_title_2 <- function(article) {
 
   b <- integer()
@@ -561,6 +578,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_reg_title_3 <- function(article, dict) {
 
   b <- integer()
@@ -642,6 +660,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_reg_title_4 <- function(article, dict) {
 
   b <- integer()
@@ -719,6 +738,7 @@
 #' Extract the index of mentions such as: "Trial registration: ..."
 #'
 #' @return Index of element with phrase of interest
+#' @noRd
 .create_register_pmc_title <- function() {
 
   title_starts <- c(
@@ -753,6 +773,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_protocol_1 <- function(article, dict) {
 
   words <- c("study protocol", "published", "previously")
@@ -774,6 +795,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_protocol_2 <- function(article) {
 
   grep("[Pp]rotocol .{0,5}(|[A-Z]+)[0-9]{5}", article, perl = T)
@@ -791,6 +813,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_funded_ct_1 <- function(article, dict) {
 
 
@@ -815,6 +838,7 @@
 #' @param article A string or a list of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .negate_registry_1 <- function(article, dict) {
 
   research <- dict$research %>% .bound %>% .encase
@@ -833,6 +857,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .negate_reg_title_1 <- function(article) {
 
   article %>% stringr::str_detect("[A-Z]{2}\\s*[0-9]{2}|[0-9]{5}")
@@ -846,6 +871,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .negate_reg_title_2 <- function(article) {
 
   article %>% stringr::str_detect("\\bNA\\b|\\bN/A\\b|not registered")
@@ -861,6 +887,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 .obliterate_refs_2 <- function(article) {
 
   # Good for finding, but not for substituting b/c it's a lookahead
@@ -887,6 +914,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 .obliterate_references_1 <- function(article) {
 
   # If within References or under references and starts with 1. or contains et al. then remove.
@@ -991,6 +1019,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_isrctn_1 <- function(article) {
 
   grep("\\bISRCTN[0-9]{8}\\b", article, perl = TRUE)
@@ -1002,6 +1031,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_anzctr_1 <- function(article) {
 
   grep("\\bACTRN[0-9]{14}\\b", article, perl = TRUE)
@@ -1013,6 +1043,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_drks_1 <- function(article) {
 
   grep("\\bDRKS[0-9]{8}\\b", article, perl = TRUE)
@@ -1024,6 +1055,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_irct_1 <- function(article) {
 
   # IRCT IDs follow the format IRCT + digits + uppercase letter + digits
@@ -1037,9 +1069,106 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_umin_1 <- function(article) {
 
   grep("\\bUMIN[0-9]{9}\\b", article, perl = TRUE)
+
+}
+
+
+#' Identify flexible ClinicalTrials.gov registration statements.
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+.which_ct_4 <- function(article) {
+
+  grep(
+    paste(
+      "\\b(the|this|our) (study|trial).{0,80}registered at clinicaltrials\\.?gov.{0,80}NCT[0-9]{8}",
+      "\\b(the|this|our|it) (study|trial)? ?was registered at clinicaltrial(s)?\\.?\\s*gov.{0,100}(registration number )?NCT[0-9]{8}",
+      "\\bclinical trial registration.{0,100}clinicaltrial(s)?\\.?\\s*gov.{0,80}NCT[0-9]{8}",
+      "\\bclinicaltrial(s)?\\.?\\s*gov identifier is NCT[0-9]{8}",
+      sep = "|"
+    ),
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
+
+}
+
+
+#' Identify mentions of registration on ChiCTR
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+.which_chictr_1 <- function(article) {
+
+  grep("\\bChiCTR[-A-Z]*[0-9]{5,}\\b|Chinese Clinical Trial Registry",
+       article, perl = TRUE, ignore.case = TRUE)
+
+}
+
+
+#' Identify mentions of registered systematic-review protocols on INPLASY
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+.which_inplasy_1 <- function(article) {
+
+  grep("\\bINPLASY[0-9]{5,}\\b|International Platform of Registered Systematic Review",
+       article, perl = TRUE, ignore.case = TRUE)
+
+}
+
+
+#' Identify registered protocols hosted on OSF
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+.which_osf_protocol_1 <- function(article) {
+
+  grep("protocol.{0,80}(registered|registration).{0,80}(Open Science Framework|OSF|osf\\.io|10\\.17605/OSF)",
+       article, perl = TRUE, ignore.case = TRUE)
+
+}
+
+
+#' Identify preregistered studies hosted on OSF.
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+.which_osf_preregistered_1 <- function(article) {
+
+  grep(
+    "\\b(this|the|our) (study|work|trial|review|protocol).{0,80}pre-?registered.{0,100}(Open Science Framework|OSF|osf\\.io|10\\.17605/OSF)",
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
+
+}
+
+
+#' Identify blinded PROSPERO registration statements.
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+.which_prospero_redacted_1 <- function(article) {
+
+  grep(
+    "\\bprotocol for (this|the) review.{0,100}registered with PROSPERO.{0,100}CRD number redacted",
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
 
 }
 
@@ -1056,6 +1185,7 @@
 #' @param pmc_reg_ls A list of results from the `.get_register_pmc` function.
 #' @param dict A list of regular expressions for each concept.
 #' @return A dataframe of results.
+#' @noRd
 .rt_register_pmc <- function(article_ls, pmc_reg_ls, dict) {
 
   # TODO Update to match format of rt_coi_pmc.
@@ -1064,6 +1194,8 @@
   # Way faster than index_any[["reg_title_pmc"]] <- NA
   index_any <- list(
     prospero_1 = NA,
+    prospero_redacted_1 = NA,
+    ct_4 = NA,
     registered_1 = NA,
     registered_2 = NA,
     registered_3 = NA,
@@ -1084,7 +1216,11 @@
     anzctr_1    = NA,
     drks_1      = NA,
     irct_1      = NA,
-    umin_1      = NA
+    umin_1      = NA,
+    chictr_1    = NA,
+    inplasy_1   = NA,
+    osf_protocol_1 = NA,
+    osf_preregistered_1 = NA
   )
 
   index_method <- list(
@@ -1116,6 +1252,11 @@
     out$is_explicit_reg <- TRUE
     out$is_register_pred <- TRUE
     out$register_text <- pmc_reg_ls$register_text
+    if (.is_false_register_statement(out$register_text)) {
+      out$is_register_pred <- FALSE
+      out$register_text <- ""
+      out$is_explicit_reg <- NA
+    }
 
     return(c(out, index_any, index_method))
   }
@@ -1130,7 +1271,7 @@
 
   methods <- unlist(article_ls$methods)
 
-  reg_regex <- "\\b(|-)([Rr]egist|(|[Cc]linical)[Tt]rial|NCT[0-9]{8}|ISRCTN|ChiCTR|PROSPERO)"
+  reg_regex <- "\\b(|-)([Rr]egist|(|[Cc]linical)[Tt]rial|NCT[0-9]{8}|ISRCTN|ChiCTR|INPLASY|PROSPERO|Open Science Framework|OSF|osf\\.io|10\\.17605/OSF)"
   article %<>% purrr::keep(stringr::str_detect, pattern = reg_regex)
 
 
@@ -1171,6 +1312,8 @@
   out$is_NCT <- purrr::some(article, stringr::str_detect, "NCT[0-9]{8}")
 
   index_any$prospero_1 <- .which_prospero_1(article_processed)
+  index_any$prospero_redacted_1 <- .which_prospero_redacted_1(article_processed)
+  index_any$ct_4 <- .which_ct_4(article_processed)
   index_any$registered_1 <- .which_registered_1(article_processed, dict)
   index_any$registered_2 <- .which_registered_2(article_processed, dict)
   index_any$registered_3 <- .which_registered_3(article_processed, dict)
@@ -1192,6 +1335,10 @@
   index_any$drks_1      <- .which_drks_1(article_processed)
   index_any$irct_1      <- .which_irct_1(article_processed)
   index_any$umin_1      <- .which_umin_1(article_processed)
+  index_any$chictr_1    <- .which_chictr_1(article_processed)
+  index_any$inplasy_1   <- .which_inplasy_1(article_processed)
+  index_any$osf_protocol_1 <- .which_osf_protocol_1(article_processed)
+  index_any$osf_preregistered_1 <- .which_osf_preregistered_1(article_processed)
   index <- unlist(index_any) %>% unique() %>% sort()
 
 
@@ -1200,6 +1347,12 @@
     out$is_explicit_reg <- !!length(unlist(index_any))
     out$is_register_pred <- !!length(index)
     out$register_text <- article[index] %>% paste(collapse = " ")
+    if (.is_false_register_statement(out$register_text)) {
+      out$is_register_pred <- FALSE
+      out$register_text <- ""
+      out$is_explicit_reg <- NA
+      index <- integer()
+    }
 
     index_any %<>% purrr::map(function(x) !!length(x))
 
@@ -1235,6 +1388,11 @@
 
   out$is_register_pred <- !!length(index)
   out$register_text <- article[index] %>% paste(collapse = " ")
+  if (out$is_register_pred && .is_false_register_statement(out$register_text)) {
+    out$is_register_pred <- FALSE
+    out$register_text <- ""
+    out$is_explicit_reg <- NA
+  }
 
   index_any %<>% purrr::map(function(x) !!length(x))
 
@@ -1301,6 +1459,8 @@ rt_register_pmc <- function(filename, remove_ns = F) {
   index_any <- list(
     reg_title_pmc = NA,
     prospero_1 = NA,
+    prospero_redacted_1 = NA,
+    ct_4 = NA,
     registered_1 = NA,
     registered_2 = NA,
     registered_3 = NA,
@@ -1321,7 +1481,11 @@ rt_register_pmc <- function(filename, remove_ns = F) {
     anzctr_1    = NA,
     drks_1      = NA,
     irct_1      = NA,
-    umin_1      = NA
+    umin_1      = NA,
+    chictr_1    = NA,
+    inplasy_1   = NA,
+    osf_protocol_1 = NA,
+    osf_preregistered_1 = NA
   )
 
   index_method <- list(
@@ -1475,7 +1639,7 @@ rt_register_pmc <- function(filename, remove_ns = F) {
   #   purrr::compact()
 
   # Adding PROPSERO adds negligible overhead
-  rel_regex <- "\\b(|-)([Rr]egist|(|[Cc]linical)[Tt]rial|NCT[0-9]{8}|ISRCTN|ACTRN|DRKS|IRCT|UMIN|ChiCTR|PROSPERO)"
+  rel_regex <- "\\b(|-)([Rr]egist|(|[Cc]linical)[Tt]rial|NCT[0-9]{8}|ISRCTN|ACTRN|DRKS|IRCT|UMIN|ChiCTR|INPLASY|PROSPERO|Open Science Framework|OSF|osf\\.io|10\\.17605/OSF)"
   article %<>% purrr::keep(stringr::str_detect, pattern = rel_regex)
 
 
@@ -1533,6 +1697,8 @@ rt_register_pmc <- function(filename, remove_ns = F) {
   dict <- .create_synonyms()
   index_any$reg_title_pmc <- integer()
   index_any$prospero_1 <- .which_prospero_1(article_processed)
+  index_any$prospero_redacted_1 <- .which_prospero_redacted_1(article_processed)
+  index_any$ct_4 <- .which_ct_4(article_processed)
   index_any$registered_1 <- .which_registered_1(article_processed, dict)
   index_any$registered_2 <- .which_registered_2(article_processed, dict)
   index_any$registered_3 <- .which_registered_3(article_processed, dict)
@@ -1554,6 +1720,10 @@ rt_register_pmc <- function(filename, remove_ns = F) {
   index_any$drks_1      <- .which_drks_1(article_processed)
   index_any$irct_1      <- .which_irct_1(article_processed)
   index_any$umin_1      <- .which_umin_1(article_processed)
+  index_any$chictr_1    <- .which_chictr_1(article_processed)
+  index_any$inplasy_1   <- .which_inplasy_1(article_processed)
+  index_any$osf_protocol_1 <- .which_osf_protocol_1(article_processed)
+  index_any$osf_preregistered_1 <- .which_osf_preregistered_1(article_processed)
   index <- unlist(index_any) %>% unique() %>% sort()
 
   # Tidier but takes a median 11.0 ms vs current, which takes 10.6 ms
@@ -1608,9 +1778,20 @@ rt_register_pmc <- function(filename, remove_ns = F) {
     out$is_register_pred <- !!length(index)
     out$register_text <- article[index] %>% paste(collapse = " ")
 
-    index_any %<>% purrr::map(function(x) !!length(x))
+    if (.is_false_register_statement(out$register_text)) {
 
-    return(tibble::as_tibble(c(out, index_any, index_method)))
+      out$is_register_pred <- FALSE
+      out$register_text <- ""
+      out$is_explicit <- NA
+      index <- integer()
+
+    } else {
+
+      index_any %<>% purrr::map(function(x) !!length(x))
+
+      return(tibble::as_tibble(c(out, index_any, index_method)))
+
+    }
   }
 
 

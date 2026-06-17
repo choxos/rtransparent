@@ -6,6 +6,7 @@
 #'
 #' @param article_ls A PMC XML as a list of strings (from \code{.get_article_txt}).
 #' @return A named list of results.
+#' @noRd
 .rt_novelty_pmc <- function(article_ls) {
 
   index_any <- list(
@@ -22,24 +23,36 @@
     novelty_text    = ""
   )
 
-  # Search abstract and body (first ~30 paragraphs of body = intro zone)
+  # Search abstract and full body. The external XML validation found many
+  # explicit first-time claims in results and conclusion paragraphs, not only
+  # in the introduction/discussion zones.
   abstract <- unlist(article_ls$abstract)
-  body     <- unlist(article_ls$body)
-
-  # Intro zone: first 30 body paragraphs + last 15 (discussion)
-  n_body <- length(body)
-  intro_idx <- seq_len(min(30, n_body))
-  disc_idx  <- seq(max(1, n_body - 15), n_body)
-  body_scan <- body[unique(c(intro_idx, disc_idx))]
-
-  article <- c(abstract, body_scan)
+  body     <- unlist(if (!is.null(article_ls$body_all)) article_ls$body_all else article_ls$body)
+  article <- c(abstract, body)
 
   if (!length(article)) {
     return(c(out, index_any))
   }
 
   # Quick relevance check
-  rel_regex <- "first time|first study|first to |first report|novel finding|previously unknown|previously unreported|previously uncharacterized|previously undescribed|to our knowledge|to the best of our knowledge"
+  rel_regex <- paste(
+    "first time", "first study", "first to ", "first report",
+    "first demonstration", "first study comparing", "first study of",
+    "among the first", "novel finding", "novel observation",
+    "novel approach", "novel method", "novel technique",
+    "novel evidence", "novel aspect", "novel role",
+    "novel mechanism", "novel target", "novel treatment",
+    "novel therapy", "novel association", "novel result",
+    "novel perspective", "novel pathway", "novel insight",
+    "previously unknown", "previously unreported",
+    "previously uncharacterized", "previously undescribed",
+    "previously unidentified", "previously unrecognized",
+    "previously unappreciated",
+    "not been reported previously", "has not been reported",
+    "has not been studied", "has not been examined",
+    "to our knowledge", "to the best of our knowledge",
+    sep = "|"
+  )
   is_relevant <- any(grepl(rel_regex, article, ignore.case = TRUE))
 
   if (!is_relevant) {

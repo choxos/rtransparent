@@ -3,7 +3,7 @@
 \docType{data}
 \name{rt_accuracy}
 \alias{rt_accuracy}
-\title{Validated detector accuracy}
+\title{Detector accuracy estimates}
 \format{
 A tibble with 5 rows and 5 columns:
 \describe{
@@ -19,13 +19,14 @@ Serghiou S, Contopoulos-Ioannidis DG, Boyack KW, Riedel N, Wallach JD,
   Ioannidis JPA (2021). Assessment of transparency indicators across the
   biomedical literature: How open is open? \emph{PLOS Biology} 19(3):
   e3001107. \doi{10.1371/journal.pbio.3001107}. Data and code values: this
-  package's held-out validation (`inst/benchmark/results_data_code.md`).
+  package's reproducible benchmark and regression estimates
+  (`inst/benchmark/results_data_code.md`).
 }
 \usage{
 rt_accuracy
 }
 \description{
-Sensitivity and specificity of each transparency detector, used by
+Sensitivity and specificity estimates for each transparency detector, used by
 [rt_summary()] to correct an apparent prevalence for detector error
 (the Rogan-Gladen correction).
 }
@@ -34,9 +35,11 @@ For conflicts of interest, funding and protocol registration these are the
 published, importance-weighted validation values of Serghiou et al. (2021);
 the detectors for these indicators are essentially those validated in the
 paper. For data and code sharing the detector is implemented natively in this
-package (it no longer wraps `oddpub`), so the package's own held-out
-validation estimates are used instead (see `inst/benchmark`). Supply your own
-values to [rt_summary()] via its `accuracy` argument to override these.
+package (it no longer wraps `oddpub`), so the package's reproducible
+benchmark and regression estimates are used instead (see `inst/benchmark`).
+These data/code estimates are not an untouched external validation of the
+native detector; supply your own values to [rt_summary()] via its `accuracy`
+argument when you have study-specific or externally validated estimates.
 }
 \seealso{
 [rt_summary()]

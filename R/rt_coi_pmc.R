@@ -6,6 +6,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_coi_1 <- function(article, dict) {
 
   a <-
@@ -32,6 +33,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_coi_2 <- function(article, dict) {
 
   txt <- dict$txt
@@ -50,6 +52,23 @@
 }
 
 
+#' Identify Spanish COI statements.
+#'
+#' @param article The text as a vector of strings.
+#' @return Index of elements with phrase of interest
+#' @noRd
+.which_spanish_coi_1 <- function(article) {
+
+  grep(
+    "conflictos? de intereses",
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
+
+}
+
+
 
 #' Identify mentions of financial disclosures
 #'
@@ -59,6 +78,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_disclosure_1 <- function(article, dict) {
 
   a <- agrep("disclosure", article, ignore.case = T)
@@ -88,6 +108,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_commercial_1 <- function(article, dict) {
 
   txt <- dict$txt
@@ -115,6 +136,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_benefit_1 <- function(article, dict) {
 
   txt <- dict$txt
@@ -144,6 +166,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_consultant_1 <- function(article, dict) {
 
   txt <- dict$txt
@@ -166,9 +189,57 @@
 #'
 #' @param article The text as a vector of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 .which_brief <- function(article) {
 
   grep("Brief explanation for [A-Za-z]+:", article, ignore.case = T, fixed = F)
+
+}
+
+
+#' Exclude AI-use disclosures from COI matching.
+#'
+#' Generative-AI declarations often use generic "declaration" or "disclosure"
+#' headings but are not conflict-of-interest statements unless they also carry
+#' explicit financial or competing-interest language.
+#'
+#' @param article A string or list of strings.
+#' @return Logical vector; TRUE where the candidate is an AI-only disclosure.
+#' @noRd
+.is_ai_disclosure_text <- function(article) {
+
+  ai_pattern <- paste(
+    "generative ai",
+    "ai-assisted technolog",
+    "\\bllm\\b",
+    "large language model",
+    "chatgpt",
+    "openai",
+    "claude",
+    "gemini",
+    "grok",
+    "deepseek",
+    sep = "|"
+  )
+
+  coi_pattern <- paste(
+    "conflicts? of interest",
+    "competing interests?",
+    "financial disclosures?",
+    "financial relationship",
+    "commercial relationship",
+    "honorari",
+    "consult(ant|ing)",
+    "\\bspeaker\\b",
+    "\\bspeakers bureau\\b",
+    "stock",
+    "equity",
+    "advisory board",
+    sep = "|"
+  )
+
+  grepl(ai_pattern, article, perl = TRUE, ignore.case = TRUE) &
+    !grepl(coi_pattern, article, perl = TRUE, ignore.case = TRUE)
 
 }
 
@@ -180,6 +251,7 @@
 #'
 #' @param article The text as a vector of strings.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_grants_1 <- function(article) {
 
   grep("received grants", article, perl = T)
@@ -195,6 +267,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_fees_1 <- function(article, dict) {
 
   words <- c("received_strict", "stock", "fees")
@@ -227,6 +300,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_consults_1 <- function(article, dict) {
 
   words <- c("consult_all", "speaker")
@@ -261,6 +335,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_connections_1 <- function(article, dict) {
 
   txt <- dict$txt
@@ -300,6 +375,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_connections_2 <- function(article, dict) {
 
   declare <- "(disclose(|s)|declare(|s)) (|a|an|no)"
@@ -327,6 +403,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_commercial_ack_1 <- function(article, dict) {
 
   txt <- dict$txt
@@ -371,6 +448,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_rights_1 <- function(article, dict) {
 
   words <- c("received_strict", "proprietary")
@@ -392,6 +470,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_founder_1 <- function(article, dict) {
 
   words <- c("founder", "for_of")
@@ -414,6 +493,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_advisor_1 <- function(article, dict) {
 
   sci_advisor <- paste("scientific", "advisor", sep = dict$txt)
@@ -433,6 +513,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_paid_1 <- function(article, dict) {
 
   grep(" paid ", article, ignore.case = T, perl = T)
@@ -447,6 +528,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_board_1 <- function(article, dict) {
 
   txt <- dict$txt
@@ -471,6 +553,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_no_coi_1 <- function(article, dict) {
 
   grep("[Nn]o[a-zA-Z\\s]+conflict", article, perl = T)
@@ -486,6 +569,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return Index of elements with phrase of interest
+#' @noRd
 .which_no_funder_role_1 <- function(article, dict) {
 
   words <- c("is_have", "role")
@@ -525,6 +609,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return A boolean indicating whether a disclosure should be retained.
+#' @noRd
 .negate_coi_1 <- function(article, dict) {
 
   no <- dict$no %>% .bound() %>% .encase()
@@ -548,6 +633,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return A boolean indicating whether a disclosure should be retained.
+#' @noRd
 .negate_disclosure_1 <- function(article, dict) {
 
   words <- c("no_financial_disclosure", "consult_all", "speaker", "proprietary")
@@ -569,6 +655,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return A boolean indicating whether a disclosure should be retained.
+#' @noRd
 .negate_disclosure_2 <- function(article, dict) {
 
   has_capital_d <- grepl("Disclos|DISCLOS", article)
@@ -589,6 +676,7 @@
 #' @param article The text as a vector of strings.
 #' @param dict A list of regular expressions for each concept.
 #' @return A boolean indicating whether a disclosure should be retained.
+#' @noRd
 .obliterate_honoraria_1 <- function(article, dict) {
 
   honorary_1 <- "([Pp]articipant|[Pp]rovider|[Ss]ubject|[Pp]atient|[Ff]amil)"
@@ -608,6 +696,7 @@
 #' @param article_xml The text as an xml_document.
 #' @param dict A list of regular expressions for each concept.
 #' @return The title and its related text as a string.
+#' @noRd
 .get_coi_pmc_title <- function(article_xml, dict) {
 
   b <- ""
@@ -784,6 +873,7 @@
 #'
 #' @param article_xml The text as an xml_document.
 #' @return The title and its related text as a string.
+#' @noRd
 .get_coi_pmc_fn <- function(article_xml) {
 
   fn_xpaths <- c(
@@ -884,6 +974,7 @@
 #' @param pmc_coi_ls A list of results from the `.get_coi_pmc` function.
 #' @param dict A list of regular expressions for each concept.
 #' @return A dataframe of results.
+#' @noRd
 .rt_coi_pmc <- function(article_ls, pmc_coi_ls, dict) {
 
   index <- integer()
@@ -892,6 +983,7 @@
   index_any <- list(
     coi_1 = NA,
     coi_2 = NA,
+    spanish_coi_1 = NA,
     coi_disclosure_1 = NA,
     commercial_1 = NA,
     benefit_1 = NA,
@@ -933,10 +1025,17 @@
     out$is_coi_pred <- TRUE
     out$coi_text <- pmc_coi_ls$coi_text
 
-    relevance_ls$is_relevant_coi <- TRUE
-    relevance_ls$is_relevant_coi_hi <- TRUE
+    if (!.is_ai_disclosure_text(out$coi_text)) {
 
-    return(c(relevance_ls, out, index_any, index_ack))
+      relevance_ls$is_relevant_coi <- TRUE
+      relevance_ls$is_relevant_coi_hi <- TRUE
+
+      return(c(relevance_ls, out, index_any, index_ack))
+
+    }
+
+    out$is_coi_pred <- FALSE
+    out$coi_text <- ""
 
   }
 
@@ -976,6 +1075,7 @@
   index_any <- list(
     coi_1 = .which_coi_1(article_processed, dict),
     coi_2 = .which_coi_2(article_processed, dict),
+    spanish_coi_1 = .which_spanish_coi_1(article_processed),
     coi_disclosure_1 = .which_disclosure_1(article_processed, dict),
     commercial_1 = .which_commercial_1(article_processed, dict),
     benefit_1 = .which_benefit_1(article_processed, dict),
@@ -983,6 +1083,9 @@
     grants_1 = .which_grants_1(article_processed),
     brief_1 = .which_brief(article_processed)
   )
+  index_any <- purrr::map(index_any, function(x) {
+    x[!.is_ai_disclosure_text(article[x])]
+  })
 
   index <- unlist(index_any) %>% unique() %>% sort()
 
@@ -1030,6 +1133,9 @@
       no_coi_1 = .which_no_coi_1(article_processed[i], dict),
       no_funder_role_1 = .which_no_funder_role_1(article_processed[i], dict)
     )
+    index_ack <- purrr::map(index_ack, function(x) {
+      x[!.is_ai_disclosure_text(article[i][x])]
+    })
 
     index <- i[unlist(index_ack) %>% unique() %>% sort()]
     index_ack %<>% purrr::map(function(x) !!length(x))
@@ -1092,6 +1198,7 @@ rt_coi_pmc <- function(filename, remove_ns = F) {
     coi_title_pmc = NA,
     coi_1 = NA,
     coi_2 = NA,
+    spanish_coi_1 = NA,
     disclosure_1 = NA,
     commercial_1 = NA,
     benefit_1 = NA,
@@ -1145,7 +1252,8 @@ rt_coi_pmc <- function(filename, remove_ns = F) {
 
   # Capture coi fn elements
   out$coi_text <- .get_coi_pmc_fn(article_xml)
-  index_any$coi_fn_pmc <- nchar(out$coi_text) > 0
+  index_any$coi_fn_pmc <- nchar(out$coi_text) > 0 &&
+    !.is_ai_disclosure_text(out$coi_text)
 
   if (index_any$coi_fn_pmc) {
 
@@ -1158,7 +1266,7 @@ rt_coi_pmc <- function(filename, remove_ns = F) {
 
   # Go through titles
   title_txt <- .get_coi_pmc_title(article_xml, dict)
-  is_title <- nchar(title_txt) > 0
+  is_title <- nchar(title_txt) > 0 && !.is_ai_disclosure_text(title_txt)
 
   if (is_title) {
 
@@ -1222,12 +1330,16 @@ rt_coi_pmc <- function(filename, remove_ns = F) {
   index_any$coi_title_pmc <- integer()
   index_any$coi_1 <- .which_coi_1(article_processed, dict)
   index_any$coi_2 <- .which_coi_2(article_processed, dict)
+  index_any$spanish_coi_1 <- .which_spanish_coi_1(article_processed)
   index_any$disclosure_1 <- .which_disclosure_1(article_processed, dict)
   index_any$commercial_1 <- .which_commercial_1(article_processed, dict)
   index_any$benefit_1 <- .which_benefit_1(article_processed, dict)
   index_any$consultant_1 <- .which_consultant_1(article_processed, dict)
   index_any$grants_1 <- .which_grants_1(article_processed)
   index_any$brief_1 <- .which_brief(article_processed)
+  index_any <- purrr::map(index_any, function(x) {
+    x[!.is_ai_disclosure_text(article[x])]
+  })
   index <- unlist(index_any) %>% unique() %>% sort()
 
 
@@ -1274,6 +1386,9 @@ rt_coi_pmc <- function(filename, remove_ns = F) {
     index_ack$no_coi_1 <- .which_no_coi_1(article_processed[i], dict)
     index_ack$no_funder_role_1 <-
       .which_no_funder_role_1(article_processed[i], dict)
+    index_ack <- purrr::map(index_ack, function(x) {
+      x[!.is_ai_disclosure_text(article[i][x])]
+    })
 
     index <- i[unlist(index_ack) %>% unique() %>% sort()]
     index_ack %<>% purrr::map(function(x) !!length(x))

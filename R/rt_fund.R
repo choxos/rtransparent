@@ -11,6 +11,7 @@
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_1 <- function(article) {
 
   # synonyms <- .create_synonyms()
@@ -83,6 +84,7 @@ get_support_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -123,6 +125,7 @@ get_support_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_3 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -152,6 +155,7 @@ get_support_3 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_4 <- function(article) {
 
   # TODO: I have now made this function much more general than before, by
@@ -204,6 +208,7 @@ get_support_5 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_6 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -251,6 +256,7 @@ get_support_6 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_7 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -271,6 +277,7 @@ get_support_7 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_8 <- function(article) {
 
   # TODO: This function was onboarded to capture a tiny proportion of
@@ -326,6 +333,7 @@ get_support_8 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_9 <- function(article) {
 
   # Only done for words other than "supported" b/c this is very generic
@@ -368,6 +376,7 @@ get_support_9 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_support_10 <- function(article) {
 
   # TODO: This function was onboarded to capture a tiny proportion of
@@ -398,6 +407,7 @@ get_support_10 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_developed_1 <- function(article) {
 
   # TODO: This function was onboarded to capture a tiny proportion of
@@ -440,6 +450,7 @@ get_developed_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_received_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -460,6 +471,7 @@ get_received_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_received_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -481,6 +493,7 @@ get_received_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_recipient_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -501,6 +514,7 @@ get_recipient_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_authors_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -534,6 +548,7 @@ get_authors_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_authors_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -554,6 +569,7 @@ get_authors_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_thank_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -577,6 +593,7 @@ get_thank_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_thank_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -602,6 +619,7 @@ get_thank_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_fund_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -630,6 +648,7 @@ get_fund_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_fund_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -670,6 +689,7 @@ get_fund_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_fund_3 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -690,6 +710,7 @@ get_fund_3 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_fund_acknow <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -714,6 +735,7 @@ get_fund_acknow <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_fund_acknow_new <- function(article) {
 
   # Detect funding acknowledged in prose. Requires explicit funding language: a
@@ -754,6 +776,7 @@ get_fund_acknow_new <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_supported_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -775,6 +798,7 @@ get_supported_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_financial_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -818,6 +842,7 @@ get_financial_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_financial_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -840,6 +865,7 @@ get_financial_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_financial_3 <- function(article) {
 
 
@@ -863,6 +889,7 @@ get_financial_3 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_disclosure_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -906,6 +933,7 @@ get_disclosure_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_disclosure_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -935,6 +963,7 @@ get_disclosure_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_grant_1 <- function(article) {
 
   # TODO: This whole function takes a LOT of time to run, but it is ONLY
@@ -989,6 +1018,7 @@ get_grant_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_french_1 <- function(article) {
 
   # This study was financed by... - avoiding specifics b/c of UTF-8 characters
@@ -1003,6 +1033,7 @@ get_french_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_project_acknow <- function(article) {
 
   grep("project (no|num)", article, perl = T, ignore.case = T)
@@ -1016,6 +1047,7 @@ get_project_acknow <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_common_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1048,6 +1080,7 @@ get_common_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_common_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1071,6 +1104,7 @@ get_common_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_common_3 <- function(article) {
 
   grep("required to disclose.*disclosed none", article)
@@ -1085,6 +1119,7 @@ get_common_3 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_common_4 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1123,6 +1158,7 @@ get_common_4 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_common_5 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1144,6 +1180,7 @@ get_common_5 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_acknow_1 <- function(article) {
 
   txt <- "[a-zA-Z0-9\\s,()-]*"  # order matters
@@ -1180,6 +1217,7 @@ get_acknow_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 get_acknow_2 <- function(article) {
 
   txt_0 <- "(^A(?i)cknowledg(|e)ment(|s)(?-i))"
@@ -1202,6 +1240,7 @@ get_acknow_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 negate_disclosure_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1274,6 +1313,7 @@ negate_disclosure_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 negate_disclosure_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1327,6 +1367,7 @@ negate_disclosure_2 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 negate_conflict_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1347,6 +1388,7 @@ negate_conflict_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The index of the paragraph of interest.
+#' @noRd
 negate_absence_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1357,7 +1399,47 @@ negate_absence_1 <- function(article) {
     lapply(.bound) %>%
     lapply(.encase) %>%
     paste(collapse = synonyms$txt) %>%
-    grepl(article, perl = T)
+    grepl(article, perl = T) |
+    grepl(
+      paste(
+        "\\bfunding\\s*:?\\s*none\\b",
+        "\\bno (external |specific |direct )?(funding|financial support|grant support)\\b",
+        "\\bno funding and conflicts? of interest\\b",
+        "\\bfinancial disclosures?\\s*:?\\s*none\\b",
+        "\\bgrant support\\s*&\\s*financial disclosures?\\s*:?\\s*none\\b",
+        "\\bno financial support was received\\b",
+        "\\breceived no (specific )?(funding|financial support|grant support)\\b",
+        "\\bdid not receive any specific grant\\b",
+        "\\b(funding\\s*)?(nil|none|n/?a|not applicable)\\.?\\s*$",
+        "\\bfunding\\s+(the )?(authors?|author) (have|has) nothing to report\\b",
+        "\\b(the )?(authors?|author) (have|has) nothing to report\\b",
+        "\\bfunding\\s+nothing to (declare|report)\\b",
+        "\\bnothing to (declare|report)\\b",
+        "^\\s*(funding|financial support|sources of support)\\s*:?\\s*$",
+        "\\bfunding acquisition\\b",
+        "\\b(study|case report|paper|article|work|research) (was|is) not funded\\b",
+        "\\bnot funded\\b",
+        "\\bnot receive any funding\\b",
+        "\\bdid not receive (any )?funding\\b",
+        "\\bhas not been funded\\b",
+        "\\bwithout any funding or sponsorship\\b",
+        "\\bno financial support is available\\b",
+        "\\bno specific funding sources? for this study\\b",
+        "\\bfunding/support\\s*none\\b",
+        "\\bno relevant sources? of funding\\b",
+        "\\brelevant sources? of funding pertaining\\b",
+        "\\bsupported by (the |this |available |clinical |previous |prior |published )?(evidence|data|analyses|analysis|results|findings|studies|literature|guidelines|imaging|histopathologic|framework|method|model|theory|hypothesis|observations|physiological compatibility|systematic review)\\b",
+        "\\b(findings|results|observations) .{0,80}supported by the work of\\b",
+        "\\bstructurally supported by\\b",
+        "\\bno grants? (were )?involved( in supporting)?\\b",
+        "\\bdeclared that no grants? were involved\\b",
+        "\\bno external finding\\b",
+        sep = "|"
+      ),
+      article,
+      perl = TRUE,
+      ignore.case = TRUE
+    )
 
 }
 
@@ -1368,6 +1450,7 @@ negate_absence_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_conflict_1 <- function(article) {
 
   # Good for finding, but not for substituting b/c it's  a lookahead
@@ -1408,6 +1491,7 @@ obliterate_conflict_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_disclosure_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -1452,6 +1536,7 @@ obliterate_disclosure_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without misleading fullstops.
+#' @noRd
 obliterate_fullstop_1 <- function(article) {
 
   j_p_a_i <- "([A-Z])(\\.)\\s*([A-Z])(\\.)\\s*([A-Z])(\\.)"
@@ -1475,6 +1560,7 @@ obliterate_fullstop_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without misleading fullstops.
+#' @noRd
 obliterate_refs_1 <- function(article) {
 
   # Built like this to avoid distabilizing the algorithm
@@ -1654,6 +1740,10 @@ rt_fund <- function(filename) {
         index_fund[['fund_new']] <- get_fund_acknow_new(paragraphs_pruned[from:to])
         index_fund[['project']] <- get_project_acknow(paragraphs_pruned[from:to])
         index <- unlist(index_fund) %>% magrittr::add(from - 1)
+        if (!!length(index)) {
+          is_absent <- negate_absence_1(paragraphs_pruned[index])
+          index <- index[!is_absent]
+        }
       }
     }
   }
@@ -1661,6 +1751,10 @@ rt_fund <- function(filename) {
   index <- sort(unique(index))
   is_funded_pred <- !!length(index)
   funding_text <- paragraphs[index] %>% paste(collapse = " ")
+  if (is_funded_pred && negate_absence_1(funding_text)) {
+    is_funded_pred <- FALSE
+    funding_text <- ""
+  }
 
   index_any %<>% purrr::map(function(x) !!length(x))
   index_fund %<>% purrr::map(function(x) !!length(x))

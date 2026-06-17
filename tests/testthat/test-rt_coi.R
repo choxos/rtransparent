@@ -37,6 +37,40 @@ test_that("rt_coi detects 'no competing interests' statements", {
 })
 
 
+test_that("rt_coi detects Spanish conflict-of-interest headings", {
+  article <- c(
+    "Conflicto de interesesLos autores declaran no tener conflictos de interes.",
+    "Conflictos de intereses: Ninguno declarado."
+  )
+
+  idx <- rtransparent:::.which_spanish_coi_1(article)
+  expect_equal(idx, 1:2)
+})
+
+
+test_that(".rt_coi_pmc ignores AI-only disclosure sections", {
+  dict <- rtransparent:::.create_synonyms()
+  pmc_coi_ls <- list(is_coi_pred = FALSE, coi_text = "")
+
+  ai_only <- list(
+    ack = character(),
+    body = "Declaration of generative AI and AI-assisted technologies in the writing process: During preparation the authors used ChatGPT to improve grammar and the manuscript was proofread by native English speakers.",
+    footnotes = character()
+  )
+  out_ai <- rtransparent:::.rt_coi_pmc(ai_only, pmc_coi_ls, dict)
+  expect_false(isTRUE(out_ai$is_coi_pred))
+  expect_equal(out_ai$coi_text, "")
+
+  coi <- list(
+    ack = character(),
+    body = "Conflicts of Interest: The authors declare no competing interests.",
+    footnotes = character()
+  )
+  out_coi <- rtransparent:::.rt_coi_pmc(coi, pmc_coi_ls, dict)
+  expect_true(isTRUE(out_coi$is_coi_pred))
+})
+
+
 test_that("rt_coi returns correct tibble structure on TXT file", {
   skip_if_not(
     file.exists(system.file("extdata", "PMID32171256-PMC7071725.pdf",

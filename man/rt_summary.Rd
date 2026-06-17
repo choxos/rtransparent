@@ -14,11 +14,12 @@ rt_summary(
 )
 }
 \arguments{
-\item{data}{A data frame with one row per article. Indicator columns are
-logical (or 0/1) and named as in [rt_all_pmc()]: `is_coi_pred`,
+\item{data}{A data frame with one row per article. Indicator columns must be
+logical or numeric 0/1 and named as in [rt_all_pmc()]: `is_coi_pred`,
 `is_fund_pred`, `is_register_pred`, `is_open_data`, `is_open_code`,
 `is_novelty_pred`, `is_replication_pred`. `NA` marks an article that was not
-assessed for that indicator and is excluded from its denominator.}
+assessed for that indicator and is excluded from its denominator. Other
+values are rejected rather than silently coerced.}
 
 \item{indicators}{Optional character vector of indicator columns to
 summarize. Defaults to every recognized indicator present in `data`.}

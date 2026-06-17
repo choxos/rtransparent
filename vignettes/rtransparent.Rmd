@@ -90,7 +90,8 @@ returned) and reproducible.
   "independently validated", "confirmatory cohort" (replication), with negation
   filters ("failed to replicate").
 * **Data and code sharing.** Detected by a native detector (`.detect_data_code`)
-  built from public facts and validated statements: field-specific accession
+  built from public repository facts and curated benchmark statements:
+  field-specific accession
   schemes (GEO `GSE`, SRA / BioProject `PRJNA`, PDB, ArrayExpress, dbGaP,
   ProteomeXchange, Dryad / Zenodo / figshare DOIs, ...), repository URLs and
   names, deposit / availability / data-availability-statement language, and
@@ -188,12 +189,14 @@ following is illustrative.
 
 # Validation
 
-The detectors were validated against the human-labeled gold standard of
-Serghiou et al. (2021). On the held-out XML test set the current package reaches
-roughly: COI 97% accuracy, funding 97%, protocol registration 98%. The native
-data/code detector reaches code 68% sensitivity / 94% specificity and data 64%
-sensitivity / 95% specificity (see `inst/benchmark/` and `data-raw/benchmark/`
-in the source repository for the reproducible benchmark).
+The detectors were benchmarked against the human-labeled XML benchmark of
+Serghiou et al. (2021). The current package reaches roughly: COI 97% accuracy,
+funding 97%, protocol registration 98%. The native data/code detector reaches
+code 84% sensitivity / 99% specificity and data 71% sensitivity / 99%
+specificity (see `inst/benchmark/` and `data-raw/benchmark/` in the source
+repository for the reproducible benchmark). The native data/code values are
+reproducible benchmark and regression estimates, not untouched external-validation
+estimates.
 
 # Naming convention and dependencies
 

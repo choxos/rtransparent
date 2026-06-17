@@ -11,6 +11,7 @@ paper/
 
 # Benchmark download and prediction cache
 data-raw/benchmark/.cache/
+data-raw/external-validation/.cache/
 
 # Local review notes (not distributed)
 audit/

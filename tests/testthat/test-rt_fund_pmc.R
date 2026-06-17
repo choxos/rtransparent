@@ -41,3 +41,67 @@ test_that("rt_fund_pmc never predicts funding without evidence", {
     }
   }
 })
+
+test_that("funding absence negation covers common PMC no-funding statements", {
+  absent <- c(
+    "Funding The authors have nothing to report.",
+    "Funding information: This case report was not funded.",
+    "Funding Not applicable.",
+    "Funding Nil.",
+    "Funding Nothing to declare.",
+    "Funding",
+    "FUNDING/SUPPORT",
+    "Financial support None declared.",
+    "This article was commissioned without any funding or sponsorship.",
+    "Funding/support None.",
+    "No financial support is available for the study.",
+    "Funding There are no relevant sources of funding pertaining to this article.",
+    "This conclusion was supported by previous studies and clinical guidelines.",
+    "The decision was supported by contextual factors.",
+    "Waiver of informed consent was granted by the review board.",
+    "This association was supported by PSM analysis.",
+    "There are no funders to report.",
+    "The author(s) declared that no grants were involved in supporting this work.",
+    "Author contributions: funding acquisition, writing and editing.",
+    "This work has not been funded yet."
+  )
+
+  expect_true(all(rtransparent:::negate_absence_1(absent)))
+})
+
+test_that("get_common_6 detects explicit validation funding phrases", {
+  article <- c(
+    "This project was funded by Grants NA22OAR4590515 and NA22OAR4590512 by NOAA.",
+    "Funding was provided by the Scientific Research Projects Fund of Erciyes University.",
+    "Financial support was provided by Professor Shumin Liu.",
+    "This study was generously supported by Jingding Medical Tech.",
+    "We thank the Deanship of Scientific Research for funding this work through research groups program under Grant No. RGP2/123/45.",
+    "M.C.P was supported by the Fonds de recherche du Quebec en Sante award.",
+    "This conclusion was supported by PSM analysis.",
+    "Research supports hope's benefits."
+  )
+
+  idx <- rtransparent:::get_common_6(article)
+  expect_equal(idx, 1:6)
+})
+
+test_that("positive funding clauses override local no-industry clauses", {
+  mixed <- paste(
+    "Funding: The development of PACK was funded by the University of Cape Town Lung Institute.",
+    "The KTU receives no funding from the pharmaceutical industry.",
+    "Funding for the work was provided by PEPFAR via TB/HIV Care, grant no. NU2GGH001933-01."
+  )
+
+  expect_true(rtransparent:::has_positive_fund_text(mixed))
+  expect_true(rtransparent:::negate_absence_1(mixed))
+
+  pure_absence <- "Funding: The authors received no specific funding for manuscript."
+  expect_false(rtransparent:::has_positive_fund_text(pure_absence))
+  expect_true(rtransparent:::can_scan_after_negated_fund_tag(pure_absence))
+
+  no_grant <- paste(
+    "Funding This research did not receive any specific grant from funding agencies",
+    "in the public, commercial, or not-for-profit sectors."
+  )
+  expect_false(rtransparent:::has_positive_fund_text(no_grant))
+})

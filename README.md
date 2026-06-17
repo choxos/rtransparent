@@ -25,7 +25,7 @@ together; `rt_meta_pmc` returns article metadata from a PMC XML file.
 Detection is rule-based and interpretable (curated regular expressions over the
 relevant article sections), so the output is auditable and reproducible. See the
 vignette (`vignette("rtransparent")`) for the methodology, and the package
-website at <https://choxos.github.io/rtransparent> for full documentation.
+website at <https://choxos.github.io/rtransparent/> for full documentation.
 
 ## Authors
 
@@ -96,29 +96,30 @@ rt_plot(rt_demo)                              # prevalence bar chart
 rt_plot(rt_demo, type = "trend", year = "year")  # prevalence over time
 ```
 
-The accuracy correction uses the bundled `rt_accuracy` table (validated detector
-sensitivity and specificity), which you can override. See
+The accuracy correction uses the bundled `rt_accuracy` table (detector
+sensitivity and specificity estimates), which you can override. See
 `vignette("transparency-summary")` for a full walk-through.
 
 ## Validation
 
-Benchmarked against the human-labeled gold standard of Serghiou et al. (2021) on
-the held-out XML test set (reproducible under `data-raw/benchmark/`, results in
-`inst/benchmark/`):
+Benchmarked against the human-labeled XML benchmark of Serghiou et al. (2021)
+(reproducible under `data-raw/benchmark/`, results in `inst/benchmark/`):
 
 | Indicator | Accuracy | Sensitivity | Specificity |
 |---|---|---|---|
 | Conflicts of interest | 96.7% | 94.0% | 100% |
 | Funding | 97.3% | 100% | 95.7% |
 | Protocol registration | 98.1% | 99.2% | 96.9% |
-| Data sharing | 78.7% | 64.3% | 95.0% |
-| Code sharing | 85.2% | 67.9% | 94.0% |
+| Data sharing | 84.3% | 71.3% | 99.0% |
+| Code sharing | 94.1% | 83.5% | 99.5% |
 
 The native code detector exceeds the paper's reported sensitivity and the data
-detector's precision matches the original `oddpub`. The native **data
-sensitivity (64%) is currently below `oddpub`'s ~84%** on this set, on a tail of
-supplement-only data and rare phrasings, and is being improved; treat the native
-data detector as high-precision but not yet a complete sensitivity replacement.
+detector's specificity remains high. The native **data sensitivity (71%) is
+still below `oddpub`'s ~84%** on this set, on a tail of supplement-only data,
+reused public-source statements and rare phrasings; treat the native data
+detector as high-precision but not yet a complete sensitivity replacement. The
+data/code values are reproducible benchmark and regression estimates for the native
+detector, not untouched external validation estimates.
 
 ## Getting help
 

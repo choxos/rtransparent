@@ -66,7 +66,7 @@ knitr::kable(
 
 A text-mining detector is not perfect, so the **observed** prevalence is a biased
 estimate of the **true** prevalence. `rt_summary()` corrects for this using each
-detector's validated sensitivity and specificity (the Rogan-Gladen estimator).
+detector's sensitivity and specificity estimates (the Rogan-Gladen estimator).
 The correction is on by default and adds `adj_percent`, `adj_low` and
 `adj_high`:
 
@@ -84,10 +84,11 @@ The accuracy values come from [`rt_accuracy`](../reference/rt_accuracy.html):
 rt_accuracy
 ```
 
-Novelty and replication have no validated accuracy here, so their corrected
-values are `NA`. To use your own validation (or the published `oddpub` values
-for data and code), pass any table with `variable`, `sensitivity` and
-`specificity` columns:
+Novelty and replication have no bundled accuracy estimates here, so their
+corrected values are `NA`. The data/code values are reproducible benchmark
+estimates for the native detector, not untouched external-validation estimates.
+To use your own validation (or the published `oddpub` values for data and
+code), pass any table with `variable`, `sensitivity` and `specificity` columns:
 
 ```{r}
 my_acc <- rt_accuracy

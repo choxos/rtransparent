@@ -2,10 +2,12 @@
 
 # Accuracy benchmark for the native data and code sharing detector.
 #
-# Fetches the NCBI PMC XML of the human-labeled data/code validation articles of
+# Fetches the NCBI PMC XML of the human-labeled data/code benchmark articles of
 # Serghiou et al. (2021), runs the native detector (`.detect_data_code` on the
 # text from `.dc_article_text`), and compares to the human labels `isData` /
-# `isCode`. Writes inst/benchmark/results_data_code.{csv,md}.
+# `isCode`. Writes inst/benchmark/results_data_code.{csv,md}. These are
+# reproducible benchmark and regression metrics for the native detector, not
+# untouched external-validation estimates.
 #
 # Usage (from the repo root, needs readxl + network to NCBI):
 #   Rscript data-raw/benchmark/run_data_code.R
@@ -107,9 +109,11 @@ con <- file(file.path(OUT, "results_data_code.md"), open = "w")
 writeLines(c(
   "# Native data and code sharing detector benchmark",
   "",
-  sprintf("Package version %s. Native detector vs the human-labeled validation",
+  sprintf("Package version %s. Native detector vs the human-labeled XML benchmark",
           as.character(utils::packageVersion("rtransparent"))),
-  "articles of Serghiou et al. (2021). The published paper reports data",
+  "articles of Serghiou et al. (2021). These are reproducible benchmark and",
+  "regression metrics for the native detector, not untouched external-validation",
+  "estimates. The published paper reports data",
   "sensitivity ~76% and code sensitivity ~59%; the original oddpub algorithm",
   "scores ~84% / ~97% (sensitivity / specificity) against `isData` on this set.",
   "",

@@ -5,6 +5,7 @@
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_ct_1 <- function(article) {
 
   # Just using the NCT was too sensitive
@@ -22,9 +23,37 @@ get_ct_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_ct_2 <- function(article) {
 
   grep("[Cc]linical[Tt]rial.* NCT[0-9]{8}", article, perl = T)
+
+}
+
+
+#' Identify flexible ClinicalTrials.gov registration statements.
+#'
+#' Extract the index of mentions such as "The study is registered at
+#'     clinicaltrials.gov (NCT03297034)" and "Clinical trial registration
+#'     clinicaltrials.gov identifier is NCT05856578."
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+get_ct_4 <- function(article) {
+
+  grep(
+    paste(
+      "\\b(the|this|our) (study|trial).{0,80}registered at clinicaltrials\\.?gov.{0,80}NCT[0-9]{8}",
+      "\\b(the|this|our|it) (study|trial)? ?was registered at clinicaltrial(s)?\\.?\\s*gov.{0,100}(registration number )?NCT[0-9]{8}",
+      "\\bclinical trial registration.{0,100}clinicaltrial(s)?\\.?\\s*gov.{0,80}NCT[0-9]{8}",
+      "\\bclinicaltrial(s)?\\.?\\s*gov identifier is NCT[0-9]{8}",
+      sep = "|"
+    ),
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
 
 }
 
@@ -37,6 +66,7 @@ get_ct_2 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_prospero_1 <- function(article) {
 
   # Just using the NCT was too sensitive
@@ -55,6 +85,7 @@ get_prospero_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registered_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -115,6 +146,7 @@ get_registered_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registered_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -137,6 +169,7 @@ get_registered_2 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registered_3 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -157,6 +190,7 @@ get_registered_3 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registered_4 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -185,6 +219,7 @@ get_registered_4 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registered_5 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -241,6 +276,7 @@ get_registered_5 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_not_registered_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -263,6 +299,7 @@ get_not_registered_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registration_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -290,6 +327,7 @@ get_registration_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registration_2 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -316,6 +354,7 @@ get_registration_2 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registration_3 <- function(article) {
 
   grep("(^|\\.).{0,35}\\b(|pre|pre-)registration.{0,35}NCT[0-9]{8}",
@@ -332,6 +371,7 @@ get_registration_3 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registration_4 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -364,6 +404,7 @@ get_registration_4 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_registry_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -401,6 +442,7 @@ get_registry_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_reg_title_1 <- function(article) {
 
   b <- integer()
@@ -455,6 +497,7 @@ get_reg_title_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_reg_title_2 <- function(article) {
 
   b <- integer()
@@ -518,6 +561,7 @@ get_reg_title_2 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_reg_title_3 <- function(article) {
 
   b <- integer()
@@ -591,6 +635,7 @@ get_reg_title_3 <- function(article) {
 #' Extract the index of mentions such as: "Clinical trial registration detail:"
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_reg_title_4 <- function(article) {
 
   b <- integer()
@@ -665,6 +710,7 @@ get_reg_title_4 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_protocol_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -687,6 +733,7 @@ get_protocol_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_protocol_2 <- function(article) {
 
   grep("[Pp]rotocol .{0,5}(|[A-Z]+)[0-9]{5}", article, perl = T)
@@ -703,6 +750,7 @@ get_protocol_2 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_funded_ct_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -727,6 +775,7 @@ get_funded_ct_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 negate_registry_1 <- function(article) {
 
   synonyms <- .create_synonyms()
@@ -747,6 +796,7 @@ negate_registry_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 negate_reg_title_1 <- function(article) {
 
   grepl("[A-Z]{2}\\s*[0-9]{2}|[0-9]{5}", article, perl = T)
@@ -762,6 +812,7 @@ negate_reg_title_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_refs_1 <- function(article) {
 
   # Good for finding, but not for substituting b/c it's a lookahead
@@ -801,6 +852,7 @@ obliterate_refs_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_references_1 <- function(article) {
 
   # If within References or under references and starts with 1. or contains et al. then remove.
@@ -828,6 +880,7 @@ obliterate_references_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_semicolon_1 <- function(article) {
 
   gsub("(\\(.*); (.*\\))", "\\1 - \\2", article)
@@ -841,6 +894,7 @@ obliterate_semicolon_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_comma_1 <- function(article) {
 
   gsub(", ", " ", article)
@@ -856,6 +910,7 @@ obliterate_comma_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_apostrophe_1 <- function(article) {
 
   txt_1 <- "([a-zA-Z])'([a-zA-Z])"
@@ -874,6 +929,7 @@ obliterate_apostrophe_1 <- function(article) {
 #'
 #' @param article A List with paragraphs of interest.
 #' @return The list of paragraphs without mentions of financial COIs.
+#' @noRd
 obliterate_hash_1 <- function(article) {
 
   gsub("#", "", article)
@@ -888,6 +944,7 @@ obliterate_hash_1 <- function(article) {
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
 
+#' @noRd
 find_methods <- function(article) {
 
   method_index <- integer()
@@ -951,6 +1008,7 @@ find_methods <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_isrctn_1 <- function(article) {
 
   grep("\\bISRCTN[0-9]{8}\\b", article, perl = TRUE)
@@ -965,6 +1023,7 @@ get_isrctn_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_anzctr_1 <- function(article) {
 
   grep("\\bACTRN[0-9]{14}\\b", article, perl = TRUE)
@@ -978,6 +1037,7 @@ get_anzctr_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_drks_1 <- function(article) {
 
   grep("\\bDRKS[0-9]{8}\\b", article, perl = TRUE)
@@ -991,6 +1051,7 @@ get_drks_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_irct_1 <- function(article) {
 
   # IRCT IDs follow the format IRCT + digits + uppercase letter + digits
@@ -1006,9 +1067,122 @@ get_irct_1 <- function(article) {
 #'
 #' @param article A string or a list of strings.
 #' @return Index of element with phrase of interest
+#' @noRd
 get_umin_1 <- function(article) {
 
   grep("\\bUMIN[0-9]{9}\\b", article, perl = TRUE)
+
+}
+
+
+#' Identify mentions of registration on ChiCTR
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+get_chictr_1 <- function(article) {
+
+  grep("\\bChiCTR[-A-Z]*[0-9]{5,}\\b|Chinese Clinical Trial Registry",
+       article, perl = TRUE, ignore.case = TRUE)
+
+}
+
+
+#' Identify mentions of registered systematic-review protocols on INPLASY
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+get_inplasy_1 <- function(article) {
+
+  grep("\\bINPLASY[0-9]{5,}\\b|International Platform of Registered Systematic Review",
+       article, perl = TRUE, ignore.case = TRUE)
+
+}
+
+
+#' Identify registered protocols hosted on OSF
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+get_osf_protocol_1 <- function(article) {
+
+  grep("protocol.{0,80}(registered|registration).{0,80}(Open Science Framework|OSF|osf\\.io|10\\.17605/OSF)",
+       article, perl = TRUE, ignore.case = TRUE)
+
+}
+
+
+#' Identify preregistered studies hosted on OSF.
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+get_osf_preregistered_1 <- function(article) {
+
+  grep(
+    "\\b(this|the|our) (study|work|trial|review|protocol).{0,80}pre-?registered.{0,100}(Open Science Framework|OSF|osf\\.io|10\\.17605/OSF)",
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
+
+}
+
+
+#' Identify blinded PROSPERO registration statements.
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+get_prospero_redacted_1 <- function(article) {
+
+  grep(
+    "\\bprotocol for (this|the) review.{0,100}registered with PROSPERO.{0,100}CRD number redacted",
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
+
+}
+
+
+#' Exclude registration-like statements that are not study registration.
+#'
+#' @param article A string or a list of strings.
+#' @return Logical vector; TRUE where the candidate should be excluded.
+#' @noRd
+.is_false_register_statement <- function(article) {
+
+  pattern <- paste(
+    "not registered",
+    "protocol was not registered",
+    "clinical trial number\\s*(not applicable|n/?a)",
+    "\\bnot applicable\\b",
+    "irb registration no",
+    "institutional review board.{0,80}registration no",
+    "review board.{0,80}registration no",
+    "ethical approval.{0,80}registration number",
+    "ethics approval.{0,80}registration number",
+    "ethical review authority",
+    "institutional ethics committee.{0,80}registration number",
+    "ecr/[0-9]+/inst",
+    "\\brio\\b.{0,80}(university|registration|research & innovation)",
+    "research & innovation organisation",
+    "research and innovation organisation",
+    "\\bsisgen\\b",
+    "genetic heritage",
+    "permanent authorization to access",
+    "\\bcnil\\b.{0,80}(decision|authorization)",
+    "registration id:\\s*mr-",
+    "medical research registration and filing information system",
+    "protocol described by",
+    "according to the protocol described by",
+    sep = "|"
+  )
+
+  grepl(pattern, article, perl = TRUE, ignore.case = TRUE)
 
 }
 
@@ -1056,7 +1230,7 @@ rt_register <- function(filename) {
 
   file_text <- readr::read_file(filename)
 
-  is_relevant <- any(grepl("\\b(|-)([Rr]egist|(|[Cc]linical)[Tt]rial|NCT[0-9]{8}|ISRCTN[0-9]{8}|ACTRN[0-9]{14}|DRKS[0-9]{8}|IRCT[0-9A-Z]+|UMIN[0-9]{9}|PROSPERO)", file_text))
+  is_relevant <- any(grepl("\\b(|-)([Rr]egist|(|[Cc]linical)[Tt]rial|NCT[0-9]{8}|ISRCTN[0-9]{8}|ACTRN[0-9]{14}|DRKS[0-9]{8}|IRCT[0-9A-Z]+|UMIN[0-9]{9}|ChiCTR|INPLASY|PROSPERO|Open Science Framework|OSF|osf\\.io)", file_text))
   if (is_relevant) {
 
     # TODO: MOVE THIS TO THE pdf2text FUNCTION AND ENCODE AS UTF-8
@@ -1119,7 +1293,9 @@ rt_register <- function(filename) {
     # Identify sequences of interest
     index_any <- list()
     # index_any[["ct_1"]] <- get_ct_1(paragraphs_pruned)
+    index_any[["ct_4"]] <- get_ct_4(paragraphs_pruned)
     index_any[["prospero_1"]] <- get_prospero_1(paragraphs_pruned)
+    index_any[["prospero_redacted_1"]] <- get_prospero_redacted_1(paragraphs_pruned)
     index_any[["registered_1"]] <- get_registered_1(paragraphs_pruned)
     index_any[["registered_2"]] <- get_registered_2(paragraphs_pruned)
     index_any[["registered_3"]] <- get_registered_3(paragraphs_pruned)
@@ -1141,6 +1317,10 @@ rt_register <- function(filename) {
     index_any[["drks_1"]]     <- get_drks_1(paragraphs_pruned)
     index_any[["irct_1"]]     <- get_irct_1(paragraphs_pruned)
     index_any[["umin_1"]]     <- get_umin_1(paragraphs_pruned)
+    index_any[["chictr_1"]]   <- get_chictr_1(paragraphs_pruned)
+    index_any[["inplasy_1"]]  <- get_inplasy_1(paragraphs_pruned)
+    index_any[["osf_protocol_1"]] <- get_osf_protocol_1(paragraphs_pruned)
+    index_any[["osf_preregistered_1"]] <- get_osf_preregistered_1(paragraphs_pruned)
     index <- unlist(index_any) %>% unique() %>% sort()
 
 
@@ -1165,6 +1345,11 @@ rt_register <- function(filename) {
 
     is_register_pred <- !!length(index)
     register_text <- paragraphs[index] %>% paste(collapse = " ")
+    if (is_register_pred && .is_false_register_statement(register_text)) {
+      is_register_pred <- FALSE
+      register_text <- ""
+      index <- integer()
+    }
 
     if (is_register_pred) {
 

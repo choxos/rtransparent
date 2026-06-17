@@ -80,6 +80,23 @@
 }
 
 
+.coerce_indicator <- function(x, column) {
+  if (is.logical(x)) {
+    return(x)
+  }
+  if (is.numeric(x)) {
+    ok <- is.na(x) | x %in% c(0, 1)
+    if (!all(ok)) {
+      stop("`", column, "` must contain only TRUE/FALSE, 0/1, or NA.",
+           call. = FALSE)
+    }
+    return(as.logical(x))
+  }
+  stop("`", column, "` must be logical or numeric 0/1, with NA allowed.",
+       call. = FALSE)
+}
+
+
 #' Summarize transparency indicators across a corpus of articles
 #'
 #' Takes a data frame with one row per article (such as the output of
@@ -90,11 +107,12 @@
 #' optionally, a prevalence corrected for the detector's sensitivity and
 #' specificity (the Rogan-Gladen estimator).
 #'
-#' @param data A data frame with one row per article. Indicator columns are
-#'   logical (or 0/1) and named as in [rt_all_pmc()]: `is_coi_pred`,
+#' @param data A data frame with one row per article. Indicator columns must be
+#'   logical or numeric 0/1 and named as in [rt_all_pmc()]: `is_coi_pred`,
 #'   `is_fund_pred`, `is_register_pred`, `is_open_data`, `is_open_code`,
 #'   `is_novelty_pred`, `is_replication_pred`. `NA` marks an article that was not
-#'   assessed for that indicator and is excluded from its denominator.
+#'   assessed for that indicator and is excluded from its denominator. Other
+#'   values are rejected rather than silently coerced.
 #' @param indicators Optional character vector of indicator columns to
 #'   summarize. Defaults to every recognized indicator present in `data`.
 #' @param by Optional name of a grouping column (for example a publication year,
@@ -155,7 +173,7 @@ rt_summary <- function(data, indicators = NULL, by = NULL,
   for (g in names(splits)) {
     d <- splits[[g]]
     for (v in indicators) {
-      x <- as.logical(d[[v]])
+      x <- .coerce_indicator(d[[v]], v)
       n <- sum(!is.na(x))
       k <- sum(x, na.rm = TRUE)
       p <- if (n > 0) k / n else NA_real_
@@ -210,9 +228,10 @@ rt_summary <- function(data, indicators = NULL, by = NULL,
 #'   practices.
 #' @param name Name of the count column to add (default `"n_indicators"`).
 #'
-#' @return `data` as a tibble with the integer count column added. Tabulate it
-#'   (for example with [table()] or `dplyr::count()`) for the distribution of
-#'   the number of practices met.
+#' @return `data` as a tibble with the integer count column added. Rows with no
+#'   assessed indicators receive `NA` for the count. Tabulate it (for example
+#'   with [table()] or `dplyr::count()`) for the distribution of the number of
+#'   practices met.
 #'
 #' @seealso [rt_summary()]
 #' @examples
@@ -235,13 +254,16 @@ rt_score <- function(data, indicators = NULL, name = "n_indicators") {
   }
   mat <- vapply(
     indicators,
-    function(v) as.numeric(as.logical(data[[v]])),
-    numeric(nrow(data))
+    function(v) as.integer(.coerce_indicator(data[[v]], v)),
+    integer(nrow(data))
   )
   if (is.null(dim(mat))) {
     mat <- matrix(mat, nrow = nrow(data))
   }
-  data[[name]] <- as.integer(rowSums(mat, na.rm = TRUE))
+  assessed <- rowSums(!is.na(mat))
+  score <- as.integer(rowSums(mat, na.rm = TRUE))
+  score[assessed == 0] <- NA_integer_
+  data[[name]] <- score
   tibble::as_tibble(data)
 }
 

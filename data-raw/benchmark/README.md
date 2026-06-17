@@ -54,4 +54,6 @@ paper's serialized outputs (run once; the CSV is committed).
   mistaken for high accuracy.
 * **Data and code** indicators are benchmarked separately by `run_data_code.R`
   (results in `inst/benchmark/results_data_code.{csv,md}`); their detection is
-  now native (`R/data_code.R`) and needs no `oddpub`.
+  now native (`R/data_code.R`) and needs no `oddpub`. These data/code values
+  are reproducible benchmark and regression metrics for the native detector, not
+  untouched external-validation estimates.

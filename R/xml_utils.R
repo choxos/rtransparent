@@ -784,15 +784,14 @@
 
   article_txt <-
     article_xml %>%
-    xml2::xml_find_all(xpath = "body/sec") %>%
-    xml2::xml_contents() %>%
+    xml2::xml_find_all(xpath = "body//p") %>%
     xml2::xml_text()
 
   if (!length(article_txt)) {
 
     article_txt <-
       article_xml %>%
-      xml2::xml_find_all(xpath = "body/p") %>%
+      xml2::xml_find_all(xpath = "body/sec") %>%
       xml2::xml_contents() %>%
       xml2::xml_text()
 
@@ -1086,6 +1085,7 @@
 #' @param xpath The XPath as a character, e.g. "id_info/nct_id".
 #' @param find_first TRUE to find first mention, FALSE to find all mentions.
 #' @return The desired text as a character; if not found, then `character()`
+#' @noRd
 .get_text <- function(article_xml, xpath, find_first) {
 
   if (find_first) {
@@ -1118,6 +1118,7 @@
 #'
 #' @param article_xml The article as an xml_document.
 #' @returns The xml_document reconfigure to start with the "article" node.
+#' @noRd
 .reroot_xml <- function(article_xml) {
 
   top_node_name <- article_xml %>% xml2::xml_name()
@@ -1161,6 +1162,7 @@
 #' @param filename The filepath to the PMC XML file of interest.
 #' @param remove_ns Whether to remove the XML namespace or not (default = F).
 #' @return The PMC XML as an xml_document.
+#' @noRd
 .get_xml <- function(filename, remove_ns = F) {
 
   if (remove_ns) {
@@ -1191,6 +1193,7 @@
 #'
 #' @param article_xml The article as an xml_document.
 #' @returns A list of PubMed IDs
+#' @noRd
 .get_ids <- function(article_xml) {
 
   xpath <- c(
