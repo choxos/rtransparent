@@ -39,12 +39,13 @@
 #' \strong{simulated}, not real detector output: prevalences and their trends
 #' over time are chosen to resemble published findings (frequent conflict-of-
 #' interest and funding disclosure, less frequent protocol registration, low but
-#' rising data sharing and rare code sharing) so the illustrations are realistic.
+#' rising data sharing, rare code sharing, and a recent, fast-rising disclosure
+#' of generative-AI use) so the illustrations are realistic.
 #'
-#' @format A tibble with 1200 rows and 10 columns:
+#' @format A tibble with 1200 rows and 11 columns:
 #' \describe{
 #'   \item{pmid}{A made-up PubMed identifier (character).}
-#'   \item{year}{Publication year, 2010-2024.}
+#'   \item{year}{Publication year, 2010-2026.}
 #'   \item{type}{Article type (research-article, review-article,
 #'     systematic-review).}
 #'   \item{is_coi_pred}{Conflict-of-interest statement detected.}
@@ -54,6 +55,8 @@
 #'   \item{is_open_code}{Code sharing detected.}
 #'   \item{is_novelty_pred}{Novelty claim detected.}
 #'   \item{is_replication_pred}{Replication component detected.}
+#'   \item{is_ai_pred}{Disclosure of generative-AI use detected. `NA` before
+#'     2023, when the practice did not yet exist (see [rt_ai_pmc()]).}
 #' }
 #' @seealso [rt_summary()], [rt_score()], [rt_plot()]
 "rt_demo"

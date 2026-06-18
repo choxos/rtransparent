@@ -1,5 +1,15 @@
 <div align="justify">
 
+# rtransparent 0.8.4
+
+Documentation and example data, so the package website showcases every indicator:
+
+* New vignette, `vignette("ai-disclosure")`, on the AI-use disclosure indicator: what `rt_ai_pmc()` detects, why it is gated to 2023 onward, and how to chart its adoption across a corpus.
+* The introduction vignette now covers all of the indicators, including AI-use disclosure, and the corpus-summary vignette plots the AI indicator alongside the others.
+* The pkgdown website now links the articles (vignettes) from the navbar, so the corpus-summary and plotting walkthroughs are reachable again, not just the introduction.
+* `rt_demo` gains an `is_ai_pred` column (`NA` before 2023) and now spans 2010-2026, so `rt_summary()` and `rt_plot()` examples can show the AI indicator and its time trend. The data remain simulated.
+
+
 # rtransparent 0.8.3
 
 Further fixes from the manual validation on a fresh sample of 1,000 open-access PMC articles from 2023:

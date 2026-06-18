@@ -5,8 +5,16 @@ template:
 
 navbar:
   structure:
-    left:  [intro, reference, news]
+    left:  [intro, articles, reference, news]
     right: [search, github]
+
+articles:
+- title: Articles
+  navbar: ~
+  contents:
+  - rtransparent
+  - transparency-summary
+  - ai-disclosure
 
 reference:
 - title: Package
