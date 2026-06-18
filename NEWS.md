@@ -1,5 +1,14 @@
 <div align="justify">
 
+# rtransparent 0.8.7
+
+Fixes for genome data-papers (Darwin Tree of Life and similar), found during the manual validation of 1,000 open-access PMC articles:
+
+* Data sharing: recognize a named data repository paired with an explicit accession identifier as a deposit, even without a separate availability verb. This catches the structured form "European Nucleotide Archive: <species>. Accession number PRJEB#####", which the detector previously missed because the availability heading is in a different element from the accession. Reuse of an existing accession ("obtained from … under accession") is still not counted. The held-out data benchmark is unchanged (sensitivity 76.5%, specificity 99.0%).
+* Code sharing: do not treat a sequencing consortium's author list as code. The genome-data-paper boilerplate "Members of the … DNA Pipelines collective are listed here: <Zenodo DOI>" was flagged as code because of the word "pipelines"; it is now vetoed. The held-out code benchmark is unchanged (sensitivity 88.1%, specificity 99.5%).
+* Added regression tests for both.
+
+
 # rtransparent 0.8.6
 
 * Data sharing: detect the Frontiers default data-availability statement when it has no supplement clause. "The original contributions presented in the study are included in the article/Supplementary Material" was recognized, but the same statement ending "... included in the article" (for an article with no supplement) was missed. Both mean the data are in the article, so both now count; the highly specific phrasing keeps generic "included in the article" sentences from matching. The held-out data benchmark is unchanged (sensitivity 76.5%, specificity 99.0%). Added a regression test.

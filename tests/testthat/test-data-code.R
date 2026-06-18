@@ -168,6 +168,24 @@ test_that("repository code is detected even when data is offered on request", {
   expect_false(det("The source code is not publicly available at https://github.com/user/private.")$is_open_code)
 })
 
+test_that("a named data repository with an accession identifier is detected", {
+  # The structured genome-data-paper form names the repository and an accession
+  # without a separate availability verb.
+  expect_true(det("European Nucleotide Archive accession number PRJEB51269 for this genome assembly.")$is_open_data)
+  expect_true(det("Sequencing reads, Gene Expression Omnibus accession number GSE123456.")$is_open_data)
+  # Reuse of an existing accession is still not data sharing.
+  expect_false(det("Data were obtained from the European Nucleotide Archive under accession number PRJEB99999.")$is_open_data)
+  expect_false(det("This pathway was studied previously using GEO GSE99999.")$is_open_data)
+})
+
+test_that("a sequencing-consortium author list is not code sharing", {
+  # Genome-data-paper boilerplate names a consortium ("DNA Pipelines collective")
+  # with a Zenodo author list; the word "pipelines" must not flag it as code.
+  expect_false(det(
+    "Members of the Wellcome Sanger Institute DNA Pipelines collective are listed here: https://doi.org/10.5281/zenodo.4790455."
+  )$is_open_code)
+})
+
 test_that("code shared on the Open Science Framework is detected", {
   expect_true(det(
     "All components for reproducible analysis (data and code) are accessible via the Open Science Framework (https://osf.io/2cuf7/)."

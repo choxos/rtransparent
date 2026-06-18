@@ -251,7 +251,13 @@
   concrete_data <-
     (has(accession, s) & ctx) |
     (has(seq_accession, s) & has(acc_word, s) & ctx) |
-    (has(repo_url, s) & (ctx | has(data_noun, s)))
+    (has(repo_url, s) & (ctx | has(data_noun, s))) |
+    # A named data repository together with an explicit accession identifier is
+    # itself a deposit signal, even without a separate availability verb. This
+    # catches the structured genome-data-paper form "European Nucleotide
+    # Archive: <species>. Accession number PRJEB#####". Reuse ("obtained from
+    # ... accession") is still removed by the reuse veto below.
+    (has(data_repo_name, s) & has(acc_word, s) & has(accession, s))
 
   # Data shared as supplementary material (data-specific, not generic
   # "supplementary material/information" boilerplate).
@@ -487,6 +493,11 @@
     "\\bcomparem\\b",
     "\\bpocp-nf\\b",
     "\\bjcvi software\\b",
+    # Genome-data-paper author-list boilerplate: "Members of the ... DNA
+    # Pipelines collective are listed here: <zenodo DOI>" names a sequencing
+    # consortium, not analysis code; the word "pipelines" must not flag it.
+    "collective are listed here",
+    "pipelines? collective",
     sep = "|"
   )
 
