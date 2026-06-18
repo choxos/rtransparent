@@ -70,11 +70,27 @@
   fund_pmc_source <- group_ls$fund_source_pmc
   is_fund_pmc_group <- group_ls$is_fund_group_pmc
 
+  # A funding-group can name a funder / award identifier without a narrative
+  # <funding-statement>; the named funder is itself a funding disclosure.
+  group_funder <- ""
+  for (s in c(fund_pmc_source, fund_pmc_institute)) {
+    s <- trimws(s)
+    if (nchar(s) > 0 && !toupper(s) %in% c("N/A", "NA")) {
+      group_funder <- s
+      break
+    }
+  }
+
   if (nchar(fund_text) == 0) {
 
     fund_text <- .get_fund_pmc_title(article_xml)
     is_fund_pmc_title <- nchar(fund_text) > 0
     is_fund_pred <- is_fund_pmc_title
+
+    if (!is_fund_pred && nchar(group_funder) > 0) {
+      is_fund_pred <- TRUE
+      fund_text <- group_funder
+    }
 
   } else {
 

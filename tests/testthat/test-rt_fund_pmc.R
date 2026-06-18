@@ -2,6 +2,26 @@
 # funding prediction produced by rt_all_pmc() and must never predict funding
 # without supporting evidence (it previously returned TRUE with empty text).
 
+test_that("a funding-group naming a funder counts even without a statement", {
+  # PMC funding-group with a <funding-source> and award id but no narrative
+  # <funding-statement>: the named funder is itself a funding disclosure.
+  xml <- xml2::read_xml(paste0(
+    "<article><front><article-meta><funding-group>",
+    "<award-group><funding-source>Ministry of Science and Technology</funding-source>",
+    "<award-id>107-2314-B-075-032</award-id></award-group>",
+    "</funding-group></article-meta></front><body><p>Methods.</p></body></article>"
+  ))
+  res <- rtransparent:::.get_fund_pmc(xml, rtransparent:::.create_synonyms())
+  expect_true(res$is_fund_pred)
+  expect_true(grepl("Ministry of Science", res$fund_text))
+
+  # A funding-group with no funder and no statement is not funding.
+  xml0 <- xml2::read_xml(
+    "<article><front><article-meta><funding-group/></article-meta></front><body><p>x</p></body></article>"
+  )
+  expect_false(rtransparent:::.get_fund_pmc(xml0, rtransparent:::.create_synonyms())$is_fund_pred)
+})
+
 test_that("rt_fund_pmc rejects no-funding articles and matches rt_all_pmc", {
   fx <- test_path("fixtures", "benchmark")
   skip_if(!dir.exists(fx), "no benchmark fixtures")
