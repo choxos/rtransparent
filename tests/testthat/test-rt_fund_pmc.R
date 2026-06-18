@@ -113,6 +113,24 @@ test_that("open-access publishing funding is not a research-funding acknowledgme
   expect_gt(length(rtransparent:::get_fund_acknow_new(mixed)), 0)
 })
 
+test_that("an AOSSM conflict-of-interest disclosure is not read as funding", {
+  # Sports-medicine journals introduce author industry ties with this fixed
+  # preamble; "received research support from <company>" is a COI, not funding.
+  coi <- paste(
+    "One or more of the authors has declared the following potential conflict",
+    "of interest or source of funding: J.L.C. has received research support from",
+    "Vericel and Ossur and is a consultant for Arthrex."
+  )
+  stripped <- rtransparent:::obliterate_conflict_3(coi)
+  expect_false(grepl("research support", stripped, ignore.case = TRUE))
+  expect_length(rtransparent:::get_fund_acknow(stripped), 0)
+  expect_length(rtransparent:::get_fund_acknow_new(stripped), 0)
+
+  # a genuine funding sentence (no disclosure preamble) is left untouched
+  real <- "This study received funding from the National Institutes of Health (R01CA000000)."
+  expect_identical(rtransparent:::obliterate_conflict_3(real), real)
+})
+
 test_that("get_common_6 detects explicit validation funding phrases", {
   article <- c(
     "This project was funded by Grants NA22OAR4590515 and NA22OAR4590512 by NOAA.",

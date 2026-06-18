@@ -1869,6 +1869,32 @@ obliterate_conflict_2 <- function(article) {
 }
 
 
+#' Remove author conflict-of-interest disclosures phrased as funding
+#'
+#' Sports-medicine journals (AOSSM titles such as AJSM and OJSM) introduce
+#'     author conflict-of-interest disclosures with a fixed preamble, "One or
+#'     more of the authors has declared the following potential conflict of
+#'     interest or source of funding:". The relationships that follow
+#'     ("received research support from <company>", royalties, consultancy,
+#'     speaking fees) are industry ties of the authors, not funding for the
+#'     study, but their "received research support from ..." wording is read as
+#'     a funding acknowledgment. The disclosure clause is removed from this
+#'     preamble onward so it no longer registers as funding; a separate Funding
+#'     statement elsewhere in the article is unaffected.
+#'
+#' @param article A List with paragraphs of interest.
+#' @return The list of paragraphs without the conflict-of-interest disclosure.
+#' @noRd
+obliterate_conflict_3 <- function(article) {
+
+  gsub(
+    "conflict of interest or source of funding.*",
+    "", article, perl = TRUE, ignore.case = TRUE
+  )
+
+}
+
+
 #' Remove mentions of commonly misleading funding statements
 #'
 #' Returns the text without potentially misleading phrases related to funding.
@@ -2087,6 +2113,7 @@ obliterate_disclosure_1 <- function(article) {
     .obliterate_line_break_1() %>%
     obliterate_conflict_1() %>%
     obliterate_conflict_2() %>%
+    obliterate_conflict_3() %>%
     obliterate_disclosure_1() %>%   # Adds 30s overhead!
     obliterate_misleading_fund_1()
 
