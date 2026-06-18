@@ -479,6 +479,10 @@
     "open source llamaindex",
     "icd-10-cm codes",
     "(diagnosis|procedure|question) codes",
+    # Medical billing / classification codes, not software: e.g. studies that
+    # generate CPT (Current Procedural Terminology) or billing codes.
+    "(cpt|billing|procedure|procedural|reimbursement) (billing )?codes?",
+    "current procedural terminology",
     "code definitions",
     "qualitative codes",
     "analysis code/syntax available\\?",

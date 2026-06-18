@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.8.11
+
+* Code sharing: do not mistake medical billing codes for software. A statement such as "generate a list of CPT billing codes" (Current Procedural Terminology) was counted as code sharing because of the word "codes"; CPT, billing, procedural and reimbursement codes are now vetoed, alongside the ICD and diagnosis codes already handled. The held-out code benchmark is unchanged (sensitivity 88.1%, specificity 99.5%). Added regression tests.
+
+
 # rtransparent 0.8.10
 
 * Funding: do not count common "no funding" declarations as a funding disclosure. The no-funding negation already covered many phrasings but missed several frequent ones, most importantly "(this research) received no specific grant from any funding agency", as well as "no funds, grants or other support were received", "no funds have been received" and "(authors) have not received any funding". These are now treated as the absence of funding, matching the detector's handling of the other no-funding statements. The held-out funding benchmark is unchanged (sensitivity 100%, specificity 95.7%). Added regression tests.
