@@ -21,7 +21,7 @@ rt_accuracy <- tibble::tibble(
     "Conflicts of interest", "Funding disclosure",
     "Protocol registration", "Data sharing", "Code sharing"
   ),
-  sensitivity = c(0.992, 0.997, 0.955, 0.765, 0.835),
+  sensitivity = c(0.992, 0.997, 0.955, 0.765, 0.881),
   specificity = c(0.995, 0.981, 0.997, 0.990, 0.995),
   source = c(
     rep("Serghiou et al. 2021, PLOS Biology (doi:10.1371/journal.pbio.3001107)", 3),
