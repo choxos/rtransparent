@@ -186,6 +186,33 @@ test_that("a sequencing-consortium author list is not code sharing", {
   )$is_open_code)
 })
 
+test_that(".extract_data_code_links pulls and normalizes shared identifiers", {
+  ex <- rtransparent:::.extract_data_code_links
+  # DOI -> doi.org URL
+  expect_true("https://doi.org/10.5281/zenodo.8169597" %in%
+                ex("archived on Zenodo (doi: 10.5281/zenodo.8169597)."))
+  # repository URL kept as-is
+  expect_true("https://github.com/lab/tool" %in%
+                ex("source code at https://github.com/lab/tool."))
+  # accessions -> identifiers.org prefix:accession
+  expect_true("geo:GSE12345" %in% ex("deposited in GEO under accession GSE12345."))
+  expect_true("bioproject:PRJEB51269" %in%
+                ex("European Nucleotide Archive accession number PRJEB51269."))
+  expect_true("clinvar.submission:SCV002583543" %in%
+                ex("submitted to ClinVar as SCV002583543."))
+  # no identifier -> empty
+  expect_length(ex("All data are within the article."), 0)
+})
+
+test_that("rt_data_code_pmc reports the extracted data/code links", {
+  xml <- system.file("extdata", "PMID32171256-PMC7071725.xml",
+                     package = "rtransparent")
+  skip_if(xml == "")
+  r <- rt_data_code_pmc(xml, remove_ns = TRUE)
+  expect_true(all(c("open_data_links", "open_code_links") %in% names(r)))
+  expect_type(r$open_data_links, "character")
+})
+
 test_that("code shared on the Open Science Framework is detected", {
   expect_true(det(
     "All components for reproducible analysis (data and code) are accessible via the Open Science Framework (https://osf.io/2cuf7/)."

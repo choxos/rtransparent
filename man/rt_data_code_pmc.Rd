@@ -18,9 +18,14 @@ and applies repository, accession and availability-statement patterns.}
 }
 \value{
 A dataframe of results: the unique IDs of the article, whether data or
-    code sharing was found (\code{is_open_data}, \code{is_open_code}) and, if
-    so, the statement text that triggered each detection
-    (\code{open_data_statements}, \code{open_code_statements}).
+    code sharing was found (\code{is_open_data}, \code{is_open_code}), the
+    statement text that triggered each detection
+    (\code{open_data_statements}, \code{open_code_statements}) and the
+    persistent identifiers and URLs of what was shared
+    (\code{open_data_links}, \code{open_code_links}). The links are the DOIs
+    (as \code{doi.org} URLs), repository URLs and database accessions (as
+    identifiers.org \code{prefix:accession}) extracted from the statements,
+    separated by \code{" ; "}.
 }
 \description{
 Takes a PMC XML file and returns data related to the presence of Data or

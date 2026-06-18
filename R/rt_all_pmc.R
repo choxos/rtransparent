@@ -338,11 +338,17 @@ rt_all_pmc <- function(filename, remove_ns = F, all_meta = F) {
   # Data and code sharing, from the same native detector as rt_data_code_pmc(),
   # so a single rt_all_pmc() call covers all eight indicators.
   dc_found <- .detect_data_code(.dc_article_text(article_xml))
+  dc_data_links <- if (isTRUE(dc_found$is_open_data))
+    .extract_data_code_links(dc_found$data_text) else character(0)
+  dc_code_links <- if (isTRUE(dc_found$is_open_code))
+    .extract_data_code_links(dc_found$code_text) else character(0)
   data_code_ls <- list(
     is_open_data = dc_found$is_open_data,
     open_data_statements = dc_found$data_text,
+    open_data_links = paste(dc_data_links, collapse = " ; "),
     is_open_code = dc_found$is_open_code,
-    open_code_statements = dc_found$code_text
+    open_code_statements = dc_found$code_text,
+    open_code_links = paste(dc_code_links, collapse = " ; ")
   )
 
 

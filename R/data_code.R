@@ -532,3 +532,84 @@
 
   out
 }
+
+
+# --- Extracting the shared identifiers from an availability statement ---------
+#
+# Once a data- or code-sharing statement is detected, it is often useful to know
+# *what* was shared, not just that something was. These helpers pull the
+# persistent identifiers and URLs out of the matched statement text and
+# normalize them: DOIs become doi.org URLs, repository landing pages are kept as
+# URLs, and database accessions are written in identifiers.org `prefix:accession`
+# form so they resolve through a standard resolver.
+
+# Database accession -> identifiers.org prefix. Each entry is list(prefix,
+# pattern); pattern is matched case-insensitively and the hit is emitted as
+# "<prefix>:<ACCESSION>".
+.dc_accession_prefix_map <- function() {
+  list(
+    list(prefix = "geo",          pattern = "\\bG(?:SE|DS|SM|PL)[0-9]{2,}\\b"),
+    list(prefix = "bioproject",   pattern = "\\bPRJ[DEN][A-Z][0-9]{3,}\\b"),
+    list(prefix = "biosample",    pattern = "\\bSAM[END][A-Z]?[0-9]{4,}\\b"),
+    list(prefix = "insdc.sra",    pattern = "\\b[SED]R[RXPSZ][0-9]{4,}\\b"),
+    list(prefix = "pride",        pattern = "\\bPXD[0-9]{4,}\\b"),
+    list(prefix = "metabolights", pattern = "\\bMTBLS[0-9]+\\b"),
+    list(prefix = "arrayexpress", pattern = "\\bE-[A-Z]{4}-[0-9]+\\b"),
+    list(prefix = "dbgap",        pattern = "\\bphs[0-9]{6}\\b"),
+    list(prefix = "clinvar.submission", pattern = "\\bSCV[0-9]{6,}\\b"),
+    list(prefix = "ega.study",    pattern = "\\bEGAS[0-9]{6,}\\b"),
+    list(prefix = "ega.dataset",  pattern = "\\bEGAD[0-9]{6,}\\b")
+  )
+}
+
+# Repository / registry hosts whose bare URLs are usable landing pages.
+.dc_link_repo_host <- function() {
+  paste(
+    "github\\.com", "gitlab\\.com", "bitbucket\\.org", "sourceforge\\.net",
+    "codeocean\\.com", "osf\\.io", "zenodo\\.org", "figshare\\.com",
+    "datadryad\\.org", "dataverse\\.[a-z.]+", "ncbi\\.nlm\\.nih\\.gov",
+    "ebi\\.ac\\.uk", "ddbj\\.nig\\.ac\\.jp", "rcsb\\.org", "proteomecentral",
+    "ccdc\\.cam\\.ac\\.uk", "ega-archive\\.org", "flowrepository\\.org",
+    "gbif\\.org", "neurovault\\.org", "ukdataservice\\.ac\\.uk",
+    "qiita\\.ucsd\\.edu", "ngdc\\.cncb\\.ac\\.cn", "sciencedb\\.cn",
+    "nda\\.nih\\.gov", "mostwiedzy\\.pl",
+    sep = "|"
+  )
+}
+
+# Strip surrounding punctuation / brackets left over from prose.
+.dc_trim_token <- function(x) {
+  x <- sub("[\\.,;:)\\]'\"]+$", "", x, perl = TRUE)
+  sub("^[\\(\\[]+", "", x, perl = TRUE)
+}
+
+# Extract and normalize the identifiers in a statement's text. Returns a unique
+# character vector of doi.org URLs, repository URLs and identifiers.org
+# prefix:accession strings.
+.extract_data_code_links <- function(text) {
+  if (!length(text)) return(character(0))
+  text <- paste(text[!is.na(text)], collapse = " ")
+  if (!nzchar(text)) return(character(0))
+
+  out <- character(0)
+
+  doi <- .dc_trim_token(regmatches(
+    text, gregexpr("10\\.[0-9]{4,9}/[^\\s\"<>)\\]]+", text, perl = TRUE))[[1]])
+  doi <- doi[nzchar(doi)]
+  if (length(doi)) out <- c(out, paste0("https://doi.org/", doi))
+
+  url <- .dc_trim_token(regmatches(
+    text, gregexpr("https?://[^\\s\"<>)\\]]+", text, perl = TRUE))[[1]])
+  url <- url[grepl(.dc_link_repo_host(), url, perl = TRUE, ignore.case = TRUE) &
+               !grepl("doi\\.org/10\\.", url, ignore.case = TRUE)]
+  if (length(url)) out <- c(out, url)
+
+  for (m in .dc_accession_prefix_map()) {
+    hit <- regmatches(text, gregexpr(m$pattern, text, perl = TRUE,
+                                     ignore.case = TRUE))[[1]]
+    hit <- unique(hit[nzchar(hit)])
+    if (length(hit)) out <- c(out, paste0(m$prefix, ":", toupper(hit)))
+  }
+
+  unique(out)
+}

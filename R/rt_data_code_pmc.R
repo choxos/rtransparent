@@ -13,9 +13,14 @@
 #'     text (body paragraphs and titles, back matter, footnotes and supplements)
 #'     and applies repository, accession and availability-statement patterns.
 #' @return A dataframe of results: the unique IDs of the article, whether data or
-#'     code sharing was found (\code{is_open_data}, \code{is_open_code}) and, if
-#'     so, the statement text that triggered each detection
-#'     (\code{open_data_statements}, \code{open_code_statements}).
+#'     code sharing was found (\code{is_open_data}, \code{is_open_code}), the
+#'     statement text that triggered each detection
+#'     (\code{open_data_statements}, \code{open_code_statements}) and the
+#'     persistent identifiers and URLs of what was shared
+#'     (\code{open_data_links}, \code{open_code_links}). The links are the DOIs
+#'     (as \code{doi.org} URLs), repository URLs and database accessions (as
+#'     identifiers.org \code{prefix:accession}) extracted from the statements,
+#'     separated by \code{" ; "}.
 #' @examples
 #' \dontrun{
 #' # Path to PMC XML
@@ -45,13 +50,20 @@ rt_data_code_pmc <- function(filename, remove_ns = T, specificity = "low") {
   # Detect data and code sharing in the relevant article text
   found <- .detect_data_code(.dc_article_text(article_xml))
 
+  data_links <- if (isTRUE(found$is_open_data))
+    .extract_data_code_links(found$data_text) else character(0)
+  code_links <- if (isTRUE(found$is_open_code))
+    .extract_data_code_links(found$code_text) else character(0)
+
   tibble::as_tibble(c(
     id_ls,
     list(
       is_open_data = found$is_open_data,
       open_data_statements = found$data_text,
+      open_data_links = paste(data_links, collapse = " ; "),
       is_open_code = found$is_open_code,
       open_code_statements = found$code_text,
+      open_code_links = paste(code_links, collapse = " ; "),
       is_success = TRUE
     )
   ))

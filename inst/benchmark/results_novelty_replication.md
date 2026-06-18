@@ -1,6 +1,6 @@
 # Novelty and replication detector benchmark
 
-Package version 0.8.8. Detectors run on PMC full-text XML and compared
+Package version 0.8.9. Detectors run on PMC full-text XML and compared
 to a maintainer-built hand-labeled gold set of open-access PMC articles
 (2023-2026); see `data-raw/benchmark/labels_novelty_replication.csv` and the
 label definitions at the top of `run_novelty_replication.R`. These indicators

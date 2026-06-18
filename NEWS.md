@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.8.9
+
+* `rt_data_code_pmc()` and `rt_all_pmc()` now also return the identifiers of the shared data and code, not just whether sharing occurred. New columns `open_data_links` and `open_code_links` hold the DOIs (as `doi.org` URLs), repository URLs and database accessions extracted from the detected availability statements, with accessions normalized to identifiers.org `prefix:accession` form (for example `geo:GSE12345`, `bioproject:PRJEB51269`); multiple identifiers are separated by `" ; "`. Identifiers are taken only from the availability statements, so a reused accession cited in the methods is not collected. Added regression tests.
+
+
 # rtransparent 0.8.8
 
 * New accuracy benchmark for the **novelty** and **replication** detectors, which had no gold standard in Serghiou et al. (2021). A hand-labeled gold set of 160 open-access PMC articles (`data-raw/benchmark/labels_novelty_replication.csv`, with the label definitions documented in `run_novelty_replication.R`) is scored by `data-raw/benchmark/run_novelty_replication.R`; results are in `inst/benchmark/results_novelty_replication.md`. Novelty scores sensitivity 81.0%, specificity 93.2% (n = 160, 42 positives); replication has too few positives for a stable sensitivity estimate (specificity 96.8%).
