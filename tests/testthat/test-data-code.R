@@ -133,6 +133,15 @@ test_that("analysis code shared in supplementary files is detected", {
   expect_false(det("The diagnosis codes are provided in the supplementary appendix.")$is_open_code)
 })
 
+test_that("a repository deposit with a glued reference number is detected", {
+  # PMC text extraction can attach a superscript reference number to the
+  # repository name ("Mendeley Data20"); the data deposit must still be found.
+  expect_true(det("The database was stored on Mendeley Data20.")$is_open_data)
+  expect_true(det("The dataset was deposited in Dryad15.")$is_open_data)
+  # The unrelated word "database" alone is not a data noun (avoids reuse FPs).
+  expect_false(det("We queried the UK Biobank database for eligible records.")$is_open_data)
+})
+
 test_that("repository code is detected even when data is offered on request", {
   # A single availability sentence can host code on a public repository and, in
   # the same breath, offer the data only on request. The data-delivery wording

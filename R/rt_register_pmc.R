@@ -76,6 +76,28 @@
 }
 
 
+#' Identify PROSPERO registrations that do not quote the CRD number
+#'
+#' Some reviews report a PROSPERO registration without the CRD identifier, for
+#'     example "the review protocol was registered in PROSPERO" or "Registered to
+#'     PROSPERO". The past-tense verb "registered" is required next to PROSPERO,
+#'     so the registry's own name ("International Prospective Register of
+#'     Systematic Reviews") and generic recommendations to register are not
+#'     matched. Non-availability wording ("not registered") is removed by the
+#'     downstream false-statement guard.
+#'
+#' @param article A string or a list of strings.
+#' @return Index of element with phrase of interest
+#' @noRd
+.which_prospero_2 <- function(article) {
+
+  grep(paste0("[Rr]egistered[a-zA-Z ]{0,12}P(?i)ROSPERO(?-i)",
+              "|P(?i)ROSPERO(?-i)[a-zA-Z (]{0,12}[Rr]egistered"),
+       article, perl = TRUE)
+
+}
+
+
 #' Identify generic mentions of registration
 #'
 #' Extract the index of mentions such as: "This study was approved by the local
@@ -1201,6 +1223,7 @@
   # Way faster than index_any[["reg_title_pmc"]] <- NA
   index_any <- list(
     prospero_1 = NA,
+    prospero_2 = NA,
     prospero_redacted_1 = NA,
     ct_4 = NA,
     registered_1 = NA,
@@ -1319,6 +1342,7 @@
   out$is_NCT <- purrr::some(article, stringr::str_detect, "NCT[0-9]{8}")
 
   index_any$prospero_1 <- .which_prospero_1(article_processed)
+  index_any$prospero_2 <- .which_prospero_2(article_processed)
   index_any$prospero_redacted_1 <- .which_prospero_redacted_1(article_processed)
   index_any$ct_4 <- .which_ct_4(article_processed)
   index_any$registered_1 <- .which_registered_1(article_processed, dict)
@@ -1466,6 +1490,7 @@ rt_register_pmc <- function(filename, remove_ns = F) {
   index_any <- list(
     reg_title_pmc = NA,
     prospero_1 = NA,
+    prospero_2 = NA,
     prospero_redacted_1 = NA,
     ct_4 = NA,
     registered_1 = NA,
@@ -1704,6 +1729,7 @@ rt_register_pmc <- function(filename, remove_ns = F) {
   dict <- .create_synonyms()
   index_any$reg_title_pmc <- integer()
   index_any$prospero_1 <- .which_prospero_1(article_processed)
+  index_any$prospero_2 <- .which_prospero_2(article_processed)
   index_any$prospero_redacted_1 <- .which_prospero_redacted_1(article_processed)
   index_any$ct_4 <- .which_ct_4(article_processed)
   index_any$registered_1 <- .which_registered_1(article_processed, dict)

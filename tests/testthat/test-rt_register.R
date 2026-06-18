@@ -131,6 +131,31 @@ test_that("validation registry helpers detect flexible CT, OSF and blinded PROSP
 })
 
 
+test_that(".which_prospero_2 detects PROSPERO registrations without a CRD number", {
+  pos <- c(
+    "The review protocol was registered in PROSPERO.",
+    "The review protocol was registered with PROSPERO.",
+    "Registered to PROSPERO"
+  )
+  for (s in pos) {
+    expect_true(length(rtransparent:::.which_prospero_2(s)) > 0,
+                info = paste("should detect:", s))
+  }
+  # The registry's own name is not a registration of this review.
+  expect_equal(
+    length(rtransparent:::.which_prospero_2(
+      "The International Prospective Register of Systematic Reviews (PROSPERO) was searched.")),
+    0
+  )
+  # A CRD-bearing form is still handled by .which_prospero_1.
+  expect_equal(
+    length(rtransparent:::.which_prospero_2(
+      "Some unrelated sentence with no registry mention at all.")),
+    0
+  )
+})
+
+
 test_that("registration false-statement guard rejects IRB and not applicable text", {
   false_text <- c(
     "Clinical trial number Not applicable.",

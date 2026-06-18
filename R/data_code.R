@@ -96,7 +96,11 @@
 
 .dc_data_noun <- function() {
   paste(
-    "\\bdata\\b", "\\bdata ?sets?\\b", "raw data", "sequence(s|ing|d)?", "structures?",
+    # The trailing [0-9]* tolerates a superscript reference number glued to the
+    # word during text extraction (for example "Mendeley Data20"), which would
+    # otherwise break the word boundary; it does not match "database".
+    "\\bdata[0-9]*\\b", "\\bdata ?sets?\\b", "raw data",
+    "sequence(s|ing|d)?", "structures?",
     "coordinates", "microarray", "\\bgenomes?\\b", "\\breads\\b", "spectra", "\\bimages?\\b",
     "\\bcif\\b", "crystallographic information files?",
     sep = "|"
