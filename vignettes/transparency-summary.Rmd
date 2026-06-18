@@ -88,9 +88,11 @@ The accuracy values come from [`rt_accuracy`](../reference/rt_accuracy.html):
 rt_accuracy
 ```
 
-Novelty, replication and AI-use disclosure have no bundled accuracy estimates
-here, so their corrected values are `NA`. The data/code values are reproducible benchmark
-estimates for the native detector, not untouched external-validation estimates.
+Replication and AI-use disclosure have no bundled accuracy estimates here, so
+their corrected values are `NA`. Novelty's estimate comes from a hand-labeled
+gold set (`inst/benchmark/results_novelty_replication.md`); the data/code values
+are reproducible benchmark estimates for the native detector, not untouched
+external-validation estimates.
 To use your own validation (or the published `oddpub` values for data and
 code), pass any table with `variable`, `sensitivity` and `specificity` columns:
 

@@ -1,5 +1,11 @@
 <div align="justify">
 
+# rtransparent 0.8.8
+
+* New accuracy benchmark for the **novelty** and **replication** detectors, which had no gold standard in Serghiou et al. (2021). A hand-labeled gold set of 160 open-access PMC articles (`data-raw/benchmark/labels_novelty_replication.csv`, with the label definitions documented in `run_novelty_replication.R`) is scored by `data-raw/benchmark/run_novelty_replication.R`; results are in `inst/benchmark/results_novelty_replication.md`. Novelty scores sensitivity 81.0%, specificity 93.2% (n = 160, 42 positives); replication has too few positives for a stable sensitivity estimate (specificity 96.8%).
+* `rt_accuracy` now includes novelty (sensitivity 0.810, specificity 0.932), so `rt_summary()` reports an error-corrected novelty prevalence. Replication and AI-use disclosure remain uncorrected.
+
+
 # rtransparent 0.8.7
 
 Fixes for genome data-papers (Darwin Tree of Life and similar), found during the manual validation of 1,000 open-access PMC articles:

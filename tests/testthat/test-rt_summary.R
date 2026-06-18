@@ -18,6 +18,18 @@ test_that("rt_summary reports apparent prevalence and Wilson CI", {
   expect_gt(coi$conf_high, 60)
 })
 
+test_that("rt_accuracy carries a novelty estimate so novelty is corrected", {
+  utils::data("rt_accuracy", package = "rtransparent")
+  expect_true("is_novelty_pred" %in% rt_accuracy$variable)
+  nov <- rt_accuracy[rt_accuracy$variable == "is_novelty_pred", ]
+  expect_true(nov$sensitivity > 0 && nov$sensitivity <= 1)
+  expect_true(nov$specificity > 0 && nov$specificity <= 1)
+  # rt_summary therefore returns a non-NA corrected novelty prevalence.
+  df <- data.frame(is_novelty_pred = c(TRUE, FALSE, TRUE, FALSE, FALSE))
+  s <- rt_summary(df, adjust = TRUE)
+  expect_false(is.na(s$adj_percent[s$indicator == "is_novelty_pred"]))
+})
+
 test_that("NA indicator values are excluded from the denominator", {
   df <- data.frame(is_open_data = c(TRUE, FALSE, NA, NA, TRUE))
   s <- rt_summary(df, adjust = FALSE)

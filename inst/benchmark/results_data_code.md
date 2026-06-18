@@ -1,6 +1,6 @@
 # Native data and code sharing detector benchmark
 
-Package version 0.8.7. Native detector vs the human-labeled XML benchmark
+Package version 0.8.8. Native detector vs the human-labeled XML benchmark
 articles of Serghiou et al. (2021). These are reproducible benchmark and
 regression metrics for the native detector, not untouched external-validation
 estimates. The published paper reports data

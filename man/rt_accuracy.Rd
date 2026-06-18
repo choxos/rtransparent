@@ -5,7 +5,7 @@
 \alias{rt_accuracy}
 \title{Detector accuracy estimates}
 \format{
-A tibble with 5 rows and 5 columns:
+A tibble with 6 rows and 5 columns:
 \describe{
   \item{variable}{Indicator column name, as returned by [rt_all_pmc()].}
   \item{label}{Human-readable indicator name.}
@@ -40,6 +40,10 @@ benchmark and regression estimates are used instead (see `inst/benchmark`).
 These data/code estimates are not an untouched external validation of the
 native detector; supply your own values to [rt_summary()] via its `accuracy`
 argument when you have study-specific or externally validated estimates.
+Novelty's estimate comes from a maintainer-built hand-labeled gold set
+(see `inst/benchmark/results_novelty_replication.md`). Replication and
+AI-use disclosure are not included (replication has too few gold positives
+for a stable sensitivity), so [rt_summary()] reports them uncorrected.
 }
 \seealso{
 [rt_summary()]

@@ -11,21 +11,27 @@
 # external validation estimates for the native detector. Users who prefer the
 # paper's oddpub values, or their own, can pass any data frame with `variable`,
 # `sensitivity` and `specificity` columns to rt_summary(accuracy = ).
+#
+# For novelty the estimate comes from the maintainer's hand-labeled gold set
+# (see inst/benchmark/results_novelty_replication.md). Replication is omitted
+# because its gold set has too few positives for a stable sensitivity estimate,
+# so rt_summary() reports its apparent prevalence uncorrected.
 
 rt_accuracy <- tibble::tibble(
   variable = c(
     "is_coi_pred", "is_fund_pred", "is_register_pred",
-    "is_open_data", "is_open_code"
+    "is_open_data", "is_open_code", "is_novelty_pred"
   ),
   label = c(
     "Conflicts of interest", "Funding disclosure",
-    "Protocol registration", "Data sharing", "Code sharing"
+    "Protocol registration", "Data sharing", "Code sharing", "Novelty"
   ),
-  sensitivity = c(0.992, 0.997, 0.955, 0.765, 0.881),
-  specificity = c(0.995, 0.981, 0.997, 0.990, 0.995),
+  sensitivity = c(0.992, 0.997, 0.955, 0.765, 0.881, 0.810),
+  specificity = c(0.995, 0.981, 0.997, 0.990, 0.995, 0.932),
   source = c(
     rep("Serghiou et al. 2021, PLOS Biology (doi:10.1371/journal.pbio.3001107)", 3),
-    rep("rtransparent native detector, reproducible benchmark and regression estimate (inst/benchmark)", 2)
+    rep("rtransparent native detector, reproducible benchmark and regression estimate (inst/benchmark)", 2),
+    "rtransparent novelty/replication hand-labeled benchmark (inst/benchmark/results_novelty_replication.md)"
   )
 )
 
