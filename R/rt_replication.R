@@ -265,6 +265,8 @@ rt_replication <- function(filename) {
     "validated in (a |an )?(future |prospective )?clinical trials?",
     "validation in the future",
     "should be (replicated|validated)",
+    # Future / conditional replication proposed for later work, not performed.
+    "(study|finding|result|analysis|experiment)s? (can|could|may|might|would) be (replicated|reproduced)",
     "future studies? should replicat",
     "should replicate (the|this|our) (intervention|study|findings|results)",
     "software validation",

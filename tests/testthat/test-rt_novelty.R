@@ -137,3 +137,45 @@ test_that(".which_novelty_first_to_1 allows an adverbial before 'to <verb>'", {
   expect_true(length(rtransparent:::.which_novelty_first_to_1(pos)) >= 2)
   expect_equal(length(rtransparent:::.which_novelty_first_to_1(neg)), 0)
 })
+
+
+test_that("novelty recall covers 'new'/'innovative', passive and adverbial-first claims", {
+  pos <- c(
+    "We present a new device to avoid tunnel coalition.",
+    "A novel silicon-based microevaporator is developed in this work.",
+    "Here we propose an innovative framework for risk assessment."
+  )
+  expect_true(length(rtransparent:::.which_novelty_novel_1(pos)) >= 2)
+
+  first <- c(
+    "Our study first provided evidence that this pathway drives tumorigenesis.",
+    "This is the first study to attenuate a virulent strain via serial passage.",
+    "We present the first reported case of this presentation."
+  )
+  expect_true(length(rtransparent:::.which_novelty_first_to_1(first)) >= 2)
+})
+
+
+test_that(".negate_novelty_1 suppresses attributed and ordinal 'first' but keeps 'for the first time, we'", {
+  drop <- c(
+    "Jaramillo et al demonstrated for the first time the suitability of the oxide.",
+    "The patient underwent first-time heart transplantation.",
+    "Symptoms decreased during the first day postoperatively.",
+    "MARS was used for the first time in 1993."
+  )
+  expect_true(all(rtransparent:::.negate_novelty_1(drop)))
+
+  keep <- c(
+    "For the first time, we reveal a striking relationship.",
+    "Here, for the first time, we directly relate these pathways."
+  )
+  expect_false(any(rtransparent:::.negate_novelty_1(keep)))
+})
+
+
+test_that("novelty 'to our knowledge' requires a first/gap claim", {
+  expect_length(rtransparent:::.which_novelty_knowledge_1(
+    "To our knowledge, the assay is a standard laboratory procedure."), 0)
+  expect_true(length(rtransparent:::.which_novelty_knowledge_1(
+    "To our knowledge, no previous study has examined this association.")) > 0)
+})

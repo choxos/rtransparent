@@ -71,6 +71,12 @@
 
   index <- unlist(index_any) %>% unique() %>% sort()
 
+  # Drop cues attributed to a cited study or ordinal/temporal "first".
+  if (!!length(index)) {
+    is_negated <- .negate_novelty_1(article_processed[index])
+    index <- index[!is_negated]
+  }
+
   out$is_novelty_pred <- !!length(index)
   out$novelty_text    <- article[index] %>% paste(collapse = " ")
 

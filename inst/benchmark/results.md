@@ -1,6 +1,6 @@
 # rtransparent accuracy benchmark
 
-Package version 0.8.16. Detectors run on NCBI PMC full-text XML for the
+Package version 0.9.0. Detectors run on NCBI PMC full-text XML for the
 human-labeled held-out test articles of Serghiou et al. (2021), compared to
 the published Fig 2 (XML subset). Bootstrap: 2000 resamples, unweighted
 (see data-raw/benchmark/README.md). Current values are point [95% CI].

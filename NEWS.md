@@ -1,5 +1,43 @@
 <div align="justify">
 
+# rtransparent 0.9.0
+
+This is a feature release centered on the novelty and replication detectors and
+a second, independent validation set.
+
+* **Independent 2023 validation sample.** Added a held-out set of 370 open-access
+  PMC articles published in 2023, hand-labeled for all eight transparency
+  indicators (`data-raw/benchmark/labels_2023_sample.csv`,
+  `inst/benchmark/results_2023_sample.md`). It is a modern companion to the
+  Serghiou et al. (2021) held-out set, which predates these indicators and the
+  2023-era reporting conventions. The conflicts-of-interest, funding and data
+  labels were reconciled against the detector's extracted statement where the
+  author's back matter was truncated during labeling, so those three are not
+  independent of the detector; novelty, replication, registration and code
+  sharing were labeled independently and are the meaningful test.
+
+* **Novelty detector improvements.** Recall was broadened to recognize "new" and
+  "innovative" (not only "novel"), a much wider set of research objects
+  (device, sequence, model, tool, assay, algorithm, variant, isolate, ...),
+  passive claims ("a novel X is developed"), an adverbial "first" ("our study
+  first provided evidence"), more "first to <verb>" verbs, and "first reported
+  case". A new negation step (`.negate_novelty_1`) removes firstness attributed
+  to a cited study ("Smith et al. demonstrated for the first time"),
+  ordinal/temporal "first" (first-time transplant, first day/week/stage) while
+  preserving the priority phrase "for the first time, we ...", and historical
+  dates ("used for the first time in 1993"). On the 2023 sample, novelty
+  sensitivity rose from 72.8% to 77.2% and specificity from 87.8% to 89.6%.
+
+* **Replication detector.** Future/conditional replication proposed for later
+  work ("this study can be replicated with a larger sample") is now treated as
+  not performed. The replication gold set remains small (few positives), so its
+  estimates are reported as low-power.
+
+* The novelty/replication gold set was expanded from 160 to 370 articles, and
+  the novelty accuracy used by `rt_summary(accuracy = TRUE)` was updated
+  accordingly.
+
+
 # rtransparent 0.8.16
 
 * Funding: a "Funding Statement" section that declares no funding is no longer counted as funding. When the section label ("Funding Statement", "Funding Information") and its content ("None") sit in separate nodes, only the label is recovered, so the no-funding content could not be seen and the section's presence leaked through as a funding disclosure. These labels are now treated like the bare "Funding" label already was: an uninformative tag that does not by itself indicate funding, while still allowing a funding statement elsewhere in the article to be detected. The held-out funding benchmark is unchanged (sensitivity 100%, specificity 95.7%). Added regression tests.
