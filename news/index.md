@@ -1,5 +1,21 @@
 # Changelog
 
+## rtransparent 0.8.9
+
+- [`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md)
+  and
+  [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+  now also return the identifiers of the shared data and code, not just
+  whether sharing occurred. New columns `open_data_links` and
+  `open_code_links` hold the DOIs (as `doi.org` URLs), repository URLs
+  and database accessions extracted from the detected availability
+  statements, with accessions normalized to identifiers.org
+  `prefix:accession` form (for example `geo:GSE12345`,
+  `bioproject:PRJEB51269`); multiple identifiers are separated by
+  `" ; "`. Identifiers are taken only from the availability statements,
+  so a reused accession cited in the methods is not collected. Added
+  regression tests.
+
 ## rtransparent 0.8.8
 
 - New accuracy benchmark for the **novelty** and **replication**

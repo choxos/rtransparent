@@ -15,7 +15,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.9</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,9 +82,14 @@ and applies repository, accession and availability-statement patterns.</p></dd>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     <p>A dataframe of results: the unique IDs of the article, whether data or
-    code sharing was found (<code>is_open_data</code>, <code>is_open_code</code>) and, if
-    so, the statement text that triggered each detection
-    (<code>open_data_statements</code>, <code>open_code_statements</code>).</p>
+    code sharing was found (<code>is_open_data</code>, <code>is_open_code</code>), the
+    statement text that triggered each detection
+    (<code>open_data_statements</code>, <code>open_code_statements</code>) and the
+    persistent identifiers and URLs of what was shared
+    (<code>open_data_links</code>, <code>open_code_links</code>). The links are the DOIs
+    (as <code>doi.org</code> URLs), repository URLs and database accessions (as
+    identifiers.org <code>prefix:accession</code>) extracted from the statements,
+    separated by <code>" ; "</code>.</p>
     </div>
 
     <div class="section level2">

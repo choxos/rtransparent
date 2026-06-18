@@ -32,9 +32,13 @@ rt_data_code_pmc(filename, remove_ns = T, specificity = "low")
 ## Value
 
 A dataframe of results: the unique IDs of the article, whether data or
-code sharing was found (`is_open_data`, `is_open_code`) and, if so, the
-statement text that triggered each detection (`open_data_statements`,
-`open_code_statements`).
+code sharing was found (`is_open_data`, `is_open_code`), the statement
+text that triggered each detection (`open_data_statements`,
+`open_code_statements`) and the persistent identifiers and URLs of what
+was shared (`open_data_links`, `open_code_links`). The links are the
+DOIs (as `doi.org` URLs), repository URLs and database accessions (as
+identifiers.org `prefix:accession`) extracted from the statements,
+separated by `" ; "`.
 
 ## Examples
 
