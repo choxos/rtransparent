@@ -76,46 +76,48 @@ and, when \`adjust = TRUE\`, \`adj_percent\`, \`adj_low\` and
 ``` r
 data(rt_demo)
 rt_summary(rt_demo)
-#> # A tibble: 7 × 10
+#> # A tibble: 8 × 10
 #>   indicator   label n_articles n_detected percent conf_low conf_high adj_percent
 #>   <chr>       <chr>      <int>      <int>   <dbl>    <dbl>     <dbl>       <dbl>
-#> 1 is_coi_pred Conf…       1200        835   69.6     66.9       72.1       70.0 
-#> 2 is_fund_pr… Fund…       1200        948   79       76.6       81.2       78.8 
-#> 3 is_registe… Prot…       1200        318   26.5     24.1       29.1       27.5 
-#> 4 is_open_da… Data…       1200        201   16.8     14.7       19.0       20.9 
-#> 5 is_open_co… Code…       1200        101    8.42     6.98      10.1        9.04
-#> 6 is_novelty… Nove…       1200        596   49.7     46.8       52.5       NA   
-#> 7 is_replica… Repl…       1200        109    9.08     7.59      10.8       NA   
+#> 1 is_coi_pred Conf…       1200        845   70.4     67.8       72.9       70.8 
+#> 2 is_fund_pr… Fund…       1200        955   79.6     77.2       81.8       79.4 
+#> 3 is_registe… Prot…       1200        356   29.7     27.2       32.3       30.8 
+#> 4 is_open_da… Data…       1200        245   20.4     18.2       22.8       25.7 
+#> 5 is_open_co… Code…       1200        102    8.5      7.05      10.2        9.13
+#> 6 is_novelty… Nove…       1200        653   54.4     51.6       57.2       NA   
+#> 7 is_replica… Repl…       1200        113    9.42     7.89      11.2       NA   
+#> 8 is_ai_pred  AI d…        282         71   25.2     20.5       30.6       NA   
 #> # ℹ 2 more variables: adj_low <dbl>, adj_high <dbl>
 
 # Apparent prevalence only, no accuracy correction
 rt_summary(rt_demo, adjust = FALSE)
-#> # A tibble: 7 × 7
+#> # A tibble: 8 × 7
 #>   indicator           label     n_articles n_detected percent conf_low conf_high
 #>   <chr>               <chr>          <int>      <int>   <dbl>    <dbl>     <dbl>
-#> 1 is_coi_pred         Conflict…       1200        835   69.6     66.9       72.1
-#> 2 is_fund_pred        Funding …       1200        948   79       76.6       81.2
-#> 3 is_register_pred    Protocol…       1200        318   26.5     24.1       29.1
-#> 4 is_open_data        Data sha…       1200        201   16.8     14.7       19.0
-#> 5 is_open_code        Code sha…       1200        101    8.42     6.98      10.1
-#> 6 is_novelty_pred     Novelty         1200        596   49.7     46.8       52.5
-#> 7 is_replication_pred Replicat…       1200        109    9.08     7.59      10.8
+#> 1 is_coi_pred         Conflict…       1200        845   70.4     67.8       72.9
+#> 2 is_fund_pred        Funding …       1200        955   79.6     77.2       81.8
+#> 3 is_register_pred    Protocol…       1200        356   29.7     27.2       32.3
+#> 4 is_open_data        Data sha…       1200        245   20.4     18.2       22.8
+#> 5 is_open_code        Code sha…       1200        102    8.5      7.05      10.2
+#> 6 is_novelty_pred     Novelty         1200        653   54.4     51.6       57.2
+#> 7 is_replication_pred Replicat…       1200        113    9.42     7.89      11.2
+#> 8 is_ai_pred          AI discl…        282         71   25.2     20.5       30.6
 
 # By article type
 rt_summary(rt_demo, by = "type")
-#> # A tibble: 21 × 11
+#> # A tibble: 24 × 11
 #>    type         indicator label n_articles n_detected percent conf_low conf_high
 #>    <chr>        <chr>     <chr>      <int>      <int>   <dbl>    <dbl>     <dbl>
-#>  1 research-ar… is_coi_p… Conf…        854        598   70.0     66.9       73.0
-#>  2 research-ar… is_fund_… Fund…        854        680   79.6     76.8       82.2
-#>  3 research-ar… is_regis… Prot…        854        219   25.6     22.8       28.7
-#>  4 research-ar… is_open_… Data…        854        138   16.2     13.8       18.8
-#>  5 research-ar… is_open_… Code…        854         77    9.02     7.27      11.1
-#>  6 research-ar… is_novel… Nove…        854        425   49.8     46.4       53.1
-#>  7 research-ar… is_repli… Repl…        854         73    8.55     6.85      10.6
-#>  8 review-arti… is_coi_p… Conf…        227        155   68.3     62.0       74.0
-#>  9 review-arti… is_fund_… Fund…        227        172   75.8     69.8       80.9
-#> 10 review-arti… is_regis… Prot…        227         69   30.4     24.8       36.7
-#> # ℹ 11 more rows
+#>  1 review-arti… is_coi_p… Conf…        241        174   72.2     66.2       77.5
+#>  2 review-arti… is_fund_… Fund…        241        192   79.7     74.1       84.3
+#>  3 review-arti… is_regis… Prot…        241         81   33.6     27.9       39.8
+#>  4 review-arti… is_open_… Data…        241         47   19.5     15.0       25.0
+#>  5 review-arti… is_open_… Code…        241         21    8.71     5.77      13.0
+#>  6 review-arti… is_novel… Nove…        241        120   49.8     43.5       56.1
+#>  7 review-arti… is_repli… Repl…        241         22    9.13     6.11      13.4
+#>  8 review-arti… is_ai_pr… AI d…         66         14   21.2     13.1       32.5
+#>  9 systematic-… is_coi_p… Conf…        132         82   62.1     53.6       69.9
+#> 10 systematic-… is_fund_… Fund…        132        109   82.6     75.2       88.1
+#> # ℹ 14 more rows
 #> # ℹ 3 more variables: adj_percent <dbl>, adj_low <dbl>, adj_high <dbl>
 ```

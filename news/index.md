@@ -1,5 +1,30 @@
 # Changelog
 
+## rtransparent 0.8.4
+
+Documentation and example data, so the package website showcases every
+indicator:
+
+- New vignette,
+  [`vignette("ai-disclosure")`](https://choxos.github.io/rtransparent/articles/ai-disclosure.md),
+  on the AI-use disclosure indicator: what
+  [`rt_ai_pmc()`](https://choxos.github.io/rtransparent/reference/rt_ai_pmc.md)
+  detects, why it is gated to 2023 onward, and how to chart its adoption
+  across a corpus.
+- The introduction vignette now covers all of the indicators, including
+  AI-use disclosure, and the corpus-summary vignette plots the AI
+  indicator alongside the others.
+- The pkgdown website now links the articles (vignettes) from the
+  navbar, so the corpus-summary and plotting walkthroughs are reachable
+  again, not just the introduction.
+- `rt_demo` gains an `is_ai_pred` column (`NA` before 2023) and now
+  spans 2010-2026, so
+  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  and
+  [`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+  examples can show the AI indicator and its time trend. The data remain
+  simulated.
+
 ## rtransparent 0.8.3
 
 Further fixes from the manual validation on a fresh sample of 1,000

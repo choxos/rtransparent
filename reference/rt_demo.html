@@ -4,12 +4,14 @@ illustrate [rt_summary()], [rt_score()] and [rt_plot()]. The values are
 simulated, not real detector output: prevalences and their trends
 over time are chosen to resemble published findings (frequent conflict-of-
 interest and funding disclosure, less frequent protocol registration, low but
-rising data sharing and rare code sharing) so the illustrations are realistic."><meta property="og:description" content="A small, simulated set of detector output, with one row per article, used to
+rising data sharing, rare code sharing, and a recent, fast-rising disclosure
+of generative-AI use) so the illustrations are realistic."><meta property="og:description" content="A small, simulated set of detector output, with one row per article, used to
 illustrate [rt_summary()], [rt_score()] and [rt_plot()]. The values are
 simulated, not real detector output: prevalences and their trends
 over time are chosen to resemble published findings (frequent conflict-of-
 interest and funding disclosure, less frequent protocol registration, low but
-rising data sharing and rare code sharing) so the illustrations are realistic."></head><body>
+rising data sharing, rare code sharing, and a recent, fast-rising disclosure
+of generative-AI use) so the illustrations are realistic."></head><body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
@@ -17,7 +19,7 @@ rising data sharing and rare code sharing) so the illustrations are realistic.">
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +28,11 @@ rising data sharing and rare code sharing) so the illustrations are realistic.">
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../articles/rtransparent.html">Get started</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/transparency-summary.html">Summarizing transparency across a corpus</a></li>
+    <li><a class="dropdown-item" href="../articles/ai-disclosure.html">Detecting disclosure of generative-AI use</a></li>
+  </ul></li>
 <li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
@@ -50,7 +57,8 @@ illustrate [rt_summary()], [rt_score()] and [rt_plot()]. The values are
 <strong>simulated</strong>, not real detector output: prevalences and their trends
 over time are chosen to resemble published findings (frequent conflict-of-
 interest and funding disclosure, less frequent protocol registration, low but
-rising data sharing and rare code sharing) so the illustrations are realistic.</p>
+rising data sharing, rare code sharing, and a recent, fast-rising disclosure
+of generative-AI use) so the illustrations are realistic.</p>
     </div>
 
     <div class="section level2">
@@ -60,11 +68,11 @@ rising data sharing and rare code sharing) so the illustrations are realistic.</
 
     <div class="section level2">
     <h2 id="format">Format<a class="anchor" aria-label="anchor" href="#format"></a></h2>
-    <p>A tibble with 1200 rows and 10 columns:</p><dl><dt>pmid</dt>
+    <p>A tibble with 1200 rows and 11 columns:</p><dl><dt>pmid</dt>
 <dd><p>A made-up PubMed identifier (character).</p></dd>
 
   <dt>year</dt>
-<dd><p>Publication year, 2010-2024.</p></dd>
+<dd><p>Publication year, 2010-2026.</p></dd>
 
   <dt>type</dt>
 <dd><p>Article type (research-article, review-article,
@@ -90,6 +98,10 @@ rising data sharing and rare code sharing) so the illustrations are realistic.</
 
   <dt>is_replication_pred</dt>
 <dd><p>Replication component detected.</p></dd>
+
+  <dt>is_ai_pred</dt>
+<dd><p>Disclosure of generative-AI use detected. `NA` before
+    2023, when the practice did not yet exist (see [rt_ai_pmc()]).</p></dd>
 
 
 </dl></div>

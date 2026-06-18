@@ -49,5 +49,5 @@ scored <- rt_score(rt_demo)
 table(scored$n_indicators)
 #> 
 #>   0   1   2   3   4   5 
-#>  56 288 530 255  65   6 
+#>  52 288 467 305  74  14 
 ```

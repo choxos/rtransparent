@@ -1,6 +1,6 @@
 # Articles
 
-### All vignettes
+### Articles
 
 - [Introduction to
   rtransparent](https://choxos.github.io/rtransparent/articles/rtransparent.md):
@@ -11,3 +11,10 @@
 
 - [Summarizing transparency across a
   corpus](https://choxos.github.io/rtransparent/articles/transparency-summary.md):
+
+- [Detecting disclosure of generative-AI
+  use](https://choxos.github.io/rtransparent/articles/ai-disclosure.md):
+
+  How rt_ai_pmc() detects whether an article discloses the use (or
+  non-use) of generative AI in preparing the manuscript, why it is gated
+  to 2023 onward, and how to summarize it across a corpus.

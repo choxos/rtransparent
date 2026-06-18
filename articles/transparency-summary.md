@@ -23,7 +23,7 @@ indicators:
 ``` r
 
 library(rtransparent)
-#> rtransparent 0.8.1: identify indicators of transparency (conflicts of interest, funding,
+#> rtransparent 0.8.3: identify indicators of transparency (conflicts of interest, funding,
 #> protocol registration, novelty, replication, and data and code sharing) in
 #> biomedical articles. GitHub: https://github.com/choxos/rtransparent | vignette("rtransparent")
 
@@ -44,7 +44,11 @@ To study a corpus you run a detector over many files and stack the rows
 or `purrr::map_dfr(files, rt_all_pmc)`). The result is one row per
 article with the indicator columns `is_coi_pred`, `is_fund_pred`,
 `is_register_pred`, `is_open_data`, `is_open_code` (and
-`is_novelty_pred`, `is_replication_pred`).
+`is_novelty_pred`, `is_replication_pred`, `is_ai_pred`). `is_ai_pred` is
+`NA` for articles published before 2023, and
+[`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+drops those `NA`s, so the AI-disclosure prevalence is computed only over
+the articles where the indicator applies.
 
 This package ships a small **simulated** table of that shape, `rt_demo`,
 so the rest of the vignette runs without downloading anything:
@@ -53,17 +57,17 @@ so the rest of the vignette runs without downloading anything:
 
 data(rt_demo)
 head(rt_demo)
-#> # A tibble: 6 × 10
+#> # A tibble: 6 × 11
 #>   pmid      year type     is_coi_pred is_fund_pred is_register_pred is_open_data
 #>   <chr>    <int> <chr>    <lgl>       <lgl>        <lgl>            <lgl>       
-#> 1 38281623  2011 researc… FALSE       TRUE         FALSE            FALSE       
-#> 2 35191245  2014 researc… TRUE        FALSE        FALSE            FALSE       
-#> 3 37613201  2022 researc… TRUE        TRUE         FALSE            TRUE        
-#> 4 27960187  2021 researc… FALSE       FALSE        FALSE            FALSE       
-#> 5 27740712  2024 researc… TRUE        TRUE         TRUE             FALSE       
-#> 6 26032088  2010 review-… FALSE       FALSE        FALSE            FALSE       
-#> # ℹ 3 more variables: is_open_code <lgl>, is_novelty_pred <lgl>,
-#> #   is_replication_pred <lgl>
+#> 1 28143943  2011 review-… FALSE       TRUE         TRUE             FALSE       
+#> 2 31314758  2014 systema… FALSE       TRUE         TRUE             FALSE       
+#> 3 30397608  2022 systema… TRUE        TRUE         FALSE            TRUE        
+#> 4 37703615  2026 researc… TRUE        TRUE         TRUE             TRUE        
+#> 5 26030375  2022 researc… TRUE        TRUE         FALSE            FALSE       
+#> 6 21738034  2018 researc… TRUE        TRUE         FALSE            FALSE       
+#> # ℹ 4 more variables: is_open_code <lgl>, is_novelty_pred <lgl>,
+#> #   is_replication_pred <lgl>, is_ai_pred <lgl>
 ```
 
 ## Prevalence of each indicator
@@ -84,13 +88,14 @@ knitr::kable(
 
 | Indicator             | Assessed | Detected |    % | CI low | CI high |
 |:----------------------|---------:|---------:|-----:|-------:|--------:|
-| Conflicts of interest |     1200 |      835 | 69.6 |   66.9 |    72.1 |
-| Funding disclosure    |     1200 |      948 | 79.0 |   76.6 |    81.2 |
-| Protocol registration |     1200 |      318 | 26.5 |   24.1 |    29.1 |
-| Data sharing          |     1200 |      201 | 16.8 |   14.7 |    19.0 |
-| Code sharing          |     1200 |      101 |  8.4 |    7.0 |    10.1 |
-| Novelty               |     1200 |      596 | 49.7 |   46.8 |    52.5 |
-| Replication           |     1200 |      109 |  9.1 |    7.6 |    10.8 |
+| Conflicts of interest |     1200 |      845 | 70.4 |   67.8 |    72.9 |
+| Funding disclosure    |     1200 |      955 | 79.6 |   77.2 |    81.8 |
+| Protocol registration |     1200 |      356 | 29.7 |   27.2 |    32.3 |
+| Data sharing          |     1200 |      245 | 20.4 |   18.2 |    22.8 |
+| Code sharing          |     1200 |      102 |  8.5 |    7.1 |    10.2 |
+| Novelty               |     1200 |      653 | 54.4 |   51.6 |    57.2 |
+| Replication           |     1200 |      113 |  9.4 |    7.9 |    11.2 |
+| AI disclosure         |      282 |       71 | 25.2 |   20.5 |    30.6 |
 
 ### Correcting for detector error
 
@@ -112,13 +117,14 @@ knitr::kable(
 
 | Indicator             | Apparent % | Corrected % | CI low | CI high |
 |:----------------------|-----------:|------------:|-------:|--------:|
-| Conflicts of interest |       69.6 |        70.0 |   67.3 |    72.6 |
-| Funding disclosure    |       79.0 |        78.8 |   76.4 |    81.1 |
-| Protocol registration |       26.5 |        27.5 |   25.0 |    30.2 |
-| Data sharing          |       16.8 |        20.9 |   18.2 |    23.8 |
-| Code sharing          |        8.4 |         9.0 |    7.4 |    11.0 |
-| Novelty               |       49.7 |          NA |     NA |      NA |
-| Replication           |        9.1 |          NA |     NA |      NA |
+| Conflicts of interest |       70.4 |        70.8 |   68.2 |    73.4 |
+| Funding disclosure    |       79.6 |        79.4 |   77.0 |    81.7 |
+| Protocol registration |       29.7 |        30.8 |   28.2 |    33.6 |
+| Data sharing          |       20.4 |        25.7 |   22.8 |    28.9 |
+| Code sharing          |        8.5 |         9.1 |    7.5 |    11.1 |
+| Novelty               |       54.4 |          NA |     NA |      NA |
+| Replication           |        9.4 |          NA |     NA |      NA |
+| AI disclosure         |       25.2 |          NA |     NA |      NA |
 
 The accuracy values come from
 [`rt_accuracy`](https://choxos.github.io/rtransparent/reference/rt_accuracy.md):
@@ -136,11 +142,11 @@ rt_accuracy
 #> 5 is_open_code     Code sharing                0.881       0.995 rtransparent n…
 ```
 
-Novelty and replication have no bundled accuracy estimates here, so
-their corrected values are `NA`. The data/code values are reproducible
-benchmark estimates for the native detector, not untouched
-external-validation estimates. To use your own validation (or the
-published `oddpub` values for data and code), pass any table with
+Novelty, replication and AI-use disclosure have no bundled accuracy
+estimates here, so their corrected values are `NA`. The data/code values
+are reproducible benchmark estimates for the native detector, not
+untouched external-validation estimates. To use your own validation (or
+the published `oddpub` values for data and code), pass any table with
 `variable`, `sensitivity` and `specificity` columns:
 
 ``` r
@@ -152,7 +158,7 @@ rt_summary(rt_demo, indicators = "is_open_data", accuracy = my_acc)[,
 #> # A tibble: 1 × 3
 #>   label        percent adj_percent
 #>   <chr>          <dbl>       <dbl>
-#> 1 Data sharing    16.8        21.1
+#> 1 Data sharing    20.4        26.0
 ```
 
 ## How many practices per article
@@ -173,12 +179,12 @@ knitr::kable(
 
 | Practices met | Articles |
 |:--------------|---------:|
-| 0             |       56 |
+| 0             |       52 |
 | 1             |      288 |
-| 2             |      530 |
-| 3             |      255 |
-| 4             |       65 |
-| 5             |        6 |
+| 2             |      467 |
+| 3             |      305 |
+| 4             |       74 |
+| 5             |       14 |
 
 ## Subgroups
 
@@ -197,9 +203,9 @@ knitr::kable(
 
 | Type              | Indicator    | Assessed |    % |
 |:------------------|:-------------|---------:|-----:|
-| research-article  | Data sharing |      854 | 16.2 |
-| review-article    | Data sharing |      227 | 18.5 |
-| systematic-review | Data sharing |      119 | 17.6 |
+| review-article    | Data sharing |      241 | 19.5 |
+| systematic-review | Data sharing |      132 | 23.5 |
+| research-article  | Data sharing |      827 | 20.2 |
 
 ## Plots
 
@@ -221,10 +227,33 @@ Use `type = "trend"` with a year column to see prevalence over time:
 ``` r
 
 rt_plot(rt_demo, type = "trend", year = "year")
+#> Warning: Removed 13 rows containing missing values or values outside the scale range
+#> (`geom_line()`).
+#> Warning: Removed 13 rows containing missing values or values outside the scale range
+#> (`geom_point()`).
 ```
 
 ![Line chart of each transparency indicator's prevalence by
 year](transparency-summary_files/figure-html/unnamed-chunk-11-1.png)
+
+The AI-disclosure line begins only in 2023, because the indicator is
+`NA` before then; the rising data-sharing and AI lines illustrate the
+kind of trend these summaries are meant to surface. Restrict a plot to
+particular indicators with `indicators =`, for example to follow AI-use
+disclosure on its own:
+
+``` r
+
+rt_plot(rt_demo, type = "trend", year = "year", indicators = "is_ai_pred") +
+  ggtitle("Disclosure of generative-AI use, 2023 onward")
+#> Warning: Removed 13 rows containing missing values or values outside the scale range
+#> (`geom_line()`).
+#> Warning: Removed 13 rows containing missing values or values outside the scale range
+#> (`geom_point()`).
+```
+
+![Line chart of AI-use disclosure prevalence by year from
+2023](transparency-summary_files/figure-html/unnamed-chunk-12-1.png)
 
 Set `adjusted = TRUE` in either plot to show the error-corrected
 prevalence instead of the apparent prevalence.

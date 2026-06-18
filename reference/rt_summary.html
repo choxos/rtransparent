@@ -19,7 +19,7 @@ specificity (the Rogan-Gladen estimator)."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,6 +28,11 @@ specificity (the Rogan-Gladen estimator)."></head><body>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link" href="../articles/rtransparent.html">Get started</a></li>
+<li class="nav-item dropdown">
+  <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
+  <ul class="dropdown-menu" aria-labelledby="dropdown-articles"><li><a class="dropdown-item" href="../articles/transparency-summary.html">Summarizing transparency across a corpus</a></li>
+    <li><a class="dropdown-item" href="../articles/ai-disclosure.html">Detecting disclosure of generative-AI use</a></li>
+  </ul></li>
 <li class="active nav-item"><a class="nav-link" href="../reference/index.html">Reference</a></li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
@@ -123,47 +128,49 @@ sensitivity and specificity using `accuracy`. Indicators absent from
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">rt_demo</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">rt_summary</span><span class="op">(</span><span class="va">rt_demo</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 7 × 10</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 8 × 10</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   indicator   label n_articles n_detected percent conf_low conf_high adj_percent</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> is_coi_pred Conf…       <span style="text-decoration: underline;">1</span>200        835   69.6     66.9       72.1       70.0 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> is_fund_pr… Fund…       <span style="text-decoration: underline;">1</span>200        948   79       76.6       81.2       78.8 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> is_registe… Prot…       <span style="text-decoration: underline;">1</span>200        318   26.5     24.1       29.1       27.5 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> is_open_da… Data…       <span style="text-decoration: underline;">1</span>200        201   16.8     14.7       19.0       20.9 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> is_open_co… Code…       <span style="text-decoration: underline;">1</span>200        101    8.42     6.98      10.1        9.04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> is_novelty… Nove…       <span style="text-decoration: underline;">1</span>200        596   49.7     46.8       52.5       <span style="color: #BB0000;">NA</span>   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> is_replica… Repl…       <span style="text-decoration: underline;">1</span>200        109    9.08     7.59      10.8       <span style="color: #BB0000;">NA</span>   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> is_coi_pred Conf…       <span style="text-decoration: underline;">1</span>200        845   70.4     67.8       72.9       70.8 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> is_fund_pr… Fund…       <span style="text-decoration: underline;">1</span>200        955   79.6     77.2       81.8       79.4 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> is_registe… Prot…       <span style="text-decoration: underline;">1</span>200        356   29.7     27.2       32.3       30.8 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> is_open_da… Data…       <span style="text-decoration: underline;">1</span>200        245   20.4     18.2       22.8       25.7 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> is_open_co… Code…       <span style="text-decoration: underline;">1</span>200        102    8.5      7.05      10.2        9.13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> is_novelty… Nove…       <span style="text-decoration: underline;">1</span>200        653   54.4     51.6       57.2       <span style="color: #BB0000;">NA</span>   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> is_replica… Repl…       <span style="text-decoration: underline;">1</span>200        113    9.42     7.89      11.2       <span style="color: #BB0000;">NA</span>   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> is_ai_pred  AI d…        282         71   25.2     20.5       30.6       <span style="color: #BB0000;">NA</span>   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 2 more variables: adj_low &lt;dbl&gt;, adj_high &lt;dbl&gt;</span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Apparent prevalence only, no accuracy correction</span></span></span>
 <span class="r-in"><span><span class="fu">rt_summary</span><span class="op">(</span><span class="va">rt_demo</span>, adjust <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 7 × 7</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 8 × 7</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   indicator           label     n_articles n_detected percent conf_low conf_high</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> is_coi_pred         Conflict…       <span style="text-decoration: underline;">1</span>200        835   69.6     66.9       72.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> is_fund_pred        Funding …       <span style="text-decoration: underline;">1</span>200        948   79       76.6       81.2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> is_register_pred    Protocol…       <span style="text-decoration: underline;">1</span>200        318   26.5     24.1       29.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> is_open_data        Data sha…       <span style="text-decoration: underline;">1</span>200        201   16.8     14.7       19.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> is_open_code        Code sha…       <span style="text-decoration: underline;">1</span>200        101    8.42     6.98      10.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> is_novelty_pred     Novelty         <span style="text-decoration: underline;">1</span>200        596   49.7     46.8       52.5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> is_replication_pred Replicat…       <span style="text-decoration: underline;">1</span>200        109    9.08     7.59      10.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> is_coi_pred         Conflict…       <span style="text-decoration: underline;">1</span>200        845   70.4     67.8       72.9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> is_fund_pred        Funding …       <span style="text-decoration: underline;">1</span>200        955   79.6     77.2       81.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> is_register_pred    Protocol…       <span style="text-decoration: underline;">1</span>200        356   29.7     27.2       32.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> is_open_data        Data sha…       <span style="text-decoration: underline;">1</span>200        245   20.4     18.2       22.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">5</span> is_open_code        Code sha…       <span style="text-decoration: underline;">1</span>200        102    8.5      7.05      10.2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">6</span> is_novelty_pred     Novelty         <span style="text-decoration: underline;">1</span>200        653   54.4     51.6       57.2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">7</span> is_replication_pred Replicat…       <span style="text-decoration: underline;">1</span>200        113    9.42     7.89      11.2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">8</span> is_ai_pred          AI discl…        282         71   25.2     20.5       30.6</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># By article type</span></span></span>
 <span class="r-in"><span><span class="fu">rt_summary</span><span class="op">(</span><span class="va">rt_demo</span>, by <span class="op">=</span> <span class="st">"type"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 21 × 11</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 24 × 11</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    type         indicator label n_articles n_detected percent conf_low conf_high</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> research-ar… is_coi_p… Conf…        854        598   70.0     66.9       73.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> research-ar… is_fund_… Fund…        854        680   79.6     76.8       82.2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> research-ar… is_regis… Prot…        854        219   25.6     22.8       28.7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> research-ar… is_open_… Data…        854        138   16.2     13.8       18.8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> research-ar… is_open_… Code…        854         77    9.02     7.27      11.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> research-ar… is_novel… Nove…        854        425   49.8     46.4       53.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> research-ar… is_repli… Repl…        854         73    8.55     6.85      10.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> review-arti… is_coi_p… Conf…        227        155   68.3     62.0       74.0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> review-arti… is_fund_… Fund…        227        172   75.8     69.8       80.9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> review-arti… is_regis… Prot…        227         69   30.4     24.8       36.7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 11 more rows</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> review-arti… is_coi_p… Conf…        241        174   72.2     66.2       77.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> review-arti… is_fund_… Fund…        241        192   79.7     74.1       84.3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> review-arti… is_regis… Prot…        241         81   33.6     27.9       39.8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> review-arti… is_open_… Data…        241         47   19.5     15.0       25.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> review-arti… is_open_… Code…        241         21    8.71     5.77      13.0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> review-arti… is_novel… Nove…        241        120   49.8     43.5       56.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> review-arti… is_repli… Repl…        241         22    9.13     6.11      13.4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> review-arti… is_ai_pr… AI d…         66         14   21.2     13.1       32.5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> systematic-… is_coi_p… Conf…        132         82   62.1     53.6       69.9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> systematic-… is_fund_… Fund…        132        109   82.6     75.2       88.1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 14 more rows</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 3 more variables: adj_percent &lt;dbl&gt;, adj_low &lt;dbl&gt;, adj_high &lt;dbl&gt;</span></span>
 </code></pre></div>
     </div>

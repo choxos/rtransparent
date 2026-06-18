@@ -5,8 +5,9 @@ used to illustrate \[rt_summary()\], \[rt_score()\] and \[rt_plot()\].
 The values are **simulated**, not real detector output: prevalences and
 their trends over time are chosen to resemble published findings
 (frequent conflict-of- interest and funding disclosure, less frequent
-protocol registration, low but rising data sharing and rare code
-sharing) so the illustrations are realistic.
+protocol registration, low but rising data sharing, rare code sharing,
+and a recent, fast-rising disclosure of generative-AI use) so the
+illustrations are realistic.
 
 ## Usage
 
@@ -16,7 +17,7 @@ rt_demo
 
 ## Format
 
-A tibble with 1200 rows and 10 columns:
+A tibble with 1200 rows and 11 columns:
 
 - pmid:
 
@@ -24,7 +25,7 @@ A tibble with 1200 rows and 10 columns:
 
 - year:
 
-  Publication year, 2010-2024.
+  Publication year, 2010-2026.
 
 - type:
 
@@ -57,6 +58,11 @@ A tibble with 1200 rows and 10 columns:
 - is_replication_pred:
 
   Replication component detected.
+
+- is_ai_pred:
+
+  Disclosure of generative-AI use detected. \`NA\` before 2023, when the
+  practice did not yet exist (see \[rt_ai_pmc()\]).
 
 ## See also
 

@@ -23,11 +23,20 @@ statement that triggered the detection.
 | Replication | Replication / independent-validation components | `rt_replication` | `rt_replication_pmc` |
 | Data sharing | Data deposited or made openly available | `rt_data_code` | `rt_data_code_pmc` |
 | Code sharing | Source code / scripts made available | `rt_data_code` | `rt_data_code_pmc` |
+| AI-use disclosure | A statement that generative AI was (or was not) used to prepare the manuscript | — | `rt_ai_pmc` |
 
-`rt_all` and `rt_all_pmc` run the COI, funding, registration, novelty
-and replication detectors together in a single pass. Data and code
-sharing are exposed separately through `rt_data_code` /
-`rt_data_code_pmc`.
+`rt_all_pmc` runs six detectors together in a single pass: COI, funding,
+registration, novelty, replication and AI-use disclosure. Data and code
+sharing are exposed separately through `rt_data_code_pmc`, so a full PMC
+analysis is the two calls together. (`rt_all` covers the first five from
+TXT; data, code and AI are PMC XML only, the last because the year gate
+needs the publication date.)
+
+AI-use disclosure is the newest indicator. Journals have asked authors
+to disclose any use of generative AI (ChatGPT and similar) in preparing
+a manuscript only since 2023, so `rt_ai_pmc` evaluates the indicator
+only for articles published in 2023 or later and returns `NA` for
+earlier ones.
 
 The package and its validation are described in Serghiou et al.,
 *Assessment of transparency indicators across the biomedical literature:
@@ -87,6 +96,15 @@ rather than a machine learning model. This keeps the output auditable
   GEO”) and excludes “available on request”. Code repositories (GitHub,
   GitLab, Bitbucket) only count as data when paired with a data noun, so
   a code-only GitHub link is not mistaken for data sharing.
+- **AI-use disclosure.** Detected from a “Declaration of generative AI”
+  type section title, and from text that names a generative-AI tool
+  (ChatGPT, GPT-4, Copilot, Gemini, an LLM, …) in a
+  manuscript-preparation context (“used ChatGPT to improve the
+  readability”) or in an explicit negation (“no generative AI was
+  used”). A negative lookahead keeps the tool sense of “large language
+  model” out of the writing-object pattern, and AI used purely as a
+  research method (not for writing) is not counted. Only evaluated for
+  2023 onward.
 
 ## Usage: PMC XML
 
@@ -100,29 +118,36 @@ xml_path <- system.file(
 )
 ```
 
-### All indicators at once
+### Many indicators at once
 
-`rt_all_pmc` returns COI, funding, registration, novelty and replication
-in one call, together with the matched statement text and article
-metadata.
+`rt_all_pmc` returns COI, funding, registration, novelty, replication
+and AI-use disclosure in one call, together with the matched statement
+text, the publication `year` and article metadata. (Data and code
+sharing are added by `rt_data_code_pmc`, shown below.)
 
 ``` r
 
 all_indicators <- rt_all_pmc(xml_path, remove_ns = TRUE)
 
 dplyr::glimpse(
-  all_indicators[, c("pmid", "is_coi_pred", "is_fund_pred",
-                     "is_register_pred", "is_novelty_pred", "is_replication_pred")]
+  all_indicators[, c("pmid", "year", "is_coi_pred", "is_fund_pred",
+                     "is_register_pred", "is_novelty_pred", "is_replication_pred",
+                     "is_ai_pred")]
 )
 #> Rows: 1
-#> Columns: 6
+#> Columns: 8
 #> $ pmid                <chr> "32171256"
+#> $ year                <int> 2020
 #> $ is_coi_pred         <lgl> TRUE
 #> $ is_fund_pred        <lgl> TRUE
 #> $ is_register_pred    <lgl> FALSE
 #> $ is_novelty_pred     <lgl> FALSE
 #> $ is_replication_pred <lgl> FALSE
+#> $ is_ai_pred          <lgl> NA
 ```
+
+`is_ai_pred` is `NA` here because this example article predates 2023;
+for a 2023 or later article it would be `TRUE` or `FALSE`.
 
 ### Individual indicators
 
@@ -171,6 +196,20 @@ dplyr::glimpse(
 #> $ open_data_statements <chr> "Availability of data and materialsData will be s…
 #> $ is_open_code         <lgl> FALSE
 #> $ open_code_statements <chr> ""
+```
+
+### AI-use disclosure
+
+`rt_ai_pmc` reports the publication `year`, the year-gated prediction
+`is_ai_pred` (`NA` before 2023) and the matched text. The
+`ai-disclosure` vignette covers this indicator in depth.
+
+``` r
+
+ai <- rt_ai_pmc(xml_path, remove_ns = TRUE)
+c(year = ai$year, is_ai = ai$is_ai_pred)
+#>  year is_ai 
+#>  2020    NA
 ```
 
 ## Usage: TXT files
