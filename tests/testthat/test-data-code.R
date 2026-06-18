@@ -83,6 +83,9 @@ test_that(".detect_data_code rejects code-use and generic reporting text", {
   expect_false(det("The PELE server provides ready-made scripts that can be accessed at https://pele.bsc.es/.")$is_open_code)
   expect_false(det("The source code is not publicly available at https://github.com/user/private.")$is_open_code)
   expect_false(det("ICD-10-CM codes used for these conditions are provided in Table S1.")$is_open_code)
+  # Medical billing codes (CPT) are not software code.
+  expect_false(det("ChatGPT was prompted to generate a list of CPT billing codes when provided an operative note.")$is_open_code)
+  expect_false(det("We extracted the relevant Current Procedural Terminology codes provided in the claims.")$is_open_code)
   expect_false(det("Is the analysis code/syntax available?")$is_open_code)
   expect_false(det("Cell-cell communication analysis was performed using the CellChat package (v2.1.2, https://github.com/sqjin/CellChat).")$is_open_code)
   expect_false(det("TCGA data were downloaded using the Bioconductor package TCGAbiolinks.")$is_open_code)
