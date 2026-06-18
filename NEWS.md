@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.8.6
+
+* Data sharing: detect the Frontiers default data-availability statement when it has no supplement clause. "The original contributions presented in the study are included in the article/Supplementary Material" was recognized, but the same statement ending "... included in the article" (for an article with no supplement) was missed. Both mean the data are in the article, so both now count; the highly specific phrasing keeps generic "included in the article" sentences from matching. The held-out data benchmark is unchanged (sensitivity 76.5%, specificity 99.0%). Added a regression test.
+
+
 # rtransparent 0.8.5
 
 * `rt_all_pmc()` now returns all eight transparency indicators in a single call. It previously returned six (COI, funding, registration, novelty, replication and AI-use disclosure) and data and code sharing had to be obtained separately from `rt_data_code_pmc()`; the output now also carries `is_open_data`, `is_open_code` and their matched statements (`open_data_statements`, `open_code_statements`). The detection is the same native detector as `rt_data_code_pmc()`, so the two agree exactly. The change is additive: existing columns are unchanged, and the COI, funding and registration benchmarks are unaffected. The vignettes are updated to reflect the single-call workflow.

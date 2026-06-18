@@ -120,6 +120,14 @@ test_that("data included within the article/manuscript is detected", {
   )$is_open_data)
   # A bare mention of data in a results sentence is not an availability statement.
   expect_false(det("The clinical data of the patients are summarized in Table 1.")$is_open_data)
+  # The Frontiers default statement is detected with or without a supplement
+  # clause; both forms mean the data are in the article.
+  expect_true(det(
+    "The original contributions presented in the study are included in the article/Supplementary Material, further inquiries can be directed to the corresponding author."
+  )$is_open_data)
+  expect_true(det(
+    "The original contributions presented in the study are included in the article, further inquiries can be directed to the corresponding author."
+  )$is_open_data)
 })
 
 test_that("analysis code shared in supplementary files is detected", {
