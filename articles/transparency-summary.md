@@ -23,7 +23,7 @@ indicators:
 ``` r
 
 library(rtransparent)
-#> rtransparent 0.8.0: identify indicators of transparency (conflicts of interest, funding,
+#> rtransparent 0.8.1: identify indicators of transparency (conflicts of interest, funding,
 #> protocol registration, novelty, replication, and data and code sharing) in
 #> biomedical articles. GitHub: https://github.com/choxos/rtransparent | vignette("rtransparent")
 

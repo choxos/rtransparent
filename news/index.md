@@ -1,5 +1,23 @@
 # Changelog
 
+## rtransparent 0.8.1
+
+Fixes from a manual validation on a fresh, disjoint sample of 1,000
+open-access PMC articles from 2023:
+
+- Registration: detect more ClinicalTrials.gov phrasings. The detector
+  previously required “registered at ClinicalTrials.gov” and missed
+  common forms such as “the RCT is registered with ClinicalTrials.gov
+  (NCT…)” and “trial registration number NCT…”. It now flags an NCT
+  identifier that co-occurs with a registration verb or
+  ClinicalTrials.gov, while still not flagging a trial merely cited by
+  its identifier. Registration benchmark accuracy is unchanged at 98.1%.
+- Code sharing: recognize code shared on the Open Science Framework. OSF
+  was already a recognized data repository but not a code repository, so
+  “data and code are available on the OSF” was counted for data but not
+  code. Data on OSF without a code mention is still not counted as code.
+- Added regression tests for both.
+
 ## rtransparent 0.8.0
 
 - New **AI-disclosure** indicator.
