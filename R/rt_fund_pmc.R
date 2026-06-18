@@ -1699,7 +1699,7 @@ negate_absence_1 <- function(article) {
         "\\b(the )?(authors?|author) (have|has) nothing to report\\b",
         "\\bfunding\\s+nothing to (declare|report)\\b",
         "\\bnothing to (declare|report)\\b",
-        "^\\s*(funding|financial support|funding/support|sources of support)\\s*:?\\s*$",
+        "^\\s*(funding|funding statement|funding information|financial support|funding/support|sources of support)\\s*:?\\s*$",
         "\\bfunding acquisition\\b",
         "\\b(study|case report|paper|article|work|research) (was|is) not funded\\b",
         "\\bnot funded\\b",
@@ -1789,7 +1789,7 @@ can_scan_after_negated_fund_tag <- function(article) {
 
   grepl(
     paste(
-      "^\\s*(funding|financial support|funding/support|sources of support)\\s*:?\\s*$",
+      "^\\s*(funding|funding statement|funding information|financial support|funding/support|sources of support)\\s*:?\\s*$",
       "^\\s*(funding|financial support|funding/support)\\s*:?\\s*(none|nil|n/?a|not applicable)\\.?\\s*$",
       "^\\s*funding acquisition\\b",
       "^\\s*funding\\s*:?\\s*the authors received no specific funding",

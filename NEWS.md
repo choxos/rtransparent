@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.8.16
+
+* Funding: a "Funding Statement" section that declares no funding is no longer counted as funding. When the section label ("Funding Statement", "Funding Information") and its content ("None") sit in separate nodes, only the label is recovered, so the no-funding content could not be seen and the section's presence leaked through as a funding disclosure. These labels are now treated like the bare "Funding" label already was: an uninformative tag that does not by itself indicate funding, while still allowing a funding statement elsewhere in the article to be detected. The held-out funding benchmark is unchanged (sensitivity 100%, specificity 95.7%). Added regression tests.
+
+
 # rtransparent 0.8.15
 
 * Funding: treat "was not supported by any funding" as the absence of funding. A funding section can be titled "Funding" yet declare no funding ("The study was not supported by any funding."); the funding-title route counted the section's presence as a funding disclosure because this phrasing was missing from the no-funding negation. It is now recognized alongside the other no-funding statements. The held-out funding benchmark is unchanged (sensitivity 100%, specificity 95.7%). Added regression tests.
