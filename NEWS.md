@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.8.15
+
+* Funding: treat "was not supported by any funding" as the absence of funding. A funding section can be titled "Funding" yet declare no funding ("The study was not supported by any funding."); the funding-title route counted the section's presence as a funding disclosure because this phrasing was missing from the no-funding negation. It is now recognized alongside the other no-funding statements. The held-out funding benchmark is unchanged (sensitivity 100%, specificity 95.7%). Added regression tests.
+
+
 # rtransparent 0.8.14
 
 * Funding: do not read an author conflict-of-interest disclosure as research funding. Sports-medicine journals (AOSSM titles such as the American Journal of Sports Medicine and the Orthopaedic Journal of Sports Medicine) introduce author disclosures with a fixed preamble, "One or more of the authors has declared the following potential conflict of interest or source of funding:", followed by industry relationships ("received research support from <company>", royalties, consultancy, speaking fees). These are the authors' industry ties, not funding for the study, but the "received research support from ..." wording registered as a funding acknowledgment. The disclosure clause is now removed before funding is scanned, so a separate Funding statement in the same article is still detected. The held-out funding benchmark is unchanged (sensitivity 100%, specificity 95.7%). Added regression tests.

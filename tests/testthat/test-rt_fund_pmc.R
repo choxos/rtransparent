@@ -87,7 +87,10 @@ test_that("funding absence negation covers common PMC no-funding statements", {
     "This research received no specific grant from any funding agency in the public, commercial or not-for-profit sectors.",
     "Funding The authors declare that no funds, grants or other support were received during the preparation of this manuscript.",
     "No funds have been received for this study.",
-    "The authors have not received any funding or benefits from industry to conduct this study."
+    "The authors have not received any funding or benefits from industry to conduct this study.",
+    "Funding The study was not supported by any funding.",
+    "This work was not supported by any funding.",
+    "The study was not supported by any grant."
   )
 
   expect_true(all(rtransparent:::negate_absence_1(absent)))

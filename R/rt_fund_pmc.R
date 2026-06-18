@@ -1737,6 +1737,10 @@ negate_absence_1 <- function(article) {
         "\\bno funds (have been|have not been|were|was) received\\b",
         "\\b(did|do|does) not receive (any )?funds\\b",
         "\\b(have|has|had) not received any (funding|funds|financial)\\b",
+        # "(This study/work) was not supported by any funding" — a funding
+        # section can be titled "Funding" yet declare the absence of funding,
+        # which otherwise leaks through the funding-title route.
+        "\\bnot supported by any (funding|grant|financial)\\b",
         sep = "|"
       ),
       article,
