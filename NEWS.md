@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.8.10
+
+* Funding: do not count common "no funding" declarations as a funding disclosure. The no-funding negation already covered many phrasings but missed several frequent ones, most importantly "(this research) received no specific grant from any funding agency", as well as "no funds, grants or other support were received", "no funds have been received" and "(authors) have not received any funding". These are now treated as the absence of funding, matching the detector's handling of the other no-funding statements. The held-out funding benchmark is unchanged (sensitivity 100%, specificity 95.7%). Added regression tests.
+
+
 # rtransparent 0.8.9
 
 * `rt_data_code_pmc()` and `rt_all_pmc()` now also return the identifiers of the shared data and code, not just whether sharing occurred. New columns `open_data_links` and `open_code_links` hold the DOIs (as `doi.org` URLs), repository URLs and database accessions extracted from the detected availability statements, with accessions normalized to identifiers.org `prefix:accession` form (for example `geo:GSE12345`, `bioproject:PRJEB51269`); multiple identifiers are separated by `" ; "`. Identifiers are taken only from the availability statements, so a reused accession cited in the methods is not collected. Added regression tests.

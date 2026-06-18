@@ -1729,6 +1729,14 @@ negate_absence_1 <- function(article) {
         "\\bno external finding\\b",
         "\\bno funders? to report\\b",
         "\\bno competing financial interests?.{0,80}external funding\\b",
+        # No-funding boilerplate not covered above: "received no specific grant
+        # from any funding agency", "no funds, grants or other support were
+        # received", "did not receive funds", "have not received any funding".
+        "\\bno specific grant\\b",
+        "\\bno funds,?\\s*(grants?|or other support)",
+        "\\bno funds (have been|have not been|were|was) received\\b",
+        "\\b(did|do|does) not receive (any )?funds\\b",
+        "\\b(have|has|had) not received any (funding|funds|financial)\\b",
         sep = "|"
       ),
       article,
