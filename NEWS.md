@@ -1,5 +1,14 @@
 <div align="justify">
 
+# rtransparent 0.8.1
+
+Fixes from a manual validation on a fresh, disjoint sample of 1,000 open-access PMC articles from 2023:
+
+* Registration: detect more ClinicalTrials.gov phrasings. The detector previously required "registered at ClinicalTrials.gov" and missed common forms such as "the RCT is registered with ClinicalTrials.gov (NCT...)" and "trial registration number NCT...". It now flags an NCT identifier that co-occurs with a registration verb or ClinicalTrials.gov, while still not flagging a trial merely cited by its identifier. Registration benchmark accuracy is unchanged at 98.1%.
+* Code sharing: recognize code shared on the Open Science Framework. OSF was already a recognized data repository but not a code repository, so "data and code are available on the OSF" was counted for data but not code. Data on OSF without a code mention is still not counted as code.
+* Added regression tests for both.
+
+
 # rtransparent 0.8.0
 
 * New **AI-disclosure** indicator. `rt_ai_pmc()` detects whether an article discloses the use (or non-use) of generative AI or AI-assisted tools in preparing the manuscript, as journals have asked of authors since 2023. It recognizes positive disclosures ("the authors used ChatGPT to improve the readability of the manuscript"), negative disclosures ("no generative AI was used in the preparation of this work") and dedicated "Declaration of generative AI" sections, while not flagging articles that merely use AI as their research method. Because the practice did not exist before 2023, the indicator is only evaluated for articles published in 2023 or later; earlier articles return `NA` (`is_ai_pred`), and the publication `year` is reported. The indicator is included in `rt_all_pmc()` and recognized by `rt_summary()`. On the 1,000-article open-access validation set (almost all published 2024-2026) it flags about 16% of articles, with high precision on inspection.

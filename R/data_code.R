@@ -141,6 +141,7 @@
   paste(
     "github\\.com", "gitlab\\.com", "bitbucket\\.org", "sourceforge\\.net", "git\\.io",
     "code ?ocean", "zenodo", "\\bgithub\\b", "\\bgitlab\\b",
+    "osf\\.io", "open science framework",
     sep = "|"
   )
 }

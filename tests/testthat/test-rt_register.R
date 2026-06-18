@@ -162,3 +162,23 @@ test_that("registry helpers return integer(0) for empty/non-matching input", {
   expect_equal(get_osf_preregistered_1(non_matching), integer(0))
   expect_equal(get_prospero_redacted_1(non_matching), integer(0))
 })
+
+test_that(".which_ct_4 detects varied ClinicalTrials.gov NCT phrasings", {
+  pos <- c(
+    "The RCT is registered with ClinicalTrials.gov (NCT04347291).",
+    "This trial was prospectively registered (NCT01234567).",
+    "Trial registration number NCT09876543.",
+    "The study was registered on ClinicalTrials.gov, NCT05555555."
+  )
+  for (s in pos) {
+    expect_true(length(rtransparent:::.which_ct_4(s)) > 0,
+                info = paste("should detect:", s))
+  }
+  # A trial cited by its id, without any registration of this study, is not a
+  # registration of the present article.
+  expect_equal(
+    length(rtransparent:::.which_ct_4(
+      "Efficacy was demonstrated in the LUMINOSITY trial (NCT05012345).")),
+    0
+  )
+})

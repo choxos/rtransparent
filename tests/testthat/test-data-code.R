@@ -132,3 +132,12 @@ test_that("analysis code shared in supplementary files is detected", {
   expect_false(det("The qualitative codes are presented in Supplementary Table 2.")$is_open_code)
   expect_false(det("The diagnosis codes are provided in the supplementary appendix.")$is_open_code)
 })
+
+test_that("code shared on the Open Science Framework is detected", {
+  expect_true(det(
+    "All components for reproducible analysis (data and code) are accessible via the Open Science Framework (https://osf.io/2cuf7/)."
+  )$is_open_code)
+  expect_true(det("The analysis code is available on OSF (https://osf.io/abc12/).")$is_open_code)
+  # Data on OSF without any code mention is not code sharing.
+  expect_false(det("The data are available on OSF (https://osf.io/xyz/).")$is_open_code)
+})

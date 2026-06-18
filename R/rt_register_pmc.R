@@ -1090,6 +1090,13 @@
       "\\b(the|this|our|it) (study|trial)? ?was registered at clinicaltrial(s)?\\.?\\s*gov.{0,100}(registration number )?NCT[0-9]{8}",
       "\\bclinical trial registration.{0,100}clinicaltrial(s)?\\.?\\s*gov.{0,80}NCT[0-9]{8}",
       "\\bclinicaltrial(s)?\\.?\\s*gov identifier is NCT[0-9]{8}",
+      # Generic: a registration verb or clinicaltrials.gov near an NCT id. NCT
+      # ids are an unambiguous ClinicalTrials.gov registration format, so this
+      # catches "registered with/on/in ClinicalTrials.gov (NCT...)" etc.
+      "\\bregister(ed|ation)?\\b.{0,60}\\bNCT[0-9]{8}\\b",
+      "\\bNCT[0-9]{8}\\b.{0,40}\\b(register(ed|ation)?|clinicaltrial)",
+      "\\bclinicaltrial(s)?\\.?\\s*gov\\b.{0,50}\\bNCT[0-9]{8}\\b",
+      "\\b(trial|study|protocol) registration (number|no|id)?\\b.{0,40}NCT[0-9]{8}",
       sep = "|"
     ),
     article,
