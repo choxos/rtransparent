@@ -133,6 +133,24 @@ test_that("analysis code shared in supplementary files is detected", {
   expect_false(det("The diagnosis codes are provided in the supplementary appendix.")$is_open_code)
 })
 
+test_that("repository code is detected even when data is offered on request", {
+  # A single availability sentence can host code on a public repository and, in
+  # the same breath, offer the data only on request. The data-delivery wording
+  # ("upon request", "from the authors") must not veto the code, which is openly
+  # hosted on the repository.
+  expect_true(det(
+    "The full pipeline is available on GitHub (https://github.com/lab/tool), and sample data are available through Dataverse or upon request through a data sharing agreement."
+  )$is_open_code)
+  expect_true(det(
+    "Analysis scripts are available on GitHub (https://github.com/x/y); the raw data are available from the corresponding author on reasonable request."
+  )$is_open_code)
+  # Code itself offered only on request, with no public repository, is still
+  # not open code.
+  expect_false(det("The source code is available from the authors upon request.")$is_open_code)
+  # Genuine non-availability still vetoes repository-hosted code.
+  expect_false(det("The source code is not publicly available at https://github.com/user/private.")$is_open_code)
+})
+
 test_that("code shared on the Open Science Framework is detected", {
   expect_true(det(
     "All components for reproducible analysis (data and code) are accessible via the Open Science Framework (https://osf.io/2cuf7/)."

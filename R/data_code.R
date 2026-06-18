@@ -491,8 +491,23 @@
     has(registry_avail, s)
   weak_code <- has(weak_code_term, s) & has(code_avail, s)
   explicit_code <- has(explicit_code_term, s)
+
+  # Most of .dc_negation() is about how *data* is delivered ("upon request",
+  # "from the authors", "on demand"). When a single unsplittable sentence shares
+  # a public-repository code clause with a data-on-request clause (for example
+  # "the pipeline is available on GitHub, and sample data are available upon
+  # request"), those data-delivery phrases must not veto code that is concretely
+  # hosted on a public repository. Genuine non-availability ("not publicly
+  # available", "restricted/controlled access", "cannot be shared") still vetoes
+  # code regardless of where it lives.
+  hard_negation <- paste(
+    "not (publicly )?available", "not be (made )?available", "not shown",
+    "restricted access", "controlled access", "cannot be shared",
+    sep = "|"
+  )
+  code_negation <- has(hard_negation, s) | (has(negation, s) & !strong_code)
   code_hit <- (strong_code | registry_code | weak_code | explicit_code) &
-    !has(negation, s) & !has(generic_code_discussion, s) &
+    !code_negation & !has(generic_code_discussion, s) &
     !has(code_use_only, s)
 
   if (any(code_hit)) {

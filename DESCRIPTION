@@ -1,7 +1,7 @@
 Package: rtransparent
 Type: Package
 Title: Identifies Indicators of Transparency
-Version: 0.8.1
+Version: 0.8.2
 Authors@R: c(
     person("Stylianos", "Serghiou", role = "aut",
            email = "stelios.serghiou@gmail.com"),
