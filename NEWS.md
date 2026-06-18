@@ -1,5 +1,10 @@
 <div align="justify">
 
+# rtransparent 0.8.5
+
+* `rt_all_pmc()` now returns all eight transparency indicators in a single call. It previously returned six (COI, funding, registration, novelty, replication and AI-use disclosure) and data and code sharing had to be obtained separately from `rt_data_code_pmc()`; the output now also carries `is_open_data`, `is_open_code` and their matched statements (`open_data_statements`, `open_code_statements`). The detection is the same native detector as `rt_data_code_pmc()`, so the two agree exactly. The change is additive: existing columns are unchanged, and the COI, funding and registration benchmarks are unaffected. The vignettes are updated to reflect the single-call workflow.
+
+
 # rtransparent 0.8.4
 
 Documentation and example data, so the package website showcases every indicator:

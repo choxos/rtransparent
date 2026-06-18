@@ -227,25 +227,31 @@
 }
 
 
-#' Identify and extract statements of COI, Funding and Registration.
+#' Identify and extract all transparency indicators from a PMC XML.
 #'
-#' Takes a PMC XML and returns relevant meta-data, as well as whether any
-#'     statements of Conflicts of Interest (COI), Funding or Protocol
-#'     Registration. If any such statements are found, it also extracts the
-#'     relevant text.
+#' Takes a PMC XML and returns relevant meta-data, as well as whether the article
+#'     carries each of the eight transparency indicators: Conflicts of Interest
+#'     (COI), Funding, Protocol Registration, Novelty, Replication, Data sharing,
+#'     Code sharing and disclosure of generative-AI use. Where a statement is
+#'     found, the relevant text is also extracted. This is the single-call entry
+#'     point; it covers the same data and code detection as
+#'     [rt_data_code_pmc()] and the same AI detection as [rt_ai_pmc()].
 #'
 #' @param filename The name of the PMC XML as a string.
 #' @param remove_ns TRUE if an XML namespace exists, else FALSE (default).
 #' @param all_meta TRUE extracts all meta-data, FALSE extracts some (default).
 #' @return A dataframe of results. It returns the unique identifiers of the
-#'     article, whether each of 3 indicators of transparency (COI, Funding or
-#'     Registration) was identified, the relevant text identified, whether it
-#'     was identified through a dedicated XML tag (such variables include "pmc"
-#'     in their name, e.g. “fund_pmc_source”) and whether each labelling
-#'     function identified relevant text or not. The labeling functions are
-#'     returned to add flexibility in how this package is used; for example,
-#'     future definitions of Registration may differ from the one we used. If a
-#'     labelling function returns NA it means that it was not run.
+#'     article, whether each indicator of transparency was identified
+#'     (`is_coi_pred`, `is_fund_pred`, `is_register_pred`, `is_novelty_pred`,
+#'     `is_replication_pred`, `is_open_data`, `is_open_code` and the year-gated
+#'     `is_ai_pred`), the relevant text identified, whether it was identified
+#'     through a dedicated XML tag (such variables include "pmc" in their name,
+#'     e.g. “fund_pmc_source”) and whether each labelling function identified
+#'     relevant text or not. The labeling functions are returned to add
+#'     flexibility in how this package is used; for example, future definitions
+#'     of Registration may differ from the one we used. If a labelling function
+#'     returns NA it means that it was not run. `is_ai_pred` is `NA` for articles
+#'     published before 2023 (see [rt_ai_pmc()]).
 #' @examples
 #' \dontrun{
 #' # Path to PMC XML.
@@ -329,8 +335,19 @@ rt_all_pmc <- function(filename, remove_ns = F, all_meta = F) {
   replication_ls <- .rt_replication_pmc(article_ls)
   ai_ls          <- .get_ai_pmc(article_xml)
 
+  # Data and code sharing, from the same native detector as rt_data_code_pmc(),
+  # so a single rt_all_pmc() call covers all eight indicators.
+  dc_found <- .detect_data_code(.dc_article_text(article_xml))
+  data_code_ls <- list(
+    is_open_data = dc_found$is_open_data,
+    open_data_statements = dc_found$data_text,
+    is_open_code = dc_found$is_open_code,
+    open_code_statements = dc_found$code_text
+  )
+
 
   status_ls <- list(is_success = T)
   tibble::as_tibble(c(id_ls, meta_ls, coi_ls, fund_ls, reg_ls,
-                      novelty_ls, replication_ls, ai_ls, status_ls))
+                      novelty_ls, replication_ls, ai_ls, data_code_ls,
+                      status_ls))
 }

@@ -75,8 +75,7 @@ indicator applies.
 ## In the all-indicators output
 
 `rt_all_pmc()` includes the indicator, so a single pass over a corpus already
-carries `year` and `is_ai_pred` alongside COI, funding, registration, novelty
-and replication (data and code sharing come from `rt_data_code_pmc()`):
+carries `year` and `is_ai_pred` alongside the other seven indicators:
 
 ```{r}
 all_indicators <- rt_all_pmc(xml_path, remove_ns = TRUE)

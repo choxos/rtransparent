@@ -2,7 +2,7 @@
 % Please edit documentation in R/rt_all_pmc.R
 \name{rt_all_pmc}
 \alias{rt_all_pmc}
-\title{Identify and extract statements of COI, Funding and Registration.}
+\title{Identify and extract all transparency indicators from a PMC XML.}
 \usage{
 rt_all_pmc(filename, remove_ns = F, all_meta = F)
 }
@@ -15,20 +15,26 @@ rt_all_pmc(filename, remove_ns = F, all_meta = F)
 }
 \value{
 A dataframe of results. It returns the unique identifiers of the
-    article, whether each of 3 indicators of transparency (COI, Funding or
-    Registration) was identified, the relevant text identified, whether it
-    was identified through a dedicated XML tag (such variables include "pmc"
-    in their name, e.g. “fund_pmc_source”) and whether each labelling
-    function identified relevant text or not. The labeling functions are
-    returned to add flexibility in how this package is used; for example,
-    future definitions of Registration may differ from the one we used. If a
-    labelling function returns NA it means that it was not run.
+    article, whether each indicator of transparency was identified
+    (`is_coi_pred`, `is_fund_pred`, `is_register_pred`, `is_novelty_pred`,
+    `is_replication_pred`, `is_open_data`, `is_open_code` and the year-gated
+    `is_ai_pred`), the relevant text identified, whether it was identified
+    through a dedicated XML tag (such variables include "pmc" in their name,
+    e.g. “fund_pmc_source”) and whether each labelling function identified
+    relevant text or not. The labeling functions are returned to add
+    flexibility in how this package is used; for example, future definitions
+    of Registration may differ from the one we used. If a labelling function
+    returns NA it means that it was not run. `is_ai_pred` is `NA` for articles
+    published before 2023 (see [rt_ai_pmc()]).
 }
 \description{
-Takes a PMC XML and returns relevant meta-data, as well as whether any
-    statements of Conflicts of Interest (COI), Funding or Protocol
-    Registration. If any such statements are found, it also extracts the
-    relevant text.
+Takes a PMC XML and returns relevant meta-data, as well as whether the article
+    carries each of the eight transparency indicators: Conflicts of Interest
+    (COI), Funding, Protocol Registration, Novelty, Replication, Data sharing,
+    Code sharing and disclosure of generative-AI use. Where a statement is
+    found, the relevant text is also extracted. This is the single-call entry
+    point; it covers the same data and code detection as
+    [rt_data_code_pmc()] and the same AI detection as [rt_ai_pmc()].
 }
 \examples{
 \dontrun{

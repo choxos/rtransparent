@@ -34,11 +34,12 @@ one <- rt_all_pmc(xml, remove_ns = TRUE)
 one[, c("pmid", "is_coi_pred", "is_fund_pred", "is_register_pred")]
 ```
 
-To study a corpus you run a detector over many files and stack the rows (for
-example with `rt_data_code_pmc_list()`, or `purrr::map_dfr(files, rt_all_pmc)`).
-The result is one row per article with the indicator columns
-`is_coi_pred`, `is_fund_pred`, `is_register_pred`, `is_open_data`,
-`is_open_code` (and `is_novelty_pred`, `is_replication_pred`, `is_ai_pred`).
+To study a corpus you run a detector over many files and stack the rows;
+`purrr::map_dfr(files, rt_all_pmc, remove_ns = TRUE)` returns all eight
+indicators per article in one pass. The result is one row per article with the
+indicator columns `is_coi_pred`, `is_fund_pred`, `is_register_pred`,
+`is_open_data`, `is_open_code`, `is_novelty_pred`, `is_replication_pred` and
+`is_ai_pred`.
 `is_ai_pred` is `NA` for articles published before 2023, and `rt_summary()`
 drops those `NA`s, so the AI-disclosure prevalence is computed only over the
 articles where the indicator applies.
