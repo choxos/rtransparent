@@ -426,6 +426,27 @@
   explicit_code_term <- paste(
     "facets \\(https://github\\.com/[^)]+\\).{0,80}can be .*used",
     "(python )?scripts? \\(supplemental script\\)",
+    # Analysis code/scripts shared in the supplementary or additional files.
+    # Gated on a language prefix or the word "script" so ICD/diagnosis/
+    # qualitative "codes" are not matched.
+    paste0("((source|matlab|python|\\br\\b|stata|sas|analysis|computer|",
+           "custom[- ]?written) (code|scripts?)|\\bscripts?\\b) .{0,55}",
+           "(presented|provided|made available|available|found|included|",
+           "contained|located|deposited|reported) .{0,25}(in|within|as) (the )?",
+           "(supplementary|supporting|additional|online|accompanying) ",
+           "(files?|tables?|methods?|materials?|data|information|appendix)"),
+    # "the code is presented in Supplementary Table/Methods". "the code"
+    # (definite singular) is analysis code, unlike plural ICD/qualitative "codes".
+    paste0("\\bthe (analysis |r |custom |full |complete |matlab |python )?code ",
+           "(is |was |can be )?(presented|provided|available|found|included|",
+           "contained|deposited) .{0,25}(in|within) (the )?",
+           "(supplementary|supporting|additional|online)"),
+    # eLife-style labelled source code items, e.g. "Source code 1".
+    "\\bsource code [0-9]",
+    "(supplementary|supporting|additional) (files?|tables?|methods?|materials?).{0,30}(source )?(code|scripts?)\\b",
+    # Explicit source-code availability section (for example GigaScience style).
+    "availability of source code",
+    "source code.{0,110}(github|gitlab|bitbucket|project home ?page|programming language)",
     sep = "|"
   )
   generic_code_discussion <- paste(

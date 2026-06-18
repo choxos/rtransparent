@@ -121,3 +121,14 @@ test_that("data included within the article/manuscript is detected", {
   # A bare mention of data in a results sentence is not an availability statement.
   expect_false(det("The clinical data of the patients are summarized in Table 1.")$is_open_data)
 })
+
+test_that("analysis code shared in supplementary files is detected", {
+  expect_true(det("The complete Matlab code can be found in the Supplementary Methods.")$is_open_code)
+  expect_true(det("R code and a guide to data and scripts is contained in Additional file 7.")$is_open_code)
+  expect_true(det("Our methods were easy to implement in R, and the code is presented in Supplementary Table 1.")$is_open_code)
+  expect_true(det("The track membrane MATLAB script is provided as Source code 1.")$is_open_code)
+  expect_true(det("Availability of source code: project home page https://github.com/user/tool.")$is_open_code)
+  # Non-analysis "codes" in a supplement are not code sharing.
+  expect_false(det("The qualitative codes are presented in Supplementary Table 2.")$is_open_code)
+  expect_false(det("The diagnosis codes are provided in the supplementary appendix.")$is_open_code)
+})
