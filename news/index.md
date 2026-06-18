@@ -1,5 +1,16 @@
 # Changelog
 
+## rtransparent 0.8.12
+
+- Funding: detect funding declared only through the structured
+  `<funding-group>`. When an article’s funding-group named a funder
+  (`<funding-source>`) and award identifier but carried no narrative
+  `<funding-statement>` and no funding section title, the funding was
+  missed. The named funder is now treated as a funding disclosure (and
+  returned as the funding text). The held-out funding benchmark is
+  unchanged (sensitivity 100%, specificity 95.7%). Added regression
+  tests.
+
 ## rtransparent 0.8.11
 
 - Code sharing: do not mistake medical billing codes for software. A
