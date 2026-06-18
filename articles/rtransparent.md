@@ -25,12 +25,11 @@ statement that triggered the detection.
 | Code sharing | Source code / scripts made available | `rt_data_code` | `rt_data_code_pmc` |
 | AI-use disclosure | A statement that generative AI was (or was not) used to prepare the manuscript | — | `rt_ai_pmc` |
 
-`rt_all_pmc` runs six detectors together in a single pass: COI, funding,
-registration, novelty, replication and AI-use disclosure. Data and code
-sharing are exposed separately through `rt_data_code_pmc`, so a full PMC
-analysis is the two calls together. (`rt_all` covers the first five from
-TXT; data, code and AI are PMC XML only, the last because the year gate
-needs the publication date.)
+`rt_all_pmc` runs all eight detectors together in a single pass: COI,
+funding, registration, novelty, replication, data sharing, code sharing
+and AI-use disclosure. (`rt_all` covers the first five from TXT; data,
+code and AI are PMC XML only, the last because the year gate needs the
+publication date.)
 
 AI-use disclosure is the newest indicator. Journals have asked authors
 to disclose any use of generative AI (ChatGPT and similar) in preparing
@@ -118,12 +117,10 @@ xml_path <- system.file(
 )
 ```
 
-### Many indicators at once
+### All indicators at once
 
-`rt_all_pmc` returns COI, funding, registration, novelty, replication
-and AI-use disclosure in one call, together with the matched statement
-text, the publication `year` and article metadata. (Data and code
-sharing are added by `rt_data_code_pmc`, shown below.)
+`rt_all_pmc` returns all eight indicators in one call, together with the
+matched statement text, the publication `year` and article metadata.
 
 ``` r
 
@@ -132,10 +129,10 @@ all_indicators <- rt_all_pmc(xml_path, remove_ns = TRUE)
 dplyr::glimpse(
   all_indicators[, c("pmid", "year", "is_coi_pred", "is_fund_pred",
                      "is_register_pred", "is_novelty_pred", "is_replication_pred",
-                     "is_ai_pred")]
+                     "is_open_data", "is_open_code", "is_ai_pred")]
 )
 #> Rows: 1
-#> Columns: 8
+#> Columns: 10
 #> $ pmid                <chr> "32171256"
 #> $ year                <int> 2020
 #> $ is_coi_pred         <lgl> TRUE
@@ -143,6 +140,8 @@ dplyr::glimpse(
 #> $ is_register_pred    <lgl> FALSE
 #> $ is_novelty_pred     <lgl> FALSE
 #> $ is_replication_pred <lgl> FALSE
+#> $ is_open_data        <lgl> TRUE
+#> $ is_open_code        <lgl> FALSE
 #> $ is_ai_pred          <lgl> NA
 ```
 
@@ -180,7 +179,9 @@ register$is_register_pred
 
 ### Data and code sharing
 
-Data and code detection is native and needs no external packages.
+`rt_all_pmc` already reports `is_open_data` and `is_open_code`;
+`rt_data_code_pmc` is the focused view that also returns the matched
+statements. Detection is native and needs no external packages.
 
 ``` r
 

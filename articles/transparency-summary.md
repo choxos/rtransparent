@@ -23,7 +23,7 @@ indicators:
 ``` r
 
 library(rtransparent)
-#> rtransparent 0.8.3: identify indicators of transparency (conflicts of interest, funding,
+#> rtransparent 0.8.5: identify indicators of transparency (conflicts of interest, funding,
 #> protocol registration, novelty, replication, and data and code sharing) in
 #> biomedical articles. GitHub: https://github.com/choxos/rtransparent | vignette("rtransparent")
 
@@ -38,14 +38,13 @@ one[, c("pmid", "is_coi_pred", "is_fund_pred", "is_register_pred")]
 #> 1 32171256 TRUE        TRUE         FALSE
 ```
 
-To study a corpus you run a detector over many files and stack the rows
-(for example with
-[`rt_data_code_pmc_list()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc_list.md),
-or `purrr::map_dfr(files, rt_all_pmc)`). The result is one row per
-article with the indicator columns `is_coi_pred`, `is_fund_pred`,
-`is_register_pred`, `is_open_data`, `is_open_code` (and
-`is_novelty_pred`, `is_replication_pred`, `is_ai_pred`). `is_ai_pred` is
-`NA` for articles published before 2023, and
+To study a corpus you run a detector over many files and stack the rows;
+`purrr::map_dfr(files, rt_all_pmc, remove_ns = TRUE)` returns all eight
+indicators per article in one pass. The result is one row per article
+with the indicator columns `is_coi_pred`, `is_fund_pred`,
+`is_register_pred`, `is_open_data`, `is_open_code`, `is_novelty_pred`,
+`is_replication_pred` and `is_ai_pred`. `is_ai_pred` is `NA` for
+articles published before 2023, and
 [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
 drops those `NA`s, so the AI-disclosure prevalence is computed only over
 the articles where the indicator applies.

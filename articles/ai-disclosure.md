@@ -67,9 +67,7 @@ articles where the indicator applies.
 
 [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
 includes the indicator, so a single pass over a corpus already carries
-`year` and `is_ai_pred` alongside COI, funding, registration, novelty
-and replication (data and code sharing come from
-[`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md)):
+`year` and `is_ai_pred` alongside the other seven indicators:
 
 ``` r
 

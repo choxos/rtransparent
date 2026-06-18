@@ -24,7 +24,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,13 +150,11 @@ manuscript</td>
 </tr>
 </tbody>
 </table>
-<p><code>rt_all_pmc</code> runs six detectors together in a single pass:
-COI, funding, registration, novelty, replication and AI-use disclosure.
-Data and code sharing are exposed separately through
-<code>rt_data_code_pmc</code>, so a full PMC analysis is the two calls
-together. (<code>rt_all</code> covers the first five from TXT; data,
-code and AI are PMC XML only, the last because the year gate needs the
-publication date.)</p>
+<p><code>rt_all_pmc</code> runs all eight detectors together in a single
+pass: COI, funding, registration, novelty, replication, data sharing,
+code sharing and AI-use disclosure. (<code>rt_all</code> covers the
+first five from TXT; data, code and AI are PMC XML only, the last
+because the year gate needs the publication date.)</p>
 <p>AI-use disclosure is the newest indicator. Journals have asked
 authors to disclose any use of generative AI (ChatGPT and similar) in
 preparing a manuscript only since 2023, so <code>rt_ai_pmc</code>
@@ -254,23 +252,21 @@ the path with your own file to analyze a different article.</p>
 <span>  <span class="st">"extdata"</span>, <span class="st">"PMID32171256-PMC7071725.xml"</span>, package <span class="op">=</span> <span class="st">"rtransparent"</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
-<h3 id="many-indicators-at-once">Many indicators at once<a class="anchor" aria-label="anchor" href="#many-indicators-at-once"></a>
+<h3 id="all-indicators-at-once">All indicators at once<a class="anchor" aria-label="anchor" href="#all-indicators-at-once"></a>
 </h3>
-<p><code>rt_all_pmc</code> returns COI, funding, registration, novelty,
-replication and AI-use disclosure in one call, together with the matched
-statement text, the publication <code>year</code> and article metadata.
-(Data and code sharing are added by <code>rt_data_code_pmc</code>, shown
-below.)</p>
+<p><code>rt_all_pmc</code> returns all eight indicators in one call,
+together with the matched statement text, the publication
+<code>year</code> and article metadata.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_indicators</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/rt_all_pmc.html">rt_all_pmc</a></span><span class="op">(</span><span class="va">xml_path</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">dplyr</span><span class="fu">::</span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html" class="external-link">glimpse</a></span><span class="op">(</span></span>
 <span>  <span class="va">all_indicators</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"pmid"</span>, <span class="st">"year"</span>, <span class="st">"is_coi_pred"</span>, <span class="st">"is_fund_pred"</span>,</span>
 <span>                     <span class="st">"is_register_pred"</span>, <span class="st">"is_novelty_pred"</span>, <span class="st">"is_replication_pred"</span>,</span>
-<span>                     <span class="st">"is_ai_pred"</span><span class="op">)</span><span class="op">]</span></span>
+<span>                     <span class="st">"is_open_data"</span>, <span class="st">"is_open_code"</span>, <span class="st">"is_ai_pred"</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="op">)</span></span>
 <span><span class="co">#&gt; Rows: 1</span></span>
-<span><span class="co">#&gt; Columns: 8</span></span>
+<span><span class="co">#&gt; Columns: 10</span></span>
 <span><span class="co">#&gt; $ pmid                <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> "32171256"</span></span>
 <span><span class="co">#&gt; $ year                <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> 2020</span></span>
 <span><span class="co">#&gt; $ is_coi_pred         <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> TRUE</span></span>
@@ -278,6 +274,8 @@ below.)</p>
 <span><span class="co">#&gt; $ is_register_pred    <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE</span></span>
 <span><span class="co">#&gt; $ is_novelty_pred     <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE</span></span>
 <span><span class="co">#&gt; $ is_replication_pred <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE</span></span>
+<span><span class="co">#&gt; $ is_open_data        <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> TRUE</span></span>
+<span><span class="co">#&gt; $ is_open_code        <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> FALSE</span></span>
 <span><span class="co">#&gt; $ is_ai_pred          <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span> <span style="color: #BB0000;">NA</span></span></span></code></pre></div>
 <p><code>is_ai_pred</code> is <code>NA</code> here because this example
 article predates 2023; for a 2023 or later article it would be
@@ -308,7 +306,10 @@ article predates 2023; for a 2023 or later article it would be
 <div class="section level3">
 <h3 id="data-and-code-sharing">Data and code sharing<a class="anchor" aria-label="anchor" href="#data-and-code-sharing"></a>
 </h3>
-<p>Data and code detection is native and needs no external packages.</p>
+<p><code>rt_all_pmc</code> already reports <code>is_open_data</code> and
+<code>is_open_code</code>; <code>rt_data_code_pmc</code> is the focused
+view that also returns the matched statements. Detection is native and
+needs no external packages.</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_code</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/rt_data_code_pmc.html">rt_data_code_pmc</a></span><span class="op">(</span><span class="va">xml_path</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span></span>

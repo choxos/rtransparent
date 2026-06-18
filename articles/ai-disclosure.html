@@ -24,7 +24,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.8.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,9 +135,7 @@ the articles where the indicator applies.</p>
 </h2>
 <p><code><a href="../reference/rt_all_pmc.html">rt_all_pmc()</a></code> includes the indicator, so a single pass
 over a corpus already carries <code>year</code> and
-<code>is_ai_pred</code> alongside COI, funding, registration, novelty
-and replication (data and code sharing come from
-<code><a href="../reference/rt_data_code_pmc.html">rt_data_code_pmc()</a></code>):</p>
+<code>is_ai_pred</code> alongside the other seven indicators:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_indicators</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/rt_all_pmc.html">rt_all_pmc</a></span><span class="op">(</span><span class="va">xml_path</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="va">all_indicators</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"pmid"</span>, <span class="st">"year"</span>, <span class="st">"is_ai_pred"</span><span class="op">)</span><span class="op">]</span></span>

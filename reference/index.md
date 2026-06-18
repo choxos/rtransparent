@@ -14,7 +14,7 @@ Detect every indicator in one pass.
 - [`rt_all()`](https://choxos.github.io/rtransparent/reference/rt_all.md)
   : Identify and extract statements of COI, Funding and Registration.
 - [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
-  : Identify and extract statements of COI, Funding and Registration.
+  : Identify and extract all transparency indicators from a PMC XML.
 
 ## Individual indicators (PMC XML)
 
