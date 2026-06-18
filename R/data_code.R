@@ -502,6 +502,12 @@
     # consortium, not analysis code; the word "pipelines" must not flag it.
     "collective are listed here",
     "pipelines? collective",
+    # "Web Resources"/"URLs" sections list external tool and database
+    # homepages as "Name: URL, Name: URL, ..." (a genomics convention, e.g.
+    # ANNOVAR/BWA/GATK/Delly). Three or more "label: URL," entries are a
+    # resource list citing software used, not the authors' own shared code;
+    # a genuine code-availability statement is not formatted this way.
+    "[a-z0-9() -]{1,30}: https?://\\S+,\\s*[a-z0-9() -]{1,30}: https?://\\S+,\\s*[a-z0-9() -]{1,30}: https?://",
     sep = "|"
   )
 

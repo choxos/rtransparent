@@ -93,6 +93,26 @@ test_that("funding absence negation covers common PMC no-funding statements", {
   expect_true(all(rtransparent:::negate_absence_1(absent)))
 })
 
+test_that("open-access publishing funding is not a research-funding acknowledgment", {
+  # "Open access funding ..." pays the article-processing charge; the noun
+  # phrase is stripped so its "funding ... by <consortium>" wording stops
+  # registering as a funding acknowledgment.
+  oa <- c(
+    "Open Access funding enabled and organized by Projekt DEAL.",
+    "Open Access funding enabled and organized by CAUL and its Member Institutions.",
+    "Open access funding provided by IReL."
+  )
+  stripped <- rtransparent:::obliterate_misleading_fund_1(oa)
+  expect_length(rtransparent:::get_fund_acknow_new(stripped), 0)
+  expect_length(rtransparent:::get_fund_acknow(stripped), 0)
+
+  # A genuine grant stated alongside the open-access line is still detected.
+  mixed <- rtransparent:::obliterate_misleading_fund_1(
+    "Open Access funding enabled and organized by Projekt DEAL. This work was funded by the NIH under grant R01CA000000."
+  )
+  expect_gt(length(rtransparent:::get_fund_acknow_new(mixed)), 0)
+})
+
 test_that("get_common_6 detects explicit validation funding phrases", {
   article <- c(
     "This project was funded by Grants NA22OAR4590515 and NA22OAR4590512 by NOAA.",

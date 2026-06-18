@@ -1881,7 +1881,17 @@ obliterate_misleading_fund_1 <- function(article) {
   misleading_fund <- c(
     "travel grant(|s)",
     "grant(|s) for travel(|ling)",
-    "Fund(|s) Collection"
+    "Fund(|s) Collection",
+    # Open-access publishing arrangements ("Open access funding enabled and
+    # organized by Projekt DEAL / CAUL / IReL", "Open access funding provided
+    # by ...") pay the article-processing charge; they are not research
+    # funding. Strip the funding noun phrase so the "funding ... by <consortium>"
+    # clause stops registering as a funding acknowledgment. Any genuine grant in
+    # the same statement keeps its own "funded/supported by ..." wording.
+    # gsub here is case-sensitive, so the leading words carry explicit classes.
+    "[Oo]pen[ -]?[Aa]ccess [Ff]unding",
+    "[Oo]pen[ -]?[Aa]ccess [Pp]ubl(ication|ishing) [Ff]unding",
+    "[Oo]pen[ -]?[Aa]ccess [Pp]ubl(ication|ishing)( [Cc]harges?| [Ff]ees?| [Cc]osts?)"
   )
 
   misleading_fund %>%

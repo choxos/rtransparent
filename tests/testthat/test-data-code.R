@@ -90,6 +90,16 @@ test_that(".detect_data_code rejects code-use and generic reporting text", {
   expect_false(det("Cell-cell communication analysis was performed using the CellChat package (v2.1.2, https://github.com/sqjin/CellChat).")$is_open_code)
   expect_false(det("TCGA data were downloaded using the Bioconductor package TCGAbiolinks.")$is_open_code)
   expect_false(det("Differential expression was performed using Model-based Analysis of Single-cell Transcriptomics (MAST; https://github.com/RGLab/MAST).")$is_open_code)
+  # A "Web Resources"/"URLs" list of external tools is not shared code, even
+  # when it contains third-party GitHub repositories.
+  expect_false(det(paste(
+    "ANNOVAR: https://annovar.openbioinformatics.org/en/latest/,",
+    "BWA: http://bio-bwa.sourceforge.net/,",
+    "Delly: https://github.com/dellytools/delly,",
+    "Lumpy: https://github.com/arq5x/lumpy-sv,",
+    "Manta: https://github.com/Illumina/manta,",
+    "GATK: https://software.broadinstitute.org/gatk/best-practices/."
+  ))$is_open_code)
 })
 
 test_that(".detect_data_code returns the matched statement text", {
