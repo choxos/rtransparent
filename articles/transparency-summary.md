@@ -23,7 +23,7 @@ indicators:
 ``` r
 
 library(rtransparent)
-#> rtransparent 0.6.1: identify indicators of transparency (conflicts of interest, funding,
+#> rtransparent 0.7.0: identify indicators of transparency (conflicts of interest, funding,
 #> protocol registration, novelty, replication, and data and code sharing) in
 #> biomedical articles. GitHub: https://github.com/choxos/rtransparent | vignette("rtransparent")
 
@@ -115,7 +115,7 @@ knitr::kable(
 | Conflicts of interest |       69.6 |        70.0 |   67.3 |    72.6 |
 | Funding disclosure    |       79.0 |        78.8 |   76.4 |    81.1 |
 | Protocol registration |       26.5 |        27.5 |   25.0 |    30.2 |
-| Data sharing          |       16.8 |        22.4 |   19.6 |    25.6 |
+| Data sharing          |       16.8 |        20.9 |   18.2 |    23.8 |
 | Code sharing          |        8.4 |         9.5 |    7.8 |    11.6 |
 | Novelty               |       49.7 |          NA |     NA |      NA |
 | Replication           |        9.1 |          NA |     NA |      NA |
@@ -132,7 +132,7 @@ rt_accuracy
 #> 1 is_coi_pred      Conflicts of interest       0.992       0.995 Serghiou et al…
 #> 2 is_fund_pred     Funding disclosure          0.997       0.981 Serghiou et al…
 #> 3 is_register_pred Protocol registration       0.955       0.997 Serghiou et al…
-#> 4 is_open_data     Data sharing                0.713       0.99  rtransparent n…
+#> 4 is_open_data     Data sharing                0.765       0.99  rtransparent n…
 #> 5 is_open_code     Code sharing                0.835       0.995 rtransparent n…
 ```
 

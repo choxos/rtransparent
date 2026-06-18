@@ -120,15 +120,16 @@ al. (2021) (reproducible under `data-raw/benchmark/`, results in
 | Conflicts of interest | 96.7%    | 94.0%       | 100%        |
 | Funding               | 97.3%    | 100%        | 95.7%       |
 | Protocol registration | 98.1%    | 99.2%       | 96.9%       |
-| Data sharing          | 84.3%    | 71.3%       | 99.0%       |
+| Data sharing          | 87.0%    | 76.5%       | 99.0%       |
 | Code sharing          | 94.1%    | 83.5%       | 99.5%       |
 
 The native code detector exceeds the paper’s reported sensitivity and
 the data detector’s specificity remains high. The native **data
-sensitivity (71%) is still below `oddpub`’s ~84%** on this set, on a
-tail of supplement-only data, reused public-source statements and rare
-phrasings; treat the native data detector as high-precision but not yet
-a complete sensitivity replacement. The data/code values are
+sensitivity (77%) is still below `oddpub`’s ~84%** on this set, on a
+tail of supplement-only data, reused public-source statements and
+“available upon request” data that the detector deliberately excludes as
+not openly shared; treat the native data detector as high-precision but
+not yet a complete sensitivity replacement. The data/code values are
 reproducible benchmark and regression estimates for the native detector,
 not untouched external validation estimates.
 

@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.6.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.7.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +76,7 @@ that kind of summary, using <code><a href="../reference/rt_summary.html">rt_summ
 indicators:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparent" class="external-link">rtransparent</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; rtransparent 0.6.1: identify indicators of transparency (conflicts of interest, funding,</span></span>
+<span><span class="co">#&gt; rtransparent 0.7.0: identify indicators of transparency (conflicts of interest, funding,</span></span>
 <span><span class="co">#&gt; protocol registration, novelty, replication, and data and code sharing) in</span></span>
 <span><span class="co">#&gt; biomedical articles. GitHub: https://github.com/choxos/rtransparent | vignette("rtransparent")</span></span>
 <span></span>
@@ -244,9 +244,9 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <tr class="even">
 <td align="left">Data sharing</td>
 <td align="right">16.8</td>
-<td align="right">22.4</td>
-<td align="right">19.6</td>
-<td align="right">25.6</td>
+<td align="right">20.9</td>
+<td align="right">18.2</td>
+<td align="right">23.8</td>
 </tr>
 <tr class="odd">
 <td align="left">Code sharing</td>
@@ -280,7 +280,7 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> is_coi_pred      Conflicts of interest       0.992       0.995 Serghiou et al…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> is_fund_pred     Funding disclosure          0.997       0.981 Serghiou et al…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> is_register_pred Protocol registration       0.955       0.997 Serghiou et al…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> is_open_data     Data sharing                0.713       0.99  rtransparent n…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> is_open_data     Data sharing                0.765       0.99  rtransparent n…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> is_open_code     Code sharing                0.835       0.995 rtransparent n…</span></span></code></pre></div>
 <p>Novelty and replication have no bundled accuracy estimates here, so
 their corrected values are <code>NA</code>. The data/code values are

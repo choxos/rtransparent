@@ -1,5 +1,26 @@
 # Changelog
 
+## rtransparent 0.7.0
+
+Improvements from a large audit: the tool was run over 1,000 cached
+open-access PMC articles and a sample was hand-checked against the
+human-labeled benchmark.
+
+- Data sharing recall improved. The detector now recognizes “the data
+  supporting the findings are included within the article / within the
+  manuscript” availability statements (previously only the “in the
+  article” wording was matched). On the held-out benchmark of Serghiou
+  et al. (2021), data sensitivity rises from 72.2% to 76.5% with
+  specificity unchanged at 99.0% (PPV 98.9%); `rt_accuracy` was updated.
+- Replication precision improved. Future or required validation framed
+  as not-yet-done (“external validation is essential/needed before
+  clinical implementation”, “this finding requires validation in
+  independent cohorts”) is no longer counted as replication. Validation
+  that was actually performed (external or independent) still counts.
+  The change is gated on a modal or need word so performed validation is
+  preserved.
+- Added regression tests for both changes.
+
 ## rtransparent 0.6.1
 
 Precision and recall fixes from an independent manual review of a sample

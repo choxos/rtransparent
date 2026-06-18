@@ -82,7 +82,7 @@ rt_summary(rt_demo)
 #> 1 is_coi_pred Conf…       1200        835   69.6     66.9       72.1       70.0 
 #> 2 is_fund_pr… Fund…       1200        948   79       76.6       81.2       78.8 
 #> 3 is_registe… Prot…       1200        318   26.5     24.1       29.1       27.5 
-#> 4 is_open_da… Data…       1200        201   16.8     14.7       19.0       22.4 
+#> 4 is_open_da… Data…       1200        201   16.8     14.7       19.0       20.9 
 #> 5 is_open_co… Code…       1200        101    8.42     6.98      10.1        9.54
 #> 6 is_novelty… Nove…       1200        596   49.7     46.8       52.5       NA   
 #> 7 is_replica… Repl…       1200        109    9.08     7.59      10.8       NA   
