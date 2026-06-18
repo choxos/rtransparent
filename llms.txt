@@ -121,7 +121,7 @@ al. (2021) (reproducible under `data-raw/benchmark/`, results in
 | Funding               | 97.3%    | 100%        | 95.7%       |
 | Protocol registration | 98.1%    | 99.2%       | 96.9%       |
 | Data sharing          | 87.0%    | 76.5%       | 99.0%       |
-| Code sharing          | 94.1%    | 83.5%       | 99.5%       |
+| Code sharing          | 95.7%    | 88.1%       | 99.5%       |
 
 The native code detector exceeds the paper’s reported sensitivity and
 the data detector’s specificity remains high. The native **data

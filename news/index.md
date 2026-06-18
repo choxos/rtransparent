@@ -1,5 +1,18 @@
 # Changelog
 
+## rtransparent 0.7.1
+
+- Code sharing recall improved. The detector now recognizes analysis
+  code shared in supplementary or additional files (“the Matlab code can
+  be found in the Supplementary Methods”, “R code is contained in
+  Additional file 7”, “Source code 1”) and explicit “Availability of
+  source code” sections. On the held-out benchmark of Serghiou et
+  al. (2021), code sensitivity rises from 83.5% to 88.1% with
+  specificity unchanged at 99.5% (PPV 99.0%); `rt_accuracy` was updated.
+  The patterns are gated on a language prefix or the word “script” so
+  non-analysis “codes” (ICD, diagnosis, qualitative) are not matched.
+  Added regression tests.
+
 ## rtransparent 0.7.0
 
 Improvements from a large audit: the tool was run over 1,000 cached
