@@ -1,5 +1,17 @@
 # Changelog
 
+## rtransparent 0.8.6
+
+- Data sharing: detect the Frontiers default data-availability statement
+  when it has no supplement clause. “The original contributions
+  presented in the study are included in the article/Supplementary
+  Material” was recognized, but the same statement ending “… included in
+  the article” (for an article with no supplement) was missed. Both mean
+  the data are in the article, so both now count; the highly specific
+  phrasing keeps generic “included in the article” sentences from
+  matching. The held-out data benchmark is unchanged (sensitivity 76.5%,
+  specificity 99.0%). Added a regression test.
+
 ## rtransparent 0.8.5
 
 - [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
