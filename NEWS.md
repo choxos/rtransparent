@@ -1,5 +1,26 @@
 <div align="justify">
 
+# rtransparent 0.9.8
+
+The plain-text detectors now share the PMC detection logic.
+
+* **TXT/PMC parity.** `rt_coi()`, `rt_fund()` and `rt_register()` route their text
+  through the same detection helpers as `rt_coi_pmc()`, `rt_fund_pmc()` and
+  `rt_register_pmc()`, replacing separate and weaker text logic. (`rt_novelty()`
+  and `rt_replication()` already shared their helpers.) Measured on text
+  extracted from the 1000-article 2023 validation set (sensitivity /
+  specificity): registration 46.2 / 98.7 to 90.4 / 98.4, conflicts of interest
+  88.8 / 86.3 to 88.6 / 90.4, funding 79.1 / 89.5 to 79.3 / 90.5. The remaining
+  gap to the PMC detectors is the XML-structural routes (tagged funding groups,
+  footnote types, section titles) that a plain-text file does not carry.
+
+* **New TXT-parity benchmark** (`data-raw/benchmark/build_txt_parity.R`,
+  `inst/benchmark/results_txt_parity.{csv,md}`) measures the TXT detectors
+  against the same hand labels as the PMC benchmark.
+
+* The PMC detectors, the held-out Serghiou et al. (2021) benchmarks and the
+  novelty/replication gold set are unchanged; only the TXT entry points changed.
+
 # rtransparent 0.9.7
 
 Corpus-scale batch processing.

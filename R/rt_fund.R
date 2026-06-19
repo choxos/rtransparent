@@ -1594,15 +1594,8 @@ obliterate_refs_1 <- function(article) {
 #' @export
 rt_fund <- function(filename) {
 
-  # TODO Update to match format of rt_coi_pmc - careful as this change will
-  # duplicate names of functions.
-
-  index <- integer()
-  disclosure <- integer()
-  diff <- integer()
-
-  # TODO: MOVE THIS TO THE pdf2text FUNCTION AND ENCODE AS UTF-8
-  # Fix PDF to txt bugs
+  # Fix common PDF-to-text artifacts (hyphenation and mid-word line breaks),
+  # then split into paragraphs.
   broken_1 <- "([a-z]+)-\n*([a-z]+)"
   broken_2 <- "([a-z]+)(|,|;)\n*([a-z]+)"
   paragraphs <-
@@ -1612,156 +1605,26 @@ rt_fund <- function(filename) {
     purrr::map(strsplit, "\n| \\*") %>%
     unlist() %>%
     utf8::utf8_encode()
+  paragraphs <- paragraphs[nzchar(trimws(paragraphs))]
 
+  # A TXT file carries no XML structure: all text goes to the body and the
+  # XML-structural route is disabled (pmc_fund_ls reports nothing found).
+  # Detection then runs through the same text helpers as rt_fund_pmc(), which
+  # also applies its own conflict/disclosure obliteration internally.
+  article_ls <- list(ack = character(0), body = paragraphs,
+                     footnotes = character(0))
+  pmc_fund_ls <- list(is_fund_pred = FALSE, fund_text = "",
+                      is_fund_pmc_title = NA)
 
-  # TODO: MOVE UP TO obliterate_fullstop_1 TO pdf2text FUNCTION
-  # Remove potentially misleading sequences
-  utf_1 <- "(\\\\[a-z0-9]{3})"   # remove \\xfc\\xbe etc
-  utf_2 <- "(\\\\[a-z])"   # \\f or
-  paragraphs_pruned <-
-    paragraphs %>%
-    purrr::map_chr(gsub, pattern = utf_1, replacement = " ", perl = T) %>%
-    purrr::map_chr(gsub, pattern = utf_2, replacement = "",  perl = T) %>%
-    obliterate_fullstop_1() %>%
-    obliterate_conflict_1() %>%
-    obliterate_disclosure_1()  # Adds 30s overhead! TODO: Place elsehwere
-  # paragraphs_pruned <- obliterate_refs_1(paragraphs_pruned)
-  # to <- .where_refs_txt(paragraphs_pruned)
-  # if (!length(to)) to <- length(paragraphs_pruned)  # TODO: prevent early mention
-
-
-  # Identify sequences of interest
-  index_any <- list()
-  index_any[['support_1']] <- get_support_1(paragraphs_pruned)
-  # index_any[['support_2']] <- get_support_2(paragraphs_pruned)
-  index_any[['support_3']] <- get_support_3(paragraphs_pruned)
-  index_any[['support_4']] <- get_support_4(paragraphs_pruned)
-  index_any[['support_5']] <- get_support_5(paragraphs_pruned)
-  index_any[['support_6']] <- get_support_6(paragraphs_pruned)
-  index_any[['support_7']] <- get_support_7(paragraphs_pruned)
-  index_any[['support_8']] <- get_support_8(paragraphs_pruned)
-  index_any[['support_9']] <- get_support_9(paragraphs_pruned)
-  index_any[['support_10']] <- get_support_10(paragraphs_pruned)
-  index_any[['developed_1']] <- get_developed_1(paragraphs_pruned)
-  index_any[['received_1']] <- get_received_1(paragraphs_pruned)
-  index_any[['received_2']] <- get_received_2(paragraphs_pruned)
-  index_any[['recipient_1']] <- get_recipient_1(paragraphs_pruned)
-  index_any[['authors_1']] <- get_authors_1(paragraphs_pruned)
-  index_any[['authors_2']] <- get_authors_2(paragraphs_pruned)
-  index_any[['thank_1']] <- get_thank_1(paragraphs_pruned)
-  index_any[['thank_2']] <- get_thank_2(paragraphs_pruned)
-  index_any[['fund_1']] <- get_fund_1(paragraphs_pruned)
-  index_any[['fund_2']] <- get_fund_2(paragraphs_pruned)
-  index_any[['fund_3']] <- get_fund_3(paragraphs_pruned)
-  index_any[['supported_1']] <- get_supported_1(paragraphs_pruned)
-  index_any[['financial_1']] <- get_financial_1(paragraphs_pruned)
-  index_any[['financial_2']] <- get_financial_2(paragraphs_pruned)
-  index_any[['financial_3']] <- get_financial_3(paragraphs_pruned)
-  index_any[['grant_1']] <- get_grant_1(paragraphs_pruned)
-  index_any[['french_1']] <- get_french_1(paragraphs_pruned)
-  index_any[['common_1']] <- get_common_1(paragraphs_pruned)
-  index_any[['common_2']] <- get_common_2(paragraphs_pruned)
-  index_any[['common_3']] <- get_common_3(paragraphs_pruned)
-  index_any[['common_4']] <- get_common_4(paragraphs_pruned)
-  index_any[['common_5']] <- get_common_5(paragraphs_pruned)
-  index_any[['acknow_1']] <- get_acknow_1(paragraphs_pruned)
-  index_any[['disclosure_1']] <- get_disclosure_1(paragraphs_pruned)
-  index_any[['disclosure_2']] <- get_disclosure_2(paragraphs_pruned)
-  index <- unlist(index_any) %>% unique() %>% sort()
-
-  # Remove potential mistakes
-  if (!!length(index)) {
-
-    # Funding info can be within COI statements, as per Ioannidis
-    # Comment out until problems arise
-    # if (length(unlist(index_any[c("authors_2")]))) {
-    #   is_coi <- negate_conflict_1(paragraphs_pruned[min(index) - 1])
-    #   index <- index[!is_coi]
-    # }
-
-
-# Difficult to make it work properly because it does not
-    # disclosures <- c("disclosure_1", "disclosure_2")
-    # if (!!length(unlist(index_any[disclosures]))) {
-    #
-    #   for (i in 1:seq_along(disclosures)) {
-    #
-    #     ind <- index_any[[disclosures[i]]]
-    #     is_coi_disclosure <- negate_disclosure_1(paragraphs_pruned[ind])
-    #     index_any[[disclosures[i]]] <- ind[!is_coi_disclosure]
-    #
-    #   }
-    #
-    # }
-
-    is_absent <- negate_absence_1(paragraphs_pruned[index])
-    index <- index[!is_absent]
-
-    # Currently removed b/c I made the disclosure functions more robust to
-    #     statements like "Financial disclosure. Nothing to disclose.
-    # disclosures <- unique(unlist(index_any[c("disclosure_1", "disclosure_2")]))
-    # if (!!length(disclosures)) {
-    #
-    #   if (length(disclosures) == 1) {
-    #
-    #     is_disclosure <- negate_disclosure_2(paragraphs[index])
-    #     index <- index[!is_disclosure]
-    #
-    #   } else {
-    #
-    #     disclosure_text <- paste(paragraphs_pruned[disclosures], collapse = " ")
-    #     is_disclosure <- negate_disclosure_2(disclosure_text)
-    #     index <- setdiff(index, disclosures)
-    #
-    #   }
-    # }
-  }
-
-
-  # Identify potentially missed signals
-  index_fund <- list()
-  if (!length(index)) {
-
-    from <- .where_acknows_txt(paragraphs_pruned)
-    to <- .where_refs_txt(paragraphs_pruned) - 1
-
-    if (!!length(from) & !!length(to)) {
-
-      diff <- to - from
-
-      if (diff < 0) {
-        to <- min(length(paragraphs_pruned), from + 100)
-        diff <- to - from
-      }
-
-      if (diff <= 100) {
-
-        index_fund[['fund']] <- get_fund_acknow(paragraphs_pruned[from:to])
-        index_fund[['fund_new']] <- get_fund_acknow_new(paragraphs_pruned[from:to])
-        index_fund[['project']] <- get_project_acknow(paragraphs_pruned[from:to])
-        index <- unlist(index_fund) %>% magrittr::add(from - 1)
-        if (!!length(index)) {
-          is_absent <- negate_absence_1(paragraphs_pruned[index])
-          index <- index[!is_absent]
-        }
-      }
-    }
-  }
-
-  index <- sort(unique(index))
-  is_funded_pred <- !!length(index)
-  funding_text <- paragraphs[index] %>% paste(collapse = " ")
-  if (is_funded_pred && negate_absence_1(funding_text)) {
-    is_funded_pred <- FALSE
-    funding_text <- ""
-  }
-
-  index_any %<>% purrr::map(function(x) !!length(x))
-  index_fund %<>% purrr::map(function(x) !!length(x))
+  res <- .rt_fund_pmc(article_ls, pmc_fund_ls)
 
   article <- basename(filename) %>% stringr::word(sep = "\\.")
   pmid <- gsub("^.*PMID([0-9]+).*$", "\\1", filename)
 
-  results <- tibble::tibble(article, pmid, is_funded_pred, funding_text)
-  tibble::as_tibble(c(results, index_any, index_fund))
+  tibble::tibble(
+    article,
+    pmid,
+    is_funded_pred = res$is_fund_pred,
+    funding_text = res$fund_text
+  )
 }

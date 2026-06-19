@@ -1214,171 +1214,47 @@ get_prospero_redacted_1 <- function(article) {
 #' @export
 rt_register <- function(filename) {
 
-  # TODO: Consider removing all :punct: apart from dots (e.g. author(s))
-
   article <- basename(filename) %>% stringr::word(sep = "\\.")
   pmid <- gsub("^.*PMID([0-9]+).*$", "\\1", filename)
 
-  index <- integer()
-  is_register_pred <- FALSE
-  register_text <- ""
-  is_relevant <- NA
-  is_NCT <- NA
-  is_explicit <- NA
-  is_method <- NA
+  dict <- .create_synonyms()
 
+  # Fix common PDF-to-text artifacts (hyphenation and mid-word/number line
+  # breaks), then split into paragraphs.
+  broken_1 <- "([a-z]+)-\n+([a-z]+)"
+  broken_2 <- "([a-z]+)(|,|;)\n+([a-z]+)"
+  broken_3 <- "([0-9]+)-\n+([0-9]+)"
+  paragraphs <-
+    readr::read_file(filename) %>%
+    purrr::map(gsub, pattern = broken_1, replacement = "\\1\\2") %>%
+    purrr::map(gsub, pattern = broken_2, replacement = "\\1\\3") %>%
+    purrr::map(gsub, pattern = broken_3, replacement = "\\1\\2") %>%
+    purrr::map(strsplit, "\n| \\*") %>%
+    unlist() %>%
+    utf8::utf8_encode()
+  paragraphs <- paragraphs[nzchar(trimws(paragraphs))]
 
-  file_text <- readr::read_file(filename)
+  # A TXT file carries no XML structure. Route all text through the Methods slot
+  # so the shared core's is_method gate passes, and disable the XML-structural
+  # route. Detection then runs through the same helpers as rt_register_pmc().
+  # Without an article-type tag we cannot exclude reviews, so every TXT article
+  # is treated as research (is_research = TRUE).
+  article_ls <- list(ack = character(0), methods = paragraphs,
+                     abstract = character(0), footnotes = character(0))
+  pmc_reg_ls <- list(is_research = TRUE, is_review = FALSE,
+                     is_register_pred = FALSE, register_text = "",
+                     type = "", is_reg_pmc_title = FALSE)
 
-  is_relevant <- any(grepl("\\b(|-)([Rr]egist|(|[Cc]linical)[Tt]rial|NCT[0-9]{8}|ISRCTN[0-9]{8}|ACTRN[0-9]{14}|DRKS[0-9]{8}|IRCT[0-9A-Z]+|UMIN[0-9]{9}|ChiCTR|INPLASY|PROSPERO|Open Science Framework|OSF|osf\\.io)", file_text))
-  if (is_relevant) {
+  res <- .rt_register_pmc(article_ls, pmc_reg_ls, dict)
 
-    # TODO: MOVE THIS TO THE pdf2text FUNCTION AND ENCODE AS UTF-8
-    # Fix PDF to txt bugs
-    broken_1 <- "([a-z]+)-\n+([a-z]+)"
-    broken_2 <- "([a-z]+)(|,|;)\n+([a-z]+)"
-    broken_3 <- "([0-9]+)-\n+([0-9]+)"
-    paragraphs <-
-      file_text %>%
-      purrr::map(gsub, pattern = broken_1, replacement = "\\1\\2") %>%
-      purrr::map(gsub, pattern = broken_2, replacement = "\\1\\3") %>%
-      purrr::map(gsub, pattern = broken_3, replacement = "\\1\\2") %>%
-      purrr::map(strsplit, "\n| \\*") %>%
-      unlist() %>%
-      utf8::utf8_encode()
-
-
-    # Stop if this is not an empirical study or a protocol (e.g. a review)
-    from <- find_methods(paragraphs)
-    is_method <- !!length(from)
-
-    # Previously removed b/c I thought a correspondence article was wrongly
-    # classified - I was wrong and that was a TN
-    if (!is_method) {
-
-      return(tibble::tibble(
-        article,
-        pmid,
-        is_register_pred,
-        register_text,
-        is_relevant,
-        is_method,
-        is_NCT,
-        is_explicit
-      ))
-
-    }
-
-
-    # TODO: MOVE UP TO obliterate_fullstop_1 TO pdf2text FUNCTION
-    # Remove potentially misleading sequences
-    utf_1 <- "(\\\\[a-z0-9]{3})"   # remove \\xfc\\xbe etc
-    utf_2 <- "(\\\\[a-z])"   # \\f or
-    paragraphs_pruned <-
-      paragraphs %>%
-      purrr::map_chr(gsub, pattern = utf_1, replacement = " ", perl = T) %>%
-      purrr::map_chr(gsub, pattern = utf_2, replacement = "",  perl = T) %>%
-      obliterate_references_1() %>%
-      obliterate_fullstop_1() %>%
-      obliterate_semicolon_1() %>%  # adds minimal overhead
-      obliterate_comma_1() %>%   # adds minimal overhead
-      obliterate_apostrophe_1() %>%
-      obliterate_hash_1()
-
-
-    is_NCT <- any(grepl("NCT[0-9]{8}", file_text))
-
-
-    # TODO There are 4 highly overlapping reg_title_ functions, fix!
-    # Identify sequences of interest
-    index_any <- list()
-    # index_any[["ct_1"]] <- get_ct_1(paragraphs_pruned)
-    index_any[["ct_4"]] <- get_ct_4(paragraphs_pruned)
-    index_any[["prospero_1"]] <- get_prospero_1(paragraphs_pruned)
-    index_any[["prospero_redacted_1"]] <- get_prospero_redacted_1(paragraphs_pruned)
-    index_any[["registered_1"]] <- get_registered_1(paragraphs_pruned)
-    index_any[["registered_2"]] <- get_registered_2(paragraphs_pruned)
-    index_any[["registered_3"]] <- get_registered_3(paragraphs_pruned)
-    index_any[["registered_4"]] <- get_registered_4(paragraphs_pruned)
-    index_any[["registered_5"]] <- get_registered_5(paragraphs_pruned)
-    index_any[["not_registered_1"]] <- get_not_registered_1(paragraphs_pruned)
-    index_any[["registration_1"]] <- get_registration_1(paragraphs_pruned)
-    index_any[["registration_2"]] <- get_registration_2(paragraphs_pruned)
-    index_any[["registration_3"]] <- get_registration_3(paragraphs_pruned)
-    index_any[["registration_4"]] <- get_registration_4(paragraphs_pruned)
-    index_any[["registry_1"]] <- get_registry_1(paragraphs_pruned)
-    index_any[["reg_title_1"]] <- get_reg_title_1(paragraphs_pruned)
-    index_any[["reg_title_2"]] <- get_reg_title_2(paragraphs_pruned)
-    index_any[["reg_title_3"]] <- get_reg_title_3(paragraphs_pruned)
-    index_any[["reg_title_4"]] <- get_reg_title_4(paragraphs_pruned)
-    index_any[["funded_ct_1"]] <- get_funded_ct_1(paragraphs_pruned)
-    index_any[["isrctn_1"]]   <- get_isrctn_1(paragraphs_pruned)
-    index_any[["anzctr_1"]]   <- get_anzctr_1(paragraphs_pruned)
-    index_any[["drks_1"]]     <- get_drks_1(paragraphs_pruned)
-    index_any[["irct_1"]]     <- get_irct_1(paragraphs_pruned)
-    index_any[["umin_1"]]     <- get_umin_1(paragraphs_pruned)
-    index_any[["chictr_1"]]   <- get_chictr_1(paragraphs_pruned)
-    index_any[["inplasy_1"]]  <- get_inplasy_1(paragraphs_pruned)
-    index_any[["osf_protocol_1"]] <- get_osf_protocol_1(paragraphs_pruned)
-    index_any[["osf_preregistered_1"]] <- get_osf_preregistered_1(paragraphs_pruned)
-    index <- unlist(index_any) %>% unique() %>% sort()
-
-
-    # Apply a more sensitive search in Methods
-    index_method <- list()
-    if (!length(index)) {
-
-      # from <- find_methods(paragraphs_pruned)
-
-      if (!!length(from)) {
-
-        to <- from + 10
-
-        paragraphs_pruned[from:to] %<>% lapply(obliterate_refs_1)
-
-        index_method[["ct_2"]] <- get_ct_2(paragraphs_pruned[from:to])
-        index_method[["protocol_1"]] <- get_protocol_1(paragraphs_pruned[from:to])
-        index <- unlist(index_method) %>% magrittr::add(from - 1)
-      }
-    }
-
-
-    is_register_pred <- !!length(index)
-    register_text <- paragraphs[index] %>% paste(collapse = " ")
-    if (is_register_pred && .is_false_register_statement(register_text)) {
-      is_register_pred <- FALSE
-      register_text <- ""
-      index <- integer()
-    }
-
-    if (is_register_pred) {
-
-      is_explicit <- !!length(unlist(index_any))
-
-    }
-
-
-  } else {
-
-    is_register_pred <- FALSE
-    register_text <- ""
-
-  }
-
-  index_any %<>% purrr::map(function(x) !!length(x))
-  index_method %<>% purrr::map(function(x) !!length(x))
-
-  results <-
-    tibble::tibble(
-      article,
-      pmid,
-      is_register_pred,
-      register_text,
-      is_relevant,
-      is_method,
-      is_NCT,
-      is_explicit
-    )
-
-  tibble::as_tibble(c(results, index_any, index_method))
+  tibble::tibble(
+    article,
+    pmid,
+    is_register_pred = res$is_register_pred,
+    register_text = res$register_text,
+    is_relevant = res$is_relevant_reg,
+    is_method = res$is_method,
+    is_NCT = res$is_NCT,
+    is_explicit = res$is_explicit_reg
+  )
 }
