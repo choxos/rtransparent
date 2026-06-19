@@ -177,3 +177,19 @@ test_that("future or required validation is not counted as replication", {
                  info = paste("performed validation should not be suppressed:", s))
   }
 })
+
+test_that(".negate_replication_1 suppresses limitations, editorial and negative-result mentions", {
+  drop <- c(
+    "Strengths of our study include rigorous time-series modeling.",
+    "A third limitation concerns the validity of our wide confidence intervals.",
+    "Ensuring the reproducibility of research findings is the cornerstone of scientific integrity.",
+    "These effects were not always replicated in the aligned materials.",
+    "We assessed the efficacy and validity of the machine learning algorithm."
+  )
+  expect_true(all(rtransparent:::.negate_replication_1(drop)))
+  keep <- c(
+    "We replicated the findings of Smith et al. in an independent external validation cohort.",
+    "The model was externally validated in a separate prospective cohort from another country."
+  )
+  expect_false(any(rtransparent:::.negate_replication_1(keep)))
+})

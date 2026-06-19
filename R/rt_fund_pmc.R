@@ -1739,6 +1739,7 @@ negate_absence_1 <- function(article) {
         # "Funding" yet declares absence, so it otherwise leaks through the title route.
         "\\bnot declared a specific grant\\b",
         "\\bno funds,?\\s*(grants?|or other support)",
+        "\\b(did|do|does|have|has|had) not receive(d)? any (external |specific |dedicated )?(funding|funds|financial support|grant)",
         "\\bno funds (have been|have not been|were|was) received\\b",
         "\\b(did|do|does) not receive (any )?funds\\b",
         "\\b(have|has|had) not received any (funding|funds|financial)\\b",

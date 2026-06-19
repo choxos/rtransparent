@@ -348,6 +348,32 @@ rt_replication <- function(filename) {
     "\\bhost .{0,40}replication\\b",
     "\\bfadv-?[0-9]? replication\\b",
     "\\bhpv replication\\b",
+    # Limitations / strengths discussion paragraphs: a "validity"/"reproducible"
+    # mention here is a caveat, not a replication performed in the study.
+    "\\b(limitations?|strengths?) of (our|the|this|these|the present) (stud|work|paper|analys|research|investigation|approach|method|finding|design)",
+    "\\b(first|second|third|fourth|fifth|another|main|key|important|major|final|further|one|a) (limitation|strength)\\b",
+    "\\b(study|analysis|work|paper) (had|has|have) (several |some |a number of |important |notable |key |a few )?(limitations|strengths|weaknesses)",
+    "\\bstrengths and (limitations|weaknesses)\\b",
+    # Editorial / aspirational statements about reproducibility as a value, not a
+    # replication performed.
+    "\\breproducibilit(y|ies) (is|are|of)?.{0,60}(cornerstone|integrity|advocat|transparen|crucial|essential|pillar|foundation|important|key|paramount|priorit)",
+    "\\b(ensure|ensuring|promote|promoting|improve|improving|enhance|enhancing|advocate|advocating for) .{0,30}reproducib",
+    # Future / internal next-study framing.
+    "\\bthe (aim|goal|objective|purpose) of (the|our|this) (second|third|next|follow-?up|current) (study|experiment|analysis|paper)",
+    # Negative result: something did NOT replicate / reproduce.
+    "\\bnot (always |consistently |fully |necessarily |readily |universally )?(be |been )?(replicated|reproduced)\\b",
+    "\\bfailed to (be )?(replicated|reproduced)\\b",
+    # A review assessing the "validity" of methods/algorithms, not a replication.
+    "\\befficacy and validity\\b",
+    "\\bvalidity of (the |these |ml |machine learning |the proposed )?(algorithm|model|method|approach|tool|score|instrument)",
+    # Comparison to the authors' own previous structures/results, not a new
+    # replication.
+    "\\bidentical to (those|that|the ones?) .{0,30}(our|the|a) (previous|prior|earlier) (study|work|paper|report|publication)",
+    # A list of machine-learning evaluation metrics (model evaluation, not study
+    # replication).
+    "(accuracy|precision|recall|sensitivity|specificity).{0,30}(precision|recall|sensitivity|specificity|f1[ -]?score|auc).{0,30}(specificity|f1[ -]?score|auc|accuracy)",
+    # Reproduced within the arms of a single trial (internal, not independent).
+    "(replicated|reproduced)\\b.{0,40}\\b(in|across) (both|each|the two|all) (arm|group|cohort)s?\\b",
     sep = "|"
   )
 
