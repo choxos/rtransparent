@@ -1,4 +1,4 @@
-det <- function(x) rtransparent:::.detect_data_code(x)
+det <- function(x) rtransparency:::.detect_data_code(x)
 
 test_that(".detect_data_code detects data sharing statements", {
   expect_true(det("All sequencing data have been deposited in GEO under accession GSE12345.")$is_open_data)
@@ -200,7 +200,7 @@ test_that("a sequencing-consortium author list is not code sharing", {
 })
 
 test_that(".extract_data_code_links pulls and normalizes shared identifiers", {
-  ex <- rtransparent:::.extract_data_code_links
+  ex <- rtransparency:::.extract_data_code_links
   # DOI -> doi.org URL
   expect_true("https://doi.org/10.5281/zenodo.8169597" %in%
                 ex("archived on Zenodo (doi: 10.5281/zenodo.8169597)."))
@@ -219,7 +219,7 @@ test_that(".extract_data_code_links pulls and normalizes shared identifiers", {
 
 test_that("rt_data_code_pmc reports the extracted data/code links", {
   xml <- system.file("extdata", "PMID32171256-PMC7071725.xml",
-                     package = "rtransparent")
+                     package = "rtransparency")
   skip_if(xml == "")
   r <- rt_data_code_pmc(xml, remove_ns = TRUE)
   expect_true(all(c("open_data_links", "open_code_links") %in% names(r)))

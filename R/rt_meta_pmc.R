@@ -13,7 +13,7 @@
 #' @examples
 #' \dontrun{
 #' filepath <- system.file(
-#'   "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+#'   "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 #' )
 #' rt_meta_pmc(filepath, remove_ns = TRUE)
 #' }

@@ -28,14 +28,14 @@ rt_read_pdf <- function(filepath){
     stop("The filepath of a PDF file should end in '.pdf'.")
   }
 
-  # Convert PDF to TXT
-  tryCatch({
-    command <- paste0('pdftotext ', '\"', filepath, '\" ', '\"', "-", '\"')
-    txt_as_vector <- system(command, intern = T, wait = T)
-  },
-    error = function(e) {
-      stop("Could not convert PDF to text.")
-    }
+  if (Sys.which("pdftotext") == "") {
+    stop("The 'pdftotext' utility (from poppler) was not found on the PATH.")
+  }
+
+  # Convert PDF to TXT; pdftotext writes to stdout when the output path is "-".
+  txt_as_vector <- tryCatch(
+    system2("pdftotext", args = c(shQuote(filepath), "-"), stdout = TRUE),
+    error = function(e) stop("Could not convert PDF to text.")
   )
 
   # Collapse into appropriate format

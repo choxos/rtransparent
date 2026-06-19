@@ -11,7 +11,7 @@ test_that("a funding-group naming a funder counts even without a statement", {
     "<award-id>107-2314-B-075-032</award-id></award-group>",
     "</funding-group></article-meta></front><body><p>Methods.</p></body></article>"
   ))
-  res <- rtransparent:::.get_fund_pmc(xml, rtransparent:::.create_synonyms())
+  res <- rtransparency:::.get_fund_pmc(xml, rtransparency:::.create_synonyms())
   expect_true(res$is_fund_pred)
   expect_true(grepl("Ministry of Science", res$fund_text))
 
@@ -19,7 +19,7 @@ test_that("a funding-group naming a funder counts even without a statement", {
   xml0 <- xml2::read_xml(
     "<article><front><article-meta><funding-group/></article-meta></front><body><p>x</p></body></article>"
   )
-  expect_false(rtransparent:::.get_fund_pmc(xml0, rtransparent:::.create_synonyms())$is_fund_pred)
+  expect_false(rtransparency:::.get_fund_pmc(xml0, rtransparency:::.create_synonyms())$is_fund_pred)
 })
 
 test_that("rt_fund_pmc rejects no-funding articles and matches rt_all_pmc", {
@@ -29,14 +29,14 @@ test_that("rt_fund_pmc rejects no-funding articles and matches rt_all_pmc", {
   for (id in c("PMC5998853", "PMC6247086")) {
     f <- file.path(fx, paste0(id, ".xml"))
     skip_if(!file.exists(f))
-    r <- rtransparent::rt_fund_pmc(f, remove_ns = TRUE)
+    r <- rtransparency::rt_fund_pmc(f, remove_ns = TRUE)
     expect_false(isTRUE(r$is_fund_pred[1]))
     expect_equal(nchar(r$fund_text[1]), 0)
   }
 
   f <- file.path(fx, "PMC5684277.xml")
   if (file.exists(f)) {
-    r <- rtransparent::rt_fund_pmc(f, remove_ns = TRUE)
+    r <- rtransparency::rt_fund_pmc(f, remove_ns = TRUE)
     expect_true(isTRUE(r$is_fund_pred[1]))
   }
 })
@@ -46,7 +46,7 @@ test_that("rt_fund_pmc never predicts funding without evidence", {
   skip_if(!dir.exists(fx), "no benchmark fixtures")
 
   for (f in list.files(fx, "\\.xml$", full.names = TRUE)) {
-    r <- rtransparent::rt_fund_pmc(f, remove_ns = TRUE)
+    r <- rtransparency::rt_fund_pmc(f, remove_ns = TRUE)
     if (isTRUE(r$is_fund_pred[1])) {
       evidence <- nchar(r$fund_text[1]) > 0 ||
         isTRUE(r$is_fund_pmc_group[1]) ||
@@ -54,7 +54,7 @@ test_that("rt_fund_pmc never predicts funding without evidence", {
       expect_true(evidence, info = basename(f))
     }
 
-    a <- rtransparent::rt_all_pmc(f, remove_ns = TRUE)
+    a <- rtransparency::rt_all_pmc(f, remove_ns = TRUE)
     if ("is_fund_pred" %in% names(a)) {
       expect_identical(isTRUE(r$is_fund_pred[1]), isTRUE(a$is_fund_pred[1]),
                        info = basename(f))
@@ -96,7 +96,7 @@ test_that("funding absence negation covers common PMC no-funding statements", {
     "Funding Information"
   )
 
-  expect_true(all(rtransparent:::negate_absence_1(absent)))
+  expect_true(all(rtransparency:::negate_absence_1(absent)))
 })
 
 test_that("open-access publishing funding is not a research-funding acknowledgment", {
@@ -108,15 +108,15 @@ test_that("open-access publishing funding is not a research-funding acknowledgme
     "Open Access funding enabled and organized by CAUL and its Member Institutions.",
     "Open access funding provided by IReL."
   )
-  stripped <- rtransparent:::obliterate_misleading_fund_1(oa)
-  expect_length(rtransparent:::get_fund_acknow_new(stripped), 0)
-  expect_length(rtransparent:::get_fund_acknow(stripped), 0)
+  stripped <- rtransparency:::obliterate_misleading_fund_1(oa)
+  expect_length(rtransparency:::get_fund_acknow_new(stripped), 0)
+  expect_length(rtransparency:::get_fund_acknow(stripped), 0)
 
   # A genuine grant stated alongside the open-access line is still detected.
-  mixed <- rtransparent:::obliterate_misleading_fund_1(
+  mixed <- rtransparency:::obliterate_misleading_fund_1(
     "Open Access funding enabled and organized by Projekt DEAL. This work was funded by the NIH under grant R01CA000000."
   )
-  expect_gt(length(rtransparent:::get_fund_acknow_new(mixed)), 0)
+  expect_gt(length(rtransparency:::get_fund_acknow_new(mixed)), 0)
 })
 
 test_that("an AOSSM conflict-of-interest disclosure is not read as funding", {
@@ -127,14 +127,14 @@ test_that("an AOSSM conflict-of-interest disclosure is not read as funding", {
     "of interest or source of funding: J.L.C. has received research support from",
     "Vericel and Ossur and is a consultant for Arthrex."
   )
-  stripped <- rtransparent:::obliterate_conflict_3(coi)
+  stripped <- rtransparency:::obliterate_conflict_3(coi)
   expect_false(grepl("research support", stripped, ignore.case = TRUE))
-  expect_length(rtransparent:::get_fund_acknow(stripped), 0)
-  expect_length(rtransparent:::get_fund_acknow_new(stripped), 0)
+  expect_length(rtransparency:::get_fund_acknow(stripped), 0)
+  expect_length(rtransparency:::get_fund_acknow_new(stripped), 0)
 
   # a genuine funding sentence (no disclosure preamble) is left untouched
   real <- "This study received funding from the National Institutes of Health (R01CA000000)."
-  expect_identical(rtransparent:::obliterate_conflict_3(real), real)
+  expect_identical(rtransparency:::obliterate_conflict_3(real), real)
 })
 
 test_that("get_common_6 detects explicit validation funding phrases", {
@@ -149,7 +149,7 @@ test_that("get_common_6 detects explicit validation funding phrases", {
     "Research supports hope's benefits."
   )
 
-  idx <- rtransparent:::get_common_6(article)
+  idx <- rtransparency:::get_common_6(article)
   expect_equal(idx, 1:6)
 })
 
@@ -160,18 +160,18 @@ test_that("positive funding clauses override local no-industry clauses", {
     "Funding for the work was provided by PEPFAR via TB/HIV Care, grant no. NU2GGH001933-01."
   )
 
-  expect_true(rtransparent:::has_positive_fund_text(mixed))
-  expect_true(rtransparent:::negate_absence_1(mixed))
+  expect_true(rtransparency:::has_positive_fund_text(mixed))
+  expect_true(rtransparency:::negate_absence_1(mixed))
 
   pure_absence <- "Funding: The authors received no specific funding for manuscript."
-  expect_false(rtransparent:::has_positive_fund_text(pure_absence))
-  expect_true(rtransparent:::can_scan_after_negated_fund_tag(pure_absence))
+  expect_false(rtransparency:::has_positive_fund_text(pure_absence))
+  expect_true(rtransparency:::can_scan_after_negated_fund_tag(pure_absence))
 
   no_grant <- paste(
     "Funding This research did not receive any specific grant from funding agencies",
     "in the public, commercial, or not-for-profit sectors."
   )
-  expect_false(rtransparent:::has_positive_fund_text(no_grant))
+  expect_false(rtransparency:::has_positive_fund_text(no_grant))
 })
 
 test_that("BMJ 'have not declared a specific grant' is an absence-of-funding declaration", {
@@ -179,22 +179,22 @@ test_that("BMJ 'have not declared a specific grant' is an absence-of-funding dec
     "Funding: The authors have not declared a specific grant for this research",
     "from any funding agency in the public, commercial or not-for-profit sectors."
   )
-  expect_true(rtransparent:::negate_absence_1(bmj))
-  expect_false(rtransparent:::has_positive_fund_text(bmj))
+  expect_true(rtransparency:::negate_absence_1(bmj))
+  expect_false(rtransparency:::has_positive_fund_text(bmj))
 
   # A genuinely funded statement must still read as positive, not absence.
   funded <- "Funding: This work was supported by the Wellcome Trust, grant 12345."
-  expect_false(rtransparent:::negate_absence_1(funded))
+  expect_false(rtransparency:::negate_absence_1(funded))
 })
 
 test_that("'not financially supported' and non-English no-funding read as absence", {
-  expect_true(rtransparent:::negate_absence_1(
+  expect_true(rtransparency:::negate_absence_1(
     "This study was not financially supported by any funding or institutions."))
-  expect_true(rtransparent:::negate_absence_1(
+  expect_true(rtransparency:::negate_absence_1(
     "Fontes de financiamento: O presente estudo nao teve fontes de financiamento externas."))
-  expect_true(rtransparent:::negate_absence_1("El estudio no recibio financiacion."))
+  expect_true(rtransparency:::negate_absence_1("El estudio no recibio financiacion."))
   # A real funder must not read as absence.
-  expect_false(rtransparent:::negate_absence_1(
+  expect_false(rtransparency:::negate_absence_1(
     "Funding: supported by the National Natural Science Foundation of China (No. 81871908)."))
 })
 
@@ -204,21 +204,21 @@ test_that("further no-funding phrasings read as absence", {
     "This work was not supported by any organizations.",
     "Funding: The authors declare that there were no external sources of funding.",
     "This research was conducted without the receipt of any dedicated grant or financial support."
-  )) expect_true(rtransparent:::negate_absence_1(s), info = s)
-  expect_false(rtransparent:::negate_absence_1(
+  )) expect_true(rtransparency:::negate_absence_1(s), info = s)
+  expect_false(rtransparency:::negate_absence_1(
     "This work was supported by the National Institutes of Health (R01CA000000)."))
 })
 
 test_that("'did not receive any external financial support' reads as absence", {
-  expect_true(rtransparent:::negate_absence_1(
+  expect_true(rtransparency:::negate_absence_1(
     "Funding: The authors did not receive any external financial support for this work."))
-  expect_false(rtransparent:::negate_absence_1(
+  expect_false(rtransparency:::negate_absence_1(
     "Funding: This work was supported by the Dutch Research Council (NWO)."))
 })
 
 test_that("Portuguese 'nao reportam qualquer financiamento' reads as absence", {
-  expect_true(rtransparent:::negate_absence_1(
+  expect_true(rtransparency:::negate_absence_1(
     "Financiamento: Os autores nao reportam qualquer financiamento."))
-  expect_false(rtransparent:::negate_absence_1(
+  expect_false(rtransparency:::negate_absence_1(
     "Financiamento: financiado pela CAPES, codigo 001."))
 })

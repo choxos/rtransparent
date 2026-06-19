@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-# Accuracy benchmark for rtransparent (COI, funding, registration).
+# Accuracy benchmark for rtransparency (COI, funding, registration).
 #
 # Reproduces the validation approach of Serghiou et al. (2021, PLOS Biology,
 # doi:10.1371/journal.pbio.3001107): for each human-labeled validation article,
@@ -143,7 +143,7 @@ reference <- tryCatch(
   error = function(e) NULL
 )
 
-pkg_version <- as.character(utils::packageVersion("rtransparent"))
+pkg_version <- as.character(utils::packageVersion("rtransparency"))
 
 results <- list()
 for (k in names(indicators)) {
@@ -193,7 +193,7 @@ headline <- c("Sensitivity", "Specificity", "PPV", "NPV", "Accuracy")
 
 con <- file(file.path(OUT, "results.md"), open = "w")
 writeLines(c(
-  "# rtransparent accuracy benchmark",
+  "# rtransparency accuracy benchmark",
   "",
   sprintf("Package version %s. Detectors run on NCBI PMC full-text XML for the",
           pkg_version),

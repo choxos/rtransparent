@@ -7,10 +7,10 @@ utils::globalVariables(c(".", "rt_accuracy"))
 .onAttach <- function(libname, pkgname) {
   version <- utils::packageVersion(pkgname)
   packageStartupMessage(sprintf(paste0(
-    "rtransparent %s: identify indicators of transparency (conflicts of ",
+    "rtransparency %s: identify indicators of transparency (conflicts of ",
     "interest, funding,\nprotocol registration, novelty, replication, and data ",
     "and code sharing) in\nbiomedical articles. GitHub: ",
-    "https://github.com/choxos/rtransparent | vignette(\"rtransparent\")"),
+    "https://github.com/choxos/rtransparency | vignette(\"rtransparency\")"),
     version
   ))
   invisible()

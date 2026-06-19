@@ -8,10 +8,10 @@ test_that(".which_novelty_first_time_1 detects 'for the first time'", {
     "No significant differences were observed."
   )
 
-  idx_pos <- rtransparent:::.which_novelty_first_time_1(article_positive)
+  idx_pos <- rtransparency:::.which_novelty_first_time_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'for the first time'")
 
-  idx_neg <- rtransparent:::.which_novelty_first_time_1(article_negative)
+  idx_neg <- rtransparency:::.which_novelty_first_time_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag non-novelty text")
 })
 
@@ -30,10 +30,10 @@ test_that(".which_novelty_first_to_1 detects 'first to show/demonstrate'", {
     "These findings extend previous observations."
   )
 
-  idx_pos <- rtransparent:::.which_novelty_first_to_1(article_positive)
+  idx_pos <- rtransparency:::.which_novelty_first_to_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'first to demonstrate/report'")
 
-  idx_neg <- rtransparent:::.which_novelty_first_to_1(article_negative)
+  idx_neg <- rtransparency:::.which_novelty_first_to_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag non-novelty text")
 })
 
@@ -49,10 +49,10 @@ test_that(".which_novelty_previously_1 detects 'previously unknown/unreported'",
     "Earlier work demonstrated the same effect."
   )
 
-  idx_pos <- rtransparent:::.which_novelty_previously_1(article_positive)
+  idx_pos <- rtransparency:::.which_novelty_previously_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'previously unknown/unreported'")
 
-  idx_neg <- rtransparent:::.which_novelty_previously_1(article_negative)
+  idx_neg <- rtransparency:::.which_novelty_previously_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag 'previous studies' as novelty")
 })
 
@@ -71,10 +71,10 @@ test_that(".which_novelty_novel_1 detects 'novel finding/approach'", {
     "Novel targeted treatments are becoming increasingly expensive."
   )
 
-  idx_pos <- rtransparent:::.which_novelty_novel_1(article_positive)
+  idx_pos <- rtransparency:::.which_novelty_novel_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'novel finding/approach'")
 
-  idx_neg <- rtransparent:::.which_novelty_novel_1(article_negative)
+  idx_neg <- rtransparency:::.which_novelty_novel_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag non-novelty text")
 })
 
@@ -89,10 +89,10 @@ test_that(".which_novelty_knowledge_1 detects 'to our knowledge'", {
     "The results were replicated in an independent cohort."
   )
 
-  idx_pos <- rtransparent:::.which_novelty_knowledge_1(article_positive)
+  idx_pos <- rtransparency:::.which_novelty_knowledge_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'to our knowledge'")
 
-  idx_neg <- rtransparent:::.which_novelty_knowledge_1(article_negative)
+  idx_neg <- rtransparency:::.which_novelty_knowledge_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag non-novelty text")
 })
 
@@ -102,7 +102,7 @@ test_that(".rt_novelty_pmc quick filter admits specific novel claim terms", {
     abstract = list("In summary, this study provides novel evidence for the regulatory axis."),
     body_all = list("The remaining text describes ordinary methods.")
   )
-  result <- rtransparent:::.rt_novelty_pmc(article_ls)
+  result <- rtransparency:::.rt_novelty_pmc(article_ls)
   expect_true(result$is_novelty_pred)
   expect_match(result$novelty_text, "novel evidence", ignore.case = TRUE)
 
@@ -110,18 +110,18 @@ test_that(".rt_novelty_pmc quick filter admits specific novel claim terms", {
     abstract = list("Novel approaches include graph analysis and machine learning models."),
     body_all = list("The study used logistic regression for all analyses.")
   )
-  expect_false(rtransparent:::.rt_novelty_pmc(negative)$is_novelty_pred)
+  expect_false(rtransparency:::.rt_novelty_pmc(negative)$is_novelty_pred)
 })
 
 
 test_that("novelty functions return integer(0) for empty input", {
   empty <- character(0)
-  expect_equal(rtransparent:::.which_novelty_first_time_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_novelty_first_time_2(empty), integer(0))
-  expect_equal(rtransparent:::.which_novelty_first_to_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_novelty_previously_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_novelty_novel_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_novelty_knowledge_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_novelty_first_time_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_novelty_first_time_2(empty), integer(0))
+  expect_equal(rtransparency:::.which_novelty_first_to_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_novelty_previously_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_novelty_novel_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_novelty_knowledge_1(empty), integer(0))
 })
 
 
@@ -134,8 +134,8 @@ test_that(".which_novelty_first_to_1 allows an adverbial before 'to <verb>'", {
     "We used a standard cohort design.",
     "The first patient was enrolled in 2019."
   )
-  expect_true(length(rtransparent:::.which_novelty_first_to_1(pos)) >= 2)
-  expect_equal(length(rtransparent:::.which_novelty_first_to_1(neg)), 0)
+  expect_true(length(rtransparency:::.which_novelty_first_to_1(pos)) >= 2)
+  expect_equal(length(rtransparency:::.which_novelty_first_to_1(neg)), 0)
 })
 
 
@@ -145,11 +145,11 @@ test_that("novelty recall covers 'novel'/'innovative', passive and adverbial-fir
     "Here we propose an innovative framework for risk assessment.",
     "In this study we present a novel diagnostic assay for the pathogen."
   )
-  expect_true(length(rtransparent:::.which_novelty_novel_1(pos)) >= 2)
+  expect_true(length(rtransparency:::.which_novelty_novel_1(pos)) >= 2)
 
   # Bare "new" is deliberately not a novelty cue (too frequent in non-priority
   # contexts) and must not trigger on its own.
-  expect_equal(length(rtransparent:::.which_novelty_novel_1(
+  expect_equal(length(rtransparency:::.which_novelty_novel_1(
     "We used a new device and new reagents for the assay.")), 0)
 
   first <- c(
@@ -157,7 +157,7 @@ test_that("novelty recall covers 'novel'/'innovative', passive and adverbial-fir
     "This is the first study to attenuate a virulent strain via serial passage.",
     "We present the first reported case of this presentation."
   )
-  expect_true(length(rtransparent:::.which_novelty_first_to_1(first)) >= 2)
+  expect_true(length(rtransparency:::.which_novelty_first_to_1(first)) >= 2)
 })
 
 
@@ -169,7 +169,7 @@ test_that(".which_novelty_first_to_1 covers 'first to <verb>' for many verbs and
     "Ours is the first study to find a link between diversity and well-being.",
     "The present study is the first to directly compare the two devices."
   )
-  expect_equal(length(rtransparent:::.which_novelty_first_to_1(pos)), 5)
+  expect_equal(length(rtransparency:::.which_novelty_first_to_1(pos)), 5)
 
   # Procedural / enumerated "first to" is not a priority claim.
   neg <- c(
@@ -177,7 +177,7 @@ test_that(".which_novelty_first_to_1 covers 'first to <verb>' for many verbs and
     "There are two stages: first to identify patients and then to treat them.",
     "The first method involves recording chronopotentiometry curves."
   )
-  expect_equal(length(rtransparent:::.which_novelty_first_to_1(neg)), 0)
+  expect_equal(length(rtransparency:::.which_novelty_first_to_1(neg)), 0)
 })
 
 
@@ -187,19 +187,19 @@ test_that(".which_novelty_previously_1 requires a study anchor, not a background
     "This previously unreported variant was found in 5% of patients.",
     "This association has not been reported previously."
   )
-  expect_true(length(rtransparent:::.which_novelty_previously_1(pos)) >= 3)
+  expect_true(length(rtransparency:::.which_novelty_previously_1(pos)) >= 3)
 
   neg <- c(
     "Its role in liver metastasis has not been studied.",
     "The effect of the drug on these cells has not been evaluated."
   )
-  expect_equal(length(rtransparent:::.which_novelty_previously_1(neg)), 0)
+  expect_equal(length(rtransparency:::.which_novelty_previously_1(neg)), 0)
 })
 
 
 test_that("public rt_novelty_pmc and rt_replication_pmc do not duplicate columns", {
   f <- system.file("extdata", "PMID32171256-PMC7071725.xml",
-                   package = "rtransparent")
+                   package = "rtransparency")
   skip_if(f == "")
   nov <- rt_novelty_pmc(f, remove_ns = TRUE)
   rep <- rt_replication_pmc(f, remove_ns = TRUE)
@@ -217,44 +217,44 @@ test_that(".negate_novelty_1 suppresses attributed and ordinal 'first' but keeps
     "Symptoms decreased during the first day postoperatively.",
     "MARS was used for the first time in 1993."
   )
-  expect_true(all(rtransparent:::.negate_novelty_1(drop)))
+  expect_true(all(rtransparency:::.negate_novelty_1(drop)))
 
   keep <- c(
     "For the first time, we reveal a striking relationship.",
     "Here, for the first time, we directly relate these pathways."
   )
-  expect_false(any(rtransparent:::.negate_novelty_1(keep)))
+  expect_false(any(rtransparency:::.negate_novelty_1(keep)))
 })
 
 
 test_that("novelty 'to our knowledge' requires a first/gap claim", {
-  expect_length(rtransparent:::.which_novelty_knowledge_1(
+  expect_length(rtransparency:::.which_novelty_knowledge_1(
     "To our knowledge, the assay is a standard laboratory procedure."), 0)
-  expect_true(length(rtransparent:::.which_novelty_knowledge_1(
+  expect_true(length(rtransparency:::.which_novelty_knowledge_1(
     "To our knowledge, no previous study has examined this association.")) > 0)
 })
 
 test_that("active-voice disease surveillance is suppressed but case reports are kept", {
-  expect_true(rtransparent:::.negate_novelty_1(
+  expect_true(rtransparency:::.negate_novelty_1(
     "The country recorded its first case of COVID-19 on 27 February 2020."))
-  expect_true(rtransparent:::.negate_novelty_1(
+  expect_true(rtransparency:::.negate_novelty_1(
     "Tanzania confirmed its first case of Marburg virus in March 2023."))
   # Genuine "we report the first case of <procedure>" must not be suppressed.
-  expect_false(rtransparent:::.negate_novelty_1(
+  expect_false(rtransparency:::.negate_novelty_1(
     "We report the first case of endoscopic repair of a full thickness defect."))
 })
 
 
 test_that(".which_novelty_novel_1 recognizes 'the novelty of our study'", {
-  expect_true(length(rtransparent:::.which_novelty_novel_1(
+  expect_true(length(rtransparency:::.which_novelty_novel_1(
     "The novelty of our study lies in providing important findings for policy.")) > 0)
-  expect_equal(length(rtransparent:::.which_novelty_novel_1(
+  expect_equal(length(rtransparency:::.which_novelty_novel_1(
     "The study used a standard cross-sectional design.")), 0)
 })
 
 test_that("novelty covers 'previously unobserved' and 'first to undertake'", {
-  expect_true(length(rtransparent:::.which_novelty_previously_1(
+  expect_true(length(rtransparency:::.which_novelty_previously_1(
     "We identify a previously unobserved morphological transition.")) > 0)
-  expect_true(length(rtransparent:::.which_novelty_first_to_1(
+  expect_true(length(rtransparency:::.which_novelty_first_to_1(
     "This study is the first to undertake a comprehensive review of the topic.")) > 0)
 })

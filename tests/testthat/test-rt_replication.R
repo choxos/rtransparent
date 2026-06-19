@@ -10,10 +10,10 @@ test_that(".which_replication_replicat_1 detects replication of previous results
     "The assay was performed in triplicate as previously described."
   )
 
-  idx_pos <- rtransparent:::.which_replication_replicat_1(article_positive)
+  idx_pos <- rtransparency:::.which_replication_replicat_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'replicated previous findings'")
 
-  idx_neg <- rtransparent:::.which_replication_replicat_1(article_negative)
+  idx_neg <- rtransparency:::.which_replication_replicat_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag non-replication text")
 })
 
@@ -30,10 +30,10 @@ test_that(".which_replication_confirm_1 detects 'confirmed findings from'", {
     "We validated the results of the assay by western blot."
   )
 
-  idx_pos <- rtransparent:::.which_replication_confirm_1(article_positive)
+  idx_pos <- rtransparency:::.which_replication_confirm_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'confirmed findings from'")
 
-  idx_neg <- rtransparent:::.which_replication_confirm_1(article_negative)
+  idx_neg <- rtransparency:::.which_replication_confirm_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag analysis methods as replication")
 })
 
@@ -48,10 +48,10 @@ test_that(".which_replication_independent_1 detects 'independently validated'", 
     "The two groups were matched on age and sex."
   )
 
-  idx_pos <- rtransparent:::.which_replication_independent_1(article_positive)
+  idx_pos <- rtransparency:::.which_replication_independent_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'independently validated'")
 
-  idx_neg <- rtransparent:::.which_replication_independent_1(article_negative)
+  idx_neg <- rtransparency:::.which_replication_independent_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag 'independent living' as replication")
 })
 
@@ -69,10 +69,10 @@ test_that(".which_replication_validation_1 detects 'validation cohort'", {
     "The study population included adults aged 18-65."
   )
 
-  idx_pos <- rtransparent:::.which_replication_validation_1(article_positive)
+  idx_pos <- rtransparency:::.which_replication_validation_1(article_positive)
   expect_true(length(idx_pos) > 0, info = "Should detect 'validation cohort'")
 
-  idx_neg <- rtransparent:::.which_replication_validation_1(article_negative)
+  idx_neg <- rtransparency:::.which_replication_validation_1(article_negative)
   expect_equal(length(idx_neg), 0, info = "Should not flag plain cohort description as replication")
 })
 
@@ -117,21 +117,21 @@ test_that(".negate_replication_1 correctly identifies negated replication claims
     "The results were validated in an external cohort."
   )
 
-  is_negated_pos <- rtransparent:::.negate_replication_1(negated_claims)
+  is_negated_pos <- rtransparency:::.negate_replication_1(negated_claims)
   expect_true(all(is_negated_pos), info = "All negated claims should be flagged")
 
-  is_negated_neg <- rtransparent:::.negate_replication_1(valid_claims)
+  is_negated_neg <- rtransparency:::.negate_replication_1(valid_claims)
   expect_true(all(!is_negated_neg), info = "Valid replication claims should not be negated")
 })
 
 
 test_that("replication functions return integer(0) for empty input", {
   empty <- character(0)
-  expect_equal(rtransparent:::.which_replication_replicat_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_replication_confirm_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_replication_independent_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_replication_reproduced_1(empty), integer(0))
-  expect_equal(rtransparent:::.which_replication_validation_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_replication_replicat_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_replication_confirm_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_replication_independent_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_replication_reproduced_1(empty), integer(0))
+  expect_equal(rtransparency:::.which_replication_validation_1(empty), integer(0))
 })
 
 
@@ -147,11 +147,11 @@ test_that(".which_replication_validation_1 ignores internal train/validation spl
     "We performed external validation in a separate population."
   )
   expect_equal(
-    length(rtransparent:::.which_replication_validation_1(internal)), 0,
+    length(rtransparency:::.which_replication_validation_1(internal)), 0,
     info = "An internal training/validation split is model development, not replication"
   )
   expect_true(
-    length(rtransparent:::.which_replication_validation_1(external)) > 0,
+    length(rtransparency:::.which_replication_validation_1(external)) > 0,
     info = "External or independent validation is a replication-like component"
   )
 })
@@ -169,11 +169,11 @@ test_that("future or required validation is not counted as replication", {
     "The model was confirmed in an external validation cohort."
   )
   for (s in future) {
-    expect_true(rtransparent:::.negate_replication_1(s),
+    expect_true(rtransparency:::.negate_replication_1(s),
                 info = paste("future validation should be suppressed:", s))
   }
   for (s in done) {
-    expect_false(rtransparent:::.negate_replication_1(s),
+    expect_false(rtransparency:::.negate_replication_1(s),
                  info = paste("performed validation should not be suppressed:", s))
   }
 })
@@ -186,10 +186,10 @@ test_that(".negate_replication_1 suppresses limitations, editorial and negative-
     "These effects were not always replicated in the aligned materials.",
     "We assessed the efficacy and validity of the machine learning algorithm."
   )
-  expect_true(all(rtransparent:::.negate_replication_1(drop)))
+  expect_true(all(rtransparency:::.negate_replication_1(drop)))
   keep <- c(
     "We replicated the findings of Smith et al. in an independent external validation cohort.",
     "The model was externally validated in a separate prospective cohort from another country."
   )
-  expect_false(any(rtransparent:::.negate_replication_1(keep)))
+  expect_false(any(rtransparency:::.negate_replication_1(keep)))
 })

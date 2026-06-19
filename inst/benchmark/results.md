@@ -1,4 +1,4 @@
-# rtransparent accuracy benchmark
+# rtransparency accuracy benchmark
 
 Package version 0.9.0. Detectors run on NCBI PMC full-text XML for the
 human-labeled held-out test articles of Serghiou et al. (2021), compared to

@@ -19,7 +19,7 @@ test_that("rt_summary reports apparent prevalence and Wilson CI", {
 })
 
 test_that("rt_accuracy carries a novelty estimate so novelty is corrected", {
-  utils::data("rt_accuracy", package = "rtransparent")
+  utils::data("rt_accuracy", package = "rtransparency")
   expect_true("is_novelty_pred" %in% rt_accuracy$variable)
   nov <- rt_accuracy[rt_accuracy$variable == "is_novelty_pred", ]
   expect_true(nov$sensitivity > 0 && nov$sensitivity <= 1)

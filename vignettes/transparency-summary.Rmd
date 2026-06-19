@@ -25,10 +25,10 @@ summary, using `rt_summary()`, `rt_score()` and `rt_plot()`.
 Running a detector on a single article returns a one-row table of indicators:
 
 ```{r}
-library(rtransparent)
+library(rtransparency)
 
 xml <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 one <- rt_all_pmc(xml, remove_ns = TRUE)
 one[, c("pmid", "is_coi_pred", "is_fund_pred", "is_register_pred")]
@@ -88,11 +88,15 @@ The accuracy values come from [`rt_accuracy`](../reference/rt_accuracy.html):
 rt_accuracy
 ```
 
-Replication and AI-use disclosure have no bundled accuracy estimates here, so
-their corrected values are `NA`. Novelty's estimate comes from a hand-labeled
-gold set (`inst/benchmark/results_novelty_replication.md`); the data/code values
-are reproducible benchmark estimates for the native detector, not untouched
-external-validation estimates.
+AI-use disclosure has no bundled accuracy estimate here, so its corrected value
+is `NA`. Novelty's estimate comes from a hand-labeled gold set
+(`inst/benchmark/results_novelty_replication.md`); the data/code values are
+reproducible benchmark estimates for the native detector, not untouched
+external-validation estimates. Replication's correction is approximate: its
+sensitivity comes from a replication-enriched sample and its specificity from
+the representative 2023 sample, so it does not rest on the single-design
+validation of conflicts of interest, funding or registration, and the
+Rogan-Gladen interval does not propagate uncertainty in these estimates.
 To use your own validation (or the published `oddpub` values for data and
 code), pass any table with `variable`, `sensitivity` and `specificity` columns:
 
@@ -173,4 +177,4 @@ rt_plot(results, type = "trend", year = "year")
 ```
 
 For the per-indicator detection methodology, see
-`vignette("rtransparent")`.
+`vignette("rtransparency")`.

@@ -1,4 +1,4 @@
 library(testthat)
-library(rtransparent)
+library(rtransparency)
 
-test_check("rtransparent")
+test_check("rtransparency")

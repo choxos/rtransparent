@@ -59,7 +59,7 @@ md <- c(
   "# Independent 2023 OA PMC hand-labeled sample",
   "",
   sprintf("Package version %s. %d open-access PMC articles published in 2023, sampled",
-          as.character(utils::packageVersion("rtransparent")), nrow(gold)),
+          as.character(utils::packageVersion("rtransparency")), nrow(gold)),
   "and hand-labeled for all eight transparency indicators. This is a modern,",
   "independent companion to the Serghiou et al. (2021) held-out set (which",
   "predates these indicators and the 2023-era reporting conventions).",

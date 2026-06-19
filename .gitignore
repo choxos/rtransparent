@@ -26,3 +26,4 @@ docs/
 # JOSS paper and Zenodo archive metadata (prepared locally, not yet published)
 joss/
 .zenodo.json
+.gstack/

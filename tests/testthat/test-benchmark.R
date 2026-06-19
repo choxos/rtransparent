@@ -3,7 +3,7 @@
 test_that(".eval_metrics computes a known confusion matrix", {
   pred  <- c(TRUE, TRUE, FALSE, FALSE, TRUE)
   label <- c(TRUE, FALSE, FALSE, FALSE, TRUE)
-  m <- rtransparent:::.eval_metrics(pred, label)
+  m <- rtransparency:::.eval_metrics(pred, label)
 
   expect_equal(c(m$TP, m$FP, m$TN, m$FN), c(2, 1, 2, 0))
   expect_equal(m$Sensitivity, 100)
@@ -14,7 +14,7 @@ test_that(".eval_metrics computes a known confusion matrix", {
 })
 
 test_that(".eval_metrics drops NA pairs", {
-  m <- rtransparent:::.eval_metrics(c(TRUE, NA, FALSE), c(TRUE, TRUE, NA))
+  m <- rtransparency:::.eval_metrics(c(TRUE, NA, FALSE), c(TRUE, TRUE, NA))
   expect_equal(m$n, 1)
 })
 
@@ -23,11 +23,11 @@ test_that(".eval_boot is reproducible and .eval_summarize returns valid CIs", {
   l <- p
   l[1:5] <- !l[1:5]
 
-  b1 <- rtransparent:::.eval_boot(p, l, n_boot = 200, seed = 1306)
-  b2 <- rtransparent:::.eval_boot(p, l, n_boot = 200, seed = 1306)
+  b1 <- rtransparency:::.eval_boot(p, l, n_boot = 200, seed = 1306)
+  b2 <- rtransparency:::.eval_boot(p, l, n_boot = 200, seed = 1306)
   expect_identical(b1, b2)
 
-  s <- rtransparent:::.eval_summarize(b1)
+  s <- rtransparency:::.eval_summarize(b1)
   expect_true(all(c("metric", "median", "lo", "hi") %in% names(s)))
   expect_true(all(s$lo <= s$median & s$median <= s$hi, na.rm = TRUE))
 })
@@ -46,7 +46,7 @@ test_that("detectors meet the benchmark baseline on cached fixtures", {
   baseline <- meta$baseline
 
   preds <- do.call(rbind, lapply(labels$pmcid, function(id) {
-    r <- rtransparent::rt_all_pmc(file.path(fx, paste0(id, ".xml")), remove_ns = TRUE)
+    r <- rtransparency::rt_all_pmc(file.path(fx, paste0(id, ".xml")), remove_ns = TRUE)
     getp <- function(col) if (col %in% names(r)) as.logical(r[[col]][1]) else NA
     data.frame(pmcid = id, is_coi_pred = getp("is_coi_pred"),
                is_fund_pred = getp("is_fund_pred"),
