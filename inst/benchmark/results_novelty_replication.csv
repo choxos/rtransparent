@@ -9,11 +9,11 @@
 "novelty","P_pred",25.9,370
 "novelty","P_error",0.8,370
 "replication","Sensitivity",80,370
-"replication","Specificity",97.8,370
-"replication","PPV",33.3,370
+"replication","Specificity",98.4,370
+"replication","PPV",40,370
 "replication","NPV",99.7,370
-"replication","Accuracy",97.6,370
-"replication","AUROC",88.9,370
+"replication","Accuracy",98.1,370
+"replication","AUROC",89.2,370
 "replication","P_true",1.4,370
-"replication","P_pred",3.2,370
-"replication","P_error",-1.9,370
+"replication","P_pred",2.7,370
+"replication","P_error",-1.4,370

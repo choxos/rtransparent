@@ -1,5 +1,33 @@
 <div align="justify">
 
+# rtransparent 0.9.5
+
+The hand-labeled 2023 validation sample is expanded to 980 articles (265 new),
+with a focused improvement to replication precision and a further funding fix.
+
+* **Validation sample grows to 980.** Eighteen new batches (265 articles) were
+  hand-labeled for all eight indicators and folded into the committed sample.
+  Current metrics (sensitivity / specificity): conflicts of interest 100 / 91.7,
+  funding 94.8 / 95.2, registration 84.6 / 99.2, novelty 90.1 / 93.4, replication
+  81.2 / 98.5, data 90.8 / 97.8, code 93.8 / 98.9, AI 100 / 100.
+
+* **Replication precision.** The replication detector previously fired on several
+  non-replication contexts. It now suppresses: limitations and strengths
+  discussion paragraphs ("a third limitation concerns the validity of ..."),
+  editorial statements about reproducibility as a value ("reproducibility is the
+  cornerstone of scientific integrity"), reviews assessing the "validity of" a
+  method or algorithm, lists of machine-learning evaluation metrics, results
+  reproduced only within the arms of a single trial, and negative results
+  ("not always replicated"). Replication PPV rose from 33.3 to 40.0 on the
+  novelty/replication gold set and to 48.1 on the larger 2023 sample (with
+  specificity 98.5); replication positives are still few, so PPV remains modest.
+
+* **Funding.** "The authors did not receive any external financial support for
+  this work" is now read as absence of funding.
+
+* The held-out Serghiou et al. (2021) benchmarks and the novelty gold set are
+  unchanged.
+
 # rtransparent 0.9.4
 
 The hand-labeled 2023 validation sample is expanded to 715 articles (210 new),
