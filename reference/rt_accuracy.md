@@ -12,7 +12,7 @@ rt_accuracy
 
 ## Format
 
-A tibble with 6 rows and 5 columns:
+A tibble with 7 rows and 5 columns:
 
 - variable:
 
@@ -56,10 +56,12 @@ untouched external validation of the native detector; supply your own
 values to \[rt_summary()\] via its \`accuracy\` argument when you have
 study-specific or externally validated estimates. Novelty's estimate
 comes from a maintainer-built hand-labeled gold set (see
-\`inst/benchmark/results_novelty_replication.md\`). Replication and
-AI-use disclosure are not included (replication has too few gold
-positives for a stable sensitivity), so \[rt_summary()\] reports them
-uncorrected.
+\`inst/benchmark/results_novelty_replication.md\`). Replication's
+sensitivity comes from a 111-positive replication-enriched validation
+(see \`inst/benchmark/results_replication_enriched.md\`), with the
+specificity from the 2023 1000-article sample. AI-use disclosure is not
+included (its prevalence is too low in unselected literature for a
+stable estimate), so \[rt_summary()\] reports it uncorrected.
 
 ## See also
 
