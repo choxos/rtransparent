@@ -1,5 +1,24 @@
 <div align="justify">
 
+# rtransparency 1.0.0
+
+First stable release, and a rename.
+
+* **Renamed to `rtransparency`.** The package is renamed from `rtransparent` (the
+  name of the original tool by Serghiou et al.) to avoid confusion with that
+  project. The GitHub repository is also renamed to `choxos/rtransparency` (old
+  URLs redirect): install with
+  `remotes::install_github("choxos/rtransparency")` and load with
+  `library(rtransparency)`. Function names (`rt_*`) are unchanged. Serghiou is
+  credited as an author and the foundational 2021 paper is cited
+  (`citation("rtransparency")`).
+
+* This 1.0.0 release marks a stable public API: eight transparency indicators
+  (conflicts of interest, funding, registration, novelty, replication, data,
+  code, and AI-use disclosure), multilingual conflict-of-interest and funding
+  detection, plain-text and PMC XML parity, corpus-scale batch processing with
+  `rt_all_pmc_dir()`, and accuracy correction for seven of the eight indicators.
+
 # rtransparent 0.9.11
 
 Citation, documentation, and packaging polish.
@@ -487,7 +506,7 @@ Precision and recall fixes from an independent manual review of a sample of open
 
 # rtransparent 0.4.2
 
-* Added a pkgdown documentation website at <https://choxos.github.io/rtransparent/>.
+* Added a pkgdown documentation website at <https://choxos.github.io/rtransparency/>.
 * Corrected the `rt_data_code_pmc_list()` documentation example.
 
 

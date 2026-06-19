@@ -31,12 +31,12 @@ extract_one <- function(pmcid) {
   done <- list.files(txt_dir, pattern = sprintf("-%s\\.txt$", pmcid),
                      full.names = TRUE)
   if (length(done) && file.info(done[1])$size > 0) return(done[1])
-  xml <- tryCatch(rtransparent:::.get_xml(f, TRUE), error = function(e) NULL)
+  xml <- tryCatch(rtransparency:::.get_xml(f, TRUE), error = function(e) NULL)
   if (is.null(xml)) return(NA_character_)
-  secs <- tryCatch(rtransparent:::.get_article_txt(xml), error = function(e) NULL)
+  secs <- tryCatch(rtransparency:::.get_article_txt(xml), error = function(e) NULL)
   if (is.null(secs)) return(NA_character_)
   txt  <- paste(unlist(secs), collapse = "\n")
-  pmid <- rtransparent:::.get_ids(xml)$pmid
+  pmid <- rtransparency:::.get_ids(xml)$pmid
   if (length(pmid) == 0 || is.na(pmid[1]) || !nzchar(pmid[1])) pmid <- "0"
   dest <- file.path(txt_dir, sprintf("PMID%s-%s.txt", pmid[1], pmcid))
   writeLines(txt, dest)

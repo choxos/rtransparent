@@ -13,13 +13,13 @@
 # Reads /tmp/mllang/<code>/*.xml. Writes inst/benchmark/results_multilingual.{csv,md}.
 
 suppressMessages(devtools::load_all("."))
-dict <- rtransparent:::.create_synonyms()
+dict <- rtransparency:::.create_synonyms()
 detect <- function(f) {
-  x <- tryCatch(rtransparent:::.get_xml(f, TRUE), error = function(e) NULL)
+  x <- tryCatch(rtransparency:::.get_xml(f, TRUE), error = function(e) NULL)
   if (is.null(x)) return(c(coi = NA, fund = NA))
-  als  <- rtransparent:::.get_article_txt(x)
-  coi  <- rtransparent:::.rt_coi_pmc(als, rtransparent:::.get_coi_pmc(x, dict), dict)$is_coi_pred
-  fund <- rtransparent:::.rt_fund_pmc(als, rtransparent:::.get_fund_pmc(x, dict))$is_fund_pred
+  als  <- rtransparency:::.get_article_txt(x)
+  coi  <- rtransparency:::.rt_coi_pmc(als, rtransparency:::.get_coi_pmc(x, dict), dict)$is_coi_pred
+  fund <- rtransparency:::.rt_fund_pmc(als, rtransparency:::.get_fund_pmc(x, dict))$is_fund_pred
   c(coi = isTRUE(coi), fund = isTRUE(fund))
 }
 

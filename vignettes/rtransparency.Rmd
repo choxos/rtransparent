@@ -1,13 +1,13 @@
 ---
-title: "Introduction to rtransparent"
+title: "Introduction to rtransparency"
 author: Stylianos Serghiou
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 description: >
-  How to use the rtransparent package to identify and extract indicators of
+  How to use the rtransparency package to identify and extract indicators of
   transparency from published biomedical articles, and how the detection works.
 vignette: >
-  %\VignetteIndexEntry{Introduction to rtransparent}
+  %\VignetteIndexEntry{Introduction to rtransparency}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -22,12 +22,12 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(rtransparent)
+library(rtransparency)
 ```
 
 # Overview
 
-`rtransparent` identifies and extracts **indicators of transparency** from the
+`rtransparency` identifies and extracts **indicators of transparency** from the
 full text of published biomedical articles. It works on two inputs: plain TXT
 files (typically converted from PDFs) and PMC XML files (the JATS XML served by
 PubMed Central). For each indicator it returns whether the indicator was found
@@ -123,7 +123,7 @@ with your own file to analyze a different article.
 
 ```{r}
 xml_path <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 ```
 
@@ -196,7 +196,7 @@ below are illustrative and are not executed when the vignette is built.
 
 ```{r, eval = FALSE}
 pdf_path <- system.file(
-  "extdata", "PMID32171256-PMC7071725.pdf", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.pdf", package = "rtransparency"
 )
 article <- rt_read_pdf(pdf_path)
 writeLines(article, "article.txt")
@@ -224,7 +224,7 @@ following is illustrative.
 The detectors were benchmarked against the human-labeled XML benchmark of
 Serghiou et al. (2021). The current package reaches roughly: COI 97% accuracy,
 funding 97%, protocol registration 98%. The native data/code detector reaches
-code 84% sensitivity / 99% specificity and data 71% sensitivity / 99%
+code 88% sensitivity / 99% specificity and data 77% sensitivity / 99%
 specificity (see `inst/benchmark/` and `data-raw/benchmark/` in the source
 repository for the reproducible benchmark). The native data/code values are
 reproducible benchmark and regression estimates, not untouched external-validation

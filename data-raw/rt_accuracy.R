@@ -33,9 +33,9 @@ rt_accuracy <- tibble::tibble(
   specificity = c(0.995, 0.981, 0.997, 0.990, 0.995, 0.952, 0.985),
   source = c(
     rep("Serghiou et al. 2021, PLOS Biology (doi:10.1371/journal.pbio.3001107)", 3),
-    rep("rtransparent native detector, reproducible benchmark and regression estimate (inst/benchmark)", 2),
-    "rtransparent novelty/replication hand-labeled benchmark (inst/benchmark/results_novelty_replication.md)",
-    "rtransparent replication-enriched validation, sensitivity n=111 positives; specificity from the 2023 1000-article sample (inst/benchmark/results_replication_enriched.md)"
+    rep("rtransparency native detector, reproducible benchmark and regression estimate (inst/benchmark)", 2),
+    "rtransparency novelty/replication hand-labeled benchmark (inst/benchmark/results_novelty_replication.md)",
+    "rtransparency replication-enriched validation, sensitivity n=111 positives; specificity from the 2023 1000-article sample (inst/benchmark/results_replication_enriched.md)"
   )
 )
 

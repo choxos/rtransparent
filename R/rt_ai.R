@@ -27,7 +27,12 @@
     "large language models?",
     "ai-(assisted|generated|based) (tool|technolog|writ|languag|imag|content)",
     "ai-assisted technolog", "\\bcopilot\\b", "\\bclaude\\b", "\\bgemini\\b",
-    "\\bbard\\b", "dall-?e", "midjourney", "stable diffusion",
+    "\\bbard\\b", "dall-?e", "midjourney", "stable diffusion", "\\bgrok\\b",
+    "deepseek", "\\bllama\\b", "mistral", "mixtral", "\\bperplexity\\b",
+    "\\bqwen\\b", "\\bgemma\\b", "\\bllm-?[0-9]", "\\bpalm 2\\b",
+    "pathways language model", "ernie bot", "\\bdeepl\\b", "paperpal",
+    "quillbot", "writefull", "wordtune", "jasper ai", "writesonic",
+    "\\bsora\\b",
     # Bare "AI tool" / "artificial intelligence" only matters here because the
     # extracted text is restricted to declaration / acknowledgment sections,
     # where these refer to manuscript-preparation AI use, not a research method.
@@ -132,7 +137,7 @@
 #' @examples
 #' \dontrun{
 #' filepath <- system.file(
-#'   "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+#'   "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 #' )
 #' rt_ai_pmc(filepath, remove_ns = TRUE)
 #' }

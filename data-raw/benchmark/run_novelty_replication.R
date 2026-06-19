@@ -92,7 +92,7 @@ writeLines(c(
   "# Novelty and replication detector benchmark",
   "",
   sprintf("Package version %s. Detectors run on PMC full-text XML and compared",
-          as.character(utils::packageVersion("rtransparent"))),
+          as.character(utils::packageVersion("rtransparency"))),
   "to a maintainer-built hand-labeled gold set of open-access PMC articles",
   "(2023-2026); see `data-raw/benchmark/labels_novelty_replication.csv` and the",
   "label definitions at the top of `run_novelty_replication.R`. These indicators",

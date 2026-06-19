@@ -1,4 +1,4 @@
-url: https://choxos.github.io/rtransparent/
+url: https://choxos.github.io/rtransparency/
 
 template:
   bootstrap: 5
@@ -12,7 +12,7 @@ articles:
 - title: Articles
   navbar: ~
   contents:
-  - rtransparent
+  - rtransparency
   - transparency-summary
   - ai-disclosure
   - scope-and-limitations
@@ -20,7 +20,7 @@ articles:
 reference:
 - title: Package
   contents:
-  - rtransparent-package
+  - rtransparency-package
 - title: Run all detectors
   desc: Detect every indicator in one pass, for one file or a whole corpus.
   contents:

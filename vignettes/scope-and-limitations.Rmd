@@ -11,7 +11,7 @@ vignette: >
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>", eval = FALSE)
 ```
 
-`rtransparent` is a pattern-based detector. It is designed for high precision on
+`rtransparency` is a pattern-based detector. It is designed for high precision on
 the statements it targets, and its predictions come with the exact text that
 triggered them so they can be audited. This vignette describes what each
 indicator does and does not capture, so results are interpreted correctly.
@@ -66,7 +66,7 @@ Every per-article detector returns the prediction columns `is_coi_pred`,
 one file; `rt_all_pmc_dir()` runs a whole directory.
 
 ```{r}
-library(rtransparent)
+library(rtransparency)
 
 res <- rt_all_pmc("article.xml", remove_ns = TRUE)
 res[, c("is_coi_pred", "is_fund_pred", "is_open_data", "is_open_code")]
@@ -76,8 +76,9 @@ res[, c("is_coi_pred", "is_fund_pred", "is_open_data", "is_open_code")]
 
 The data- and code-availability links the detector extracts
 (`open_data_links`, `open_code_links`) can be passed to FAIR-assessment tooling
-such as [`rfuji`](https://github.com/Ammar-Ali-Khan/rfuji) to score the
-findability and accessibility of the shared resources.
+such as [`rfuji`](https://github.com/choxos/rfuji), an R client for the F-UJI
+FAIR assessment service, to score the findability and accessibility of the
+shared resources.
 
 ```{r}
 res <- rt_all_pmc("article.xml", remove_ns = TRUE)

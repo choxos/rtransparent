@@ -110,7 +110,7 @@ writeLines(c(
   "# Native data and code sharing detector benchmark",
   "",
   sprintf("Package version %s. Native detector vs the human-labeled XML benchmark",
-          as.character(utils::packageVersion("rtransparent"))),
+          as.character(utils::packageVersion("rtransparency"))),
   "articles of Serghiou et al. (2021). These are reproducible benchmark and",
   "regression metrics for the native detector, not untouched external-validation",
   "estimates. The published paper reports data",

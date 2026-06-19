@@ -138,18 +138,18 @@ test_that(".which_prospero_2 detects PROSPERO registrations without a CRD number
     "Registered to PROSPERO"
   )
   for (s in pos) {
-    expect_true(length(rtransparent:::.which_prospero_2(s)) > 0,
+    expect_true(length(rtransparency:::.which_prospero_2(s)) > 0,
                 info = paste("should detect:", s))
   }
   # The registry's own name is not a registration of this review.
   expect_equal(
-    length(rtransparent:::.which_prospero_2(
+    length(rtransparency:::.which_prospero_2(
       "The International Prospective Register of Systematic Reviews (PROSPERO) was searched.")),
     0
   )
   # A CRD-bearing form is still handled by .which_prospero_1.
   expect_equal(
-    length(rtransparent:::.which_prospero_2(
+    length(rtransparency:::.which_prospero_2(
       "Some unrelated sentence with no registry mention at all.")),
     0
   )
@@ -165,8 +165,8 @@ test_that("registration false-statement guard rejects IRB and not applicable tex
     "The research was registered in SisGen for genetic heritage access.",
     "The Institutional Ethics Committee registration number is ECR/1234/Inst."
   )
-  expect_true(all(rtransparent:::.is_false_register_statement(false_text)))
-  expect_false(rtransparent:::.is_false_register_statement(
+  expect_true(all(rtransparency:::.is_false_register_statement(false_text)))
+  expect_false(rtransparency:::.is_false_register_statement(
     "The study was registered at clinicaltrials.gov (NCT03297034)."
   ))
 })
@@ -196,13 +196,13 @@ test_that(".which_ct_4 detects varied ClinicalTrials.gov NCT phrasings", {
     "The study was registered on ClinicalTrials.gov, NCT05555555."
   )
   for (s in pos) {
-    expect_true(length(rtransparent:::.which_ct_4(s)) > 0,
+    expect_true(length(rtransparency:::.which_ct_4(s)) > 0,
                 info = paste("should detect:", s))
   }
   # A trial cited by its id, without any registration of this study, is not a
   # registration of the present article.
   expect_equal(
-    length(rtransparent:::.which_ct_4(
+    length(rtransparency:::.which_ct_4(
       "Efficacy was demonstrated in the LUMINOSITY trial (NCT05012345).")),
     0
   )

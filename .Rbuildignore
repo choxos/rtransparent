@@ -8,11 +8,13 @@
 ^ROADMAP\.md$
 ^audit$
 ^LICENSE$
-^rtransparent\.Rcheck$
-^rtransparent_.*\.tar\.gz$
+^rtransparency\.Rcheck$
+^rtransparency_.*\.tar\.gz$
 ^_pkgdown\.yml$
 ^docs$
 ^\.github$
 ^pkgdown$
 ^joss$
 ^\.zenodo\.json$
+^cran-comments\.md$
+^\.gstack$

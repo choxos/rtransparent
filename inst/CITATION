@@ -1,13 +1,13 @@
-citHeader("To cite rtransparent in publications, please cite both the package and the foundational validation paper:")
+citHeader("To cite rtransparency in publications, please cite both the package and the foundational validation paper:")
 
 bibentry(
   bibtype  = "Manual",
-  title    = "{rtransparent}: Identify Indicators of Transparency in the Biomedical Literature",
+  title    = "{rtransparency}: Identify Indicators of Transparency in the Biomedical Literature",
   author   = c(person("Stylianos", "Serghiou"),
                person("Ahmad", "Sofi-Mahmudi")),
   year     = format(Sys.Date(), "%Y"),
   note     = paste("R package version", meta$Version),
-  url      = "https://github.com/choxos/rtransparent"
+  url      = "https://github.com/choxos/rtransparency"
 )
 
 bibentry(

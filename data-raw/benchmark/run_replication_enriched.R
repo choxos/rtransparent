@@ -22,9 +22,9 @@ pred <- rep(NA, nrow(lab))
 for (i in seq_len(nrow(lab))) {
   f <- file.path(xml_dir, paste0(lab$pmcid[i], ".xml"))
   if (!file.exists(f)) next
-  x <- tryCatch(rtransparent:::.get_xml(f, TRUE), error = function(e) NULL); if (is.null(x)) next
-  als <- tryCatch(rtransparent:::.get_article_txt(x), error = function(e) NULL); if (is.null(als)) next
-  rl <- tryCatch(rtransparent:::.rt_replication_pmc(als), error = function(e) NULL); if (is.null(rl)) next
+  x <- tryCatch(rtransparency:::.get_xml(f, TRUE), error = function(e) NULL); if (is.null(x)) next
+  als <- tryCatch(rtransparency:::.get_article_txt(x), error = function(e) NULL); if (is.null(als)) next
+  rl <- tryCatch(rtransparency:::.rt_replication_pmc(als), error = function(e) NULL); if (is.null(rl)) next
   pred[i] <- isTRUE(rl$is_replication_pred)
 }
 
@@ -41,7 +41,7 @@ writeLines(c(
   "# Replication detector validation (replication-enriched sample)",
   "",
   sprintf("Package version %s. %d open-access PMC articles selected for external-",
-          as.character(utils::packageVersion("rtransparent")), res$n),
+          as.character(utils::packageVersion("rtransparency")), res$n),
   "validation / replication language (PubMed [tiab] search) and hand-labeled for",
   "the replication indicator (a replication or external/independent validation",
   "reported as PERFORMED). The general 2023 sample has too few replication",

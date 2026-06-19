@@ -22,7 +22,7 @@ has_ggplot <- requireNamespace("ggplot2", quietly = TRUE)
 ```
 
 ```{r setup}
-library(rtransparent)
+library(rtransparency)
 ```
 
 ## What this indicator captures
@@ -60,7 +60,7 @@ The bundled example article is from 2020, so it returns `NA`:
 
 ```{r}
 xml_path <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 ai <- rt_ai_pmc(xml_path, remove_ns = TRUE)
 c(year = ai$year, is_ai_pred = ai$is_ai_pred)
@@ -129,5 +129,5 @@ with every other indicator, `rt_ai_pmc()` returns the matched text (`ai_text`)
 so a positive call can always be inspected.
 
 For the other indicators and the corpus-summary tools used here, see the
-[Introduction](rtransparent.html) and
+[Introduction](rtransparency.html) and
 [Summarizing transparency across a corpus](transparency-summary.html) articles.

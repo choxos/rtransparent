@@ -26,7 +26,7 @@ Takes a list of PMC XML files and returns data related to the presence of
 \dontrun{
 # Paths to PMC XML files
 filepath <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 filepaths <- list(filepath)
 

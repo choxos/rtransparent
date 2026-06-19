@@ -1,6 +1,6 @@
 test_that("rt_all_pmc_dir processes every XML in a directory", {
   src <- system.file("extdata", "PMID32171256-PMC7071725.xml",
-                     package = "rtransparent")
+                     package = "rtransparency")
   skip_if(!nzchar(src), "bundled XML not found")
 
   d <- tempfile("rtbatch_")
@@ -21,7 +21,7 @@ test_that("rt_all_pmc_dir processes every XML in a directory", {
 
 test_that("rt_all_pmc_dir accepts an explicit vector of paths", {
   src <- system.file("extdata", "PMID32171256-PMC7071725.xml",
-                     package = "rtransparent")
+                     package = "rtransparency")
   skip_if(!nzchar(src), "bundled XML not found")
 
   d <- tempfile("rtbatch_")
@@ -38,7 +38,7 @@ test_that("rt_all_pmc_dir accepts an explicit vector of paths", {
 
 test_that("rt_all_pmc_dir isolates per-file failures", {
   src <- system.file("extdata", "PMID32171256-PMC7071725.xml",
-                     package = "rtransparent")
+                     package = "rtransparency")
   skip_if(!nzchar(src), "bundled XML not found")
 
   d <- tempfile("rtbatch_")
@@ -59,7 +59,7 @@ test_that("rt_all_pmc_dir isolates per-file failures", {
 
 test_that("rt_all_pmc_dir resumes from and appends to an existing output", {
   src <- system.file("extdata", "PMID32171256-PMC7071725.xml",
-                     package = "rtransparent")
+                     package = "rtransparency")
   skip_if(!nzchar(src), "bundled XML not found")
 
   d <- tempfile("rtbatch_")
@@ -95,7 +95,7 @@ test_that("rt_all_pmc_dir runs in parallel via furrr", {
   skip_if_not_installed("furrr")
   skip_if_not_installed("future")
   src <- system.file("extdata", "PMID32171256-PMC7071725.xml",
-                     package = "rtransparent")
+                     package = "rtransparency")
   skip_if(!nzchar(src), "bundled XML not found")
 
   d <- tempfile("rtbatch_")
