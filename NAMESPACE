@@ -3,6 +3,7 @@
 export(rt_ai_pmc)
 export(rt_all)
 export(rt_all_pmc)
+export(rt_all_pmc_dir)
 export(rt_coi)
 export(rt_coi_pmc)
 export(rt_data_code)
