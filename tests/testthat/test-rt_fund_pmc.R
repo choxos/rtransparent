@@ -173,3 +173,16 @@ test_that("positive funding clauses override local no-industry clauses", {
   )
   expect_false(rtransparent:::has_positive_fund_text(no_grant))
 })
+
+test_that("BMJ 'have not declared a specific grant' is an absence-of-funding declaration", {
+  bmj <- paste(
+    "Funding: The authors have not declared a specific grant for this research",
+    "from any funding agency in the public, commercial or not-for-profit sectors."
+  )
+  expect_true(rtransparent:::negate_absence_1(bmj))
+  expect_false(rtransparent:::has_positive_fund_text(bmj))
+
+  # A genuinely funded statement must still read as positive, not absence.
+  funded <- "Funding: This work was supported by the Wellcome Trust, grant 12345."
+  expect_false(rtransparent:::negate_absence_1(funded))
+})

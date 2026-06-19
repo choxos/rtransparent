@@ -233,3 +233,21 @@ test_that("novelty 'to our knowledge' requires a first/gap claim", {
   expect_true(length(rtransparent:::.which_novelty_knowledge_1(
     "To our knowledge, no previous study has examined this association.")) > 0)
 })
+
+test_that("active-voice disease surveillance is suppressed but case reports are kept", {
+  expect_true(rtransparent:::.negate_novelty_1(
+    "The country recorded its first case of COVID-19 on 27 February 2020."))
+  expect_true(rtransparent:::.negate_novelty_1(
+    "Tanzania confirmed its first case of Marburg virus in March 2023."))
+  # Genuine "we report the first case of <procedure>" must not be suppressed.
+  expect_false(rtransparent:::.negate_novelty_1(
+    "We report the first case of endoscopic repair of a full thickness defect."))
+})
+
+
+test_that(".which_novelty_novel_1 recognizes 'the novelty of our study'", {
+  expect_true(length(rtransparent:::.which_novelty_novel_1(
+    "The novelty of our study lies in providing important findings for policy.")) > 0)
+  expect_equal(length(rtransparent:::.which_novelty_novel_1(
+    "The study used a standard cross-sectional design.")), 0)
+})

@@ -259,6 +259,9 @@ rt_novelty <- function(filename) {
     paste0(author_verb, "[a-z]*.{0,40}(a |an |the )", nv, " [a-z]"),
     paste0("(a |an |the )", nv, " [a-z][a-z -]{2,40}(is|was|are|were|has been|have been) ",
       "(developed|presented|introduced|proposed|described|reported|identified|established|designed|created|constructed|generated|discovered|demonstrated|detected|found|isolated|characteri[sz]ed|observed)\\b"),
+    # Explicit self-assertion of novelty: "the novelty of our study ...".
+    paste0("\\bthe novelty of (our|this|the present|the current) ",
+      "(stud(y|ies)|work|research|analysis|paper|investigation|report|approach|method|finding)"),
     sep = "|"
   )
 
@@ -333,6 +336,11 @@ rt_novelty <- function(filename) {
       "[A-Za-z0-9() /'-]{2,45} (was|were|has been|have been|is|are) ",
       "(confirmed|reported|recorded|detected|identified|diagnosed|documented|",
       "registered|notified|isolated|observed)\\b"),
+    # Active voice: "<place> recorded/confirmed its first case of <disease>".
+    # Genuine case-report novelty uses "we report/present/describe the first
+    # case of ...", not these surveillance verbs, so they are safe to suppress.
+    paste0("\\b(recorded|confirmed|detected|registered|notified) ",
+      "(its |the |their |a |the country.?s )?first cases? of\\b"),
     # Ordinal / temporal "first" (hyphenated adjective or an enumerated count),
     # not a priority claim. The bare phrase "first time" is deliberately excluded.
     "\\bfirst-time\\b",
