@@ -1,0 +1,26 @@
+citHeader("To cite rtransparent in publications, please cite both the package and the foundational validation paper:")
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "{rtransparent}: Identify Indicators of Transparency in the Biomedical Literature",
+  author   = c(person("Stylianos", "Serghiou"),
+               person("Ahmad", "Sofi-Mahmudi")),
+  year     = format(Sys.Date(), "%Y"),
+  note     = paste("R package version", meta$Version),
+  url      = "https://github.com/choxos/rtransparent"
+)
+
+bibentry(
+  bibtype  = "Article",
+  title    = "Assessment of transparency indicators across the biomedical literature: How open is open?",
+  author   = c(person("Stylianos", "Serghiou"),
+               person("Despina G.", "Contopoulos-Ioantidis"),
+               person("Steven N.", "Goodman"),
+               person("John P. A.", "Ioannidis")),
+  journal  = "PLOS Biology",
+  year     = "2021",
+  volume   = "19",
+  number   = "3",
+  pages    = "e3001107",
+  doi      = "10.1371/journal.pbio.3001107"
+)

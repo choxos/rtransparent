@@ -22,3 +22,7 @@ docs/
 # R CMD build/check artifacts
 *.tar.gz
 *.Rcheck/
+
+# JOSS paper and Zenodo archive metadata (prepared locally, not yet published)
+joss/
+.zenodo.json

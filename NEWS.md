@@ -1,5 +1,18 @@
 <div align="justify">
 
+# rtransparent 0.9.11
+
+Citation, documentation, and packaging polish.
+
+* **Citation.** Added `inst/CITATION`, so `citation("rtransparent")` returns the
+  package together with the foundational Serghiou et al. (2021) paper.
+
+* **New vignette "Scope and limitations"** documenting what each indicator does
+  and does not capture (disclosure-based conflicts of interest and AI, data
+  offered "upon request" excluded, novelty and replication as claim detection,
+  language coverage), the output schema, and how to pass extracted data- and
+  code-availability links to FAIR-assessment tooling such as `rfuji`.
+
 # rtransparent 0.9.10
 
 Replication is now accuracy-corrected; a fresh validation of replication and AI.

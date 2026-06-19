@@ -1,0 +1,86 @@
+---
+title: "Scope and limitations"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Scope and limitations}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>", eval = FALSE)
+```
+
+`rtransparent` is a pattern-based detector. It is designed for high precision on
+the statements it targets, and its predictions come with the exact text that
+triggered them so they can be audited. This vignette describes what each
+indicator does and does not capture, so results are interpreted correctly.
+
+## What the indicators mean
+
+| Indicator | Detects | Does **not** mean |
+|---|---|---|
+| Conflicts of interest | A COI **disclosure is present** (including "the authors declare no competing interests") | That a conflict exists |
+| Funding | A statement that funding **was received** | Presence of a funding *section* (a "no funding" section is read as absence) |
+| Registration | A protocol/trial **registration identifier or statement** | Ethics/IRB approval numbers |
+| Novelty | The article **claims** its own work is novel or first | That the work is objectively novel |
+| Replication | A replication or external/independent validation was **performed** | An internal train/test split, or future/recommended validation |
+| Data sharing | The authors' **own data are made available** (repository, accession, or in-article) | Data merely reused, cited, or available "upon request" |
+| Code sharing | The authors' **own analysis code is shared** | Use of third-party software/tools |
+| AI disclosure | A statement **discloses** generative-AI use in manuscript preparation (including "no AI was used") | Use of AI as a research method |
+
+Conflicts of interest and AI disclosure are **disclosure-based**: a statement
+addressing the topic counts as present, whether the disclosure is positive or
+negative. This mirrors how these are reported and counted in the literature.
+
+## Known limitations
+
+- **Language.** Detection is strongest in English. Conflict-of-interest and
+  funding statements are also detected in Spanish, Portuguese, French, German
+  and Italian; other indicators and other languages are not yet covered.
+- **Data availability "upon request".** Data offered only on request are **not**
+  counted as shared, reflecting the modern open-data standard. This is stricter
+  than some earlier definitions and will report lower data-sharing prevalence
+  than tools that count availability-on-request.
+- **Novelty and replication are claim detection.** They identify what authors
+  *state*, not whether a study is truly novel or a replication succeeded. The
+  replication indicator in particular is precision-limited because validation
+  language ("validation cohort", "independent") is heavily overloaded; see the
+  replication-enriched benchmark in `inst/benchmark/`.
+- **Plain text vs XML.** The plain-text detectors share the same logic as the
+  PMC XML detectors but cannot use XML-structural cues (tagged funding groups,
+  conflict footnotes, section types), so a few statements detectable in XML are
+  not detectable in plain text.
+- **Accuracy correction.** `rt_summary()` can correct apparent prevalence using
+  bundled sensitivity/specificity estimates (`rt_accuracy`). These derive from
+  the validation benchmarks; supply your own via `rt_summary(accuracy = )` when
+  you have study-specific estimates. AI disclosure is reported uncorrected (its
+  prevalence is too low in unselected literature for a stable estimate).
+
+## Output schema
+
+Every per-article detector returns the prediction columns `is_coi_pred`,
+`is_fund_pred`, `is_register_pred`, `is_novelty_pred`, `is_replication_pred`,
+`is_open_data`, `is_open_code`, and the year-gated `is_ai_pred` (`NA` before
+2023), each paired with the extracted text. `rt_all_pmc()` returns all eight for
+one file; `rt_all_pmc_dir()` runs a whole directory.
+
+```{r}
+library(rtransparent)
+
+res <- rt_all_pmc("article.xml", remove_ns = TRUE)
+res[, c("is_coi_pred", "is_fund_pred", "is_open_data", "is_open_code")]
+```
+
+## Linking to FAIR assessment
+
+The data- and code-availability links the detector extracts
+(`open_data_links`, `open_code_links`) can be passed to FAIR-assessment tooling
+such as [`rfuji`](https://github.com/Ammar-Ali-Khan/rfuji) to score the
+findability and accessibility of the shared resources.
+
+```{r}
+res <- rt_all_pmc("article.xml", remove_ns = TRUE)
+links <- strsplit(res$open_data_links, " ; ")[[1]]
+# rfuji::assess_fair(links)
+```
