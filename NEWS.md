@@ -1,5 +1,23 @@
 <div align="justify">
 
+# rtransparent 0.9.6
+
+The hand-labeled 2023 validation sample reaches 1000 articles.
+
+* **Validation sample reaches 1000.** The final twenty open-access PMC articles
+  were hand-labeled for all eight indicators and added to the committed sample,
+  bringing it to a round 1000. Metrics (sensitivity / specificity): conflicts of
+  interest 100 / 91.8, funding 94.8 / 95.3, registration 84.6 / 99.2, novelty
+  90.2 / 93.3, replication 82.4 / 98.5, data 91.1 / 97.8, code 93.9 / 99.0,
+  AI 100 / 100.
+
+* **Funding.** The Portuguese no-funding declaration "os autores nao reportam
+  qualquer financiamento" ("the authors report no funding") is now read as
+  absence of funding.
+
+* The held-out Serghiou et al. (2021) benchmarks and the novelty/replication
+  gold set are unchanged.
+
 # rtransparent 0.9.5
 
 The hand-labeled 2023 validation sample is expanded to 980 articles (265 new),

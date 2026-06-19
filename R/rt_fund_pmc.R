@@ -1754,7 +1754,7 @@ negate_absence_1 <- function(article) {
         "\\bwithout (the )?(receipt of )?any (dedicated )?(grant|financial support|funding|external support|sponsorship)",
         # Non-English no-funding declarations (Portuguese/Spanish). The "." class
         # matches the accented characters without putting non-ASCII in the source.
-        "\\bn.o (teve|houve|recebeu|recebemos|obteve) .{0,40}financiamento",
+        "\\bn.o (teve|houve|recebeu|recebemos|obteve|reportam|reportaram|relatam|relataram|declaram|possui|possuem) .{0,40}financiamento",
         "\\bsem financiamento\\b",
         "\\bno recibi. .{0,25}financiaci.n",
         "\\bsin .{0,15}financiaci.n",

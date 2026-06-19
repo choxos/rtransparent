@@ -215,3 +215,10 @@ test_that("'did not receive any external financial support' reads as absence", {
   expect_false(rtransparent:::negate_absence_1(
     "Funding: This work was supported by the Dutch Research Council (NWO)."))
 })
+
+test_that("Portuguese 'nao reportam qualquer financiamento' reads as absence", {
+  expect_true(rtransparent:::negate_absence_1(
+    "Financiamento: Os autores nao reportam qualquer financiamento."))
+  expect_false(rtransparent:::negate_absence_1(
+    "Financiamento: financiado pela CAPES, codigo 001."))
+})
