@@ -96,21 +96,13 @@
 #' @export
 rt_replication_pmc <- function(filename, remove_ns = FALSE) {
 
-  index_any <- list(
-    replication_replicat_1    = NA,
-    replication_confirm_1     = NA,
-    replication_independent_1 = NA,
-    replication_reproduced_1  = NA,
-    replication_validation_1  = NA
-  )
-
+  # Identifier columns only; the prediction, extracted text and per-pattern flags
+  # are supplied by .rt_replication_pmc() below and must not be duplicated here.
   out <- list(
-    pmid                = NA,
-    pmcid_pmc           = NA,
-    pmcid_uid           = NA,
-    doi                 = NA,
-    is_replication_pred = FALSE,
-    replication_text    = ""
+    pmid      = NA,
+    pmcid_pmc = NA,
+    pmcid_uid = NA,
+    doi       = NA
   )
 
   # Parse XML

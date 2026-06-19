@@ -139,13 +139,18 @@ test_that(".which_novelty_first_to_1 allows an adverbial before 'to <verb>'", {
 })
 
 
-test_that("novelty recall covers 'new'/'innovative', passive and adverbial-first claims", {
+test_that("novelty recall covers 'novel'/'innovative', passive and adverbial-first claims", {
   pos <- c(
-    "We present a new device to avoid tunnel coalition.",
     "A novel silicon-based microevaporator is developed in this work.",
-    "Here we propose an innovative framework for risk assessment."
+    "Here we propose an innovative framework for risk assessment.",
+    "In this study we present a novel diagnostic assay for the pathogen."
   )
   expect_true(length(rtransparent:::.which_novelty_novel_1(pos)) >= 2)
+
+  # Bare "new" is deliberately not a novelty cue (too frequent in non-priority
+  # contexts) and must not trigger on its own.
+  expect_equal(length(rtransparent:::.which_novelty_novel_1(
+    "We used a new device and new reagents for the assay.")), 0)
 
   first <- c(
     "Our study first provided evidence that this pathway drives tumorigenesis.",
@@ -153,6 +158,55 @@ test_that("novelty recall covers 'new'/'innovative', passive and adverbial-first
     "We present the first reported case of this presentation."
   )
   expect_true(length(rtransparent:::.which_novelty_first_to_1(first)) >= 2)
+})
+
+
+test_that(".which_novelty_first_to_1 covers 'first to <verb>' for many verbs and nouns", {
+  pos <- c(
+    "This study is the first to confirm the effectiveness of the biomarker.",
+    "We are the first to validate this model in an external cohort.",
+    "These are the first technology to simultaneously achieve both goals.",
+    "Ours is the first study to find a link between diversity and well-being.",
+    "The present study is the first to directly compare the two devices."
+  )
+  expect_equal(length(rtransparent:::.which_novelty_first_to_1(pos)), 5)
+
+  # Procedural / enumerated "first to" is not a priority claim.
+  neg <- c(
+    "Examination is performed first to confirm instability, then imaging follows.",
+    "There are two stages: first to identify patients and then to treat them.",
+    "The first method involves recording chronopotentiometry curves."
+  )
+  expect_equal(length(rtransparent:::.which_novelty_first_to_1(neg)), 0)
+})
+
+
+test_that(".which_novelty_previously_1 requires a study anchor, not a background gap", {
+  pos <- c(
+    "We identified a previously unknown mechanism of resistance.",
+    "This previously unreported variant was found in 5% of patients.",
+    "This association has not been reported previously."
+  )
+  expect_true(length(rtransparent:::.which_novelty_previously_1(pos)) >= 3)
+
+  neg <- c(
+    "Its role in liver metastasis has not been studied.",
+    "The effect of the drug on these cells has not been evaluated."
+  )
+  expect_equal(length(rtransparent:::.which_novelty_previously_1(neg)), 0)
+})
+
+
+test_that("public rt_novelty_pmc and rt_replication_pmc do not duplicate columns", {
+  f <- system.file("extdata", "PMID32171256-PMC7071725.xml",
+                   package = "rtransparent")
+  skip_if(f == "")
+  nov <- rt_novelty_pmc(f, remove_ns = TRUE)
+  rep <- rt_replication_pmc(f, remove_ns = TRUE)
+  expect_false(anyDuplicated(names(nov)) > 0)
+  expect_false(anyDuplicated(names(rep)) > 0)
+  expect_true(all(c("is_novelty_pred", "novelty_text") %in% names(nov)))
+  expect_true(all(c("is_replication_pred", "replication_text") %in% names(rep)))
 })
 
 

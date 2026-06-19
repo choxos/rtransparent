@@ -34,23 +34,12 @@
     return(c(out, index_any))
   }
 
-  # Quick relevance check
+  # Relevance gate: a cheap superset of every cue the pattern functions below can
+  # match. Precision is enforced by those functions and .negate_novelty_1, not
+  # here, so this only needs to admit anything potentially relevant.
   rel_regex <- paste(
-    "first time", "first study", "first to ", "first report",
-    "first demonstration", "first study comparing", "first study of",
-    "among the first", "novel finding", "novel observation",
-    "novel approach", "novel method", "novel technique",
-    "novel evidence", "novel aspect", "novel role",
-    "novel mechanism", "novel target", "novel treatment",
-    "novel therapy", "novel association", "novel result",
-    "novel perspective", "novel pathway", "novel insight",
-    "previously unknown", "previously unreported",
-    "previously uncharacterized", "previously undescribed",
-    "previously unidentified", "previously unrecognized",
-    "previously unappreciated",
-    "not been reported previously", "has not been reported",
-    "has not been studied", "has not been examined",
-    "to our knowledge", "to the best of our knowledge",
+    "first", "novel", "innovativ", "unprecedent", "previously un",
+    "not been", "to our knowledge", "to the best of",
     sep = "|"
   )
   is_relevant <- any(grepl(rel_regex, article, ignore.case = TRUE))
@@ -109,22 +98,13 @@
 #' @export
 rt_novelty_pmc <- function(filename, remove_ns = FALSE) {
 
-  index_any <- list(
-    novelty_first_time_1 = NA,
-    novelty_first_time_2 = NA,
-    novelty_first_to_1   = NA,
-    novelty_previously_1 = NA,
-    novelty_novel_1       = NA,
-    novelty_knowledge_1   = NA
-  )
-
+  # Identifier columns only; the prediction, extracted text and per-pattern flags
+  # are supplied by .rt_novelty_pmc() below and must not be duplicated here.
   out <- list(
-    pmid            = NA,
-    pmcid_pmc       = NA,
-    pmcid_uid       = NA,
-    doi             = NA,
-    is_novelty_pred = FALSE,
-    novelty_text    = ""
+    pmid      = NA,
+    pmcid_pmc = NA,
+    pmcid_uid = NA,
+    doi       = NA
   )
 
   # Parse XML
