@@ -1,5 +1,30 @@
 <div align="justify">
 
+# rtransparent 0.9.10
+
+Replication is now accuracy-corrected; a fresh validation of replication and AI.
+
+* **Replication added to `rt_accuracy`.** Earlier releases left replication out
+  of the accuracy table because its gold set had too few positives (5) for a
+  stable sensitivity estimate. A new replication-enriched validation of 250
+  open-access articles, selected for external-validation language and
+  hand-labeled (111 positives), gives a stable estimate: sensitivity 92.8 on the
+  enriched positives, with the representative specificity (98.5) carried over
+  from the 2023 1000-article sample. `rt_summary()` now reports an
+  accuracy-corrected replication prevalence. New benchmark
+  `inst/benchmark/results_replication_enriched.{csv,md}` and labeled set
+  `data-raw/benchmark/labels_replication_enriched.csv`.
+
+* **AI disclosure validated on 2024-2025 articles.** On a random sample of
+  recent open-access articles the generative-AI-disclosure rate is about two to
+  three percent (far below curated AI-focused corpora), and the detector's
+  positives were precise on inspection. Because that prevalence is too low in
+  unselected literature for a stable corrected estimate, AI remains uncorrected
+  in `rt_summary()` (reported as apparent prevalence).
+
+* No detector logic changed in this release, so all held-out benchmarks are
+  unchanged.
+
 # rtransparent 0.9.9
 
 Conflict-of-interest and funding detection in five more languages.
