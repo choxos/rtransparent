@@ -1,235 +1,319 @@
-# rtransparent
+# rtransparency
 
-## Overview
+`rtransparency` automatically identifies and extracts **indicators of
+research transparency** from the full text of biomedical articles, in
+both PubMed Central (PMC) JATS XML and plain-text (PDF-derived) form.
+Every prediction comes with the exact statement that triggered it, so
+results are auditable rather than a black box. Detection is rule-based
+(curated regular expressions over the relevant article sections),
+self-contained (no GitHub-only or AGPL dependencies), and ships with
+reproducible accuracy benchmarks.
 
-`rtransparent` is an R package that automatically identifies and
-extracts **indicators of transparency** from the full text of published
-biomedical articles, in both TXT (PDF-derived) and PMC XML form. For
-each indicator it returns whether the indicator was found and, when
-found, the statement that triggered the detection.
+## The eight indicators
 
-It detects seven indicators:
+| Indicator | Detects | XML function | Text function |
+|----|----|----|----|
+| **Conflicts of interest** | A COI disclosure is present (including “no competing interests”) | `rt_coi_pmc` | `rt_coi` |
+| **Funding** | A statement that funding was received | `rt_fund_pmc` | `rt_fund` |
+| **Protocol registration** | A trial/protocol registration identifier or statement (NCT, ISRCTN, PROSPERO, OSF, CHiCTR, DRKS, ANZCTR, IRCT, UMIN, …) | `rt_register_pmc` | `rt_register` |
+| **Novelty** | The article claims its own work is novel or first | `rt_novelty_pmc` | `rt_novelty` |
+| **Replication** | A replication or external/independent validation was performed | `rt_replication_pmc` | `rt_replication` |
+| **Data sharing** | The authors’ own data are made available (repository, accession, or in-article) | `rt_data_code_pmc` | `rt_data_code` |
+| **Code sharing** | The authors’ own analysis code is shared | `rt_data_code_pmc` | `rt_data_code` |
+| **AI disclosure** | A statement discloses generative-AI use in manuscript preparation (2023+) | `rt_ai_pmc` | — |
 
-- **Conflicts of interest** (`rt_coi`, `rt_coi_pmc`)
-- **Funding** (`rt_fund`, `rt_fund_pmc`)
-- **Protocol registration** (`rt_register`, `rt_register_pmc`)
-- **Novelty** claims (`rt_novelty`, `rt_novelty_pmc`)
-- **Replication** components (`rt_replication`, `rt_replication_pmc`)
-- **Data sharing** and **code sharing** (`rt_data_code`,
-  `rt_data_code_pmc`)
-- **AI disclosure** (`rt_ai_pmc`): use or non-use of generative AI in
-  writing the manuscript, evaluated only for articles published in 2023
-  or later
-
-`rt_all` / `rt_all_pmc` run COI, funding, registration, novelty and
-replication together; `rt_meta_pmc` returns article metadata from a PMC
-XML file.
-
-Detection is rule-based and interpretable (curated regular expressions
-over the relevant article sections), so the output is auditable and
-reproducible. See the vignette
-([`vignette("rtransparent")`](https://choxos.github.io/rtransparent/articles/rtransparent.md))
-for the methodology, and the package website at
-<https://choxos.github.io/rtransparent/> for full documentation.
-
-## Authors
-
-Original package by Stylianos (Stelios) Serghiou. This enhanced fork is
-maintained by Ahmad Sofi-Mahmudi ([ORCID
-0000-0001-6829-0823](https://orcid.org/0000-0001-6829-0823), GitHub
-[@choxos](https://github.com/choxos)). The original data and code
-detection relied on the `oddpub` package of Nico Riedel; data and code
-detection is now implemented natively and no longer requires `oddpub`.
-
-## Publication
-
-`rtransparent` was validated and used to extract indicators of
-transparency across the open access literature in PubMed Central:
-Serghiou et al., *Assessment of transparency indicators across the
-biomedical literature: How open is open?* PLOS Biology, 2021,
-[doi:10.1371/journal.pbio.3001107](https://doi.org/10.1371/journal.pbio.3001107).
+Conflicts of interest and AI disclosure are **disclosure-based**: a
+statement on the topic counts whether the disclosure is positive or
+negative. Conflict-of- interest and funding statements are detected not
+only in English but also in **Spanish, Portuguese, French, German and
+Italian**.
 
 ## Installation
 
 ``` r
 
 # install.packages("remotes")
-remotes::install_github("choxos/rtransparent", build_vignettes = TRUE)
+remotes::install_github("choxos/rtransparency", build_vignettes = TRUE)
 ```
 
 No GitHub-only or AGPL dependencies are required; data and code
-detection is native.
-[`rt_read_pdf()`](https://choxos.github.io/rtransparent/reference/rt_read_pdf.md)
-(PDF to TXT) additionally needs the poppler `pdftotext` utility on your
-system.
+detection is native (it no longer wraps `oddpub`).
+[`rt_read_pdf()`](https://choxos.github.io/rtransparency/reference/rt_read_pdf.md)
+(PDF to text) additionally needs the poppler `pdftotext` utility on your
+system. The optional `furrr` and `future` packages enable parallel
+corpus processing; `ggplot2` enables plotting.
 
-## Usage
+## Quick start: all eight indicators in one call
 
 ``` r
 
-library(rtransparent)
+library(rtransparency)
 
-# A bundled example PMC XML file
-xml <- system.file("extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent")
+xml <- system.file("extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency")
 
-# COI, funding, registration, novelty and replication in one pass
-rt_all_pmc(xml, remove_ns = TRUE)
+res <- rt_all_pmc(xml, remove_ns = TRUE)
 
-# Data and code sharing
-rt_data_code_pmc(xml, remove_ns = TRUE)
+# The predictions, one column per indicator:
+res[, c("is_coi_pred", "is_fund_pred", "is_register_pred", "is_novelty_pred",
+        "is_replication_pred", "is_open_data", "is_open_code", "is_ai_pred")]
 
-# Article metadata
-rt_meta_pmc(xml, remove_ns = TRUE)
+# Each prediction is paired with the text that triggered it, e.g.:
+res$coi_text
+res$fund_text
+res$open_data_statements
 ```
 
-Naming convention: functions that operate on TXT files do not end in
-`_pmc`; functions that operate on PMC XML end in `_pmc`. The best way to
-learn the package is the vignette:
-[`vignette("rtransparent")`](https://choxos.github.io/rtransparent/articles/rtransparent.md).
+[`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
+returns one row with the eight predictions, the extracted statement for
+each, article identifiers and metadata, the year, and `is_success`.
+`is_ai_pred` is `NA` for articles published before 2023.
+
+## Per-indicator functions
+
+Each indicator can be run on its own, for a PMC XML file or a plain-text
+file:
+
+``` r
+
+rt_coi_pmc(xml, remove_ns = TRUE)        # conflicts of interest
+rt_fund_pmc(xml, remove_ns = TRUE)       # funding
+rt_register_pmc(xml, remove_ns = TRUE)   # protocol registration
+rt_novelty_pmc(xml, remove_ns = TRUE)    # novelty claims
+rt_replication_pmc(xml, remove_ns = TRUE)# replication / external validation
+rt_data_code_pmc(xml, remove_ns = TRUE)  # data AND code sharing (+ extracted links)
+rt_ai_pmc(xml, remove_ns = TRUE)         # generative-AI-use disclosure (2023+)
+rt_meta_pmc(xml, remove_ns = TRUE)       # article metadata
+```
+
+## Corpus-scale processing
+
+[`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
+runs all eight indicators over an entire directory (or a vector of
+paths). It is built for large corpora:
+
+``` r
+
+res <- rt_all_pmc_dir(
+  "path/to/xml",          # a directory, or a character vector of file paths
+  remove_ns = TRUE,
+  output    = "results.csv",  # resumable: re-running skips files already recorded
+  parallel  = TRUE,           # via furrr + an active future::plan()
+  progress  = TRUE
+)
+```
+
+- **Resumable**: with `output`, results are written to a CSV in chunks;
+  a re-run skips files already recorded and appends only the new ones.
+- **Failure-isolated**: a malformed file yields an `is_success = FALSE`
+  row instead of aborting the run.
+- **Parallel**: set `future::plan("multisession")` and
+  `parallel = TRUE`.
+
+## Plain-text input
+
+The same detectors run on plain-text (PDF-derived) articles. Convert a
+PDF and run the text detectors, which share the PMC detection logic:
+
+``` r
+
+txt_path <- rt_read_pdf("article.pdf")   # needs poppler's pdftotext
+
+rt_all(txt_path)                         # COI, funding, registration, novelty, replication
+rt_coi(txt_path)                         # or one indicator at a time
+```
 
 ## Summarizing a corpus
 
-The detectors describe one article at a time. To study a whole corpus,
-stack the per-article rows and summarize them:
+Once you have one row per article, summarize the corpus:
 
 ``` r
 
-# results: one row per article (e.g. purrr::map_dfr(files, rt_all_pmc))
 data(rt_demo)            # a small simulated example shipped with the package
 
-rt_summary(rt_demo)      # prevalence of each indicator, with a confidence
+rt_summary(rt_demo)      # per-indicator prevalence with a Wilson confidence
                          # interval and a sensitivity/specificity-corrected
                          # (Rogan-Gladen) prevalence
 
+rt_summary(rt_demo, by = "year")   # subgroup summaries
+
 rt_score(rt_demo)        # add a per-article count of openness practices met
 
-rt_plot(rt_demo)                              # prevalence bar chart
-rt_plot(rt_demo, type = "trend", year = "year")  # prevalence over time
+rt_plot(rt_demo)                                  # prevalence bar chart
+rt_plot(rt_demo, type = "trend", year = "year")   # prevalence over time
 ```
 
 The accuracy correction uses the bundled `rt_accuracy` table (detector
-sensitivity and specificity estimates), which you can override. See
-[`vignette("transparency-summary")`](https://choxos.github.io/rtransparent/articles/transparency-summary.md)
-for a full walk-through.
+sensitivity and specificity for seven indicators). Supply your own
+estimates:
+
+``` r
+
+rt_accuracy                              # the bundled estimates
+my_acc <- data.frame(variable = "is_open_data", sensitivity = 0.84, specificity = 0.97)
+rt_summary(rt_demo, accuracy = my_acc)   # correct with your own values
+```
+
+## Linking to FAIR assessment
+
+The data- and code-availability links the detector extracts
+(`open_data_links`, `open_code_links`) can be passed to FAIR-assessment
+tooling such as [`rfuji`](https://github.com/choxos/rfuji) to score the
+findability and accessibility of the shared resources.
 
 ## Validation
 
 Benchmarked against the human-labeled XML benchmark of Serghiou et
-al. (2021) (reproducible under `data-raw/benchmark/`, results in
-`inst/benchmark/`):
+al. (2021), reproducible under `data-raw/benchmark/`, with results in
+`inst/benchmark/`:
 
-| Indicator             | Accuracy | Sensitivity | Specificity |
-|-----------------------|----------|-------------|-------------|
-| Conflicts of interest | 96.7%    | 94.0%       | 100%        |
-| Funding               | 97.3%    | 100%        | 95.7%       |
-| Protocol registration | 98.1%    | 99.2%       | 96.9%       |
-| Data sharing          | 87.0%    | 76.5%       | 99.0%       |
-| Code sharing          | 95.7%    | 88.1%       | 99.5%       |
+| Indicator             | Sensitivity | Specificity |
+|-----------------------|-------------|-------------|
+| Conflicts of interest | 94.0%       | 100%        |
+| Funding               | 100%        | 95.7%       |
+| Protocol registration | 99.2%       | 96.9%       |
+| Data sharing          | 76.5%       | 99.0%       |
+| Code sharing          | 88.1%       | 99.5%       |
 
-The native code detector exceeds the paper’s reported sensitivity and
-the data detector’s specificity remains high. The native **data
-sensitivity (77%) is still below `oddpub`’s ~84%** on this set, on a
-tail of supplement-only data, reused public-source statements and
-“available upon request” data that the detector deliberately excludes as
-not openly shared; treat the native data detector as high-precision but
-not yet a complete sensitivity replacement. The data/code values are
-reproducible benchmark and regression estimates for the native detector,
-not untouched external validation estimates.
+The newer indicators and the multilingual detectors are validated
+against maintainer-built, hand-labeled benchmarks in `inst/benchmark/`:
+
+- a **1000-article 2023 open-access sample** labeled for all eight
+  indicators;
+- a **replication-enriched validation** (111 positives) for the
+  replication indicator;
+- a **five-language sample** for multilingual COI and funding;
+- a **TXT-parity benchmark** comparing the text and XML detectors;
+- a **novelty/replication gold set**.
+
+See
+[`vignette("rtransparency")`](https://choxos.github.io/rtransparency/articles/rtransparency.md)
+for the methodology and
+[`vignette("scope-and-limitations")`](https://choxos.github.io/rtransparency/articles/scope-and-limitations.md)
+for what each indicator does and does not capture.
+
+## Documentation
+
+- [`vignette("rtransparency")`](https://choxos.github.io/rtransparency/articles/rtransparency.md)
+  — introduction and methodology
+- [`vignette("transparency-summary")`](https://choxos.github.io/rtransparency/articles/transparency-summary.md)
+  — corpus prevalence, scoring and plotting
+- [`vignette("ai-disclosure")`](https://choxos.github.io/rtransparency/articles/ai-disclosure.md)
+  — the AI-use disclosure indicator in depth
+- [`vignette("scope-and-limitations")`](https://choxos.github.io/rtransparency/articles/scope-and-limitations.md)
+  — indicator semantics, limitations, output schema
+- Package website: <https://choxos.github.io/rtransparency/>
+
+## Lineage and citation
+
+This package builds on the original **`rtransparent`** tool of Stylianos
+(Stelios) Serghiou, an enhanced, renamed fork maintained by Ahmad
+Sofi-Mahmudi ([ORCID
+0000-0001-6829-0823](https://orcid.org/0000-0001-6829-0823), GitHub
+[@choxos](https://github.com/choxos)). It adds four indicators (novelty,
+replication, AI disclosure, and a natively re-implemented data/code
+detector), multilingual COI and funding detection, plain-text parity,
+and corpus-scale batch processing. Serghiou is credited as an author.
+
+The foundational paper: Serghiou et al., *Assessment of transparency
+indicators across the biomedical literature: How open is open?* PLOS
+Biology, 2021,
+[doi:10.1371/journal.pbio.3001107](https://doi.org/10.1371/journal.pbio.3001107).
+Run `citation("rtransparency")` for both references.
 
 ## Getting help
 
 Please file bugs or questions as issues at
-<https://github.com/choxos/rtransparent/issues> with a minimal
+<https://github.com/choxos/rtransparency/issues> with a minimal
 reproducible example.
 
 # Package index
 
 ## Package
 
-- [`rtransparent`](https://choxos.github.io/rtransparent/reference/rtransparent-package.md)
-  [`rtransparent-package`](https://choxos.github.io/rtransparent/reference/rtransparent-package.md)
-  : rtransparent: Identify indicators of transparency in the published
+- [`rtransparency`](https://choxos.github.io/rtransparency/reference/rtransparency-package.md)
+  [`rtransparency-package`](https://choxos.github.io/rtransparency/reference/rtransparency-package.md)
+  : rtransparency: Identify indicators of transparency in the biomedical
   literature
 
 ## Run all detectors
 
 Detect every indicator in one pass, for one file or a whole corpus.
 
-- [`rt_all()`](https://choxos.github.io/rtransparent/reference/rt_all.md)
+- [`rt_all()`](https://choxos.github.io/rtransparency/reference/rt_all.md)
   : Identify and extract statements of COI, Funding and Registration.
-- [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+- [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   : Identify and extract all transparency indicators from a PMC XML.
-- [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc_dir.md)
+- [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
   : Identify transparency indicators across many PMC XML files.
 
 ## Individual indicators (PMC XML)
 
 One detector per indicator, for PMC JATS XML files.
 
-- [`rt_coi_pmc()`](https://choxos.github.io/rtransparent/reference/rt_coi_pmc.md)
+- [`rt_coi_pmc()`](https://choxos.github.io/rtransparency/reference/rt_coi_pmc.md)
   : Identify and extract Conflicts of Interest (COI) statements in PMC
   XML files.
-- [`rt_fund_pmc()`](https://choxos.github.io/rtransparent/reference/rt_fund_pmc.md)
+- [`rt_fund_pmc()`](https://choxos.github.io/rtransparency/reference/rt_fund_pmc.md)
   : Identify and extract Funding statements in PMC XML files.
-- [`rt_register_pmc()`](https://choxos.github.io/rtransparent/reference/rt_register_pmc.md)
+- [`rt_register_pmc()`](https://choxos.github.io/rtransparency/reference/rt_register_pmc.md)
   : Identify and extract Conflicts of Interest statements in PMC XML
   files.
-- [`rt_novelty_pmc()`](https://choxos.github.io/rtransparent/reference/rt_novelty_pmc.md)
+- [`rt_novelty_pmc()`](https://choxos.github.io/rtransparency/reference/rt_novelty_pmc.md)
   : Identify and extract novelty claims in PMC XML files.
-- [`rt_replication_pmc()`](https://choxos.github.io/rtransparent/reference/rt_replication_pmc.md)
+- [`rt_replication_pmc()`](https://choxos.github.io/rtransparency/reference/rt_replication_pmc.md)
   : Identify and extract replication components in PMC XML files.
-- [`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md)
+- [`rt_data_code_pmc()`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc.md)
   : Identify and extract Data and Code sharing from PMC XML files.
-- [`rt_data_code_pmc_list()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc_list.md)
+- [`rt_data_code_pmc_list()`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc_list.md)
   : Identify and extract Data and Code sharing from a list of PMC XML
   files.
-- [`rt_ai_pmc()`](https://choxos.github.io/rtransparent/reference/rt_ai_pmc.md)
+- [`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
   : Identify disclosure of generative-AI use from a PMC XML file.
 
 ## Individual indicators (text)
 
 One detector per indicator, for plain-text (PDF-derived) files.
 
-- [`rt_coi()`](https://choxos.github.io/rtransparent/reference/rt_coi.md)
+- [`rt_coi()`](https://choxos.github.io/rtransparency/reference/rt_coi.md)
   : Identify and extract Conflicts of Interest (COI) statements in TXT
   files.
-- [`rt_fund()`](https://choxos.github.io/rtransparent/reference/rt_fund.md)
+- [`rt_fund()`](https://choxos.github.io/rtransparency/reference/rt_fund.md)
   : Identify and extract Funding statements in TXT files.
-- [`rt_register()`](https://choxos.github.io/rtransparent/reference/rt_register.md)
+- [`rt_register()`](https://choxos.github.io/rtransparency/reference/rt_register.md)
   : Identify and extract Registration statements in TXT files.
-- [`rt_novelty()`](https://choxos.github.io/rtransparent/reference/rt_novelty.md)
+- [`rt_novelty()`](https://choxos.github.io/rtransparency/reference/rt_novelty.md)
   : Identify whether a study claims novelty in TXT files.
-- [`rt_replication()`](https://choxos.github.io/rtransparent/reference/rt_replication.md)
+- [`rt_replication()`](https://choxos.github.io/rtransparency/reference/rt_replication.md)
   : Identify whether a study includes a replication component in TXT
   files.
-- [`rt_data_code()`](https://choxos.github.io/rtransparent/reference/rt_data_code.md)
+- [`rt_data_code()`](https://choxos.github.io/rtransparency/reference/rt_data_code.md)
   : Identify and extract Data and Code statements in TXT files.
 
 ## Metadata and input
 
 Article metadata and PDF-to-text conversion.
 
-- [`rt_meta_pmc()`](https://choxos.github.io/rtransparent/reference/rt_meta_pmc.md)
+- [`rt_meta_pmc()`](https://choxos.github.io/rtransparency/reference/rt_meta_pmc.md)
   : Extract article metadata from a PMC XML file.
-- [`rt_read_pdf()`](https://choxos.github.io/rtransparent/reference/rt_read_pdf.md)
+- [`rt_read_pdf()`](https://choxos.github.io/rtransparency/reference/rt_read_pdf.md)
   : Covert PDF files into TXT files.
 
 ## Summarize and visualize
 
 Corpus-level prevalence, per-article scores and plots.
 
-- [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+- [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   : Summarize transparency indicators across a corpus of articles
-- [`rt_score()`](https://choxos.github.io/rtransparent/reference/rt_score.md)
+- [`rt_score()`](https://choxos.github.io/rtransparency/reference/rt_score.md)
   : Count the transparency indicators met by each article
-- [`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+- [`rt_plot()`](https://choxos.github.io/rtransparency/reference/rt_plot.md)
   : Plot transparency indicators
 
 ## Datasets
 
-- [`rt_accuracy`](https://choxos.github.io/rtransparent/reference/rt_accuracy.md)
+- [`rt_accuracy`](https://choxos.github.io/rtransparency/reference/rt_accuracy.md)
   : Detector accuracy estimates
-- [`rt_demo`](https://choxos.github.io/rtransparent/reference/rt_demo.md)
+- [`rt_demo`](https://choxos.github.io/rtransparency/reference/rt_demo.md)
   : Simulated transparency indicators for a corpus of articles
 
 # Articles
@@ -237,21 +321,21 @@ Corpus-level prevalence, per-article scores and plots.
 ### Articles
 
 - [Introduction to
-  rtransparent](https://choxos.github.io/rtransparent/articles/rtransparent.md):
+  rtransparency](https://choxos.github.io/rtransparency/articles/rtransparency.md):
 
-  How to use the rtransparent package to identify and extract indicators
-  of transparency from published biomedical articles, and how the
-  detection works.
+  How to use the rtransparency package to identify and extract
+  indicators of transparency from published biomedical articles, and how
+  the detection works.
 
 - [Summarizing transparency across a
-  corpus](https://choxos.github.io/rtransparent/articles/transparency-summary.md):
+  corpus](https://choxos.github.io/rtransparency/articles/transparency-summary.md):
 
 - [Detecting disclosure of generative-AI
-  use](https://choxos.github.io/rtransparent/articles/ai-disclosure.md):
+  use](https://choxos.github.io/rtransparency/articles/ai-disclosure.md):
 
   How rt_ai_pmc() detects whether an article discloses the use (or
   non-use) of generative AI in preparing the manuscript, why it is gated
   to 2023 onward, and how to summarize it across a corpus.
 
 - [Scope and
-  limitations](https://choxos.github.io/rtransparent/articles/scope-and-limitations.md):
+  limitations](https://choxos.github.io/rtransparency/articles/scope-and-limitations.md):

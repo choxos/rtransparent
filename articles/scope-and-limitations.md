@@ -1,6 +1,6 @@
 # Scope and limitations
 
-`rtransparent` is a pattern-based detector. It is designed for high
+`rtransparency` is a pattern-based detector. It is designed for high
 precision on the statements it targets, and its predictions come with
 the exact text that triggered them so they can be audited. This vignette
 describes what each indicator does and does not capture, so results are
@@ -45,7 +45,7 @@ in the literature.
   funding groups, conflict footnotes, section types), so a few
   statements detectable in XML are not detectable in plain text.
 - **Accuracy correction.**
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   can correct apparent prevalence using bundled sensitivity/specificity
   estimates (`rt_accuracy`). These derive from the validation
   benchmarks; supply your own via `rt_summary(accuracy = )` when you
@@ -60,14 +60,14 @@ Every per-article detector returns the prediction columns `is_coi_pred`,
 `is_replication_pred`, `is_open_data`, `is_open_code`, and the
 year-gated `is_ai_pred` (`NA` before 2023), each paired with the
 extracted text.
-[`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+[`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
 returns all eight for one file;
-[`rt_all_pmc_dir()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc_dir.md)
+[`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
 runs a whole directory.
 
 ``` r
 
-library(rtransparent)
+library(rtransparency)
 
 res <- rt_all_pmc("article.xml", remove_ns = TRUE)
 res[, c("is_coi_pred", "is_fund_pred", "is_open_data", "is_open_code")]
@@ -77,8 +77,9 @@ res[, c("is_coi_pred", "is_fund_pred", "is_open_data", "is_open_code")]
 
 The data- and code-availability links the detector extracts
 (`open_data_links`, `open_code_links`) can be passed to FAIR-assessment
-tooling such as [`rfuji`](https://github.com/Ammar-Ali-Khan/rfuji) to
-score the findability and accessibility of the shared resources.
+tooling such as [`rfuji`](https://github.com/choxos/rfuji), an R client
+for the F-UJI FAIR assessment service, to score the findability and
+accessibility of the shared resources.
 
 ``` r
 

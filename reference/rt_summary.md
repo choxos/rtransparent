@@ -84,8 +84,8 @@ rt_summary(rt_demo)
 #> 3 is_registe… Prot…       1200        356   29.7     27.2       32.3       30.8 
 #> 4 is_open_da… Data…       1200        245   20.4     18.2       22.8       25.7 
 #> 5 is_open_co… Code…       1200        102    8.5      7.05      10.2        9.13
-#> 6 is_novelty… Nove…       1200        653   54.4     51.6       57.2       NA   
-#> 7 is_replica… Repl…       1200        113    9.42     7.89      11.2       NA   
+#> 6 is_novelty… Nove…       1200        653   54.4     51.6       57.2       62.8 
+#> 7 is_replica… Repl…       1200        113    9.42     7.89      11.2        8.67
 #> 8 is_ai_pred  AI d…        282         71   25.2     20.5       30.6       NA   
 #> # ℹ 2 more variables: adj_low <dbl>, adj_high <dbl>
 

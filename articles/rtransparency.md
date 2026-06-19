@@ -1,13 +1,13 @@
-# Introduction to rtransparent
+# Introduction to rtransparency
 
 ``` r
 
-library(rtransparent)
+library(rtransparency)
 ```
 
 ## Overview
 
-`rtransparent` identifies and extracts **indicators of transparency**
+`rtransparency` identifies and extracts **indicators of transparency**
 from the full text of published biomedical articles. It works on two
 inputs: plain TXT files (typically converted from PDFs) and PMC XML
 files (the JATS XML served by PubMed Central). For each indicator it
@@ -105,6 +105,15 @@ rather than a machine learning model. This keeps the output auditable
   research method (not for writing) is not counted. Only evaluated for
   2023 onward.
 
+### Languages
+
+Conflict-of-interest and funding statements are detected not only in
+English but also in **Spanish, Portuguese, French, German and Italian**,
+using language-distinctive patterns matched on transliterated
+(accent-stripped) text. The German conflict-of-interest detection rate,
+for example, rose from 33% to 97% once these were added. The other
+indicators are English-only for now.
+
 ## Usage: PMC XML
 
 The package ships an example PMC XML file. We use it below; replace the
@@ -113,7 +122,7 @@ path with your own file to analyze a different article.
 ``` r
 
 xml_path <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 ```
 
@@ -136,7 +145,7 @@ dplyr::glimpse(
 #> $ pmid                <chr> "32171256"
 #> $ year                <int> 2020
 #> $ is_coi_pred         <lgl> TRUE
-#> $ is_fund_pred        <lgl> TRUE
+#> $ is_fund_pred        <lgl> FALSE
 #> $ is_register_pred    <lgl> FALSE
 #> $ is_novelty_pred     <lgl> FALSE
 #> $ is_replication_pred <lgl> FALSE
@@ -164,10 +173,8 @@ c(is_coi = coi$is_coi_pred, text = substr(coi$coi_text, 1, 120))
 
 fund <- rt_fund_pmc(xml_path, remove_ns = TRUE)
 c(is_fund = fund$is_fund_pred, text = substr(fund$fund_text, 1, 120))
-#>                                                                                                                    is_fund 
-#>                                                                                                                     "TRUE" 
-#>                                                                                                                       text 
-#> "Funding This research received no specific grant from any funding agency in the public, commercial, or not-for-profit se"
+#> is_fund    text 
+#> "FALSE"      ""
 ```
 
 ``` r
@@ -199,6 +206,22 @@ dplyr::glimpse(
 #> $ open_code_statements <chr> ""
 ```
 
+`rt_all_pmc` and `rt_data_code_pmc` also return `open_data_links` and
+`open_code_links`: the repository and accession URLs extracted from the
+statements, ready to pass to FAIR-assessment tooling such as
+[`rfuji`](https://github.com/choxos/rfuji). Article metadata (title,
+journal, identifiers, dates) is available separately via `rt_meta_pmc`.
+
+``` r
+
+meta <- rt_meta_pmc(xml_path, remove_ns = TRUE)
+dplyr::glimpse(meta[, c("pmid", "doi")])
+#> Rows: 1
+#> Columns: 2
+#> $ pmid <chr> "32171256"
+#> $ doi  <chr> "10.1186/s12874-020-0914-6"
+```
+
 ### AI-use disclosure
 
 `rt_ai_pmc` reports the publication `year`, the year-gated prediction
@@ -223,7 +246,7 @@ is built.
 ``` r
 
 pdf_path <- system.file(
-  "extdata", "PMID32171256-PMC7071725.pdf", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.pdf", package = "rtransparency"
 )
 article <- rt_read_pdf(pdf_path)
 writeLines(article, "article.txt")
@@ -233,6 +256,55 @@ rt_fund("article.txt")
 rt_register("article.txt")
 rt_data_code("article.txt")
 rt_all("article.txt")   # COI, funding, registration, novelty, replication
+```
+
+## Processing many articles
+
+[`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
+runs all eight indicators over an entire directory (or a vector of file
+paths) in one call, designed for corpus-scale analysis.
+
+``` r
+
+# Sequential, in memory
+res <- rt_all_pmc_dir("path/to/xml", remove_ns = TRUE)
+
+# Resumable and parallel: results are written to a CSV in chunks, a re-run skips
+# files already recorded, and a malformed file yields an is_success = FALSE row
+# instead of aborting the run.
+future::plan("multisession")
+res <- rt_all_pmc_dir(
+  "path/to/xml", remove_ns = TRUE, output = "results.csv", parallel = TRUE
+)
+```
+
+## Summarizing a corpus
+
+With one row per article,
+[`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
+reports per-indicator prevalence with a Wilson confidence interval and a
+sensitivity/specificity-corrected (Rogan-Gladen) prevalence;
+[`rt_score()`](https://choxos.github.io/rtransparency/reference/rt_score.md)
+adds a per-article count of openness practices; and
+[`rt_plot()`](https://choxos.github.io/rtransparency/reference/rt_plot.md)
+draws prevalence bars and yearly trends. The `transparency-summary`
+vignette covers this in depth.
+
+``` r
+
+data(rt_demo)            # a small simulated example shipped with the package
+rt_summary(rt_demo)[, c("indicator", "percent", "adj_percent")]
+#> # A tibble: 8 × 3
+#>   indicator           percent adj_percent
+#>   <chr>                 <dbl>       <dbl>
+#> 1 is_coi_pred           70.4        70.8 
+#> 2 is_fund_pred          79.6        79.4 
+#> 3 is_register_pred      29.7        30.8 
+#> 4 is_open_data          20.4        25.7 
+#> 5 is_open_code           8.5         9.13
+#> 6 is_novelty_pred       54.4        62.8 
+#> 7 is_replication_pred    9.42        8.67
+#> 8 is_ai_pred            25.2        NA
 ```
 
 ## Downloading PMC XML
@@ -252,7 +324,7 @@ work well; the following is illustrative.
 The detectors were benchmarked against the human-labeled XML benchmark
 of Serghiou et al. (2021). The current package reaches roughly: COI 97%
 accuracy, funding 97%, protocol registration 98%. The native data/code
-detector reaches code 84% sensitivity / 99% specificity and data 71%
+detector reaches code 88% sensitivity / 99% specificity and data 77%
 sensitivity / 99% specificity (see `inst/benchmark/` and
 `data-raw/benchmark/` in the source repository for the reproducible
 benchmark). The native data/code values are reproducible benchmark and

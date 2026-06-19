@@ -2,7 +2,7 @@
 
 ``` r
 
-library(rtransparent)
+library(rtransparency)
 ```
 
 ## What this indicator captures
@@ -11,7 +11,7 @@ Since 2023, journals and publishers (ICMJE, COPE, Nature, Science,
 Elsevier and others) have asked authors to **disclose any use of
 generative AI** such as ChatGPT, GPT-4, Copilot, Gemini or other large
 language models when preparing a manuscript.
-[`rt_ai_pmc()`](https://choxos.github.io/rtransparent/reference/rt_ai_pmc.md)
+[`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
 detects whether an article carries such a disclosure.
 
 It is deliberately narrow. It targets AI used to **prepare the
@@ -35,7 +35,7 @@ language model” from being read as something the authors edited.
 
 The practice did not exist before 2023, so evaluating it on older
 articles would be meaningless.
-[`rt_ai_pmc()`](https://choxos.github.io/rtransparent/reference/rt_ai_pmc.md)
+[`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
 therefore reads the publication `year` and:
 
 - returns `is_ai_pred = NA` for articles before 2023 (and reports the
@@ -47,7 +47,7 @@ The bundled example article is from 2020, so it returns `NA`:
 ``` r
 
 xml_path <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 ai <- rt_ai_pmc(xml_path, remove_ns = TRUE)
 c(year = ai$year, is_ai_pred = ai$is_ai_pred)
@@ -59,13 +59,13 @@ The three possible values are easy to act on: `TRUE` (a disclosure was
 found), `FALSE` (the article is from 2023 or later but carries no
 disclosure), and `NA` (the article predates the practice and was not
 assessed).
-[`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+[`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
 drops the `NA`s, so a corpus prevalence is computed only over the
 articles where the indicator applies.
 
 ## In the all-indicators output
 
-[`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+[`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
 includes the indicator, so a single pass over a corpus already carries
 `year` and `is_ai_pred` alongside the other seven indicators:
 
@@ -110,7 +110,7 @@ knitr::kable(
 Only 2023 onward carries a denominator; earlier years have no assessable
 articles and are filtered out above. Plotted, the adoption curve is the
 point of the indicator
-([`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+([`rt_plot()`](https://choxos.github.io/rtransparency/reference/rt_plot.md)
 drops the empty earlier years automatically):
 
 ``` r
@@ -142,12 +142,12 @@ positives were genuine disclosures. The main thing it intentionally
 avoids is treating articles that *discuss* ChatGPT as their topic, or
 *use* AI as a research method, as disclosures: those are not statements
 about how the manuscript was written. As with every other indicator,
-[`rt_ai_pmc()`](https://choxos.github.io/rtransparent/reference/rt_ai_pmc.md)
+[`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
 returns the matched text (`ai_text`) so a positive call can always be
 inspected.
 
 For the other indicators and the corpus-summary tools used here, see the
-[Introduction](https://choxos.github.io/rtransparent/articles/rtransparent.md)
+[Introduction](https://choxos.github.io/rtransparency/articles/rtransparency.md)
 and [Summarizing transparency across a
-corpus](https://choxos.github.io/rtransparent/articles/transparency-summary.md)
+corpus](https://choxos.github.io/rtransparency/articles/transparency-summary.md)
 articles.

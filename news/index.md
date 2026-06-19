@@ -1,5 +1,27 @@
 # Changelog
 
+## rtransparency 1.0.0
+
+First stable release, and a rename.
+
+- **Renamed to `rtransparency`.** The package is renamed from
+  `rtransparent` (the name of the original tool by Serghiou et al.) to
+  avoid confusion with that project. The GitHub repository is also
+  renamed to `choxos/rtransparency` (old URLs redirect): install with
+  `remotes::install_github("choxos/rtransparency")` and load with
+  [`library(rtransparency)`](https://github.com/choxos/rtransparency).
+  Function names (`rt_*`) are unchanged. Serghiou is credited as an
+  author and the foundational 2021 paper is cited
+  (`citation("rtransparency")`).
+
+- This 1.0.0 release marks a stable public API: eight transparency
+  indicators (conflicts of interest, funding, registration, novelty,
+  replication, data, code, and AI-use disclosure), multilingual
+  conflict-of-interest and funding detection, plain-text and PMC XML
+  parity, corpus-scale batch processing with
+  [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md),
+  and accuracy correction for seven of the eight indicators.
+
 ## rtransparent 0.9.11
 
 Citation, documentation, and packaging polish.
@@ -28,7 +50,7 @@ and AI.
   gives a stable estimate: sensitivity 92.8 on the enriched positives,
   with the representative specificity (98.5) carried over from the 2023
   1000-article sample.
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   now reports an accuracy-corrected replication prevalence. New
   benchmark `inst/benchmark/results_replication_enriched.{csv,md}` and
   labeled set `data-raw/benchmark/labels_replication_enriched.csv`.
@@ -39,7 +61,7 @@ and AI.
   the detector’s positives were precise on inspection. Because that
   prevalence is too low in unselected literature for a stable corrected
   estimate, AI remains uncorrected in
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   (reported as apparent prevalence).
 
 - No detector logic changed in this release, so all held-out benchmarks
@@ -81,19 +103,19 @@ Conflict-of-interest and funding detection in five more languages.
 The plain-text detectors now share the PMC detection logic.
 
 - **TXT/PMC parity.**
-  [`rt_coi()`](https://choxos.github.io/rtransparent/reference/rt_coi.md),
-  [`rt_fund()`](https://choxos.github.io/rtransparent/reference/rt_fund.md)
+  [`rt_coi()`](https://choxos.github.io/rtransparency/reference/rt_coi.md),
+  [`rt_fund()`](https://choxos.github.io/rtransparency/reference/rt_fund.md)
   and
-  [`rt_register()`](https://choxos.github.io/rtransparent/reference/rt_register.md)
+  [`rt_register()`](https://choxos.github.io/rtransparency/reference/rt_register.md)
   route their text through the same detection helpers as
-  [`rt_coi_pmc()`](https://choxos.github.io/rtransparent/reference/rt_coi_pmc.md),
-  [`rt_fund_pmc()`](https://choxos.github.io/rtransparent/reference/rt_fund_pmc.md)
+  [`rt_coi_pmc()`](https://choxos.github.io/rtransparency/reference/rt_coi_pmc.md),
+  [`rt_fund_pmc()`](https://choxos.github.io/rtransparency/reference/rt_fund_pmc.md)
   and
-  [`rt_register_pmc()`](https://choxos.github.io/rtransparent/reference/rt_register_pmc.md),
+  [`rt_register_pmc()`](https://choxos.github.io/rtransparency/reference/rt_register_pmc.md),
   replacing separate and weaker text logic.
-  ([`rt_novelty()`](https://choxos.github.io/rtransparent/reference/rt_novelty.md)
+  ([`rt_novelty()`](https://choxos.github.io/rtransparency/reference/rt_novelty.md)
   and
-  [`rt_replication()`](https://choxos.github.io/rtransparent/reference/rt_replication.md)
+  [`rt_replication()`](https://choxos.github.io/rtransparency/reference/rt_replication.md)
   already shared their helpers.) Measured on text extracted from the
   1000-article 2023 validation set (sensitivity / specificity):
   registration 46.2 / 98.7 to 90.4 / 98.4, conflicts of interest 88.8 /
@@ -115,9 +137,9 @@ The plain-text detectors now share the PMC detection logic.
 Corpus-scale batch processing.
 
 - **New
-  [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc_dir.md).**
+  [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md).**
   Processes every PMC XML in a directory (or a vector of paths) through
-  [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+  [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   in a single call. The run is resumable (with `output`, results are
   written to a CSV in chunks and a re-run skips files already recorded),
   isolates per-file failures (a malformed file yields an
@@ -306,18 +328,18 @@ and corrects mislabeled articles in the 2023 validation sample.
   sensitivity 77.2 / specificity 89.6 (PPV 71.0) to 86.3 / 94.9 (PPV
   85.4). On the novelty/replication gold set it rose from 76.5 / 90.8 to
   83.8 / 95.2; the `rt_accuracy` novelty estimate used by
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   was updated accordingly (0.765/0.908 to 0.838/0.952). Replication is
   unchanged.
 
 - **Bug fix: duplicated columns.**
-  [`rt_novelty_pmc()`](https://choxos.github.io/rtransparent/reference/rt_novelty_pmc.md)
+  [`rt_novelty_pmc()`](https://choxos.github.io/rtransparency/reference/rt_novelty_pmc.md)
   and
-  [`rt_replication_pmc()`](https://choxos.github.io/rtransparent/reference/rt_replication_pmc.md)
+  [`rt_replication_pmc()`](https://choxos.github.io/rtransparency/reference/rt_replication_pmc.md)
   raised “Column names … must not be duplicated” because their
   identifier output duplicated the prediction and text columns supplied
   by the internal detector. Both now return a single, well-formed row.
-  ([`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md),
+  ([`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md),
   which calls the internal detectors directly, was never affected.)
 
 - **Validation labels.** Corrected eleven novelty labels in the 2023
@@ -471,9 +493,9 @@ detectors and a second, independent validation set.
 
 ## rtransparent 0.8.9
 
-- [`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md)
+- [`rt_data_code_pmc()`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc.md)
   and
-  [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+  [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   now also return the identifiers of the shared data and code, not just
   whether sharing occurred. New columns `open_data_links` and
   `open_code_links` hold the DOIs (as `doi.org` URLs), repository URLs
@@ -499,7 +521,7 @@ detectors and a second, independent validation set.
   (specificity 96.8%).
 - `rt_accuracy` now includes novelty (sensitivity 0.810, specificity
   0.932), so
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   reports an error-corrected novelty prevalence. Replication and AI-use
   disclosure remain uncorrected.
 
@@ -537,16 +559,16 @@ during the manual validation of 1,000 open-access PMC articles:
 
 ## rtransparent 0.8.5
 
-- [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+- [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   now returns all eight transparency indicators in a single call. It
   previously returned six (COI, funding, registration, novelty,
   replication and AI-use disclosure) and data and code sharing had to be
   obtained separately from
-  [`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md);
+  [`rt_data_code_pmc()`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc.md);
   the output now also carries `is_open_data`, `is_open_code` and their
   matched statements (`open_data_statements`, `open_code_statements`).
   The detection is the same native detector as
-  [`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md),
+  [`rt_data_code_pmc()`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc.md),
   so the two agree exactly. The change is additive: existing columns are
   unchanged, and the COI, funding and registration benchmarks are
   unaffected. The vignettes are updated to reflect the single-call
@@ -558,9 +580,9 @@ Documentation and example data, so the package website showcases every
 indicator:
 
 - New vignette,
-  [`vignette("ai-disclosure")`](https://choxos.github.io/rtransparent/articles/ai-disclosure.md),
+  [`vignette("ai-disclosure")`](https://choxos.github.io/rtransparency/articles/ai-disclosure.md),
   on the AI-use disclosure indicator: what
-  [`rt_ai_pmc()`](https://choxos.github.io/rtransparent/reference/rt_ai_pmc.md)
+  [`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
   detects, why it is gated to 2023 onward, and how to chart its adoption
   across a corpus.
 - The introduction vignette now covers all of the indicators, including
@@ -571,9 +593,9 @@ indicator:
   again, not just the introduction.
 - `rt_demo` gains an `is_ai_pred` column (`NA` before 2023) and now
   spans 2010-2026, so
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   and
-  [`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+  [`rt_plot()`](https://choxos.github.io/rtransparency/reference/rt_plot.md)
   examples can show the AI indicator and its time trend. The data remain
   simulated.
 
@@ -635,7 +657,7 @@ open-access PMC articles from 2023:
 ## rtransparent 0.8.0
 
 - New **AI-disclosure** indicator.
-  [`rt_ai_pmc()`](https://choxos.github.io/rtransparent/reference/rt_ai_pmc.md)
+  [`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
   detects whether an article discloses the use (or non-use) of
   generative AI or AI-assisted tools in preparing the manuscript, as
   journals have asked of authors since 2023. It recognizes positive
@@ -647,9 +669,9 @@ open-access PMC articles from 2023:
   2023, the indicator is only evaluated for articles published in 2023
   or later; earlier articles return `NA` (`is_ai_pred`), and the
   publication `year` is reported. The indicator is included in
-  [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+  [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   and recognized by
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md).
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md).
   On the 1,000-article open-access validation set (almost all published
   2024-2026) it flags about 16% of articles, with high precision on
   inspection.
@@ -728,9 +750,9 @@ of open-access PMC articles:
 - Internal helper functions are now marked `@noRd`, so the manual and
   the pkgdown reference present only the public API.
 - Hardened
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   and
-  [`rt_score()`](https://choxos.github.io/rtransparent/reference/rt_score.md)
+  [`rt_score()`](https://choxos.github.io/rtransparency/reference/rt_score.md)
   so indicator columns must be logical or numeric 0/1 values, with `NA`
   allowed.
 - Added a reproducible external validation harness under
@@ -749,22 +771,22 @@ of open-access PMC articles:
 - New corpus-level summary tools, for turning per-article detector
   output into the kind of figures and tables used in meta-research
   studies of transparency:
-  - [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+  - [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
     reports each indicator’s prevalence with a Wilson confidence
     interval and, by default, a prevalence corrected for the detector’s
     sensitivity and specificity (the Rogan-Gladen estimator). It can
     summarize within groups via `by`.
-  - [`rt_score()`](https://choxos.github.io/rtransparent/reference/rt_score.md)
+  - [`rt_score()`](https://choxos.github.io/rtransparency/reference/rt_score.md)
     adds a per-article count of the openness practices met.
-  - [`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+  - [`rt_plot()`](https://choxos.github.io/rtransparency/reference/rt_plot.md)
     draws a prevalence bar chart or a prevalence-over-time line chart
     (requires `ggplot2`).
 - New datasets: `rt_accuracy` (detector sensitivity and specificity
   estimates, used by
-  [`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md))
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md))
   and `rt_demo` (a small simulated corpus for the examples).
 - New vignette,
-  [`vignette("transparency-summary")`](https://choxos.github.io/rtransparent/articles/transparency-summary.md),
+  [`vignette("transparency-summary")`](https://choxos.github.io/rtransparency/articles/transparency-summary.md),
   illustrating the output: from one article to a corpus prevalence
   table, an accuracy-corrected prevalence, a practice-count
   distribution, subgroup summaries and plots.
@@ -789,22 +811,22 @@ of open-access PMC articles:
 ## rtransparent 0.4.2
 
 - Added a pkgdown documentation website at
-  <https://choxos.github.io/rtransparent/>.
+  <https://choxos.github.io/rtransparency/>.
 - Corrected the
-  [`rt_data_code_pmc_list()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc_list.md)
+  [`rt_data_code_pmc_list()`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc_list.md)
   documentation example.
 
 ## rtransparent 0.4.1
 
 - Fixed the exported
-  [`rt_fund_pmc()`](https://choxos.github.io/rtransparent/reference/rt_fund_pmc.md).
+  [`rt_fund_pmc()`](https://choxos.github.io/rtransparency/reference/rt_fund_pmc.md).
   It previously predicted funding `TRUE` for no-funding articles with
   empty evidence text; it now delegates to the same detection path as
-  [`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md)
+  [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   so the two agree, and a positive prediction always carries evidence.
   Added regression tests.
 - Exported and documented
-  [`rt_meta_pmc()`](https://choxos.github.io/rtransparent/reference/rt_meta_pmc.md)
+  [`rt_meta_pmc()`](https://choxos.github.io/rtransparency/reference/rt_meta_pmc.md)
   (article metadata from a PMC XML file), which the README advertised
   but which was not exported.
 - Generated the missing help pages for the novelty and replication

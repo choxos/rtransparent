@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Summarizing transparency across a corpus • rtransparent</title>
+<title>Summarizing transparency across a corpus • rtransparency</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
@@ -18,9 +18,9 @@
 
     <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
 
-    <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
+    <a class="navbar-brand me-2" href="../index.html">rtransparency</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.11</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item"><a class="nav-link" href="../articles/rtransparent.html">Get started</a></li>
+<li class="nav-item"><a class="nav-link" href="../articles/rtransparency.html">Get started</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
@@ -45,7 +45,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/choxos/rtransparent/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/choxos/rtransparency/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -62,7 +62,7 @@
       <h1>Summarizing transparency across a corpus</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/choxos/rtransparent/blob/HEAD/vignettes/transparency-summary.Rmd" class="external-link"><code>vignettes/transparency-summary.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/choxos/rtransparency/blob/HEAD/vignettes/transparency-summary.Rmd" class="external-link"><code>vignettes/transparency-summary.Rmd</code></a></small>
       <div class="d-none name"><code>transparency-summary.Rmd</code></div>
     </div>
 
@@ -83,20 +83,20 @@ that kind of summary, using <code><a href="../reference/rt_summary.html">rt_summ
 <p>Running a detector on a single article returns a one-row table of
 indicators:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparent" class="external-link">rtransparent</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; rtransparent 0.8.5: identify indicators of transparency (conflicts of interest, funding,</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparency" class="external-link">rtransparency</a></span><span class="op">)</span></span>
+<span><span class="co">#&gt; rtransparency 1.0.0: identify indicators of transparency (conflicts of interest, funding,</span></span>
 <span><span class="co">#&gt; protocol registration, novelty, replication, and data and code sharing) in</span></span>
-<span><span class="co">#&gt; biomedical articles. GitHub: https://github.com/choxos/rtransparent | vignette("rtransparent")</span></span>
+<span><span class="co">#&gt; biomedical articles. GitHub: https://github.com/choxos/rtransparency | vignette("rtransparency")</span></span>
 <span></span>
 <span><span class="va">xml</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span></span>
-<span>  <span class="st">"extdata"</span>, <span class="st">"PMID32171256-PMC7071725.xml"</span>, package <span class="op">=</span> <span class="st">"rtransparent"</span></span>
+<span>  <span class="st">"extdata"</span>, <span class="st">"PMID32171256-PMC7071725.xml"</span>, package <span class="op">=</span> <span class="st">"rtransparency"</span></span>
 <span><span class="op">)</span></span>
 <span><span class="va">one</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/rt_all_pmc.html">rt_all_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="va">one</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"pmid"</span>, <span class="st">"is_coi_pred"</span>, <span class="st">"is_fund_pred"</span>, <span class="st">"is_register_pred"</span><span class="op">)</span><span class="op">]</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 4</span></span></span>
 <span><span class="co">#&gt;   pmid     is_coi_pred is_fund_pred is_register_pred</span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>           </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> 32171256 TRUE        TRUE         FALSE</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> 32171256 TRUE        FALSE        FALSE</span></span></code></pre></div>
 <p>To study a corpus you run a detector over many files and stack the
 rows; <code>purrr::map_dfr(files, rt_all_pmc, remove_ns = TRUE)</code>
 returns all eight indicators per article in one pass. The result is one
@@ -278,16 +278,16 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <tr class="even">
 <td align="left">Novelty</td>
 <td align="right">54.4</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="right">62.8</td>
+<td align="right">59.2</td>
+<td align="right">66.3</td>
 </tr>
 <tr class="odd">
 <td align="left">Replication</td>
 <td align="right">9.4</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
-<td align="right">NA</td>
+<td align="right">8.7</td>
+<td align="right">7.0</td>
+<td align="right">10.6</td>
 </tr>
 <tr class="even">
 <td align="left">AI disclosure</td>
@@ -301,21 +301,28 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <p>The accuracy values come from <a href="../reference/rt_accuracy.html"><code>rt_accuracy</code></a>:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">rt_accuracy</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 5 × 5</span></span></span>
-<span><span class="co">#&gt;   variable         label                 sensitivity specificity source         </span></span>
-<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> is_coi_pred      Conflicts of interest       0.992       0.995 Serghiou et al…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> is_fund_pred     Funding disclosure          0.997       0.981 Serghiou et al…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> is_register_pred Protocol registration       0.955       0.997 Serghiou et al…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> is_open_data     Data sharing                0.765       0.99  rtransparent n…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> is_open_code     Code sharing                0.881       0.995 rtransparent n…</span></span></code></pre></div>
-<p>Replication and AI-use disclosure have no bundled accuracy estimates
-here, so their corrected values are <code>NA</code>. Novelty’s estimate
-comes from a hand-labeled gold set
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 7 × 5</span></span></span>
+<span><span class="co">#&gt;   variable            label                 sensitivity specificity source      </span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> is_coi_pred         Conflicts of interest       0.992       0.995 Serghiou et…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> is_fund_pred        Funding disclosure          0.997       0.981 Serghiou et…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> is_register_pred    Protocol registration       0.955       0.997 Serghiou et…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> is_open_data        Data sharing                0.765       0.99  rtransparen…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> is_open_code        Code sharing                0.881       0.995 rtransparen…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> is_novelty_pred     Novelty                     0.838       0.952 rtransparen…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span> is_replication_pred Replication                 0.928       0.985 rtransparen…</span></span></code></pre></div>
+<p>AI-use disclosure has no bundled accuracy estimate here, so its
+corrected value is <code>NA</code>. Novelty’s estimate comes from a
+hand-labeled gold set
 (<code>inst/benchmark/results_novelty_replication.md</code>); the
 data/code values are reproducible benchmark estimates for the native
-detector, not untouched external-validation estimates. To use your own
-validation (or the published <code>oddpub</code> values for data and
+detector, not untouched external-validation estimates. Replication’s
+correction is approximate: its sensitivity comes from a
+replication-enriched sample and its specificity from the representative
+2023 sample, so it does not rest on the single-design validation of
+conflicts of interest, funding or registration, and the Rogan-Gladen
+interval does not propagate uncertainty in these estimates. To use your
+own validation (or the published <code>oddpub</code> values for data and
 code), pass any table with <code>variable</code>,
 <code>sensitivity</code> and <code>specificity</code> columns:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
@@ -463,7 +470,7 @@ stack the rows, then</p>
 <span><span class="fu"><a href="../reference/rt_score.html">rt_score</a></span><span class="op">(</span><span class="va">results</span><span class="op">)</span>                         <span class="co"># per-article practice count</span></span>
 <span><span class="fu"><a href="../reference/rt_plot.html">rt_plot</a></span><span class="op">(</span><span class="va">results</span>, type <span class="op">=</span> <span class="st">"trend"</span>, year <span class="op">=</span> <span class="st">"year"</span><span class="op">)</span></span></code></pre></div>
 <p>For the per-indicator detection methodology, see
-<code><a href="../articles/rtransparent.html">vignette("rtransparent")</a></code>.</p>
+<code><a href="../articles/rtransparency.html">vignette("rtransparency")</a></code>.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>

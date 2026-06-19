@@ -23,7 +23,7 @@ rt_data_code_pmc_list(filenames, remove_ns = T, specificity = "low")
 - specificity:
 
   Retained for backward compatibility; see
-  [`rt_data_code_pmc`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md).
+  [`rt_data_code_pmc`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc.md).
 
 ## Value
 
@@ -35,7 +35,7 @@ A dataframe of results, one row per file.
 if (FALSE) { # \dontrun{
 # Paths to PMC XML files
 filepath <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 filepaths <- list(filepath)
 

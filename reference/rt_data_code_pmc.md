@@ -46,7 +46,7 @@ separated by `" ; "`.
 if (FALSE) { # \dontrun{
 # Path to PMC XML
 filepath <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 
 # Identify and extract indicators of data and code sharing

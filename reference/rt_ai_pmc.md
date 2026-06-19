@@ -33,7 +33,7 @@ statement (\`ai_text\`) and \`is_success\`.
 ``` r
 if (FALSE) { # \dontrun{
 filepath <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 rt_ai_pmc(filepath, remove_ns = TRUE)
 } # }

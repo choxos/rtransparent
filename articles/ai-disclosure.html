@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Detecting disclosure of generative-AI use • rtransparent</title>
+<title>Detecting disclosure of generative-AI use • rtransparency</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
@@ -22,9 +22,9 @@
 
     <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
 
-    <a class="navbar-brand me-2" href="../index.html">rtransparent</a>
+    <a class="navbar-brand me-2" href="../index.html">rtransparency</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.9.11</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
-<li class="nav-item"><a class="nav-link" href="../articles/rtransparent.html">Get started</a></li>
+<li class="nav-item"><a class="nav-link" href="../articles/rtransparency.html">Get started</a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
@@ -49,7 +49,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/choxos/rtransparent/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/choxos/rtransparency/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -66,14 +66,14 @@
       <h1>Detecting disclosure of generative-AI use</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/choxos/rtransparent/blob/HEAD/vignettes/ai-disclosure.Rmd" class="external-link"><code>vignettes/ai-disclosure.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/choxos/rtransparency/blob/HEAD/vignettes/ai-disclosure.Rmd" class="external-link"><code>vignettes/ai-disclosure.Rmd</code></a></small>
       <div class="d-none name"><code>ai-disclosure.Rmd</code></div>
     </div>
 
     
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparent" class="external-link">rtransparent</a></span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparency" class="external-link">rtransparency</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="what-this-indicator-captures">What this indicator captures<a class="anchor" aria-label="anchor" href="#what-this-indicator-captures"></a>
 </h2>
@@ -118,7 +118,7 @@ onward.</li>
 <code>NA</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">xml_path</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span></span>
-<span>  <span class="st">"extdata"</span>, <span class="st">"PMID32171256-PMC7071725.xml"</span>, package <span class="op">=</span> <span class="st">"rtransparent"</span></span>
+<span>  <span class="st">"extdata"</span>, <span class="st">"PMID32171256-PMC7071725.xml"</span>, package <span class="op">=</span> <span class="st">"rtransparency"</span></span>
 <span><span class="op">)</span></span>
 <span><span class="va">ai</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/rt_ai_pmc.html">rt_ai_pmc</a></span><span class="op">(</span><span class="va">xml_path</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span>year <span class="op">=</span> <span class="va">ai</span><span class="op">$</span><span class="va">year</span>, is_ai_pred <span class="op">=</span> <span class="va">ai</span><span class="op">$</span><span class="va">is_ai_pred</span><span class="op">)</span></span>
@@ -225,7 +225,7 @@ are not statements about how the manuscript was written. As with every
 other indicator, <code><a href="../reference/rt_ai_pmc.html">rt_ai_pmc()</a></code> returns the matched text
 (<code>ai_text</code>) so a positive call can always be inspected.</p>
 <p>For the other indicators and the corpus-summary tools used here, see
-the <a href="rtransparent.html">Introduction</a> and <a href="transparency-summary.html">Summarizing transparency across a
+the <a href="rtransparency.html">Introduction</a> and <a href="transparency-summary.html">Summarizing transparency across a
 corpus</a> articles.</p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

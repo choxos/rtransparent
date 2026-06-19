@@ -3,10 +3,10 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   ai-disclosure: ai-disclosure.html
-  rtransparent: rtransparent.html
+  rtransparency: rtransparency.html
   scope-and-limitations: scope-and-limitations.html
   transparency-summary: transparency-summary.html
-last_built: 2026-06-19T18:50Z
+last_built: 2026-06-19T19:43Z
 urls:
-  reference: https://choxos.github.io/rtransparent/reference
-  article: https://choxos.github.io/rtransparent/articles
+  reference: https://choxos.github.io/rtransparency/reference
+  article: https://choxos.github.io/rtransparency/articles

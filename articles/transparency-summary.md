@@ -1,8 +1,8 @@
 # Summarizing transparency across a corpus
 
 The detector functions
-([`rt_all_pmc()`](https://choxos.github.io/rtransparent/reference/rt_all_pmc.md),
-[`rt_data_code_pmc()`](https://choxos.github.io/rtransparent/reference/rt_data_code_pmc.md))
+([`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md),
+[`rt_data_code_pmc()`](https://choxos.github.io/rtransparency/reference/rt_data_code_pmc.md))
 describe **one article at a time**. Most studies of research
 transparency instead ask corpus-level questions: across thousands of
 articles, how often is each practice present? Is it improving over time?
@@ -10,10 +10,10 @@ Does it differ by journal or article type?
 
 This vignette shows how to go from per-article detector output to that
 kind of summary, using
-[`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md),
-[`rt_score()`](https://choxos.github.io/rtransparent/reference/rt_score.md)
+[`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md),
+[`rt_score()`](https://choxos.github.io/rtransparency/reference/rt_score.md)
 and
-[`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md).
+[`rt_plot()`](https://choxos.github.io/rtransparency/reference/rt_plot.md).
 
 ## From one article to many
 
@@ -22,20 +22,20 @@ indicators:
 
 ``` r
 
-library(rtransparent)
-#> rtransparent 0.8.5: identify indicators of transparency (conflicts of interest, funding,
+library(rtransparency)
+#> rtransparency 1.0.0: identify indicators of transparency (conflicts of interest, funding,
 #> protocol registration, novelty, replication, and data and code sharing) in
-#> biomedical articles. GitHub: https://github.com/choxos/rtransparent | vignette("rtransparent")
+#> biomedical articles. GitHub: https://github.com/choxos/rtransparency | vignette("rtransparency")
 
 xml <- system.file(
-  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparent"
+  "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
 )
 one <- rt_all_pmc(xml, remove_ns = TRUE)
 one[, c("pmid", "is_coi_pred", "is_fund_pred", "is_register_pred")]
 #> # A tibble: 1 × 4
 #>   pmid     is_coi_pred is_fund_pred is_register_pred
 #>   <chr>    <lgl>       <lgl>        <lgl>           
-#> 1 32171256 TRUE        TRUE         FALSE
+#> 1 32171256 TRUE        FALSE        FALSE
 ```
 
 To study a corpus you run a detector over many files and stack the rows;
@@ -45,7 +45,7 @@ with the indicator columns `is_coi_pred`, `is_fund_pred`,
 `is_register_pred`, `is_open_data`, `is_open_code`, `is_novelty_pred`,
 `is_replication_pred` and `is_ai_pred`. `is_ai_pred` is `NA` for
 articles published before 2023, and
-[`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+[`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
 drops those `NA`s, so the AI-disclosure prevalence is computed only over
 the articles where the indicator applies.
 
@@ -71,7 +71,7 @@ head(rt_demo)
 
 ## Prevalence of each indicator
 
-[`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+[`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
 reports, for each indicator, how many articles were assessed, how many
 were positive, the apparent prevalence and its 95% confidence interval:
 
@@ -100,7 +100,7 @@ knitr::kable(
 
 A text-mining detector is not perfect, so the **observed** prevalence is
 a biased estimate of the **true** prevalence.
-[`rt_summary()`](https://choxos.github.io/rtransparent/reference/rt_summary.md)
+[`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
 corrects for this using each detector’s sensitivity and specificity
 estimates (the Rogan-Gladen estimator). The correction is on by default
 and adds `adj_percent`, `adj_low` and `adj_high`:
@@ -121,34 +121,40 @@ knitr::kable(
 | Protocol registration |       29.7 |        30.8 |   28.2 |    33.6 |
 | Data sharing          |       20.4 |        25.7 |   22.8 |    28.9 |
 | Code sharing          |        8.5 |         9.1 |    7.5 |    11.1 |
-| Novelty               |       54.4 |          NA |     NA |      NA |
-| Replication           |        9.4 |          NA |     NA |      NA |
+| Novelty               |       54.4 |        62.8 |   59.2 |    66.3 |
+| Replication           |        9.4 |         8.7 |    7.0 |    10.6 |
 | AI disclosure         |       25.2 |          NA |     NA |      NA |
 
 The accuracy values come from
-[`rt_accuracy`](https://choxos.github.io/rtransparent/reference/rt_accuracy.md):
+[`rt_accuracy`](https://choxos.github.io/rtransparency/reference/rt_accuracy.md):
 
 ``` r
 
 rt_accuracy
-#> # A tibble: 5 × 5
-#>   variable         label                 sensitivity specificity source         
-#>   <chr>            <chr>                       <dbl>       <dbl> <chr>          
-#> 1 is_coi_pred      Conflicts of interest       0.992       0.995 Serghiou et al…
-#> 2 is_fund_pred     Funding disclosure          0.997       0.981 Serghiou et al…
-#> 3 is_register_pred Protocol registration       0.955       0.997 Serghiou et al…
-#> 4 is_open_data     Data sharing                0.765       0.99  rtransparent n…
-#> 5 is_open_code     Code sharing                0.881       0.995 rtransparent n…
+#> # A tibble: 7 × 5
+#>   variable            label                 sensitivity specificity source      
+#>   <chr>               <chr>                       <dbl>       <dbl> <chr>       
+#> 1 is_coi_pred         Conflicts of interest       0.992       0.995 Serghiou et…
+#> 2 is_fund_pred        Funding disclosure          0.997       0.981 Serghiou et…
+#> 3 is_register_pred    Protocol registration       0.955       0.997 Serghiou et…
+#> 4 is_open_data        Data sharing                0.765       0.99  rtransparen…
+#> 5 is_open_code        Code sharing                0.881       0.995 rtransparen…
+#> 6 is_novelty_pred     Novelty                     0.838       0.952 rtransparen…
+#> 7 is_replication_pred Replication                 0.928       0.985 rtransparen…
 ```
 
-Replication and AI-use disclosure have no bundled accuracy estimates
-here, so their corrected values are `NA`. Novelty’s estimate comes from
-a hand-labeled gold set
-(`inst/benchmark/results_novelty_replication.md`); the data/code values
-are reproducible benchmark estimates for the native detector, not
-untouched external-validation estimates. To use your own validation (or
-the published `oddpub` values for data and code), pass any table with
-`variable`, `sensitivity` and `specificity` columns:
+AI-use disclosure has no bundled accuracy estimate here, so its
+corrected value is `NA`. Novelty’s estimate comes from a hand-labeled
+gold set (`inst/benchmark/results_novelty_replication.md`); the
+data/code values are reproducible benchmark estimates for the native
+detector, not untouched external-validation estimates. Replication’s
+correction is approximate: its sensitivity comes from a
+replication-enriched sample and its specificity from the representative
+2023 sample, so it does not rest on the single-design validation of
+conflicts of interest, funding or registration, and the Rogan-Gladen
+interval does not propagate uncertainty in these estimates. To use your
+own validation (or the published `oddpub` values for data and code),
+pass any table with `variable`, `sensitivity` and `specificity` columns:
 
 ``` r
 
@@ -164,7 +170,7 @@ rt_summary(rt_demo, indicators = "is_open_data", accuracy = my_acc)[,
 
 ## How many practices per article
 
-[`rt_score()`](https://choxos.github.io/rtransparent/reference/rt_score.md)
+[`rt_score()`](https://choxos.github.io/rtransparency/reference/rt_score.md)
 adds a per-article count of the openness practices met (conflicts of
 interest, funding, registration, data and code). Tabulating it shows how
 many articles meet zero, one, two … of the five practices:
@@ -210,7 +216,7 @@ knitr::kable(
 
 ## Plots
 
-[`rt_plot()`](https://choxos.github.io/rtransparent/reference/rt_plot.md)
+[`rt_plot()`](https://choxos.github.io/rtransparency/reference/rt_plot.md)
 returns a `ggplot`, so it composes with the usual ggplot2 layers. The
 default is a prevalence bar chart:
 
@@ -273,4 +279,4 @@ rt_plot(results, type = "trend", year = "year")
 ```
 
 For the per-indicator detection methodology, see
-[`vignette("rtransparent")`](https://choxos.github.io/rtransparent/articles/rtransparent.md).
+[`vignette("rtransparency")`](https://choxos.github.io/rtransparency/articles/rtransparency.md).
