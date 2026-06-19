@@ -1,5 +1,34 @@
 <div align="justify">
 
+# rtransparent 0.9.2
+
+A precision release from the next round of hand-label review (2023 sample grown
+to 385 articles).
+
+* **Funding: no-funding declarations no longer leak.** The BMJ standard
+  statement "The authors have not declared a specific grant for this research
+  from any funding agency in the public, commercial or not-for-profit sectors"
+  sits under a section titled "Funding", so it was counted as disclosed funding.
+  It is now recognized as an absence-of-funding declaration. Three 2023-sample
+  articles were relabeled to FALSE accordingly (their only funding statement is
+  this declaration; one also cites historical NIH funding of unrelated past
+  research, which is not the article's own funding).
+
+* **Novelty precision.** Active-voice disease surveillance ("the country
+  recorded its first case of COVID-19 on 27 February 2020") is now suppressed,
+  matching the existing passive-voice rule; genuine case-report novelty ("we
+  report the first case of ...") is preserved.
+
+* **Novelty recall.** The explicit self-assertion "the novelty of our study ..."
+  is now recognized.
+
+* **Measured effect.** On the 2023 sample, funding specificity rose from 91.2 to
+  94.7 and PPV from 94.6 to 96.3 (sensitivity unchanged); novelty holds at 86.7
+  / 95.1. The held-out Serghiou et al. (2021) benchmarks and the
+  novelty/replication gold set are unchanged (the new funding phrase appears only
+  in modern articles, and an absence-of-funding rule cannot drop a funded
+  positive).
+
 # rtransparent 0.9.1
 
 This release overhauls the novelty detector for both recall and precision, fixes

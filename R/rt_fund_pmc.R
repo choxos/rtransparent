@@ -1733,6 +1733,11 @@ negate_absence_1 <- function(article) {
         # from any funding agency", "no funds, grants or other support were
         # received", "did not receive funds", "have not received any funding".
         "\\bno specific grant\\b",
+        # BMJ standard no-funding declaration: "The authors have not declared a
+        # specific grant for this research from any funding agency in the public,
+        # commercial or not-for-profit sectors." The funding section is titled
+        # "Funding" yet declares absence, so it otherwise leaks through the title route.
+        "\\bnot declared a specific grant\\b",
         "\\bno funds,?\\s*(grants?|or other support)",
         "\\bno funds (have been|have not been|were|was) received\\b",
         "\\b(did|do|does) not receive (any )?funds\\b",
