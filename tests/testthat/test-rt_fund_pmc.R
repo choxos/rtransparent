@@ -197,3 +197,14 @@ test_that("'not financially supported' and non-English no-funding read as absenc
   expect_false(rtransparent:::negate_absence_1(
     "Funding: supported by the National Natural Science Foundation of China (No. 81871908)."))
 })
+
+test_that("further no-funding phrasings read as absence", {
+  for (s in c(
+    "Funding: There are no source of support to disclose.",
+    "This work was not supported by any organizations.",
+    "Funding: The authors declare that there were no external sources of funding.",
+    "This research was conducted without the receipt of any dedicated grant or financial support."
+  )) expect_true(rtransparent:::negate_absence_1(s), info = s)
+  expect_false(rtransparent:::negate_absence_1(
+    "This work was supported by the National Institutes of Health (R01CA000000)."))
+})

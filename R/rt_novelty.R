@@ -140,7 +140,7 @@ rt_novelty <- function(filename) {
     "develop|propose|design|create|apply|combine|summari[sz]e|attenuate|construct|",
     "derive|formulate|achieve|obtain|map|quantify|uncover|link|relate|integrate|",
     "confirm|validate|corroborate|prove|find|discover|predict|model|estimate|",
-    "measure|test|explore|define|classify|determine|record|implement|deploy)")
+    "measure|test|explore|define|classify|determine|record|implement|deploy|undertake)")
   # Research-output nouns for the "first <noun> ... <ing verb>" branch. These are
   # rarely used as ordinal enumerations ("the first study to show", not "the first
   # method involves"), so they stay narrow; "method/test/model/system" etc are
@@ -208,7 +208,7 @@ rt_novelty <- function(filename) {
 .which_novelty_previously_1 <- function(article) {
 
   prevun <- paste0("previously (unknown|unreported|uncharacterized|undescribed|",
-    "unidentified|unrecognized|unappreciated|undocumented|unexplored|unexamined)")
+    "unidentified|unrecognized|unappreciated|undocumented|unexplored|unexamined|unobserved)")
   # The gap must belong to the present study, not a cited work or a background
   # fact. "X has not been studied" on its own is too often a tangential aside, so
   # require a first-person/this-study anchor or a discovery verb beside the cue.

@@ -1,5 +1,31 @@
 <div align="justify">
 
+# rtransparent 0.9.4
+
+The hand-labeled 2023 validation sample is expanded to 715 articles (210 new),
+with three small detector fixes surfaced by the new batches.
+
+* **Validation sample grows to 715.** Fourteen new batches (210 articles) were
+  hand-labeled for all eight indicators and folded into
+  `data-raw/benchmark/labels_2023_sample.csv` and
+  `inst/benchmark/results_2023_sample.md`. Current independent metrics:
+  registration 88.9 / 99.6, novelty 89.1 / 94.5, code 92.0 / 99.7, replication
+  84.6 / 98.0; detector-adjudicated funding 93.2 / 95.5 and data 90.9 / 97.9.
+
+* **Funding: more no-funding declarations recognized.** "There are no source of
+  support", "not supported by any organizations", "no external sources of
+  funding" and "conducted without the receipt of any dedicated grant or
+  financial support" are now read as absence of funding rather than disclosed
+  funding (these otherwise leaked through the funding-title route).
+
+* **Novelty recall.** "previously unobserved" is added to the gap-claim cues
+  ("we identify a previously unobserved ..."), and "undertake" to the priority
+  verbs ("the first to undertake a comprehensive review").
+
+* The held-out Serghiou et al. (2021) benchmarks and the novelty/replication
+  gold set are unchanged (the new funding phrases are absence-of-funding
+  declarations that cannot drop a funded positive).
+
 # rtransparent 0.9.3
 
 The hand-labeled 2023 validation sample is expanded to 505 articles (120 new),

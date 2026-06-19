@@ -251,3 +251,10 @@ test_that(".which_novelty_novel_1 recognizes 'the novelty of our study'", {
   expect_equal(length(rtransparent:::.which_novelty_novel_1(
     "The study used a standard cross-sectional design.")), 0)
 })
+
+test_that("novelty covers 'previously unobserved' and 'first to undertake'", {
+  expect_true(length(rtransparent:::.which_novelty_previously_1(
+    "We identify a previously unobserved morphological transition.")) > 0)
+  expect_true(length(rtransparent:::.which_novelty_first_to_1(
+    "This study is the first to undertake a comprehensive review of the topic.")) > 0)
+})
