@@ -2014,17 +2014,6 @@ obliterate_disclosure_1 <- function(article) {
 }
 
 
-#' Identify and extract Funding statements in PMC XML files.
-#'
-#' Takes a PMC XML file as a list of strings and returns data related to the
-#'     presence of a Funding statement, including whether a Funding statement
-#'     exists. If a Funding statement exists, it extracts it. This is a modified
-#'     version of the `rt_fund_pmc` designed for integration with `rt_all_pmc`.
-#'
-#' @param article_ls A PMC XML as a list of strings.
-#' @param pmc_fund_ls A list of results from the `.get_fund_pmc` function.
-#' @return A dataframe of results.
-#' @noRd
 #' Identify non-English (multilingual) positive funding statements.
 #'
 #' Detects funding RECEIVED in Spanish, Portuguese, French, German and Italian,
@@ -2081,6 +2070,17 @@ obliterate_disclosure_1 <- function(article) {
 }
 
 
+#' Identify and extract Funding statements in PMC XML files.
+#'
+#' Takes a PMC XML file as a list of strings and returns data related to the
+#'     presence of a Funding statement, including whether a Funding statement
+#'     exists. If a Funding statement exists, it extracts it. This is a modified
+#'     version of the `rt_fund_pmc` designed for integration with `rt_all_pmc`.
+#'
+#' @param article_ls A PMC XML as a list of strings.
+#' @param pmc_fund_ls A list of results from the `.get_fund_pmc` function.
+#' @return A dataframe of results.
+#' @noRd
 .rt_fund_pmc <- function(article_ls, pmc_fund_ls) {
 
   # TODO Update to match format of rt_coi_pmc.
