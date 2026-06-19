@@ -52,7 +52,12 @@
 }
 
 
-#' Identify Spanish COI statements.
+#' Identify non-English (multilingual) COI statements.
+#'
+#' Covers Spanish, Portuguese, Italian, French and German conflict-of-interest
+#' phrasings, matched on transliterated (accent-stripped) text. The tokens are
+#' language-distinctive and do not occur in English, so this does not fire on
+#' English articles.
 #'
 #' @param article The text as a vector of strings.
 #' @return Index of elements with phrase of interest
@@ -60,7 +65,15 @@
 .which_spanish_coi_1 <- function(article) {
 
   grep(
-    "conflictos? de intereses",
+    paste(
+      "conflictos? de inter[a-z]+",                # ES conflicto(s) de interes(es)
+      "conflitos? de interess[a-z]*",              # PT conflito(s) de interesse(s)
+      "conflitt[oi] di interess[a-z]*",            # IT conflitto/i di interessi
+      "\\bconflit[a-z]* d.?inter[a-z]{2,}",         # FR conflit d'interet(s)
+      "\\bliens? d.?inter[a-z]{2,}",                # FR (declaration de) liens d'interet
+      "interessens?konflikt[a-z]*",                # DE Interessen(s)konflikt(e)
+      sep = "|"
+    ),
     article,
     perl = TRUE,
     ignore.case = TRUE
@@ -919,7 +932,14 @@
     "compet",
     "disclos",
     "declar",
-    "\\bcommercial"
+    "\\bcommercial",
+    # Non-English conflict-of-interest cues (transliterated, accent-stripped).
+    # These are language-distinctive and absent from English text ("conflit"
+    # is not a substring of "conflict"; "interess" has a double s, unlike
+    # "interest"; "konflikt" is German), so English relevance is unchanged.
+    "konflikt",
+    "\\bconflit",
+    "interess"
   )
 
   lo_synonyms <- c(

@@ -1758,6 +1758,21 @@ negate_absence_1 <- function(article) {
         "\\bsem financiamento\\b",
         "\\bno recibi. .{0,25}financiaci.n",
         "\\bsin .{0,15}financiaci.n",
+        "\\bno (hubo|tuvo|existi.|cont.) .{0,30}(financiaci.n|fuentes de financ|apoyo financiero)",
+        "\\bno se recibi. .{0,25}financ",
+        # French no-funding declarations.
+        "\\bsans (le |la )?(financement|subvention|soutien financier|aide financiere)",
+        "\\baucun(e)? (financement|subvention|soutien financier|aide financiere|source de financement)",
+        "\\bn.a (pas )?(re.u|b.n.fici.) .{0,30}(financement|subvention|soutien)",
+        "\\bsans subvention (externe|particuliere)?",
+        # German no-funding declarations.
+        "\\bkeine? .{0,15}(f.rderung|finanzierung|finanzielle unterstutzung|drittmittel|geldgeber)",
+        "\\bohne .{0,15}(f.rderung|finanzielle unterstutzung|finanzierung|drittmittel)",
+        "\\b(wurde|wurden) nicht (.{0,12} )?(gef.rdert|finanziert)",
+        # Italian no-funding declarations.
+        "\\bnessun (.{0,12} )?(finanziamento|sovvenzione|sostegno|supporto economic|fonte di finanziamento)",
+        "\\bnon (ha|e stato|hanno|sono stati) ricevut. .{0,20}(finanziament|sovvenzion|sostegno)",
+        "\\bsenza (alcun )?(finanziamento|sovvenzione|sostegno|supporto economic)",
         sep = "|"
       ),
       article,
@@ -2010,6 +2025,62 @@ obliterate_disclosure_1 <- function(article) {
 #' @param pmc_fund_ls A list of results from the `.get_fund_pmc` function.
 #' @return A dataframe of results.
 #' @noRd
+#' Identify non-English (multilingual) positive funding statements.
+#'
+#' Detects funding RECEIVED in Spanish, Portuguese, French, German and Italian,
+#' matched on transliterated (accent-stripped) text. No-funding declarations are
+#' removed downstream by negate_absence_1. Each alternative requires a positive
+#' funding context (a funder preposition or verb), and the tokens are
+#' language-distinctive, so this does not fire on English text.
+#'
+#' @param article The text as a vector of strings.
+#' @return Index of elements with phrase of interest
+#' @noRd
+.which_multilingual_fund_1 <- function(article) {
+
+  grep(
+    paste(
+      # Spanish / Portuguese
+      "financiad[oa]s? (por|pel|a traves|mediante|con|gracias|atraves)",
+      "(foi|fue|sido) financiad",
+      "recib[io]{2}.{0,20}(beca|subvenci|financiaci|ayuda economica|apoyo financ)",
+      "\\bbeca de (salud|investiga|estudio|doctorado|posgrado|la )",
+      "\\bbolsa de (estudo|pesquisa|doutorado|mestrado|iniciacao)",
+      "subvencion(ado|es)? (de|del|por|otorgad)",
+      "patrocin(io|ado|ada) (de|del|por|educativo|sin restricciones)",
+      "apoyo (financiero|economico) (de|del)",
+      "apoio financeiro (d|por)",
+      "auxilio (a pesquisa|financeiro)",
+      # French
+      "finance{1,2}s? par (le|la|les|l|un|une)",
+      "\\bsubvention (de|du|des|accordee|allouee)",
+      "\\bbourse (de|d|du)",
+      "soutien financier (de|du|des|d)",
+      # German
+      "gef.rdert (von|vom|durch|im rahmen|mit mitteln)",
+      "f.rderung (durch|von|des|im rahmen)",
+      "finanziert (von|vom|durch|aus|mit)",
+      "finanzielle unterstutzung (durch|von|des)",
+      "\\bdrittmittel",
+      "f.rderkennzeichen",
+      # Italian
+      "finanziat[oa] (da|dal|dalla|con|grazie|nell)",
+      "\\bfinanziamento (di|del|della|da|pubblico|ricevuto)",
+      "sovvenzion(e|ato) (di|del|da)",
+      "borsa di studio",
+      "supporto (finanziario|economico) (di|del|da)",
+      "con il (supporto|contributo) (finanziario|economico|non condizionante|incondizionato).{0,8}di",
+      "grazie al (supporto|contributo|finanziamento)",
+      sep = "|"
+    ),
+    article,
+    perl = TRUE,
+    ignore.case = TRUE
+  )
+
+}
+
+
 .rt_fund_pmc <- function(article_ls, pmc_fund_ls) {
 
   # TODO Update to match format of rt_coi_pmc.
@@ -2109,7 +2180,7 @@ obliterate_disclosure_1 <- function(article) {
 
   # Check relevance
   # TODO Consider adding Department
-  fund_regex <- "fund|support|financ|receive|grant|none|sponsor|fellowship|Association|Institute|National|Foundation"
+  fund_regex <- "fund|support|financ|receive|grant|none|sponsor|fellowship|Association|Institute|National|Foundation|finanz|f.rder|gef.rder|subvention|beca|bolsa|fomento|patrocin|aux.lio|sovvenzion|borsa|drittmittel"
   article %<>% purrr::keep(~ stringr::str_detect(.x, stringr::regex(fund_regex, ignore_case = T)))
 
   relevance_ls$is_relevant_fund <- !!length(article)
@@ -2177,6 +2248,11 @@ obliterate_disclosure_1 <- function(article) {
   index_any$disclosure_2 <- get_disclosure_2(article_processed)
 
   index <- unlist(index_any) %>% unique() %>% sort()
+
+  # Add non-English (multilingual) positive-funding matches. No-funding
+  # declarations among them are removed by negate_absence_1 below.
+  index <- union(index, .which_multilingual_fund_1(article_processed)) %>%
+    sort()
 
   # Remove potential mistakes
   if (!!length(index)) {

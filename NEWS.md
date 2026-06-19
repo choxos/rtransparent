@@ -1,5 +1,33 @@
 <div align="justify">
 
+# rtransparent 0.9.9
+
+Conflict-of-interest and funding detection in five more languages.
+
+* **Multilingual COI and funding.** Conflict-of-interest and funding statements
+  are now detected in Spanish, Portuguese, French, German and Italian, not only
+  English. The conflict-of-interest relevance gate and matcher and the funding
+  matcher and no-funding rules gained language-distinctive, accent-tolerant
+  patterns. On 70 open-access articles per language, the conflict-of-interest
+  detection rate rose most for monolingual articles: German 33% to 97%, French
+  70% to 80%. Funding detection now catches Spanish, Portuguese, French, German
+  and Italian statements (for example Italian 67% to 74%).
+
+* The new tokens are language-distinctive and do not occur in English, so the
+  English detectors are unchanged: conflicts of interest stay at 100 / 91.8 on
+  the 2023 sample and the held-out Serghiou et al. (2021) benchmarks are
+  untouched. The multilingual funding patterns also surfaced two Spanish and
+  Portuguese funding statements in the 2023 sample that had been mislabeled as
+  unfunded; those labels were corrected.
+
+* Because the text detectors share the PMC detection cores (0.9.8), the new
+  languages are recognized in plain-text input as well.
+
+* **New multilingual benchmark** (`inst/benchmark/results_multilingual.{csv,md}`).
+
+* Data-availability detection remains English-only for now; multilingual
+  data-sharing detection is planned for a future release.
+
 # rtransparent 0.9.8
 
 The plain-text detectors now share the PMC detection logic.
