@@ -45,3 +45,16 @@ test_that("rt_all_pmc includes the AI indicator", {
   expect_true("is_ai_pred" %in% names(a))
   expect_true("year" %in% names(a))
 })
+
+test_that(".ai_declaration_section recognizes 'Statement on the use of AI' titles", {
+  xml <- xml2::read_xml(paste0(
+    "<article><body>",
+    "<sec><title>Statement on the use of artificial intelligence</title>",
+    "<p>The authors declare that no generative AI was used.</p></sec>",
+    "</body></article>"))
+  expect_gt(nchar(rtransparent:::.ai_declaration_section(xml)), 0)
+
+  xml2 <- xml2::read_xml(
+    "<article><body><sec><title>Statistical analysis</title><p>We used R.</p></sec></body></article>")
+  expect_equal(nchar(rtransparent:::.ai_declaration_section(xml2)), 0)
+})

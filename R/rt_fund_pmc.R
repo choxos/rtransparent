@@ -1745,7 +1745,13 @@ negate_absence_1 <- function(article) {
         # "(This study/work) was not supported by any funding" — a funding
         # section can be titled "Funding" yet declare the absence of funding,
         # which otherwise leaks through the funding-title route.
-        "\\bnot supported by any (funding|grant|financial)\\b",
+        "\\bnot (financially )?supported by any (funding|grant|financial|institution)",
+        # Non-English no-funding declarations (Portuguese/Spanish). The "." class
+        # matches the accented characters without putting non-ASCII in the source.
+        "\\bn.o (teve|houve|recebeu|recebemos|obteve) .{0,40}financiamento",
+        "\\bsem financiamento\\b",
+        "\\bno recibi. .{0,25}financiaci.n",
+        "\\bsin .{0,15}financiaci.n",
         sep = "|"
       ),
       article,

@@ -165,6 +165,10 @@ rt_ai_pmc <- function(filename, remove_ns = F) {
   pat <- paste(
     # Unconditional disclosure-section headers.
     "(declaration|disclosure|statement) of (generative )?(ai|artificial intelligence|large language model)",
+    # A section explicitly titled as a statement on the use of AI is itself a
+    # disclosure ("Statement on the use of artificial intelligence").
+    paste0("(statement|declaration|note|section) on (the )?use of (generative )?",
+           "(ai|artificial intelligence|large language models?|llms?|chatgpt|ai-assisted)"),
     "generative ai (and|in|use|statement)",
     "ai(-| )assisted (technolog|tool)",
     "ai (use )?(statement|disclosure|declaration)",

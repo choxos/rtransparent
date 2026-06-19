@@ -186,3 +186,14 @@ test_that("BMJ 'have not declared a specific grant' is an absence-of-funding dec
   funded <- "Funding: This work was supported by the Wellcome Trust, grant 12345."
   expect_false(rtransparent:::negate_absence_1(funded))
 })
+
+test_that("'not financially supported' and non-English no-funding read as absence", {
+  expect_true(rtransparent:::negate_absence_1(
+    "This study was not financially supported by any funding or institutions."))
+  expect_true(rtransparent:::negate_absence_1(
+    "Fontes de financiamento: O presente estudo nao teve fontes de financiamento externas."))
+  expect_true(rtransparent:::negate_absence_1("El estudio no recibio financiacion."))
+  # A real funder must not read as absence.
+  expect_false(rtransparent:::negate_absence_1(
+    "Funding: supported by the National Natural Science Foundation of China (No. 81871908)."))
+})

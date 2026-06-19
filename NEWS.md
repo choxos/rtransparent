@@ -1,5 +1,33 @@
 <div align="justify">
 
+# rtransparent 0.9.3
+
+The hand-labeled 2023 validation sample is expanded to 505 articles (120 new),
+with three small detector fixes surfaced by the new batches.
+
+* **Validation sample grows to 505.** Eight new batches (120 articles) were
+  hand-labeled for all eight indicators and folded into
+  `data-raw/benchmark/labels_2023_sample.csv` and
+  `inst/benchmark/results_2023_sample.md`. Current independent metrics:
+  registration 88.2 / 99.4, novelty 87.7 / 95.8, code 94.1 / 99.6, replication
+  81.8 / 98.0; detector-adjudicated funding 91.8 / 95.3 and data 88.6 / 97.7.
+
+* **Funding: more no-funding declarations recognized.** "The authors were not
+  financially supported by any funding or institutions" (the adverb "financially"
+  previously broke the match) and non-English declarations (Portuguese "nao teve
+  fontes de financiamento", Spanish "no recibio financiacion" / "sin
+  financiacion") are now read as absence of funding rather than disclosed funding.
+
+* **AI: disclosure-section titles broadened.** A section titled "Statement on the
+  use of artificial intelligence" (and similar "... on the use of AI / generative
+  AI / LLMs" headings) is now recognized as an AI-use disclosure, matching the
+  existing "Declaration of generative AI" handling.
+
+* The held-out Serghiou et al. (2021) benchmarks are unchanged: the new funding
+  phrases are absence-of-funding declarations (which cannot drop a funded
+  positive and do not occur in that English, pre-2021 set), and the AI indicator
+  is not part of it.
+
 # rtransparent 0.9.2
 
 A precision release from the next round of hand-label review (2023 sample grown
