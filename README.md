@@ -1,7 +1,6 @@
 # rtransparency
 
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/rtransparency)](https://CRAN.R-project.org/package=rtransparency)
 [![R-CMD-check](https://github.com/choxos/rtransparency/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/choxos/rtransparency/actions/workflows/R-CMD-check.yaml)
 [![pkgdown](https://github.com/choxos/rtransparency/actions/workflows/pkgdown.yaml/badge.svg)](https://choxos.github.io/rtransparency/)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
@@ -181,8 +180,8 @@ reproducible under `data-raw/benchmark/`, with results in `inst/benchmark/`:
 | Data sharing | 76.5% | 99.0% |
 | Code sharing | 88.1% | 99.5% |
 
-Registration and code in the table above are labeled independently of the
-detector; COI, funding and data labels in the 1000-article 2023 sample were
+Registration and code in the Serghiou benchmark table above are labeled
+independently of the detector; COI, funding and data labels in the 1000-article 2023 sample were
 reconciled against detector-extracted statements (detector-adjudicated), so their
 agreement is not a fully independent estimate. Data sharing is deliberately
 precision-favoring: its 76.5% sensitivity trades recall for 99.0% specificity

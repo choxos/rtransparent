@@ -13,8 +13,10 @@ in the Description field and in `inst/CITATION`.
 
 ## Test environments
 
-* local macOS, R 4.x (0 errors, 0 warnings, 1 note)
-* win-builder and R-hub: to be run before final submission.
+* local macOS, R 4.6.0 (0 errors, 0 warnings, 1 note)
+* GitHub Actions (r-lib/actions, full `R CMD check`): macOS-release,
+  windows-release, ubuntu-devel, ubuntu-release, ubuntu-oldrel-1; all passing.
+* win-builder (devel) recommended at submission via `devtools::check_win_devel()`.
 
 ## Notes for CRAN
 

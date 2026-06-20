@@ -30,4 +30,4 @@ upstream copyright notice has been removed.
 The package no longer contains any code copied from the AGPL-licensed oddpub
 package; data and code sharing detection is implemented natively. The full text
 of the GPL-3 license is in the LICENSE file and at
-https://spdx.org/licenses/GPL-3.0-or-later.html.
+https://spdx.org/licenses/GPL-3.0-only.html.
