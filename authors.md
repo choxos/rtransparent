@@ -10,18 +10,18 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/choxos/rtransparency/blob/v1.0.1/inst/CITATION)
+[`inst/CITATION`](https://github.com/choxos/rtransparency/blob/master/inst/CITATION)
 
 Serghiou S, Sofi-Mahmudi A (2026). *rtransparency: Identify Indicators
 of Transparency in the Biomedical Literature*.
 [doi:10.5281/zenodo.20775089](https://doi.org/10.5281/zenodo.20775089).
-R package version 1.0.1, <https://github.com/choxos/rtransparency>.
+R package version 1.0.0, <https://github.com/choxos/rtransparency>.
 
     @Manual{,
       title = {{rtransparency}: Identify Indicators of Transparency in the Biomedical Literature},
       author = {Stylianos Serghiou and Ahmad Sofi-Mahmudi},
       year = {2026},
-      note = {R package version 1.0.1},
+      note = {R package version 1.0.0},
       doi = {10.5281/zenodo.20775089},
       url = {https://github.com/choxos/rtransparency},
     }
