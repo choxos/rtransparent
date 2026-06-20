@@ -23,7 +23,6 @@ docs/
 *.tar.gz
 *.Rcheck/
 
-# JOSS paper and Zenodo archive metadata (prepared locally, not yet published)
+# JOSS paper (prepared locally, not yet published)
 joss/
-.zenodo.json
 .gstack/
