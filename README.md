@@ -1,5 +1,13 @@
 # rtransparency
 
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/rtransparency)](https://CRAN.R-project.org/package=rtransparency)
+[![R-CMD-check](https://github.com/choxos/rtransparency/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/choxos/rtransparency/actions/workflows/R-CMD-check.yaml)
+[![pkgdown](https://github.com/choxos/rtransparency/actions/workflows/pkgdown.yaml/badge.svg)](https://choxos.github.io/rtransparency/)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+<!-- badges: end -->
+
 <div align="justify">
 
 `rtransparency` automatically identifies and extracts **indicators of research
@@ -31,6 +39,10 @@ interest and funding statements are detected not only in English but also in
 ## Installation
 
 ```r
+# From CRAN (when available)
+install.packages("rtransparency")
+
+# Development version from GitHub
 # install.packages("remotes")
 remotes::install_github("choxos/rtransparency", build_vignettes = TRUE)
 ```
