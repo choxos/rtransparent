@@ -1,5 +1,20 @@
 # Changelog
 
+## rtransparency 1.0.1
+
+Release-integrity and metadata polish (no change to the detectors or
+API).
+
+- Added machine-readable FAIR metadata to the repository:
+  `CITATION.cff`, `codemeta.json`, and `ro-crate-metadata.json`, plus a
+  `LICENSE.note` provenance file and a test-coverage workflow. All are
+  excluded from the CRAN source tarball.
+- `inst/CITATION` and the README now reference the Zenodo archive DOI.
+- Made the license expression consistent across the repository metadata
+  (`GPL-3.0-only`, matching `DESCRIPTION`).
+- Removed the pre-publication CRAN status badge from the README (it will
+  be added once the package is on CRAN).
+
 ## rtransparency 1.0.0
 
 First stable release, and a rename.

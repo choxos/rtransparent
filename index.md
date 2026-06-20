@@ -192,13 +192,13 @@ al. (2021), reproducible under `data-raw/benchmark/`, with results in
 | Data sharing          | 76.5%       | 99.0%       |
 | Code sharing          | 88.1%       | 99.5%       |
 
-Registration and code in the table above are labeled independently of
-the detector; COI, funding and data labels in the 1000-article 2023
-sample were reconciled against detector-extracted statements
-(detector-adjudicated), so their agreement is not a fully independent
-estimate. Data sharing is deliberately precision-favoring: its 76.5%
-sensitivity trades recall for 99.0% specificity (the original `oddpub`
-algorithm scores about 84%/97% on this set).
+Registration and code in the Serghiou benchmark table above are labeled
+independently of the detector; COI, funding and data labels in the
+1000-article 2023 sample were reconciled against detector-extracted
+statements (detector-adjudicated), so their agreement is not a fully
+independent estimate. Data sharing is deliberately precision-favoring:
+its 76.5% sensitivity trades recall for 99.0% specificity (the original
+`oddpub` algorithm scores about 84%/97% on this set).
 
 The newer indicators are validated against maintainer-built,
 hand-labeled benchmarks in `inst/benchmark/`:
