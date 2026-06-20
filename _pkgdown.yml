@@ -47,6 +47,7 @@ reference:
   - rt_novelty
   - rt_replication
   - rt_data_code
+  - rt_ai
 - title: Metadata and input
   desc: Article metadata and PDF-to-text conversion.
   contents:
