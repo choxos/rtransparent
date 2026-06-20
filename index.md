@@ -32,6 +32,10 @@ Italian**.
 
 ``` r
 
+# From CRAN (when available)
+install.packages("rtransparency")
+
+# Development version from GitHub
 # install.packages("remotes")
 remotes::install_github("choxos/rtransparency", build_vignettes = TRUE)
 ```

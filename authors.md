@@ -10,7 +10,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/choxos/rtransparency/blob/HEAD/inst/CITATION)
+[`inst/CITATION`](https://github.com/choxos/rtransparency/blob/master/inst/CITATION)
 
 Serghiou S, Sofi-Mahmudi A (2026). *rtransparency: Identify Indicators
 of Transparency in the Biomedical Literature*. R package version 1.0.0,
