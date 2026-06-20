@@ -16,5 +16,9 @@
 ^pkgdown$
 ^joss$
 ^\.zenodo\.json$
+^CITATION\.cff$
+^codemeta\.json$
+^ro-crate-metadata\.json$
+^LICENSE\.note$
 ^cran-comments\.md$
 ^\.gstack$

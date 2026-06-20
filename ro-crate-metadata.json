@@ -1,0 +1,63 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" },
+      "about": { "@id": "./" },
+      "description": "Machine-readable provenance and packaging metadata for the rtransparency R package, following the RO-Crate 1.1 specification."
+    },
+    {
+      "@type": "Dataset",
+      "@id": "./",
+      "name": "rtransparency: Identify Indicators of Transparency in the Biomedical Literature",
+      "description": "An R package that automatically detects eight indicators of research transparency in full-text biomedical articles (PubMed Central JATS XML or plain text).",
+      "datePublished": "2026-06-20",
+      "license": { "@id": "https://spdx.org/licenses/GPL-3.0-or-later.html" },
+      "author": { "@id": "https://orcid.org/0000-0001-6829-0823" },
+      "identifier": { "@id": "https://doi.org/10.5281/zenodo.20775089" },
+      "mainEntity": { "@id": "#rtransparency" },
+      "hasPart": [
+        { "@id": "#rtransparency" },
+        { "@id": "https://github.com/choxos/rtransparency" }
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "@id": "#rtransparency",
+      "name": "rtransparency",
+      "programmingLanguage": { "@id": "https://www.r-project.org" },
+      "codeRepository": "https://github.com/choxos/rtransparency",
+      "version": "1.0.0",
+      "license": { "@id": "https://spdx.org/licenses/GPL-3.0-or-later.html" },
+      "author": { "@id": "https://orcid.org/0000-0001-6829-0823" },
+      "identifier": "https://doi.org/10.5281/zenodo.20775089",
+      "isBasedOn": "https://doi.org/10.1371/journal.pbio.3001107"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://orcid.org/0000-0001-6829-0823",
+      "name": "Ahmad Sofi-Mahmudi",
+      "roleName": [
+        "Conceptualization",
+        "Methodology",
+        "Software",
+        "Validation",
+        "Writing - original draft",
+        "Project administration"
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1371/journal.pbio.3001107",
+      "name": "Assessment of transparency indicators across the biomedical literature: How open is open?",
+      "datePublished": "2021"
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://w3id.org/ro/crate/1.1",
+      "name": "RO-Crate 1.1"
+    }
+  ]
+}

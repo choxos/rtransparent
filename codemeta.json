@@ -1,0 +1,91 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "@id": "https://github.com/choxos/rtransparency",
+  "identifier": "https://doi.org/10.5281/zenodo.20775089",
+  "name": "rtransparency",
+  "description": "Automatically detects eight indicators of research transparency in full-text biomedical articles (PubMed Central JATS XML or plain text): conflict-of-interest disclosure, funding disclosure, protocol registration, novelty, replication or external validation, data sharing, code sharing, and disclosure of generative-AI use. Each prediction is paired with the exact triggering text, with reproducible accuracy benchmarks.",
+  "codeRepository": "https://github.com/choxos/rtransparency",
+  "url": "https://choxos.github.io/rtransparency/",
+  "issueTracker": "https://github.com/choxos/rtransparency/issues",
+  "license": "https://spdx.org/licenses/GPL-3.0-or-later.html",
+  "version": "1.0.0",
+  "softwareVersion": "1.0.0",
+  "programmingLanguage": "R",
+  "runtimePlatform": "R >= 3.5.0",
+  "operatingSystem": "OS Independent",
+  "applicationCategory": "Meta-research",
+  "developmentStatus": "active",
+  "keywords": [
+    "meta-research",
+    "reproducibility",
+    "open science",
+    "research transparency",
+    "text mining",
+    "biomedical literature",
+    "R"
+  ],
+  "softwareRequirements": [
+    "R >= 3.5.0",
+    "dplyr",
+    "magrittr",
+    "purrr",
+    "readr",
+    "rlang",
+    "stringr",
+    "tibble",
+    "tidyselect",
+    "utf8",
+    "xml2"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Ahmad",
+      "familyName": "Sofi-Mahmudi",
+      "email": "a.sofimahmudi@gmail.com",
+      "@id": "https://orcid.org/0000-0001-6829-0823"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Stylianos",
+      "familyName": "Serghiou",
+      "email": "stelios.serghiou@gmail.com"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Role",
+      "roleName": [
+        "Conceptualization",
+        "Data curation",
+        "Formal analysis",
+        "Methodology",
+        "Software",
+        "Validation",
+        "Visualization",
+        "Writing - original draft",
+        "Writing - review & editing",
+        "Project administration"
+      ],
+      "url": "https://credit.niso.org/",
+      "description": "All CRediT contributor roles for the rtransparency fork are attributed to Ahmad Sofi-Mahmudi; Stylianos Serghiou authored the original rtransparent tool that this builds on.",
+      "schema:author": {
+        "@id": "https://orcid.org/0000-0001-6829-0823",
+        "name": "Ahmad Sofi-Mahmudi"
+      }
+    }
+  ],
+  "isBasedOn": [
+    "https://github.com/serghiou/rtransparent",
+    "https://doi.org/10.1371/journal.pbio.3001107"
+  ],
+  "citation": "https://doi.org/10.1371/journal.pbio.3001107",
+  "relatedLink": [
+    "https://doi.org/10.5281/zenodo.20775089",
+    "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/choxos/rtransparency"
+  ],
+  "readme": "https://github.com/choxos/rtransparency/blob/master/README.md",
+  "contIntegration": "https://github.com/choxos/rtransparency/actions",
+  "buildInstructions": "https://github.com/choxos/rtransparency#installation"
+}

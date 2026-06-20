@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use rtransparency, please cite the software (below) and the foundational paper (in references)."
+type: software
+title: "rtransparency: Identify Indicators of Transparency in the Biomedical Literature"
+version: 1.0.0
+doi: 10.5281/zenodo.20775089
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20775089
+    description: "Concept DOI (resolves to the latest version)"
+  - type: doi
+    value: 10.5281/zenodo.20775090
+    description: "Version DOI (v1.0.0)"
+abstract: "rtransparency automatically detects eight indicators of research transparency in full-text biomedical articles, from PubMed Central JATS XML or plain text: conflict-of-interest disclosure, funding disclosure, protocol registration, novelty, replication or external validation, data sharing, code sharing, and disclosure of generative-AI use. Each prediction is paired with the exact triggering text, with reproducible accuracy benchmarks. It builds on the original rtransparent tool of Serghiou et al. (2021)."
+authors:
+  - family-names: Sofi-Mahmudi
+    given-names: Ahmad
+    email: a.sofimahmudi@gmail.com
+    orcid: "https://orcid.org/0000-0001-6829-0823"
+  - family-names: Serghiou
+    given-names: Stylianos
+    email: stelios.serghiou@gmail.com
+repository-code: "https://github.com/choxos/rtransparency"
+url: "https://choxos.github.io/rtransparency/"
+license: GPL-3.0-or-later
+keywords:
+  - meta-research
+  - reproducibility
+  - open science
+  - research transparency
+  - text mining
+  - biomedical literature
+  - R
+references:
+  - type: article
+    title: "Assessment of transparency indicators across the biomedical literature: How open is open?"
+    authors:
+      - family-names: Serghiou
+        given-names: Stylianos
+      - family-names: Contopoulos-Ioannidis
+        given-names: Despina G.
+      - family-names: Boyack
+        given-names: Kevin W.
+      - family-names: Riedel
+        given-names: Nico
+      - family-names: Wallach
+        given-names: Joshua D.
+      - family-names: Ioannidis
+        given-names: John P. A.
+    journal: "PLOS Biology"
+    year: 2021
+    volume: 19
+    issue: 3
+    start: e3001107
+    doi: 10.1371/journal.pbio.3001107

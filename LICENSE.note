@@ -1,0 +1,33 @@
+Provenance and third-party material for rtransparency
+=====================================================
+
+rtransparency is released under the GNU General Public License v3 (see the
+LICENSE file). It is a renamed, enhanced fork that builds on existing GPL-3
+work; this file records that provenance for redistribution. All components
+below are GPL-3 compatible, so the combined package remains under GPL-3. No
+upstream copyright notice has been removed.
+
+--------------------------------------------------------------------------------
+1. rtransparent (the tool this package builds on)
+   Source:  https://github.com/serghiou/rtransparent
+   Paper:   https://doi.org/10.1371/journal.pbio.3001107
+   Author:  Stylianos Serghiou
+   License: GPL-3
+   Use:     rtransparency began as a fork of rtransparent and reuses and extends
+            its conflict-of-interest, funding and registration detectors.
+            Stylianos Serghiou is credited as an author in DESCRIPTION.
+
+--------------------------------------------------------------------------------
+2. metareadr
+   Source:  https://github.com/serghiou/metareadr
+   Author:  Stylianos Serghiou
+   License: GPL-3
+   Use:     the internal, benchmark-only NCBI PMC OAI-PMH fallback used to fetch
+            full-text XML (R/rt_fetch.R) is adapted from
+            metareadr::mt_read_pmcoa(). Not part of the detector pipeline.
+
+--------------------------------------------------------------------------------
+The package no longer contains any code copied from the AGPL-licensed oddpub
+package; data and code sharing detection is implemented natively. The full text
+of the GPL-3 license is in the LICENSE file and at
+https://spdx.org/licenses/GPL-3.0-or-later.html.
