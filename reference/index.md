@@ -12,7 +12,7 @@
 Detect every indicator in one pass, for one file or a whole corpus.
 
 - [`rt_all()`](https://choxos.github.io/rtransparency/reference/rt_all.md)
-  : Identify and extract statements of COI, Funding and Registration.
+  : Identify and extract transparency statements from a TXT file.
 - [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   : Identify and extract all transparency indicators from a PMC XML.
 - [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
@@ -70,7 +70,7 @@ Article metadata and PDF-to-text conversion.
 - [`rt_meta_pmc()`](https://choxos.github.io/rtransparency/reference/rt_meta_pmc.md)
   : Extract article metadata from a PMC XML file.
 - [`rt_read_pdf()`](https://choxos.github.io/rtransparency/reference/rt_read_pdf.md)
-  : Covert PDF files into TXT files.
+  : Convert a PDF file to text.
 
 ## Summarize and visualize
 

@@ -201,13 +201,14 @@
 <div class="section level2">
 <h2 id="plain-text-input">Plain-text input<a class="anchor" aria-label="anchor" href="#plain-text-input"></a>
 </h2>
-<p>The same detectors run on plain-text (PDF-derived) articles. Convert a PDF and run the text detectors, which share the PMC detection logic:</p>
+<p>The same detectors run on plain-text (PDF-derived) articles. <code><a href="reference/rt_read_pdf.html">rt_read_pdf()</a></code> returns the extracted text as a character string; write it to a <code>.txt</code> file, then point the text detectors (which share the PMC detection logic) at that file:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">txt_path</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/rt_read_pdf.html">rt_read_pdf</a></span><span class="op">(</span><span class="st">"article.pdf"</span><span class="op">)</span>   <span class="co"># needs poppler's pdftotext</span></span>
+<code class="sourceCode R"><span><span class="va">article_txt</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/rt_read_pdf.html">rt_read_pdf</a></span><span class="op">(</span><span class="st">"article.pdf"</span><span class="op">)</span>   <span class="co"># needs poppler's pdftotext; returns text</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/writeLines.html" class="external-link">writeLines</a></span><span class="op">(</span><span class="va">article_txt</span>, <span class="st">"article.txt"</span><span class="op">)</span>      <span class="co"># the detectors take a file path</span></span>
 <span></span>
-<span><span class="fu"><a href="reference/rt_all.html">rt_all</a></span><span class="op">(</span><span class="va">txt_path</span><span class="op">)</span>                         <span class="co"># COI, funding, registration, novelty, replication</span></span>
-<span><span class="fu"><a href="reference/rt_coi.html">rt_coi</a></span><span class="op">(</span><span class="va">txt_path</span><span class="op">)</span>                         <span class="co"># or one indicator at a time</span></span>
-<span><span class="fu"><a href="reference/rt_ai.html">rt_ai</a></span><span class="op">(</span><span class="va">txt_path</span><span class="op">)</span>                          <span class="co"># generative-AI-use disclosure</span></span></code></pre></div>
+<span><span class="fu"><a href="reference/rt_all.html">rt_all</a></span><span class="op">(</span><span class="st">"article.txt"</span><span class="op">)</span>                       <span class="co"># COI, funding, registration, novelty, replication</span></span>
+<span><span class="fu"><a href="reference/rt_coi.html">rt_coi</a></span><span class="op">(</span><span class="st">"article.txt"</span><span class="op">)</span>                       <span class="co"># or one indicator at a time</span></span>
+<span><span class="fu"><a href="reference/rt_ai.html">rt_ai</a></span><span class="op">(</span><span class="st">"article.txt"</span><span class="op">)</span>                        <span class="co"># generative-AI-use disclosure</span></span></code></pre></div>
 <p><code><a href="reference/rt_ai.html">rt_ai()</a></code> is the plain-text counterpart of <code><a href="reference/rt_ai_pmc.html">rt_ai_pmc()</a></code>. Because a text file carries no reliable publication date, it applies <strong>no 2023 year gate</strong> (it returns <code>TRUE</code>/<code>FALSE</code>, never <code>NA</code>) and cannot confine the scan to back-matter sections, so restrict its use to 2023-or-later articles and expect a slightly higher false-positive rate on papers that use AI as a research method.</p>
 </div>
 <div class="section level2">
@@ -276,14 +277,43 @@
 </tr>
 </tbody>
 </table>
-<p>The newer indicators and the multilingual detectors are validated against maintainer-built, hand-labeled benchmarks in <code>inst/benchmark/</code>:</p>
-<ul>
-<li>a <strong>1000-article 2023 open-access sample</strong> labeled for all eight indicators;</li>
-<li>a <strong>replication-enriched validation</strong> (111 positives) for the replication indicator;</li>
-<li>a <strong>five-language sample</strong> for multilingual COI and funding;</li>
-<li>a <strong>TXT-parity benchmark</strong> comparing the text and XML detectors;</li>
-<li>a <strong>novelty/replication gold set</strong>.</li>
-</ul>
+<p>Registration and code in the table above are labeled independently of the detector; COI, funding and data labels in the 1000-article 2023 sample were reconciled against detector-extracted statements (detector-adjudicated), so their agreement is not a fully independent estimate. Data sharing is deliberately precision-favoring: its 76.5% sensitivity trades recall for 99.0% specificity (the original <code>oddpub</code> algorithm scores about 84%/97% on this set).</p>
+<p>The newer indicators are validated against maintainer-built, hand-labeled benchmarks in <code>inst/benchmark/</code>:</p>
+<table class="table">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="25%">
+<col width="25%">
+</colgroup>
+<thead><tr>
+<th>Indicator</th>
+<th>Sensitivity</th>
+<th>Specificity</th>
+<th>Basis</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Novelty</td>
+<td>83.8%</td>
+<td>95.2%</td>
+<td>hand-labeled novelty/replication gold set</td>
+</tr>
+<tr>
+<td>Replication</td>
+<td>92.8%</td>
+<td>98.5%</td>
+<td>replication-enriched sample (111 positives); correction is approximate</td>
+</tr>
+<tr>
+<td>AI-use disclosure</td>
+<td>not accuracy-corrected</td>
+<td>—</td>
+<td>experimental; only 9 positives in the 2023 sample</td>
+</tr>
+</tbody>
+</table>
+<p>Replication’s correction mixes designs (sensitivity from the enriched sample, specificity from the representative 2023 sample), so it is less clean than the single-design corrections above. AI-use disclosure is reported uncorrected and is excluded from <code>rt_accuracy</code> until a larger labeled post-2022 sample exists. Two further benchmarks live in <code>inst/benchmark/</code>: a <strong>five-language sample</strong> for multilingual COI and funding, and a <strong>TXT-parity benchmark</strong> comparing the text and XML detectors.</p>
 <p>See <code><a href="articles/rtransparency.html">vignette("rtransparency")</a></code> for the methodology and <code><a href="articles/scope-and-limitations.html">vignette("scope-and-limitations")</a></code> for what each indicator does and does not capture.</p>
 </div>
 <div class="section level2">

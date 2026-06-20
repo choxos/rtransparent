@@ -24,14 +24,15 @@ of Transparency in the Biomedical Literature*. R package version 1.0.0,
       url = {https://github.com/choxos/rtransparency},
     }
 
-Serghiou S, Contopoulos-Ioantidis D, Goodman S, Ioannidis J (2021).
-“Assessment of transparency indicators across the biomedical literature:
-How open is open?” *PLOS Biology*, **19**(3), e3001107.
+Serghiou S, Contopoulos-Ioannidis D, Boyack K, Riedel N, Wallach J,
+Ioannidis J (2021). “Assessment of transparency indicators across the
+biomedical literature: How open is open?” *PLOS Biology*, **19**(3),
+e3001107.
 [doi:10.1371/journal.pbio.3001107](https://doi.org/10.1371/journal.pbio.3001107).
 
     @Article{,
       title = {Assessment of transparency indicators across the biomedical literature: How open is open?},
-      author = {Stylianos Serghiou and Despina G. Contopoulos-Ioantidis and Steven N. Goodman and John P. A. Ioannidis},
+      author = {Stylianos Serghiou and Despina G. Contopoulos-Ioannidis and Kevin W. Boyack and Nico Riedel and Joshua D. Wallach and John P. A. Ioannidis},
       journal = {PLOS Biology},
       year = {2021},
       volume = {19},

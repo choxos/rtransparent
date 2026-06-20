@@ -115,16 +115,20 @@ res <- rt_all_pmc_dir(
 
 ## Plain-text input
 
-The same detectors run on plain-text (PDF-derived) articles. Convert a
-PDF and run the text detectors, which share the PMC detection logic:
+The same detectors run on plain-text (PDF-derived) articles.
+[`rt_read_pdf()`](https://choxos.github.io/rtransparency/reference/rt_read_pdf.md)
+returns the extracted text as a character string; write it to a `.txt`
+file, then point the text detectors (which share the PMC detection
+logic) at that file:
 
 ``` r
 
-txt_path <- rt_read_pdf("article.pdf")   # needs poppler's pdftotext
+article_txt <- rt_read_pdf("article.pdf")   # needs poppler's pdftotext; returns text
+writeLines(article_txt, "article.txt")      # the detectors take a file path
 
-rt_all(txt_path)                         # COI, funding, registration, novelty, replication
-rt_coi(txt_path)                         # or one indicator at a time
-rt_ai(txt_path)                          # generative-AI-use disclosure
+rt_all("article.txt")                       # COI, funding, registration, novelty, replication
+rt_coi("article.txt")                       # or one indicator at a time
+rt_ai("article.txt")                        # generative-AI-use disclosure
 ```
 
 [`rt_ai()`](https://choxos.github.io/rtransparency/reference/rt_ai.md)
@@ -188,16 +192,31 @@ al. (2021), reproducible under `data-raw/benchmark/`, with results in
 | Data sharing          | 76.5%       | 99.0%       |
 | Code sharing          | 88.1%       | 99.5%       |
 
-The newer indicators and the multilingual detectors are validated
-against maintainer-built, hand-labeled benchmarks in `inst/benchmark/`:
+Registration and code in the table above are labeled independently of
+the detector; COI, funding and data labels in the 1000-article 2023
+sample were reconciled against detector-extracted statements
+(detector-adjudicated), so their agreement is not a fully independent
+estimate. Data sharing is deliberately precision-favoring: its 76.5%
+sensitivity trades recall for 99.0% specificity (the original `oddpub`
+algorithm scores about 84%/97% on this set).
 
-- a **1000-article 2023 open-access sample** labeled for all eight
-  indicators;
-- a **replication-enriched validation** (111 positives) for the
-  replication indicator;
-- a **five-language sample** for multilingual COI and funding;
-- a **TXT-parity benchmark** comparing the text and XML detectors;
-- a **novelty/replication gold set**.
+The newer indicators are validated against maintainer-built,
+hand-labeled benchmarks in `inst/benchmark/`:
+
+| Indicator | Sensitivity | Specificity | Basis |
+|----|----|----|----|
+| Novelty | 83.8% | 95.2% | hand-labeled novelty/replication gold set |
+| Replication | 92.8% | 98.5% | replication-enriched sample (111 positives); correction is approximate |
+| AI-use disclosure | not accuracy-corrected | — | experimental; only 9 positives in the 2023 sample |
+
+Replication’s correction mixes designs (sensitivity from the enriched
+sample, specificity from the representative 2023 sample), so it is less
+clean than the single-design corrections above. AI-use disclosure is
+reported uncorrected and is excluded from `rt_accuracy` until a larger
+labeled post-2022 sample exists. Two further benchmarks live in
+`inst/benchmark/`: a **five-language sample** for multilingual COI and
+funding, and a **TXT-parity benchmark** comparing the text and XML
+detectors.
 
 See
 [`vignette("rtransparency")`](https://choxos.github.io/rtransparency/articles/rtransparency.md)
@@ -254,7 +273,7 @@ reproducible example.
 Detect every indicator in one pass, for one file or a whole corpus.
 
 - [`rt_all()`](https://choxos.github.io/rtransparency/reference/rt_all.md)
-  : Identify and extract statements of COI, Funding and Registration.
+  : Identify and extract transparency statements from a TXT file.
 - [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
   : Identify and extract all transparency indicators from a PMC XML.
 - [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
@@ -312,7 +331,7 @@ Article metadata and PDF-to-text conversion.
 - [`rt_meta_pmc()`](https://choxos.github.io/rtransparency/reference/rt_meta_pmc.md)
   : Extract article metadata from a PMC XML file.
 - [`rt_read_pdf()`](https://choxos.github.io/rtransparency/reference/rt_read_pdf.md)
-  : Covert PDF files into TXT files.
+  : Convert a PDF file to text.
 
 ## Summarize and visualize
 

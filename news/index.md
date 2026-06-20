@@ -33,6 +33,23 @@ First stable release, and a rename.
   never `NA`) and cannot confine the scan to back-matter sections;
   restrict it to articles from 2023 onward.
 
+- **Corrected the foundational citation** in `inst/CITATION` to the full
+  PLOS Biology author list: Serghiou, Contopoulos-Ioannidis, Boyack,
+  Riedel, Wallach and Ioannidis.
+
+- **Release polish.** Removed an unused `oddpub`-derived tokenization
+  helper, so no AGPL-licensed code remains in the package. Corrected the
+  README plain-text workflow and the
+  [`rt_read_pdf()`](https://choxos.github.io/rtransparency/reference/rt_read_pdf.md)
+  documentation:
+  [`rt_read_pdf()`](https://choxos.github.io/rtransparency/reference/rt_read_pdf.md)
+  returns a character string, which must be written to a `.txt` file
+  before the text detectors are run on it.
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
+  documentation and the startup message now include AI-use disclosure,
+  and the README validation section reports the newer-indicator metrics
+  and label provenance.
+
 ## rtransparent 0.9.11
 
 Citation, documentation, and packaging polish.

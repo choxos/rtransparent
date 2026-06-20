@@ -29,9 +29,10 @@ rt_summary(
   logical or numeric 0/1 and named as in \[rt_all_pmc()\]:
   \`is_coi_pred\`, \`is_fund_pred\`, \`is_register_pred\`,
   \`is_open_data\`, \`is_open_code\`, \`is_novelty_pred\`,
-  \`is_replication_pred\`. \`NA\` marks an article that was not assessed
-  for that indicator and is excluded from its denominator. Other values
-  are rejected rather than silently coerced.
+  \`is_replication_pred\` and \`is_ai_pred\`. \`NA\` marks an article
+  that was not assessed for that indicator (for example \`is_ai_pred\`
+  before 2023) and is excluded from its denominator. Other values are
+  rejected rather than silently coerced.
 
 - indicators:
 

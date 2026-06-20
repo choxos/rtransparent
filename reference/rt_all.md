@@ -1,8 +1,9 @@
-# Identify and extract statements of COI, Funding and Registration.
+# Identify and extract transparency statements from a TXT file.
 
 Takes a TXT file and examines whether any statements of Conflicts of
-Interest (COI), Funding or Protocol Registration exist. If any such
-statements are found, it also extracts the relevant text.
+Interest (COI), Funding, Protocol Registration, Novelty or Replication
+exist. If any such statements are found, it also extracts the relevant
+text.
 
 ## Usage
 
@@ -14,16 +15,16 @@ rt_all(filename)
 
 - filename:
 
-  The name of the TXT as a string.
+  The name of the TXT file as a string.
 
 ## Value
 
-A dataframe of results. A dataframe of results. It returns the PMID of
-the article (if this was included in the filename and preced by "PMID"),
-whether each of 3 indicators of transparency (COI, Funding or
-Registration) was identified, the relevant text identified and whether
-each labelling function identified relevant text or not. The labeling
-functions are eturned to add flexibility in how this package is used;
+A dataframe of results. It returns the PMID of the article (if this was
+included in the filename and preceded by "PMID"), whether each of the
+five indicators of transparency (COI, Funding, Registration, Novelty and
+Replication) was identified, the relevant text identified, and whether
+each labelling function identified relevant text or not. The labelling
+functions are returned to add flexibility in how this package is used;
 for example, future definitions of Registration may differ from the one
 we used. If a labelling function returns NA it means that it was not
 run.
