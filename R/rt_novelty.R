@@ -36,7 +36,7 @@ rt_novelty <- function(filename) {
     novelty_knowledge_1 = NA
   )
 
-  paper_text <- readr::read_file(filename)
+  paper_text <- .read_txt(filename)
 
   # Relevance gate: a cheap superset of every cue the pattern functions below can
   # match. Precision is enforced by those functions and .negate_novelty_1, not

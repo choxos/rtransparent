@@ -18,7 +18,7 @@
 #' @export
 rt_data_code <- function(filename) {
 
-  article <- readr::read_file(filename)
+  article <- .read_txt(filename)
   paragraphs <- unlist(strsplit(article, "\n+"))
 
   found <- .detect_data_code(paragraphs)

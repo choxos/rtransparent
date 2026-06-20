@@ -192,7 +192,7 @@ rt_ai <- function(filename) {
   article <- basename(filename)
   pmid <- gsub("^.*PMID([0-9]+).*$", "\\1", filename)
 
-  paper_text <- readr::read_file(filename)
+  paper_text <- .read_txt(filename)
 
   # Rejoin words hyphenated across a line break ("Chat-\nGPT" -> "ChatGPT") so a
   # tool name split by the PDF-to-text conversion is still matched; .dc_split

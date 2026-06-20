@@ -163,6 +163,22 @@
 }
 
 
+#' Read a TXT file with normalized line endings.
+#'
+#' Reads a plain-text file and normalizes CRLF / CR line endings to LF. Without
+#'     this, a file written on Windows (CRLF) leaves a trailing carriage return
+#'     on every paragraph after splitting on "\\n", which perturbs the
+#'     end-anchored regexes in the detectors and makes results platform
+#'     dependent. `readr::read_file()` does not strip carriage returns.
+#'
+#' @param filename The path to the TXT file as a string.
+#' @return A single character string with LF line endings.
+#' @noRd
+.read_txt <- function(filename) {
+  gsub("\r\n?", "\n", readr::read_file(filename))
+}
+
+
 #' Find the index of the references
 #'
 #' Returns the index with the elements of interest. More generic than _1.

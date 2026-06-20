@@ -23,7 +23,7 @@ rt_coi <- function(filename) {
 
   dict <- .create_synonyms()
 
-  paper_text <- readr::read_file(filename)
+  paper_text <- .read_txt(filename)
   paragraphs <- strsplit(paper_text, "\n")[[1]]
   paragraphs <- paragraphs[nzchar(trimws(paragraphs))]
 

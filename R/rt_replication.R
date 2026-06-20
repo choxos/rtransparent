@@ -35,7 +35,7 @@ rt_replication <- function(filename) {
     replication_validation_1  = NA
   )
 
-  paper_text <- readr::read_file(filename)
+  paper_text <- .read_txt(filename)
 
   # Quick relevance check
   rel_regex <- paste(

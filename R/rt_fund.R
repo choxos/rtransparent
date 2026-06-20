@@ -1599,7 +1599,7 @@ rt_fund <- function(filename) {
   broken_1 <- "([a-z]+)-\n*([a-z]+)"
   broken_2 <- "([a-z]+)(|,|;)\n*([a-z]+)"
   paragraphs <-
-    readr::read_file(filename) %>%
+    .read_txt(filename) %>%
     purrr::map(gsub, pattern = broken_1, replacement = "\\1\\2") %>%
     purrr::map(gsub, pattern = broken_2, replacement = "\\1\\3") %>%
     purrr::map(strsplit, "\n| \\*") %>%

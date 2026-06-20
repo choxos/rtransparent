@@ -1225,7 +1225,7 @@ rt_register <- function(filename) {
   broken_2 <- "([a-z]+)(|,|;)\n+([a-z]+)"
   broken_3 <- "([0-9]+)-\n+([0-9]+)"
   paragraphs <-
-    readr::read_file(filename) %>%
+    .read_txt(filename) %>%
     purrr::map(gsub, pattern = broken_1, replacement = "\\1\\2") %>%
     purrr::map(gsub, pattern = broken_2, replacement = "\\1\\3") %>%
     purrr::map(gsub, pattern = broken_3, replacement = "\\1\\2") %>%
