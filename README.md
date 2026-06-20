@@ -231,6 +231,14 @@ across the biomedical literature: How open is open?* PLOS Biology, 2021,
 [doi:10.1371/journal.pbio.3001107](https://doi.org/10.1371/journal.pbio.3001107).
 Run `citation("rtransparency")` for both references.
 
+## Use of AI
+
+Parts of this package were developed with the assistance of generative AI
+(Anthropic's Claude, via Claude Code), including code, tests, documentation, and
+benchmark tooling. All AI-assisted output was reviewed, run, and validated by the
+maintainer, who is responsible for the final content. This mirrors the kind of
+disclosure the package itself is built to detect.
+
 ## Getting help
 
 Please file bugs or questions as issues at
