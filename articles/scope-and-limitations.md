@@ -18,6 +18,8 @@ interpreted correctly.
 | Data sharing | The authors’ **own data are made available** (repository, accession, or in-article) | Data merely reused, cited, or available “upon request” |
 | Code sharing | The authors’ **own analysis code is shared** | Use of third-party software/tools |
 | AI disclosure | A statement **discloses** generative-AI use in manuscript preparation (including “no AI was used”) | Use of AI as a research method |
+| Open-access license | The article is **openly licensed** (Creative Commons / CC0), and which license | That every reader has full reuse rights (NC / ND licenses restrict reuse) |
+| Reporting guideline | The authors **state they followed** a reporting guideline, and which one | That the study fully complied, or that a cited/animal-welfare/clinical guideline counts |
 
 Conflicts of interest and AI disclosure are **disclosure-based**: a
 statement addressing the topic counts as present, whether the disclosure
@@ -52,6 +54,16 @@ in the literature.
   2023-or-later articles and tolerate a higher false-positive rate on
   AI-method papers than
   [`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md).
+- **Reporting guideline is claim detection.** It identifies a stated
+  adherence to a reporting guideline, not whether the study fully
+  complied. It is tuned for precision (validated 93.8% sensitivity /
+  99.0% specificity on a hand-labeled 1000-article sample); the residual
+  misses are mostly non-English statements, and residual false positives
+  are guidelines named but not actually followed by the article.
+- **Open-access licensing is XML-structural.** It reads the JATS
+  `<license>` element, so it is near-deterministic for PMC XML but, in
+  plain text, depends on a license statement being present in the
+  extracted text.
 - **Accuracy correction.**
   [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
   can correct apparent prevalence using bundled sensitivity/specificity
@@ -65,11 +77,12 @@ in the literature.
 
 Every per-article detector returns the prediction columns `is_coi_pred`,
 `is_fund_pred`, `is_register_pred`, `is_novelty_pred`,
-`is_replication_pred`, `is_open_data`, `is_open_code`, and the
-year-gated `is_ai_pred` (`NA` before 2023), each paired with the
-extracted text.
+`is_replication_pred`, `is_open_data`, `is_open_code`, the year-gated
+`is_ai_pred` (`NA` before 2023), `is_open_access` (with `oa_license`)
+and `is_reporting_pred` (with `reporting_guideline`), each paired with
+the extracted text or value.
 [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
-returns all eight for one file;
+returns all ten for one file;
 [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
 runs a whole directory.
 

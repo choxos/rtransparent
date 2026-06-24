@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparency</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,9 +84,9 @@ that kind of summary, using <code><a href="../reference/rt_summary.html">rt_summ
 indicators:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparency" class="external-link">rtransparency</a></span><span class="op">)</span></span>
-<span><span class="co">#&gt; rtransparency 1.0.0: identify indicators of transparency (conflicts of interest, funding,</span></span>
-<span><span class="co">#&gt; protocol registration, novelty, replication, data and code sharing, and AI-use</span></span>
-<span><span class="co">#&gt; disclosure) in biomedical articles. GitHub: https://github.com/choxos/rtransparency | vignette("rtransparency")</span></span>
+<span><span class="co">#&gt; rtransparency 1.1.0: identify indicators of transparency (conflicts of interest, funding,</span></span>
+<span><span class="co">#&gt; protocol registration, novelty, replication, data and code sharing, AI-use disclosure,</span></span>
+<span><span class="co">#&gt; open-access licensing and reporting-guideline use) in biomedical articles. GitHub: https://github.com/choxos/rtransparency | vignette("rtransparency")</span></span>
 <span></span>
 <span><span class="va">xml</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span></span>
 <span>  <span class="st">"extdata"</span>, <span class="st">"PMID32171256-PMC7071725.xml"</span>, package <span class="op">=</span> <span class="st">"rtransparency"</span></span>
@@ -301,7 +301,7 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <p>The accuracy values come from <a href="../reference/rt_accuracy.html"><code>rt_accuracy</code></a>:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">rt_accuracy</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 7 × 5</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 5</span></span></span>
 <span><span class="co">#&gt;   variable            label                 sensitivity specificity source      </span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> is_coi_pred         Conflicts of interest       0.992       0.995 Serghiou et…</span></span>
@@ -310,7 +310,9 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> is_open_data        Data sharing                0.765       0.99  rtransparen…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> is_open_code        Code sharing                0.881       0.995 rtransparen…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> is_novelty_pred     Novelty                     0.838       0.952 rtransparen…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span> is_replication_pred Replication                 0.928       0.985 rtransparen…</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span> is_replication_pred Replication                 0.928       0.985 rtransparen…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span> is_open_access      Open-access license         1           1     rtransparen…</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">9</span> is_reporting_pred   Reporting guideline         0.938       0.99  rtransparen…</span></span></code></pre></div>
 <p>AI-use disclosure has no bundled accuracy estimate here, so its
 corrected value is <code>NA</code>. Novelty’s estimate comes from a
 hand-labeled gold set

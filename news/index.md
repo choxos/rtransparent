@@ -1,5 +1,41 @@
 # Changelog
 
+## rtransparency 1.1.0
+
+Two new transparency indicators, bringing the total to ten.
+
+- **Open-access licensing**
+  ([`rt_oa_pmc()`](https://choxos.github.io/rtransparency/reference/rt_oa_pmc.md),
+  [`rt_oa()`](https://choxos.github.io/rtransparency/reference/rt_oa.md),
+  and within
+  [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)):
+  detects whether an article is openly licensed and the canonical
+  license (`is_open_access`, `oa_license`; for example `CC-BY-4.0`,
+  `CC-BY-NC-ND-4.0`, `CC0-1.0`), the reuse (“R”) dimension of FAIR. Read
+  from the JATS `<license>` element. Validated at 100% sensitivity /
+  100% specificity, with 99.8% license-type accuracy, on the
+  1000-article 2023 sample.
+
+- **Reporting-guideline use**
+  ([`rt_reporting_pmc()`](https://choxos.github.io/rtransparency/reference/rt_reporting_pmc.md),
+  [`rt_reporting()`](https://choxos.github.io/rtransparency/reference/rt_reporting.md),
+  and within
+  [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)):
+  detects whether authors state they followed a reporting guideline and
+  which one (`is_reporting_pred`, `reporting_guideline`), covering the
+  EQUATOR catalogue (CONSORT, PRISMA and extensions, STROBE, ARRIVE,
+  STARD, TRIPOD, COREQ, SRQR, SQUIRE, CHEERS, CARE, PROCESS, STROCSS, …
+  and the wider reportilo guideline list). Precision-first:
+  animal-welfare, clinical and non-adherence mentions are excluded.
+  Validated at 93.8% sensitivity / 99.0% specificity (65 positives) on
+  the 1000-article 2023 sample, every article hand-labeled by the
+  maintainer.
+
+- [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
+  now returns ten indicators;
+  [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
+  and the bundled `rt_accuracy` table cover the two new ones.
+
 ## rtransparency 1.0.0
 
 First stable release, and a rename.

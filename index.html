@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">rtransparency</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
 <div align="justify">
 <p><code>rtransparency</code> automatically identifies and extracts <strong>indicators of research transparency</strong> from the full text of biomedical articles, in both PubMed Central (PMC) JATS XML and plain-text (PDF-derived) form. Every prediction comes with the exact statement that triggered it, so results are auditable rather than a black box. Detection is rule-based (curated regular expressions over the relevant article sections), self-contained (no GitHub-only or AGPL dependencies), and ships with reproducible accuracy benchmarks.</p>
 <div class="section level2">
-<h2 id="the-eight-indicators">The eight indicators<a class="anchor" aria-label="anchor" href="#the-eight-indicators"></a>
+<h2 id="the-ten-indicators">The ten indicators<a class="anchor" aria-label="anchor" href="#the-ten-indicators"></a>
 </h2>
 <table class="table">
 <colgroup>
@@ -127,6 +127,18 @@
 <td><code>rt_ai_pmc</code></td>
 <td><code>rt_ai</code></td>
 </tr>
+<tr>
+<td><strong>Open-access license</strong></td>
+<td>The article is openly licensed, and which license (CC-BY, CC-BY-NC-ND, CC0, …)</td>
+<td><code>rt_oa_pmc</code></td>
+<td><code>rt_oa</code></td>
+</tr>
+<tr>
+<td><strong>Reporting guideline</strong></td>
+<td>The authors followed a reporting guideline, and which (CONSORT, PRISMA, STROBE, ARRIVE, …)</td>
+<td><code>rt_reporting_pmc</code></td>
+<td><code>rt_reporting</code></td>
+</tr>
 </tbody>
 </table>
 <p>Conflicts of interest and AI disclosure are <strong>disclosure-based</strong>: a statement on the topic counts whether the disclosure is positive or negative. Conflict-of- interest and funding statements are detected not only in English but also in <strong>Spanish, Portuguese, French, German and Italian</strong>.</p>
@@ -144,7 +156,7 @@
 <p>No GitHub-only or AGPL dependencies are required; data and code detection is native (it no longer wraps <code>oddpub</code>). <code><a href="reference/rt_read_pdf.html">rt_read_pdf()</a></code> (PDF to text) additionally needs the poppler <code>pdftotext</code> utility on your system. The optional <code>furrr</code> and <code>future</code> packages enable parallel corpus processing; <code>ggplot2</code> enables plotting.</p>
 </div>
 <div class="section level2">
-<h2 id="quick-start-all-eight-indicators-in-one-call">Quick start: all eight indicators in one call<a class="anchor" aria-label="anchor" href="#quick-start-all-eight-indicators-in-one-call"></a>
+<h2 id="quick-start-all-ten-indicators-in-one-call">Quick start: all ten indicators in one call<a class="anchor" aria-label="anchor" href="#quick-start-all-ten-indicators-in-one-call"></a>
 </h2>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparency" class="external-link">rtransparency</a></span><span class="op">)</span></span>
@@ -155,13 +167,15 @@
 <span></span>
 <span><span class="co"># The predictions, one column per indicator:</span></span>
 <span><span class="va">res</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"is_coi_pred"</span>, <span class="st">"is_fund_pred"</span>, <span class="st">"is_register_pred"</span>, <span class="st">"is_novelty_pred"</span>,</span>
-<span>        <span class="st">"is_replication_pred"</span>, <span class="st">"is_open_data"</span>, <span class="st">"is_open_code"</span>, <span class="st">"is_ai_pred"</span><span class="op">)</span><span class="op">]</span></span>
+<span>        <span class="st">"is_replication_pred"</span>, <span class="st">"is_open_data"</span>, <span class="st">"is_open_code"</span>, <span class="st">"is_ai_pred"</span>,</span>
+<span>        <span class="st">"is_open_access"</span>, <span class="st">"is_reporting_pred"</span><span class="op">)</span><span class="op">]</span></span>
 <span></span>
-<span><span class="co"># Each prediction is paired with the text that triggered it, e.g.:</span></span>
+<span><span class="co"># Each prediction is paired with the text/value that triggered it, e.g.:</span></span>
 <span><span class="va">res</span><span class="op">$</span><span class="va">coi_text</span></span>
-<span><span class="va">res</span><span class="op">$</span><span class="va">fund_text</span></span>
-<span><span class="va">res</span><span class="op">$</span><span class="va">open_data_statements</span></span></code></pre></div>
-<p><code><a href="reference/rt_all_pmc.html">rt_all_pmc()</a></code> returns one row with the eight predictions, the extracted statement for each, article identifiers and metadata, the year, and <code>is_success</code>. <code>is_ai_pred</code> is <code>NA</code> for articles published before 2023.</p>
+<span><span class="va">res</span><span class="op">$</span><span class="va">open_data_statements</span></span>
+<span><span class="va">res</span><span class="op">$</span><span class="va">oa_license</span>            <span class="co"># e.g. "CC-BY-4.0"</span></span>
+<span><span class="va">res</span><span class="op">$</span><span class="va">reporting_guideline</span>   <span class="co"># e.g. "PRISMA"</span></span></code></pre></div>
+<p><code><a href="reference/rt_all_pmc.html">rt_all_pmc()</a></code> returns one row with the ten predictions, the extracted statement for each, article identifiers and metadata, the year, and <code>is_success</code>. <code>is_ai_pred</code> is <code>NA</code> for articles published before 2023.</p>
 </div>
 <div class="section level2">
 <h2 id="per-indicator-functions">Per-indicator functions<a class="anchor" aria-label="anchor" href="#per-indicator-functions"></a>
@@ -175,6 +189,8 @@
 <span><span class="fu"><a href="reference/rt_replication_pmc.html">rt_replication_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="co"># replication / external validation</span></span>
 <span><span class="fu"><a href="reference/rt_data_code_pmc.html">rt_data_code_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>  <span class="co"># data AND code sharing (+ extracted links)</span></span>
 <span><span class="fu"><a href="reference/rt_ai_pmc.html">rt_ai_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>         <span class="co"># generative-AI-use disclosure (2023+)</span></span>
+<span><span class="fu"><a href="reference/rt_oa_pmc.html">rt_oa_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>         <span class="co"># open-access status + license</span></span>
+<span><span class="fu"><a href="reference/rt_reporting_pmc.html">rt_reporting_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>  <span class="co"># reporting-guideline use + which one</span></span>
 <span><span class="fu"><a href="reference/rt_meta_pmc.html">rt_meta_pmc</a></span><span class="op">(</span><span class="va">xml</span>, remove_ns <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>       <span class="co"># article metadata</span></span></code></pre></div>
 </div>
 <div class="section level2">
@@ -310,6 +326,18 @@
 <td>not accuracy-corrected</td>
 <td>—</td>
 <td>experimental; only 9 positives in the 2023 sample</td>
+</tr>
+<tr>
+<td>Open-access license</td>
+<td>100%</td>
+<td>100%</td>
+<td>1000-article 2023 sample hand-labeled; license-type 99.8% (structured <code>&lt;license&gt;</code>)</td>
+</tr>
+<tr>
+<td>Reporting guideline</td>
+<td>93.8%</td>
+<td>99.0%</td>
+<td>1000-article 2023 sample hand-labeled (65 positives)</td>
 </tr>
 </tbody>
 </table>

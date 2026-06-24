@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">rtransparency</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.1.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,6 +139,20 @@ first</td>
 manuscript preparation (including “no AI was used”)</td>
 <td>Use of AI as a research method</td>
 </tr>
+<tr class="odd">
+<td>Open-access license</td>
+<td>The article is <strong>openly licensed</strong> (Creative Commons /
+CC0), and which license</td>
+<td>That every reader has full reuse rights (NC / ND licenses restrict
+reuse)</td>
+</tr>
+<tr class="even">
+<td>Reporting guideline</td>
+<td>The authors <strong>state they followed</strong> a reporting
+guideline, and which one</td>
+<td>That the study fully complied, or that a
+cited/animal-welfare/clinical guideline counts</td>
+</tr>
 </tbody>
 </table>
 <p>Conflicts of interest and AI disclosure are
@@ -180,6 +194,19 @@ and scans the whole document, so the caller must restrict it to
 2023-or-later articles and tolerate a higher false-positive rate on
 AI-method papers than <code><a href="../reference/rt_ai_pmc.html">rt_ai_pmc()</a></code>.</li>
 <li>
+<strong>Reporting guideline is claim detection.</strong> It
+identifies a stated adherence to a reporting guideline, not whether the
+study fully complied. It is tuned for precision (validated 93.8%
+sensitivity / 99.0% specificity on a hand-labeled 1000-article sample);
+the residual misses are mostly non-English statements, and residual
+false positives are guidelines named but not actually followed by the
+article.</li>
+<li>
+<strong>Open-access licensing is XML-structural.</strong> It reads
+the JATS <code>&lt;license&gt;</code> element, so it is
+near-deterministic for PMC XML but, in plain text, depends on a license
+statement being present in the extracted text.</li>
+<li>
 <strong>Accuracy correction.</strong> <code><a href="../reference/rt_summary.html">rt_summary()</a></code> can
 correct apparent prevalence using bundled sensitivity/specificity
 estimates (<code>rt_accuracy</code>). These derive from the validation
@@ -196,9 +223,11 @@ stable estimate).</li>
 <code>is_coi_pred</code>, <code>is_fund_pred</code>,
 <code>is_register_pred</code>, <code>is_novelty_pred</code>,
 <code>is_replication_pred</code>, <code>is_open_data</code>,
-<code>is_open_code</code>, and the year-gated <code>is_ai_pred</code>
-(<code>NA</code> before 2023), each paired with the extracted text.
-<code><a href="../reference/rt_all_pmc.html">rt_all_pmc()</a></code> returns all eight for one file;
+<code>is_open_code</code>, the year-gated <code>is_ai_pred</code>
+(<code>NA</code> before 2023), <code>is_open_access</code> (with
+<code>oa_license</code>) and <code>is_reporting_pred</code> (with
+<code>reporting_guideline</code>), each paired with the extracted text
+or value. <code><a href="../reference/rt_all_pmc.html">rt_all_pmc()</a></code> returns all ten for one file;
 <code><a href="../reference/rt_all_pmc_dir.html">rt_all_pmc_dir()</a></code> runs a whole directory.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/choxos/rtransparency" class="external-link">rtransparency</a></span><span class="op">)</span></span>

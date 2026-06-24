@@ -24,12 +24,15 @@ statement that triggered the detection.
 | Data sharing | Data deposited or made openly available | `rt_data_code` | `rt_data_code_pmc` |
 | Code sharing | Source code / scripts made available | `rt_data_code` | `rt_data_code_pmc` |
 | AI-use disclosure | A statement that generative AI was (or was not) used to prepare the manuscript | `rt_ai` | `rt_ai_pmc` |
+| Open-access license | Whether the article is openly licensed, and which license | `rt_oa` | `rt_oa_pmc` |
+| Reporting guideline | Whether a reporting guideline was followed, and which one | `rt_reporting` | `rt_reporting_pmc` |
 
-`rt_all_pmc` runs all eight detectors together in a single pass: COI,
-funding, registration, novelty, replication, data sharing, code sharing
-and AI-use disclosure. (`rt_all` covers the first five from TXT; data,
-code and AI also have standalone TXT detectors, `rt_data_code` and
-`rt_ai`, but are not part of the `rt_all` wrapper.)
+`rt_all_pmc` runs all ten detectors together in a single pass: COI,
+funding, registration, novelty, replication, data sharing, code sharing,
+AI-use disclosure, open-access licensing and reporting-guideline use.
+(`rt_all` covers the first five from TXT; the others also have
+standalone TXT detectors, such as `rt_data_code`, `rt_ai`, `rt_oa` and
+`rt_reporting`, but are not part of the `rt_all` wrapper.)
 
 AI-use disclosure is the newest indicator. Journals have asked authors
 to disclose any use of generative AI (ChatGPT and similar) in preparing
@@ -104,6 +107,22 @@ rather than a machine learning model. This keeps the output auditable
   model” out of the writing-object pattern, and AI used purely as a
   research method (not for writing) is not counted. Only evaluated for
   2023 onward.
+- **Open-access licensing.** Read from the JATS `<license>` element and
+  its license-reference URL, and classified to a canonical identifier
+  (`CC-BY-4.0`, `CC-BY-NC-ND-4.0`, `CC0-1.0`, …). A Creative Commons or
+  CC0 license (or an explicit open-access declaration) sets
+  `is_open_access`; a CC0 data-waiver is not mistaken for the article
+  license. This is the reuse (“R”) dimension of FAIR and feeds the
+  [`rfair`](https://github.com/choxos/rfair) assessment.
+- **Reporting-guideline use.** Detected when authors state they followed
+  a reporting guideline (the EQUATOR checklists: CONSORT, PRISMA and its
+  extensions, STROBE, ARRIVE, STARD, TRIPOD, COREQ, SQUIRE, CHEERS,
+  CARE, and the wider reportilo list), returning which one. Detection is
+  precision-first: a guideline counts only in a reporting context;
+  common-word acronyms (ARRIVE, CARE, RECORD, …) require the upper-case
+  form beside a guideline noun; and animal-welfare (“Care and Use of
+  Laboratory Animals”), clinical-practice and non-adherence mentions are
+  excluded.
 
 ### Languages
 
@@ -128,7 +147,7 @@ xml_path <- system.file(
 
 ### All indicators at once
 
-`rt_all_pmc` returns all eight indicators in one call, together with the
+`rt_all_pmc` returns all ten indicators in one call, together with the
 matched statement text, the publication `year` and article metadata.
 
 ``` r
@@ -138,10 +157,11 @@ all_indicators <- rt_all_pmc(xml_path, remove_ns = TRUE)
 dplyr::glimpse(
   all_indicators[, c("pmid", "year", "is_coi_pred", "is_fund_pred",
                      "is_register_pred", "is_novelty_pred", "is_replication_pred",
-                     "is_open_data", "is_open_code", "is_ai_pred")]
+                     "is_open_data", "is_open_code", "is_ai_pred",
+                     "is_open_access", "is_reporting_pred")]
 )
 #> Rows: 1
-#> Columns: 10
+#> Columns: 12
 #> $ pmid                <chr> "32171256"
 #> $ year                <int> 2020
 #> $ is_coi_pred         <lgl> TRUE
@@ -152,6 +172,8 @@ dplyr::glimpse(
 #> $ is_open_data        <lgl> TRUE
 #> $ is_open_code        <lgl> FALSE
 #> $ is_ai_pred          <lgl> NA
+#> $ is_open_access      <lgl> TRUE
+#> $ is_reporting_pred   <lgl> FALSE
 ```
 
 `is_ai_pred` is `NA` here because this example article predates 2023;
@@ -270,7 +292,7 @@ method.
 ## Processing many articles
 
 [`rt_all_pmc_dir()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc_dir.md)
-runs all eight indicators over an entire directory (or a vector of file
+runs all ten indicators over an entire directory (or a vector of file
 paths) in one call, designed for corpus-scale analysis.
 
 ``` r

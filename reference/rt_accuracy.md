@@ -12,7 +12,7 @@ rt_accuracy
 
 ## Format
 
-A tibble with 7 rows and 5 columns:
+A tibble with 9 rows and 5 columns:
 
 - variable:
 

@@ -41,6 +41,10 @@ One detector per indicator, for PMC JATS XML files.
   files.
 - [`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
   : Identify disclosure of generative-AI use from a PMC XML file.
+- [`rt_oa_pmc()`](https://choxos.github.io/rtransparency/reference/rt_oa_pmc.md)
+  : Identify the open-access status and reuse license of a PMC XML file.
+- [`rt_reporting_pmc()`](https://choxos.github.io/rtransparency/reference/rt_reporting_pmc.md)
+  : Identify use of a reporting guideline from a PMC XML file.
 
 ## Individual indicators (text)
 
@@ -62,6 +66,10 @@ One detector per indicator, for plain-text (PDF-derived) files.
   : Identify and extract Data and Code statements in TXT files.
 - [`rt_ai()`](https://choxos.github.io/rtransparency/reference/rt_ai.md)
   : Identify disclosure of generative-AI use from a TXT file.
+- [`rt_oa()`](https://choxos.github.io/rtransparency/reference/rt_oa.md)
+  : Identify the open-access status and reuse license from a TXT file.
+- [`rt_reporting()`](https://choxos.github.io/rtransparency/reference/rt_reporting.md)
+  : Identify use of a reporting guideline from a TXT file.
 
 ## Metadata and input
 

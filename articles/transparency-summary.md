@@ -23,9 +23,9 @@ indicators:
 ``` r
 
 library(rtransparency)
-#> rtransparency 1.0.0: identify indicators of transparency (conflicts of interest, funding,
-#> protocol registration, novelty, replication, data and code sharing, and AI-use
-#> disclosure) in biomedical articles. GitHub: https://github.com/choxos/rtransparency | vignette("rtransparency")
+#> rtransparency 1.1.0: identify indicators of transparency (conflicts of interest, funding,
+#> protocol registration, novelty, replication, data and code sharing, AI-use disclosure,
+#> open-access licensing and reporting-guideline use) in biomedical articles. GitHub: https://github.com/choxos/rtransparency | vignette("rtransparency")
 
 xml <- system.file(
   "extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency"
@@ -131,7 +131,7 @@ The accuracy values come from
 ``` r
 
 rt_accuracy
-#> # A tibble: 7 × 5
+#> # A tibble: 9 × 5
 #>   variable            label                 sensitivity specificity source      
 #>   <chr>               <chr>                       <dbl>       <dbl> <chr>       
 #> 1 is_coi_pred         Conflicts of interest       0.992       0.995 Serghiou et…
@@ -141,6 +141,8 @@ rt_accuracy
 #> 5 is_open_code        Code sharing                0.881       0.995 rtransparen…
 #> 6 is_novelty_pred     Novelty                     0.838       0.952 rtransparen…
 #> 7 is_replication_pred Replication                 0.928       0.985 rtransparen…
+#> 8 is_open_access      Open-access license         1           1     rtransparen…
+#> 9 is_reporting_pred   Reporting guideline         0.938       0.99  rtransparen…
 ```
 
 AI-use disclosure has no bundled accuracy estimate here, so its

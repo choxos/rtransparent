@@ -9,7 +9,7 @@ results are auditable rather than a black box. Detection is rule-based
 self-contained (no GitHub-only or AGPL dependencies), and ships with
 reproducible accuracy benchmarks.
 
-## The eight indicators
+## The ten indicators
 
 | Indicator | Detects | XML function | Text function |
 |----|----|----|----|
@@ -21,6 +21,8 @@ reproducible accuracy benchmarks.
 | **Data sharing** | The authors’ own data are made available (repository, accession, or in-article) | `rt_data_code_pmc` | `rt_data_code` |
 | **Code sharing** | The authors’ own analysis code is shared | `rt_data_code_pmc` | `rt_data_code` |
 | **AI disclosure** | A statement discloses generative-AI use in manuscript preparation (2023+) | `rt_ai_pmc` | `rt_ai` |
+| **Open-access license** | The article is openly licensed, and which license (CC-BY, CC-BY-NC-ND, CC0, …) | `rt_oa_pmc` | `rt_oa` |
+| **Reporting guideline** | The authors followed a reporting guideline, and which (CONSORT, PRISMA, STROBE, ARRIVE, …) | `rt_reporting_pmc` | `rt_reporting` |
 
 Conflicts of interest and AI disclosure are **disclosure-based**: a
 statement on the topic counts whether the disclosure is positive or
@@ -47,7 +49,7 @@ detection is native (it no longer wraps `oddpub`).
 system. The optional `furrr` and `future` packages enable parallel
 corpus processing; `ggplot2` enables plotting.
 
-## Quick start: all eight indicators in one call
+## Quick start: all ten indicators in one call
 
 ``` r
 
@@ -59,16 +61,18 @@ res <- rt_all_pmc(xml, remove_ns = TRUE)
 
 # The predictions, one column per indicator:
 res[, c("is_coi_pred", "is_fund_pred", "is_register_pred", "is_novelty_pred",
-        "is_replication_pred", "is_open_data", "is_open_code", "is_ai_pred")]
+        "is_replication_pred", "is_open_data", "is_open_code", "is_ai_pred",
+        "is_open_access", "is_reporting_pred")]
 
-# Each prediction is paired with the text that triggered it, e.g.:
+# Each prediction is paired with the text/value that triggered it, e.g.:
 res$coi_text
-res$fund_text
 res$open_data_statements
+res$oa_license            # e.g. "CC-BY-4.0"
+res$reporting_guideline   # e.g. "PRISMA"
 ```
 
 [`rt_all_pmc()`](https://choxos.github.io/rtransparency/reference/rt_all_pmc.md)
-returns one row with the eight predictions, the extracted statement for
+returns one row with the ten predictions, the extracted statement for
 each, article identifiers and metadata, the year, and `is_success`.
 `is_ai_pred` is `NA` for articles published before 2023.
 
@@ -86,6 +90,8 @@ rt_novelty_pmc(xml, remove_ns = TRUE)    # novelty claims
 rt_replication_pmc(xml, remove_ns = TRUE)# replication / external validation
 rt_data_code_pmc(xml, remove_ns = TRUE)  # data AND code sharing (+ extracted links)
 rt_ai_pmc(xml, remove_ns = TRUE)         # generative-AI-use disclosure (2023+)
+rt_oa_pmc(xml, remove_ns = TRUE)         # open-access status + license
+rt_reporting_pmc(xml, remove_ns = TRUE)  # reporting-guideline use + which one
 rt_meta_pmc(xml, remove_ns = TRUE)       # article metadata
 ```
 
@@ -208,6 +214,8 @@ hand-labeled benchmarks in `inst/benchmark/`:
 | Novelty | 83.8% | 95.2% | hand-labeled novelty/replication gold set |
 | Replication | 92.8% | 98.5% | replication-enriched sample (111 positives); correction is approximate |
 | AI-use disclosure | not accuracy-corrected | — | experimental; only 9 positives in the 2023 sample |
+| Open-access license | 100% | 100% | 1000-article 2023 sample hand-labeled; license-type 99.8% (structured `<license>`) |
+| Reporting guideline | 93.8% | 99.0% | 1000-article 2023 sample hand-labeled (65 positives) |
 
 Replication’s correction mixes designs (sensitivity from the enriched
 sample, specificity from the representative 2023 sample), so it is less
@@ -311,6 +319,10 @@ One detector per indicator, for PMC JATS XML files.
   files.
 - [`rt_ai_pmc()`](https://choxos.github.io/rtransparency/reference/rt_ai_pmc.md)
   : Identify disclosure of generative-AI use from a PMC XML file.
+- [`rt_oa_pmc()`](https://choxos.github.io/rtransparency/reference/rt_oa_pmc.md)
+  : Identify the open-access status and reuse license of a PMC XML file.
+- [`rt_reporting_pmc()`](https://choxos.github.io/rtransparency/reference/rt_reporting_pmc.md)
+  : Identify use of a reporting guideline from a PMC XML file.
 
 ## Individual indicators (text)
 
@@ -332,6 +344,10 @@ One detector per indicator, for plain-text (PDF-derived) files.
   : Identify and extract Data and Code statements in TXT files.
 - [`rt_ai()`](https://choxos.github.io/rtransparency/reference/rt_ai.md)
   : Identify disclosure of generative-AI use from a TXT file.
+- [`rt_oa()`](https://choxos.github.io/rtransparency/reference/rt_oa.md)
+  : Identify the open-access status and reuse license from a TXT file.
+- [`rt_reporting()`](https://choxos.github.io/rtransparency/reference/rt_reporting.md)
+  : Identify use of a reporting guideline from a TXT file.
 
 ## Metadata and input
 
