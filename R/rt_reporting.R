@@ -123,7 +123,16 @@
     "care and use of",                                            # animal welfare
     "(could|was|were|is|are|been|cannot|can|did)\\s?n[o']t (be )?(use|used|appl|follow|possible|feasible)",
     "\\bnot (be )?(used|applied|followed|possible|feasible)\\b",
-    "reporting (guidelines?|standards?|checklists?) (are|is|were|remain|will|should|may|can|could|might)? ?(be )?(needed|lacking|scarce|absent|important|essential|required|developed|advocated|recommended for future|warranted)",
+    "reporting (guidelines?|standards?|checklists?) (are|is|were|remain|will|should|may|can|could|might)? ?(be )?(needed|lacking|scarce|absent|important|essential|required|developed|advocated|recommended for future|warranted|improve|enhance|increase|promote|help|exist|provide)",
+    # Discourse / background ABOUT a guideline, not the authors following it.
+    "(is|are|remains?|was|were|provides?) (a |an |the )?(widely|commonly|frequently|well)[ -]?(used|established|known|accepted|recognized)",
+    "^\\s*background\\b", "^\\s*introduction\\b",
+    "guidelines? (improve|enhance|increase|promote|aim|help|exist|provide|were developed|are designed|have been)",
+    # Assessing / extracting whether OTHER (reviewed) studies followed a guideline.
+    "\\b(we|authors?|reviewers?) (extracted|assessed|evaluated|determined|checked|coded|recorded|examined|rated|appraised|judged)\\b[^.]{0,40}\\b(whether|if|adherence|compliance|reporting|completeness|quality|use of)",
+    "(included|eligible|reviewed|primary|original|individual|selected|identified|retrieved|each) (studies|trials|articles|papers|reviews|reports|rcts|publications)\\b[^.]{0,60}(adher|follow|conform|comply|report(ed|ing)?|used|use of)",
+    "(adherence|compliance|conformity|reporting (quality|completeness)) (to|with|of) .{0,40}(among|across|in|by|of) (the )?(included|eligible|reviewed|primary|original|identified)",
+    "(reporting (quality|completeness)|risk of bias)\\b[^.]{0,40}(was|were) (assessed|evaluated|examined|rated|appraised|judged)",
     "(trials|studies) (that )?conform(ed|ing|s)? to",
     "reporting of the (reviewed|included|individual|primary) (trials|studies)",
     sep = "|"

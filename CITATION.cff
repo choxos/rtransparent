@@ -2,13 +2,13 @@ cff-version: 1.2.0
 message: "If you use rtransparency, please cite the software (below) and the foundational paper (in references)."
 type: software
 title: "rtransparency: Identify Indicators of Transparency in the Biomedical Literature"
-version: 1.0.0
+version: 1.1.0
 doi: 10.5281/zenodo.20775089
 identifiers:
   - type: doi
     value: 10.5281/zenodo.20775089
     description: "Concept DOI (resolves to the latest version)"
-abstract: "rtransparency automatically detects eight indicators of research transparency in full-text biomedical articles, from PubMed Central JATS XML or plain text: conflict-of-interest disclosure, funding disclosure, protocol registration, novelty, replication or external validation, data sharing, code sharing, and disclosure of generative-AI use. Each prediction is paired with the exact triggering text, with reproducible accuracy benchmarks. It builds on the original rtransparent tool of Serghiou et al. (2021)."
+abstract: "rtransparency automatically detects ten indicators of research transparency in full-text biomedical articles, from PubMed Central JATS XML or plain text: conflict-of-interest disclosure, funding disclosure, protocol registration, novelty, replication or external validation, data sharing, code sharing, disclosure of generative-AI use, open-access licensing, and reporting-guideline use. Each prediction is paired with the exact triggering text, with reproducible accuracy benchmarks. It builds on the original rtransparent tool of Serghiou et al. (2021)."
 authors:
   - family-names: Sofi-Mahmudi
     given-names: Ahmad

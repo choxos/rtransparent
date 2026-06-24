@@ -372,8 +372,8 @@ rt_all_pmc <- function(filename, remove_ns = F, all_meta = F) {
   )
 
   # Open-access status and reuse license (same detector as rt_oa_pmc()), and
-  # reporting-guideline use (same detector as rt_reporting_pmc(), reusing the
-  # already-extracted article sections to avoid a second parse).
+  # reporting-guideline use (same detector as rt_reporting_pmc()), so the
+  # combined output matches the standalone detectors exactly.
   oa_ls <- .get_oa_pmc(article_xml)
   reporting_ls <- .get_reporting_pmc(article_xml)
 

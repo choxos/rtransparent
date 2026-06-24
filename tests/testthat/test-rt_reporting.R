@@ -60,7 +60,18 @@ test_that("rt_reporting returns the documented schema and PMID", {
   expect_equal(r$pmid, "99887766")
 })
 
-test_that("rt_reporting_pmc and rt_all_pmc expose the reporting columns", {
+test_that("rt_reporting does not fire on guideline discourse, background, or extraction", {
+  neg <- c(
+    "The PRISMA statement is a widely used guideline for reporting systematic reviews.",
+    "We extracted whether included trials adhered to the CONSORT statement.",
+    "Background: CONSORT reporting guidelines improve clinical trial transparency.",
+    "Reporting quality of the included studies was assessed using the STROBE checklist.",
+    "Adherence to CONSORT among the reviewed trials was low."
+  )
+  for (s in neg) expect_false(.run_rt_reporting(s)$is_reporting_pred, info = s)
+})
+
+test_that("rt_reporting_pmc and rt_all_pmc expose and agree on the reporting columns", {
   xml <- system.file("extdata", "PMID32171256-PMC7071725.xml", package = "rtransparency")
   skip_if(xml == "")
   rp <- rt_reporting_pmc(xml, remove_ns = TRUE)
@@ -69,4 +80,12 @@ test_that("rt_reporting_pmc and rt_all_pmc expose the reporting columns", {
 
   a <- rt_all_pmc(xml, remove_ns = TRUE)
   expect_true(all(c("is_reporting_pred", "reporting_guideline") %in% names(a)))
+  # Parity: combined output equals the standalone detector.
+  expect_equal(a$is_reporting_pred, rp$is_reporting_pred)
+  expect_equal(a$reporting_guideline, rp$reporting_guideline)
+})
+
+test_that("rt_reporting_pmc returns is_success = FALSE on a malformed file", {
+  f <- tempfile(fileext = ".xml"); writeLines("<broken", f); on.exit(unlink(f))
+  expect_false(rt_reporting_pmc(f, remove_ns = TRUE)$is_success)
 })

@@ -54,22 +54,37 @@
   if (!nzchar(trimws(txt))) return(out)
 
   license <- .classify_license(c(text, license_url))
+  low <- tolower(txt)
 
-  # An explicit open-access declaration, even without a named CC license.
+  # An explicit ARTICLE-level open-access declaration, even without a named CC
+  # license. This must describe the article's own license, not data/code/
+  # supplement availability ("freely available") or open-access *funding* (an
+  # article-processing-charge / Projekt DEAL / read-and-publish statement), both
+  # of which are common in otherwise copyrighted articles.
   declared_oa <- grepl(
     paste(
-      "\\bopen[ -]access\\b",
-      "this is an open access article",
-      "distributed under the terms of the creative commons",
-      "freely available",
+      "this is an open[ -]access article",
+      "open[ -]access article (that is |which is )?(been )?distributed under",
+      "(article|work) is (made )?(freely )?(available as|published) open[ -]access under",
+      "under (a|the) creative commons",
       sep = "|"
     ),
-    tolower(txt), perl = TRUE
+    low, perl = TRUE
+  )
+  oa_funding <- grepl(
+    paste(
+      "open[ -]access (funding|fee|fees|charge|charges|publication (charge|fee)|costs?)",
+      "article[ -]processing[ -]charge", "\\bapc\\b", "projekt deal",
+      "read[ -]and[ -]publish", "transformative agreement",
+      sep = "|"
+    ),
+    low, perl = TRUE
   )
 
-  # A permissive CC / CC0 license is open access; a declared OA statement also
-  # counts. Retained-copyright text with no open license is not.
-  out$is_open_access <- nzchar(license) || declared_oa
+  # A permissive CC / CC0 license is open access; a strict article-level OA
+  # declaration also counts. Open-access *funding* language alone does not, and
+  # retained-copyright text with no open license is not.
+  out$is_open_access <- nzchar(license) || (declared_oa && !oa_funding)
   out$oa_license <- license
 
   if (out$is_open_access) {
