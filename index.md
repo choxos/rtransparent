@@ -167,7 +167,8 @@ rt_plot(rt_demo, type = "trend", year = "year")   # prevalence over time
 ```
 
 The accuracy correction uses the bundled `rt_accuracy` table (detector
-sensitivity and specificity for nine indicators). Supply your own
+sensitivity and specificity for eight indicators; open-access licensing
+and AI-use disclosure are reported uncorrected). Supply your own
 estimates:
 
 ``` r
@@ -214,7 +215,7 @@ hand-labeled benchmarks in `inst/benchmark/`:
 | Novelty | 83.8% | 95.2% | hand-labeled novelty/replication gold set |
 | Replication | 92.8% | 98.5% | replication-enriched sample (111 positives); correction is approximate |
 | AI-use disclosure | not accuracy-corrected | — | experimental; only 9 positives in the 2023 sample |
-| Open-access license | 100% | 100% | 1000-article 2023 sample hand-labeled; license-type 99.8% (structured `<license>`) |
+| Open-access license | 100% | not estimable | structured `<license>` extraction; **license-type exact match 99.8%**; specificity rests on 1 negative in the OA subset, so it is reported uncorrected |
 | Reporting guideline | 93.8% | 99.0% | 1000-article 2023 sample hand-labeled (65 positives) |
 
 Replication’s correction mixes designs (sensitivity from the enriched

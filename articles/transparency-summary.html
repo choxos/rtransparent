@@ -306,7 +306,7 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <p>The accuracy values come from <a href="../reference/rt_accuracy.html"><code>rt_accuracy</code></a>:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">rt_accuracy</span></span>
-<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 9 × 5</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 8 × 5</span></span></span>
 <span><span class="co">#&gt;   variable            label                 sensitivity specificity source      </span></span>
 <span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> is_coi_pred         Conflicts of interest       0.992       0.995 Serghiou et…</span></span>
@@ -316,8 +316,7 @@ Rogan-Gladen estimator). The correction is on by default and adds
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> is_open_code        Code sharing                0.881       0.995 rtransparen…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> is_novelty_pred     Novelty                     0.838       0.952 rtransparen…</span></span>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span> is_replication_pred Replication                 0.928       0.985 rtransparen…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span> is_open_access      Open-access license         1           1     rtransparen…</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">9</span> is_reporting_pred   Reporting guideline         0.938       0.99  rtransparen…</span></span></code></pre></div>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span> is_reporting_pred   Reporting guideline         0.938       0.99  rtransparen…</span></span></code></pre></div>
 <p>AI-use disclosure has no bundled accuracy estimate here, so its
 corrected value is <code>NA</code>. Novelty’s estimate comes from a
 hand-labeled gold set
