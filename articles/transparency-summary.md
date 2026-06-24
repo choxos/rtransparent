@@ -39,15 +39,20 @@ one[, c("pmid", "is_coi_pred", "is_fund_pred", "is_register_pred")]
 ```
 
 To study a corpus you run a detector over many files and stack the rows;
-`purrr::map_dfr(files, rt_all_pmc, remove_ns = TRUE)` returns all eight
+`purrr::map_dfr(files, rt_all_pmc, remove_ns = TRUE)` returns all ten
 indicators per article in one pass. The result is one row per article
 with the indicator columns `is_coi_pred`, `is_fund_pred`,
 `is_register_pred`, `is_open_data`, `is_open_code`, `is_novelty_pred`,
-`is_replication_pred` and `is_ai_pred`. `is_ai_pred` is `NA` for
-articles published before 2023, and
+`is_replication_pred`, `is_ai_pred`, `is_open_access` and
+`is_reporting_pred`. `is_ai_pred` is `NA` for articles published before
+2023, and
 [`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
 drops those `NA`s, so the AI-disclosure prevalence is computed only over
-the articles where the indicator applies.
+the articles where the indicator applies. `is_open_access` and
+`is_reporting_pred` are summarized by
+[`rt_summary()`](https://choxos.github.io/rtransparency/reference/rt_summary.md)
+too, but are not part of the five openness practices counted by
+[`rt_score()`](https://choxos.github.io/rtransparency/reference/rt_score.md).
 
 This package ships a small **simulated** table of that shape, `rt_demo`,
 so the rest of the vignette runs without downloading anything:

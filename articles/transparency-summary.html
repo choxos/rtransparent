@@ -99,15 +99,20 @@ indicators:</p>
 <span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> 32171256 TRUE        FALSE        FALSE</span></span></code></pre></div>
 <p>To study a corpus you run a detector over many files and stack the
 rows; <code>purrr::map_dfr(files, rt_all_pmc, remove_ns = TRUE)</code>
-returns all eight indicators per article in one pass. The result is one
+returns all ten indicators per article in one pass. The result is one
 row per article with the indicator columns <code>is_coi_pred</code>,
 <code>is_fund_pred</code>, <code>is_register_pred</code>,
 <code>is_open_data</code>, <code>is_open_code</code>,
-<code>is_novelty_pred</code>, <code>is_replication_pred</code> and
-<code>is_ai_pred</code>. <code>is_ai_pred</code> is <code>NA</code> for
-articles published before 2023, and <code><a href="../reference/rt_summary.html">rt_summary()</a></code> drops
-those <code>NA</code>s, so the AI-disclosure prevalence is computed only
-over the articles where the indicator applies.</p>
+<code>is_novelty_pred</code>, <code>is_replication_pred</code>,
+<code>is_ai_pred</code>, <code>is_open_access</code> and
+<code>is_reporting_pred</code>. <code>is_ai_pred</code> is
+<code>NA</code> for articles published before 2023, and
+<code><a href="../reference/rt_summary.html">rt_summary()</a></code> drops those <code>NA</code>s, so the
+AI-disclosure prevalence is computed only over the articles where the
+indicator applies. <code>is_open_access</code> and
+<code>is_reporting_pred</code> are summarized by
+<code><a href="../reference/rt_summary.html">rt_summary()</a></code> too, but are not part of the five openness
+practices counted by <code><a href="../reference/rt_score.html">rt_score()</a></code>.</p>
 <p>This package ships a small <strong>simulated</strong> table of that
 shape, <code>rt_demo</code>, so the rest of the vignette runs without
 downloading anything:</p>
